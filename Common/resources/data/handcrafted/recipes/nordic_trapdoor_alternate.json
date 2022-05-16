@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "handcrafted:nordic_trapdoor"
+    }
+  },
+  "result": {
+    "item": "handcrafted:nordic_trapdoor_alternate",
+    "count": 1
+  }
+}

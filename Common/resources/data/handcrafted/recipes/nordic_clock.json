@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "OCO",
+    " R "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "O": {
+      "item": "handcrafted:nordic_planks"
+    },
+    "C": {
+      "item": "minecraft:clock"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "handcrafted:nordic_clock",
+    "count": 1
+  }
+}

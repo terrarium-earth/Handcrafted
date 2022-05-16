@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=east,side=false": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 270
+    },
+    "facing=north,side=false": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 180
+    },
+    "facing=south,side=false": {
+      "model": "handcrafted:block/vanilla_table"
+    },
+    "facing=west,side=false": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 90
+    },
+    "facing=east,side=true": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 90
+    },
+    "facing=north,side=true": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 0
+    },
+    "facing=south,side=true": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 180
+    },
+    "facing=west,side=true": {
+      "model": "handcrafted:block/vanilla_table",
+      "y": 270
+    }
+  }
+}

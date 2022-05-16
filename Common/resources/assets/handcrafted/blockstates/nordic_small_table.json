@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "handcrafted:block/nordic_small_table",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "handcrafted:block/nordic_small_table",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "handcrafted:block/nordic_small_table"
+    },
+    "facing=west": {
+      "model": "handcrafted:block/nordic_small_table",
+      "y": 90
+    }
+  }
+}

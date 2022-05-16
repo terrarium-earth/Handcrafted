@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "handcrafted:nordic_bookcase",
+    "handcrafted:nordic_planks",
+    "handcrafted:nordic_stairs",
+    "handcrafted:nordic_slab",
+    "handcrafted:nordic_small_table",
+    "handcrafted:nordic_nightstand",
+    "handcrafted:nordic_alternate_nightstand",
+    "handcrafted:nordic_chair",
+    "handcrafted:nordic_clock",
+    "handcrafted:nordic_large_desk",
+    "handcrafted:nordic_large_table",
+    "handcrafted:vanilla_table",
+    "handcrafted:nordic_trapdoor",
+    "handcrafted:nordic_trapdoor_alternate",
+    "handcrafted:nordic_door",
+    "handcrafted:nordic_fence"
+  ]
+}

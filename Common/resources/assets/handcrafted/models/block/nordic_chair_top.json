@@ -1,0 +1,81 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "handcrafted:block/nordic_wood_set",
+		"particle": "handcrafted:block/nordic_planks"
+	},
+	"elements": [
+		{
+			"from": [12, 0, 1],
+			"to": [15, 13, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"east": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"south": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"west": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"up": {"uv": [0, 6, 0.75, 6.75], "texture": "#1"},
+				"down": {"uv": [0, 6, 0.75, 6.75], "texture": "#1"}
+			}
+		},
+		{
+			"from": [1, 0, 1],
+			"to": [4, 13, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"east": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"south": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"west": {"uv": [0, 6, 0.75, 9.25], "texture": "#1"},
+				"up": {"uv": [0, 6, 0.75, 6.75], "texture": "#1"},
+				"down": {"uv": [0, 6, 0.75, 6.75], "texture": "#1"}
+			}
+		},
+		{
+			"from": [4, 0, 2],
+			"to": [12, 12, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-8, 0, -8]},
+			"faces": {
+				"north": {"uv": [0.75, 8.75, 2.75, 11.75], "texture": "#1"},
+				"east": {"uv": [0, 0, 0.25, 3], "texture": "#1"},
+				"south": {"uv": [0.75, 8.75, 2.75, 11.75], "texture": "#1"},
+				"west": {"uv": [0, 0, 0.25, 3], "texture": "#1"},
+				"up": {"uv": [0.75, 13.25, 2.75, 13.5], "texture": "#1"},
+				"down": {"uv": [0, 0, 2, 0.25], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-1, 0, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-1, 0, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_righthand": {
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"ground": {
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [10, 10, 0],
+			"translation": [0, -3.25, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "Chair",
+			"origin": [-9, 0, -8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

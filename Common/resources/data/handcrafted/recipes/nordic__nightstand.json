@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "handcrafted:nordic_planks"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "handcrafted:nordic_wool"
+    }
+  },
+  "result": {
+    "item": "handcrafted:nordic_nightstand",
+    "count": 1
+  }
+}

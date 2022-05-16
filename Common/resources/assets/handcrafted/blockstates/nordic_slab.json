@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "handcrafted:block/nordic_slab"
+    },
+    "type=double": {
+      "model": "handcrafted:block/nordic_planks"
+    },
+    "type=top": {
+      "model": "handcrafted:block/nordic_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "handcrafted:block/nordic_door_top",
+    "bottom": "handcrafted:block/nordic_door_bottom"
+  }
+}

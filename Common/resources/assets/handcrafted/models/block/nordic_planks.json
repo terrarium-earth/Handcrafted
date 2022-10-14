@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "handcrafted:block/nordic_planks",
-    "particle": "handcrafted:block/nordic_planks"
-  }
-}
-

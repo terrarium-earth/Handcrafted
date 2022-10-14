@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "handcrafted:block/nordic_planks",
-    "top": "handcrafted:block/nordic_planks",
-    "side": "handcrafted:block/nordic_planks"
-  }
-}

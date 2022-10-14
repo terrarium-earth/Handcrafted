@@ -1,23 +1,30 @@
-# eclipse
-bin
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# Quilt Loom
+run/
+src/main/generated
+
+# Eclipse
 *.launch
-.settings
-.metadata
+
+# IntelliJ Idea
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.settings/
+.vscode/
+bin/
 .classpath
 .project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea/*
-!.idea/scopes
+# macOS
+*.DS_Store
 
-# gradle
-build
-.gradle
-
-# other
-eclipse
-run
+/fabric/src/main/generated/

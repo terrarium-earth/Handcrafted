@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "handcrafted:block/nordic_planks",
-    "side": "handcrafted:block/nordic_bookcase",
-    "particle": "handcrafted:block/nordic_planks"
-  }
-}
-

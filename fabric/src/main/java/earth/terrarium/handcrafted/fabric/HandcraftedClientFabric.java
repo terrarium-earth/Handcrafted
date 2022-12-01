@@ -1,0 +1,42 @@
+package earth.terrarium.handcrafted.fabric;
+
+import earth.terrarium.handcrafted.client.HandcraftedClient;
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+
+import java.util.List;
+import java.util.function.Supplier;
+
+public class HandcraftedClientFabric implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+        HandcraftedClient.initializeClient();
+        HandcraftedClient.onRegisterItemRenderers(HandcraftedClientFabric::registerItemRenderer);
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> HandcraftedClient.onRegisterModels(out));
+        HandcraftedClient.onRegisterBlockRenderTypes(HandcraftedClientFabric::registerBlockRenderTypes);
+        HandcraftedClient.registerBlockRenderers(new HandcraftedClient.BlockRendererRegistry() {
+            @Override
+            public <T extends BlockEntity> void register(Supplier<? extends BlockEntityType<? extends T>> type, BlockEntityRendererProvider<T> factory) {
+                BlockEntityRendererRegistry.register(type.get(), factory);
+            }
+        });
+    }
+
+    private static void registerBlockRenderTypes(RenderType type, List<Block> blocks) {
+        BlockRenderLayerMap.INSTANCE.putBlocks(type, blocks.toArray(new Block[0]));
+    }
+
+    private static void registerItemRenderer(ItemLike item, BlockEntityWithoutLevelRenderer renderer) {
+        BuiltinItemRendererRegistry.INSTANCE.register(item.asItem(), renderer::renderByItem);
+    }
+}

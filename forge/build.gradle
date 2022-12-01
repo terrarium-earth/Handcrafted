@@ -1,18 +1,14 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
-
 architectury {
     platformSetupLoomIde()
     forge()
 }
 
 loom {
-    accessWidenerPath = project(":common").loom.accessWidenerPath
-
     forge {
-        convertAccessWideners = true
-        extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
+        mixinConfig "handcrafted.mixins.json"
     }
 }
 
@@ -41,7 +37,6 @@ processResources {
 
 shadowJar {
     exclude "fabric.mod.json"
-    exclude "architectury.common.json"
 
     configurations = [project.configurations.shadowCommon]
     classifier "dev-shadow"
@@ -55,6 +50,7 @@ remapJar {
 
 jar {
     classifier "dev"
+    archivesBaseName = "$mod_id-forge-$minecraft_version"
 }
 
 sourcesJar {

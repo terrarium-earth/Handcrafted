@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.registry;
 
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.items.ModRenderedBlockItem;
+import earth.terrarium.handcrafted.item.ModRenderedBlockItem;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
@@ -73,7 +73,7 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_GARDEN_BENCH = register("crimson_garden_bench", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_GARDEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_GARDEN_BENCH = register("warped_garden_bench", () -> new ModRenderedBlockItem(ModBlocks.WARPED_GARDEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-
+    public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     private static <T extends Item> Supplier<T> register(String id, Supplier<T> item) {
         return ModRegistryHelpers.register(Registry.ITEM, id, item);

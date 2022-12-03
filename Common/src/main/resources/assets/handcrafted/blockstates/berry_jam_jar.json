@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "jars=1": [
+      {
+        "model": "handcrafted:block/jar/single"
+      },
+      {
+        "model": "handcrafted:block/jar/single",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/jar/single",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/jar/single",
+        "y": 270
+      }
+    ],
+    "jars=2": [
+      {
+        "model": "handcrafted:block/jar/double"
+      },
+      {
+        "model": "handcrafted:block/jar/double",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/jar/double",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/jar/double",
+        "y": 270
+      }
+    ],
+    "jars=3": [
+      {
+        "model": "handcrafted:block/jar/triple"
+      },
+      {
+        "model": "handcrafted:block/jar/triple",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/jar/triple",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/jar/triple",
+        "y": 270
+      }
+    ]
+  }
+}

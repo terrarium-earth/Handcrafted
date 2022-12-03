@@ -1,16 +1,17 @@
 package earth.terrarium.handcrafted.client;
 
-import earth.terrarium.handcrafted.client.blocks.couch.CouchModel;
-import earth.terrarium.handcrafted.client.blocks.couch.CouchRenderer;
-import earth.terrarium.handcrafted.client.blocks.gardenbench.GardenBenchModel;
-import earth.terrarium.handcrafted.client.blocks.gardenbench.GardenBenchRenderer;
-import earth.terrarium.handcrafted.client.blocks.tablebench.TableBenchModel;
-import earth.terrarium.handcrafted.client.blocks.tablebench.TableBenchRenderer;
-import earth.terrarium.handcrafted.client.blocks.tablechair.TableChairModel;
-import earth.terrarium.handcrafted.client.blocks.tablechair.TableChairRenderer;
-import earth.terrarium.handcrafted.client.blocks.woodengardenbench.WoodenGardenBenchModel;
-import earth.terrarium.handcrafted.client.blocks.woodengardenbench.WoodenGardenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
+import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.gardenbench.GardenBenchModel;
+import earth.terrarium.handcrafted.client.block.chair.gardenbench.GardenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchModel;
+import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairModel;
+import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairRenderer;
+import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchModel;
+import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchRenderer;
 import earth.terrarium.handcrafted.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.registry.ModBlocks;
 import earth.terrarium.handcrafted.registry.ModItems;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -96,6 +97,7 @@ public class HandcraftedClient {
     }
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {
+        register.accept(RenderType.cutout(), List.of(ModBlocks.BERRY_JAM_JAR.get()));
     }
 
     public static abstract class BlockRendererRegistry {

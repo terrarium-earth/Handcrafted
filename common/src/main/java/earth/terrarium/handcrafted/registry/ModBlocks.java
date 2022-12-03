@@ -1,11 +1,12 @@
 package earth.terrarium.handcrafted.registry;
 
-import earth.terrarium.handcrafted.blocks.CushionBlock;
-import earth.terrarium.handcrafted.blocks.couch.CouchBlock;
-import earth.terrarium.handcrafted.blocks.gardenbench.GardenBenchBlock;
-import earth.terrarium.handcrafted.blocks.tablebench.TableBenchBlock;
-import earth.terrarium.handcrafted.blocks.tablechair.TableChairBlock;
-import earth.terrarium.handcrafted.blocks.woodengardenbench.WoodenGardenBenchBlock;
+import earth.terrarium.handcrafted.block.CushionBlock;
+import earth.terrarium.handcrafted.block.StackableJarBlock;
+import earth.terrarium.handcrafted.block.chair.couch.CouchBlock;
+import earth.terrarium.handcrafted.block.chair.gardenbench.GardenBenchBlock;
+import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlock;
+import earth.terrarium.handcrafted.block.chair.tablechair.TableChairBlock;
+import earth.terrarium.handcrafted.block.chair.woodengardenbench.WoodenGardenBenchBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -74,6 +75,8 @@ public class ModBlocks {
     public static final Supplier<Block> RED_CUSHION = register("red_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final Supplier<Block> WHITE_CUSHION = register("white_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final Supplier<Block> YELLOW_CUSHION = register("yellow_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
     private static <T extends Block> Supplier<T> register(String id, Supplier<T> block) {
         return ModRegistryHelpers.register(Registry.BLOCK, id, block);

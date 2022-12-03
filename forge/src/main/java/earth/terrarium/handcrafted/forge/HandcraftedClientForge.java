@@ -1,6 +1,8 @@
 package earth.terrarium.handcrafted.forge;
 
 import earth.terrarium.handcrafted.client.HandcraftedClient;
+import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -28,6 +30,7 @@ public class HandcraftedClientForge {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(HandcraftedClientForge::modelLoading);
         bus.addListener(HandcraftedClientForge::onRegisterRenderers);
+        bus.addListener(HandcraftedClientForge::onRegisterLayerDefinitions);
     }
 
     public static void postInit() {
@@ -59,6 +62,15 @@ public class HandcraftedClientForge {
 
     private static void onRegisterBlockRenderTypes(RenderType type, List<Block> blocks) {
         blocks.forEach(block -> ItemBlockRenderTypes.setRenderLayer(block, type));
+    }
+
+    public static void onRegisterLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        HandcraftedClient.registerEntityLayers(new HandcraftedClient.LayerDefinitionRegistry() {
+            @Override
+            public void register(ModelLayerLocation location, Supplier<LayerDefinition> definition) {
+                event.registerLayerDefinition(location, definition);
+            }
+        });
     }
 
     public static boolean hasInitializedRenderers() {

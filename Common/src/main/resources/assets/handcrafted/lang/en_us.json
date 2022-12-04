@@ -59,5 +59,25 @@
   "block.handcrafted.white_cushion": "White Cushion",
   "block.handcrafted.yellow_cushion": "Yellow Cushion",
 
+  "block.handcrafted.acacia_single_bed": "Acacia Single Bed",
+  "block.handcrafted.birch_single_bed": "Birch Single Bed",
+  "block.handcrafted.crimson_single_bed": "Crimson Single Bed",
+  "block.handcrafted.dark_oak_single_bed": "Dark Oak Single Bed",
+  "block.handcrafted.jungle_single_bed": "Jungle Single Bed",
+  "block.handcrafted.mangrove_single_bed": "Mangrove Single Bed",
+  "block.handcrafted.oak_single_bed": "Oak Single Bed",
+  "block.handcrafted.spruce_single_bed": "Spruce Single Bed",
+  "block.handcrafted.warped_single_bed": "Warped Single Bed",
+
+  "block.handcrafted.acacia_double_bed": "Acacia Double Bed",
+  "block.handcrafted.birch_double_bed": "Birch Double Bed",
+  "block.handcrafted.crimson_double_bed": "Crimson Double Bed",
+  "block.handcrafted.dark_oak_double_bed": "Dark Oak Double Bed",
+  "block.handcrafted.jungle_double_bed": "Jungle Double Bed",
+  "block.handcrafted.mangrove_double_bed": "Mangrove Double Bed",
+  "block.handcrafted.oak_double_bed": "Oak Double Bed",
+  "block.handcrafted.spruce_double_bed": "Spruce Double Bed",
+  "block.handcrafted.warped_double_bed": "Warped Double Bed",
+
   "block.handcrafted.berry_jam_jar": "Berry Jam Jar"
 }

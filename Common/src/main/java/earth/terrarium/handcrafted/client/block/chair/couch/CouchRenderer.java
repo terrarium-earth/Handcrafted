@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.chair.couch;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
+import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.block.chair.couch.CouchBlockEntity;
 import earth.terrarium.handcrafted.block.property.CouchShape;
@@ -36,10 +37,10 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
             case OUTER_LEFT, OUTER_RIGHT ->
                     new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
-        render(Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
+        render(entity.getCushion(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
-    private static void render(ResourceLocation texture, CouchModel model, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+    private static void render(ResourceLocation cushion, ResourceLocation texture, CouchModel model, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         poseStack.pushPose();
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(switch (direction) {
@@ -66,6 +67,9 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
         });
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
         model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/couch/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        if (!cushion.toString().equals("minecraft:air")) {
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/couch/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        }
         poseStack.popPose();
     }
 
@@ -76,7 +80,7 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            render(Registry.ITEM.getKey(stack.getItem()), new CouchModel(Minecraft.getInstance().getEntityModels().bakeLayer(CouchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            render(new ResourceLocation(Handcrafted.MOD_ID + ":white_cushion"), Registry.ITEM.getKey(stack.getItem()), new CouchModel(Minecraft.getInstance().getEntityModels().bakeLayer(CouchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
         }
     }
 }

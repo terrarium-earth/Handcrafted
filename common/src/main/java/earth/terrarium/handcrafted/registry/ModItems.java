@@ -73,6 +73,16 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_GARDEN_BENCH = register("crimson_garden_bench", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_GARDEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_GARDEN_BENCH = register("warped_garden_bench", () -> new ModRenderedBlockItem(ModBlocks.WARPED_GARDEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_SINGLE_BED = register("acacia_single_bed", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_SINGLE_BED = register("birch_single_bed", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_SINGLE_BED = register("dark_oak_single_bed", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_SINGLE_BED = register("jungle_single_bed", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_SINGLE_BED = register("mangrove_single_bed", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_SINGLE_BED = register("oak_single_bed", () -> new ModRenderedBlockItem(ModBlocks.OAK_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_SINGLE_BED = register("spruce_single_bed", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_SINGLE_BED = register("crimson_single_bed", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_SINGLE_BED = register("warped_single_bed", () -> new ModRenderedBlockItem(ModBlocks.WARPED_SINGLE_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     private static <T extends Item> Supplier<T> register(String id, Supplier<T> item) {

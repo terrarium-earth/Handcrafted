@@ -3,7 +3,7 @@ package earth.terrarium.handcrafted.block.property;
 import net.minecraft.util.StringRepresentable;
 import org.jetbrains.annotations.NotNull;
 
-public enum TableBenchShape implements StringRepresentable {
+public enum DirectionalBlockSide implements StringRepresentable {
     SINGLE("single"),
     LEFT("left"),
     MIDDLE("middle"),
@@ -11,7 +11,7 @@ public enum TableBenchShape implements StringRepresentable {
 
     private final String name;
 
-    TableBenchShape(String string2) {
+    DirectionalBlockSide(String string2) {
         this.name = string2;
     }
 

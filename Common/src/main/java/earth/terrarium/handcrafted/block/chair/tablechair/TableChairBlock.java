@@ -24,6 +24,6 @@ public class TableChairBlock extends ExpandableCouchBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return SimpleEntityBlock.cushionUse(level, pos, player);
+        return SimpleEntityBlock.cushionUse(level, pos, player, "minecraft:air");
     }
 }

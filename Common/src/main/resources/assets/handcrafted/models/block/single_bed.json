@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "handcrafted:block/particle/iron_bench_particles"
+  }
+}

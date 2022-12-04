@@ -10,9 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -81,19 +79,18 @@ public abstract class SimpleEntityBlock extends BaseEntityBlock implements Simpl
         return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, fluidState.getType().equals(Fluids.WATER));
     }
 
-    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player) {
+    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player, String defaultCushion) {
         if (!level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof CushionBenchBlockEntity entity) {
                 ItemStack stack = player.getMainHandItem();
-                if (entity.getCushion().toString().equals("minecraft:air") && stack.is(ModTags.CUSHIONS)) {
+                if (entity.getCushion().toString().equals(defaultCushion) && stack.is(ModTags.CUSHIONS)) {
                     entity.setCushion(Registry.ITEM.getKey(stack.getItem()));
                     stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
-                    Item item = Registry.ITEM.get(entity.getCushion());
-                    entity.setCushion(new ResourceLocation("air"));
-                    if (!item.equals(Items.AIR)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, item.getDefaultInstance());
+                    if (!entity.getCushion().toString().equals(defaultCushion)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, Registry.ITEM.get(entity.getCushion()).getDefaultInstance());
+                        entity.setCushion(new ResourceLocation(defaultCushion));
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
                         return InteractionResult.SUCCESS;

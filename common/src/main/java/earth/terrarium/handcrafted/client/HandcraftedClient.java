@@ -1,5 +1,7 @@
 package earth.terrarium.handcrafted.client;
 
+import earth.terrarium.handcrafted.client.block.chair.bed.BedModel;
+import earth.terrarium.handcrafted.client.block.chair.bed.BedRenderer;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.gardenbench.GardenBenchModel;
@@ -75,6 +77,16 @@ public class HandcraftedClient {
         register.accept(ModItems.SPRUCE_TABLE_CHAIR.get(), new TableChairRenderer.ItemRenderer());
         register.accept(ModItems.CRIMSON_TABLE_CHAIR.get(), new TableChairRenderer.ItemRenderer());
         register.accept(ModItems.WARPED_TABLE_CHAIR.get(), new TableChairRenderer.ItemRenderer());
+
+        register.accept(ModItems.ACACIA_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.BIRCH_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.DARK_OAK_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.JUNGLE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.MANGROVE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.OAK_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.SPRUCE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.CRIMSON_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.WARPED_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
     }
 
     public static void registerBlockRenderers(BlockRendererRegistry registry) {
@@ -83,6 +95,7 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.WOODEN_GARDEN_BENCH, WoodenGardenBenchRenderer::new);
         registry.register(ModBlockEntities.TABLE_BENCH, TableBenchRenderer::new);
         registry.register(ModBlockEntities.TABLE_CHAIR, TableChairRenderer::new);
+        registry.register(ModBlockEntities.SINGLE_BED, BedRenderer::new);
     }
 
     public static void registerEntityLayers(LayerDefinitionRegistry registry) {
@@ -91,6 +104,7 @@ public class HandcraftedClient {
         CouchModel.register(registry);
         TableBenchModel.register(registry);
         TableChairModel.register(registry);
+        BedModel.register(registry);
     }
 
     public static void onRegisterModels(Consumer<ResourceLocation> register) {

@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.block.chair.tablebench;
 
 import earth.terrarium.handcrafted.block.SimpleEntityBlock;
-import earth.terrarium.handcrafted.block.property.TableBenchShape;
+import earth.terrarium.handcrafted.block.property.DirectionalBlockSide;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -17,11 +17,11 @@ import net.minecraft.world.level.material.Fluids;
 import org.jetbrains.annotations.NotNull;
 
 public class TableBenchBlock extends SimpleEntityBlock {
-    public static final EnumProperty<TableBenchShape> TABLE_BENCH_SHAPE = EnumProperty.create("shape", TableBenchShape.class);
+    public static final EnumProperty<DirectionalBlockSide> TABLE_BENCH_SHAPE = EnumProperty.create("shape", DirectionalBlockSide.class);
 
     public TableBenchBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(TABLE_BENCH_SHAPE, TableBenchShape.SINGLE).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.defaultBlockState().setValue(TABLE_BENCH_SHAPE, DirectionalBlockSide.SINGLE).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }
 
     @Override
@@ -51,18 +51,18 @@ public class TableBenchBlock extends SimpleEntityBlock {
         return blockState.setValue(TABLE_BENCH_SHAPE, getBenchShape(blockState, context.getLevel(), blockPos));
     }
 
-    private TableBenchShape getBenchShape(BlockState state, BlockGetter level, BlockPos pos) {
+    private DirectionalBlockSide getBenchShape(BlockState state, BlockGetter level, BlockPos pos) {
         Direction direction = state.getValue(FACING);
         BlockState blockState3 = level.getBlockState(pos.relative(direction.getClockWise()));
         BlockState blockState4 = level.getBlockState(pos.relative(direction.getClockWise().getOpposite()));
         if (!blockState3.is(this) && !blockState4.is(this)) {
-            return TableBenchShape.SINGLE;
+            return DirectionalBlockSide.SINGLE;
         } else if (!blockState3.is(this)) {
-            return TableBenchShape.RIGHT;
+            return DirectionalBlockSide.RIGHT;
         } else if (!blockState4.is(this)) {
-            return TableBenchShape.LEFT;
+            return DirectionalBlockSide.LEFT;
         } else {
-            return TableBenchShape.MIDDLE;
+            return DirectionalBlockSide.MIDDLE;
         }
     }
 }

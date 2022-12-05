@@ -79,18 +79,18 @@ public abstract class SimpleEntityBlock extends BaseEntityBlock implements Simpl
         return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, fluidState.getType().equals(Fluids.WATER));
     }
 
-    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player, String defaultCushion) {
+    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player, ResourceLocation defaultCushion) {
         if (!level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof CushionBenchBlockEntity entity) {
                 ItemStack stack = player.getMainHandItem();
-                if (entity.getCushion().toString().equals(defaultCushion) && stack.is(ModTags.CUSHIONS)) {
+                if (entity.getCushion().equals(defaultCushion) && stack.is(ModTags.CUSHIONS)) {
                     entity.setCushion(Registry.ITEM.getKey(stack.getItem()));
                     stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
-                    if (!entity.getCushion().toString().equals(defaultCushion)) {
+                    if (!entity.getCushion().equals(defaultCushion)) {
                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, Registry.ITEM.get(entity.getCushion()).getDefaultInstance());
-                        entity.setCushion(new ResourceLocation(defaultCushion));
+                        entity.setCushion(defaultCushion);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
                         return InteractionResult.SUCCESS;

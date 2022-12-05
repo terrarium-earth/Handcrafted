@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.block.chair.tablechair;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.block.SimpleEntityBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -24,6 +25,6 @@ public class TableChairBlock extends ExpandableCouchBlock {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return SimpleEntityBlock.cushionUse(level, pos, player, "minecraft:air");
+        return SimpleEntityBlock.cushionUse(level, pos, player, new ResourceLocation("air"));
     }
 }

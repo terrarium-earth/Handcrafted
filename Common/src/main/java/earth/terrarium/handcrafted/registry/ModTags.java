@@ -8,4 +8,5 @@ import net.minecraft.world.item.Item;
 
 public class ModTags {
     public static final TagKey<Item> CUSHIONS = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "cushions"));
+    public static final TagKey<Item> SHEETS = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "sheets"));
 }

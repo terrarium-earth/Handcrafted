@@ -37,6 +37,10 @@ public abstract class CushionBenchBlockEntity extends BlockEntity {
 
     public void setCushion(ResourceLocation cushion) {
         this.cushion = cushion;
+        this.update();
+    }
+
+    public void update() {
         if (this.level != null) {
             this.level.sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), Block.UPDATE_ALL);
         }

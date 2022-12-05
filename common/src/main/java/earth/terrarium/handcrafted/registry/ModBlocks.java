@@ -1,15 +1,15 @@
 package earth.terrarium.handcrafted.registry;
 
 import earth.terrarium.handcrafted.block.CushionBlock;
-import earth.terrarium.handcrafted.block.StackableJarBlock;
-import earth.terrarium.handcrafted.block.chair.bed.SingleBedBlock;
+import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlock;
+import earth.terrarium.handcrafted.block.stackablejar.StackableJarBlock;
+import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlock;
 import earth.terrarium.handcrafted.block.chair.couch.CouchBlock;
 import earth.terrarium.handcrafted.block.chair.gardenbench.GardenBenchBlock;
 import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlock;
 import earth.terrarium.handcrafted.block.chair.tablechair.TableChairBlock;
 import earth.terrarium.handcrafted.block.chair.woodengardenbench.WoodenGardenBenchBlock;
 import net.minecraft.core.Registry;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -61,15 +61,15 @@ public class ModBlocks {
     public static final Supplier<Block> CRIMSON_TABLE_CHAIR = register("crimson_table_chair", () -> new TableChairBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final Supplier<Block> WARPED_TABLE_CHAIR = register("warped_table_chair", () -> new TableChairBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
-    public static final Supplier<Block> ACACIA_SINGLE_BED = register("acacia_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> BIRCH_SINGLE_BED = register("birch_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> DARK_OAK_SINGLE_BED = register("dark_oak_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> JUNGLE_SINGLE_BED = register("jungle_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> MANGROVE_SINGLE_BED = register("mangrove_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> OAK_SINGLE_BED = register("oak_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> SPRUCE_SINGLE_BED = register("spruce_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> CRIMSON_SINGLE_BED = register("crimson_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final Supplier<Block> WARPED_SINGLE_BED = register("warped_single_bed", () -> new SingleBedBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> ACACIA_SPECIAL_BED = register("acacia_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> BIRCH_SPECIAL_BED = register("birch_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> DARK_OAK_SPECIAL_BED = register("dark_oak_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> JUNGLE_SPECIAL_BED = register("jungle_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> MANGROVE_SPECIAL_BED = register("mangrove_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> OAK_SPECIAL_BED = register("oak_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> SPRUCE_SPECIAL_BED = register("spruce_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> CRIMSON_SPECIAL_BED = register("crimson_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
+    public static final Supplier<Block> WARPED_SPECIAL_BED = register("warped_special_bed", () -> new SpecialBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
 
     public static final Supplier<Block> BLACK_CUSHION = register("black_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final Supplier<Block> BLUE_CUSHION = register("blue_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
@@ -89,6 +89,7 @@ public class ModBlocks {
     public static final Supplier<Block> YELLOW_CUSHION = register("yellow_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> STACKABLE_BOOK = register("stackable_book", () -> new StackableBookBlock(BlockBehaviour.Properties.copy(Blocks.SCAFFOLDING)));
 
     private static <T extends Block> Supplier<T> register(String id, Supplier<T> block) {
         return ModRegistryHelpers.register(Registry.BLOCK, id, block);

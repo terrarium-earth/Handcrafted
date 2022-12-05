@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.client;
 
-import earth.terrarium.handcrafted.client.block.chair.bed.BedModel;
-import earth.terrarium.handcrafted.client.block.chair.bed.BedRenderer;
+import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedModel;
+import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedRenderer;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.gardenbench.GardenBenchModel;
@@ -12,6 +12,8 @@ import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairModel
 import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookModel;
+import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookRenderer;
 import earth.terrarium.handcrafted.registry.ModBlockEntities;
 import earth.terrarium.handcrafted.registry.ModBlocks;
 import earth.terrarium.handcrafted.registry.ModItems;
@@ -78,15 +80,15 @@ public class HandcraftedClient {
         register.accept(ModItems.CRIMSON_TABLE_CHAIR.get(), new TableChairRenderer.ItemRenderer());
         register.accept(ModItems.WARPED_TABLE_CHAIR.get(), new TableChairRenderer.ItemRenderer());
 
-        register.accept(ModItems.ACACIA_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.BIRCH_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.DARK_OAK_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.JUNGLE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.MANGROVE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.OAK_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.SPRUCE_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.CRIMSON_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
-        register.accept(ModItems.WARPED_SINGLE_BED.get(), new BedRenderer.ItemRenderer());
+        register.accept(ModItems.ACACIA_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.BIRCH_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.DARK_OAK_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.JUNGLE_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.MANGROVE_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.OAK_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.SPRUCE_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.CRIMSON_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
+        register.accept(ModItems.WARPED_SPECIAL_BED.get(), new SpecialBedRenderer.ItemRenderer());
     }
 
     public static void registerBlockRenderers(BlockRendererRegistry registry) {
@@ -95,7 +97,8 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.WOODEN_GARDEN_BENCH, WoodenGardenBenchRenderer::new);
         registry.register(ModBlockEntities.TABLE_BENCH, TableBenchRenderer::new);
         registry.register(ModBlockEntities.TABLE_CHAIR, TableChairRenderer::new);
-        registry.register(ModBlockEntities.SINGLE_BED, BedRenderer::new);
+        registry.register(ModBlockEntities.SPECIAL_BED, SpecialBedRenderer::new);
+        registry.register(ModBlockEntities.STACKABLE_BOOK, StackableBookRenderer::new);
     }
 
     public static void registerEntityLayers(LayerDefinitionRegistry registry) {
@@ -104,7 +107,8 @@ public class HandcraftedClient {
         CouchModel.register(registry);
         TableBenchModel.register(registry);
         TableChairModel.register(registry);
-        BedModel.register(registry);
+        SpecialBedModel.register(registry);
+        StackableBookModel.register(registry);
     }
 
     public static void onRegisterModels(Consumer<ResourceLocation> register) {

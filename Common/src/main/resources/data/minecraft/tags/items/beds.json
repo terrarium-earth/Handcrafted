@@ -1,13 +1,13 @@
 {
   "values": [
-    "handcrafted:acacia_single_bed",
-    "handcrafted:birch_single_bed",
-    "handcrafted:dark_oak_single_bed",
-    "handcrafted:jungle_single_bed",
-    "handcrafted:mangrove_single_bed",
-    "handcrafted:oak_single_bed",
-    "handcrafted:spruce_single_bed",
-    "handcrafted:crimson_single_bed",
-    "handcrafted:warped_single_bed"
+    "handcrafted:acacia_special_bed",
+    "handcrafted:birch_special_bed",
+    "handcrafted:dark_oak_special_bed",
+    "handcrafted:jungle_special_bed",
+    "handcrafted:mangrove_special_bed",
+    "handcrafted:oak_special_bed",
+    "handcrafted:spruce_special_bed",
+    "handcrafted:crimson_special_bed",
+    "handcrafted:warped_special_bed"
   ]
 }

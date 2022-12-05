@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "handcrafted:block/stackable_book/brown_book"
+  }
+}

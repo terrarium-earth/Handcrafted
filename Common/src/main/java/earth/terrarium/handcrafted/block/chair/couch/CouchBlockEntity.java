@@ -10,6 +10,6 @@ import net.minecraft.world.level.block.state.BlockState;
 public class CouchBlockEntity extends CushionBenchBlockEntity {
     public CouchBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(ModBlockEntities.COUCH.get(), blockPos, blockState);
-        this.setCushion(new ResourceLocation(Handcrafted.MOD_ID + ":white_cushion"));
+        this.setCushion(new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
     }
 }

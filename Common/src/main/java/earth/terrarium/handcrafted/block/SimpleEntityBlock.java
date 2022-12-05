@@ -85,7 +85,7 @@ public abstract class SimpleEntityBlock extends BaseEntityBlock implements Simpl
                 ItemStack stack = player.getMainHandItem();
                 if (entity.getCushion().equals(defaultCushion) && stack.is(ModTags.CUSHIONS)) {
                     entity.setCushion(Registry.ITEM.getKey(stack.getItem()));
-                    stack.shrink(1);
+                    if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
                     if (!entity.getCushion().equals(defaultCushion)) {

@@ -1,0 +1,7 @@
+{
+	"parent": "handcrafted:block/crockery/cup/double",
+	"textures": {
+		"0": "handcrafted:block/crockery/wood_crockery",
+		"particle": "handcrafted:block/crockery/wood_crockery"
+	}
+}

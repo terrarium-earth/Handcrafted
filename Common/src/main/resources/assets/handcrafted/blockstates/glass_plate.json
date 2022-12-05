@@ -1,0 +1,106 @@
+{
+  "variants": {
+    "pieces=1": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_single"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_single",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_single",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_single",
+        "y": 270
+      }
+    ],
+    "pieces=2": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_double"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_double",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_double",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_double",
+        "y": 270
+      }
+    ],
+    "pieces=3": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_triple"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_triple",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_triple",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_triple",
+        "y": 270
+      }
+    ],
+    "pieces=4": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quadruple"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quadruple",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quadruple",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quadruple",
+        "y": 270
+      }
+    ],
+    "pieces=5": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quintuple"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quintuple",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quintuple",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_quintuple",
+        "y": 270
+      }
+    ],
+    "pieces=6": [
+      {
+        "model": "handcrafted:block/crockery/plate/glass_sextuple"
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_sextuple",
+        "y": 90
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_sextuple",
+        "y": 180
+      },
+      {
+        "model": "handcrafted:block/crockery/plate/glass_sextuple",
+        "y": 270
+      }
+    ]
+  }
+}

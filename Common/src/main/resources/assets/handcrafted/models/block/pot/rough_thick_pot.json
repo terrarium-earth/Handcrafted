@@ -1,0 +1,6 @@
+{
+	"parent": "handcrafted:block/pot/thick_pot",
+	"textures": {
+		"texture": "handcrafted:block/pot/rough_thick_pot"
+	}
+}

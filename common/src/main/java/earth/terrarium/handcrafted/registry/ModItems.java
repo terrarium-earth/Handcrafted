@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class ModItems {
     public static final CreativeModeTab ITEM_GROUP = ModRegistryHelpers.createTab(new ResourceLocation(Handcrafted.MOD_ID, "main"), () -> new ItemStack(ModItems.GARDEN_BENCH.get()));
 
@@ -102,6 +103,46 @@ public class ModItems {
 
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> GLASS_CUP = register("glass_cup", () -> new BlockItem(ModBlocks.GLASS_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GLASS_PLATE = register("glass_plate", () -> new BlockItem(ModBlocks.GLASS_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GLASS_BOWL = register("glass_bowl", () -> new BlockItem(ModBlocks.GLASS_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> YELLOW_CUP = register("yellow_cup", () -> new BlockItem(ModBlocks.YELLOW_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> YELLOW_PLATE = register("yellow_plate", () -> new BlockItem(ModBlocks.YELLOW_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> YELLOW_BOWL = register("yellow_bowl", () -> new BlockItem(ModBlocks.YELLOW_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> BLUE_CUP = register("blue_cup", () -> new BlockItem(ModBlocks.BLUE_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_PLATE = register("blue_plate", () -> new BlockItem(ModBlocks.BLUE_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_BOWL = register("blue_bowl", () -> new BlockItem(ModBlocks.BLUE_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> WOOD_CUP = register("wood_cup", () -> new BlockItem(ModBlocks.WOOD_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WOOD_PLATE = register("wood_plate", () -> new BlockItem(ModBlocks.WOOD_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WOOD_BOWL = register("wood_bowl", () -> new BlockItem(ModBlocks.WOOD_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> CLAY_CUP = register("clay_cup", () -> new BlockItem(ModBlocks.CLAY_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CLAY_PLATE = register("clay_plate", () -> new BlockItem(ModBlocks.CLAY_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CLAY_BOWL = register("clay_bowl", () -> new BlockItem(ModBlocks.CLAY_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> ROUGH_THIN_POT = register("rough_thin_pot", () -> new BlockItem(ModBlocks.ROUGH_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ROUGH_MEDIUM_POT = register("rough_medium_pot", () -> new BlockItem(ModBlocks.ROUGH_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ROUGH_WIDE_POT = register("rough_wide_pot", () -> new BlockItem(ModBlocks.ROUGH_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ROUGH_THICK_POT = register("rough_thick_pot", () -> new BlockItem(ModBlocks.ROUGH_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> WHITE_GLAZED_THIN_POT = register("white_glazed_thin_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_GLAZED_MEDIUM_POT = register("white_glazed_medium_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_GLAZED_WIDE_POT = register("white_glazed_wide_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_GLAZED_THICK_POT = register("white_glazed_thick_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> GOLD_THIN_POT = register("blue_glazed_thin_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_GLAZED_MEDIUM_POT = register("blue_glazed_medium_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_GLAZED_WIDE_POT = register("blue_glazed_wide_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_GLAZED_THICK_POT = register("blue_glazed_thick_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> GOLDEN_THIN_POT = register("golden_thin_pot", () -> new BlockItem(ModBlocks.GOLDEN_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GOLDEN_MEDIUM_POT = register("golden_medium_pot", () -> new BlockItem(ModBlocks.GOLDEN_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GOLDEN_WIDE_POT = register("golden_wide_pot", () -> new BlockItem(ModBlocks.GOLDEN_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GOLDEN_THICK_POT = register("golden_thick_pot", () -> new BlockItem(ModBlocks.GOLDEN_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     private static <T extends Item> Supplier<T> register(String id, Supplier<T> item) {
         return ModRegistryHelpers.register(Registry.ITEM, id, item);

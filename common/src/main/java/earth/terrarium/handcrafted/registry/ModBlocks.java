@@ -1,6 +1,7 @@
 package earth.terrarium.handcrafted.registry;
 
 import earth.terrarium.handcrafted.block.CushionBlock;
+import earth.terrarium.handcrafted.block.crockery.CrockeryBlock;
 import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.block.stackablejar.StackableJarBlock;
 import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlock;
@@ -89,7 +90,48 @@ public class ModBlocks {
     public static final Supplier<Block> YELLOW_CUSHION = register("yellow_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final Supplier<Block> STACKABLE_BOOK = register("stackable_book", () -> new StackableBookBlock(BlockBehaviour.Properties.copy(Blocks.SCAFFOLDING)));
+    public static final Supplier<Block> STACKABLE_BOOK = register("stackable_book", () -> new StackableBookBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final Supplier<Block> GLASS_CUP = register("glass_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> GLASS_PLATE = register("glass_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> GLASS_BOWL = register("glass_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+
+    public static final Supplier<Block> YELLOW_CUP = register("yellow_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> YELLOW_PLATE = register("yellow_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> YELLOW_BOWL = register("yellow_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+
+    public static final Supplier<Block> BLUE_CUP = register("blue_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> BLUE_PLATE = register("blue_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> BLUE_BOWL = register("blue_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+//
+    public static final Supplier<Block> WOOD_CUP = register("wood_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> WOOD_PLATE = register("wood_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> WOOD_BOWL = register("wood_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+//
+    public static final Supplier<Block> CLAY_CUP = register("clay_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> CLAY_PLATE = register("clay_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> CLAY_BOWL = register("clay_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+
+    public static final Supplier<Block> ROUGH_THIN_POT = register("rough_thin_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> ROUGH_MEDIUM_POT = register("rough_medium_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> ROUGH_WIDE_POT = register("rough_wide_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> ROUGH_THICK_POT = register("rough_thick_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+
+    public static final Supplier<Block> WHITE_GLAZED_THIN_POT = register("white_glazed_thin_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> WHITE_GLAZED_MEDIUM_POT = register("white_glazed_medium_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> WHITE_GLAZED_WIDE_POT = register("white_glazed_wide_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> WHITE_GLAZED_THICK_POT = register("white_glazed_thick_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_GLAZED_TERRACOTTA).noOcclusion()));
+
+    public static final Supplier<Block> BLUE_GLAZED_THIN_POT = register("blue_glazed_thin_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> BLUE_GLAZED_MEDIUM_POT = register("blue_glazed_medium_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> BLUE_GLAZED_WIDE_POT = register("blue_glazed_wide_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_GLAZED_TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> BLUE_GLAZED_THICK_POT = register("blue_glazed_thick_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.BLUE_GLAZED_TERRACOTTA).noOcclusion()));
+
+    public static final Supplier<Block> GOLDEN_THIN_POT = register("golden_thin_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
+    public static final Supplier<Block> GOLDEN_MEDIUM_POT = register("golden_medium_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
+    public static final Supplier<Block> GOLDEN_WIDE_POT = register("golden_wide_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
+    public static final Supplier<Block> GOLDEN_THICK_POT = register("golden_thick_pot", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
+
 
     private static <T extends Block> Supplier<T> register(String id, Supplier<T> block) {
         return ModRegistryHelpers.register(Registry.BLOCK, id, block);

@@ -43,11 +43,11 @@ public class SpecialBedBlock extends BedBlock {
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         ItemStack stack = player.getMainHandItem();
-        if (stack.is(ModTags.CUSHIONS)) {
+        if (stack.is(ModTags.CUSHIONS) || stack.is(ModTags.SHEETS) || player.isCrouching()) {
             if (state.getValue(BedBlock.PART) == BedPart.HEAD) {
-                return SpecialBedBlock.sheetUse(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"));
+                return SimpleEntityBlock.cushionUse(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
             }
-            return SimpleEntityBlock.cushionUse(level, pos, player, new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
+            return SpecialBedBlock.sheetUse(level, pos, player, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"));
         } else {
             return super.use(state, level, pos, player, hand, hit);
         }
@@ -86,7 +86,7 @@ public class SpecialBedBlock extends BedBlock {
                 ItemStack stack = player.getMainHandItem();
                 if (entity.getSheet().equals(defaultSheet) && stack.is(ModTags.SHEETS)) {
                     entity.setSheet(Registry.ITEM.getKey(stack.getItem()));
-                    stack.shrink(1);
+                    if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
                     if (!entity.getSheet().equals(defaultSheet)) {

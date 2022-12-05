@@ -116,6 +116,8 @@ public class HandcraftedClient {
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {
         register.accept(RenderType.cutout(), List.of(ModBlocks.BERRY_JAM_JAR.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_CUP.get(), ModBlocks.YELLOW_CUP.get(), ModBlocks.BLUE_CUP.get(), ModBlocks.WOOD_CUP.get(), ModBlocks.CLAY_CUP.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_BOWL.get(), ModBlocks.YELLOW_BOWL.get(), ModBlocks.BLUE_BOWL.get(), ModBlocks.WOOD_BOWL.get(), ModBlocks.CLAY_BOWL.get()));
     }
 
     public static abstract class BlockRendererRegistry {

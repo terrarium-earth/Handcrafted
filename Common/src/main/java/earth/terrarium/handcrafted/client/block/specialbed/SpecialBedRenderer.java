@@ -41,20 +41,19 @@ public class SpecialBedRenderer implements BlockEntityRenderer<SpecialBedBlockEn
             case RIGHT -> new SpecialBedModel(modelSet.bakeLayer(SpecialBedModel.LAYER_LOCATION_DOUBLE_RIGHT));
         };
 
-        model.getMain().getChild("sheets").getChild("with_player").visible = entity.getBlockState().getValue(BedBlock.OCCUPIED);
-        render(doubleBed, entity.getCushion(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
+        boolean visible = entity.getBlockState().getValue(BedBlock.OCCUPIED);
+        model.getMain().getChild("sheets").getChild("with_player").visible = visible;
+        model.getMain().getChild("sheets").getChild("without_player").visible = !visible;
+        render(doubleBed, entity.getSheet(), entity.getCushion(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
-    private static void render(DirectionalBlockSide doubleBed, ResourceLocation cushion, ResourceLocation texture, SpecialBedModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+    private static void render(DirectionalBlockSide doubleBed, ResourceLocation sheet, ResourceLocation cushion, ResourceLocation texture, SpecialBedModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         poseStack.pushPose();
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
         if (doubleBed == DirectionalBlockSide.SINGLE) {
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/single/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-            if (!cushion.toString().equals("minecraft:air")) {
-                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/single/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-            }
         } else {
             String append = "_left";
             if (doubleBed == DirectionalBlockSide.LEFT) {
@@ -63,9 +62,13 @@ public class SpecialBedRenderer implements BlockEntityRenderer<SpecialBedBlockEn
                 append = "_right";
             }
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/" + texture.getPath() + append + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-            if (!cushion.toString().equals("minecraft:air")) {
-                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-            }
+        }
+        if (!sheet.toString().equals("minecraft:air")) {
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/sheet/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        }
+        if (!cushion.toString().equals("minecraft:air")) {
+            model.getMain().getChild("sheets").visible = false;
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         }
         poseStack.popPose();
     }
@@ -77,7 +80,7 @@ public class SpecialBedRenderer implements BlockEntityRenderer<SpecialBedBlockEn
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new SpecialBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(SpecialBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new SpecialBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(SpecialBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
         }
     }
 }

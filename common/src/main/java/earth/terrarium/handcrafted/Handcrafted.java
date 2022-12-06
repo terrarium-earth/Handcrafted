@@ -2,6 +2,8 @@ package earth.terrarium.handcrafted;
 
 import earth.terrarium.handcrafted.registry.ModBlockEntities;
 import earth.terrarium.handcrafted.registry.ModBlocks;
+import earth.terrarium.handcrafted.registry.ModEntityTypes;
+import earth.terrarium.handcrafted.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.registry.ModItems;
 
 public class Handcrafted
@@ -12,5 +14,6 @@ public class Handcrafted
 		ModBlocks.init();
 		ModBlockEntities.init();
 		ModItems.init();
+		ModEntityTypes.init();
 	}
 }

@@ -3,8 +3,8 @@ package earth.terrarium.handcrafted.client.block.chair.tablechair;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.block.property.CouchShape;
 import earth.terrarium.handcrafted.block.chair.tablechair.TableChairBlockEntity;
+import earth.terrarium.handcrafted.block.property.CouchShape;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -24,7 +24,7 @@ public class TableChairRenderer implements BlockEntityRenderer<TableChairBlockEn
     @Override
     public void render(TableChairBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         CouchShape shape = entity.getBlockState().getValue(ExpandableCouchBlock.COUCH_SHAPE);
-        render(entity.getCushion(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getCushion().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation cushion, ResourceLocation texture, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

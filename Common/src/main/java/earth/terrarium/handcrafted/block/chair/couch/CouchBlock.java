@@ -1,10 +1,9 @@
 package earth.terrarium.handcrafted.block.chair.couch;
 
-import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.block.SimpleEntityBlock;
+import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
+import earth.terrarium.handcrafted.registry.ModItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -12,7 +11,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("deprecation")
 public class CouchBlock extends ExpandableCouchBlock {
 
     public CouchBlock(Properties properties) {
@@ -25,7 +26,7 @@ public class CouchBlock extends ExpandableCouchBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return SimpleEntityBlock.cushionUse(level, pos, player, new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
+    public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        return SimpleEntityBlock.cushionUse(level, pos, player, ModItems.WHITE_CUSHION.get().getDefaultInstance());
     }
 }

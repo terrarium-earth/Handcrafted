@@ -1,13 +1,11 @@
 package earth.terrarium.handcrafted.block.specialbed;
 
-import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.block.SimpleEntityBlock;
 import earth.terrarium.handcrafted.block.property.DirectionalBlockSide;
+import earth.terrarium.handcrafted.registry.ModItems;
 import earth.terrarium.handcrafted.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -45,9 +43,9 @@ public class SpecialBedBlock extends BedBlock {
         ItemStack stack = player.getMainHandItem();
         if (stack.is(ModTags.CUSHIONS) || stack.is(ModTags.SHEETS) || player.isCrouching()) {
             if (state.getValue(BedBlock.PART) == BedPart.HEAD) {
-                return SimpleEntityBlock.cushionUse(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
+                return SimpleEntityBlock.cushionUse(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, ModItems.WHITE_CUSHION.get().getDefaultInstance());
             }
-            return SpecialBedBlock.sheetUse(level, pos, player, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"));
+            return SpecialBedBlock.sheetUse(level, pos, player, ModItems.WHITE_SHEET.get().getDefaultInstance());
         } else {
             return super.use(state, level, pos, player, hand, hit);
         }
@@ -80,17 +78,19 @@ public class SpecialBedBlock extends BedBlock {
         return part == BedPart.FOOT ? direction : direction.getOpposite();
     }
 
-    public static InteractionResult sheetUse(Level level, BlockPos pos, Player player, ResourceLocation defaultSheet) {
+    public static InteractionResult sheetUse(Level level, BlockPos pos, Player player, ItemStack defaultSheet) {
         if (!level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof SpecialBedBlockEntity entity) {
                 ItemStack stack = player.getMainHandItem();
-                if (entity.getSheet().equals(defaultSheet) && stack.is(ModTags.SHEETS)) {
-                    entity.setSheet(Registry.ITEM.getKey(stack.getItem()));
+                if (ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet) && stack.is(ModTags.SHEETS)) {
+                    ItemStack copy = stack.copy();
+                    copy.setCount(1);
+                    entity.setSheet(copy);
                     if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
-                    if (!entity.getSheet().equals(defaultSheet)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, Registry.ITEM.get(entity.getSheet()).getDefaultInstance());
+                    if (!ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getSheet());
                         entity.setSheet(defaultSheet);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);

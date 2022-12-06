@@ -5,8 +5,6 @@ import earth.terrarium.handcrafted.registry.ModTags;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -79,17 +77,19 @@ public abstract class SimpleEntityBlock extends BaseEntityBlock implements Simpl
         return this.defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, fluidState.getType().equals(Fluids.WATER));
     }
 
-    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player, ResourceLocation defaultCushion) {
+    public static InteractionResult cushionUse(Level level, BlockPos pos, Player player, ItemStack defaultCushion) {
         if (!level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof CushionBenchBlockEntity entity) {
                 ItemStack stack = player.getMainHandItem();
-                if (entity.getCushion().equals(defaultCushion) && stack.is(ModTags.CUSHIONS)) {
-                    entity.setCushion(Registry.ITEM.getKey(stack.getItem()));
+                if (ItemStack.isSameIgnoreDurability(entity.getCushion(), defaultCushion) && stack.is(ModTags.CUSHIONS)) {
+                    ItemStack copy = stack.copy();
+                    copy.setCount(1);
+                    entity.setCushion(copy);
                     if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.getMainHandItem().isEmpty() && player.isCrouching()) {
-                    if (!entity.getCushion().equals(defaultCushion)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, Registry.ITEM.get(entity.getCushion()).getDefaultInstance());
+                    if (!ItemStack.isSameIgnoreDurability(entity.getCushion(), defaultCushion)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getCushion());
                         entity.setCushion(defaultCushion);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);

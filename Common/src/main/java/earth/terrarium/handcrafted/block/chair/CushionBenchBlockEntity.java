@@ -5,7 +5,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -14,28 +14,27 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class CushionBenchBlockEntity extends BlockEntity {
-    private ResourceLocation cushion = new ResourceLocation("air");
+    private ItemStack cushion = ItemStack.EMPTY;
 
     public CushionBenchBlockEntity(BlockEntityType<?> blockEntityType, BlockPos blockPos, BlockState blockState) {
         super(blockEntityType, blockPos, blockState);
     }
 
-
     @Override
     protected void saveAdditional(CompoundTag tag) {
-        tag.putString("Cushion", cushion.toString());
+        tag.put("Cushion", this.getCushion().save(new CompoundTag()));
     }
 
     @Override
     public void load(CompoundTag tag) {
-        this.cushion = new ResourceLocation(tag.getString("Cushion"));
+        this.setCushion(ItemStack.of(tag.getCompound("Cushion")));
     }
 
-    public ResourceLocation getCushion() {
+    public ItemStack getCushion() {
         return this.cushion;
     }
 
-    public void setCushion(ResourceLocation cushion) {
+    public void setCushion(ItemStack cushion) {
         this.cushion = cushion;
         this.update();
     }

@@ -1,15 +1,15 @@
 package earth.terrarium.handcrafted.registry;
 
 import earth.terrarium.handcrafted.block.CushionBlock;
-import earth.terrarium.handcrafted.block.crockery.CrockeryBlock;
-import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlock;
-import earth.terrarium.handcrafted.block.stackablejar.StackableJarBlock;
-import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlock;
 import earth.terrarium.handcrafted.block.chair.couch.CouchBlock;
 import earth.terrarium.handcrafted.block.chair.gardenbench.GardenBenchBlock;
 import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlock;
 import earth.terrarium.handcrafted.block.chair.tablechair.TableChairBlock;
 import earth.terrarium.handcrafted.block.chair.woodengardenbench.WoodenGardenBenchBlock;
+import earth.terrarium.handcrafted.block.crockery.CrockeryBlock;
+import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlock;
+import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlock;
+import earth.terrarium.handcrafted.block.stackablejar.StackableJarBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;

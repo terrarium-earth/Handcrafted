@@ -3,8 +3,8 @@ package earth.terrarium.handcrafted.client.block.chair.woodengardenbench;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.block.property.CouchShape;
 import earth.terrarium.handcrafted.block.chair.woodengardenbench.WoodenGardenBenchBlockEntity;
+import earth.terrarium.handcrafted.block.property.CouchShape;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -36,7 +36,7 @@ public class WoodenGardenBenchRenderer implements BlockEntityRenderer<WoodenGard
             case OUTER_LEFT, OUTER_RIGHT ->
                     new WoodenGardenBenchModel(modelSet.bakeLayer(WoodenGardenBenchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
-        render(entity.getCushion(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getCushion().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation cushion, ResourceLocation texture, WoodenGardenBenchModel model, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

@@ -1,7 +1,5 @@
 package earth.terrarium.handcrafted.client;
 
-import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedModel;
-import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedRenderer;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.gardenbench.GardenBenchModel;
@@ -12,6 +10,8 @@ import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairModel
 import earth.terrarium.handcrafted.client.block.chair.tablechair.TableChairRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodengardenbench.WoodenGardenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedModel;
+import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedRenderer;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookModel;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookRenderer;
 import earth.terrarium.handcrafted.registry.ModBlockEntities;

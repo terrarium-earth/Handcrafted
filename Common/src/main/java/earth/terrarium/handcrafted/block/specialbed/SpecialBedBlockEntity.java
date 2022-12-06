@@ -1,38 +1,38 @@
 package earth.terrarium.handcrafted.block.specialbed;
 
-import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.block.chair.CushionBenchBlockEntity;
 import earth.terrarium.handcrafted.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class SpecialBedBlockEntity extends CushionBenchBlockEntity {
-    private ResourceLocation sheet = new ResourceLocation(Handcrafted.MOD_ID, "white_sheet");
+    private ItemStack sheet = ModItems.WHITE_SHEET.get().getDefaultInstance();
 
     public SpecialBedBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(ModBlockEntities.SPECIAL_BED.get(), blockPos, blockState);
-        this.setCushion(new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"));
+        this.setCushion(ModItems.WHITE_CUSHION.get().getDefaultInstance());
     }
 
     @Override
     protected void saveAdditional(CompoundTag tag) {
         super.saveAdditional(tag);
-        tag.putString("Sheet", sheet.toString());
+        tag.put("Sheet", this.getSheet().save(new CompoundTag()));
     }
 
     @Override
     public void load(CompoundTag tag) {
         super.load(tag);
-        this.sheet = new ResourceLocation(tag.getString("Sheet"));
+        this.setSheet(ItemStack.of(tag.getCompound("Sheet")));
     }
 
-    public ResourceLocation getSheet() {
+    public ItemStack getSheet() {
         return this.sheet;
     }
 
-    public void setSheet(ResourceLocation sheet) {
+    public void setSheet(ItemStack sheet) {
         this.sheet = sheet;
         this.update();
     }

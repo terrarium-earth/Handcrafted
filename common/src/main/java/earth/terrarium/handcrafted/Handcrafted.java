@@ -1,19 +1,16 @@
 package earth.terrarium.handcrafted;
 
-import earth.terrarium.handcrafted.registry.ModBlockEntities;
-import earth.terrarium.handcrafted.registry.ModBlocks;
-import earth.terrarium.handcrafted.registry.ModEntityTypes;
-import earth.terrarium.handcrafted.registry.ModEntityTypes;
-import earth.terrarium.handcrafted.registry.ModItems;
+import earth.terrarium.handcrafted.registry.*;
 
 public class Handcrafted
 {
 	public static final String MOD_ID = "handcrafted";
 
 	public static void init() {
+		ModEntityTypes.init();
 		ModBlocks.init();
 		ModBlockEntities.init();
 		ModItems.init();
-		ModEntityTypes.init();
+		ModPaintings.init();
 	}
 }

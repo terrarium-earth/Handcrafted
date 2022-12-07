@@ -5,6 +5,8 @@ import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.block.chair.woodengardenbench.WoodenGardenBenchBlockEntity;
 import earth.terrarium.handcrafted.block.property.CouchShape;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -18,6 +20,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
+@Environment(EnvType.CLIENT)
 public class WoodenGardenBenchRenderer implements BlockEntityRenderer<WoodenGardenBenchBlockEntity> {
     public WoodenGardenBenchRenderer(BlockEntityRendererProvider.Context ctx) {
     }

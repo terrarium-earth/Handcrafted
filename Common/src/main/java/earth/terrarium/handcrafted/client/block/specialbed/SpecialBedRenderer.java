@@ -8,6 +8,8 @@ import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlock;
 import earth.terrarium.handcrafted.block.property.DirectionalBlockSide;
 import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlock;
 import earth.terrarium.handcrafted.block.specialbed.SpecialBedBlockEntity;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -23,6 +25,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.state.properties.BedPart;
 
+@Environment(EnvType.CLIENT)
 public class SpecialBedRenderer implements BlockEntityRenderer<SpecialBedBlockEntity> {
     public SpecialBedRenderer(BlockEntityRendererProvider.Context ctx) {
     }

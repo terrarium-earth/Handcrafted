@@ -6,6 +6,8 @@ import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.block.chair.couch.CouchBlockEntity;
 import earth.terrarium.handcrafted.block.property.CouchShape;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -19,6 +21,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
+@Environment(EnvType.CLIENT)
 public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
     public CouchRenderer(BlockEntityRendererProvider.Context ctx) {
     }

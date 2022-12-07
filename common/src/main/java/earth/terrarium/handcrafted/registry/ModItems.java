@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.registry;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.item.CushionBlockItem;
+import earth.terrarium.handcrafted.item.FancyPaintingItem;
 import earth.terrarium.handcrafted.item.ModRenderedBlockItem;
 import earth.terrarium.handcrafted.item.SheetItem;
 import net.minecraft.core.Registry;
@@ -105,6 +106,7 @@ public class ModItems {
 
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> FANCY_PAINTING = register("fancy_painting", () -> new FancyPaintingItem(ModEntityTypes.FANCY_PAINTING.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> GLASS_CUP = register("glass_cup", () -> new BlockItem(ModBlocks.GLASS_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> GLASS_PLATE = register("glass_plate", () -> new BlockItem(ModBlocks.GLASS_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));

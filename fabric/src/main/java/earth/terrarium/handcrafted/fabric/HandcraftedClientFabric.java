@@ -7,11 +7,15 @@ import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -31,6 +35,12 @@ public class HandcraftedClientFabric implements ClientModInitializer {
             @Override
             public void register(ModelLayerLocation location, Supplier<LayerDefinition> definition) {
                 EntityModelLayerRegistry.registerModelLayer(location, definition::get);
+            }
+        });
+        HandcraftedClient.registerEntityRenderers(new HandcraftedClient.EntityRendererRegistry() {
+            @Override
+            protected <T extends Entity> void register(Supplier<? extends EntityType<? extends T>> type, EntityRendererProvider<T> factory) {
+                EntityRendererRegistry.register(type.get(), factory);
             }
         });
         HandcraftedClient.registerBlockRenderers(new HandcraftedClient.BlockRendererRegistry() {

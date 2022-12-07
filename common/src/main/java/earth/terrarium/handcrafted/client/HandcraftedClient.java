@@ -14,15 +14,21 @@ import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedModel;
 import earth.terrarium.handcrafted.client.block.specialbed.SpecialBedRenderer;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookModel;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookRenderer;
+import earth.terrarium.handcrafted.client.entity.fancypainting.FancyPaintingModel;
+import earth.terrarium.handcrafted.client.entity.fancypainting.FancyPaintingRenderer;
 import earth.terrarium.handcrafted.registry.ModBlockEntities;
 import earth.terrarium.handcrafted.registry.ModBlocks;
+import earth.terrarium.handcrafted.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.registry.ModItems;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -109,6 +115,12 @@ public class HandcraftedClient {
         TableChairModel.register(registry);
         SpecialBedModel.register(registry);
         StackableBookModel.register(registry);
+
+        FancyPaintingModel.register(registry);
+    }
+
+    public static void registerEntityRenderers(EntityRendererRegistry registry) {
+        registry.register(ModEntityTypes.FANCY_PAINTING, FancyPaintingRenderer::new);
     }
 
     public static void onRegisterModels(Consumer<ResourceLocation> register) {
@@ -122,6 +134,10 @@ public class HandcraftedClient {
 
     public static abstract class BlockRendererRegistry {
         public abstract <T extends BlockEntity> void register(Supplier<? extends BlockEntityType<? extends T>> type, BlockEntityRendererProvider<T> factory);
+    }
+
+    public static abstract class EntityRendererRegistry {
+        protected abstract <T extends Entity> void register(Supplier<? extends EntityType<? extends T>> type, EntityRendererProvider<T> factory);
     }
 
     public static abstract class LayerDefinitionRegistry {

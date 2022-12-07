@@ -8,6 +8,7 @@ architectury {
 
 loom {
     forge {
+        mixinConfig "handcrafted-common.mixins.json"
         mixinConfig "handcrafted.mixins.json"
     }
 }

@@ -30,6 +30,7 @@
     ]
   },
   "mixins": [
+    "handcrafted.mixins.json",
     "handcrafted-common.mixins.json"
   ],
   "depends": {

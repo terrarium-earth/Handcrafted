@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "handcrafted:block/trophy/wall/phantom_trophy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "handcrafted:block/trophy/wall/phantom_trophy",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "handcrafted:block/trophy/wall/phantom_trophy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "handcrafted:block/trophy/wall/phantom_trophy",
+      "y": 270
+    }
+  }
+}

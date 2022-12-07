@@ -130,6 +130,7 @@ public class HandcraftedClient {
         register.accept(RenderType.cutout(), List.of(ModBlocks.BERRY_JAM_JAR.get()));
         register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_CUP.get(), ModBlocks.YELLOW_CUP.get(), ModBlocks.BLUE_CUP.get(), ModBlocks.WOOD_CUP.get(), ModBlocks.CLAY_CUP.get()));
         register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_BOWL.get(), ModBlocks.YELLOW_BOWL.get(), ModBlocks.BLUE_BOWL.get(), ModBlocks.WOOD_BOWL.get(), ModBlocks.CLAY_BOWL.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.BEAR_TROPHY.get(), ModBlocks.BLAZE_TROPHY.get(), ModBlocks.FOX_TROPHY.get(), ModBlocks.GOAT_TROPHY.get(), ModBlocks.PUFFERFISH_TROPHY.get(), ModBlocks.SALMON_TROPHY.get(), ModBlocks.SILVERFISH_TROPHY.get(), ModBlocks.SKELETON_HORSE_TROPHY.get(), ModBlocks.SPIDER_TROPHY.get(), ModBlocks.TROPICAL_FISH_TROPHY.get(), ModBlocks.WITHER_SKELETON_TROPHY.get(), ModBlocks.WOLF_TROPHY.get(), ModBlocks.PHANTOM_TROPHY.get()));
     }
 
     public static abstract class BlockRendererRegistry {

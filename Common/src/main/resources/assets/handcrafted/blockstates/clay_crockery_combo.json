@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "handcrafted:block/crockery/combo/clay_crockery_combo"
+    },
+    "facing=north": {
+      "model": "handcrafted:block/crockery/combo/clay_crockery_combo",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "handcrafted:block/crockery/combo/clay_crockery_combo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "handcrafted:block/crockery/combo/clay_crockery_combo",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    "handcrafted:rough_thin_pot",
+    "handcrafted:rough_medium_pot",
+    "handcrafted:rough_wide_pot",
+    "handcrafted:rough_thick_pot",
+    "handcrafted:white_glazed_thin_pot",
+    "handcrafted:white_glazed_medium_pot",
+    "handcrafted:white_glazed_wide_pot",
+    "handcrafted:white_glazed_thick_pot",
+    "handcrafted:blue_glazed_thin_pot",
+    "handcrafted:blue_glazed_medium_pot",
+    "handcrafted:blue_glazed_wide_pot",
+    "handcrafted:blue_glazed_thick_pot",
+    "handcrafted:golden_thin_pot",
+    "handcrafted:golden_medium_pot",
+    "handcrafted:golden_wide_pot",
+    "handcrafted:golden_thick_pot"
+  ]
+}

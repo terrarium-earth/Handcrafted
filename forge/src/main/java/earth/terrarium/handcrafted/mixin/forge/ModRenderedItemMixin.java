@@ -1,8 +1,8 @@
 package earth.terrarium.handcrafted.mixin.forge;
 
 import earth.terrarium.handcrafted.forge.HandcraftedClientForge;
-import earth.terrarium.handcrafted.item.ModRenderedBlockItem;
-import earth.terrarium.handcrafted.item.ModRenderedItem;
+import earth.terrarium.handcrafted.common.item.ModRenderedBlockItem;
+import earth.terrarium.handcrafted.common.item.ModRenderedItem;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;

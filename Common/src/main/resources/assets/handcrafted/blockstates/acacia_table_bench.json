@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "handcrafted:block/table_bench"
+      "model": "handcrafted:block/wood/acacia"
     }
   }
 }

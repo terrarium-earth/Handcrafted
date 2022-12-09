@@ -2,8 +2,8 @@ package earth.terrarium.handcrafted.client.block.chair.tablebench;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
-import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlock;
-import earth.terrarium.handcrafted.block.chair.tablebench.TableBenchBlockEntity;
+import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlock;
+import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

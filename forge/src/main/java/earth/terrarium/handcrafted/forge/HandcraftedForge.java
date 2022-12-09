@@ -2,7 +2,7 @@ package earth.terrarium.handcrafted.forge;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.client.HandcraftedClient;
-import earth.terrarium.handcrafted.registry.forge.ModRegistryHelpersImpl;
+import earth.terrarium.handcrafted.common.registry.forge.ModRegistryHelpersImpl;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;

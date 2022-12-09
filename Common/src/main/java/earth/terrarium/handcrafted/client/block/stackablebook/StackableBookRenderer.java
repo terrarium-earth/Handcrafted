@@ -2,9 +2,9 @@ package earth.terrarium.handcrafted.client.block.stackablebook;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
-import earth.terrarium.handcrafted.block.chair.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlock;
-import earth.terrarium.handcrafted.block.stackablebook.StackableBookBlockEntity;
+import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
+import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
+import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

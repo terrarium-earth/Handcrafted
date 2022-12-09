@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "#handcrafted:benches",
+    "#handcrafted:chairs",
+    "#handcrafted:couches",
+    "#handcrafted:crockery",
+    "#handcrafted:desks",
+    "#handcrafted:nightstands",
+    "#handcrafted:pots",
+    "#handcrafted:side_tables",
+    "#handcrafted:fancy_beds",
+    "#handcrafted:statues",
+    "#handcrafted:table_benches",
+    "#handcrafted:tables",
+    "#handcrafted:trophies",
+    "#handcrafted:wooden_benches"
+  ]
+}

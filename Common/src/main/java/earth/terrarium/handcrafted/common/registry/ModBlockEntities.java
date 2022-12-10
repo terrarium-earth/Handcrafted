@@ -5,6 +5,7 @@ import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlockEntity;
+import earth.terrarium.handcrafted.common.block.counter.ShelfBlockEntity;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlockEntity;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlockEntity;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
@@ -31,7 +32,8 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<NightstandBlockEntity>> NIGHTSTAND = register("nightstand", () -> ModRegistryHelpers.createBlockEntityType(NightstandBlockEntity::new, ModBlocks.ACACIA_NIGHTSTAND.get(), ModBlocks.BIRCH_NIGHTSTAND.get(), ModBlocks.DARK_OAK_NIGHTSTAND.get(), ModBlocks.JUNGLE_NIGHTSTAND.get(), ModBlocks.MANGROVE_NIGHTSTAND.get(), ModBlocks.OAK_NIGHTSTAND.get(), ModBlocks.SPRUCE_NIGHTSTAND.get(), ModBlocks.CRIMSON_NIGHTSTAND.get(), ModBlocks.WARPED_NIGHTSTAND.get()));
     public static final Supplier<BlockEntityType<DeskBlockEntity>> DESK = register("desk", () -> ModRegistryHelpers.createBlockEntityType(DeskBlockEntity::new, ModBlocks.ACACIA_DESK.get(), ModBlocks.BIRCH_DESK.get(), ModBlocks.DARK_OAK_DESK.get(), ModBlocks.JUNGLE_DESK.get(), ModBlocks.MANGROVE_DESK.get(), ModBlocks.OAK_DESK.get(), ModBlocks.SPRUCE_DESK.get(), ModBlocks.CRIMSON_DESK.get(), ModBlocks.WARPED_DESK.get()));
     public static final Supplier<BlockEntityType<SideTableBlockEntity>> SIDE_TABLE = register("side_table", () -> ModRegistryHelpers.createBlockEntityType(SideTableBlockEntity::new, ModBlocks.ACACIA_SIDE_TABLE.get(), ModBlocks.BIRCH_SIDE_TABLE.get(), ModBlocks.DARK_OAK_SIDE_TABLE.get(), ModBlocks.JUNGLE_SIDE_TABLE.get(), ModBlocks.MANGROVE_SIDE_TABLE.get(), ModBlocks.OAK_SIDE_TABLE.get(), ModBlocks.SPRUCE_SIDE_TABLE.get(), ModBlocks.CRIMSON_SIDE_TABLE.get(), ModBlocks.WARPED_SIDE_TABLE.get()));
-    public static final Supplier<BlockEntityType<CrockeryBlockEntity>> CROCKERY = register("crockery", () -> ModRegistryHelpers.createBlockEntityType(CrockeryBlockEntity::new, ModBlocks.GLASS_CROCKERY_COMBO.get(), ModBlocks.YELLOW_CROCKERY_COMBO.get(), ModBlocks.BLUE_CROCKERY_COMBO.get(), ModBlocks.WOOD_CROCKERY_COMBO.get(), ModBlocks.CLAY_CROCKERY_COMBO.get()));
+    public static final Supplier<BlockEntityType<ShelfBlockEntity>> SHELF = register("shelf", () -> ModRegistryHelpers.createBlockEntityType(ShelfBlockEntity::new, ModBlocks.OAK_SHELF_1.get()));
+    public static final Supplier<BlockEntityType<CrockeryBlockEntity>> CROCKERY = register("crockery", () -> ModRegistryHelpers.createBlockEntityType(CrockeryBlockEntity::new, ModBlocks.WHITE_CROCKERY_COMBO.get(), ModBlocks.YELLOW_CROCKERY_COMBO.get(), ModBlocks.BLUE_CROCKERY_COMBO.get(), ModBlocks.WOOD_CROCKERY_COMBO.get(), ModBlocks.CLAY_CROCKERY_COMBO.get()));
     public static final Supplier<BlockEntityType<StatueTrophyBlockEntity>> STATUE = register("statue", () -> ModRegistryHelpers.createBlockEntityType(StatueTrophyBlockEntity::new, ModBlocks.WITCH_TROPHY.get()));
 
     private static <T extends BlockEntityType<B>, B extends BlockEntity> Supplier<T> register(String id, Supplier<T> object) {

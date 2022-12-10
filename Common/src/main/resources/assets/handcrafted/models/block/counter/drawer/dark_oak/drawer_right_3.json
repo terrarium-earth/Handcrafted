@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/counter/drawer/dark_oak/drawer_bottom",
+    "east": "handcrafted:block/counter/drawer/dark_oak/drawer_side_left",
+    "north": "handcrafted:block/counter/drawer/dark_oak/front_3/drawer_right",
+    "particle": "handcrafted:block/counter/drawer/dark_oak/drawer_top",
+    "south": "handcrafted:block/counter/drawer/dark_oak/drawer_back",
+    "up": "handcrafted:block/counter/drawer/dark_oak/drawer_top",
+    "west": "handcrafted:block/counter/drawer/dark_oak/drawer_side_right"
+  }
+}

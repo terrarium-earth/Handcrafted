@@ -1,10 +1,7 @@
 package earth.terrarium.handcrafted.common.registry;
 
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.common.item.CushionBlockItem;
-import earth.terrarium.handcrafted.common.item.FancyPaintingItem;
-import earth.terrarium.handcrafted.common.item.ModRenderedBlockItem;
-import earth.terrarium.handcrafted.common.item.SheetItem;
+import earth.terrarium.handcrafted.common.item.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
@@ -52,6 +49,7 @@ public class ModItems {
     public static final Supplier<Item> WHITE_SHEET = register("white_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> YELLOW_SHEET = register("yellow_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> HAMMER = register("hammer", () -> new HammerItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> FANCY_PAINTING = register("fancy_painting", () -> new FancyPaintingItem(ModEntityTypes.FANCY_PAINTING.get(), new Item.Properties().tab(ITEM_GROUP)));
 
@@ -148,12 +146,26 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_SIDE_TABLE = register("warped_side_table", () -> new ModRenderedBlockItem(ModBlocks.WARPED_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_DRAWER = register("acacia_drawer", () -> new BlockItem(ModBlocks.ACACIA_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_DRAWER = register("birch_drawer", () -> new BlockItem(ModBlocks.BIRCH_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_DRAWER = register("dark_oak_drawer", () -> new BlockItem(ModBlocks.DARK_OAK_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_DRAWER = register("jungle_drawer", () -> new BlockItem(ModBlocks.JUNGLE_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_DRAWER = register("mangrove_drawer", () -> new BlockItem(ModBlocks.MANGROVE_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_DRAWER = register("oak_drawer", () -> new BlockItem(ModBlocks.OAK_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_DRAWER = register("spruce_drawer", () -> new BlockItem(ModBlocks.SPRUCE_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_DRAWER = register("crimson_drawer", () -> new BlockItem(ModBlocks.CRIMSON_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_DRAWER = register("warped_drawer", () -> new BlockItem(ModBlocks.WARPED_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> OAK_CUPBOARD = register("oak_cupboard", () -> new BlockItem(ModBlocks.OAK_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> OAK_SHELF = register("oak_shelf", () -> new BlockItem(ModBlocks.OAK_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> GLASS_CUP = register("glass_cup", () -> new BlockItem(ModBlocks.GLASS_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> GLASS_PLATE = register("glass_plate", () -> new BlockItem(ModBlocks.GLASS_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> GLASS_BOWL = register("glass_bowl", () -> new BlockItem(ModBlocks.GLASS_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> GLASS_CROCKERY_COMBO = register("glass_crockery_combo", () -> new BlockItem(ModBlocks.GLASS_CROCKERY_COMBO.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_CUP = register("white_cup", () -> new BlockItem(ModBlocks.WHITE_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_PLATE = register("white_plate", () -> new BlockItem(ModBlocks.WHITE_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_BOWL = register("white_bowl", () -> new BlockItem(ModBlocks.WHITE_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WHITE_CROCKERY_COMBO = register("white_crockery_combo", () -> new BlockItem(ModBlocks.WHITE_CROCKERY_COMBO.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> YELLOW_CUP = register("yellow_cup", () -> new BlockItem(ModBlocks.YELLOW_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> YELLOW_PLATE = register("yellow_plate", () -> new BlockItem(ModBlocks.YELLOW_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));

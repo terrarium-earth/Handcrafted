@@ -40,6 +40,7 @@ public class NightstandRenderer implements BlockEntityRenderer<NightstandBlockEn
         model.getMain().getChild("overlay").visible = false;
         model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/nightstand/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         model.getMain().getChild("overlay").visible = true;
+        model.getMain().getChild("table").visible = false;
         if (!sheet.toString().equals("minecraft:air")) {
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         }

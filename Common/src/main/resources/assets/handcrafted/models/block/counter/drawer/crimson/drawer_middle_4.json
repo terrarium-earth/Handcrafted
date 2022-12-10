@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/counter/drawer/crimson/drawer_bottom",
+    "east": "handcrafted:block/counter/drawer/crimson/drawer_side_left",
+    "north": "handcrafted:block/counter/drawer/crimson/front_4/drawer",
+    "particle": "handcrafted:block/counter/drawer/crimson/drawer_top",
+    "south": "handcrafted:block/counter/drawer/crimson/drawer_back",
+    "up": "handcrafted:block/counter/drawer/crimson/drawer_top",
+    "west": "handcrafted:block/counter/drawer/crimson/drawer_side_right"
+  }
+}

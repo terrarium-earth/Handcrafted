@@ -62,6 +62,6 @@ public class CrockeryBlock extends SimpleBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(PIECES, FACING, WATERLOGGED);
+        builder.add(FACING, PIECES, WATERLOGGED);
     }
 }

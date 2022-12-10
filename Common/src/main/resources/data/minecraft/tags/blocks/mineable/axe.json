@@ -14,6 +14,8 @@
     "#handcrafted:table_benches",
     "#handcrafted:tables",
     "#handcrafted:trophies",
-    "#handcrafted:wooden_benches"
+    "#handcrafted:wooden_benches",
+    "#handcrafted:drawers",
+    "handcrafted:stackable_book"
   ]
 }

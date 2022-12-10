@@ -10,6 +10,7 @@ import earth.terrarium.handcrafted.client.block.chair.chair.ChairModel;
 import earth.terrarium.handcrafted.client.block.chair.chair.ChairRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.counter.ShelfRenderer;
 import earth.terrarium.handcrafted.client.block.crockery.CrockeryRenderer;
 import earth.terrarium.handcrafted.client.block.fancybed.FancyBedModel;
 import earth.terrarium.handcrafted.client.block.fancybed.FancyBedRenderer;
@@ -164,6 +165,7 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.DESK, DeskRenderer::new);
         registry.register(ModBlockEntities.SIDE_TABLE, SideTableRenderer::new);
         registry.register(ModBlockEntities.CROCKERY, CrockeryRenderer::new);
+        registry.register(ModBlockEntities.SHELF, ShelfRenderer::new);
     }
 
     public static void registerEntityLayers(LayerDefinitionRegistry registry) {
@@ -192,9 +194,9 @@ public class HandcraftedClient {
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {
         register.accept(RenderType.cutout(), List.of(ModBlocks.BERRY_JAM_JAR.get()));
-        register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_CUP.get(), ModBlocks.YELLOW_CUP.get(), ModBlocks.BLUE_CUP.get(), ModBlocks.WOOD_CUP.get(), ModBlocks.CLAY_CUP.get()));
-        register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_BOWL.get(), ModBlocks.YELLOW_BOWL.get(), ModBlocks.BLUE_BOWL.get(), ModBlocks.WOOD_BOWL.get(), ModBlocks.CLAY_BOWL.get()));
-        register.accept(RenderType.cutout(), List.of(ModBlocks.GLASS_CROCKERY_COMBO.get(), ModBlocks.YELLOW_CROCKERY_COMBO.get(), ModBlocks.BLUE_CROCKERY_COMBO.get(), ModBlocks.WOOD_CROCKERY_COMBO.get(), ModBlocks.CLAY_CROCKERY_COMBO.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_CUP.get(), ModBlocks.YELLOW_CUP.get(), ModBlocks.BLUE_CUP.get(), ModBlocks.WOOD_CUP.get(), ModBlocks.CLAY_CUP.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_BOWL.get(), ModBlocks.YELLOW_BOWL.get(), ModBlocks.BLUE_BOWL.get(), ModBlocks.WOOD_BOWL.get(), ModBlocks.CLAY_BOWL.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_CROCKERY_COMBO.get(), ModBlocks.YELLOW_CROCKERY_COMBO.get(), ModBlocks.BLUE_CROCKERY_COMBO.get(), ModBlocks.WOOD_CROCKERY_COMBO.get(), ModBlocks.CLAY_CROCKERY_COMBO.get()));
         register.accept(RenderType.cutout(), List.of(ModBlocks.BEAR_TROPHY.get(), ModBlocks.BLAZE_TROPHY.get(), ModBlocks.FOX_TROPHY.get(), ModBlocks.GOAT_TROPHY.get(), ModBlocks.PUFFERFISH_TROPHY.get(), ModBlocks.SALMON_TROPHY.get(), ModBlocks.SILVERFISH_TROPHY.get(), ModBlocks.SKELETON_HORSE_TROPHY.get(), ModBlocks.SPIDER_TROPHY.get(), ModBlocks.TROPICAL_FISH_TROPHY.get(), ModBlocks.WITHER_SKELETON_TROPHY.get(), ModBlocks.WOLF_TROPHY.get(), ModBlocks.PHANTOM_TROPHY.get(), ModBlocks.CREEPER_TROPHY.get(), ModBlocks.SKELETON_TROPHY.get(), ModBlocks.EVOKER_TROPHY.get(), ModBlocks.PILLAGER_TROPHY.get(), ModBlocks.VINDICATOR_TROPHY.get()));
     }
 

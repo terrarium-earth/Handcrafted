@@ -2,9 +2,8 @@ package earth.terrarium.handcrafted.client.block.table.desk;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
-import earth.terrarium.handcrafted.client.block.table.nightstand.NightstandModel;
-import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
 import earth.terrarium.handcrafted.common.block.table.desk.DeskBlockEntity;
+import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
@@ -28,11 +27,11 @@ public class DeskRenderer implements BlockEntityRenderer<DeskBlockEntity> {
     @Override
     public void render(DeskBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
-        NightstandModel model = new NightstandModel(modelSet.bakeLayer(DeskModel.LAYER_LOCATION));
+        DeskModel model = new DeskModel(modelSet.bakeLayer(DeskModel.LAYER_LOCATION));
         render(Registry.ITEM.getKey(entity.getSheet().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(NightstandBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
-    private static void render(ResourceLocation sheet, ResourceLocation texture, NightstandModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+    private static void render(ResourceLocation sheet, ResourceLocation texture, DeskModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         poseStack.pushPose();
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.toYRot()));
@@ -41,6 +40,7 @@ public class DeskRenderer implements BlockEntityRenderer<DeskBlockEntity> {
         model.getMain().getChild("overlay").visible = false;
         model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/desk/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         model.getMain().getChild("overlay").visible = true;
+//        model.getMain().getChild("table").visible = false;
         if (!sheet.toString().equals("minecraft:air")) {
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         }
@@ -55,7 +55,7 @@ public class DeskRenderer implements BlockEntityRenderer<DeskBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), new NightstandModel(Minecraft.getInstance().getEntityModels().bakeLayer(DeskModel.LAYER_LOCATION)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), new DeskModel(Minecraft.getInstance().getEntityModels().bakeLayer(DeskModel.LAYER_LOCATION)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
         }
     }
 }

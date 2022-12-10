@@ -1,0 +1,89 @@
+package earth.terrarium.handcrafted.common.block;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.function.Predicate;
+
+public abstract class ItemHoldingBlockEntity extends BlockEntity {
+    private ItemStack item = ItemStack.EMPTY;
+
+    public ItemHoldingBlockEntity(BlockEntityType<?> blockEntityType, BlockPos blockPos, BlockState blockState) {
+        super(blockEntityType, blockPos, blockState);
+    }
+
+    @Override
+    protected void saveAdditional(CompoundTag tag) {
+        super.saveAdditional(tag);
+        tag.put("Item", item.save(new CompoundTag()));
+    }
+
+    @Override
+    public void load(CompoundTag tag) {
+        super.load(tag);
+        this.item = ItemStack.of(tag.getCompound("Item"));
+    }
+
+    public ItemStack getItem() {
+        return this.item;
+    }
+
+    public void setItem(ItemStack item) {
+        this.item = item;
+        this.update();
+    }
+
+    public void update() {
+        if (this.level != null) {
+            this.level.sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), Block.UPDATE_ALL);
+        }
+    }
+
+    @Override
+    public @NotNull CompoundTag getUpdateTag() {
+        return saveWithoutMetadata();
+    }
+
+    @Override
+    public Packet<ClientGamePacketListener> getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem, Predicate<ItemStack> filter) {
+        if (!level.isClientSide()) {
+            if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+                ItemStack stack = player.getMainHandItem();
+                if ((entity.getItem().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) && filter.test(stack)) {
+                    ItemStack copy = stack.copy();
+                    copy.setCount(1);
+                    entity.setItem(copy);
+                    if (!player.isCreative()) stack.shrink(1);
+                    return InteractionResult.SUCCESS;
+                } else if (player.isCrouching()) {
+                    if (!ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getItem());
+                        entity.setItem(defaultItem);
+                        itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+                        level.addFreshEntity(itemEntity);
+                        return InteractionResult.SUCCESS;
+                    }
+                }
+            }
+            return InteractionResult.PASS;
+        }
+        return InteractionResult.PASS;
+    }
+}

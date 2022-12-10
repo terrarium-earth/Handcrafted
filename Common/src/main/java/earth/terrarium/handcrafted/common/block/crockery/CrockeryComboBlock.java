@@ -1,10 +1,10 @@
 package earth.terrarium.handcrafted.common.block.crockery;
 
+import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
@@ -43,31 +43,6 @@ public class CrockeryComboBlock extends SimpleEntityBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return placeItem(level, pos, player, ItemStack.EMPTY);
-    }
-
-    public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem) {
-        if (!level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof CrockeryBlockEntity entity) {
-                ItemStack stack = player.getMainHandItem();
-                if (entity.getItem().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) {
-                    ItemStack copy = stack.copy();
-                    copy.setCount(1);
-                    entity.setItem(copy);
-                    if (!player.isCreative()) stack.shrink(1);
-                    return InteractionResult.SUCCESS;
-                } else if (player.isCrouching()) {
-                    if (!ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getItem());
-                        entity.setItem(defaultItem);
-                        itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
-                        level.addFreshEntity(itemEntity);
-                        return InteractionResult.SUCCESS;
-                    }
-                }
-            }
-            return InteractionResult.PASS;
-        }
-        return InteractionResult.CONSUME_PARTIAL;
+        return ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> true);
     }
 }

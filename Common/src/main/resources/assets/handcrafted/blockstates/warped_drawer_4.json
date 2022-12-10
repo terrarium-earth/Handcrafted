@@ -1,0 +1,96 @@
+{
+  "variants": {
+    "facing=north,shape=single": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_4",
+        "y": 180
+      }
+    ],
+    "facing=east,shape=single": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_4",
+        "y": 270
+      }
+    ],
+    "facing=south,shape=single": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_4"
+      }
+    ],
+    "facing=west,shape=single": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_4",
+        "y": 90
+      }
+    ],
+    "facing=north,shape=left": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_left_4",
+        "y": 180
+      }
+    ],
+    "facing=east,shape=left": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_left_4",
+        "y": 270
+      }
+    ],
+    "facing=south,shape=left": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_left_4"
+      }
+    ],
+    "facing=west,shape=left": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_left_4",
+        "y": 90
+      }
+    ],
+    "facing=north,shape=middle": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_middle_4",
+        "y": 180
+      }
+    ],
+    "facing=east,shape=middle": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_middle_4",
+        "y": 270
+      }
+    ],
+    "facing=south,shape=middle": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_middle_4"
+      }
+    ],
+    "facing=west,shape=middle": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_middle_4",
+        "y": 90
+      }
+    ],
+    "facing=north,shape=right": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_right_4",
+        "y": 180
+      }
+    ],
+    "facing=east,shape=right": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_right_4",
+        "y": 270
+      }
+    ],
+    "facing=south,shape=right": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_right_4"
+      }
+    ],
+    "facing=west,shape=right": [
+      {
+        "model": "handcrafted:block/counter/drawer/warped/drawer_right_4",
+        "y": 90
+      }
+    ]
+  }
+}

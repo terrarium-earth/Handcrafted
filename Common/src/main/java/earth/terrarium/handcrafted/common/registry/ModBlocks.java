@@ -6,6 +6,9 @@ import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlock;
 import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlock;
 import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlock;
+import earth.terrarium.handcrafted.common.block.counter.CupboardBlock;
+import earth.terrarium.handcrafted.common.block.counter.DrawerBlock;
+import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlock;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryComboBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
@@ -140,12 +143,54 @@ public class ModBlocks {
     public static final Supplier<Block> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final Supplier<Block> WARPED_SIDE_TABLE = register("warped_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
+    public static final Supplier<Block> ACACIA_DRAWER_1 = register("acacia_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> ACACIA_DRAWER_2 = register("acacia_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> ACACIA_DRAWER_3 = register("acacia_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> ACACIA_DRAWER_4 = register("acacia_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> BIRCH_DRAWER_1 = register("birch_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> BIRCH_DRAWER_2 = register("birch_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> BIRCH_DRAWER_3 = register("birch_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> BIRCH_DRAWER_4 = register("birch_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_DRAWER_1 = register("dark_oak_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_DRAWER_2 = register("dark_oak_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_DRAWER_3 = register("dark_oak_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_DRAWER_4 = register("dark_oak_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> JUNGLE_DRAWER_1 = register("jungle_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> JUNGLE_DRAWER_2 = register("jungle_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> JUNGLE_DRAWER_3 = register("jungle_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> JUNGLE_DRAWER_4 = register("jungle_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_DRAWER_1 = register("mangrove_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_DRAWER_2 = register("mangrove_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_DRAWER_3 = register("mangrove_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_DRAWER_4 = register("mangrove_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Supplier<Block> OAK_DRAWER_1 = register("oak_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> OAK_DRAWER_2 = register("oak_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> OAK_DRAWER_3 = register("oak_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> OAK_DRAWER_4 = register("oak_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> SPRUCE_DRAWER_1 = register("spruce_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> SPRUCE_DRAWER_2 = register("spruce_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> SPRUCE_DRAWER_3 = register("spruce_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> SPRUCE_DRAWER_4 = register("spruce_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> CRIMSON_DRAWER_1 = register("crimson_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> CRIMSON_DRAWER_2 = register("crimson_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> CRIMSON_DRAWER_3 = register("crimson_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> CRIMSON_DRAWER_4 = register("crimson_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> WARPED_DRAWER_1 = register("warped_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+    public static final Supplier<Block> WARPED_DRAWER_2 = register("warped_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+    public static final Supplier<Block> WARPED_DRAWER_3 = register("warped_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+    public static final Supplier<Block> WARPED_DRAWER_4 = register("warped_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+
+    public static final Supplier<Block> OAK_CUPBOARD_1 = register("oak_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> OAK_CUPBOARD_2 = register("oak_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+    public static final Supplier<Block> OAK_SHELF_1 = register("oak_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
     public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
-    public static final Supplier<Block> GLASS_CUP = register("glass_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final Supplier<Block> GLASS_PLATE = register("glass_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final Supplier<Block> GLASS_BOWL = register("glass_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
-    public static final Supplier<Block> GLASS_CROCKERY_COMBO = register("glass_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> WHITE_CUP = register("white_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> WHITE_PLATE = register("white_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> WHITE_BOWL = register("white_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final Supplier<Block> WHITE_CROCKERY_COMBO = register("white_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
     public static final Supplier<Block> YELLOW_CUP = register("yellow_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final Supplier<Block> YELLOW_PLATE = register("yellow_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));

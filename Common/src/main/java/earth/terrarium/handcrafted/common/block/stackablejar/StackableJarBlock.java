@@ -56,6 +56,6 @@ public class StackableJarBlock extends SimpleBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(JARS, FACING, WATERLOGGED);
+        builder.add(FACING, JARS, WATERLOGGED);
     }
 }

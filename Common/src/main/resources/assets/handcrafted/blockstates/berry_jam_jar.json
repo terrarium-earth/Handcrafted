@@ -1,51 +1,69 @@
 {
   "variants": {
-    "jars=1": [
+    "facing=north,jars=1": [
       {
         "model": "handcrafted:block/jar/single"
-      },
+      }
+    ],
+    "facing=east,jars=1": [
       {
         "model": "handcrafted:block/jar/single",
         "y": 90
-      },
+      }
+    ],
+    "facing=south,jars=1": [
       {
         "model": "handcrafted:block/jar/single",
         "y": 180
-      },
+      }
+    ],
+    "facing=west,jars=1": [
       {
         "model": "handcrafted:block/jar/single",
         "y": 270
       }
     ],
-    "jars=2": [
+    "facing=north,jars=2": [
       {
         "model": "handcrafted:block/jar/double"
-      },
+      }
+    ],
+    "facing=east,jars=2": [
       {
         "model": "handcrafted:block/jar/double",
         "y": 90
-      },
+      }
+    ],
+    "facing=south,jars=2": [
       {
         "model": "handcrafted:block/jar/double",
         "y": 180
-      },
+      }
+    ],
+    "facing=west,jars=2": [
       {
         "model": "handcrafted:block/jar/double",
         "y": 270
       }
     ],
-    "jars=3": [
+    "facing=north,jars=3": [
       {
         "model": "handcrafted:block/jar/triple"
-      },
+      }
+    ],
+    "facing=east,jars=3": [
       {
         "model": "handcrafted:block/jar/triple",
         "y": 90
-      },
+      }
+    ],
+    "facing=south,jars=3": [
       {
         "model": "handcrafted:block/jar/triple",
         "y": 180
-      },
+      }
+    ],
+    "facing=west,jars=3": [
       {
         "model": "handcrafted:block/jar/triple",
         "y": 270

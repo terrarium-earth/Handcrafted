@@ -156,6 +156,16 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_DRAWER = register("crimson_drawer", () -> new BlockItem(ModBlocks.CRIMSON_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_DRAWER = register("warped_drawer", () -> new BlockItem(ModBlocks.WARPED_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_COUNTER = register("acacia_counter", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_COUNTER = register("birch_counter", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_COUNTER = register("dark_oak_counter", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_COUNTER = register("jungle_counter", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_COUNTER = register("mangrove_counter", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_COUNTER = register("oak_counter", () -> new ModRenderedBlockItem(ModBlocks.OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_COUNTER = register("spruce_counter", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_COUNTER = register("crimson_counter", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_COUNTER = register("warped_counter", () -> new ModRenderedBlockItem(ModBlocks.WARPED_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+
     public static final Supplier<Item> OAK_CUPBOARD = register("oak_cupboard", () -> new BlockItem(ModBlocks.OAK_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> OAK_SHELF = register("oak_shelf", () -> new BlockItem(ModBlocks.OAK_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));

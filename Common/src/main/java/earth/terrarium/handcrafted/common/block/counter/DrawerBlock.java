@@ -11,20 +11,23 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.Vec3;
 
 @MethodsReturnNonnullByDefault
-public class DrawerBlock extends ShelfBlock implements Hammerable {
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+public class DrawerBlock extends CupboardBlock implements Hammerable {
     public static final EnumProperty<DirectionalBlockSide> DRAWER_SHAPE = EnumProperty.create("shape", DirectionalBlockSide.class);
 
     public DrawerBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(DRAWER_SHAPE, DirectionalBlockSide.SINGLE).setValue(FACING, Direction.NORTH));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(FACING, DRAWER_SHAPE);
     }
 
     @Override

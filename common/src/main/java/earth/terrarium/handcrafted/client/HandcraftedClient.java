@@ -10,6 +10,8 @@ import earth.terrarium.handcrafted.client.block.chair.chair.ChairModel;
 import earth.terrarium.handcrafted.client.block.chair.chair.ChairRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchRenderer;
+import earth.terrarium.handcrafted.client.block.counter.CounterModel;
+import earth.terrarium.handcrafted.client.block.counter.CounterRenderer;
 import earth.terrarium.handcrafted.client.block.counter.ShelfRenderer;
 import earth.terrarium.handcrafted.client.block.crockery.CrockeryRenderer;
 import earth.terrarium.handcrafted.client.block.fancybed.FancyBedModel;
@@ -149,6 +151,16 @@ public class HandcraftedClient {
         register.accept(ModItems.SPRUCE_SIDE_TABLE.get(), new SideTableRenderer.ItemRenderer());
         register.accept(ModItems.CRIMSON_SIDE_TABLE.get(), new SideTableRenderer.ItemRenderer());
         register.accept(ModItems.WARPED_SIDE_TABLE.get(), new SideTableRenderer.ItemRenderer());
+
+        register.accept(ModItems.ACACIA_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.BIRCH_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.DARK_OAK_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.JUNGLE_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.MANGROVE_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.OAK_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.SPRUCE_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.CRIMSON_COUNTER.get(), new CounterRenderer.ItemRenderer());
+        register.accept(ModItems.WARPED_COUNTER.get(), new CounterRenderer.ItemRenderer());
     }
 
     public static void registerBlockRenderers(BlockRendererRegistry registry) {
@@ -166,6 +178,7 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.SIDE_TABLE, SideTableRenderer::new);
         registry.register(ModBlockEntities.CROCKERY, CrockeryRenderer::new);
         registry.register(ModBlockEntities.SHELF, ShelfRenderer::new);
+        registry.register(ModBlockEntities.COUNTER, CounterRenderer::new);
     }
 
     public static void registerEntityLayers(LayerDefinitionRegistry registry) {
@@ -181,6 +194,7 @@ public class HandcraftedClient {
         NightstandModel.register(registry);
         DeskModel.register(registry);
         SideTableModel.register(registry);
+        CounterModel.register(registry);
 
         FancyPaintingModel.register(registry);
     }

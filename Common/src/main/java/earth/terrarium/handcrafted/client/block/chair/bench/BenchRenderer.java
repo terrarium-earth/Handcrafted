@@ -68,7 +68,7 @@ public class BenchRenderer implements BlockEntityRenderer<BenchBlockEntity> {
             };
         });
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutoutNoCull(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         poseStack.popPose();
     }
 
@@ -79,7 +79,10 @@ public class BenchRenderer implements BlockEntityRenderer<BenchBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+            poseStack.pushPose();
+            poseStack.scale(0.75f, 0.75f, 0.75f);
             render(Registry.ITEM.getKey(stack.getItem()), new BenchModel(Minecraft.getInstance().getEntityModels().bakeLayer(BenchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
         }
     }
 }

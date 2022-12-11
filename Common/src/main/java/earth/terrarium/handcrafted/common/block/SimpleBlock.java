@@ -16,7 +16,7 @@ import net.minecraft.world.level.material.Fluids;
 
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
-public abstract class SimpleBlock extends Block implements SimpleWaterloggedBlock {
+public class SimpleBlock extends Block implements SimpleWaterloggedBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public SimpleBlock(Properties properties) {

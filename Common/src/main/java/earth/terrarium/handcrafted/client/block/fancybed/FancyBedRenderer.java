@@ -80,7 +80,10 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+            poseStack.pushPose();
+            poseStack.scale(0.75f, 0.75f, 0.75f);
             render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
         }
     }
 }

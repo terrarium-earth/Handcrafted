@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.block.chair.chair;
 
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
+import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -39,6 +41,15 @@ public class ChairBlock extends ExpandableCouchBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return SimpleEntityBlock.cushionUse(level, pos, player, ItemStack.EMPTY);
+        InteractionResult interactionResult = SimpleEntityBlock.cushionUse(level, pos, player, ItemStack.EMPTY);
+        if (!interactionResult.consumesAction()) {
+            return super.use(state, level, pos, player, hand, hit);
+        }
+        return interactionResult;
+    }
+
+    @Override
+    public AABB getSeatSize(BlockState state) {
+        return new AABB(0, 0, 0, 1, 0.5, 1);
     }
 }

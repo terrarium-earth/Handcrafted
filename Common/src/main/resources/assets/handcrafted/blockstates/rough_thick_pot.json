@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "handcrafted:block/pot/rough_wide_pot"
+      "model": "handcrafted:block/pot/rough_thick_pot"
     }
   }
 }

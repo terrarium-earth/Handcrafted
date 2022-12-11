@@ -1,6 +1,7 @@
 package earth.terrarium.handcrafted.common.registry;
 
 import earth.terrarium.handcrafted.common.block.CushionBlock;
+import earth.terrarium.handcrafted.common.block.SimpleBlock;
 import earth.terrarium.handcrafted.common.block.chair.bench.BenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlock;
 import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlock;
@@ -13,6 +14,7 @@ import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlock;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryComboBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
+import earth.terrarium.handcrafted.common.block.kitchenhood.KitchenHoodPipe;
 import earth.terrarium.handcrafted.common.block.pot.PotBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.common.block.stackablejar.StackableJarBlock;
@@ -27,6 +29,7 @@ import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SmokerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Supplier;
@@ -143,6 +146,12 @@ public class ModBlocks {
     public static final Supplier<Block> SPRUCE_SIDE_TABLE = register("spruce_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final Supplier<Block> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final Supplier<Block> WARPED_SIDE_TABLE = register("warped_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
+
+    public static final Supplier<Block> OVEN = register("oven", () -> new SmokerBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)) {
+
+    });
+    public static final Supplier<Block> KITCHEN_HOOD = register("kitchen_hood", () -> new SimpleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final Supplier<Block> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new KitchenHoodPipe(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     public static final Supplier<Block> ACACIA_COUNTER_1 = register("acacia_counter_1", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final Supplier<Block> ACACIA_COUNTER_2 = register("acacia_counter_2", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));

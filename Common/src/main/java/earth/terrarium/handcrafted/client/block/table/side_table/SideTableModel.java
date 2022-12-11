@@ -28,7 +28,7 @@ public class SideTableModel extends BaseModel {
 
         PartDefinition overlay = main.addOrReplaceChild("overlay", CubeListBuilder.create(), PartPose.offset(8.0F, 0.0F, -8.0F));
 
-        PartDefinition overlay_side_west = overlay.addOrReplaceChild("overlay_side_west", CubeListBuilder.create().texOffs(0, 20).addBox(-2.0F, -16.0F, 1.99F, 0.0F, 8.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        PartDefinition overlay_side_west = overlay.addOrReplaceChild("overlay_side_west", CubeListBuilder.create().texOffs(0, 20).addBox(-1.999F, -16.0F, 1.99F, 0.0F, 8.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition overlay_side_north = overlay.addOrReplaceChild("overlay_side_north", CubeListBuilder.create().texOffs(32, 32).addBox(-14.0F, -16.0F, 1.99F, 12.0F, 8.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
@@ -36,7 +36,7 @@ public class SideTableModel extends BaseModel {
 
         PartDefinition overlay_side_south = overlay.addOrReplaceChild("overlay_side_south", CubeListBuilder.create().texOffs(0, 32).addBox(-14.0F, -16.0F, 14.01F, 12.0F, 8.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-        PartDefinition overlay_side_east = overlay.addOrReplaceChild("overlay_side_east", CubeListBuilder.create().texOffs(32, 20).addBox(-14.0F, -16.0F, 1.99F, 0.0F, 8.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        PartDefinition overlay_side_east = overlay.addOrReplaceChild("overlay_side_east", CubeListBuilder.create().texOffs(32, 20).addBox(-14.001F, -16.0F, 1.99F, 0.0F, 8.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition table = main.addOrReplaceChild("table", CubeListBuilder.create().texOffs(12, 4).addBox(-6.0F, -16.0F, -6.0F, 12.0F, 4.0F, 12.0F, new CubeDeformation(0.0F))
                 .texOffs(16, 20).addBox(-4.0F, -12.0F, -4.0F, 8.0F, 4.0F, 8.0F, new CubeDeformation(0.0F))

@@ -53,98 +53,103 @@ public class ModItems {
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> FANCY_PAINTING = register("fancy_painting", () -> new FancyPaintingItem(ModEntityTypes.FANCY_PAINTING.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_CHAIR = register("acacia_chair", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_CHAIR = register("birch_chair", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_CHAIR = register("dark_oak_chair", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_CHAIR = register("jungle_chair", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_CHAIR = register("mangrove_chair", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_CHAIR = register("oak_chair", () -> new ModRenderedBlockItem(ModBlocks.OAK_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_CHAIR = register("spruce_chair", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_CHAIR = register("crimson_chair", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_CHAIR = register("warped_chair", () -> new ModRenderedBlockItem(ModBlocks.WARPED_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_CHAIR = register("acacia_chair", () -> new RenderedBlockItem(ModBlocks.ACACIA_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_CHAIR = register("birch_chair", () -> new RenderedBlockItem(ModBlocks.BIRCH_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_CHAIR = register("dark_oak_chair", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_CHAIR = register("jungle_chair", () -> new RenderedBlockItem(ModBlocks.JUNGLE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_CHAIR = register("mangrove_chair", () -> new RenderedBlockItem(ModBlocks.MANGROVE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_CHAIR = register("oak_chair", () -> new RenderedBlockItem(ModBlocks.OAK_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_CHAIR = register("spruce_chair", () -> new RenderedBlockItem(ModBlocks.SPRUCE_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_CHAIR = register("crimson_chair", () -> new RenderedBlockItem(ModBlocks.CRIMSON_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_CHAIR = register("warped_chair", () -> new RenderedBlockItem(ModBlocks.WARPED_CHAIR.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_TABLE = register("acacia_table", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_TABLE = register("birch_table", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_TABLE = register("dark_oak_table", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_TABLE = register("jungle_table", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_TABLE = register("mangrove_table", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_TABLE = register("oak_table", () -> new ModRenderedBlockItem(ModBlocks.OAK_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_TABLE = register("spruce_table", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_TABLE = register("crimson_table", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_TABLE = register("warped_table", () -> new ModRenderedBlockItem(ModBlocks.WARPED_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_TABLE = register("acacia_table", () -> new RenderedBlockItem(ModBlocks.ACACIA_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_TABLE = register("birch_table", () -> new RenderedBlockItem(ModBlocks.BIRCH_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_TABLE = register("dark_oak_table", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_TABLE = register("jungle_table", () -> new RenderedBlockItem(ModBlocks.JUNGLE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_TABLE = register("mangrove_table", () -> new RenderedBlockItem(ModBlocks.MANGROVE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_TABLE = register("oak_table", () -> new RenderedBlockItem(ModBlocks.OAK_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_TABLE = register("spruce_table", () -> new RenderedBlockItem(ModBlocks.SPRUCE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_TABLE = register("crimson_table", () -> new RenderedBlockItem(ModBlocks.CRIMSON_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_TABLE = register("warped_table", () -> new RenderedBlockItem(ModBlocks.WARPED_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_BENCH = register("acacia_bench", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_BENCH = register("birch_bench", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_BENCH = register("dark_oak_bench", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_BENCH = register("jungle_bench", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_BENCH = register("mangrove_bench", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_BENCH = register("oak_bench", () -> new ModRenderedBlockItem(ModBlocks.OAK_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_BENCH = register("spruce_bench", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_BENCH = register("crimson_bench", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_BENCH = register("warped_bench", () -> new ModRenderedBlockItem(ModBlocks.WARPED_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_BENCH = register("acacia_bench", () -> new RenderedBlockItem(ModBlocks.ACACIA_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_BENCH = register("birch_bench", () -> new RenderedBlockItem(ModBlocks.BIRCH_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_BENCH = register("dark_oak_bench", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_BENCH = register("jungle_bench", () -> new RenderedBlockItem(ModBlocks.JUNGLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_BENCH = register("mangrove_bench", () -> new RenderedBlockItem(ModBlocks.MANGROVE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_BENCH = register("oak_bench", () -> new RenderedBlockItem(ModBlocks.OAK_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_BENCH = register("spruce_bench", () -> new RenderedBlockItem(ModBlocks.SPRUCE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_BENCH = register("crimson_bench", () -> new RenderedBlockItem(ModBlocks.CRIMSON_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_BENCH = register("warped_bench", () -> new RenderedBlockItem(ModBlocks.WARPED_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> BENCH = register("bench", () -> new ModRenderedBlockItem(ModBlocks.BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> FROZEN_BENCH = register("frozen_bench", () -> new ModRenderedBlockItem(ModBlocks.FROZEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BENCH = register("bench", () -> new RenderedBlockItem(ModBlocks.BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> FROZEN_BENCH = register("frozen_bench", () -> new RenderedBlockItem(ModBlocks.FROZEN_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_COUCH = register("acacia_couch", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_COUCH = register("birch_couch", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_COUCH = register("dark_oak_couch", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_COUCH = register("jungle_couch", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_COUCH = register("mangrove_couch", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_COUCH = register("oak_couch", () -> new ModRenderedBlockItem(ModBlocks.OAK_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_COUCH = register("spruce_couch", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_COUCH = register("crimson_couch", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_COUCH = register("warped_couch", () -> new ModRenderedBlockItem(ModBlocks.WARPED_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_COUCH = register("acacia_couch", () -> new RenderedBlockItem(ModBlocks.ACACIA_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_COUCH = register("birch_couch", () -> new RenderedBlockItem(ModBlocks.BIRCH_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_COUCH = register("dark_oak_couch", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_COUCH = register("jungle_couch", () -> new RenderedBlockItem(ModBlocks.JUNGLE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_COUCH = register("mangrove_couch", () -> new RenderedBlockItem(ModBlocks.MANGROVE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_COUCH = register("oak_couch", () -> new RenderedBlockItem(ModBlocks.OAK_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_COUCH = register("spruce_couch", () -> new RenderedBlockItem(ModBlocks.SPRUCE_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_COUCH = register("crimson_couch", () -> new RenderedBlockItem(ModBlocks.CRIMSON_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_COUCH = register("warped_couch", () -> new RenderedBlockItem(ModBlocks.WARPED_COUCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_FANCY_BED = register("acacia_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_FANCY_BED = register("birch_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_FANCY_BED = register("dark_oak_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_FANCY_BED = register("jungle_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_FANCY_BED = register("mangrove_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_FANCY_BED = register("oak_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.OAK_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_FANCY_BED = register("spruce_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_FANCY_BED = register("crimson_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_FANCY_BED = register("warped_fancy_bed", () -> new ModRenderedBlockItem(ModBlocks.WARPED_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_FANCY_BED = register("acacia_fancy_bed", () -> new RenderedBlockItem(ModBlocks.ACACIA_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_FANCY_BED = register("birch_fancy_bed", () -> new RenderedBlockItem(ModBlocks.BIRCH_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_FANCY_BED = register("dark_oak_fancy_bed", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_FANCY_BED = register("jungle_fancy_bed", () -> new RenderedBlockItem(ModBlocks.JUNGLE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_FANCY_BED = register("mangrove_fancy_bed", () -> new RenderedBlockItem(ModBlocks.MANGROVE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_FANCY_BED = register("oak_fancy_bed", () -> new RenderedBlockItem(ModBlocks.OAK_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_FANCY_BED = register("spruce_fancy_bed", () -> new RenderedBlockItem(ModBlocks.SPRUCE_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_FANCY_BED = register("crimson_fancy_bed", () -> new RenderedBlockItem(ModBlocks.CRIMSON_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_FANCY_BED = register("warped_fancy_bed", () -> new RenderedBlockItem(ModBlocks.WARPED_FANCY_BED.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_TABLE_BENCH = register("acacia_table_bench", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_TABLE_BENCH = register("birch_table_bench", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_TABLE_BENCH = register("dark_oak_table_bench", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_TABLE_BENCH = register("jungle_table_bench", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_TABLE_BENCH = register("mangrove_table_bench", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_TABLE_BENCH = register("oak_table_bench", () -> new ModRenderedBlockItem(ModBlocks.OAK_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_TABLE_BENCH = register("spruce_table_bench", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_TABLE_BENCH = register("crimson_table_bench", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_TABLE_BENCH = register("warped_table_bench", () -> new ModRenderedBlockItem(ModBlocks.WARPED_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_TABLE_BENCH = register("acacia_table_bench", () -> new RenderedBlockItem(ModBlocks.ACACIA_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_TABLE_BENCH = register("birch_table_bench", () -> new RenderedBlockItem(ModBlocks.BIRCH_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_TABLE_BENCH = register("dark_oak_table_bench", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_TABLE_BENCH = register("jungle_table_bench", () -> new RenderedBlockItem(ModBlocks.JUNGLE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_TABLE_BENCH = register("mangrove_table_bench", () -> new RenderedBlockItem(ModBlocks.MANGROVE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_TABLE_BENCH = register("oak_table_bench", () -> new RenderedBlockItem(ModBlocks.OAK_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_TABLE_BENCH = register("spruce_table_bench", () -> new RenderedBlockItem(ModBlocks.SPRUCE_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_TABLE_BENCH = register("crimson_table_bench", () -> new RenderedBlockItem(ModBlocks.CRIMSON_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_TABLE_BENCH = register("warped_table_bench", () -> new RenderedBlockItem(ModBlocks.WARPED_TABLE_BENCH.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_NIGHTSTAND = register("acacia_nightstand", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_NIGHTSTAND = register("birch_nightstand", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_NIGHTSTAND = register("dark_oak_nightstand", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_NIGHTSTAND = register("jungle_nightstand", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_NIGHTSTAND = register("mangrove_nightstand", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_NIGHTSTAND = register("oak_nightstand", () -> new ModRenderedBlockItem(ModBlocks.OAK_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_NIGHTSTAND = register("spruce_nightstand", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_NIGHTSTAND = register("crimson_nightstand", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_NIGHTSTAND = register("warped_nightstand", () -> new ModRenderedBlockItem(ModBlocks.WARPED_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_NIGHTSTAND = register("acacia_nightstand", () -> new RenderedBlockItem(ModBlocks.ACACIA_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_NIGHTSTAND = register("birch_nightstand", () -> new RenderedBlockItem(ModBlocks.BIRCH_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_NIGHTSTAND = register("dark_oak_nightstand", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_NIGHTSTAND = register("jungle_nightstand", () -> new RenderedBlockItem(ModBlocks.JUNGLE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_NIGHTSTAND = register("mangrove_nightstand", () -> new RenderedBlockItem(ModBlocks.MANGROVE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_NIGHTSTAND = register("oak_nightstand", () -> new RenderedBlockItem(ModBlocks.OAK_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_NIGHTSTAND = register("spruce_nightstand", () -> new RenderedBlockItem(ModBlocks.SPRUCE_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_NIGHTSTAND = register("crimson_nightstand", () -> new RenderedBlockItem(ModBlocks.CRIMSON_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_NIGHTSTAND = register("warped_nightstand", () -> new RenderedBlockItem(ModBlocks.WARPED_NIGHTSTAND.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_DESK = register("acacia_desk", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_DESK = register("birch_desk", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_DESK = register("dark_oak_desk", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_DESK = register("jungle_desk", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_DESK = register("mangrove_desk", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_DESK = register("oak_desk", () -> new ModRenderedBlockItem(ModBlocks.OAK_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_DESK = register("spruce_desk", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_DESK = register("crimson_desk", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_DESK = register("warped_desk", () -> new ModRenderedBlockItem(ModBlocks.WARPED_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_DESK = register("acacia_desk", () -> new RenderedBlockItem(ModBlocks.ACACIA_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_DESK = register("birch_desk", () -> new RenderedBlockItem(ModBlocks.BIRCH_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_DESK = register("dark_oak_desk", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_DESK = register("jungle_desk", () -> new RenderedBlockItem(ModBlocks.JUNGLE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_DESK = register("mangrove_desk", () -> new RenderedBlockItem(ModBlocks.MANGROVE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_DESK = register("oak_desk", () -> new RenderedBlockItem(ModBlocks.OAK_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_DESK = register("spruce_desk", () -> new RenderedBlockItem(ModBlocks.SPRUCE_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_DESK = register("crimson_desk", () -> new RenderedBlockItem(ModBlocks.CRIMSON_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_DESK = register("warped_desk", () -> new RenderedBlockItem(ModBlocks.WARPED_DESK.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_SIDE_TABLE = register("acacia_side_table", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_SIDE_TABLE = register("birch_side_table", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_SIDE_TABLE = register("dark_oak_side_table", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_SIDE_TABLE = register("jungle_side_table", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_SIDE_TABLE = register("mangrove_side_table", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_SIDE_TABLE = register("oak_side_table", () -> new ModRenderedBlockItem(ModBlocks.OAK_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_SIDE_TABLE = register("spruce_side_table", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_SIDE_TABLE = register("warped_side_table", () -> new ModRenderedBlockItem(ModBlocks.WARPED_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_SIDE_TABLE = register("acacia_side_table", () -> new RenderedBlockItem(ModBlocks.ACACIA_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_SIDE_TABLE = register("birch_side_table", () -> new RenderedBlockItem(ModBlocks.BIRCH_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_SIDE_TABLE = register("dark_oak_side_table", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_SIDE_TABLE = register("jungle_side_table", () -> new RenderedBlockItem(ModBlocks.JUNGLE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_SIDE_TABLE = register("mangrove_side_table", () -> new RenderedBlockItem(ModBlocks.MANGROVE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_SIDE_TABLE = register("oak_side_table", () -> new RenderedBlockItem(ModBlocks.OAK_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_SIDE_TABLE = register("spruce_side_table", () -> new RenderedBlockItem(ModBlocks.SPRUCE_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new RenderedBlockItem(ModBlocks.CRIMSON_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_SIDE_TABLE = register("warped_side_table", () -> new RenderedBlockItem(ModBlocks.WARPED_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> OVEN = register("oven", () -> new BlockItem(ModBlocks.OVEN.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> KITCHEN_HOOD = register("kitchen_hood", () -> new BlockItem(ModBlocks.KITCHEN_HOOD.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new BlockItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> ACACIA_DRAWER = register("acacia_drawer", () -> new BlockItem(ModBlocks.ACACIA_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> BIRCH_DRAWER = register("birch_drawer", () -> new BlockItem(ModBlocks.BIRCH_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
@@ -156,21 +161,21 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_DRAWER = register("crimson_drawer", () -> new BlockItem(ModBlocks.CRIMSON_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_DRAWER = register("warped_drawer", () -> new BlockItem(ModBlocks.WARPED_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_COUNTER = register("acacia_counter", () -> new ModRenderedBlockItem(ModBlocks.ACACIA_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_COUNTER = register("birch_counter", () -> new ModRenderedBlockItem(ModBlocks.BIRCH_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_COUNTER = register("dark_oak_counter", () -> new ModRenderedBlockItem(ModBlocks.DARK_OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_COUNTER = register("jungle_counter", () -> new ModRenderedBlockItem(ModBlocks.JUNGLE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> MANGROVE_COUNTER = register("mangrove_counter", () -> new ModRenderedBlockItem(ModBlocks.MANGROVE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_COUNTER = register("oak_counter", () -> new ModRenderedBlockItem(ModBlocks.OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_COUNTER = register("spruce_counter", () -> new ModRenderedBlockItem(ModBlocks.SPRUCE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_COUNTER = register("crimson_counter", () -> new ModRenderedBlockItem(ModBlocks.CRIMSON_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_COUNTER = register("warped_counter", () -> new ModRenderedBlockItem(ModBlocks.WARPED_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_COUNTER = register("acacia_counter", () -> new RenderedBlockItem(ModBlocks.ACACIA_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_COUNTER = register("birch_counter", () -> new RenderedBlockItem(ModBlocks.BIRCH_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_COUNTER = register("dark_oak_counter", () -> new RenderedBlockItem(ModBlocks.DARK_OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_COUNTER = register("jungle_counter", () -> new RenderedBlockItem(ModBlocks.JUNGLE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_COUNTER = register("mangrove_counter", () -> new RenderedBlockItem(ModBlocks.MANGROVE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_COUNTER = register("oak_counter", () -> new RenderedBlockItem(ModBlocks.OAK_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_COUNTER = register("spruce_counter", () -> new RenderedBlockItem(ModBlocks.SPRUCE_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_COUNTER = register("crimson_counter", () -> new RenderedBlockItem(ModBlocks.CRIMSON_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_COUNTER = register("warped_counter", () -> new RenderedBlockItem(ModBlocks.WARPED_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> OAK_CUPBOARD = register("oak_cupboard", () -> new BlockItem(ModBlocks.OAK_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> OAK_SHELF = register("oak_shelf", () -> new BlockItem(ModBlocks.OAK_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new ModRenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new RenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> WHITE_CUP = register("white_cup", () -> new BlockItem(ModBlocks.WHITE_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WHITE_PLATE = register("white_plate", () -> new BlockItem(ModBlocks.WHITE_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
@@ -237,7 +242,7 @@ public class ModItems {
     public static final Supplier<Item> PILLAGER_TROPHY = register("pillager_trophy", () -> new BlockItem(ModBlocks.PILLAGER_TROPHY.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> VINDICATOR_TROPHY = register("vindicator_trophy", () -> new BlockItem(ModBlocks.VINDICATOR_TROPHY.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> WITCH_TROPHY = register("witch_trophy", () -> new ModRenderedBlockItem(ModBlocks.WITCH_TROPHY.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WITCH_TROPHY = register("witch_trophy", () -> new RenderedBlockItem(ModBlocks.WITCH_TROPHY.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     private static <T extends Item> Supplier<T> register(String id, Supplier<T> item) {
         return ModRegistryHelpers.register(Registry.ITEM, id, item);

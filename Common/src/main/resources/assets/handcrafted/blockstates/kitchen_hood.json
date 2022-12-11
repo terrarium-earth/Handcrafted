@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood"
+    },
+    "facing=north": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood",
+      "y": 270
+    }
+  }
+}

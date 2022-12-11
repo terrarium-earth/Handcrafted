@@ -1,4 +1,5 @@
 {
+	"parent": "block/block",
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "handcrafted:block/trophy/trophy_wall",

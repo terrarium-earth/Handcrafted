@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "corner=false": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood_straight_pipe"
+    },
+    "corner=true,facing=east": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood_corner_pipe",
+      "y": 90
+    },
+    "corner=true,facing=north": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood_corner_pipe"
+    },
+    "corner=true,facing=south": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood_corner_pipe",
+      "y": 180
+    },
+    "corner=true,facing=west": {
+      "model": "handcrafted:block/kitchen_hood/kitchen_hood_corner_pipe",
+      "y": 270
+    }
+  }
+}

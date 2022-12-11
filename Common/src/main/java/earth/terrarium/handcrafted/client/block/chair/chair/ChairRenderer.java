@@ -55,7 +55,10 @@ public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+            poseStack.pushPose();
+            poseStack.scale(0.75f, 0.75f, 0.75f);
             render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
         }
     }
 }

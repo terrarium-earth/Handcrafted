@@ -83,7 +83,11 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+            poseStack.pushPose();
+            poseStack.scale(0.9f, 0.9f, 0.9f);
             render(new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new CouchModel(Minecraft.getInstance().getEntityModels().bakeLayer(CouchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
+
         }
     }
 }

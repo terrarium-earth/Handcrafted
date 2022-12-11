@@ -23,7 +23,8 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.handcrafted.fabric.HandcraftedFabric"
+      "earth.terrarium.handcrafted.fabric.HandcraftedFabric",
+      "earth.terrarium.handcrafted.Handcrafted::postInit"
     ],
     "client": [
       "earth.terrarium.handcrafted.fabric.HandcraftedClientFabric"

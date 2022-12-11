@@ -3,7 +3,6 @@ package earth.terrarium.handcrafted.fabric;
 import earth.terrarium.handcrafted.client.HandcraftedClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -29,7 +28,6 @@ public class HandcraftedClientFabric implements ClientModInitializer {
     public void onInitializeClient() {
         HandcraftedClient.initializeClient();
         HandcraftedClient.onRegisterItemRenderers(HandcraftedClientFabric::registerItemRenderer);
-        ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> HandcraftedClient.onRegisterModels(out));
         HandcraftedClient.onRegisterBlockRenderTypes(HandcraftedClientFabric::registerBlockRenderTypes);
         HandcraftedClient.registerEntityLayers(new HandcraftedClient.LayerDefinitionRegistry() {
             @Override

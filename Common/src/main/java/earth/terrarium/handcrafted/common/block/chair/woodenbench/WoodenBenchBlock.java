@@ -12,6 +12,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -33,12 +34,21 @@ public class WoodenBenchBlock extends ExpandableCouchBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return SimpleEntityBlock.cushionUse(level, pos, player, ItemStack.EMPTY);
+        InteractionResult interactionResult = SimpleEntityBlock.cushionUse(level, pos, player, ItemStack.EMPTY);
+        if (!interactionResult.consumesAction()) {
+            return super.use(state, level, pos, player, hand, hit);
+        }
+        return interactionResult;
     }
 
     @Override
     public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         Vec3 offset = state.getOffset(level, pos);
         return SHAPE.move(offset.x(), offset.y(), offset.z());
+    }
+
+    @Override
+    public AABB getSeatSize(BlockState state) {
+        return new AABB(0, 0, 0, 1, 0.5, 1);
     }
 }

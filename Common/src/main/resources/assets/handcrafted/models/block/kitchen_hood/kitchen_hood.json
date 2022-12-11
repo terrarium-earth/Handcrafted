@@ -1,0 +1,59 @@
+{
+	"parent": "block/block",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "handcrafted:block/kitchen_hood/kitchen_hood",
+		"particle": "handcrafted:block/kitchen_hood/kitchen_hood"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 8, 5.5], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5.5], "texture": "#0"},
+				"south": {"uv": [12, 4, 16, 5.5], "texture": "#0"},
+				"west": {"uv": [8, 4, 12, 5.5], "texture": "#0"},
+				"up": {"uv": [8, 4, 4, 0], "texture": "#0"},
+				"down": {"uv": [12, 0, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 6, 3],
+			"to": [13, 9, 13],
+			"faces": {
+				"north": {"uv": [2.5, 8, 5, 8.75], "texture": "#0"},
+				"east": {"uv": [0, 8, 2.5, 8.75], "texture": "#0"},
+				"south": {"uv": [7.5, 8, 10, 8.75], "texture": "#0"},
+				"west": {"uv": [5, 8, 7.5, 8.75], "texture": "#0"},
+				"up": {"uv": [5, 8, 2.5, 5.5], "texture": "#0"},
+				"down": {"uv": [7.5, 5.5, 5, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 5, 4],
+			"to": [12, 15, 12],
+			"faces": {
+				"north": {"uv": [2, 10.75, 4, 13.25], "texture": "#0"},
+				"east": {"uv": [0, 10.75, 2, 13.25], "texture": "#0"},
+				"south": {"uv": [6, 10.75, 8, 13.25], "texture": "#0"},
+				"west": {"uv": [4, 10.75, 6, 13.25], "texture": "#0"},
+				"up": {"uv": [4, 10.75, 2, 8.75], "texture": "#0"},
+				"down": {"uv": [6, 8.75, 4, 10.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 13, 3],
+			"to": [13, 16, 13],
+			"faces": {
+				"north": {"uv": [2.5, 8, 5, 8.75], "texture": "#0"},
+				"east": {"uv": [0, 8, 2.5, 8.75], "texture": "#0"},
+				"south": {"uv": [7.5, 8, 10, 8.75], "texture": "#0"},
+				"west": {"uv": [5, 8, 7.5, 8.75], "texture": "#0"},
+				"up": {"uv": [5, 8, 2.5, 5.5], "texture": "#0"},
+				"down": {"uv": [7.5, 5.5, 5, 8], "texture": "#0"}
+			}
+		}
+	]
+}

@@ -68,7 +68,7 @@ public class WoodenBenchRenderer implements BlockEntityRenderer<WoodenBenchBlock
             };
         });
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutoutNoCull(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         if (!cushion.toString().equals("minecraft:air")) {
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         } else {
@@ -85,7 +85,10 @@ public class WoodenBenchRenderer implements BlockEntityRenderer<WoodenBenchBlock
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
             WoodenBenchModel model = new WoodenBenchModel(Minecraft.getInstance().getEntityModels().bakeLayer(WoodenBenchModel.LAYER_LOCATION_SINGLE));
+            poseStack.pushPose();
+            poseStack.scale(0.75f, 0.75f, 0.75f);
             render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), model, Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
         }
     }
 }

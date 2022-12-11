@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -53,10 +54,14 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
         Block block = state.getBlock();
         ResourceLocation id = Registry.BLOCK.getKey(block);
         Block replacement = Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
+        ItemStack item = ((ItemHoldingBlockEntity)level.getBlockEntity(pos)).getItem();
         if (replacement == Blocks.AIR) {
             level.setBlock(pos, Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
+        }
+        if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+            entity.setItem(item);
         }
     }
 }

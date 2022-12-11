@@ -1,13 +1,13 @@
 package earth.terrarium.handcrafted.client;
 
-import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
-import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.bench.BenchModel;
 import earth.terrarium.handcrafted.client.block.chair.bench.BenchRenderer;
-import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchModel;
-import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.chair.ChairModel;
 import earth.terrarium.handcrafted.client.block.chair.chair.ChairRenderer;
+import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
+import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchModel;
+import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchRenderer;
 import earth.terrarium.handcrafted.client.block.counter.CounterModel;
@@ -40,6 +40,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.entity.NoopRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -50,7 +51,6 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 
 import java.util.List;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class HandcraftedClient {
@@ -201,9 +201,7 @@ public class HandcraftedClient {
 
     public static void registerEntityRenderers(EntityRendererRegistry registry) {
         registry.register(ModEntityTypes.FANCY_PAINTING, FancyPaintingRenderer::new);
-    }
-
-    public static void onRegisterModels(Consumer<ResourceLocation> register) {
+        registry.register(ModEntityTypes.SEAT, NoopRenderer::new);
     }
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {

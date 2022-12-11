@@ -12,4 +12,8 @@ public class Handcrafted {
         ModItems.init();
         ModPaintings.init();
     }
+
+    public static void postInit() {
+        ModBlockEntities.postInit();
+    }
 }

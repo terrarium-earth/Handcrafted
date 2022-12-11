@@ -47,7 +47,11 @@ public class StatueRenderer implements BlockEntityRenderer<StatueTrophyBlockEnti
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+            poseStack.pushPose();
+            poseStack.mulPose(Vector3f.YN.rotationDegrees(180));
+            poseStack.translate(-1, 0, -1);
             render(Registry.ITEM.getKey(stack.getItem()), new StatueModel(Minecraft.getInstance().getEntityModels().bakeLayer(StatueModel.LAYER_LOCATION_WITCH)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            poseStack.popPose();
         }
     }
 }

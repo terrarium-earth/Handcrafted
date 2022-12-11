@@ -16,7 +16,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -31,7 +30,6 @@ public class HandcraftedClientForge {
 
     public static void init() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        bus.addListener(HandcraftedClientForge::modelLoading);
         bus.addListener(HandcraftedClientForge::onRegisterRenderers);
         bus.addListener(HandcraftedClientForge::onRegisterLayerDefinitions);
     }
@@ -55,10 +53,6 @@ public class HandcraftedClientForge {
                 event.registerBlockEntityRenderer(type.get(), factory);
             }
         });
-    }
-
-    public static void modelLoading(ModelEvent.RegisterAdditional event) {
-        HandcraftedClient.onRegisterModels(event::register);
     }
 
     public static BlockEntityWithoutLevelRenderer getItemRenderer(ItemLike item) {

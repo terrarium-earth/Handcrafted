@@ -86,8 +86,8 @@ public abstract class SimpleEntityBlock extends BaseEntityBlock implements Simpl
                     }
                 }
             }
-            return InteractionResult.PASS;
+            return InteractionResult.FAIL;
         }
-        return InteractionResult.CONSUME_PARTIAL;
+        return InteractionResult.FAIL;
     }
 }

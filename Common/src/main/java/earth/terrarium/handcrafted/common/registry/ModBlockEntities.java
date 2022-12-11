@@ -15,10 +15,14 @@ import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock
 import earth.terrarium.handcrafted.common.block.table.side_table.SideTableBlockEntity;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlockEntity;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlockEntity;
+import earth.terrarium.handcrafted.mixin.BlockEntityTypeAccessor;
 import net.minecraft.core.Registry;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.function.Supplier;
 
 public class ModBlockEntities {
@@ -40,6 +44,14 @@ public class ModBlockEntities {
 
     private static <T extends BlockEntityType<B>, B extends BlockEntity> Supplier<T> register(String id, Supplier<T> object) {
         return ModRegistryHelpers.register(Registry.BLOCK_ENTITY_TYPE, id, object);
+    }
+
+    public static void postInit() {
+        // Add custom smokers to the smoker block entity registry
+        BlockEntityTypeAccessor smokerRegistry = ((BlockEntityTypeAccessor) BlockEntityType.SMOKER);
+        Set<Block> smokerBlocks = new HashSet<>(smokerRegistry.getValidBlocks());
+        smokerBlocks.add(ModBlocks.OVEN.get());
+        smokerRegistry.setValidBlocks(smokerBlocks);
     }
 
     public static void init() {

@@ -1,3 +1,6 @@
 {
-  "parent": "handcrafted:block/crockery/plate/blue_single"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "handcrafted:item/crockery/blue_plate"
+  }
 }

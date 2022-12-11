@@ -1,3 +1,6 @@
 {
-  "parent": "handcrafted:block/crockery/combo/blue_crockery_combo"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "handcrafted:item/crockery/blue_crockery_combo"
+  }
 }

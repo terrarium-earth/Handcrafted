@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "handcrafted:block/stackable_jars/berry_jam_jar",
-		"particle": "handcrafted:block/stackable_jars/berry_jam_jar"
+		"3": "handcrafted:block/stackable_jar/berry_jam_jar",
+		"particle": "handcrafted:block/stackable_jar/berry_jam_jar"
 	},
 	"elements": [
 		{

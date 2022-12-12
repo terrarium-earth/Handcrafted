@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/counter/shelf/mangrove/shelf_top",
+    "east": "handcrafted:block/counter/shelf/mangrove/shelf_side_left",
+    "north": "handcrafted:block/counter/shelf/mangrove/shelf_left",
+    "particle": "handcrafted:block/counter/shelf/mangrove/shelf_top",
+    "south": "handcrafted:block/counter/shelf/mangrove/shelf_back",
+    "up": "handcrafted:block/counter/shelf/mangrove/shelf_top",
+    "west": "handcrafted:block/counter/shelf/mangrove/shelf_side_right"
+  }
+}

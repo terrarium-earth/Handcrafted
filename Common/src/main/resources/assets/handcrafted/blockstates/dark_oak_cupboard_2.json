@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": [
+      {
+        "model": "handcrafted:block/counter/cupboard/dark_oak/cupboard_2"
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "handcrafted:block/counter/cupboard/dark_oak/cupboard_2",
+        "y": 90
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "handcrafted:block/counter/cupboard/dark_oak/cupboard_2",
+        "y": 180
+      }
+    ],
+    "facing=west": [
+      {
+        "model": "handcrafted:block/counter/cupboard/dark_oak/cupboard_2",
+        "y": 270
+      }
+    ]
+  }
+}

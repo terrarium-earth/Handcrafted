@@ -2,19 +2,18 @@
   "variants": {
     "facing=east": {
       "model": "handcrafted:block/trophy/wall/pufferfish_trophy",
-      "y": 270
+      "y": 90
     },
     "facing=north": {
-      "model": "handcrafted:block/trophy/wall/pufferfish_trophy",
-      "y": 180
+      "model": "handcrafted:block/trophy/wall/pufferfish_trophy"
     },
     "facing=south": {
       "model": "handcrafted:block/trophy/wall/pufferfish_trophy",
-      "y": 0
+      "y": 180
     },
     "facing=west": {
       "model": "handcrafted:block/trophy/wall/pufferfish_trophy",
-      "y": 90
+      "y": 270
     }
   }
 }

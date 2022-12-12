@@ -28,6 +28,6 @@ public class KitchenHoodPipe extends SimpleBlock implements Hammerable {
 
     @Override
     public void onHammer(Level level, BlockPos pos, BlockState state, Direction side, Player user, Vec3 hitPos) {
-        level.setBlock(pos, state.setValue(CORNER, !state.getValue(CORNER)), Block.UPDATE_ALL);
+        level.setBlock(pos, state.setValue(CORNER, !state.getValue(CORNER)).setValue(FACING, side.getAxis().isHorizontal() ? side : state.getValue(FACING)), Block.UPDATE_ALL);
     }
 }

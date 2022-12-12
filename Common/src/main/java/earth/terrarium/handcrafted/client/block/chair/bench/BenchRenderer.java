@@ -47,28 +47,33 @@ public class BenchRenderer implements BlockEntityRenderer<BenchBlockEntity> {
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(switch (direction) {
             case EAST -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(90);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(180);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(0);
+                case INNER_LEFT -> Vector3f.YP.rotationDegrees(0);
+                case MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(90);
+                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(180);
+                case OUTER_LEFT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(270);
             };
             case SOUTH -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(0);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(90);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(270);
+                case MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(0);
+                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(90);
+                case OUTER_LEFT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(180);
+                case INNER_LEFT -> Vector3f.YP.rotationDegrees(270);
             };
             case WEST -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(270);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(0);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(180);
+                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(0);
+                case INNER_RIGHT, OUTER_LEFT -> Vector3f.YP.rotationDegrees(90);
+                case INNER_LEFT -> Vector3f.YP.rotationDegrees(180);
+                case MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(270);
             };
             default -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(180);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(270);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(90);
+                case OUTER_LEFT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(0);
+                case INNER_LEFT -> Vector3f.YP.rotationDegrees(90);
+                case MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(180);
+                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(270);
             };
         });
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        poseStack.mulPose(Vector3f.YP.rotationDegrees(180));
+        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         poseStack.popPose();
     }
 

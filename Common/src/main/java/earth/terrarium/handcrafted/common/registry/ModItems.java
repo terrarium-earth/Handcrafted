@@ -171,9 +171,25 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_COUNTER = register("crimson_counter", () -> new RenderedBlockItem(ModBlocks.CRIMSON_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_COUNTER = register("warped_counter", () -> new RenderedBlockItem(ModBlocks.WARPED_COUNTER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_CUPBOARD = register("acacia_cupboard", () -> new BlockItem(ModBlocks.ACACIA_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_CUPBOARD = register("birch_cupboard", () -> new BlockItem(ModBlocks.BIRCH_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_CUPBOARD = register("dark_oak_cupboard", () -> new BlockItem(ModBlocks.DARK_OAK_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_CUPBOARD = register("jungle_cupboard", () -> new BlockItem(ModBlocks.JUNGLE_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_CUPBOARD = register("mangrove_cupboard", () -> new BlockItem(ModBlocks.MANGROVE_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> OAK_CUPBOARD = register("oak_cupboard", () -> new BlockItem(ModBlocks.OAK_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_CUPBOARD = register("spruce_cupboard", () -> new BlockItem(ModBlocks.SPRUCE_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_CUPBOARD = register("crimson_cupboard", () -> new BlockItem(ModBlocks.CRIMSON_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_CUPBOARD = register("warped_cupboard", () -> new BlockItem(ModBlocks.WARPED_CUPBOARD_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_SHELF = register("acacia_shelf", () -> new BlockItem(ModBlocks.ACACIA_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_SHELF = register("birch_shelf", () -> new BlockItem(ModBlocks.BIRCH_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_SHELF = register("dark_oak_shelf", () -> new BlockItem(ModBlocks.DARK_OAK_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_SHELF = register("jungle_shelf", () -> new BlockItem(ModBlocks.JUNGLE_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_SHELF = register("mangrove_shelf", () -> new BlockItem(ModBlocks.MANGROVE_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> OAK_SHELF = register("oak_shelf", () -> new BlockItem(ModBlocks.OAK_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_SHELF = register("spruce_shelf", () -> new BlockItem(ModBlocks.SPRUCE_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_SHELF = register("crimson_shelf", () -> new BlockItem(ModBlocks.CRIMSON_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_SHELF = register("warped_shelf", () -> new BlockItem(ModBlocks.WARPED_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new RenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 

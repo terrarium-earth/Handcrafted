@@ -218,10 +218,34 @@ public class ModBlocks {
     public static final Supplier<Block> WARPED_DRAWER_3 = register("warped_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final Supplier<Block> WARPED_DRAWER_4 = register("warped_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
 
+    public static final Supplier<Block> ACACIA_CUPBOARD_1 = register("acacia_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> ACACIA_CUPBOARD_2 = register("acacia_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> BIRCH_CUPBOARD_1 = register("birch_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> BIRCH_CUPBOARD_2 = register("birch_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_CUPBOARD_1 = register("dark_oak_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_CUPBOARD_2 = register("dark_oak_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> JUNGLE_CUPBOARD_1 = register("jungle_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> JUNGLE_CUPBOARD_2 = register("jungle_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_CUPBOARD_1 = register("mangrove_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_CUPBOARD_2 = register("mangrove_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
     public static final Supplier<Block> OAK_CUPBOARD_1 = register("oak_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final Supplier<Block> OAK_CUPBOARD_2 = register("oak_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> SPRUCE_CUPBOARD_1 = register("spruce_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> SPRUCE_CUPBOARD_2 = register("spruce_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> CRIMSON_CUPBOARD_1 = register("crimson_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> CRIMSON_CUPBOARD_2 = register("crimson_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> WARPED_CUPBOARD_1 = register("warped_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+    public static final Supplier<Block> WARPED_CUPBOARD_2 = register("warped_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
 
+    public static final Supplier<Block> ACACIA_SHELF_1 = register("acacia_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+    public static final Supplier<Block> BIRCH_SHELF_1 = register("birch_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
+    public static final Supplier<Block> DARK_OAK_SHELF_1 = register("dark_oak_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Supplier<Block> JUNGLE_SHELF_1 = register("jungle_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Supplier<Block> MANGROVE_SHELF_1 = register("mangrove_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS)));
     public static final Supplier<Block> OAK_SHELF_1 = register("oak_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> SPRUCE_SHELF_1 = register("spruce_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Supplier<Block> CRIMSON_SHELF_1 = register("crimson_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Supplier<Block> WARPED_SHELF_1 = register("warped_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
 
     public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 

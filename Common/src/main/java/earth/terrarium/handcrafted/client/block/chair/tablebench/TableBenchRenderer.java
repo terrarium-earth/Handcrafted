@@ -41,7 +41,7 @@ public class TableBenchRenderer implements BlockEntityRenderer<TableBenchBlockEn
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/table_bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/table_bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         poseStack.popPose();
     }
 

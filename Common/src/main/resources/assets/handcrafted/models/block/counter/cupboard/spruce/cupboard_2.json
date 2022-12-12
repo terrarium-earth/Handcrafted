@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/counter/cupboard/spruce/cupboard_top",
+    "east": "handcrafted:block/counter/cupboard/spruce/cupboard_side",
+    "north": "handcrafted:block/counter/cupboard/spruce/cupboard_2",
+    "particle": "handcrafted:block/counter/cupboard/spruce/cupboard_top",
+    "south": "handcrafted:block/counter/cupboard/spruce/cupboard_back",
+    "up": "handcrafted:block/counter/cupboard/spruce/cupboard_top",
+    "west": "handcrafted:block/counter/cupboard/spruce/cupboard_side"
+  }
+}

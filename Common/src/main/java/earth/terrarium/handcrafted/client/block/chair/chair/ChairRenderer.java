@@ -37,11 +37,11 @@ public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
         poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
         model.getMain().getChild("with_cushions").visible = false;
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/chair/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         model.getMain().getChild("with_cushions").visible = true;
         if (!cushion.toString().equals("minecraft:air")) {
             model.getMain().getChild("base").visible = false;
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chairs/chair/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         } else {
             model.getMain().getChild("with_cushions").visible = false;
         }

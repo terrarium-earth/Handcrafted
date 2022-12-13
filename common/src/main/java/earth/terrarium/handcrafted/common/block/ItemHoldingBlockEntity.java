@@ -67,21 +67,27 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
     }
 
     public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem, Predicate<ItemStack> filter) {
-        if (!level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
-                ItemStack stack = player.getMainHandItem();
-                if (!ItemStack.isSameIgnoreDurability(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) && filter.test(stack)) {
+        if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+            ItemStack stack = player.getMainHandItem();
+            if (!ItemStack.isSameIgnoreDurability(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) && filter.test(stack)) {
+                if (!level.isClientSide) {
                     ItemStack copy = stack.copy();
                     copy.setCount(1);
                     entity.setStack(copy);
                     if (!player.isCreative()) stack.shrink(1);
+                    return InteractionResult.PASS;
+                } else {
                     return InteractionResult.SUCCESS;
-                } else if (player.isCrouching()) {
-                    if (!ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) {
+                }
+            } else if (player.isCrouching()) {
+                if (!ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) {
+                    if(!level.isClientSide) {
                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
                         entity.setStack(defaultItem);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
+                        return InteractionResult.PASS;
+                    } else {
                         return InteractionResult.SUCCESS;
                     }
                 }

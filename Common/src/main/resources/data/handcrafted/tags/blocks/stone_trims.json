@@ -1,0 +1,24 @@
+{
+  "values": [
+    "handcrafted:andesite_pillar_trim",
+    "handcrafted:andesite_corner_trim",
+    "handcrafted:blackstone_pillar_trim",
+    "handcrafted:blackstone_corner_trim",
+    "handcrafted:bricks_pillar_trim",
+    "handcrafted:bricks_corner_trim",
+    "handcrafted:calcite_pillar_trim",
+    "handcrafted:calcite_corner_trim",
+    "handcrafted:deepslate_pillar_trim",
+    "handcrafted:deepslate_corner_trim",
+    "handcrafted:diorite_pillar_trim",
+    "handcrafted:diorite_corner_trim",
+    "handcrafted:dripstone_pillar_trim",
+    "handcrafted:dripstone_corner_trim",
+    "handcrafted:granite_pillar_trim",
+    "handcrafted:granite_corner_trim",
+    "handcrafted:quartz_pillar_trim",
+    "handcrafted:quartz_corner_trim",
+    "handcrafted:stone_pillar_trim",
+    "handcrafted:stone_corner_trim"
+  ]
+}

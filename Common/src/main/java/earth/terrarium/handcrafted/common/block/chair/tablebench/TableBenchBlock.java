@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.common.block.chair.tablebench;
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import earth.terrarium.handcrafted.common.block.SittableBlock;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -22,6 +23,8 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("deprecation")
+@MethodsReturnNonnullByDefault
 public class TableBenchBlock extends SimpleEntityBlock implements SittableBlock {
     public static final EnumProperty<DirectionalBlockSide> TABLE_BENCH_SHAPE = EnumProperty.create("shape", DirectionalBlockSide.class);
 
@@ -41,6 +44,14 @@ public class TableBenchBlock extends SimpleEntityBlock implements SittableBlock 
     }
 
     @Override
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        if (this.sitOn(level, pos, player, null)) {
+            return InteractionResult.CONSUME;
+        }
+        return InteractionResult.CONSUME_PARTIAL;
+    }
+
+    @Override
     public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
@@ -49,13 +60,6 @@ public class TableBenchBlock extends SimpleEntityBlock implements SittableBlock 
         return direction.getAxis().isHorizontal() ? state.setValue(TABLE_BENCH_SHAPE, DirectionalBlockSide.getShape(this, FACING, state, level, currentPos)) : super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
-    @Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (this.sitOn(level, pos, player, null)) {
-            return InteractionResult.CONSUME;
-        }
-        return InteractionResult.CONSUME_PARTIAL;
-    }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {

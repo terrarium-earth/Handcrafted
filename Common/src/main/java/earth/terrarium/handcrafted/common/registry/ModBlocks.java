@@ -22,6 +22,8 @@ import earth.terrarium.handcrafted.common.block.table.desk.DeskBlock;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
 import earth.terrarium.handcrafted.common.block.table.side_table.SideTableBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
+import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
+import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
 import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyEntityBlock;
@@ -34,6 +36,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public class ModBlocks {
     public static final Supplier<Block> BLACK_CUSHION = register("black_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final Supplier<Block> BLUE_CUSHION = register("blue_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
@@ -147,12 +150,6 @@ public class ModBlocks {
     public static final Supplier<Block> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final Supplier<Block> WARPED_SIDE_TABLE = register("warped_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
-    public static final Supplier<Block> OVEN = register("oven", () -> new SmokerBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)) {
-
-    });
-    public static final Supplier<Block> KITCHEN_HOOD = register("kitchen_hood", () -> new SimpleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-    public static final Supplier<Block> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new KitchenHoodPipe(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-
     public static final Supplier<Block> ACACIA_COUNTER_1 = register("acacia_counter_1", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final Supplier<Block> ACACIA_COUNTER_2 = register("acacia_counter_2", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final Supplier<Block> ACACIA_COUNTER_3 = register("acacia_counter_3", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
@@ -246,6 +243,51 @@ public class ModBlocks {
     public static final Supplier<Block> SPRUCE_SHELF_1 = register("spruce_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
     public static final Supplier<Block> CRIMSON_SHELF_1 = register("crimson_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
     public static final Supplier<Block> WARPED_SHELF_1 = register("warped_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
+
+    public static final Supplier<Block> OVEN = register("oven", () -> new SmokerBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)) {
+    });
+
+    public static final Supplier<Block> KITCHEN_HOOD = register("kitchen_hood", () -> new SimpleBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final Supplier<Block> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new KitchenHoodPipe(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final Supplier<Block> ACACIA_PILLAR_TRIM = register("acacia_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
+    public static final Supplier<Block> ACACIA_CORNER_TRIM = register("acacia_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
+    public static final Supplier<Block> BIRCH_PILLAR_TRIM = register("birch_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
+    public static final Supplier<Block> BIRCH_CORNER_TRIM = register("birch_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
+    public static final Supplier<Block> DARK_OAK_PILLAR_TRIM = register("dark_oak_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> DARK_OAK_CORNER_TRIM = register("dark_oak_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> JUNGLE_PILLAR_TRIM = register("jungle_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> JUNGLE_CORNER_TRIM = register("jungle_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> MANGROVE_PILLAR_TRIM = register("mangrove_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> MANGROVE_CORNER_TRIM = register("mangrove_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> OAK_PILLAR_TRIM = register("oak_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> OAK_CORNER_TRIM = register("oak_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> SPRUCE_PILLAR_TRIM = register("spruce_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> SPRUCE_CORNER_TRIM = register("spruce_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+    public static final Supplier<Block> CRIMSON_PILLAR_TRIM = register("crimson_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final Supplier<Block> CRIMSON_CORNER_TRIM = register("crimson_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final Supplier<Block> WARPED_PILLAR_TRIM = register("warped_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
+    public static final Supplier<Block> WARPED_CORNER_TRIM = register("warped_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
+    public static final Supplier<Block> ANDESITE_PILLAR_TRIM = register("andesite_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion()));
+    public static final Supplier<Block> ANDESITE_CORNER_TRIM = register("andesite_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE).noOcclusion()));
+    public static final Supplier<Block> BLACKSTONE_PILLAR_TRIM = register("blackstone_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
+    public static final Supplier<Block> BLACKSTONE_CORNER_TRIM = register("blackstone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.BLACKSTONE).noOcclusion()));
+    public static final Supplier<Block> BRICKS_PILLAR_TRIM = register("bricks_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion()));
+    public static final Supplier<Block> BRICKS_CORNER_TRIM = register("bricks_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.BRICKS).noOcclusion()));
+    public static final Supplier<Block> CALCITE_PILLAR_TRIM = register("calcite_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).noOcclusion()));
+    public static final Supplier<Block> CALCITE_CORNER_TRIM = register("calcite_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.CALCITE).noOcclusion()));
+    public static final Supplier<Block> DEEPSLATE_PILLAR_TRIM = register("deepslate_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).noOcclusion()));
+    public static final Supplier<Block> DEEPSLATE_CORNER_TRIM = register("deepslate_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).noOcclusion()));
+    public static final Supplier<Block> DIORITE_PILLAR_TRIM = register("diorite_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion()));
+    public static final Supplier<Block> DIORITE_CORNER_TRIM = register("diorite_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE).noOcclusion()));
+    public static final Supplier<Block> DRIPSTONE_PILLAR_TRIM = register("dripstone_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> DRIPSTONE_CORNER_TRIM = register("dripstone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.DRIPSTONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> GRANITE_PILLAR_TRIM = register("granite_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion()));
+    public static final Supplier<Block> GRANITE_CORNER_TRIM = register("granite_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE).noOcclusion()));
+    public static final Supplier<Block> QUARTZ_PILLAR_TRIM = register("quartz_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
+    public static final Supplier<Block> QUARTZ_CORNER_TRIM = register("quartz_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
+    public static final Supplier<Block> STONE_PILLAR_TRIM = register("stone_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+    public static final Supplier<Block> STONE_CORNER_TRIM = register("stone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
 
     public static final Supplier<Block> BERRY_JAM_JAR = register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 

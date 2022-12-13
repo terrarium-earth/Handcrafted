@@ -3,7 +3,7 @@ package earth.terrarium.handcrafted.client.entity.fancypainting;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.common.entity.fancypainting.FancyPainting;
+import earth.terrarium.handcrafted.common.entity.FancyPainting;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

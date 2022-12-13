@@ -3,6 +3,10 @@
   "values": [
     "#handcrafted:benches",
     "#handcrafted:statues",
-    "handcrafted:berry_jam_jar"
+    "#handcrafted:stone_trims",
+    "handcrafted:berry_jam_jar",
+    "handcrafted:kitchen_hood",
+    "handcrafted:kitchen_hood_pipe",
+    "handcrafted:oven"
   ]
 }

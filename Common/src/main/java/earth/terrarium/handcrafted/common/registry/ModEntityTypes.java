@@ -2,7 +2,7 @@ package earth.terrarium.handcrafted.common.registry;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.entity.SittingEntity;
-import earth.terrarium.handcrafted.common.entity.fancypainting.FancyPainting;
+import earth.terrarium.handcrafted.common.entity.FancyPainting;
 import net.minecraft.core.Registry;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;

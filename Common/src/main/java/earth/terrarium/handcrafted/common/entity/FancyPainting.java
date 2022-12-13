@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.common.entity.fancypainting;
+package earth.terrarium.handcrafted.common.entity;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.mixin.PaintingInvoker;

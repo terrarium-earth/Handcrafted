@@ -1,6 +1,6 @@
 package earth.terrarium.handcrafted.common.item;
 
-import earth.terrarium.handcrafted.common.entity.fancypainting.FancyPainting;
+import earth.terrarium.handcrafted.common.entity.FancyPainting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

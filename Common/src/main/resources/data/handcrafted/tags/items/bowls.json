@@ -1,9 +1,9 @@
 {
   "values": [
-    "handcrafted:white_bowl",
-    "handcrafted:yellow_bowl",
     "handcrafted:blue_bowl",
+    "handcrafted:clay_bowl",
+    "handcrafted:white_bowl",
     "handcrafted:wood_bowl",
-    "handcrafted:clay_bowl"
+    "handcrafted:yellow_bowl"
   ]
 }

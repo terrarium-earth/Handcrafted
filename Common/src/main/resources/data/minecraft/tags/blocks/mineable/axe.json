@@ -4,19 +4,22 @@
     "#handcrafted:benches",
     "#handcrafted:chairs",
     "#handcrafted:couches",
+    "#handcrafted:counters",
     "#handcrafted:crockery",
+    "#handcrafted:cupboards",
     "#handcrafted:desks",
+    "#handcrafted:drawers",
+    "#handcrafted:fancy_beds",
     "#handcrafted:nightstands",
     "#handcrafted:pots",
+    "#handcrafted:shelves",
     "#handcrafted:side_tables",
-    "#handcrafted:fancy_beds",
     "#handcrafted:statues",
     "#handcrafted:table_benches",
     "#handcrafted:tables",
     "#handcrafted:trophies",
     "#handcrafted:wooden_benches",
-    "#handcrafted:drawers",
-    "#handcrafted:counters",
-    "handcrafted:stackable_book"
+    "handcrafted:stackable_book",
+    "handcrafted:wood_trims"
   ]
 }

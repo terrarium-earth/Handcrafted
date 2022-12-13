@@ -1,9 +1,10 @@
 package earth.terrarium.handcrafted.common.block.chair.chair;
 
+import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -13,12 +14,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class ChairBlock extends ExpandableCouchBlock {

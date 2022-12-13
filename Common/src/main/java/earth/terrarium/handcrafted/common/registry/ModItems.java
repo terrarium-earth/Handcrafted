@@ -146,11 +146,6 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_SIDE_TABLE = register("crimson_side_table", () -> new RenderedBlockItem(ModBlocks.CRIMSON_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_SIDE_TABLE = register("warped_side_table", () -> new RenderedBlockItem(ModBlocks.WARPED_SIDE_TABLE.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> OVEN = register("oven", () -> new BlockItem(ModBlocks.OVEN.get(), new Item.Properties().tab(ITEM_GROUP)));
-
-    public static final Supplier<Item> KITCHEN_HOOD = register("kitchen_hood", () -> new BlockItem(ModBlocks.KITCHEN_HOOD.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new BlockItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties().tab(ITEM_GROUP)));
-
     public static final Supplier<Item> ACACIA_DRAWER = register("acacia_drawer", () -> new BlockItem(ModBlocks.ACACIA_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> BIRCH_DRAWER = register("birch_drawer", () -> new BlockItem(ModBlocks.BIRCH_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> DARK_OAK_DRAWER = register("dark_oak_drawer", () -> new BlockItem(ModBlocks.DARK_OAK_DRAWER_1.get(), new Item.Properties().tab(ITEM_GROUP)));
@@ -190,6 +185,50 @@ public class ModItems {
     public static final Supplier<Item> SPRUCE_SHELF = register("spruce_shelf", () -> new BlockItem(ModBlocks.SPRUCE_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> CRIMSON_SHELF = register("crimson_shelf", () -> new BlockItem(ModBlocks.CRIMSON_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_SHELF = register("warped_shelf", () -> new BlockItem(ModBlocks.WARPED_SHELF_1.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> OVEN = register("oven", () -> new BlockItem(ModBlocks.OVEN.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> KITCHEN_HOOD = register("kitchen_hood", () -> new BlockItem(ModBlocks.KITCHEN_HOOD.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> KITCHEN_HOOD_PIPE = register("kitchen_hood_pipe", () -> new BlockItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties().tab(ITEM_GROUP)));
+
+    public static final Supplier<Item> ACACIA_PILLAR_TRIM = register("acacia_pillar_trim", () -> new BlockItem(ModBlocks.ACACIA_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_CORNER_TRIM = register("acacia_corner_trim", () -> new BlockItem(ModBlocks.ACACIA_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_PILLAR_TRIM = register("birch_pillar_trim", () -> new BlockItem(ModBlocks.BIRCH_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_CORNER_TRIM = register("birch_corner_trim", () -> new BlockItem(ModBlocks.BIRCH_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_PILLAR_TRIM = register("dark_oak_pillar_trim", () -> new BlockItem(ModBlocks.DARK_OAK_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_CORNER_TRIM = register("dark_oak_corner_trim", () -> new BlockItem(ModBlocks.DARK_OAK_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_PILLAR_TRIM = register("jungle_pillar_trim", () -> new BlockItem(ModBlocks.JUNGLE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_CORNER_TRIM = register("jungle_corner_trim", () -> new BlockItem(ModBlocks.JUNGLE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_PILLAR_TRIM = register("mangrove_pillar_trim", () -> new BlockItem(ModBlocks.MANGROVE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_CORNER_TRIM = register("mangrove_corner_trim", () -> new BlockItem(ModBlocks.MANGROVE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_PILLAR_TRIM = register("oak_pillar_trim", () -> new BlockItem(ModBlocks.OAK_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_CORNER_TRIM = register("oak_corner_trim", () -> new BlockItem(ModBlocks.OAK_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_PILLAR_TRIM = register("spruce_pillar_trim", () -> new BlockItem(ModBlocks.SPRUCE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_CORNER_TRIM = register("spruce_corner_trim", () -> new BlockItem(ModBlocks.SPRUCE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_PILLAR_TRIM = register("crimson_pillar_trim", () -> new BlockItem(ModBlocks.CRIMSON_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_CORNER_TRIM = register("crimson_corner_trim", () -> new BlockItem(ModBlocks.CRIMSON_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_PILLAR_TRIM = register("warped_pillar_trim", () -> new BlockItem(ModBlocks.WARPED_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_CORNER_TRIM = register("warped_corner_trim", () -> new BlockItem(ModBlocks.WARPED_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ANDESITE_PILLAR_TRIM = register("andesite_pillar_trim", () -> new BlockItem(ModBlocks.ANDESITE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ANDESITE_CORNER_TRIM = register("andesite_corner_trim", () -> new BlockItem(ModBlocks.ANDESITE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLACKSTONE_PILLAR_TRIM = register("blackstone_pillar_trim", () -> new BlockItem(ModBlocks.BLACKSTONE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLACKSTONE_CORNER_TRIM = register("blackstone_corner_trim", () -> new BlockItem(ModBlocks.BLACKSTONE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BRICKS_PILLAR_TRIM = register("bricks_pillar_trim", () -> new BlockItem(ModBlocks.BRICKS_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BRICKS_CORNER_TRIM = register("bricks_corner_trim", () -> new BlockItem(ModBlocks.BRICKS_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CALCITE_PILLAR_TRIM = register("calcite_pillar_trim", () -> new BlockItem(ModBlocks.CALCITE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CALCITE_CORNER_TRIM = register("calcite_corner_trim", () -> new BlockItem(ModBlocks.CALCITE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DEEPSLATE_PILLAR_TRIM = register("deepslate_pillar_trim", () -> new BlockItem(ModBlocks.DEEPSLATE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DEEPSLATE_CORNER_TRIM = register("deepslate_corner_trim", () -> new BlockItem(ModBlocks.DEEPSLATE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DIORITE_PILLAR_TRIM = register("diorite_pillar_trim", () -> new BlockItem(ModBlocks.DIORITE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DIORITE_CORNER_TRIM = register("diorite_corner_trim", () -> new BlockItem(ModBlocks.DIORITE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DRIPSTONE_PILLAR_TRIM = register("dripstone_pillar_trim", () -> new BlockItem(ModBlocks.DRIPSTONE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DRIPSTONE_CORNER_TRIM = register("dripstone_corner_trim", () -> new BlockItem(ModBlocks.DRIPSTONE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GRANITE_PILLAR_TRIM = register("granite_pillar_trim", () -> new BlockItem(ModBlocks.GRANITE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> GRANITE_CORNER_TRIM = register("granite_corner_trim", () -> new BlockItem(ModBlocks.GRANITE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> QUARTZ_PILLAR_TRIM = register("quartz_pillar_trim", () -> new BlockItem(ModBlocks.QUARTZ_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> QUARTZ_CORNER_TRIM = register("quartz_corner_trim", () -> new BlockItem(ModBlocks.QUARTZ_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> STONE_PILLAR_TRIM = register("stone_pillar_trim", () -> new BlockItem(ModBlocks.STONE_PILLAR_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> STONE_CORNER_TRIM = register("stone_corner_trim", () -> new BlockItem(ModBlocks.STONE_CORNER_TRIM.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> BERRY_JAM_JAR = register("berry_jam_jar", () -> new RenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties().tab(ITEM_GROUP)));
 

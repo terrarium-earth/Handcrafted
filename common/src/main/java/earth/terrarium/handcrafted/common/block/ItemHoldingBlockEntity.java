@@ -75,7 +75,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                     copy.setCount(1);
                     entity.setStack(copy);
                     if (!player.isCreative()) stack.shrink(1);
-                    return InteractionResult.PASS;
+                    return InteractionResult.CONSUME;
                 } else {
                     return InteractionResult.SUCCESS;
                 }
@@ -86,7 +86,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                         entity.setStack(defaultItem);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
-                        return InteractionResult.PASS;
+                        return InteractionResult.CONSUME;
                     } else {
                         return InteractionResult.SUCCESS;
                     }

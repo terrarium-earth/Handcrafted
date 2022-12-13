@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 
 import java.util.Set;
 
+// It's so cursed and I love it
 @Mixin(BlockEntityType.class)
 public interface BlockEntityTypeAccessor {
     @Accessor

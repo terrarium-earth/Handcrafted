@@ -9,6 +9,6 @@ import net.minecraft.world.level.block.state.BlockState;
 public class CounterBlockEntity extends ItemHoldingBlockEntity {
     public CounterBlockEntity(BlockPos blockPos, BlockState blockState) {
         super(ModBlockEntities.COUNTER.get(), blockPos, blockState);
-        this.setItem(Items.CALCITE.getDefaultInstance());
+        this.setStack(Items.CALCITE.getDefaultInstance());
     }
 }

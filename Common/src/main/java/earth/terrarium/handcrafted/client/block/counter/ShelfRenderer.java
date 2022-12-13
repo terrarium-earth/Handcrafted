@@ -34,10 +34,10 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
 
     @Override
     public void render(ShelfBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
-        if (entity.getItem().isEmpty()) return;
+        if (entity.getStack().isEmpty()) return;
         if (entity.getLevel() == null) return;
 
-        Item item = entity.getItem().getItem();
+        Item item = entity.getStack().getItem();
         Block block = Registry.BLOCK.get(Registry.ITEM.getKey(item));
         Direction dir = entity.getBlockState().getValue(ShelfBlock.FACING);
         ResourceLocation id;

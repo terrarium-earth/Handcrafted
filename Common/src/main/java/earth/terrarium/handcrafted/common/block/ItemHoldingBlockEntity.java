@@ -37,13 +37,17 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
         this.item = ItemStack.of(tag.getCompound("Item"));
     }
 
-    public ItemStack getItem() {
+    public ItemStack getStack() {
         return this.item;
     }
 
-    public void setItem(ItemStack item) {
+    public void setStack(ItemStack item) {
         this.item = item;
         this.update();
+    }
+
+    public void clear() {
+        this.setStack(ItemStack.EMPTY);
     }
 
     public void update() {
@@ -66,16 +70,16 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
         if (!level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
                 ItemStack stack = player.getMainHandItem();
-                if ((entity.getItem().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) && filter.test(stack)) {
+                if (!ItemStack.isSameIgnoreDurability(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) && filter.test(stack)) {
                     ItemStack copy = stack.copy();
                     copy.setCount(1);
-                    entity.setItem(copy);
+                    entity.setStack(copy);
                     if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.SUCCESS;
                 } else if (player.isCrouching()) {
-                    if (!ItemStack.isSameIgnoreDurability(entity.getItem(), defaultItem)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getItem());
-                        entity.setItem(defaultItem);
+                    if (!ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) {
+                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+                        entity.setStack(defaultItem);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
                         return InteractionResult.SUCCESS;
@@ -84,6 +88,6 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
             }
             return InteractionResult.PASS;
         }
-        return InteractionResult.PASS;
+        return InteractionResult.CONSUME;
     }
 }

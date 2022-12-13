@@ -19,12 +19,12 @@ public class CrockeryRenderer implements BlockEntityRenderer<CrockeryBlockEntity
 
     @Override
     public void render(CrockeryBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
-        if (entity.getItem().isEmpty()) return;
+        if (entity.getStack().isEmpty()) return;
         poseStack.pushPose();
         poseStack.translate(0.5, 1.25f / 16, 0.5);
         poseStack.mulPose(Vector3f.YN.rotationDegrees(entity.getBlockState().getValue(CrockeryComboBlock.FACING).getOpposite().toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(270));
-        Minecraft.getInstance().getItemRenderer().renderStatic(entity.getItem(), ItemTransforms.TransformType.GROUND, packedLight, packedOverlay, poseStack, bufferSource, 0);
+        Minecraft.getInstance().getItemRenderer().renderStatic(entity.getStack(), ItemTransforms.TransformType.GROUND, packedLight, packedOverlay, poseStack, bufferSource, 0);
         poseStack.popPose();
     }
 }

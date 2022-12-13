@@ -41,11 +41,6 @@ public class SittingEntity extends Entity {
         this.shape = copyAABB(shape);
     }
 
-    private static AABB copyAABB(AABB aabb) {
-        return new AABB(aabb.minX, aabb.minY, aabb.minZ, aabb.maxX, aabb.maxY, aabb.maxZ);
-    }
-
-
     public static SittingEntity of(Level level, BlockPos pos, Direction dir) {
         BlockState state = level.getBlockState(pos);
         AABB shape = new AABB(pos);
@@ -62,19 +57,8 @@ public class SittingEntity extends Entity {
         return entity;
     }
 
-    @Override
-    protected void defineSynchedData() {
-
-    }
-
-    @Override
-    protected void readAdditionalSaveData(CompoundTag compound) {
-
-    }
-
-    @Override
-    protected void addAdditionalSaveData(CompoundTag compound) {
-
+    private static AABB copyAABB(AABB aabb) {
+        return new AABB(aabb.minX, aabb.minY, aabb.minZ, aabb.maxX, aabb.maxY, aabb.maxZ);
     }
 
     @Override
@@ -166,6 +150,18 @@ public class SittingEntity extends Entity {
     public void setLevelCallback(EntityInLevelCallback levelCallback) {
         super.setLevelCallback(new WrapedLevelCallBack(levelCallback));
 
+    }
+
+    @Override
+    protected void defineSynchedData() {
+    }
+
+    @Override
+    protected void readAdditionalSaveData(CompoundTag compound) {
+    }
+
+    @Override
+    protected void addAdditionalSaveData(CompoundTag compound) {
     }
 
     private class WrapedLevelCallBack implements EntityInLevelCallback {

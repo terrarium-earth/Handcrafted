@@ -1,9 +1,9 @@
 package earth.terrarium.handcrafted.common.entity;
 
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.mixin.PaintingInvoker;
 import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
+import earth.terrarium.handcrafted.mixin.PaintingInvoker;
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

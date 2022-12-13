@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -31,6 +32,20 @@ public class ShelfBlock extends BaseEntityBlock {
     public ShelfBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(SHELF_SHAPE, DirectionalBlockSide.SINGLE).setValue(FACING, Direction.NORTH));
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (!state.is(newState.getBlock())) {
+            if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+                ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+                itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+                level.addFreshEntity(itemEntity);
+                level.updateNeighbourForOutputSignal(pos, this);
+                entity.clear();
+            }
+            super.onRemove(state, level, pos, newState, isMoving);
+        }
     }
 
     @Override

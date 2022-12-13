@@ -1,6 +1,6 @@
 package earth.terrarium.handcrafted.common.block.fancybed;
 
-import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
+import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModTags;
@@ -34,6 +34,29 @@ public class FancyBedBlock extends BedBlock {
     }
 
     @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (!state.is(newState.getBlock())) {
+            if (level.getBlockEntity(pos) instanceof FancyBedBlockEntity entity) {
+                if (entity.getStack().getItem() != ModItems.WHITE_CUSHION.get()) {
+                    ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+                    itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+                    level.addFreshEntity(itemEntity);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+
+                if (entity.getSheet().getItem() != ModItems.WHITE_SHEET.get()) {
+                    ItemEntity itemEntity2 = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getSheet());
+                    itemEntity2.setDeltaMovement(itemEntity2.getDeltaMovement().scale(0.5));
+                    level.addFreshEntity(itemEntity2);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+                entity.clear();
+            }
+            super.onRemove(state, level, pos, newState, isMoving);
+        }
+    }
+
+    @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new FancyBedBlockEntity(pos, state);
     }
@@ -43,7 +66,7 @@ public class FancyBedBlock extends BedBlock {
         ItemStack stack = player.getMainHandItem();
         if (stack.is(ModTags.CUSHIONS) || stack.is(ModTags.SHEETS) || player.isCrouching()) {
             if (state.getValue(BedBlock.PART) == BedPart.HEAD) {
-                return SimpleEntityBlock.cushionUse(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, ModItems.WHITE_CUSHION.get().getDefaultInstance());
+                return ItemHoldingBlockEntity.placeItem(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, ModItems.WHITE_CUSHION.get().getDefaultInstance(), f -> f.is(ModTags.CUSHIONS));
             }
             return FancyBedBlock.sheetUse(level, pos, player, ModItems.WHITE_SHEET.get().getDefaultInstance());
         } else {

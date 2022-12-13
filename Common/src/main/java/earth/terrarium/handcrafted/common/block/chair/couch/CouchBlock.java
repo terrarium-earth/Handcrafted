@@ -1,10 +1,12 @@
 package earth.terrarium.handcrafted.common.block.chair.couch;
 
-import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
+import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.registry.ModItems;
+import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -26,13 +28,29 @@ public class CouchBlock extends ExpandableCouchBlock {
     }
 
     @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (!state.is(newState.getBlock())) {
+            if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+                if (entity.getStack().getItem() != ModItems.WHITE_CUSHION.get()) {
+                    ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+                    itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+                    level.addFreshEntity(itemEntity);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+                entity.clear();
+            }
+            super.onRemove(state, level, pos, newState, isMoving);
+        }
+    }
+
+    @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         return new CouchBlockEntity(pos, state);
     }
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        InteractionResult interactionResult = SimpleEntityBlock.cushionUse(level, pos, player, ModItems.WHITE_CUSHION.get().getDefaultInstance());
+        InteractionResult interactionResult = ItemHoldingBlockEntity.placeItem(level, pos, player, ModItems.WHITE_CUSHION.get().getDefaultInstance(), f -> f.is(ModTags.CUSHIONS));
         if (!interactionResult.consumesAction()) {
             return super.use(state, level, pos, player, hand, hit);
         }

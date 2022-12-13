@@ -6,10 +6,23 @@ architectury {
     forge()
 }
 
+sourceSets {
+    main {
+        resources {
+            srcDirs += 'src/generated/resources'
+            exclude '.cache'
+        }
+    }
+}
+
 loom {
     forge {
         mixinConfig "handcrafted-common.mixins.json"
         mixinConfig "handcrafted.mixins.json"
+
+        dataGen {
+            mod project.mod_id
+        }
     }
 }
 
@@ -32,6 +45,7 @@ dependencies {
 }
 
 processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     inputs.property "version", project.version
 
     filesMatching("META-INF/mods.toml") {

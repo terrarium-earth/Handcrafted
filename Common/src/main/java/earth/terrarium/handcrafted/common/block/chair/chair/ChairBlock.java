@@ -1,12 +1,12 @@
 package earth.terrarium.handcrafted.common.block.chair.chair;
 
-import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
+import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
+import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Registry;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
@@ -14,7 +14,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
@@ -22,14 +21,26 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-
 @SuppressWarnings("deprecation")
 public class ChairBlock extends ExpandableCouchBlock {
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 10, 16);
 
     public ChairBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (!state.is(newState.getBlock())) {
+            if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
+                ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+                itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+                level.addFreshEntity(itemEntity);
+                level.updateNeighbourForOutputSignal(pos, this);
+                entity.clear();
+            }
+            super.onRemove(state, level, pos, newState, isMoving);
+        }
     }
 
     @Override
@@ -45,7 +56,7 @@ public class ChairBlock extends ExpandableCouchBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        InteractionResult interactionResult = SimpleEntityBlock.cushionUse(level, pos, player, ItemStack.EMPTY);
+        InteractionResult interactionResult = ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> f.is(ModTags.CUSHIONS));
         if (!interactionResult.consumesAction()) {
             return super.use(state, level, pos, player, hand, hit);
         }

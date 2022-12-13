@@ -5,9 +5,9 @@ import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlock;
-import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlockEntity;
+import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
@@ -47,7 +47,7 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
         boolean visible = entity.getBlockState().getValue(BedBlock.OCCUPIED);
         model.getMain().getChild("sheets").getChild("with_player").visible = visible;
         model.getMain().getChild("sheets").getChild("without_player").visible = !visible;
-        render(doubleBed, Registry.ITEM.getKey(entity.getSheet().getItem()), Registry.ITEM.getKey(entity.getCushion().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
+        render(doubleBed, Registry.ITEM.getKey(entity.getSheet().getItem()), Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(DirectionalBlockSide doubleBed, ResourceLocation sheet, ResourceLocation cushion, ResourceLocation texture, FancyBedModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

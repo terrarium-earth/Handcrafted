@@ -30,7 +30,7 @@ public class CounterRenderer implements BlockEntityRenderer<CounterBlockEntity> 
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
         CounterModel model = new CounterModel(modelSet.bakeLayer(CounterModel.LAYER_LOCATION));
 
-        render(Registry.ITEM.getKey(entity.getItem().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation overlay, ResourceLocation texture, CounterModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

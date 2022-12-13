@@ -2,9 +2,9 @@ package earth.terrarium.handcrafted.client.block.table.side_table;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
+import earth.terrarium.handcrafted.client.block.table.nightstand.NightstandModel;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
 import earth.terrarium.handcrafted.common.block.table.side_table.SideTableBlockEntity;
-import earth.terrarium.handcrafted.client.block.table.nightstand.NightstandModel;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

@@ -39,7 +39,7 @@ public class WoodenBenchRenderer implements BlockEntityRenderer<WoodenBenchBlock
             case OUTER_LEFT, OUTER_RIGHT ->
                     new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
-        render(Registry.ITEM.getKey(entity.getCushion().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation cushion, ResourceLocation texture, WoodenBenchModel model, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

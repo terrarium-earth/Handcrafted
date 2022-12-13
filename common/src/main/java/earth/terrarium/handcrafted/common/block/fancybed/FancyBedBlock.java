@@ -4,8 +4,13 @@ import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModTags;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -66,7 +71,7 @@ public class FancyBedBlock extends BedBlock {
         ItemStack stack = player.getMainHandItem();
         if (stack.is(ModTags.CUSHIONS) || stack.is(ModTags.SHEETS) || player.isCrouching()) {
             if (state.getValue(BedBlock.PART) == BedPart.HEAD) {
-                return ItemHoldingBlockEntity.placeItem(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, ModItems.WHITE_CUSHION.get().getDefaultInstance(), f -> f.is(ModTags.CUSHIONS));
+                return ItemHoldingBlockEntity.placeItem(level, pos.relative(state.getValue(BedBlock.FACING).getOpposite()), player, ModItems.WHITE_CUSHION.get().getDefaultInstance(), f -> f.is(ModTags.CUSHIONS), SoundEvents.WOOL_PLACE);
             }
             return FancyBedBlock.sheetUse(level, pos, player, ModItems.WHITE_SHEET.get().getDefaultInstance());
         } else {
@@ -102,26 +107,33 @@ public class FancyBedBlock extends BedBlock {
     }
 
     public static InteractionResult sheetUse(Level level, BlockPos pos, Player player, ItemStack defaultSheet) {
-        if (!level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof FancyBedBlockEntity entity) {
-                ItemStack stack = player.getMainHandItem();
-                if ((entity.getSheet().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) && stack.is(ModTags.SHEETS)) {
+        if (level.getBlockEntity(pos) instanceof FancyBedBlockEntity entity) {
+            ItemStack stack = player.getMainHandItem();
+            if ((entity.getSheet().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) && stack.is(ModTags.SHEETS)) {
+                if (!level.isClientSide) {
                     ItemStack copy = stack.copy();
                     copy.setCount(1);
                     entity.setSheet(copy);
                     if (!player.isCreative()) stack.shrink(1);
+                    return InteractionResult.CONSUME;
+                } else {
+                    player.playSound(SoundEvents.WOOL_PLACE);
                     return InteractionResult.SUCCESS;
-                } else if (player.isCrouching()) {
-                    if (!ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) {
+                }
+            } else if (player.isCrouching()) {
+                if (!ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) {
+                    if (!level.isClientSide) {
                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getSheet());
                         entity.setSheet(defaultSheet);
                         itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                         level.addFreshEntity(itemEntity);
+                        return InteractionResult.CONSUME;
+                    } else {
+                        player.playSound(SoundEvents.WOOL_BREAK);
                         return InteractionResult.SUCCESS;
                     }
                 }
             }
-            return InteractionResult.PASS;
         }
         return InteractionResult.CONSUME_PARTIAL;
     }

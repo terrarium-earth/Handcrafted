@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.common.block.crockery;
 import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -43,6 +44,6 @@ public class CrockeryComboBlock extends SimpleEntityBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> true);
+        return ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> true, SoundEvents.ITEM_FRAME_ADD_ITEM);
     }
 }

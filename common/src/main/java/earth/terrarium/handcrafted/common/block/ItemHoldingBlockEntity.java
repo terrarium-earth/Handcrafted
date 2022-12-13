@@ -5,6 +5,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -66,7 +67,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
         return ClientboundBlockEntityDataPacket.create(this);
     }
 
-    public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem, Predicate<ItemStack> filter) {
+    public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem, Predicate<ItemStack> filter, SoundEvent sound) {
         if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
             ItemStack stack = player.getMainHandItem();
             if (!ItemStack.isSameIgnoreDurability(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getStack(), defaultItem)) && filter.test(stack)) {
@@ -77,6 +78,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                     if (!player.isCreative()) stack.shrink(1);
                     return InteractionResult.CONSUME;
                 } else {
+                    player.playSound(sound);
                     return InteractionResult.SUCCESS;
                 }
             } else if (player.isCrouching()) {
@@ -88,6 +90,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                         level.addFreshEntity(itemEntity);
                         return InteractionResult.CONSUME;
                     } else {
+                        player.playSound(sound);
                         return InteractionResult.SUCCESS;
                     }
                 }

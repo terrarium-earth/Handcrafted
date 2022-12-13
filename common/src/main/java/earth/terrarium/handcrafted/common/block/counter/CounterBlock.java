@@ -9,6 +9,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -63,7 +66,8 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return ItemHoldingBlockEntity.placeItem(level, pos, player, Items.CALCITE.getDefaultInstance(), f -> f.is(ModTags.COUNTER_SURFACE));
+        SoundEvent event = player.getMainHandItem().is(ItemTags.PLANKS) ? SoundEvents.WOOD_PLACE : SoundEvents.STONE_PLACE;
+        return ItemHoldingBlockEntity.placeItem(level, pos, player, Items.CALCITE.getDefaultInstance(), f -> f.is(ModTags.COUNTER_SURFACE), event);
     }
 
     @Override

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "trophy",
+  "key": {
+    "#": {
+      "tag": "handcrafted:boards"
+    },
+    "/": {
+      "item": "minecraft:spider_eye"
+    }
+  },
+  "pattern": [
+    "###",
+    "#/#",
+    "###"
+  ],
+  "result": {
+    "item": "handcrafted:tropical_fish_trophy"
+  }
+}

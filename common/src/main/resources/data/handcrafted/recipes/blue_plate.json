@@ -3,7 +3,7 @@
   "group": "blue_plate",
   "ingredients": [
     {
-      "item": "handcrafted:clay_plate"
+      "item": "handcrafted:terracotta_plate"
     },
     {
       "item": "minecraft:blue_dye"

@@ -3,7 +3,7 @@
   "group": "wood_bowl",
   "key": {
     "#": {
-      "item": "minecraft:spruce_planks"
+      "tag": "handcrafted:boards"
     }
   },
   "pattern": [

@@ -311,15 +311,15 @@ public class ModBlocks {
     public static final Supplier<Block> WOOD_BOWL = register("wood_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> WOOD_CROCKERY_COMBO = register("wood_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
-    public static final Supplier<Block> CLAY_CUP = register("clay_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final Supplier<Block> CLAY_PLATE = register("clay_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final Supplier<Block> CLAY_BOWL = register("clay_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final Supplier<Block> CLAY_CROCKERY_COMBO = register("clay_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)));
+    public static final Supplier<Block> TERRACOTTA_CUP = register("terracotta_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_PLATE = register("terracotta_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_BOWL = register("terracotta_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_CROCKERY_COMBO = register("terracotta_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)));
 
-    public static final Supplier<Block> ROUGH_THIN_POT = register("rough_thin_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
-    public static final Supplier<Block> ROUGH_MEDIUM_POT = register("rough_medium_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
-    public static final Supplier<Block> ROUGH_WIDE_POT = register("rough_wide_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
-    public static final Supplier<Block> ROUGH_THICK_POT = register("rough_thick_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_THIN_POT = register("terracotta_thin_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_MEDIUM_POT = register("terracotta_medium_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_WIDE_POT = register("terracotta_wide_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
+    public static final Supplier<Block> TERRACOTTA_THICK_POT = register("terracotta_thick_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
 
     public static final Supplier<Block> WHITE_GLAZED_THIN_POT = register("white_glazed_thin_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
     public static final Supplier<Block> WHITE_GLAZED_MEDIUM_POT = register("white_glazed_medium_pot", () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));

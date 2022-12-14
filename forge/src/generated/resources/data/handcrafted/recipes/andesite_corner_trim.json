@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "corner_trim",
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "pattern": [
+    "###",
+    "  #",
+    "  #"
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:andesite_corner_trim"
+  }
+}

@@ -1,6 +1,0 @@
-{
-	"parent": "handcrafted:block/pot/wide_pot",
-	"textures": {
-		"texture": "handcrafted:block/pot/rough_wide_pot"
-	}
-}

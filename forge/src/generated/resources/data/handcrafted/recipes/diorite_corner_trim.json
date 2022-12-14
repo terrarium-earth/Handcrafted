@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "corner_trim",
+  "key": {
+    "#": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "pattern": [
+    "###",
+    "  #",
+    "  #"
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:diorite_corner_trim"
+  }
+}

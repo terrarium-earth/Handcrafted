@@ -3,7 +3,7 @@
   "group": "yellow_plate",
   "ingredients": [
     {
-      "item": "handcrafted:clay_plate"
+      "item": "handcrafted:terracotta_plate"
     },
     {
       "item": "minecraft:yellow_dye"

@@ -3,7 +3,7 @@
   "group": "golden_thick_pot",
   "ingredients": [
     {
-      "item": "handcrafted:rough_thick_pot"
+      "item": "handcrafted:terracotta_thick_pot"
     },
     {
       "item": "minecraft:gold_block"

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "trophy",
+  "key": {
+    "#": {
+      "tag": "handcrafted:boards"
+    },
+    "/": {
+      "item": "minecraft:goat_horn"
+    }
+  },
+  "pattern": [
+    "###",
+    "#/#",
+    "###"
+  ],
+  "result": {
+    "item": "handcrafted:goat_trophy"
+  }
+}

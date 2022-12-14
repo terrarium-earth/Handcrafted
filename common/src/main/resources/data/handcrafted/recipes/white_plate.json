@@ -3,7 +3,7 @@
   "group": "white_plate",
   "ingredients": [
     {
-      "item": "handcrafted:clay_plate"
+      "item": "handcrafted:terracotta_plate"
     },
     {
       "item": "minecraft:white_dye"

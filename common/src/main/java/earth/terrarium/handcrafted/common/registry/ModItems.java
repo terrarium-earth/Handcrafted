@@ -49,15 +49,15 @@ public class ModItems {
     public static final Supplier<Item> WHITE_SHEET = register("white_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> YELLOW_SHEET = register("yellow_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ACACIA_BOARD = register("acacia_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> BIRCH_BOARD = register("birch_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> DARK_OAK_BOARD = register("dark_oak_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> JUNGLE_BOARD = register("jungle_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> ACACIA_BOARD = register("acacia_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_BOARD = register("birch_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_BOARD = register("dark_oak_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_BOARD = register("jungle_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> MANGROVE_BOARD = register("mangrove_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> OAK_BOARD = register("oak_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> SPRUCE_BOARD = register("spruce_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CRIMSON_BOARD = register("crimson_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> WARPED_BOARD = register("warped_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_BOARD = register("oak_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_BOARD = register("spruce_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_BOARD = register("crimson_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_BOARD = register("warped_board", () -> new BoardItem(new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> HAMMER = register("hammer", () -> new HammerItem(new Item.Properties().tab(ITEM_GROUP).stacksTo(1)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
@@ -262,15 +262,15 @@ public class ModItems {
     public static final Supplier<Item> WOOD_BOWL = register("wood_bowl", () -> new BlockItem(ModBlocks.WOOD_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WOOD_CROCKERY_COMBO = register("wood_crockery_combo", () -> new BlockItem(ModBlocks.WOOD_CROCKERY_COMBO.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> CLAY_CUP = register("clay_cup", () -> new BlockItem(ModBlocks.CLAY_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CLAY_PLATE = register("clay_plate", () -> new BlockItem(ModBlocks.CLAY_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CLAY_BOWL = register("clay_bowl", () -> new BlockItem(ModBlocks.CLAY_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> CLAY_CROCKERY_COMBO = register("clay_crockery_combo", () -> new BlockItem(ModBlocks.CLAY_CROCKERY_COMBO.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_CUP = register("terracotta_cup", () -> new BlockItem(ModBlocks.TERRACOTTA_CUP.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_PLATE = register("terracotta_plate", () -> new BlockItem(ModBlocks.TERRACOTTA_PLATE.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_BOWL = register("terracotta_bowl", () -> new BlockItem(ModBlocks.TERRACOTTA_BOWL.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_CROCKERY_COMBO = register("terracotta_crockery_combo", () -> new BlockItem(ModBlocks.TERRACOTTA_CROCKERY_COMBO.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> ROUGH_THIN_POT = register("rough_thin_pot", () -> new BlockItem(ModBlocks.ROUGH_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> ROUGH_MEDIUM_POT = register("rough_medium_pot", () -> new BlockItem(ModBlocks.ROUGH_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> ROUGH_WIDE_POT = register("rough_wide_pot", () -> new BlockItem(ModBlocks.ROUGH_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
-    public static final Supplier<Item> ROUGH_THICK_POT = register("rough_thick_pot", () -> new BlockItem(ModBlocks.ROUGH_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_THIN_POT = register("terracotta_thin_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_MEDIUM_POT = register("terracotta_medium_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_WIDE_POT = register("terracotta_wide_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> TERRACOTTA_THICK_POT = register("terracotta_thick_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
 
     public static final Supplier<Item> WHITE_GLAZED_THIN_POT = register("white_glazed_thin_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WHITE_GLAZED_MEDIUM_POT = register("white_glazed_medium_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));

@@ -4,21 +4,15 @@
   "key": {
     "#": {
       "item": "handcrafted:crimson_board"
-    },
-    "/": {
-      "item": "minecraft:white_wool"
-    },
-    "@": {
-      "item": "handcrafted:white_cushion"
     }
   },
   "pattern": [
-    " @ ",
-    "#/#",
-    "###"
+    "#  ",
+    "###",
+    "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:crimson_chair"
   }
 }

@@ -1,0 +1,142 @@
+{
+  "variants": {
+    "facing=north,pieces=1": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_single"
+      }
+    ],
+    "facing=east,pieces=1": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_single",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=1": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_single",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=1": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_single",
+        "y": 270
+      }
+    ],
+    "facing=north,pieces=2": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_double"
+      }
+    ],
+    "facing=east,pieces=2": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_double",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=2": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_double",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=2": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_double",
+        "y": 270
+      }
+    ],
+    "facing=north,pieces=3": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_triple"
+      }
+    ],
+    "facing=east,pieces=3": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_triple",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=3": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_triple",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=3": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_triple",
+        "y": 270
+      }
+    ],
+    "facing=north,pieces=4": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple"
+      }
+    ],
+    "facing=east,pieces=4": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=4": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=4": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 270
+      }
+    ],
+    "facing=north,pieces=5": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple"
+      }
+    ],
+    "facing=east,pieces=5": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=5": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=5": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "y": 270
+      }
+    ],
+    "facing=north,pieces=6": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_sextuple"
+      }
+    ],
+    "facing=east,pieces=6": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_sextuple",
+        "y": 90
+      }
+    ],
+    "facing=south,pieces=6": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_sextuple",
+        "y": 180
+      }
+    ],
+    "facing=west,pieces=6": [
+      {
+        "model": "handcrafted:block/crockery/plate/terracotta_sextuple",
+        "y": 270
+      }
+    ]
+  }
+}

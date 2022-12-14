@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_terracotta=_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "handcrafted:terracotta_plate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_terracotta_bowl": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "handcrafted:terracotta_bowl"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "handcrafted:terracotta_crockery_combo"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_terracotta=_plate",
+      "has_terracotta_bowl",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "handcrafted:terracotta_crockery_combo"
+    ]
+  }
+}

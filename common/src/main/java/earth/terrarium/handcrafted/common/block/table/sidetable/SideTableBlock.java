@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.common.block.table.side_table;
+package earth.terrarium.handcrafted.common.block.table.sidetable;
 
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;

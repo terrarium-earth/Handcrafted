@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "handcrafted:item/cushion/red_cushion"
+    "layer0": "handcrafted:item/board/birch_board"
   }
 }

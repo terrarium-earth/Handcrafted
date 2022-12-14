@@ -20,7 +20,7 @@ import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock
 import earth.terrarium.handcrafted.common.block.stackablejar.StackableJarBlock;
 import earth.terrarium.handcrafted.common.block.table.desk.DeskBlock;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
-import earth.terrarium.handcrafted.common.block.table.side_table.SideTableBlock;
+import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
 import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.block.trim.TrimBlock;

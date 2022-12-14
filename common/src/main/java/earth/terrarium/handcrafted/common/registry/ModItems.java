@@ -49,6 +49,16 @@ public class ModItems {
     public static final Supplier<Item> WHITE_SHEET = register("white_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> YELLOW_SHEET = register("yellow_sheet", () -> new SheetItem(new Item.Properties().tab(ITEM_GROUP)));
 
+    public static final Supplier<Item> ACACIA_BOARD = register("acacia_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BIRCH_BOARD = register("birch_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> DARK_OAK_BOARD = register("dark_oak_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> JUNGLE_BOARD = register("jungle_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> MANGROVE_BOARD = register("mangrove_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> OAK_BOARD = register("oak_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> SPRUCE_BOARD = register("spruce_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> CRIMSON_BOARD = register("crimson_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> WARPED_BOARD = register("warped_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
+
     public static final Supplier<Item> HAMMER = register("hammer", () -> new HammerItem(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> FANCY_PAINTING = register("fancy_painting", () -> new FancyPaintingItem(ModEntityTypes.FANCY_PAINTING.get(), new Item.Properties().tab(ITEM_GROUP)));

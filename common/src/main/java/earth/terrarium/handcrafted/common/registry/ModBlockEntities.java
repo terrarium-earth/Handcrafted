@@ -12,7 +12,7 @@ import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlockEntity;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
 import earth.terrarium.handcrafted.common.block.table.desk.DeskBlockEntity;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlockEntity;
-import earth.terrarium.handcrafted.common.block.table.side_table.SideTableBlockEntity;
+import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlockEntity;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlockEntity;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlockEntity;
 import earth.terrarium.handcrafted.mixin.BlockEntityTypeAccessor;

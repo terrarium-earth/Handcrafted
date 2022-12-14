@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "corner_trim",
+  "key": {
+    "#": {
+      "item": "handcrafted:mangrove_board"
+    }
+  },
+  "pattern": [
+    "###",
+    "  #",
+    "  #"
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:mangrove_corner_trim"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "side_table",
+  "key": {
+    "#": {
+      "item": "handcrafted:crimson_board"
+    },
+    "/": {
+      "item": "minecraft:crimson_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "#/#",
+    "# #"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:crimson_side_table"
+  }
+}

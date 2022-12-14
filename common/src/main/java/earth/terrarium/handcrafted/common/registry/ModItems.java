@@ -59,7 +59,7 @@ public class ModItems {
     public static final Supplier<Item> CRIMSON_BOARD = register("crimson_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WARPED_BOARD = register("warped_board", () -> new Item(new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> HAMMER = register("hammer", () -> new HammerItem(new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> HAMMER = register("hammer", () -> new HammerItem(new Item.Properties().tab(ITEM_GROUP).stacksTo(1)));
     public static final Supplier<Item> STACKABLE_BOOK = register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> FANCY_PAINTING = register("fancy_painting", () -> new FancyPaintingItem(ModEntityTypes.FANCY_PAINTING.get(), new Item.Properties().tab(ITEM_GROUP)));
 
@@ -277,7 +277,7 @@ public class ModItems {
     public static final Supplier<Item> WHITE_GLAZED_WIDE_POT = register("white_glazed_wide_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> WHITE_GLAZED_THICK_POT = register("white_glazed_thick_pot", () -> new BlockItem(ModBlocks.WHITE_GLAZED_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
 
-    public static final Supplier<Item> GOLD_THIN_POT = register("blue_glazed_thin_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
+    public static final Supplier<Item> BLUE_GLAZED_THIN_POT = register("blue_glazed_thin_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_THIN_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> BLUE_GLAZED_MEDIUM_POT = register("blue_glazed_medium_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_MEDIUM_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> BLUE_GLAZED_WIDE_POT = register("blue_glazed_wide_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_WIDE_POT.get(), new Item.Properties().tab(ITEM_GROUP)));
     public static final Supplier<Item> BLUE_GLAZED_THICK_POT = register("blue_glazed_thick_pot", () -> new BlockItem(ModBlocks.BLUE_GLAZED_THICK_POT.get(), new Item.Properties().tab(ITEM_GROUP)));

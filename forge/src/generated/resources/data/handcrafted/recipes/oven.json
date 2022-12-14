@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "oven",
+  "key": {
+    "#": {
+      "item": "minecraft:brick"
+    },
+    "/": {
+      "item": "minecraft:iron_bars"
+    },
+    "@": {
+      "item": "minecraft:smoker"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "item": "handcrafted:oven"
+  }
+}

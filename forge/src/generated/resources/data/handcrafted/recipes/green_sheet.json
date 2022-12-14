@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sheet",
+  "key": {
+    "#": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "pattern": [
+    "   ",
+    "###",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "item": "handcrafted:green_sheet"
+  }
+}

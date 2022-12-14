@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "white_plate",
+  "ingredients": [
+    {
+      "item": "handcrafted:clay_plate"
+    },
+    {
+      "item": "minecraft:white_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:white_plate"
+  }
+}

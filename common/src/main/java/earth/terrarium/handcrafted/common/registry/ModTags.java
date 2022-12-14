@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static final TagKey<Item> CUSHIONS = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "cushions"));
     public static final TagKey<Item> SHEETS = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "sheets"));
+    public static final TagKey<Item> BOARDS = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "boards"));
     public static final TagKey<Item> SHELFABLE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "shelfable"));
     public static final TagKey<Item> COUNTER_SURFACE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "counter_surface"));
 

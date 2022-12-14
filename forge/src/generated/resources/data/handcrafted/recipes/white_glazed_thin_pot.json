@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "white_glazed_thin_pot",
+  "ingredients": [
+    {
+      "item": "handcrafted:rough_thin_pot"
+    },
+    {
+      "item": "minecraft:white_glazed_terracotta"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:white_glazed_thin_pot"
+  }
+}

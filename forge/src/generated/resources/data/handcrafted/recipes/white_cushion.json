@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cushion",
+  "key": {
+    "#": {
+      "item": "minecraft:white_wool"
+    },
+    "/": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "###",
+    "///",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "handcrafted:white_cushion"
+  }
+}

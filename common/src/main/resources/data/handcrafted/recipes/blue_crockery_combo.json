@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "blue_crockery_combo",
+  "ingredients": [
+    {
+      "item": "handcrafted:blue_cup"
+    },
+    {
+      "item": "handcrafted:blue_plate"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:blue_crockery_combo"
+  }
+}

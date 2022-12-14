@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "handcrafted:wood_cup"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wood_cup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "handcrafted:wood_cup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wood_cup",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "handcrafted:wood_cup"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bench",
+  "key": {
+    "#": {
+      "item": "handcrafted:jungle_board"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "handcrafted:jungle_bench"
+  }
+}

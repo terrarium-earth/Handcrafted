@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "counter",
+  "key": {
+    "#": {
+      "item": "handcrafted:crimson_board"
+    },
+    "/": {
+      "item": "minecraft:calcite"
+    },
+    "@": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "///",
+    "#@#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:crimson_counter"
+  }
+}

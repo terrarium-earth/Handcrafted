@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "blue_glazed_wide_pot",
+  "ingredients": [
+    {
+      "item": "handcrafted:rough_wide_pot"
+    },
+    {
+      "item": "minecraft:blue_glazed_terracotta"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:blue_glazed_wide_pot"
+  }
+}

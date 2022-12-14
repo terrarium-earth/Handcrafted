@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "side_table",
+  "key": {
+    "#": {
+      "item": "handcrafted:warped_board"
+    },
+    "/": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "#/#",
+    "# #"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:warped_side_table"
+  }
+}

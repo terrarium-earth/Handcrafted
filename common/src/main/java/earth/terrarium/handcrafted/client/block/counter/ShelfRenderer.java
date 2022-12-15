@@ -68,16 +68,16 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
 
 
         VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(id.getNamespace(), id.getPath().replace(".png", "_" + entity.getBlockState().getValue(ShelfBlock.SHELF_SHAPE).toString().toLowerCase() + ".png"))));
-        int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING)));
-        renderQuad(poseStack, vertexConsumer, 1f, 1f, 0, 0, 1f, 1f, light, packedOverlay);
+        int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING).getOpposite()));
+        renderShelfOverlay(poseStack, vertexConsumer, light, packedOverlay);
 
         poseStack.popPose();
     }
 
-    private static void renderQuad(PoseStack poseStack, VertexConsumer consumer, float width, float height, float u, float v, float uWidth, float vHeight, int light, int overlay) {
-        consumer.vertex(poseStack.last().pose(), 0, 0, 0).color(255, 255, 255, 255).uv(u, v).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
-        consumer.vertex(poseStack.last().pose(), 0, height, 0).color(255, 255, 255, 255).uv(u, v + vHeight).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
-        consumer.vertex(poseStack.last().pose(), width, height, 0).color(255, 255, 255, 255).uv(u + uWidth, v + vHeight).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
-        consumer.vertex(poseStack.last().pose(), width, 0, 0).color(255, 255, 255, 255).uv(u + uWidth, v).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
+    private static void renderShelfOverlay(PoseStack poseStack, VertexConsumer consumer, int light, int overlay) {
+        consumer.vertex(poseStack.last().pose(), 0, 0, 0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
+        consumer.vertex(poseStack.last().pose(), 0, 1, 0).color(255, 255, 255, 255).uv(0, 1).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
+        consumer.vertex(poseStack.last().pose(), 1, 1, 0).color(255, 255, 255, 255).uv(1, 1).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
+        consumer.vertex(poseStack.last().pose(), 1, 0, 0).color(255, 255, 255, 255).uv(1, 0).overlayCoords(overlay).uv2(light).normal(0, 0, 1).endVertex();
     }
 }

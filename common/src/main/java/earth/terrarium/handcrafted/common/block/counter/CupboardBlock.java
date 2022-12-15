@@ -7,7 +7,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
@@ -55,5 +57,11 @@ public class CupboardBlock extends Block implements Hammerable {
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);
         }
+    }
+
+    @Override
+    public ItemStack getCloneItemStack(BlockGetter level, BlockPos pos, BlockState state) {
+        ResourceLocation id = Registry.BLOCK.getKey(state.getBlock());
+        return Registry.ITEM.get(new ResourceLocation(id.getNamespace(), id.getPath().substring(0, id.getPath().length() - 2))).getDefaultInstance();
     }
 }

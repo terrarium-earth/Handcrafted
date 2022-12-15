@@ -1,6 +1,8 @@
 package earth.terrarium.handcrafted.client.block.chair.chair;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.VertexMultiConsumer;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
@@ -36,14 +38,25 @@ public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
-        model.getMain().getChild("with_cushions").visible = false;
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        model.getMain().getChild("with_cushions").visible = true;
+        model.getMain().getChild("with_cushion").visible = false;
+        model.getMain().getChild("seat").visible = false;
+        VertexConsumer vertex = buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/" + texture.getPath() + ".png")));
+        model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+
+        model.getMain().getChild("base").visible = false;
+        model.getMain().getChild("seat").visible = true;
+        model.getMain().getChild("chair").visible = false;
+        poseStack.scale(0.999f, 1, 1);
+        model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        poseStack.scale(1.001f, 1, 1);
+
+
+        model.getMain().getChild("with_cushion").visible = true;
         if (!cushion.toString().equals("minecraft:air")) {
             model.getMain().getChild("base").visible = false;
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         } else {
-            model.getMain().getChild("with_cushions").visible = false;
+            model.getMain().getChild("with_cushion").visible = false;
         }
         poseStack.popPose();
     }

@@ -72,7 +72,7 @@ public class WoodenBenchRenderer implements BlockEntityRenderer<WoodenBenchBlock
         if (!cushion.toString().equals("minecraft:air")) {
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/bench/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
         } else {
-            model.getMain().getChild("with_cushions").visible = false;
+            model.getMain().getChild("with_cushion").visible = false;
         }
         poseStack.popPose();
     }

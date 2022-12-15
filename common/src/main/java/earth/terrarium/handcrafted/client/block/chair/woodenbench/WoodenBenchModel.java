@@ -42,9 +42,9 @@ public class WoodenBenchModel extends BaseModel {
                 .texOffs(69, 96).mirror().addBox(-8.0F, -14.7189F, -7.4812F, 3.0F, 14.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
                 .texOffs(69, 96).addBox(5.0F, -14.7189F, -7.4812F, 3.0F, 14.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-72.0F, -10.8722F, -0.4633F, 0.1309F, 0.0F, 0.0F));
 
-        PartDefinition with_cushions = main.addOrReplaceChild("with_cushions", CubeListBuilder.create().texOffs(0, 80).addBox(-77.0F, 8.5F, -6.0F, 10.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -17.5F, 0.0F));
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create().texOffs(0, 80).addBox(-77.0F, 8.5F, -6.0F, 10.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -17.5F, 0.0F));
 
-        PartDefinition cube_r2 = with_cushions.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 80).addBox(-5.0F, 2.7594F, -10.475F, 10.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-72.0F, 6.6278F, -0.4633F, -1.4399F, 0.0F, 0.0F));
+        PartDefinition cube_r2 = with_cushion.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 80).addBox(-5.0F, 2.7594F, -10.475F, 10.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-72.0F, 6.6278F, -0.4633F, -1.4399F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -66,12 +66,12 @@ public class WoodenBenchModel extends BaseModel {
 
         PartDefinition cube_r4 = main.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(69, 96).addBox(-3.0F, -14.0F, -3.0F, 3.0F, 14.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-45.0F, -11.0F, -5.0F, 0.1309F, 0.0F, -0.1309F));
 
-        PartDefinition with_cushions = main.addOrReplaceChild("with_cushions", CubeListBuilder.create().texOffs(52, 52).addBox(-46.0F, 8.5F, -6.0F, 14.0F, 3.0F, 12.0F, new CubeDeformation(0.0F))
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create().texOffs(52, 52).addBox(-46.0F, 8.5F, -6.0F, 14.0F, 3.0F, 12.0F, new CubeDeformation(0.0F))
                 .texOffs(88, 67).addBox(-46.0F, 8.5F, 6.0F, 12.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -17.5F, 0.0F));
 
-        PartDefinition cube_r5 = with_cushions.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(50, 67).addBox(-6.5F, -1.5F, -7.0F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-45.296F, 3.7471F, 1.5257F, 0.0F, 1.5708F, 1.4399F));
+        PartDefinition cube_r5 = with_cushion.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(50, 67).addBox(-6.5F, -1.5F, -7.0F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-45.296F, 3.7471F, 1.5257F, 0.0F, 1.5708F, 1.4399F));
 
-        PartDefinition cube_r6 = with_cushions.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(50, 67).addBox(-5.0F, 4.4F, -4.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-40.0F, 0.3497F, 0.2333F, -1.4399F, 0.0F, 0.0F));
+        PartDefinition cube_r6 = with_cushion.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(50, 67).addBox(-5.0F, 4.4F, -4.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-40.0F, 0.3497F, 0.2333F, -1.4399F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -87,7 +87,7 @@ public class WoodenBenchModel extends BaseModel {
 
         PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(69, 96).addBox(-3.0F, -14.0F, -3.0F, 3.0F, 14.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.0F, -11.0F, -37.0F, 0.1309F, 0.0F, -0.1309F));
 
-        PartDefinition with_cushion = main.addOrReplaceChild("with_cushions", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, -48.0F));
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, -48.0F));
 
         PartDefinition cube_r2 = with_cushion.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(88, 67).addBox(11.5F, -2.5F, 10.5F, 12.0F, 3.0F, 2.0F, new CubeDeformation(0.0F))
                 .texOffs(52, 52).addBox(11.5F, -2.5F, -1.5F, 14.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(17.5F, -6.5F, 20.5F, 0.0F, 3.1416F, 0.0F));
@@ -109,9 +109,9 @@ public class WoodenBenchModel extends BaseModel {
 
         PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(86, 19).addBox(-8.0F, -13.0F, 1.5F, 13.0F, 14.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(32.0F, -11.0F, -8.0F, 0.1309F, 0.0F, 0.0F));
 
-        PartDefinition with_cushions = main.addOrReplaceChild("with_cushions", CubeListBuilder.create().texOffs(0, 65).addBox(-8.0F, 8.1503F, -6.2333F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(32.0F, -17.1503F, 0.2333F));
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create().texOffs(0, 65).addBox(-8.0F, 8.1503F, -6.2333F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(32.0F, -17.1503F, 0.2333F));
 
-        PartDefinition cube_r3 = with_cushions.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(50, 67).addBox(-8.0F, 4.4F, -3.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, 0.0F, -1.4399F, 0.0F, 0.0F));
+        PartDefinition cube_r3 = with_cushion.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(50, 67).addBox(-8.0F, 4.4F, -3.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, 0.0F, -1.4399F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -125,9 +125,9 @@ public class WoodenBenchModel extends BaseModel {
 
         PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(60, 82).addBox(-8.0F, -13.0F, 1.5F, 16.0F, 14.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(16.0F, -11.0F, -8.0F, 0.1309F, 0.0F, 0.0F));
 
-        PartDefinition with_cushions = main.addOrReplaceChild("with_cushions", CubeListBuilder.create().texOffs(48, 4).addBox(8.0F, -9.0F, -6.0F, 16.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create().texOffs(48, 4).addBox(8.0F, -9.0F, -6.0F, 16.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-        PartDefinition cube_r2 = with_cushions.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(46, 37).addBox(-8.0F, 4.4F, -3.35F, 16.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(16.0F, -18.1503F, 0.2333F, -1.4399F, 0.0F, 0.0F));
+        PartDefinition cube_r2 = with_cushion.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(46, 37).addBox(-8.0F, 4.4F, -3.35F, 16.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(16.0F, -18.1503F, 0.2333F, -1.4399F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -146,9 +146,9 @@ public class WoodenBenchModel extends BaseModel {
 
         PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(86, 19).addBox(-5.0F, -14.0F, 1.5F, 13.0F, 14.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -10.0086F, -7.8695F, 0.1309F, 0.0F, 0.0F));
 
-        PartDefinition with_cushions = main.addOrReplaceChild("with_cushions", CubeListBuilder.create().texOffs(0, 65).addBox(-5.0F, -9.0F, -6.0F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+        PartDefinition with_cushion = main.addOrReplaceChild("with_cushion", CubeListBuilder.create().texOffs(0, 65).addBox(-5.0F, -9.0F, -6.0F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-        PartDefinition cube_r3 = with_cushions.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(50, 67).addBox(-5.0F, 4.4F, -3.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -18.1503F, 0.2333F, -1.4399F, 0.0F, 0.0F));
+        PartDefinition cube_r3 = with_cushion.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(50, 67).addBox(-5.0F, 4.4F, -3.35F, 13.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -18.1503F, 0.2333F, -1.4399F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }

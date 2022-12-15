@@ -36,7 +36,7 @@ public class CounterRenderer implements BlockEntityRenderer<CounterBlockEntity> 
     private static void render(ResourceLocation overlay, ResourceLocation texture, CounterModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         poseStack.pushPose();
         poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
+        poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.toYRot()));
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
 
         model.getMain().getChild("top").visible = false;
@@ -57,7 +57,7 @@ public class CounterRenderer implements BlockEntityRenderer<CounterBlockEntity> 
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            render(new ResourceLocation("calcite"),  new ResourceLocation(Handcrafted.MOD_ID, Registry.ITEM.getKey(stack.getItem()).getPath() + "_1"), new CounterModel(Minecraft.getInstance().getEntityModels().bakeLayer(CounterModel.LAYER_LOCATION)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            render(new ResourceLocation("calcite"),  new ResourceLocation(Handcrafted.MOD_ID, Registry.ITEM.getKey(stack.getItem()).getPath() + "_1"), new CounterModel(Minecraft.getInstance().getEntityModels().bakeLayer(CounterModel.LAYER_LOCATION)), Direction.NORTH, poseStack, buffer, packedLight, packedOverlay);
         }
     }
 }

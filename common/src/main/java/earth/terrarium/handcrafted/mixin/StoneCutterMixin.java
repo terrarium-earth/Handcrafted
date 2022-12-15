@@ -1,6 +1,7 @@
 package earth.terrarium.handcrafted.mixin;
 
 import earth.terrarium.handcrafted.common.registry.ModItems;
+import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -24,6 +25,9 @@ public abstract class StoneCutterMixin extends Block {
         super.stepOn(level, pos, state, entity);
         if (entity instanceof ItemEntity item) {
             ItemStack stack = item.getItem();
+            if (!stack.is(ModTags.BOARDS)) {
+                return;
+            }
             ItemStack newStack = ItemStack.EMPTY;
 
             if (stack.is(Items.ACACIA_PLANKS)) newStack = ModItems.ACACIA_BOARD.get().getDefaultInstance();

@@ -37,7 +37,7 @@ public class ShelfBlock extends BaseEntityBlock {
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
-        if (!state.is(newState.getBlock())) {
+        if (!state.is(newState.getBlock()) && !(newState.getBlock() instanceof ShelfBlock)) {
             if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
                 ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
                 itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
@@ -66,7 +66,7 @@ public class ShelfBlock extends BaseEntityBlock {
 
     @Override
     public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
-        return direction.getAxis().isHorizontal() ? state.setValue(SHELF_SHAPE, DirectionalBlockSide.getShape(this, FACING, state, level, currentPos)) : super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+        return direction.getAxis().isHorizontal() ? state.setValue(SHELF_SHAPE, DirectionalBlockSide.getShape(this, state.getValue(FACING).getOpposite(), level, currentPos)) : super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
     @Override
@@ -77,8 +77,8 @@ public class ShelfBlock extends BaseEntityBlock {
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockPos blockPos = context.getClickedPos();
-        BlockState blockState = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection());
-        return blockState.setValue(SHELF_SHAPE, DirectionalBlockSide.getShape(this, FACING, blockState, context.getLevel(), blockPos));
+        BlockState blockState = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return blockState.setValue(SHELF_SHAPE, DirectionalBlockSide.getShape(this, blockState.getValue(FACING), context.getLevel(), blockPos));
     }
 
     @Override

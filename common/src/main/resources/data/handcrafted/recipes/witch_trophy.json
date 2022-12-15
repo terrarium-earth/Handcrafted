@@ -6,7 +6,7 @@
       "item": "minecraft:stone"
     },
     "/": {
-      "item": "minecraft:potion"
+      "item": "minecraft:glass_bottle"
     }
   },
   "pattern": [

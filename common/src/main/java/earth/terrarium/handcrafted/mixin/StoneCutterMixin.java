@@ -2,8 +2,6 @@ package earth.terrarium.handcrafted.mixin;
 
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
@@ -24,7 +22,6 @@ public abstract class StoneCutterMixin extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         super.stepOn(level, pos, state, entity);
-        if (level.random.nextFloat() < 0.1f) return;
         if (entity instanceof ItemEntity item) {
             ItemStack stack = item.getItem();
             ItemStack newStack = ItemStack.EMPTY;
@@ -39,13 +36,13 @@ public abstract class StoneCutterMixin extends Block {
             if (stack.is(Items.CRIMSON_PLANKS)) newStack = ModItems.CRIMSON_BOARD.get().getDefaultInstance();
             if (stack.is(Items.WARPED_PLANKS)) newStack = ModItems.WARPED_BOARD.get().getDefaultInstance();
 
-            newStack.setCount(stack.getCount());
+            // Give 4 boards per plank.
+            newStack.setCount(stack.getCount() * 4);
             if (!newStack.isEmpty()) {
                 entity.discard();
                 ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, newStack);
                 itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
                 level.addFreshEntity(itemEntity);
-                level.playSound(null, pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 1.0F, 1.0F);
             }
         }
     }

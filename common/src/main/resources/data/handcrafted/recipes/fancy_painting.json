@@ -1,18 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "group": "fancy_painting",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "minecraft:painting"
     },
-    "/": {
+    {
       "item": "minecraft:gold_ingot"
     }
-  },
-  "pattern": [
-    "   ",
-    " # ",
-    " / "
   ],
   "result": {
     "item": "handcrafted:fancy_painting"

@@ -28,13 +28,13 @@ public class ModRecipeProvider extends RecipeProvider {
 
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
-        createColouredSetRecipe(consumer, "cushion", 6, r -> r
+        createColouredSetRecipe(consumer, "cushion", 8, r -> r
                 .define('/', Items.FEATHER)
                 .pattern("###")
                 .pattern("///")
                 .pattern("###"));
 
-        createColouredSetRecipe(consumer, "sheet", 6, r -> r
+        createColouredSetRecipe(consumer, "sheet", 8, r -> r
                 .pattern("   ")
                 .pattern("###")
                 .pattern("   "));
@@ -43,7 +43,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_board", has(ModTags.BOARDS))
                 .define('#', ModTags.BOARDS)
                 .define('/', Items.IRON_INGOT)
-                .pattern("/  ")
+                .pattern(" / ")
                 .pattern(" #/")
                 .pattern("#  "));
 
@@ -55,13 +55,10 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("/#/")
                 .pattern("/#/"));
 
-        createSimple(consumer, ModItems.FANCY_PAINTING.get(), 1, r -> r
+        createSimpleShapeless(consumer, ModItems.FANCY_PAINTING.get(), 1, r -> r
                 .unlockedBy("has_painting", has(Items.PAINTING))
-                .define('#', Items.PAINTING)
-                .define('/', Items.GOLD_INGOT)
-                .pattern("   ")
-                .pattern(" # ")
-                .pattern(" / "));
+                .requires(Items.PAINTING)
+                .requires(Items.GOLD_INGOT));
 
         createWoodSetRecipe(consumer, "chair", 2, r -> r
                 .pattern("#  ")
@@ -109,7 +106,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("///")
                 .pattern("###"));
 
-        createWoodSetRecipe(consumer, "table_bench", 3, r -> r
+        createWoodSetRecipe(consumer, "dining_bench", 3, r -> r
                 .pattern("   ")
                 .pattern("###")
                 .pattern("# #"));
@@ -436,7 +433,7 @@ public class ModRecipeProvider extends RecipeProvider {
         createStatueTrophy(consumer, ModItems.EVOKER_TROPHY.get(), 1, Items.TOTEM_OF_UNDYING);
         createStatueTrophy(consumer, ModItems.PILLAGER_TROPHY.get(), 1, Items.CROSSBOW);
         createStatueTrophy(consumer, ModItems.VINDICATOR_TROPHY.get(), 1, Items.IRON_AXE);
-        createStatueTrophy(consumer, ModItems.WITCH_TROPHY.get(), 1, Items.POTION);
+        createStatueTrophy(consumer, ModItems.WITCH_TROPHY.get(), 1, Items.GLASS_BOTTLE);
 
     }
 
@@ -503,7 +500,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
+        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
             String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
             Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
 

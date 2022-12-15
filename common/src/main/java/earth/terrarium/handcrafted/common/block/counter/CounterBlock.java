@@ -40,7 +40,7 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
-        if (!state.is(newState.getBlock())) {
+        if (!state.is(newState.getBlock()) && !(newState.getBlock() instanceof CounterBlock)) {
             if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
                 if (entity.getStack().getItem() != Items.CALCITE) {
                     ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());

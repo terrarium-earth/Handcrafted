@@ -6,8 +6,8 @@ import earth.terrarium.handcrafted.client.block.chair.chair.ChairModel;
 import earth.terrarium.handcrafted.client.block.chair.chair.ChairRenderer;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchModel;
 import earth.terrarium.handcrafted.client.block.chair.couch.CouchRenderer;
-import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchModel;
-import earth.terrarium.handcrafted.client.block.chair.tablebench.TableBenchRenderer;
+import earth.terrarium.handcrafted.client.block.chair.diningbench.DiningBenchModel;
+import earth.terrarium.handcrafted.client.block.chair.diningbench.DiningBenchRenderer;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchModel;
 import earth.terrarium.handcrafted.client.block.chair.woodenbench.WoodenBenchRenderer;
 import earth.terrarium.handcrafted.client.block.counter.CounterModel;
@@ -79,15 +79,15 @@ public class HandcraftedClient {
         register.accept(ModItems.CRIMSON_COUCH.get(), new CouchRenderer.ItemRenderer());
         register.accept(ModItems.WARPED_COUCH.get(), new CouchRenderer.ItemRenderer());
 
-        register.accept(ModItems.ACACIA_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.BIRCH_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.DARK_OAK_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.JUNGLE_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.MANGROVE_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.OAK_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.SPRUCE_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.CRIMSON_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
-        register.accept(ModItems.WARPED_TABLE_BENCH.get(), new TableBenchRenderer.ItemRenderer());
+        register.accept(ModItems.ACACIA_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.BIRCH_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.DARK_OAK_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.JUNGLE_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.MANGROVE_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.OAK_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.SPRUCE_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.CRIMSON_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
+        register.accept(ModItems.WARPED_DINING_BENCH.get(), new DiningBenchRenderer.ItemRenderer());
 
         register.accept(ModItems.ACACIA_CHAIR.get(), new ChairRenderer.ItemRenderer());
         register.accept(ModItems.BIRCH_CHAIR.get(), new ChairRenderer.ItemRenderer());
@@ -166,7 +166,7 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.BENCH, BenchRenderer::new);
         registry.register(ModBlockEntities.COUCH, CouchRenderer::new);
         registry.register(ModBlockEntities.WOODEN_BENCH, WoodenBenchRenderer::new);
-        registry.register(ModBlockEntities.TABLE_BENCH, TableBenchRenderer::new);
+        registry.register(ModBlockEntities.DINING_BENCH, DiningBenchRenderer::new);
         registry.register(ModBlockEntities.CHAIR, ChairRenderer::new);
         registry.register(ModBlockEntities.FANCY_BED, FancyBedRenderer::new);
         registry.register(ModBlockEntities.STACKABLE_BOOK, StackableBookRenderer::new);
@@ -184,7 +184,7 @@ public class HandcraftedClient {
         BenchModel.register(registry);
         WoodenBenchModel.register(registry);
         CouchModel.register(registry);
-        TableBenchModel.register(registry);
+        DiningBenchModel.register(registry);
         ChairModel.register(registry);
         FancyBedModel.register(registry);
         StackableBookModel.register(registry);

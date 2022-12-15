@@ -42,13 +42,13 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         Direction dir = entity.getBlockState().getValue(ShelfBlock.FACING);
         ResourceLocation id;
         poseStack.pushPose();
-        poseStack.mulPose(Vector3f.YN.rotationDegrees(dir.getOpposite().toYRot()));
+        poseStack.mulPose(Vector3f.YN.rotationDegrees(dir.toYRot()));
         poseStack.translate(0, 1.0, 0);
         switch (dir) {
-            case NORTH -> poseStack.translate(0, 0, 1.001);
-            case SOUTH -> poseStack.translate(-1, 0, 0.001);
-            case EAST -> poseStack.translate(0, 0, 0.001);
-            case WEST -> poseStack.translate(-1, 0, 1.001);
+            case NORTH -> poseStack.translate(-1, 0, 0.001);
+            case SOUTH -> poseStack.translate(0, 0, 1.001);
+            case EAST -> poseStack.translate(-1, 0, 1.001);
+            case WEST -> poseStack.translate(0, 0, 0.001);
         }
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
 

@@ -28,13 +28,11 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
 
     @Override
     protected void saveAdditional(CompoundTag tag) {
-        super.saveAdditional(tag);
         tag.put("Item", item.save(new CompoundTag()));
     }
 
     @Override
     public void load(CompoundTag tag) {
-        super.load(tag);
         this.item = ItemStack.of(tag.getCompound("Item"));
     }
 
@@ -52,6 +50,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
     }
 
     public void update() {
+        this.setChanged();
         if (this.level != null) {
             this.level.sendBlockUpdated(this.getBlockPos(), this.getBlockState(), this.getBlockState(), Block.UPDATE_ALL);
         }
@@ -90,7 +89,9 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                         level.addFreshEntity(itemEntity);
                         return InteractionResult.CONSUME;
                     } else {
-                        player.playSound(sound);
+                        if (!entity.getStack().isEmpty()) {
+                            player.playSound(sound);
+                        }
                         return InteractionResult.SUCCESS;
                     }
                 }

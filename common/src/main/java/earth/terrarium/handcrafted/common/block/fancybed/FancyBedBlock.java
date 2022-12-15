@@ -4,13 +4,10 @@ import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModTags;
-import net.minecraft.client.resources.sounds.Sound;
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -18,6 +15,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.BedBlock;
@@ -29,13 +27,29 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("deprecation")
+@MethodsReturnNonnullByDefault
 public class FancyBedBlock extends BedBlock {
     public static final EnumProperty<DirectionalBlockSide> BED_SHAPE = EnumProperty.create("shape", DirectionalBlockSide.class);
+    public static final VoxelShape X_AXIS_SHAPE = Block.box(0, 0, 1, 16, 8, 15);
+    public static final VoxelShape Z_AXIS_SHAPE = Block.box(1, 0, 0, 15, 8, 16);
 
     public FancyBedBlock(Properties properties) {
         super(DyeColor.WHITE, properties);
+    }
+
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new FancyBedBlockEntity(pos, state);
+    }
+
+    @Override
+    public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return state.getValue(FACING).getAxis() == Direction.Axis.X ? X_AXIS_SHAPE : Z_AXIS_SHAPE;
     }
 
     @Override
@@ -62,11 +76,6 @@ public class FancyBedBlock extends BedBlock {
     }
 
     @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new FancyBedBlockEntity(pos, state);
-    }
-
-    @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         ItemStack stack = player.getMainHandItem();
         if (stack.is(ModTags.CUSHIONS) || stack.is(ModTags.SHEETS) || player.isCrouching()) {
@@ -87,9 +96,9 @@ public class FancyBedBlock extends BedBlock {
     @Override
     public @NotNull BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos currentPos, BlockPos neighborPos) {
         if (direction == getNeighbourDirection(state.getValue(PART), state.getValue(FACING))) {
-            return neighborState.is(this) && neighborState.getValue(PART) != state.getValue(PART) ? state.setValue(OCCUPIED, neighborState.getValue(OCCUPIED)).setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, FACING, state, level, currentPos)) : Blocks.AIR.defaultBlockState();
+            return neighborState.is(this) && neighborState.getValue(PART) != state.getValue(PART) ? state.setValue(OCCUPIED, neighborState.getValue(OCCUPIED)).setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, state.getValue(FACING), level, currentPos)) : Blocks.AIR.defaultBlockState();
         } else {
-            return super.updateShape(state.setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, FACING, state, level, currentPos)), direction, neighborState, level, currentPos, neighborPos);
+            return super.updateShape(state.setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, state.getValue(FACING), level, currentPos)), direction, neighborState, level, currentPos, neighborPos);
         }
     }
 
@@ -98,8 +107,9 @@ public class FancyBedBlock extends BedBlock {
         Direction direction = context.getHorizontalDirection();
         BlockPos blockPos = context.getClickedPos();
         BlockPos blockPos2 = blockPos.relative(direction);
+        BlockState state = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection());
         Level level = context.getLevel();
-        return level.getBlockState(blockPos2).canBeReplaced(context) && level.getWorldBorder().isWithinBounds(blockPos2) ? this.defaultBlockState().setValue(FACING, direction).setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, FACING, this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()), context.getLevel(), blockPos)) : null;
+        return level.getBlockState(blockPos2).canBeReplaced(context) && level.getWorldBorder().isWithinBounds(blockPos2) ? this.defaultBlockState().setValue(FACING, direction).setValue(BED_SHAPE, DirectionalBlockSide.getShape(this, state.getValue(FACING), context.getLevel(), blockPos)) : null;
     }
 
     private static Direction getNeighbourDirection(BedPart part, Direction direction) {

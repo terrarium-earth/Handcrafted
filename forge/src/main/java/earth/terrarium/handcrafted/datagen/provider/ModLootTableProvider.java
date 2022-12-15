@@ -6,7 +6,7 @@ import earth.terrarium.handcrafted.common.block.CushionBlock;
 import earth.terrarium.handcrafted.common.block.chair.bench.BenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlock;
 import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlock;
-import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlock;
+import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlock;
 import earth.terrarium.handcrafted.common.block.counter.CounterBlock;
 import earth.terrarium.handcrafted.common.block.counter.CupboardBlock;
@@ -93,7 +93,7 @@ public class ModLootTableProvider extends LootTableProvider {
                         dropSelf(block);
                     } else if (block instanceof FancyBedBlock) {
                         this.add(block, (arg) -> createSinglePropConditionTable(arg, BedBlock.PART, BedPart.HEAD));
-                    } else if (block instanceof TableBenchBlock) {
+                    } else if (block instanceof DiningBenchBlock) {
                         dropSelf(block);
                     } else if (block instanceof NightstandBlock) {
                         dropSelf(block);

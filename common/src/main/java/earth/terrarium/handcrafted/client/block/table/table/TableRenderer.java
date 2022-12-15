@@ -30,7 +30,7 @@ public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
     public void render(TableBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
         TableModel model = new TableModel(modelSet.bakeLayer(TableModel.LAYER_LOCATION));
-        render(Registry.ITEM.getKey(entity.getSheet().getItem()), entity.getBlockState().getValue(TableBlock.TABLE_BLOCK_SHAPE), entity.getBlockState().getValue(TableBlock.TABLE_SHEET_SHAPE), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), entity.getBlockState().getValue(TableBlock.TABLE_BLOCK_SHAPE), entity.getBlockState().getValue(TableBlock.TABLE_SHEET_SHAPE), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation sheet, TableState tableState, SheetState sheetState, ResourceLocation texture, TableModel model, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

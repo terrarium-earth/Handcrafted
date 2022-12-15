@@ -1,14 +1,15 @@
 package earth.terrarium.handcrafted.common.block.table.table;
 
+import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.SheetState;
 import earth.terrarium.handcrafted.common.block.property.TableState;
 import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -27,7 +28,12 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
@@ -35,15 +41,41 @@ public class TableBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final EnumProperty<TableState> TABLE_BLOCK_SHAPE = EnumProperty.create("table_shape", TableState.class);
     public static final EnumProperty<SheetState> TABLE_SHEET_SHAPE = EnumProperty.create("sheet_shape", SheetState.class);
+    public static final VoxelShape SINGLE_SHAPE;
+    public static final VoxelShape CENTER_SHAPE;
+    public static final VoxelShape NORTH_EAST_CORNER_SHAPE;
+    public static final VoxelShape NORTH_WEST_CORNER_SHAPE;
+    public static final VoxelShape SOUTH_EAST_CORNER_SHAPE;
+    public static final VoxelShape SOUTH_WEST_CORNER_SHAPE;
+    public static final VoxelShape NORTH_SIDE_SHAPE;
+    public static final VoxelShape EAST_SIDE_SHAPE;
+    public static final VoxelShape SOUTH_SIDE_SHAPE;
+    public static final VoxelShape WEST_SIDE_SHAPE;
 
     public TableBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(TABLE_BLOCK_SHAPE, TableState.SINGLE).setValue(TABLE_SHEET_SHAPE, SheetState.SINGLE).setValue(WATERLOGGED, false));
     }
 
-    public TableBlock(Properties properties, boolean registerDefaultState) {
-        super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(TABLE_BLOCK_SHAPE, TableState.SINGLE).setValue(TABLE_SHEET_SHAPE, SheetState.SINGLE).setValue(WATERLOGGED, false));
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new TableBlockEntity(pos, state);
+    }
+
+    @Override
+    public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return switch (state.getValue(TABLE_BLOCK_SHAPE)) {
+            case SINGLE -> SINGLE_SHAPE;
+            case CENTER -> CENTER_SHAPE;
+            case NORTH_EAST_CORNER -> NORTH_EAST_CORNER_SHAPE;
+            case NORTH_WEST_CORNER -> NORTH_WEST_CORNER_SHAPE;
+            case SOUTH_EAST_CORNER -> SOUTH_EAST_CORNER_SHAPE;
+            case SOUTH_WEST_CORNER -> SOUTH_WEST_CORNER_SHAPE;
+            case NORTH_SIDE -> NORTH_SIDE_SHAPE;
+            case EAST_SIDE -> EAST_SIDE_SHAPE;
+            case SOUTH_SIDE -> SOUTH_SIDE_SHAPE;
+            case WEST_SIDE -> WEST_SIDE_SHAPE;
+        };
     }
 
     @Override
@@ -74,38 +106,8 @@ public class TableBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
     }
 
     @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new TableBlockEntity(pos, state);
-    }
-
-    @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        return sheetUse(level, pos, player, ItemStack.EMPTY);
-    }
-
-    public static InteractionResult sheetUse(Level level, BlockPos pos, Player player, ItemStack defaultSheet) {
-        if (!level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof TableBlockEntity entity) {
-                ItemStack stack = player.getMainHandItem();
-                if ((entity.getSheet().isEmpty() || ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) && stack.is(ModTags.SHEETS)) {
-                    ItemStack copy = stack.copy();
-                    copy.setCount(1);
-                    entity.setSheet(copy);
-                    if (!player.isCreative()) stack.shrink(1);
-                    return InteractionResult.SUCCESS;
-                } else if (player.isCrouching()) {
-                    if (!ItemStack.isSameIgnoreDurability(entity.getSheet(), defaultSheet)) {
-                        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getSheet());
-                        entity.setSheet(defaultSheet);
-                        itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
-                        level.addFreshEntity(itemEntity);
-                        return InteractionResult.SUCCESS;
-                    }
-                }
-            }
-            return InteractionResult.PASS;
-        }
-        return InteractionResult.CONSUME_PARTIAL;
+        return ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> f.is(ModTags.SHEETS), SoundEvents.WOOL_PLACE);
     }
 
     public TableState getShape(BlockGetter level, BlockPos pos) {
@@ -156,5 +158,40 @@ public class TableBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
         if (westPresent) return SheetState.EAST_COVER;
 
         return SheetState.SINGLE;
+    }
+
+    static {
+        SINGLE_SHAPE = Stream.of(
+                Block.box(0, 12, 0, 16, 16, 16),
+                Block.box(12, 0, 12, 15, 12, 15),
+                Block.box(12, 0, 1, 15, 12, 4),
+                Block.box(1, 0, 1, 4, 12, 4),
+                Block.box(1, 0, 12, 4, 12, 15)
+        ).reduce(Shapes::or).get();
+        CENTER_SHAPE = Block.box(0, 12, 0, 16, 16, 16);
+        NORTH_EAST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(12, 0, 1, 15, 12, 4));
+        NORTH_WEST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(1, 0, 1, 4, 12, 4));
+        SOUTH_EAST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(12, 0, 12, 15, 12, 15));
+        SOUTH_WEST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(1, 0, 12, 4, 12, 15));
+        NORTH_SIDE_SHAPE = Stream.of(
+                Block.box(0, 12, 0, 16, 16, 16),
+                Block.box(12, 0, 1, 15, 12, 4),
+                Block.box(1, 0, 1, 4, 12, 4)
+        ).reduce(Shapes::or).get();
+        EAST_SIDE_SHAPE = Stream.of(
+                Block.box(0, 12, 0, 16, 16, 16),
+                Block.box(12, 0, 12, 15, 12, 15),
+                Block.box(12, 0, 1, 15, 12, 4)
+        ).reduce(Shapes::or).get();
+        SOUTH_SIDE_SHAPE = Stream.of(
+                Block.box(0, 12, 0, 16, 16, 16),
+                Block.box(12, 0, 12, 15, 12, 15),
+                Block.box(1, 0, 12, 4, 12, 15)
+        ).reduce(Shapes::or).get();
+        WEST_SIDE_SHAPE = Stream.of(
+                Block.box(0, 12, 0, 16, 16, 16),
+                Block.box(1, 0, 1, 4, 12, 4),
+                Block.box(1, 0, 12, 4, 12, 15)
+        ).reduce(Shapes::or).get();
     }
 }

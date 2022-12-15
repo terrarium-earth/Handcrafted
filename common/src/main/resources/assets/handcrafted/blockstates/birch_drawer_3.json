@@ -2,94 +2,94 @@
   "variants": {
     "facing=north,shape=single": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_3",
-        "y": 180
+        "model": "handcrafted:block/counter/drawer/birch/drawer_3"
       }
     ],
     "facing=east,shape=single": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_3",
-        "y": 270
+        "y": 90
       }
     ],
     "facing=south,shape=single": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_3"
+        "model": "handcrafted:block/counter/drawer/birch/drawer_3",
+        "y": 180
       }
     ],
     "facing=west,shape=single": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_3",
-        "y": 90
+        "y": 270
       }
     ],
     "facing=north,shape=left": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_left_3",
-        "y": 180
+        "model": "handcrafted:block/counter/drawer/birch/drawer_left_3"
       }
     ],
     "facing=east,shape=left": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_left_3",
-        "y": 270
+        "y": 90
       }
     ],
     "facing=south,shape=left": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_left_3"
+        "model": "handcrafted:block/counter/drawer/birch/drawer_left_3",
+        "y": 180
       }
     ],
     "facing=west,shape=left": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_left_3",
-        "y": 90
+        "y": 270
       }
     ],
     "facing=north,shape=middle": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3",
-        "y": 180
+        "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3"
       }
     ],
     "facing=east,shape=middle": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3",
-        "y": 270
+        "y": 90
       }
     ],
     "facing=south,shape=middle": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3"
+        "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3",
+        "y": 180
       }
     ],
     "facing=west,shape=middle": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_middle_3",
-        "y": 90
+        "y": 270
       }
     ],
     "facing=north,shape=right": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_right_3",
-        "y": 180
+        "model": "handcrafted:block/counter/drawer/birch/drawer_right_3"
       }
     ],
     "facing=east,shape=right": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_right_3",
-        "y": 270
+        "y": 90
       }
     ],
     "facing=south,shape=right": [
       {
-        "model": "handcrafted:block/counter/drawer/birch/drawer_right_3"
+        "model": "handcrafted:block/counter/drawer/birch/drawer_right_3",
+        "y": 180
       }
     ],
     "facing=west,shape=right": [
       {
         "model": "handcrafted:block/counter/drawer/birch/drawer_right_3",
-        "y": 90
+        "y": 270
       }
     ]
   }

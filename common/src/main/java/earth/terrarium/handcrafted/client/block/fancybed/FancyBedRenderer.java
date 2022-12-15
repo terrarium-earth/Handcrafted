@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.common.block.chair.tablebench.TableBenchBlock;
+import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
@@ -37,7 +37,7 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
             return;
         }
         DirectionalBlockSide doubleBed = entity.getBlockState().getValue(FancyBedBlock.BED_SHAPE);
-        FancyBedModel model = switch (entity.getBlockState().getValue(TableBenchBlock.TABLE_BENCH_SHAPE)) {
+        FancyBedModel model = switch (entity.getBlockState().getValue(DiningBenchBlock.DINING_BENCH_SHAPE)) {
             case SINGLE -> new FancyBedModel(modelSet.bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE));
             case LEFT -> new FancyBedModel(modelSet.bakeLayer(FancyBedModel.LAYER_LOCATION_DOUBLE_LEFT));
             case MIDDLE -> new FancyBedModel(modelSet.bakeLayer(FancyBedModel.LAYER_LOCATION_DOUBLE_MIDDLE));

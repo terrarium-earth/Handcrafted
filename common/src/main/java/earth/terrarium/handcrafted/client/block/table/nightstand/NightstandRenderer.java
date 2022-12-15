@@ -28,7 +28,7 @@ public class NightstandRenderer implements BlockEntityRenderer<NightstandBlockEn
     public void render(NightstandBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
         NightstandModel model = new NightstandModel(modelSet.bakeLayer(NightstandModel.LAYER_LOCATION));
-        render(Registry.ITEM.getKey(entity.getSheet().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model,entity.getBlockState().getValue(NightstandBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model,entity.getBlockState().getValue(NightstandBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     private static void render(ResourceLocation sheet, ResourceLocation texture, NightstandModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {

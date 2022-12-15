@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dining_bench",
+  "key": {
+    "#": {
+      "item": "handcrafted:oak_board"
+    }
+  },
+  "pattern": [
+    "   ",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "handcrafted:oak_dining_bench"
+  }
+}

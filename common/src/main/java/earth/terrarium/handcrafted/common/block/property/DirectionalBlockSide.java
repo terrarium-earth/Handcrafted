@@ -29,8 +29,7 @@ public enum DirectionalBlockSide implements StringRepresentable {
         return this.name;
     }
 
-    public static DirectionalBlockSide getShape(Block block, DirectionProperty facing, BlockState state, BlockGetter level, BlockPos pos) {
-        Direction direction = state.getValue(facing);
+    public static DirectionalBlockSide getShape(Block block, Direction direction, BlockGetter level, BlockPos pos) {
         BlockState blockState3 = level.getBlockState(pos.relative(direction.getClockWise()));
         BlockState blockState4 = level.getBlockState(pos.relative(direction.getClockWise().getOpposite()));
         if (!blockState3.is(block) && !blockState4.is(block)) {

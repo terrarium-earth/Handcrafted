@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("deprecation")
 public class CrockeryComboBlock extends SimpleEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 9, 3, 9);
+    public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 3, 16);
 
     public CrockeryComboBlock(Properties properties) {
         super(properties);
@@ -29,7 +29,7 @@ public class CrockeryComboBlock extends SimpleEntityBlock {
 
     @Override
     public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE.move(2.5f / 16, 0, 4.5f / 16);
+        return SHAPE;
     }
 
     @Override

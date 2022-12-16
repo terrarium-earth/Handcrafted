@@ -71,24 +71,24 @@
     ],
     "facing=north,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/plate/terracotta_quintuple"
+        "model": "handcrafted:block/crockery/plate/terracotta_quadruple"
       }
     ],
     "facing=east,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "model": "handcrafted:block/crockery/plate/terracotta_quadruple",
         "y": 90
       }
     ],
     "facing=south,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "model": "handcrafted:block/crockery/plate/terracotta_quadruple",
         "y": 180
       }
     ],
     "facing=west,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/plate/terracotta_quintuple",
+        "model": "handcrafted:block/crockery/plate/terracotta_quadruple",
         "y": 270
       }
     ],

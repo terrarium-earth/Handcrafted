@@ -16,10 +16,7 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BookItem;
-import net.minecraft.world.item.BottleItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WebBlock;
 
@@ -53,7 +50,7 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
 
 
-        if (item instanceof BookItem) {
+        if (item instanceof BookItem || item instanceof EnchantedBookItem || item instanceof WritableBookItem || item instanceof WrittenBookItem) {
             id = BOOKS;
         } else if (block instanceof WebBlock) {
             id = COBWEBS;

@@ -71,24 +71,24 @@
     ],
     "facing=north,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/bowl/yellow_quintuple"
+        "model": "handcrafted:block/crockery/bowl/yellow_quadruple"
       }
     ],
     "facing=east,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/bowl/yellow_quintuple",
+        "model": "handcrafted:block/crockery/bowl/yellow_quadruple",
         "y": 90
       }
     ],
     "facing=south,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/bowl/yellow_quintuple",
+        "model": "handcrafted:block/crockery/bowl/yellow_quadruple",
         "y": 180
       }
     ],
     "facing=west,pieces=4": [
       {
-        "model": "handcrafted:block/crockery/bowl/yellow_quintuple",
+        "model": "handcrafted:block/crockery/bowl/yellow_quadruple",
         "y": 270
       }
     ],

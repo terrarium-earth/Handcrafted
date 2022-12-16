@@ -19,12 +19,12 @@ import org.jetbrains.annotations.Nullable;
 @SuppressWarnings("deprecation")
 public class CrockeryBlock extends SimpleBlock {
     public static final IntegerProperty PIECES = IntegerProperty.create("pieces", 1, 6);
-    public static final VoxelShape SHAPE_1 = Block.box(0, 0, 0, 9, 1, 9);
-    public static final VoxelShape SHAPE_2 = Block.box(0, 0, 0, 9, 2, 9);
-    public static final VoxelShape SHAPE_3 = Block.box(0, 0, 0, 9, 3, 9);
-    public static final VoxelShape SHAPE_4 = Block.box(0, 0, 0, 9, 4, 9);
-    public static final VoxelShape SHAPE_5 = Block.box(0, 0, 0, 9, 5, 9);
-    public static final VoxelShape SHAPE_6 = Block.box(0, 0, 0, 9, 6, 9);
+    public static final VoxelShape SHAPE_1 = Block.box(3, 0, 3, 13, 1, 13);
+    public static final VoxelShape SHAPE_2 = Block.box(3, 0, 3, 13, 2, 13);
+    public static final VoxelShape SHAPE_3 = Block.box(3, 0, 3, 13, 3, 13);
+    public static final VoxelShape SHAPE_4 = Block.box(3, 0, 3, 13, 4, 13);
+    public static final VoxelShape SHAPE_5 = Block.box(3, 0, 3, 13, 5, 13);
+    public static final VoxelShape SHAPE_6 = Block.box(3, 0, 3, 13, 6, 13);
 
     public CrockeryBlock(Properties properties) {
         super(properties);
@@ -37,7 +37,7 @@ public class CrockeryBlock extends SimpleBlock {
 
     @Override
     public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        VoxelShape shape = switch (state.getValue(PIECES)) {
+        return switch (state.getValue(PIECES)) {
             case 2 -> SHAPE_2;
             case 3 -> SHAPE_3;
             case 4 -> SHAPE_4;
@@ -45,7 +45,6 @@ public class CrockeryBlock extends SimpleBlock {
             case 6 -> SHAPE_6;
             default -> SHAPE_1;
         };
-        return shape.move(2.5f / 16, 0, 4.5f / 16);
     }
 
     @Nullable

@@ -1,12 +1,12 @@
 package earth.terrarium.handcrafted.common.block.property;
 
+import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import org.jetbrains.annotations.NotNull;
 
 public enum DirectionalBlockSide implements StringRepresentable {
@@ -34,6 +34,10 @@ public enum DirectionalBlockSide implements StringRepresentable {
         BlockState blockState4 = level.getBlockState(pos.relative(direction.getClockWise().getOpposite()));
         if (!blockState3.is(block) && !blockState4.is(block)) {
             return DirectionalBlockSide.SINGLE;
+        } else if (blockState3.is(block) && blockState3.getValue(DiningBenchBlock.FACING) != direction) {
+            return DirectionalBlockSide.SINGLE;
+        } else if (blockState4.is(block) && blockState4.getValue(DiningBenchBlock.FACING) != direction) {
+            return DirectionalBlockSide.SINGLE;
         } else if (!blockState3.is(block)) {
             return DirectionalBlockSide.RIGHT;
         } else if (!blockState4.is(block)) {
@@ -41,5 +45,6 @@ public enum DirectionalBlockSide implements StringRepresentable {
         } else {
             return DirectionalBlockSide.MIDDLE;
         }
+
     }
 }

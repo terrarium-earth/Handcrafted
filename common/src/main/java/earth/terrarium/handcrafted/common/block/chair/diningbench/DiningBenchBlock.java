@@ -67,7 +67,7 @@ public class DiningBenchBlock extends SimpleEntityBlock implements SittableBlock
             level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
 
-        return direction.getAxis().isHorizontal() ? state.setValue(DINING_BENCH_SHAPE, DirectionalBlockSide.getShape(this, state.getValue(FACING), level, currentPos)) : super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
+        return direction.getAxis().isHorizontal() ? state.setValue(DINING_BENCH_SHAPE, getShape(this, state.getValue(FACING), level, currentPos)) : super.updateShape(state, direction, neighborState, level, currentPos, neighborPos);
     }
 
 
@@ -76,11 +76,35 @@ public class DiningBenchBlock extends SimpleEntityBlock implements SittableBlock
         BlockPos blockPos = context.getClickedPos();
         FluidState fluidState = context.getLevel().getFluidState(blockPos);
         BlockState blockState = this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
-        return blockState.setValue(DINING_BENCH_SHAPE, DirectionalBlockSide.getShape(this, blockState.getValue(FACING), context.getLevel(), blockPos));
+        return blockState.setValue(DINING_BENCH_SHAPE, getShape(this, blockState.getValue(FACING), context.getLevel(), blockPos));
     }
 
     @Override
     public AABB getSeatSize(BlockState state) {
         return new AABB(0, 0, 0, 1, 0.5, 1);
+    }
+
+    public static DirectionalBlockSide getShape(Block block, Direction direction, BlockGetter level, BlockPos pos) {
+        BlockState blockState3 = level.getBlockState(pos.relative(direction.getClockWise()));
+        BlockState blockState4 = level.getBlockState(pos.relative(direction.getClockWise().getOpposite()));
+        boolean check1 = blockState3.is(block) && blockState3.getValue(DiningBenchBlock.FACING) != direction;
+        boolean check2 = blockState4.is(block) && blockState4.getValue(DiningBenchBlock.FACING) != direction;
+        if (!blockState3.is(block) && !blockState4.is(block)) {
+            return DirectionalBlockSide.SINGLE;
+        } else if (check1 && blockState4.is(block)) {
+            return DirectionalBlockSide.RIGHT;
+        } else if (check2 && blockState3.is(block)) {
+            return DirectionalBlockSide.LEFT;
+        } else if (check1) {
+            return DirectionalBlockSide.SINGLE;
+        } else if (check2) {
+            return DirectionalBlockSide.SINGLE;
+        } else if (!blockState3.is(block)) {
+            return DirectionalBlockSide.RIGHT;
+        } else if (!blockState4.is(block)) {
+            return DirectionalBlockSide.LEFT;
+        } else {
+            return DirectionalBlockSide.MIDDLE;
+        }
     }
 }

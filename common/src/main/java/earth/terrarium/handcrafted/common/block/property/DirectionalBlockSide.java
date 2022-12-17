@@ -34,10 +34,6 @@ public enum DirectionalBlockSide implements StringRepresentable {
         BlockState blockState4 = level.getBlockState(pos.relative(direction.getClockWise().getOpposite()));
         if (!blockState3.is(block) && !blockState4.is(block)) {
             return DirectionalBlockSide.SINGLE;
-        } else if (blockState3.is(block) && blockState3.getValue(DiningBenchBlock.FACING) != direction) {
-            return DirectionalBlockSide.SINGLE;
-        } else if (blockState4.is(block) && blockState4.getValue(DiningBenchBlock.FACING) != direction) {
-            return DirectionalBlockSide.SINGLE;
         } else if (!blockState3.is(block)) {
             return DirectionalBlockSide.RIGHT;
         } else if (!blockState4.is(block)) {
@@ -45,6 +41,5 @@ public enum DirectionalBlockSide implements StringRepresentable {
         } else {
             return DirectionalBlockSide.MIDDLE;
         }
-
     }
 }

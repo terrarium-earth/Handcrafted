@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -49,7 +50,6 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         }
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
 
-
         if (item instanceof BookItem || item instanceof EnchantedBookItem || item instanceof WritableBookItem || item instanceof WrittenBookItem) {
             id = BOOKS;
         } else if (block instanceof WebBlock) {
@@ -63,10 +63,9 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
             return;
         }
 
-
         VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(id.getNamespace(), id.getPath().replace(".png", "_" + entity.getBlockState().getValue(ShelfBlock.SHELF_SHAPE).toString().toLowerCase() + ".png"))));
         int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING).getOpposite()));
-        renderShelfOverlay(poseStack, vertexConsumer, light, packedOverlay);
+        renderShelfOverlay(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY);
 
         poseStack.popPose();
     }

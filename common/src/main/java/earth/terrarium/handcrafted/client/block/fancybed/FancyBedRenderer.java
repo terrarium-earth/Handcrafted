@@ -86,4 +86,9 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
             poseStack.popPose();
         }
     }
+
+    @Override
+    public boolean shouldRenderOffScreen(FancyBedBlockEntity blockEntity) {
+        return true;
+    }
 }

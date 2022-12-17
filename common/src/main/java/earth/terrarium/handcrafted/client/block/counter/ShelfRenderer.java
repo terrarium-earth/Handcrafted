@@ -64,7 +64,7 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         }
 
         VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(id.getNamespace(), id.getPath().replace(".png", "_" + entity.getBlockState().getValue(ShelfBlock.SHELF_SHAPE).toString().toLowerCase() + ".png"))));
-        int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING).getOpposite()));
+        int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING)));
         renderShelfOverlay(poseStack, vertexConsumer, light, OverlayTexture.NO_OVERLAY);
 
         poseStack.popPose();

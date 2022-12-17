@@ -1,7 +1,6 @@
 package earth.terrarium.handcrafted.mixin;
 
 import earth.terrarium.handcrafted.common.registry.ModItems;
-import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.Entity;

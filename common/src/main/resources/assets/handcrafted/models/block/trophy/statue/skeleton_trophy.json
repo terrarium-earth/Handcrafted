@@ -4,7 +4,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"2": "handcrafted:block/trophy/large_trophy_wall",
-		"3": "minecraft:entity/skeleton/skeleton",
+		"3": "handcrafted:block/trophy/skeleton",
 		"4": "minecraft:item/bow",
 		"particle": "minecraft:entity/skeleton/skeleton"
 	},

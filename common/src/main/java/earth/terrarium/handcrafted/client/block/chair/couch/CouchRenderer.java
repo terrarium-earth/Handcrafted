@@ -48,24 +48,20 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
         poseStack.translate(0.5, 1.5, 0.5);
         poseStack.mulPose(switch (direction) {
             case EAST -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(90);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(180);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(0);
+                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(270);
+                case OUTER_RIGHT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(180);
             };
             case SOUTH -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(0);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(90);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(270);
+                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(180);
+                case OUTER_RIGHT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(90);
             };
             case WEST -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(270);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(0);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(180);
+                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(90);
+                case OUTER_RIGHT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(0);
             };
             default -> switch (shape) {
-                case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(180);
-                case INNER_LEFT -> Vector3f.YP.rotationDegrees(270);
-                case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(90);
+                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(0);
+                case OUTER_RIGHT, INNER_RIGHT -> Vector3f.YP.rotationDegrees(270);
             };
         });
         poseStack.mulPose(Vector3f.XP.rotationDegrees(180));

@@ -29,13 +29,13 @@ public class CouchModel extends BaseModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition single = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, 0.0F, -8.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offset(-4.0F, 19.0F, 2.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 0).addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        single.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(25, 24).addBox(-5.0F, -5.0F, -8.0F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.2618F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(25, 24).addBox(-5.0F, -5.0F, -8.1F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.0F, -5.0F, 2.0F, 0.0F, 0.0F, -0.2618F));
 
-        single.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 44).addBox(-7.0F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, 4.0F, -8.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 44).addBox(-7.0F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
-        single.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(0, 19).addBox(0.0F, -5.0F, -8.0F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(8.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2618F));
+        PartDefinition cube_r3 = main.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(0, 19).addBox(0.0F, -5.0F, -8.1F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, -5.0F, 2.0F, 0.0F, 0.0F, 0.2618F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -44,11 +44,11 @@ public class CouchModel extends BaseModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(60, 82).addBox(-2.0F, 0.0F, -8.0F, 14.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offset(-4.0F, 19.0F, 2.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(60, 82).addBox(-6.0F, -5.0F, -6.0F, 14.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
 
-        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(60, 63).addBox(-6.0F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, 4.0F, -8.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(60, 63).addBox(-6.001F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
-        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(60, 63).mirror().addBox(-7.0F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-2.0F, 4.0F, -1.0F, 0.0F, 1.5708F, -0.2182F));
+        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(60, 63).mirror().addBox(-6.999F, -15.0F, 0.0F, 14.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-6.0F, -1.0F, 1.0F, 0.0F, 1.5708F, -0.2182F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -58,11 +58,11 @@ public class CouchModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(16, 101).addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F))
-                .texOffs(16, 120).addBox(-8.0F, -5.0F, -8.0F, 14.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+                .texOffs(16, 120).addBox(-8.0F, -5.0F, -8.0F, 14.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(76, 101).addBox(-4.0F, -15.0F, -2.001F, 4.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -1.0F, -6.0F, 0.0F, 0.0F, 0.2182F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(76, 101).addBox(-4.0F, -15.0F, -1.999F, 4.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -1.0F, -6.0F, 0.0F, 0.0F, 0.2182F));
 
-        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(88, 99).addBox(0.001F, -15.0F, 0.0F, 2.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(88, 101).addBox(-0.001F, -15.0F, 0.0F, 2.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -71,11 +71,11 @@ public class CouchModel extends BaseModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition left = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 63).addBox(-4.0F, 0.0F, -8.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offset(-4.0F, 19.0F, 2.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 63).addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        left.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(36, 44).addBox(-8.0F, -15.0F, 0.0F, 15.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, 4.0F, -8.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(36, 44).addBox(-8.001F, -15.0F, 0.0F, 15.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
-        left.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 19).addBox(0.0F, -5.0F, -8.0F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(8.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.2618F));
+        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 19).addBox(0.0F, -5.0F, -8.1F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, -5.0F, 2.0F, 0.0F, 0.0F, 0.2618F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -84,9 +84,9 @@ public class CouchModel extends BaseModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition middle = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 82).addBox(-4.0F, 0.0F, -8.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offset(-4.0F, 19.0F, 2.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 82).addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        middle.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(74, 44).addBox(-8.0F, -15.0F, 0.0F, 16.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, 4.0F, -8.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(74, 44).addBox(-8.0F, -15.0F, 0.0F, 16.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }
@@ -95,11 +95,11 @@ public class CouchModel extends BaseModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
 
-        PartDefinition right = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 63).mirror().addBox(-4.0F, 0.0F, -8.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-4.0F, 19.0F, 2.0F));
+        PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 63).mirror().addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
-        right.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(25, 24).addBox(-5.0F, -5.0F, -8.0F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.2618F));
+        PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(25, 24).addBox(-5.0F, -5.0F, -8.1F, 5.0F, 5.0F, 15.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.0F, -5.0F, 2.0F, 0.0F, 0.0F, -0.2618F));
 
-        right.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(36, 44).mirror().addBox(-7.0F, -15.0F, 0.0F, 15.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(4.0F, 4.0F, -8.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r2 = main.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(36, 44).mirror().addBox(-6.999F, -15.0F, 0.0F, 15.0F, 15.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, -1.0F, -6.0F, 0.2182F, 0.0F, 0.0F));
 
         return LayerDefinition.create(meshdefinition, 128, 128);
     }

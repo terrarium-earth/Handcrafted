@@ -1,7 +1,6 @@
 package earth.terrarium.handcrafted.common.registry;
 
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.item.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;

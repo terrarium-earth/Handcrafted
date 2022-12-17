@@ -415,7 +415,7 @@ public class ModRecipeProvider extends RecipeProvider {
         createWallTrophy(consumer, ModItems.SILVERFISH_TROPHY.get(), 1, Items.CHISELED_STONE_BRICKS);
         createWallTrophy(consumer, ModItems.SKELETON_HORSE_TROPHY.get(), 1, Items.SADDLE);
         createWallTrophy(consumer, ModItems.SPIDER_TROPHY.get(), 1, Items.SPIDER_EYE);
-        createWallTrophy(consumer, ModItems.TROPICAL_FISH_TROPHY.get(), 1, Items.SPIDER_EYE);
+        createWallTrophy(consumer, ModItems.TROPICAL_FISH_TROPHY.get(), 1, Items.TROPICAL_FISH);
         createWallTrophy(consumer, ModItems.WITHER_SKELETON_TROPHY.get(), 1, Items.WITHER_SKELETON_SKULL);
         createWallTrophy(consumer, ModItems.WOLF_TROPHY.get(), 1, Items.BONE);
 

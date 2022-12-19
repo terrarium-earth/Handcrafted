@@ -24,9 +24,7 @@ import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
 import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
-import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
-import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyEntityBlock;
 import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
@@ -309,12 +307,12 @@ public class ModBlocks {
     public static final Supplier<Block> WOOD_CUP = register("wood_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> WOOD_PLATE = register("wood_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> WOOD_BOWL = register("wood_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
-    public static final Supplier<Block> WOOD_CROCKERY_COMBO = register("wood_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final Supplier<Block> WOOD_CROCKERY_COMBO = register("wood_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
 
     public static final Supplier<Block> TERRACOTTA_CUP = register("terracotta_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
     public static final Supplier<Block> TERRACOTTA_PLATE = register("terracotta_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
     public static final Supplier<Block> TERRACOTTA_BOWL = register("terracotta_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final Supplier<Block> TERRACOTTA_CROCKERY_COMBO = register("terracotta_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA)));
+    public static final Supplier<Block> TERRACOTTA_CROCKERY_COMBO = register("terracotta_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
 
     public static final Supplier<Block> TERRACOTTA_THIN_POT = register("terracotta_thin_pot", () -> new PotBlock(PotBlock.PotSize.THIN, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
     public static final Supplier<Block> TERRACOTTA_MEDIUM_POT = register("terracotta_medium_pot", () -> new PotBlock(PotBlock.PotSize.MEDIUM, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
@@ -349,14 +347,13 @@ public class ModBlocks {
     public static final Supplier<Block> WITHER_SKELETON_TROPHY = register("wither_skeleton_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> WOLF_TROPHY = register("wolf_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
 
-    public static final Supplier<Block> PHANTOM_TROPHY = register("phantom_trophy", () -> new HangingTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> PHANTOM_TROPHY = register("phantom_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> CREEPER_TROPHY = register("creeper_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> SKELETON_TROPHY = register("skeleton_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> EVOKER_TROPHY = register("evoker_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final Supplier<Block> PILLAGER_TROPHY = register("pillager_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final Supplier<Block> VINDICATOR_TROPHY = register("vindicator_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
-
-    public static final Supplier<Block> WITCH_TROPHY = register("witch_trophy", () -> new StatueTrophyEntityBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
+    public static final Supplier<Block> WITCH_TROPHY = register("witch_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
 
     private static <T extends Block> Supplier<T> register(String id, Supplier<T> block) {
         return ModRegistryHelpers.register(Registry.BLOCK, id, block);

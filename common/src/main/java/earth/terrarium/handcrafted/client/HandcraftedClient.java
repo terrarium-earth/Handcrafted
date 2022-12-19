@@ -18,8 +18,9 @@ import earth.terrarium.handcrafted.client.block.fancybed.FancyBedModel;
 import earth.terrarium.handcrafted.client.block.fancybed.FancyBedRenderer;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookModel;
 import earth.terrarium.handcrafted.client.block.stackablebook.StackableBookRenderer;
+import earth.terrarium.handcrafted.client.block.statue.StatueBlockRenderer;
 import earth.terrarium.handcrafted.client.block.statue.StatueModel;
-import earth.terrarium.handcrafted.client.block.statue.StatueRenderer;
+import earth.terrarium.handcrafted.client.block.statue.StatueEntityRenderer;
 import earth.terrarium.handcrafted.client.block.table.desk.DeskModel;
 import earth.terrarium.handcrafted.client.block.table.desk.DeskRenderer;
 import earth.terrarium.handcrafted.client.block.table.nightstand.NightstandModel;
@@ -109,7 +110,7 @@ public class HandcraftedClient {
         register.accept(ModItems.CRIMSON_FANCY_BED.get(), new FancyBedRenderer.ItemRenderer());
         register.accept(ModItems.WARPED_FANCY_BED.get(), new FancyBedRenderer.ItemRenderer());
 
-        register.accept(ModItems.WITCH_TROPHY.get(), new StatueRenderer.ItemRenderer());
+        register.accept(ModItems.WITCH_TROPHY.get(), new StatueEntityRenderer.ItemRenderer());
 
         register.accept(ModItems.ACACIA_TABLE.get(), new TableRenderer.ItemRenderer());
         register.accept(ModItems.BIRCH_TABLE.get(), new TableRenderer.ItemRenderer());
@@ -170,7 +171,8 @@ public class HandcraftedClient {
         registry.register(ModBlockEntities.CHAIR, ChairRenderer::new);
         registry.register(ModBlockEntities.FANCY_BED, FancyBedRenderer::new);
         registry.register(ModBlockEntities.STACKABLE_BOOK, StackableBookRenderer::new);
-        registry.register(ModBlockEntities.STATUE, StatueRenderer::new);
+        registry.register(ModBlockEntities.STATUE_ENTITY, StatueEntityRenderer::new);
+        registry.register(ModBlockEntities.STATUE_BLOCK, StatueBlockRenderer::new);
         registry.register(ModBlockEntities.TABLE, TableRenderer::new);
         registry.register(ModBlockEntities.NIGHTSTAND, NightstandRenderer::new);
         registry.register(ModBlockEntities.DESK, DeskRenderer::new);
@@ -208,7 +210,7 @@ public class HandcraftedClient {
         register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_CUP.get(), ModBlocks.YELLOW_CUP.get(), ModBlocks.BLUE_CUP.get(), ModBlocks.WOOD_CUP.get(), ModBlocks.TERRACOTTA_CUP.get()));
         register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_BOWL.get(), ModBlocks.YELLOW_BOWL.get(), ModBlocks.BLUE_BOWL.get(), ModBlocks.WOOD_BOWL.get(), ModBlocks.TERRACOTTA_BOWL.get()));
         register.accept(RenderType.cutout(), List.of(ModBlocks.WHITE_CROCKERY_COMBO.get(), ModBlocks.YELLOW_CROCKERY_COMBO.get(), ModBlocks.BLUE_CROCKERY_COMBO.get(), ModBlocks.WOOD_CROCKERY_COMBO.get(), ModBlocks.TERRACOTTA_CROCKERY_COMBO.get()));
-        register.accept(RenderType.cutout(), List.of(ModBlocks.BEAR_TROPHY.get(), ModBlocks.BLAZE_TROPHY.get(), ModBlocks.FOX_TROPHY.get(), ModBlocks.GOAT_TROPHY.get(), ModBlocks.PUFFERFISH_TROPHY.get(), ModBlocks.SALMON_TROPHY.get(), ModBlocks.SILVERFISH_TROPHY.get(), ModBlocks.SKELETON_HORSE_TROPHY.get(), ModBlocks.SPIDER_TROPHY.get(), ModBlocks.TROPICAL_FISH_TROPHY.get(), ModBlocks.WITHER_SKELETON_TROPHY.get(), ModBlocks.WOLF_TROPHY.get(), ModBlocks.PHANTOM_TROPHY.get(), ModBlocks.CREEPER_TROPHY.get(), ModBlocks.SKELETON_TROPHY.get(), ModBlocks.EVOKER_TROPHY.get(), ModBlocks.PILLAGER_TROPHY.get(), ModBlocks.VINDICATOR_TROPHY.get()));
+        register.accept(RenderType.cutout(), List.of(ModBlocks.BEAR_TROPHY.get(), ModBlocks.BLAZE_TROPHY.get(), ModBlocks.FOX_TROPHY.get(), ModBlocks.GOAT_TROPHY.get(), ModBlocks.PUFFERFISH_TROPHY.get(), ModBlocks.SALMON_TROPHY.get(), ModBlocks.SILVERFISH_TROPHY.get(), ModBlocks.SKELETON_HORSE_TROPHY.get(), ModBlocks.SPIDER_TROPHY.get(), ModBlocks.TROPICAL_FISH_TROPHY.get(), ModBlocks.WITHER_SKELETON_TROPHY.get(), ModBlocks.WOLF_TROPHY.get(), ModBlocks.PHANTOM_TROPHY.get()));
     }
 
     public static abstract class BlockRendererRegistry {

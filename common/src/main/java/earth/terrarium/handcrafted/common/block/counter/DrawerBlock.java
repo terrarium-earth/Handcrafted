@@ -6,6 +6,7 @@ import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -37,10 +38,19 @@ public class DrawerBlock extends CupboardBlock implements Hammerable {
         Block block = state.getBlock();
         ResourceLocation id = Registry.BLOCK.getKey(block);
         Block replacement = Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
+        CompoundTag tag = null;
+        if (level.getBlockEntity(pos) instanceof StorageBlockEntity storage) {
+            tag = storage.saveWithoutMetadata();
+        }
         if (replacement == Blocks.AIR) {
             level.setBlock(pos, Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(DRAWER_SHAPE, state.getValue(DRAWER_SHAPE)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(DRAWER_SHAPE, state.getValue(DRAWER_SHAPE)), Block.UPDATE_ALL);
+        }
+        if (tag != null) {
+            if (level.getBlockEntity(pos) instanceof StorageBlockEntity storage) {
+                storage.load(tag);
+            }
         }
     }
 

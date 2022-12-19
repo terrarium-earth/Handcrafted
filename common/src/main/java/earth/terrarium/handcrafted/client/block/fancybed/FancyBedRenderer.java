@@ -23,7 +23,9 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.BedBlock;
+import net.minecraft.world.level.block.entity.BeaconBlockEntity;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.phys.Vec3;
 
 @Environment(EnvType.CLIENT)
 public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity> {
@@ -90,5 +92,10 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
     @Override
     public boolean shouldRenderOffScreen(FancyBedBlockEntity blockEntity) {
         return true;
+    }
+
+    @Override
+    public boolean shouldRender(FancyBedBlockEntity blockEntity, Vec3 cameraPos) {
+        return Vec3.atCenterOf(blockEntity.getBlockPos()).multiply(1.0, 0.0, 1.0).closerThan(cameraPos.multiply(1.0, 0.0, 1.0), (double)this.getViewDistance());
     }
 }

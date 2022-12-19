@@ -26,7 +26,6 @@ import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
 import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
-import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyEntityBlock;
 import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.MethodsReturnNonnullByDefault;
@@ -37,6 +36,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
@@ -126,9 +126,9 @@ public class ModLootTableProvider extends LootTableProvider {
                     } else if (block instanceof HangingTrophyBlock) {
                         dropSelf(block);
                     } else if (block instanceof StatueTrophyBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof StatueTrophyEntityBlock) {
-                        dropSelf(block);
+                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueTrophyBlock.HALF, DoubleBlockHalf.LOWER));
+                    } else if (block instanceof StatueTrophyBlock) {
+                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueTrophyBlock.HALF, DoubleBlockHalf.LOWER));
                     }
                 }
             });

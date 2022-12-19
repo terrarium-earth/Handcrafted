@@ -24,6 +24,7 @@ import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
 import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
+import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import net.minecraft.core.Registry;
@@ -347,7 +348,7 @@ public class ModBlocks {
     public static final Supplier<Block> WITHER_SKELETON_TROPHY = register("wither_skeleton_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> WOLF_TROPHY = register("wolf_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
 
-    public static final Supplier<Block> PHANTOM_TROPHY = register("phantom_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final Supplier<Block> PHANTOM_TROPHY = register("phantom_trophy", () -> new HangingTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> CREEPER_TROPHY = register("creeper_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> SKELETON_TROPHY = register("skeleton_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final Supplier<Block> EVOKER_TROPHY = register("evoker_trophy", () -> new StatueTrophyBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));

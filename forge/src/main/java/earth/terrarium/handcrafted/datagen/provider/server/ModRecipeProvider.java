@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.datagen.provider;
+package earth.terrarium.handcrafted.datagen.provider.server;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModItems;

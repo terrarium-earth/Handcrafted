@@ -9,7 +9,7 @@ architectury {
 sourceSets {
     main {
         resources {
-            srcDirs += 'src/generated/resources'
+            srcDirs += project(":forge").file("src/generated/resources").absolutePath
             exclude '.cache'
         }
     }

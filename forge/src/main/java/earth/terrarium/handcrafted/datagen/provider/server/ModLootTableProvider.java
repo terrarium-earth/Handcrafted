@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.datagen.provider;
+package earth.terrarium.handcrafted.datagen.provider.server;
 
 import com.mojang.datafixers.util.Pair;
 import earth.terrarium.handcrafted.Handcrafted;

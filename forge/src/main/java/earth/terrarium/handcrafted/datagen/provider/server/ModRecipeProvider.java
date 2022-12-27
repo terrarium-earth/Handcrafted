@@ -66,8 +66,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("# #"));
 
         createWoodSetRecipe(consumer, "table", 2, r -> r
-                .pattern("   ")
                 .pattern("###")
+                .pattern("# #")
                 .pattern("# #"));
 
         createWoodSetRecipe(consumer, "bench", 3, r -> r

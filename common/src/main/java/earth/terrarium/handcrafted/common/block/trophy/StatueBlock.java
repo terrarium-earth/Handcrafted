@@ -23,10 +23,10 @@ import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
-public class StatueTrophyBlock extends SimpleEntityBlock {
+public class StatueBlock extends SimpleEntityBlock {
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
 
-    public StatueTrophyBlock(Properties properties) {
+    public StatueBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(HALF, DoubleBlockHalf.LOWER).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }

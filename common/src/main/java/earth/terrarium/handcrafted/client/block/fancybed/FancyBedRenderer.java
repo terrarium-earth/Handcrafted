@@ -23,9 +23,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.BedBlock;
-import net.minecraft.world.level.block.entity.BeaconBlockEntity;
 import net.minecraft.world.level.block.state.properties.BedPart;
-import net.minecraft.world.phys.Vec3;
 
 @Environment(EnvType.CLIENT)
 public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity> {
@@ -87,15 +85,5 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
             render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
             poseStack.popPose();
         }
-    }
-
-    @Override
-    public boolean shouldRenderOffScreen(FancyBedBlockEntity blockEntity) {
-        return true;
-    }
-
-    @Override
-    public boolean shouldRender(FancyBedBlockEntity blockEntity, Vec3 cameraPos) {
-        return Vec3.atCenterOf(blockEntity.getBlockPos()).multiply(1.0, 0.0, 1.0).closerThan(cameraPos.multiply(1.0, 0.0, 1.0), (double)this.getViewDistance());
     }
 }

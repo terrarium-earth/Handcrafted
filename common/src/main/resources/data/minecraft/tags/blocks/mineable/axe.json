@@ -5,7 +5,6 @@
     "#handcrafted:chairs",
     "#handcrafted:couches",
     "#handcrafted:counters",
-    "#handcrafted:crockery",
     "#handcrafted:cupboards",
     "#handcrafted:desks",
     "#handcrafted:drawers",
@@ -19,6 +18,10 @@
     "#handcrafted:trophies",
     "#handcrafted:wood_trims",
     "#handcrafted:wooden_benches",
-    "handcrafted:stackable_book"
+    "handcrafted:stackable_book",
+    "handcrafted:wood_cup",
+    "handcrafted:wood_plate",
+    "handcrafted:wood_bowl",
+    "handcrafted:wood_crockery_combo"
   ]
 }

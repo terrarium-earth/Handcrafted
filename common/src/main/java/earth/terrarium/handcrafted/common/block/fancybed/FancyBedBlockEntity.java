@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.block.fancybed;
 
+import dev.architectury.injectables.annotations.PlatformOnly;
 import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
 import earth.terrarium.handcrafted.common.registry.ModBlockEntities;
 import earth.terrarium.handcrafted.common.registry.ModItems;
@@ -7,6 +8,8 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
+import org.spongepowered.asm.mixin.SoftOverride;
 
 public class FancyBedBlockEntity extends ItemHoldingBlockEntity {
     private ItemStack sheet = ModItems.WHITE_SHEET.get().getDefaultInstance();
@@ -41,5 +44,10 @@ public class FancyBedBlockEntity extends ItemHoldingBlockEntity {
     public void setSheet(ItemStack sheet) {
         this.sheet = sheet;
         this.update();
+    }
+
+    @PlatformOnly("forge")
+    public AABB getRenderBoundingBox() {
+        return new AABB(this.getBlockPos()).inflate(2);
     }
 }

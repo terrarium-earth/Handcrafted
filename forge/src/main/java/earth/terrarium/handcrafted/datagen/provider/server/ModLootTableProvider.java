@@ -25,10 +25,11 @@ import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
 import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
 import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
-import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
+import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.MethodsReturnNonnullByDefault;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.data.loot.LootTableProvider;
@@ -37,10 +38,16 @@ import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -116,7 +123,7 @@ public class ModLootTableProvider extends LootTableProvider {
                     } else if (block instanceof StackableJarBlock) {
                         dropSelf(block);
                     } else if (block instanceof CrockeryBlock) {
-                        dropSelf(block);
+                        this.add(block, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(applyExplosionDecay(block, LootItem.lootTableItem(arg).apply(List.of(2, 3, 4, 5, 6), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float)integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrockeryBlock.PIECES, integer))))))));
                     } else if (block instanceof CrockeryComboBlock) {
                         dropSelf(block);
                     } else if (block instanceof PotBlock) {
@@ -125,10 +132,10 @@ public class ModLootTableProvider extends LootTableProvider {
                         dropSelf(block);
                     } else if (block instanceof HangingTrophyBlock) {
                         dropSelf(block);
-                    } else if (block instanceof StatueTrophyBlock) {
-                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueTrophyBlock.HALF, DoubleBlockHalf.LOWER));
-                    } else if (block instanceof StatueTrophyBlock) {
-                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueTrophyBlock.HALF, DoubleBlockHalf.LOWER));
+                    } else if (block instanceof StatueBlock) {
+                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueBlock.HALF, DoubleBlockHalf.LOWER));
+                    } else if (block instanceof StatueBlock) {
+                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueBlock.HALF, DoubleBlockHalf.LOWER));
                     }
                 }
             });

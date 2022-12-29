@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#handcrafted:benches",
+    "#handcrafted:crockery",
     "#handcrafted:statues",
     "#handcrafted:stone_trims",
     "handcrafted:berry_jam_jar",

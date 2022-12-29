@@ -15,4 +15,5 @@ public class ModTags {
     public static final TagKey<Item> COUNTER_SURFACE = TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "counter_surface"));
 
     public static final TagKey<Block> TABLE_ATTACHMENTS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "table_attachments"));
+    public static final TagKey<Block> STONECUTTERS = TagKey.create(Registry.BLOCK_REGISTRY, new ResourceLocation(Handcrafted.MOD_ID, "stonecutters"));
 }

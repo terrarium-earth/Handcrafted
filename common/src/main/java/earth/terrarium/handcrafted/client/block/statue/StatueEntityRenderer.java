@@ -3,8 +3,8 @@ package earth.terrarium.handcrafted.client.block.statue;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
-import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlock;
-import earth.terrarium.handcrafted.common.block.trophy.StatueTrophyBlockEntity;
+import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
+import earth.terrarium.handcrafted.common.block.trophy.StatueBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
@@ -22,13 +22,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 
 @Environment(EnvType.CLIENT)
-public class StatueEntityRenderer implements BlockEntityRenderer<StatueTrophyBlockEntity> {
+public class StatueEntityRenderer implements BlockEntityRenderer<StatueBlockEntity> {
     public StatueEntityRenderer(BlockEntityRendererProvider.Context ctx) {
     }
 
     @Override
-    public void render(StatueTrophyBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
-        if (entity.getBlockState().getValue(StatueTrophyBlock.HALF) == DoubleBlockHalf.UPPER) return;
+    public void render(StatueBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
+        if (entity.getBlockState().getValue(StatueBlock.HALF) == DoubleBlockHalf.UPPER) return;
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
         StatueModel model = new StatueModel(modelSet.bakeLayer(StatueModel.LAYER_LOCATION_WITCH));
         render(Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);

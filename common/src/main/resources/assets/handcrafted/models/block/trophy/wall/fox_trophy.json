@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [48, 32],
 	"textures": {
-		"0": "handcrafted:block/trophy/trophy_wall",
-		"2": "minecraft:entity/fox/fox",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "0": "handcrafted:block/trophy/trophy_wall",
+      "2": "handcrafted:block/trophy/vanilla/fox",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [0, 3, 15],

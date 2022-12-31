@@ -17,8 +17,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 
 public class FancyPaintingItem extends HangingEntityItem {
-    public FancyPaintingItem(EntityType<? extends FancyPainting> type, Properties settings) {
-        super(type, settings);
+    public FancyPaintingItem(Properties settings) {
+        super(EntityType.PAINTING, settings);
     }
 
     @Override

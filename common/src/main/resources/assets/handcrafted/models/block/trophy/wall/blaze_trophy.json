@@ -3,11 +3,11 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 32],
 	"textures": {
-		"0": "handcrafted:block/trophy/trophy_wall",
-		"1": "minecraft:entity/blaze",
-		"2": "handcrafted:block/trophy/large_trophy_wall",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "0": "handcrafted:block/trophy/trophy_wall",
+      "1": "handcrafted:block/trophy/vanilla/blaze",
+      "2": "handcrafted:block/trophy/large_trophy_wall",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [0, 3, 15],

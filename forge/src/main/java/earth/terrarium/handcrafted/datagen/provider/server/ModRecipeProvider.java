@@ -4,17 +4,13 @@ import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.MethodsReturnNonnullByDefault;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 import java.util.function.Consumer;
@@ -22,12 +18,115 @@ import java.util.function.Function;
 
 @MethodsReturnNonnullByDefault
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(DataGenerator pGenerator) {
-        super(pGenerator);
+    public ModRecipeProvider(PackOutput output) {
+        super(output);
+    }
+
+    public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
+        func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count))
+                .group(name)
+                .save(consumer);
+    }
+
+    public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
+        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
+        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
+                .group(name)
+                .save(consumer);
+    }
+
+    public static void createWoodSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
+            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createWoodSetRecipeWithPlanks(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
+            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
+            Item planks = ForgeRegistries.ITEMS.getValue(new ResourceLocation(woodName + "_planks"));
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
+
+            assert output != null;
+            assert planks != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .define('/', planks)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createColouredSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{Items.BLACK_WOOL, Items.BLUE_WOOL, Items.BROWN_WOOL, Items.CYAN_WOOL, Items.GRAY_WOOL, Items.GREEN_WOOL, Items.LIGHT_BLUE_WOOL, Items.LIGHT_GRAY_WOOL, Items.LIME_WOOL, Items.MAGENTA_WOOL, Items.ORANGE_WOOL, Items.PINK_WOOL, Items.PURPLE_WOOL, Items.RED_WOOL, Items.WHITE_WOOL, Items.YELLOW_WOOL}) {
+            String woolName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_wool", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woolName + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
+            String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                .define('#', ModTags.BOARDS)
+                .define('/', input)
+                .group("trophy")
+                .unlockedBy("has_trophy", has(ModTags.BOARDS))
+                .pattern("###")
+                .pattern("#/#")
+                .pattern("###")
+                .save(consumer);
+
+    }
+
+    public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                .define('#', Items.STONE)
+                .define('/', input)
+                .group("trophy")
+                .unlockedBy("has_trophy", has(Items.STONE))
+                .pattern(" # ")
+                .pattern("#/#")
+                .pattern("# #")
+                .save(consumer);
+
     }
 
     @Override
-    protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
+    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         createColouredSetRecipe(consumer, "cushion", 8, r -> r
                 .define('/', Items.FEATHER)
                 .pattern("###")
@@ -434,109 +533,6 @@ public class ModRecipeProvider extends RecipeProvider {
         createStatueTrophy(consumer, ModItems.PILLAGER_TROPHY.get(), 1, Items.CROSSBOW);
         createStatueTrophy(consumer, ModItems.VINDICATOR_TROPHY.get(), 1, Items.IRON_AXE);
         createStatueTrophy(consumer, ModItems.WITCH_TROPHY.get(), 1, Items.GLASS_BOTTLE);
-
-    }
-
-    public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapedRecipeBuilder.shaped(output, count))
-                .group(name)
-                .save(consumer);
-    }
-
-    public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(output, count))
-                .group(name)
-                .save(consumer);
-    }
-
-    public static void createWoodSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWoodSetRecipeWithPlanks(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item planks = ForgeRegistries.ITEMS.getValue(new ResourceLocation(woodName + "_planks"));
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            assert planks != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
-                    .define('#', wood)
-                    .define('/', planks)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createColouredSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.BLACK_WOOL, Items.BLUE_WOOL, Items.BROWN_WOOL, Items.CYAN_WOOL, Items.GRAY_WOOL, Items.GREEN_WOOL, Items.LIGHT_BLUE_WOOL, Items.LIGHT_GRAY_WOOL, Items.LIME_WOOL, Items.MAGENTA_WOOL, Items.ORANGE_WOOL, Items.PINK_WOOL, Items.PURPLE_WOOL, Items.RED_WOOL, Items.WHITE_WOOL, Items.YELLOW_WOOL}) {
-            String woolName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_wool", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woolName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
-            String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(output, count)
-                .define('#', ModTags.BOARDS)
-                .define('/', input)
-                .group("trophy")
-                .unlockedBy("has_trophy", has(ModTags.BOARDS))
-                .pattern("###")
-                .pattern("#/#")
-                .pattern("###")
-                .save(consumer);
-
-    }
-
-    public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(output, count)
-                .define('#', Items.STONE)
-                .define('/', input)
-                .group("trophy")
-                .unlockedBy("has_trophy", has(Items.STONE))
-                .pattern(" # ")
-                .pattern("#/#")
-                .pattern("# #")
-                .save(consumer);
 
     }
 }

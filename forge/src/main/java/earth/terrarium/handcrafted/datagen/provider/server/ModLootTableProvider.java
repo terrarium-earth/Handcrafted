@@ -1,39 +1,17 @@
 package earth.terrarium.handcrafted.datagen.provider.server;
 
-import com.mojang.datafixers.util.Pair;
+import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import earth.terrarium.handcrafted.Handcrafted;
-import earth.terrarium.handcrafted.common.block.CushionBlock;
-import earth.terrarium.handcrafted.common.block.chair.bench.BenchBlock;
-import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlock;
-import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlock;
-import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
-import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlock;
-import earth.terrarium.handcrafted.common.block.counter.CounterBlock;
-import earth.terrarium.handcrafted.common.block.counter.CupboardBlock;
-import earth.terrarium.handcrafted.common.block.counter.DrawerBlock;
-import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlock;
-import earth.terrarium.handcrafted.common.block.crockery.CrockeryComboBlock;
-import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
-import earth.terrarium.handcrafted.common.block.pot.PotBlock;
-import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
-import earth.terrarium.handcrafted.common.block.stackablejar.StackableJarBlock;
-import earth.terrarium.handcrafted.common.block.table.desk.DeskBlock;
-import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
-import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlock;
-import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
-import earth.terrarium.handcrafted.common.block.trim.CornerTrimBlock;
-import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
-import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
-import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.loot.BlockLoot;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BedPart;
@@ -42,111 +20,69 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+import java.util.Objects;
+import java.util.Set;
 
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 public class ModLootTableProvider extends LootTableProvider {
-
-    public ModLootTableProvider(DataGenerator pGenerator) {
-        super(pGenerator);
-    }
-
-    @Override
-    protected List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> getTables() {
-        List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> tables = new ArrayList<>();
-        tables.add(Pair.of(BlockLootTables::new, LootContextParamSets.BLOCK));
-        return tables;
+    public ModLootTableProvider(PackOutput output) {
+        super(output, Set.of(), List.of(new LootTableProvider.SubProviderEntry(BlockLootTables::new, LootContextParamSets.BLOCK)));
     }
 
     @Override
     protected void validate(Map<ResourceLocation, LootTable> map, ValidationContext validationTracker) {
     }
 
+    public static class BlockLootTables extends BlockLootSubProvider {
+        public BlockLootTables() {
+            super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+        }
 
-    public static class BlockLootTables extends BlockLoot {
         @Override
-        protected void addTables() {
-            ForgeRegistries.BLOCKS.getValues().forEach(block -> {
-                ResourceLocation blockId = ForgeRegistries.BLOCKS.getKey(block);
-                if (blockId.getNamespace().equals(Handcrafted.MOD_ID)) {
-                    if (block instanceof CushionBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof StackableBookBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof ChairBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof TableBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof WoodenBenchBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof BenchBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof CouchBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof FancyBedBlock) {
-                        this.add(block, (arg) -> createSinglePropConditionTable(arg, BedBlock.PART, BedPart.HEAD));
-                    } else if (block instanceof DiningBenchBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof NightstandBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof DeskBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof SideTableBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof CounterBlock) {
-                        dropOther(block, ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, blockId.getPath().substring(0, blockId.getPath().length() - 2))));
-                    } else if (block instanceof DrawerBlock) {
-                        dropOther(block, ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, blockId.getPath().substring(0, blockId.getPath().length() - 2))));
-                    } else if (block instanceof CupboardBlock) {
-                        dropOther(block, ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, blockId.getPath().substring(0, blockId.getPath().length() - 2))));
-                    } else if (block instanceof ShelfBlock) {
-                        dropOther(block, ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, blockId.getPath().substring(0, blockId.getPath().length() - 2))));
-                    } else if (block instanceof TrimBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof CornerTrimBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof StackableJarBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof CrockeryBlock) {
-                        this.add(block, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(applyExplosionDecay(block, LootItem.lootTableItem(arg).apply(List.of(2, 3, 4, 5, 6), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float)integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrockeryBlock.PIECES, integer))))))));
-                    } else if (block instanceof CrockeryComboBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof PotBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof WallTrophyBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof HangingTrophyBlock) {
-                        dropSelf(block);
-                    } else if (block instanceof StatueBlock) {
-                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueBlock.HALF, DoubleBlockHalf.LOWER));
-                    } else if (block instanceof StatueBlock) {
-                        this.add(block, (arg) -> createSinglePropConditionTable(arg, StatueBlock.HALF, DoubleBlockHalf.LOWER));
-                    }
-                }
-            });
+        protected void generate() {
+            ModBlocks.CUSHIONS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.STACKABLE_BOOKS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.CHAIRS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.TABLES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.BENCHES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.COUCHES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.FANCY_BEDS.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> createSinglePropConditionTable(arg, BedBlock.PART, BedPart.HEAD)));
+            ModBlocks.DINING_BENCHES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.NIGHTSTANDS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.DESKS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.SIDE_TABLES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.COUNTERS.stream().map(RegistryEntry::get).forEach(b -> dropOther(b, Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, ForgeRegistries.BLOCKS.getKey(b).getPath().substring(0, ForgeRegistries.BLOCKS.getKey(b).getPath().length() - 2))))));
+            ModBlocks.DRAWERS.stream().map(RegistryEntry::get).forEach(b -> dropOther(b, Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, ForgeRegistries.BLOCKS.getKey(b).getPath().substring(0, ForgeRegistries.BLOCKS.getKey(b).getPath().length() - 2))))));
+            ModBlocks.CUPBOARDS.stream().map(RegistryEntry::get).forEach(b -> dropOther(b, Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, ForgeRegistries.BLOCKS.getKey(b).getPath().substring(0, ForgeRegistries.BLOCKS.getKey(b).getPath().length() - 2))))));
+            ModBlocks.SHELVES.stream().map(RegistryEntry::get).forEach(b -> dropOther(b, Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, ForgeRegistries.BLOCKS.getKey(b).getPath().substring(0, ForgeRegistries.BLOCKS.getKey(b).getPath().length() - 2))))));
+            ModBlocks.TRIMS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.CUPS.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(applyExplosionDecay(b, LootItem.lootTableItem(arg).apply(List.of(2, 3, 4, 5, 6), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float) integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrockeryBlock.PIECES, integer)))))))));
+            ModBlocks.PLATES.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(applyExplosionDecay(b, LootItem.lootTableItem(arg).apply(List.of(2, 3, 4, 5, 6), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float) integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrockeryBlock.PIECES, integer)))))))));
+            ModBlocks.BOWLS.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(applyExplosionDecay(b, LootItem.lootTableItem(arg).apply(List.of(2, 3, 4, 5, 6), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float) integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CrockeryBlock.PIECES, integer)))))))));
+            ModBlocks.CROCKERY_COMBOS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.POTS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.TROPHIES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.STATUE_TROPHIES.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> createSinglePropConditionTable(arg, StatueBlock.HALF, DoubleBlockHalf.LOWER)));
+
             dropSelf(ModBlocks.OVEN.get());
             dropSelf(ModBlocks.KITCHEN_HOOD.get());
             dropSelf(ModBlocks.KITCHEN_HOOD_PIPE.get());
+            dropSelf(ModBlocks.BERRY_JAM_JAR.get());
         }
 
         @Override
         protected Iterable<Block> getKnownBlocks() {
-            return ForgeRegistries.BLOCKS.getValues().stream().filter(b -> ForgeRegistries.BLOCKS.getKey(b).getNamespace().equals(Handcrafted.MOD_ID)).toList();
+            return ModBlocks.BLOCKS.stream().map(RegistryEntry::get).toList();
         }
     }
 }

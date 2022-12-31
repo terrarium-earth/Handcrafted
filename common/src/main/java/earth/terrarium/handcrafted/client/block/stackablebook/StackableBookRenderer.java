@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.client.block.stackablebook;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
@@ -14,7 +14,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
@@ -24,16 +24,11 @@ public class StackableBookRenderer implements BlockEntityRenderer<StackableBookB
     public StackableBookRenderer(BlockEntityRendererProvider.Context ctx) {
     }
 
-    @Override
-    public void render(StackableBookBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
-        render(entity.getBlockState().getValue(StackableBookBlock.BOOKS), entity.getBlockPos().asLong(), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
-    }
-
     private static void render(int books, long seed, ResourceLocation texture, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         poseStack.pushPose();
         poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
-        poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
+        poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
+        poseStack.mulPose(Axis.XP.rotationDegrees(180));
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
 
         RandomSource random = RandomSource.create(seed);
@@ -46,11 +41,16 @@ public class StackableBookRenderer implements BlockEntityRenderer<StackableBookB
             };
 
             poseStack.translate(0, -4f / 16 * i, 0);
-            poseStack.mulPose(Vector3f.YP.rotationDegrees(random.nextInt()));
+            poseStack.mulPose(Axis.YP.rotationDegrees(random.nextInt()));
             String colour = DyeColor.byId(random.nextInt(DyeColor.values().length)).toString();
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutoutNoCull(new ResourceLocation(texture.getNamespace(), "textures/block/stackable_book/" + colour + "_book" + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
             poseStack.translate(0, 4f / 16 * i, 0);
         }
         poseStack.popPose();
+    }
+
+    @Override
+    public void render(StackableBookBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
+        render(entity.getBlockState().getValue(StackableBookBlock.BOOKS), entity.getBlockPos().asLong(), BuiltInRegistries.BLOCK.getKey(entity.getBlockState().getBlock()), entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 }

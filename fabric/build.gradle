@@ -35,6 +35,8 @@ dependencies {
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
+
+    modApi "com.teamresourceful.resourcefullib:resourcefullib-fabric-$rootProject.resourcefullib_version"
 }
 
 processResources {

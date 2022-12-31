@@ -2,7 +2,7 @@ package earth.terrarium.handcrafted.client.block.counter;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.block.counter.ShelfBlockEntity;
@@ -13,10 +13,9 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
 import net.minecraft.core.Vec3i;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -37,11 +36,11 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         if (entity.getLevel() == null) return;
 
         Item item = entity.getStack().getItem();
-        Block block = Registry.BLOCK.get(Registry.ITEM.getKey(item));
+        Block block = BuiltInRegistries.BLOCK.get(BuiltInRegistries.ITEM.getKey(item));
         Direction dir = entity.getBlockState().getValue(ShelfBlock.FACING);
         ResourceLocation id;
         poseStack.pushPose();
-        poseStack.mulPose(Vector3f.YN.rotationDegrees(dir.toYRot()));
+        poseStack.mulPose(Axis.YN.rotationDegrees(dir.toYRot()));
         poseStack.translate(0, 1.0, 0);
         switch (dir) {
             case NORTH -> poseStack.translate(-1, 0, 0.001);
@@ -49,7 +48,7 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
             case EAST -> poseStack.translate(-1, 0, 1.001);
             case WEST -> poseStack.translate(0, 0, 0.001);
         }
-        poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
+        poseStack.mulPose(Axis.XP.rotationDegrees(180));
 
         if (item instanceof BookItem || item instanceof EnchantedBookItem || item instanceof WritableBookItem || item instanceof WrittenBookItem) {
             id = BOOKS;

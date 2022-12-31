@@ -1,16 +1,18 @@
 package earth.terrarium.handcrafted.datagen.provider.client;
 
 import earth.terrarium.handcrafted.Handcrafted;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.resources.ResourceLocation;
+import earth.terrarium.handcrafted.common.registry.ModBlocks;
+import earth.terrarium.handcrafted.common.registry.ModItems;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.codehaus.plexus.util.StringUtils;
 
+import java.util.Objects;
+
 public class ModLangProvider extends LanguageProvider {
-    public ModLangProvider(DataGenerator pGenerator) {
-        super(pGenerator, Handcrafted.MOD_ID, "en_us");
+    public ModLangProvider(PackOutput output) {
+        super(output, Handcrafted.MOD_ID, "en_us");
     }
 
     @Override
@@ -26,27 +28,19 @@ public class ModLangProvider extends LanguageProvider {
         add("tooltip.handcrafted.sheet_help", "Place on furniture to change the color");
         add("tooltip.handcrafted.shelf_help", "Holds: Potions, Books, Crockery, and Cobwebs");
 
-        ForgeRegistries.BLOCKS.getValues().forEach(block -> {
-            ResourceLocation blockId = ForgeRegistries.BLOCKS.getKey(block);
-            if (blockId.getNamespace().equals(Handcrafted.MOD_ID)) {
-                if (blockId.getNamespace().equals(Handcrafted.MOD_ID)) {
-                    addBlock(() -> block, StringUtils.capitaliseAllWords(blockId.getPath()
-                            .replace("_1", "")
-                            .replace("_2", "")
-                            .replace("_3", "")
-                            .replace("_4", "")
-                            .replace("_", " ")
-                    ));
-                }
-            }
+        ModBlocks.BLOCKS.stream().forEach(block -> {
+            addBlock(block, StringUtils.capitaliseAllWords(Objects.requireNonNull(block.getId()).getPath()
+                    .replace("_1", "")
+                    .replace("_2", "")
+                    .replace("_3", "")
+                    .replace("_4", "")
+                    .replace("_", " ")
+            ));
         });
 
-        ForgeRegistries.ITEMS.getValues().forEach(item -> {
-            if (!(item instanceof BlockItem)) {
-                ResourceLocation blockId = ForgeRegistries.ITEMS.getKey(item);
-                if (blockId.getNamespace().equals(Handcrafted.MOD_ID)) {
-                    addItem(() -> item, StringUtils.capitaliseAllWords(blockId.getPath().replace("_", " ")));
-                }
+        ModItems.ITEMS.stream().forEach(item -> {
+            if (!(item.get() instanceof BlockItem)) {
+                addItem(item, StringUtils.capitaliseAllWords(Objects.requireNonNull(item.getId()).getPath().replace("_", " ")));
             }
         });
     }

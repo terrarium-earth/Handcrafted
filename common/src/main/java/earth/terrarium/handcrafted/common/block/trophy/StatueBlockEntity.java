@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.common.block.trophy;
 
 import dev.architectury.injectables.annotations.PlatformOnly;
-import earth.terrarium.handcrafted.common.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.common.registry.ModBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -14,11 +14,11 @@ public class StatueBlockEntity extends BlockEntity {
     }
 
     public static StatueBlockEntity ofEntity(BlockPos blockPos, BlockState blockState) {
-        return new StatueBlockEntity(ModBlockEntities.STATUE_ENTITY.get(), blockPos, blockState);
+        return new StatueBlockEntity(ModBlockEntityTypes.STATUE_ENTITY.get(), blockPos, blockState);
     }
 
     public static StatueBlockEntity ofBlock(BlockPos blockPos, BlockState blockState) {
-        return new StatueBlockEntity(ModBlockEntities.STATUE_BLOCK.get(), blockPos, blockState);
+        return new StatueBlockEntity(ModBlockEntityTypes.STATUE_BLOCK.get(), blockPos, blockState);
     }
 
     @PlatformOnly("forge")

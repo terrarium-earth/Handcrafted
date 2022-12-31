@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "group": "white_glazed_medium_pot",
   "ingredients": [
     {

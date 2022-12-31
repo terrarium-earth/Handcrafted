@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.common.block.trophy;
 
 import earth.terrarium.handcrafted.common.block.SimpleEntityBlock;
-import earth.terrarium.handcrafted.common.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.common.registry.ModBlockEntityTypes;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -72,10 +72,10 @@ public class StatueBlock extends SimpleEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        if (ModBlockEntities.STATUE_BLOCK.get().isValid(state)) {
-            return ModBlockEntities.STATUE_BLOCK.get().create(pos, state);
-        } else if (ModBlockEntities.STATUE_ENTITY.get().isValid(state)) {
-            return ModBlockEntities.STATUE_ENTITY.get().create(pos, state);
+        if (ModBlockEntityTypes.STATUE_BLOCK.get().isValid(state)) {
+            return ModBlockEntityTypes.STATUE_BLOCK.get().create(pos, state);
+        } else if (ModBlockEntityTypes.STATUE_ENTITY.get().isValid(state)) {
+            return ModBlockEntityTypes.STATUE_ENTITY.get().create(pos, state);
         }
         return null;
     }

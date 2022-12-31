@@ -2,20 +2,19 @@ package earth.terrarium.handcrafted.common.block.fancybed;
 
 import dev.architectury.injectables.annotations.PlatformOnly;
 import earth.terrarium.handcrafted.common.block.ItemHoldingBlockEntity;
-import earth.terrarium.handcrafted.common.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.common.registry.ModBlockEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import org.spongepowered.asm.mixin.SoftOverride;
 
 public class FancyBedBlockEntity extends ItemHoldingBlockEntity {
     private ItemStack sheet = ModItems.WHITE_SHEET.get().getDefaultInstance();
 
     public FancyBedBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(ModBlockEntities.FANCY_BED.get(), blockPos, blockState);
+        super(ModBlockEntityTypes.FANCY_BED.get(), blockPos, blockState);
         this.setStack(ModItems.WHITE_CUSHION.get().getDefaultInstance());
     }
 

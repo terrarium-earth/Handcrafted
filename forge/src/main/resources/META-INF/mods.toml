@@ -1,29 +1,35 @@
-
-modLoader="javafml"
-loaderVersion="[43,)"
-license="Terrarium Licence"
-issueTrackerURL="https://github.com/terrarium-earth/Handcrafted/issues"
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "Terrarium Licence"
+issueTrackerURL = "https://github.com/terrarium-earth/Handcrafted/issues"
 [[mods]]
-modId="handcrafted"
-version="${version}"
-displayName="Handcrafted"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/handcrafted"
-logoFile="icon.png"
-authors="Alex Nijjar, CodexAdrian, Facu, Kekie6, Marc-IceBlade, MsRandom, ThatGravyBoat"
-description='''
+modId = "handcrafted"
+version = "${version}"
+displayName = "Handcrafted"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/handcrafted"
+logoFile = "icon.png"
+authors = "Alex Nijjar, CodexAdrian, Facu, Kekie6, Marc-IceBlade, MsRandom, ThatGravyBoat"
+description = '''
 Epic Furniture mod!
 '''
 
 [[dependencies.handcrafted]]
-   modId="forge"
-   mandatory=true
-   versionRange="[43,)"
-   ordering="NONE"
-   side="BOTH"
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
 
 [[dependencies.handcrafted]]
-   modId="minecraft"
-   mandatory=true
-   versionRange="[1.19.2,1.20)"
-   ordering="NONE"
-   side="BOTH"
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.20)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.handcrafted]]
+modId = "resourcefullib"
+mandatory = true
+versionRange = "[1.2.0,)"
+ordering = "NONE"
+side = "BOTH"

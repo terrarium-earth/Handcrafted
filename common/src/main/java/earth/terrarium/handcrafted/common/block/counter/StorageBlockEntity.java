@@ -1,6 +1,6 @@
 package earth.terrarium.handcrafted.common.block.counter;
 
-import earth.terrarium.handcrafted.common.registry.ModBlockEntities;
+import earth.terrarium.handcrafted.common.registry.ModBlockEntityTypes;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
@@ -27,7 +27,7 @@ public class StorageBlockEntity extends RandomizableContainerBlockEntity {
     private final ContainerOpenersCounter openersCounter;
 
     public StorageBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(ModBlockEntities.STORAGE.get(), blockPos, blockState);
+        super(ModBlockEntityTypes.STORAGE.get(), blockPos, blockState);
         this.items = NonNullList.withSize(27, ItemStack.EMPTY);
         this.openersCounter = new ContainerOpenersCounter() {
             protected void onOpen(Level level, BlockPos pos, BlockState state) {

@@ -6,7 +6,7 @@
 		"2": "handcrafted:block/trophy/large_trophy_wall",
 		"3": "handcrafted:block/trophy/skeleton",
 		"4": "minecraft:item/bow",
-		"particle": "minecraft:entity/skeleton/skeleton"
+		"particle": "handcrafted:block/trophy/skeleton"
 	},
 	"elements": [
 		{

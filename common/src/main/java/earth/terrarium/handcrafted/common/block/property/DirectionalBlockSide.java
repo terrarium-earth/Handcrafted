@@ -1,6 +1,5 @@
 package earth.terrarium.handcrafted.common.block.property;
 
-import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.StringRepresentable;

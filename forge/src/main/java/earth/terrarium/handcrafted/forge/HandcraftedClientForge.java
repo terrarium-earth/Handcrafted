@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.forge;
 
+import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import earth.terrarium.handcrafted.client.HandcraftedClient;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -43,13 +44,13 @@ public class HandcraftedClientForge {
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         HandcraftedClient.registerEntityRenderers(new HandcraftedClient.EntityRendererRegistry() {
             @Override
-            protected <T extends Entity> void register(Supplier<? extends EntityType<? extends T>> type, EntityRendererProvider<T> factory) {
+            protected <T extends Entity> void register(RegistryEntry<? extends EntityType<? extends T>> type, EntityRendererProvider<T> factory) {
                 event.registerEntityRenderer(type.get(), factory);
             }
         });
         HandcraftedClient.registerBlockRenderers(new HandcraftedClient.BlockRendererRegistry() {
             @Override
-            public <T extends BlockEntity> void register(Supplier<? extends BlockEntityType<? extends T>> type, BlockEntityRendererProvider<T> factory) {
+            public <T extends BlockEntity> void register(RegistryEntry<? extends BlockEntityType<? extends T>> type, BlockEntityRendererProvider<T> factory) {
                 event.registerBlockEntityRenderer(type.get(), factory);
             }
         });

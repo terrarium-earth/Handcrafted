@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 32],
 	"textures": {
-		"0": "handcrafted:block/trophy/trophy_wall",
-		"1": "minecraft:entity/skeleton/wither_skeleton",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "0": "handcrafted:block/trophy/trophy_wall",
+      "1": "handcrafted:block/trophy/vanilla/wither_skeleton",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [0, 3, 15],

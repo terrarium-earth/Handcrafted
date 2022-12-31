@@ -2,10 +2,10 @@
 	"parent": "block/block",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "handcrafted:block/trophy/trophy_wall",
-		"1": "minecraft:entity/fish/salmon",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "0": "handcrafted:block/trophy/trophy_wall",
+      "1": "handcrafted:block/trophy/vanilla/salmon",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [0, 3, 15],

@@ -5,7 +5,7 @@ import earth.terrarium.handcrafted.common.item.Hammerable;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.Container;
@@ -59,14 +59,14 @@ public class CupboardBlock extends BaseEntityBlock implements Hammerable {
     @Override
     public void onHammer(Level level, BlockPos pos, BlockState state, Direction side, Player user, Vec3 hitPos) {
         Block block = state.getBlock();
-        ResourceLocation id = Registry.BLOCK.getKey(block);
-        Block replacement = Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
+        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
+        Block replacement = BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
         CompoundTag tag = null;
         if (level.getBlockEntity(pos) instanceof StorageBlockEntity storage) {
             tag = storage.saveWithoutMetadata();
         }
         if (replacement == Blocks.AIR) {
-            level.setBlock(pos, Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);
+            level.setBlock(pos, BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);
         }
@@ -79,8 +79,8 @@ public class CupboardBlock extends BaseEntityBlock implements Hammerable {
 
     @Override
     public ItemStack getCloneItemStack(BlockGetter level, BlockPos pos, BlockState state) {
-        ResourceLocation id = Registry.BLOCK.getKey(state.getBlock());
-        return Registry.ITEM.get(new ResourceLocation(id.getNamespace(), id.getPath().substring(0, id.getPath().length() - 2))).getDefaultInstance();
+        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
+        return BuiltInRegistries.ITEM.get(new ResourceLocation(id.getNamespace(), id.getPath().substring(0, id.getPath().length() - 2))).getDefaultInstance();
     }
 
     @Override

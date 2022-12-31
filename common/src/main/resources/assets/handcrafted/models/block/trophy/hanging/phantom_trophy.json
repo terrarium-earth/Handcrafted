@@ -3,11 +3,11 @@
 	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "entity/phantom",
-		"2": "handcrafted:block/trophy/large_trophy_wall",
-		"3": "minecraft:block/chain",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "1": "handcrafted:block/trophy/vanilla/phantom",
+      "2": "handcrafted:block/trophy/large_trophy_wall",
+      "3": "minecraft:block/chain",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [5, 7, 1],

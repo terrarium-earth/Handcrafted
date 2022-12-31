@@ -3,10 +3,10 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 32],
 	"textures": {
-		"0": "handcrafted:block/trophy/trophy_wall",
-		"2": "minecraft:entity/spider/spider",
-		"particle": "handcrafted:block/trophy/trophy_wall"
-	},
+      "0": "handcrafted:block/trophy/trophy_wall",
+      "2": "handcrafted:block/trophy/vanilla/spider",
+      "particle": "handcrafted:block/trophy/trophy_wall"
+    },
 	"elements": [
 		{
 			"from": [0, 2, 15],

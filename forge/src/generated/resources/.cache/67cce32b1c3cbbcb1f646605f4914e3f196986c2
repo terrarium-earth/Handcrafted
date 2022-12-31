@@ -1,4 +1,4 @@
-// 1.19.2	2022-12-29T00:26:49.4514318	LootTables
+// 1.19.2	2022-12-30T18:43:17.464399	LootTables
 3a75c4d2c160ad9ddd5ab065818d44e748fbd822 data/handcrafted/loot_tables/blocks/acacia_bench.json
 11bde00def22931ecd09056893374fc9a2fe04c0 data/handcrafted/loot_tables/blocks/acacia_chair.json
 b76eba14bc4a49af4fb91deea1d76a74debb32a6 data/handcrafted/loot_tables/blocks/acacia_corner_trim.json
@@ -46,9 +46,9 @@ e63910cd397de7416c0d9f7a6e8455554742669a data/handcrafted/loot_tables/blocks/bir
 676fdba4fb144bc0426c7b566be106507152c5f9 data/handcrafted/loot_tables/blocks/birch_shelf_1.json
 62186a3aab9dfc7440e7b4ed9000cd7efed41249 data/handcrafted/loot_tables/blocks/birch_side_table.json
 5b630a91e124f02e0b62279506321f588f0d4672 data/handcrafted/loot_tables/blocks/birch_table.json
+825848af64789bf4b8425ec9ef5fdef8b88a19e7 data/handcrafted/loot_tables/blocks/black_cushion.json
 54405e8d59005a434bc25a321b36749a034947a4 data/handcrafted/loot_tables/blocks/blackstone_corner_trim.json
 c7522f6ef8279cb8f9a7ad8007b7a5a495dff821 data/handcrafted/loot_tables/blocks/blackstone_pillar_trim.json
-825848af64789bf4b8425ec9ef5fdef8b88a19e7 data/handcrafted/loot_tables/blocks/black_cushion.json
 992fe11021fc4d8bb906ccab0afef1d581ec654e data/handcrafted/loot_tables/blocks/blaze_trophy.json
 f7e7b88be8df89309f313f6b6622c37a8bdf8a3f data/handcrafted/loot_tables/blocks/blue_bowl.json
 b728682323285ebdfcc035c75eb87f07600c9c81 data/handcrafted/loot_tables/blocks/blue_crockery_combo.json

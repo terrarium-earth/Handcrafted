@@ -14,6 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.EnumMap;
 
+@SuppressWarnings("deprecation")
 public class WallTrophyBlock extends SimpleBlock {
     private static final EnumMap<Direction, VoxelShape> AABBS = Maps.newEnumMap(ImmutableMap.of(Direction.NORTH, Block.box(0.0, 4.5, 14.0, 16.0, 12.5, 16.0), Direction.SOUTH, Block.box(0.0, 4.5, 0.0, 16.0, 12.5, 2.0), Direction.EAST, Block.box(0.0, 4.5, 0.0, 2.0, 12.5, 16.0), Direction.WEST, Block.box(14.0, 4.5, 0.0, 16.0, 12.5, 16.0)));
 

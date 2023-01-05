@@ -1,13 +1,24 @@
-dependencies {
-    // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
-    // Do NOT use other classes from fabric loader
-    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-    modApi "com.teamresourceful.resourcefullib:resourcefullib-common-$rootProject.resourcefullib_version"
+architectury {
+    common(rootProject.enabled_platforms.split(","))
 }
 
-architectury {
-    common()
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
+
+//    modCompileOnly "mezz.jei:jei-$rootProject.minecraft_version-common-api:$rootProject.jei_version"
+//    modRuntimeOnly "mezz.jei:jei-$rootProject.minecraft_version-common:$rootProject.jei_version"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:$rootProject.rei_version"
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin:$rootProject.rei_version"
+
+    modApi "com.teamresourceful.resourcefullib:resourcefullib-common-$minecraft_version:$rootProject.resourcefullib_version"
 }
+
+processResources {
+    inputs.property "version", rootProject.version
+    inputs.property "resourcefullib_version", rootProject.resourcefullib_version
+}
+
+def ENV = System.getenv()
 
 publishing {
     publications {
@@ -15,10 +26,5 @@ publishing {
             artifactId = rootProject.archives_base_name
             from components.java
         }
-    }
-
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-    repositories {
-        // Add repositories to publish to here.
     }
 }

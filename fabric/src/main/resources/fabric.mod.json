@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "id": "handcrafted",
   "version": "${version}",
-
   "name": "Handcrafted",
   "description": "Epic Furniture mod!",
   "authors": [
     "Alex Nijjar",
+    "Kekie6"
+  ],
+  "contributors": [
     "CodexAdrian",
     "Facu",
-    "Kekie6",
     "Marc-IceBlade",
     "MsRandom",
     "ThatGravyBoat"
@@ -19,10 +20,8 @@
     "repo": "https://github.com/terrarium-earth/Handcrafted",
     "issues": "https://github.com/terrarium-earth/Handcrafted/issues"
   },
-
   "license": "Terrarium Licence",
   "icon": "icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -30,15 +29,15 @@
       "earth.terrarium.handcrafted.Handcrafted::postInit"
     ],
     "client": [
-      "earth.terrarium.handcrafted.fabric.HandcraftedClientFabric"
+      "earth.terrarium.handcrafted.client.fabric.HandcraftedClientFabric"
     ]
   },
   "mixins": [
     "handcrafted-common.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.10",
-    "minecraft": ">=1.19.2",
-    "resourcefullib": ">=1.2.0"
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": ">=1.19",
+    "resourcefullib": ">=${resourcefullib_version}"
   }
 }

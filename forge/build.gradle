@@ -1,6 +1,7 @@
 plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
+
 architectury {
     platformSetupLoomIde()
     forge()
@@ -17,9 +18,8 @@ sourceSets {
 
 loom {
     forge {
-        mixinConfig "handcrafted-common.mixins.json"
-        mixinConfig "handcrafted.mixins.json"
-
+        mixinConfig "$project.mod_id-common.mixins.json"
+        mixinConfig "${project.mod_id}.mixins.json"
         dataGen {
             mod project.mod_id
         }
@@ -33,30 +33,28 @@ loom {
 
 configurations {
     common
-    shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
+    shadowCommon
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
     developmentForge.extendsFrom common
 }
 
 dependencies {
-    forge "net.minecraftforge:forge:${rootProject.forge_version}"
+    forge "net.minecraftforge:forge:$rootProject.minecraft_version-$rootProject.forge_version"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
 
 //    modCompileOnly "mezz.jei:jei-$rootProject.minecraft_version-forge-api:$rootProject.jei_version"
-//    modLocalRuntime ("mezz.jei:jei-$rootProject.minecraft_version-forge:$rootProject.jei_version") { transitive = false }
+//    modLocalRuntime("mezz.jei:jei-$rootProject.minecraft_version-forge:$rootProject.jei_version") { transitive = false }
 
-    modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$rootProject.resourcefullib_version"
+    modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$minecraft_version:$rootProject.resourcefullib_version"
 }
 
 processResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    inputs.property "version", project.version
-
     filesMatching("META-INF/mods.toml") {
-        expand "version": project.version
+        expand "version": rootProject.version, "resourcefullib_version": rootProject.resourcefullib_version
     }
 }
 
@@ -91,16 +89,13 @@ components.java {
     }
 }
 
+def ENV = System.getenv()
+
 publishing {
     publications {
         mavenForge(MavenPublication) {
             artifactId = rootProject.archives_base_name + "-" + project.name
             from components.java
         }
-    }
-
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-    repositories {
-        // Add repositories to publish to here.
     }
 }

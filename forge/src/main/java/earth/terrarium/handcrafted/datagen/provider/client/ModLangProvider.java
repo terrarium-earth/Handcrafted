@@ -2,10 +2,13 @@ package earth.terrarium.handcrafted.datagen.provider.client;
 
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
+import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.common.data.LanguageProvider;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.codehaus.plexus.util.StringUtils;
 
 import java.util.Objects;
@@ -42,6 +45,12 @@ public class ModLangProvider extends LanguageProvider {
             if (!(item.get() instanceof BlockItem)) {
                 addItem(item, StringUtils.capitaliseAllWords(Objects.requireNonNull(item.getId()).getPath().replace("_", " ")));
             }
+        });
+
+        ModEntityTypes.ENTITY_TYPES.stream().forEach(entity -> {
+            ResourceLocation id = ForgeRegistries.ENTITY_TYPES.getKey(entity.get());
+            assert id != null;
+            addEntityType(entity, StringUtils.capitaliseAllWords(id.getPath().replace("_", " ")));
         });
     }
 }

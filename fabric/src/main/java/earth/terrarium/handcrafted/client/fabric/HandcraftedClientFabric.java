@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.fabric;
+package earth.terrarium.handcrafted.client.fabric;
 
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import earth.terrarium.handcrafted.client.HandcraftedClient;

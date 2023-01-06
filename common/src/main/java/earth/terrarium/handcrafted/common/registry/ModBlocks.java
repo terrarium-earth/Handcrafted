@@ -42,8 +42,36 @@ public class ModBlocks {
     public static final ResourcefulRegistry<Block> BLOCKS = ResourcefulRegistries.create(BuiltInRegistries.BLOCK, Handcrafted.MOD_ID);
 
     public static final ResourcefulRegistry<Block> STACKABLE_BOOKS = ResourcefulRegistries.create(BLOCKS);
-    public static final RegistryEntry<Block> STACKABLE_BOOK = STACKABLE_BOOKS.register("stackable_book", () -> new StackableBookBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final ResourcefulRegistry<Block> CUSHIONS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> CHAIRS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> TABLES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> BENCHES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> WOODEN_BENCHES = ResourcefulRegistries.create(BENCHES);
+    public static final ResourcefulRegistry<Block> METAL_BENCHES = ResourcefulRegistries.create(BENCHES);
+    public static final ResourcefulRegistry<Block> COUCHES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> FANCY_BEDS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> DINING_BENCHES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> NIGHTSTANDS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> DESKS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> SIDE_TABLES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> COUNTERS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> CUPBOARDS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> DRAWERS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> SHELVES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> TRIMS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> CROCKERY = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> CUPS = ResourcefulRegistries.create(CROCKERY);
+    public static final ResourcefulRegistry<Block> PLATES = ResourcefulRegistries.create(CROCKERY);
+    public static final ResourcefulRegistry<Block> BOWLS = ResourcefulRegistries.create(CROCKERY);
+    public static final ResourcefulRegistry<Block> CROCKERY_COMBOS = ResourcefulRegistries.create(CROCKERY);
+    public static final ResourcefulRegistry<Block> POTS = ResourcefulRegistries.create(CROCKERY);
+    public static final ResourcefulRegistry<Block> TROPHIES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> STATUE_TROPHIES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> STATUE_TROPHY_BLOCKS = ResourcefulRegistries.create(STATUE_TROPHIES);
+    public static final ResourcefulRegistry<Block> STATUE_TROPHY_ENTITIES = ResourcefulRegistries.create(STATUE_TROPHIES);
+
+    public static final RegistryEntry<Block> STACKABLE_BOOK = STACKABLE_BOOKS.register("stackable_book", () -> new StackableBookBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
     public static final RegistryEntry<Block> BLACK_CUSHION = CUSHIONS.register("black_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryEntry<Block> BLUE_CUSHION = CUSHIONS.register("blue_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryEntry<Block> BROWN_CUSHION = CUSHIONS.register("brown_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
@@ -60,7 +88,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> RED_CUSHION = CUSHIONS.register("red_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryEntry<Block> WHITE_CUSHION = CUSHIONS.register("white_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryEntry<Block> YELLOW_CUSHION = CUSHIONS.register("yellow_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-    public static final ResourcefulRegistry<Block> CHAIRS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_CHAIR = CHAIRS.register("acacia_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_CHAIR = CHAIRS.register("birch_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_CHAIR = CHAIRS.register("dark_oak_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -70,7 +98,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_CHAIR = CHAIRS.register("spruce_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_CHAIR = CHAIRS.register("crimson_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_CHAIR = CHAIRS.register("warped_chair", () -> new ChairBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> TABLES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_TABLE = TABLES.register("acacia_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_TABLE = TABLES.register("birch_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_TABLE = TABLES.register("dark_oak_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -80,8 +108,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_TABLE = TABLES.register("spruce_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_TABLE = TABLES.register("crimson_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_TABLE = TABLES.register("warped_table", () -> new TableBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> BENCHES = ResourcefulRegistries.create(BLOCKS);
-    public static final ResourcefulRegistry<Block> WOODEN_BENCHES = ResourcefulRegistries.create(BENCHES);
+
     public static final RegistryEntry<Block> ACACIA_BENCH = WOODEN_BENCHES.register("acacia_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_BENCH = WOODEN_BENCHES.register("birch_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_BENCH = WOODEN_BENCHES.register("dark_oak_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -91,10 +118,10 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_BENCH = WOODEN_BENCHES.register("spruce_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_BENCH = WOODEN_BENCHES.register("crimson_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_BENCH = WOODEN_BENCHES.register("warped_bench", () -> new WoodenBenchBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> METAL_BENCHES = ResourcefulRegistries.create(BENCHES);
+
     public static final RegistryEntry<Block> BENCH = METAL_BENCHES.register("bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> FROZEN_BENCH = METAL_BENCHES.register("frozen_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
-    public static final ResourcefulRegistry<Block> COUCHES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_COUCH = COUCHES.register("acacia_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_COUCH = COUCHES.register("birch_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_COUCH = COUCHES.register("dark_oak_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -104,7 +131,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_COUCH = COUCHES.register("spruce_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_COUCH = COUCHES.register("crimson_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_COUCH = COUCHES.register("warped_couch", () -> new CouchBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> FANCY_BEDS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_FANCY_BED = FANCY_BEDS.register("acacia_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
     public static final RegistryEntry<Block> BIRCH_FANCY_BED = FANCY_BEDS.register("birch_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
     public static final RegistryEntry<Block> DARK_OAK_FANCY_BED = FANCY_BEDS.register("dark_oak_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
@@ -114,7 +141,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_FANCY_BED = FANCY_BEDS.register("spruce_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
     public static final RegistryEntry<Block> CRIMSON_FANCY_BED = FANCY_BEDS.register("crimson_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
     public static final RegistryEntry<Block> WARPED_FANCY_BED = FANCY_BEDS.register("warped_fancy_bed", () -> new FancyBedBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_BED)));
-    public static final ResourcefulRegistry<Block> DINING_BENCHES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_DINING_BENCH = DINING_BENCHES.register("acacia_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_DINING_BENCH = DINING_BENCHES.register("birch_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_DINING_BENCH = DINING_BENCHES.register("dark_oak_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -124,7 +151,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_DINING_BENCH = DINING_BENCHES.register("spruce_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_DINING_BENCH = DINING_BENCHES.register("crimson_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_DINING_BENCH = DINING_BENCHES.register("warped_dining_bench", () -> new DiningBenchBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> NIGHTSTANDS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_NIGHTSTAND = NIGHTSTANDS.register("acacia_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_NIGHTSTAND = NIGHTSTANDS.register("birch_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_NIGHTSTAND = NIGHTSTANDS.register("dark_oak_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -134,7 +161,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_NIGHTSTAND = NIGHTSTANDS.register("spruce_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_NIGHTSTAND = NIGHTSTANDS.register("crimson_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_NIGHTSTAND = NIGHTSTANDS.register("warped_nightstand", () -> new NightstandBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> DESKS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_DESK = DESKS.register("acacia_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_DESK = DESKS.register("birch_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_DESK = DESKS.register("dark_oak_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -144,7 +171,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_DESK = DESKS.register("spruce_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_DESK = DESKS.register("crimson_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_DESK = DESKS.register("warped_desk", () -> new DeskBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> SIDE_TABLES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_SIDE_TABLE = SIDE_TABLES.register("acacia_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_SIDE_TABLE = SIDE_TABLES.register("birch_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> DARK_OAK_SIDE_TABLE = SIDE_TABLES.register("dark_oak_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
@@ -154,7 +181,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_SIDE_TABLE = SIDE_TABLES.register("spruce_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> CRIMSON_SIDE_TABLE = SIDE_TABLES.register("crimson_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_SIDE_TABLE = SIDE_TABLES.register("warped_side_table", () -> new SideTableBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> COUNTERS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_COUNTER_1 = COUNTERS.register("acacia_counter_1", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> ACACIA_COUNTER_2 = COUNTERS.register("acacia_counter_2", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> ACACIA_COUNTER_3 = COUNTERS.register("acacia_counter_3", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
@@ -182,7 +209,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> WARPED_COUNTER_1 = COUNTERS.register("warped_counter_1", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_COUNTER_2 = COUNTERS.register("warped_counter_2", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WARPED_COUNTER_3 = COUNTERS.register("warped_counter_3", () -> new CounterBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> CUPBOARDS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_CUPBOARD_1 = CUPBOARDS.register("acacia_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryEntry<Block> ACACIA_CUPBOARD_2 = CUPBOARDS.register("acacia_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryEntry<Block> BIRCH_CUPBOARD_1 = CUPBOARDS.register("birch_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
@@ -201,7 +228,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> CRIMSON_CUPBOARD_2 = CUPBOARDS.register("crimson_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
     public static final RegistryEntry<Block> WARPED_CUPBOARD_1 = CUPBOARDS.register("warped_cupboard_1", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final RegistryEntry<Block> WARPED_CUPBOARD_2 = CUPBOARDS.register("warped_cupboard_2", () -> new CupboardBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
-    public static final ResourcefulRegistry<Block> DRAWERS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_DRAWER_1 = DRAWERS.register("acacia_drawer_1", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryEntry<Block> ACACIA_DRAWER_2 = DRAWERS.register("acacia_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryEntry<Block> ACACIA_DRAWER_3 = DRAWERS.register("acacia_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
@@ -238,7 +265,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> WARPED_DRAWER_2 = DRAWERS.register("warped_drawer_2", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final RegistryEntry<Block> WARPED_DRAWER_3 = DRAWERS.register("warped_drawer_3", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
     public static final RegistryEntry<Block> WARPED_DRAWER_4 = DRAWERS.register("warped_drawer_4", () -> new DrawerBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
-    public static final ResourcefulRegistry<Block> SHELVES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_SHELF_1 = SHELVES.register("acacia_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
     public static final RegistryEntry<Block> BIRCH_SHELF_1 = SHELVES.register("birch_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS)));
     public static final RegistryEntry<Block> DARK_OAK_SHELF_1 = SHELVES.register("dark_oak_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS)));
@@ -248,7 +275,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> SPRUCE_SHELF_1 = SHELVES.register("spruce_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS)));
     public static final RegistryEntry<Block> CRIMSON_SHELF_1 = SHELVES.register("crimson_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS)));
     public static final RegistryEntry<Block> WARPED_SHELF_1 = SHELVES.register("warped_shelf_1", () -> new ShelfBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS)));
-    public static final ResourcefulRegistry<Block> TRIMS = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> ACACIA_PILLAR_TRIM = TRIMS.register("acacia_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> ACACIA_CORNER_TRIM = TRIMS.register("acacia_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BIRCH_PILLAR_TRIM = TRIMS.register("birch_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
@@ -287,32 +314,31 @@ public class ModBlocks {
     public static final RegistryEntry<Block> QUARTZ_CORNER_TRIM = TRIMS.register("quartz_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> STONE_PILLAR_TRIM = TRIMS.register("stone_pillar_trim", () -> new TrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryEntry<Block> STONE_CORNER_TRIM = TRIMS.register("stone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
-    public static final ResourcefulRegistry<Block> CROCKERY = ResourcefulRegistries.create(BLOCKS);
-    public static final ResourcefulRegistry<Block> CUPS = ResourcefulRegistries.create(CROCKERY);
+
     public static final RegistryEntry<Block> WHITE_CUP = CUPS.register("white_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> YELLOW_CUP = CUPS.register("yellow_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> BLUE_CUP = CUPS.register("blue_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> WOOD_CUP = CUPS.register("wood_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_CUP = CUPS.register("terracotta_cup", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final ResourcefulRegistry<Block> PLATES = ResourcefulRegistries.create(CROCKERY);
+
     public static final RegistryEntry<Block> WHITE_PLATE = PLATES.register("white_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> YELLOW_PLATE = PLATES.register("yellow_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> BLUE_PLATE = PLATES.register("blue_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> WOOD_PLATE = PLATES.register("wood_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_PLATE = PLATES.register("terracotta_plate", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final ResourcefulRegistry<Block> BOWLS = ResourcefulRegistries.create(CROCKERY);
+
     public static final RegistryEntry<Block> WHITE_BOWL = BOWLS.register("white_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> YELLOW_BOWL = BOWLS.register("yellow_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> BLUE_BOWL = BOWLS.register("blue_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> WOOD_BOWL = BOWLS.register("wood_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_BOWL = BOWLS.register("terracotta_bowl", () -> new CrockeryBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final ResourcefulRegistry<Block> CROCKERY_COMBOS = ResourcefulRegistries.create(CROCKERY);
+
     public static final RegistryEntry<Block> WHITE_CROCKERY_COMBO = CROCKERY_COMBOS.register("white_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> YELLOW_CROCKERY_COMBO = CROCKERY_COMBOS.register("yellow_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> BLUE_CROCKERY_COMBO = CROCKERY_COMBOS.register("blue_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
     public static final RegistryEntry<Block> WOOD_CROCKERY_COMBO = CROCKERY_COMBOS.register("wood_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_CROCKERY_COMBO = CROCKERY_COMBOS.register("terracotta_crockery_combo", () -> new CrockeryComboBlock(BlockBehaviour.Properties.copy(Blocks.TERRACOTTA).noOcclusion()));
-    public static final ResourcefulRegistry<Block> POTS = ResourcefulRegistries.create(CROCKERY);
+
     public static final RegistryEntry<Block> TERRACOTTA_THIN_POT = POTS.register("terracotta_thin_pot", () -> new PotBlock(PotBlock.PotSize.THIN, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_MEDIUM_POT = POTS.register("terracotta_medium_pot", () -> new PotBlock(PotBlock.PotSize.MEDIUM, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_WIDE_POT = POTS.register("terracotta_wide_pot", () -> new PotBlock(PotBlock.PotSize.WIDE, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
@@ -329,7 +355,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> GOLDEN_MEDIUM_POT = POTS.register("golden_medium_pot", () -> new PotBlock(PotBlock.PotSize.MEDIUM, BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> GOLDEN_WIDE_POT = POTS.register("golden_wide_pot", () -> new PotBlock(PotBlock.PotSize.WIDE, BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> GOLDEN_THICK_POT = POTS.register("golden_thick_pot", () -> new PotBlock(PotBlock.PotSize.THICK, BlockBehaviour.Properties.copy(Blocks.GOLD_BLOCK).noOcclusion()));
-    public static final ResourcefulRegistry<Block> TROPHIES = ResourcefulRegistries.create(BLOCKS);
+
     public static final RegistryEntry<Block> BEAR_TROPHY = TROPHIES.register("bear_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> BLAZE_TROPHY = TROPHIES.register("blaze_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> FOX_TROPHY = TROPHIES.register("fox_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
@@ -343,14 +369,13 @@ public class ModBlocks {
     public static final RegistryEntry<Block> WITHER_SKELETON_TROPHY = TROPHIES.register("wither_skeleton_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> WOLF_TROPHY = TROPHIES.register("wolf_trophy", () -> new WallTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> PHANTOM_TROPHY = TROPHIES.register("phantom_trophy", () -> new HangingTrophyBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
-    public static final ResourcefulRegistry<Block> STATUE_TROPHIES = ResourcefulRegistries.create(BLOCKS);
-    public static final ResourcefulRegistry<Block> STATUE_TROPHY_BLOCKS = ResourcefulRegistries.create(STATUE_TROPHIES);
+
     public static final RegistryEntry<Block> CREEPER_TROPHY = STATUE_TROPHY_BLOCKS.register("creeper_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> SKELETON_TROPHY = STATUE_TROPHY_BLOCKS.register("skeleton_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryEntry<Block> EVOKER_TROPHY = STATUE_TROPHY_BLOCKS.register("evoker_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryEntry<Block> PILLAGER_TROPHY = STATUE_TROPHY_BLOCKS.register("pillager_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryEntry<Block> VINDICATOR_TROPHY = STATUE_TROPHY_BLOCKS.register("vindicator_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
-    public static final ResourcefulRegistry<Block> STATUE_TROPHY_ENTITIES = ResourcefulRegistries.create(STATUE_TROPHIES);
+
     public static final RegistryEntry<Block> WITCH_TROPHY = STATUE_TROPHY_ENTITIES.register("witch_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryEntry<Block> OVEN = BLOCKS.register("oven", () -> new SmokerBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)) {
     });

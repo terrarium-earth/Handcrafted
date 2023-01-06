@@ -31,8 +31,8 @@ public class ModLangProvider extends LanguageProvider {
         add("tooltip.handcrafted.sheet_help", "Place on furniture to change the color");
         add("tooltip.handcrafted.shelf_help", "Holds: Potions, Books, Crockery, and Cobwebs");
 
-        ModBlocks.BLOCKS.stream().forEach(block -> {
-            addBlock(block, StringUtils.capitaliseAllWords(Objects.requireNonNull(block.getId()).getPath()
+        ModBlocks.BLOCKS.stream().forEach(entry -> {
+            addBlock(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath()
                     .replace("_1", "")
                     .replace("_2", "")
                     .replace("_3", "")
@@ -41,9 +41,9 @@ public class ModLangProvider extends LanguageProvider {
             ));
         });
 
-        ModItems.ITEMS.stream().forEach(item -> {
-            if (!(item.get() instanceof BlockItem)) {
-                addItem(item, StringUtils.capitaliseAllWords(Objects.requireNonNull(item.getId()).getPath().replace("_", " ")));
+        ModItems.ITEMS.stream().forEach(entry -> {
+            if (!(entry.get() instanceof BlockItem)) {
+                addItem(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath().replace("_", " ")));
             }
         });
 

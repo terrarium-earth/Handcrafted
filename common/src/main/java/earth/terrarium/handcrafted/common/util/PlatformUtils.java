@@ -1,4 +1,4 @@
-package earth.terrarium.handcrafted.common.registry;
+package earth.terrarium.handcrafted.common.util;
 
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
@@ -11,8 +11,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.apache.commons.lang3.NotImplementedException;
 import org.jetbrains.annotations.NotNull;
 
-public class ModRegistryHelpers {
-
+public class PlatformUtils {
     @ExpectPlatform
     public static <E extends BlockEntity> BlockEntityType<E> createBlockEntityType(BlockEntityFactory<E> factory, Block... blocks) {
         throw new NotImplementedException();

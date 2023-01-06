@@ -22,9 +22,40 @@ def ENV = System.getenv()
 
 publishing {
     publications {
-        mavenCommon(MavenPublication) {
-            artifactId = rootProject.archives_base_name
-            from components.java
+        mavenJava(MavenPublication) {
+            artifact remapJar
+            artifact(sourcesJar) {
+                builtBy remapSourcesJar
+            }
+
+            artifactId = "$rootProject.mod_id-common-$rootProject.minecraft_version"
+
+            pom {
+                name = 'Handcrafted'
+                description = 'Epic Furniture mod!'
+                url = 'https://github.com/terrarium-earth/Handcrafted'
+
+                scm {
+                    connection = 'git:https://github.com/terrarium-earth/Handcrafted.git'
+                    developerConnection = 'git:https://github.com/terrarium-earth/Handcrafted.git'
+                    url = 'https://github.com/terrarium-earth/Handcrafted'
+                }
+
+                licenses {
+                    license {
+                        name = 'Terrarium Licence'
+                    }
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url = "https://maven.resourcefulbees.com/repository/maven-releases/"
+            credentials {
+                username ENV.MAVEN_USER
+                password ENV.MAVEN_PASS
+            }
         }
     }
 }

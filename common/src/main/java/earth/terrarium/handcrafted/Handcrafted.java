@@ -14,6 +14,5 @@ public class Handcrafted {
     }
 
     public static void postInit() {
-        ModBlockEntityTypes.postInit();
     }
 }

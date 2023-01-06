@@ -1,0 +1,1 @@
+fixed startup crash fr this time

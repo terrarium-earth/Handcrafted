@@ -19,6 +19,7 @@ import earth.terrarium.handcrafted.common.block.crockery.CrockeryComboBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
 import earth.terrarium.handcrafted.common.block.kitchenhood.KitchenHoodBlock;
 import earth.terrarium.handcrafted.common.block.kitchenhood.KitchenHoodPipeBlock;
+import earth.terrarium.handcrafted.common.block.oven.OvenBlock;
 import earth.terrarium.handcrafted.common.block.pot.PotBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.common.block.stackablejar.StackableJarBlock;
@@ -34,7 +35,6 @@ import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SmokerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 @SuppressWarnings("unused")
@@ -377,8 +377,7 @@ public class ModBlocks {
     public static final RegistryEntry<Block> VINDICATOR_TROPHY = STATUE_TROPHY_BLOCKS.register("vindicator_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
 
     public static final RegistryEntry<Block> WITCH_TROPHY = STATUE_TROPHY_ENTITIES.register("witch_trophy", () -> new StatueBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
-    public static final RegistryEntry<Block> OVEN = BLOCKS.register("oven", () -> new SmokerBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)) {
-    });
+    public static final RegistryEntry<Block> OVEN = BLOCKS.register("oven", () -> new OvenBlock(BlockBehaviour.Properties.copy(Blocks.SMOKER)));
     public static final RegistryEntry<Block> KITCHEN_HOOD = BLOCKS.register("kitchen_hood", () -> new KitchenHoodBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> KITCHEN_HOOD_PIPE = BLOCKS.register("kitchen_hood_pipe", () -> new KitchenHoodPipeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> BERRY_JAM_JAR = BLOCKS.register("berry_jam_jar", () -> new StackableJarBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));

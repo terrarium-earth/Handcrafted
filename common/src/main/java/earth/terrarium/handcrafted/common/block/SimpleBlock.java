@@ -21,7 +21,7 @@ public class SimpleBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public SimpleBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.defaultBlockState() .setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
     }
 
     @Override

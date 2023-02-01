@@ -47,7 +47,7 @@ public class StatueBlock extends SimpleEntityBlock {
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
         super.setPlacedBy(level, pos, state, placer, itemStack);
         boolean waterAbove = level.getFluidState(pos.above()).is(Fluids.WATER);
-        level.setBlock(pos.above(), state.setValue(HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterAbove), 3);
+        level.setBlock(pos.above(), state.setValue(HALF, DoubleBlockHalf.UPPER).setValue(WATERLOGGED, waterAbove), Block.UPDATE_ALL);
     }
 
     @Override

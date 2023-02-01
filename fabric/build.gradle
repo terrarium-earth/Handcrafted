@@ -114,7 +114,7 @@ publishing {
     }
     repositories {
         maven {
-            url = "https://maven.resourcefulbees.com/repository/maven-releases/"
+            url = "https://maven.resourcefulbees.com/repository/terrarium/"
             credentials {
                 username ENV.MAVEN_USER
                 password ENV.MAVEN_PASS

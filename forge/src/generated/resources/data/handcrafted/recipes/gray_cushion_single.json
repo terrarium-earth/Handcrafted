@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gray_cushion",
+  "ingredients": [
+    {
+      "tag": "handcrafted:cushions"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:gray_cushion"
+  }
+}

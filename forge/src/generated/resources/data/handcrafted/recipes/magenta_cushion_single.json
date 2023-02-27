@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "magenta_cushion",
+  "ingredients": [
+    {
+      "tag": "handcrafted:cushions"
+    },
+    {
+      "item": "minecraft:magenta_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:magenta_cushion"
+  }
+}

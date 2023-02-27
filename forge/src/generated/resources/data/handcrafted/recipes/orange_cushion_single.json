@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "orange_cushion",
+  "ingredients": [
+    {
+      "tag": "handcrafted:cushions"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:orange_cushion"
+  }
+}

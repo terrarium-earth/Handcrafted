@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cyan_cushion",
+  "ingredients": [
+    {
+      "tag": "handcrafted:cushions"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:cyan_cushion"
+  }
+}

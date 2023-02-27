@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "yellow_cushion",
+  "ingredients": [
+    {
+      "tag": "handcrafted:cushions"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:yellow_cushion"
+  }
+}

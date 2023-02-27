@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gray_sheet",
+  "ingredients": [
+    {
+      "tag": "handcrafted:sheets"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:gray_sheet"
+  }
+}

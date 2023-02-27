@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blue_sheet",
+  "ingredients": [
+    {
+      "tag": "handcrafted:sheets"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:blue_sheet"
+  }
+}

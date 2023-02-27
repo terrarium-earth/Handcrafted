@@ -3,6 +3,8 @@ package earth.terrarium.handcrafted.datagen.provider.server;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlock;
+import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
+import earth.terrarium.handcrafted.common.block.stackablejar.StackableJarBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.MethodsReturnNonnullByDefault;
@@ -14,12 +16,15 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SeaPickleBlock;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.ValidationContext;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
@@ -51,7 +56,7 @@ public class ModLootTableProvider extends LootTableProvider {
         @Override
         protected void generate() {
             ModBlocks.CUSHIONS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
-            ModBlocks.STACKABLE_BOOKS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
+            ModBlocks.STACKABLE_BOOKS.stream().map(RegistryEntry::get).forEach(b -> this.add(b, (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(this.applyExplosionDecay(b, LootItem.lootTableItem(b).apply(List.of(2, 3, 4), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float) integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StackableBookBlock.BOOKS, integer)))))))));
             ModBlocks.CHAIRS.stream().map(RegistryEntry::get).forEach(this::dropSelf);
             ModBlocks.TABLES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
             ModBlocks.BENCHES.stream().map(RegistryEntry::get).forEach(this::dropSelf);
@@ -77,7 +82,7 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.OVEN.get());
             dropSelf(ModBlocks.KITCHEN_HOOD.get());
             dropSelf(ModBlocks.KITCHEN_HOOD_PIPE.get());
-            dropSelf(ModBlocks.BERRY_JAM_JAR.get());
+            this.add(ModBlocks.BERRY_JAM_JAR.get(), (arg) -> LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(this.applyExplosionDecay(ModBlocks.BERRY_JAM_JAR.get(), LootItem.lootTableItem(ModBlocks.BERRY_JAM_JAR.get()).apply(List.of(2, 3), (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float) integer)).when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(arg).setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(StackableJarBlock.JARS, integer))))))));
         }
 
         @Override

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cyan_sheet",
+  "ingredients": [
+    {
+      "tag": "handcrafted:sheets"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:cyan_sheet"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "yellow_sheet",
+  "ingredients": [
+    {
+      "tag": "handcrafted:sheets"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:yellow_sheet"
+  }
+}

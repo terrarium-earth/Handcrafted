@@ -22,109 +22,6 @@ public class ModRecipeProvider extends RecipeProvider {
         super(output);
     }
 
-    public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count))
-                .group(name)
-                .save(consumer);
-    }
-
-    public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
-                .group(name)
-                .save(consumer);
-    }
-
-    public static void createWoodSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWoodSetRecipeWithPlanks(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item planks = ForgeRegistries.ITEMS.getValue(new ResourceLocation(woodName + "_planks"));
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            assert planks != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                    .define('#', wood)
-                    .define('/', planks)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createColouredSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.BLACK_WOOL, Items.BLUE_WOOL, Items.BROWN_WOOL, Items.CYAN_WOOL, Items.GRAY_WOOL, Items.GREEN_WOOL, Items.LIGHT_BLUE_WOOL, Items.LIGHT_GRAY_WOOL, Items.LIME_WOOL, Items.MAGENTA_WOOL, Items.ORANGE_WOOL, Items.PINK_WOOL, Items.PURPLE_WOOL, Items.RED_WOOL, Items.WHITE_WOOL, Items.YELLOW_WOOL}) {
-            String woolName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_wool", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woolName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
-            String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                    .define('#', wood)
-                    .group(suffix)
-                    .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', ModTags.BOARDS)
-                .define('/', input)
-                .group("trophy")
-                .unlockedBy("has_trophy", has(ModTags.BOARDS))
-                .pattern("###")
-                .pattern("#/#")
-                .pattern("###")
-                .save(consumer);
-
-    }
-
-    public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', Items.STONE)
-                .define('/', input)
-                .group("trophy")
-                .unlockedBy("has_trophy", has(Items.STONE))
-                .pattern(" # ")
-                .pattern("#/#")
-                .pattern("# #")
-                .save(consumer);
-
-    }
-
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         createColouredSetRecipe(consumer, "cushion", 8, r -> r
@@ -138,6 +35,41 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("###")
                 .pattern("   "));
 
+        createSingleDyeShapeless(consumer, ModItems.BLACK_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BLACK_DYE));
+        createSingleDyeShapeless(consumer, ModItems.BLUE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BLUE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.BROWN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BROWN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.CYAN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.CYAN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.GRAY_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.GRAY_DYE));
+        createSingleDyeShapeless(consumer, ModItems.GREEN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.GREEN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIGHT_BLUE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIGHT_BLUE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIGHT_GRAY_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIGHT_GRAY_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIME_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIME_DYE));
+        createSingleDyeShapeless(consumer, ModItems.MAGENTA_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.MAGENTA_DYE));
+        createSingleDyeShapeless(consumer, ModItems.ORANGE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.ORANGE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.PINK_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.PINK_DYE));
+        createSingleDyeShapeless(consumer, ModItems.PURPLE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.PURPLE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.RED_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.RED_DYE));
+        createSingleDyeShapeless(consumer, ModItems.WHITE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.WHITE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.YELLOW_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.YELLOW_DYE));
+
+        createSingleDyeShapeless(consumer, ModItems.BLACK_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BLACK_DYE));
+        createSingleDyeShapeless(consumer, ModItems.BLUE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BLUE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.BROWN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BROWN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.CYAN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.CYAN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.GRAY_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.GRAY_DYE));
+        createSingleDyeShapeless(consumer, ModItems.GREEN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.GREEN_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIGHT_BLUE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIGHT_BLUE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIGHT_GRAY_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIGHT_GRAY_DYE));
+        createSingleDyeShapeless(consumer, ModItems.LIME_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIME_DYE));
+        createSingleDyeShapeless(consumer, ModItems.MAGENTA_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.MAGENTA_DYE));
+        createSingleDyeShapeless(consumer, ModItems.ORANGE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.ORANGE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.PINK_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.PINK_DYE));
+        createSingleDyeShapeless(consumer, ModItems.PURPLE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.PURPLE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.RED_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.RED_DYE));
+        createSingleDyeShapeless(consumer, ModItems.WHITE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.WHITE_DYE));
+        createSingleDyeShapeless(consumer, ModItems.YELLOW_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.YELLOW_DYE));
+
+
         createSimple(consumer, ModItems.HAMMER.get(), 1, r -> r
                 .unlockedBy("has_board", has(ModTags.BOARDS))
                 .define('#', ModTags.BOARDS)
@@ -149,10 +81,9 @@ public class ModRecipeProvider extends RecipeProvider {
         createSimple(consumer, ModItems.STACKABLE_BOOK.get(), 3, r -> r
                 .unlockedBy("has_book", has(Items.BOOK))
                 .define('#', Items.BOOK)
-                .define('/', Tags.Items.DYES)
-                .pattern("/#/")
-                .pattern("/#/")
-                .pattern("/#/"));
+                .pattern(" # ")
+                .pattern(" # ")
+                .pattern(" # "));
 
         createSimpleShapeless(consumer, ModItems.FANCY_PAINTING.get(), 1, r -> r
                 .unlockedBy("has_painting", has(Items.PAINTING))
@@ -533,6 +464,115 @@ public class ModRecipeProvider extends RecipeProvider {
         createStatueTrophy(consumer, ModItems.PILLAGER_TROPHY.get(), 1, Items.CROSSBOW);
         createStatueTrophy(consumer, ModItems.VINDICATOR_TROPHY.get(), 1, Items.IRON_AXE);
         createStatueTrophy(consumer, ModItems.WITCH_TROPHY.get(), 1, Items.GLASS_BOTTLE);
+    }
+
+    public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
+        func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count))
+                .group(name)
+                .save(consumer);
+    }
+
+    public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
+        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
+        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
+                .group(name)
+                .save(consumer);
+    }
+
+    public static void createSingleDyeShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
+        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
+        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
+                .group(name)
+                .save(consumer, new ResourceLocation(Handcrafted.MOD_ID, name + "_single"));
+    }
+
+    public static void createWoodSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
+            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createWoodSetRecipeWithPlanks(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get()}) {
+            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
+            Item planks = ForgeRegistries.ITEMS.getValue(new ResourceLocation(woodName + "_planks"));
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
+
+            assert output != null;
+            assert planks != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .define('/', planks)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createColouredSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{Items.BLACK_WOOL, Items.BLUE_WOOL, Items.BROWN_WOOL, Items.CYAN_WOOL, Items.GRAY_WOOL, Items.GREEN_WOOL, Items.LIGHT_BLUE_WOOL, Items.LIGHT_GRAY_WOOL, Items.LIME_WOOL, Items.MAGENTA_WOOL, Items.ORANGE_WOOL, Items.PINK_WOOL, Items.PURPLE_WOOL, Items.RED_WOOL, Items.WHITE_WOOL, Items.YELLOW_WOOL}) {
+            String color = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_wool", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, color + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
+        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
+            String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
+            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
+
+            assert output != null;
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                    .define('#', wood)
+                    .group(suffix)
+                    .unlockedBy("has_" + suffix, has(wood)));
+
+            recipe.save(consumer);
+        }
+    }
+
+    public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                .define('#', ModTags.BOARDS)
+                .define('/', input)
+                .group("trophy")
+                .unlockedBy("has_trophy", has(ModTags.BOARDS))
+                .pattern("###")
+                .pattern("#/#")
+                .pattern("###")
+                .save(consumer);
+
+    }
+
+    public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+                .define('#', Items.STONE)
+                .define('/', input)
+                .group("trophy")
+                .unlockedBy("has_trophy", has(Items.STONE))
+                .pattern(" # ")
+                .pattern("#/#")
+                .pattern("# #")
+                .save(consumer);
 
     }
 }

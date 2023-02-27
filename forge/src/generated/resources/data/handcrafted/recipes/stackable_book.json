@@ -5,15 +5,12 @@
   "key": {
     "#": {
       "item": "minecraft:book"
-    },
-    "/": {
-      "tag": "forge:dyes"
     }
   },
   "pattern": [
-    "/#/",
-    "/#/",
-    "/#/"
+    " # ",
+    " # ",
+    " # "
   ],
   "result": {
     "count": 3,

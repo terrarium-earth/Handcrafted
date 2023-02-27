@@ -1,4 +1,4 @@
-// 1.19.3	2022-12-31T06:46:30.403151	Loot Tables
+// 1.19.3	2023-02-27T12:09:38.985851	Loot Tables
 3a75c4d2c160ad9ddd5ab065818d44e748fbd822 data/handcrafted/loot_tables/blocks/acacia_bench.json
 11bde00def22931ecd09056893374fc9a2fe04c0 data/handcrafted/loot_tables/blocks/acacia_chair.json
 b76eba14bc4a49af4fb91deea1d76a74debb32a6 data/handcrafted/loot_tables/blocks/acacia_corner_trim.json
@@ -24,7 +24,7 @@ faf7c6e70cc6993a4e657b8a0a827781e349219a data/handcrafted/loot_tables/blocks/aca
 90effc3ec5def138d02bc1ddf471a926d4faf58f data/handcrafted/loot_tables/blocks/andesite_pillar_trim.json
 1d98606c59c5557d576c4e53481e71f9e22cb363 data/handcrafted/loot_tables/blocks/bear_trophy.json
 e4163baef206e36c846592853e00fe4da9703d02 data/handcrafted/loot_tables/blocks/bench.json
-75bb1d87136b8e389cd2aac13ff015f74bb6be92 data/handcrafted/loot_tables/blocks/berry_jam_jar.json
+e827b803edeb22062017049599094140fca9c789 data/handcrafted/loot_tables/blocks/berry_jam_jar.json
 5555ac61f75c8e71c7124d29800bccdc5762da5f data/handcrafted/loot_tables/blocks/birch_bench.json
 842353824fe4986c70329ca9aeda8ba5dcf909a4 data/handcrafted/loot_tables/blocks/birch_chair.json
 19a6be759c43409b27636d9ca96cb53da412a1a5 data/handcrafted/loot_tables/blocks/birch_corner_trim.json
@@ -231,7 +231,7 @@ a759aca85aa2a11fc2802ca09974a940ea3fdd28 data/handcrafted/loot_tables/blocks/spr
 5148f1b56a378670124431b2f66644a96fd3cab9 data/handcrafted/loot_tables/blocks/spruce_shelf_1.json
 407b8e56f810d8b0f7284f9d0f81ae61b76ebb6e data/handcrafted/loot_tables/blocks/spruce_side_table.json
 25d78b394423e3947dfc2924092706e834d94108 data/handcrafted/loot_tables/blocks/spruce_table.json
-65345a3d96228b5699f7d5a4e0f7e95d81ef3adf data/handcrafted/loot_tables/blocks/stackable_book.json
+49cf0d641269cd50317f559dc6846a13aa234923 data/handcrafted/loot_tables/blocks/stackable_book.json
 fdda4f1f5a235befc6f23961538b0f1b22d54bf4 data/handcrafted/loot_tables/blocks/stone_corner_trim.json
 49890977ad7684e44135cc7979a34b2131ccb5c2 data/handcrafted/loot_tables/blocks/stone_pillar_trim.json
 b3a2ca629aac1c623d5f334d3e427ac787db4bc6 data/handcrafted/loot_tables/blocks/terracotta_bowl.json

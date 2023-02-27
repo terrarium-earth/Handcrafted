@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "green_sheet",
+  "ingredients": [
+    {
+      "tag": "handcrafted:sheets"
+    },
+    {
+      "item": "minecraft:green_dye"
+    }
+  ],
+  "result": {
+    "item": "handcrafted:green_sheet"
+  }
+}

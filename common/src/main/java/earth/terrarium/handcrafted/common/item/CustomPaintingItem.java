@@ -1,11 +1,12 @@
 package earth.terrarium.handcrafted.common.item;
 
 import earth.terrarium.handcrafted.common.entity.FancyPainting;
+import earth.terrarium.handcrafted.mixin.PaintingInvoker;
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionResult;
@@ -69,19 +70,19 @@ public class CustomPaintingItem extends HangingEntityItem {
     }
 
     public Optional<FancyPainting> create(Level level, BlockPos pos, Direction direction) {
-        FancyPainting painting = new FancyPainting(level, pos, direction, BuiltInRegistries.PAINTING_VARIANT.wrapAsHolder(defaultVariant.get()));
+        FancyPainting painting = new FancyPainting(level, pos, direction, Holder.direct(defaultVariant.get()));
         List<Holder<PaintingVariant>> list = new ArrayList<>();
-        BuiltInRegistries.PAINTING_VARIANT.getTagOrEmpty(variants).forEach(list::add);
+        Registry.PAINTING_VARIANT.getTagOrEmpty(variants).forEach(list::add);
         if (!list.isEmpty()) {
             list.removeIf((holder) -> {
-                painting.setVariant(holder);
+                ((PaintingInvoker)painting).invokeSetVariant(holder);
                 return !painting.survives();
             });
             if (!list.isEmpty()) {
                 int max = list.stream().mapToInt(CustomPaintingItem::variantArea).max().orElse(0);
                 list.removeIf(holder -> variantArea(holder) < max);
                 return Util.getRandomSafe(list, level.getRandom()).map(holder -> {
-                    painting.setVariant(holder);
+                    ((PaintingInvoker)painting).invokeSetVariant(holder);
                     return painting;
                 });
             }

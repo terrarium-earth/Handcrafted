@@ -2,7 +2,7 @@ package earth.terrarium.handcrafted.client.entity.fancypainting;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Axis;
+import com.mojang.math.Vector3f;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.entity.FancyPainting;
@@ -16,8 +16,8 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Registry;
 import net.minecraft.core.Vec3i;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 import org.jetbrains.annotations.NotNull;
@@ -84,8 +84,8 @@ public class FancyPaintingRenderer extends EntityRenderer<FancyPainting> {
 
         try (var ignored = new CloseablePoseStack(poseStack)) {
             poseStack.translate(0.0, 0.875, 0.0);
-            poseStack.mulPose(Axis.YN.rotationDegrees(dir.getOpposite().toYRot()));
-            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            poseStack.mulPose(Vector3f.YN.rotationDegrees(dir.getOpposite().toYRot()));
+            poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entitySolid(frameTexture)), packedLight, OverlayTexture.NO_OVERLAY, 1.0f, 1.0f, 1.0f, 1.0f);
 
             poseStack.translate(0, 0, 0.01f);
@@ -117,6 +117,6 @@ public class FancyPaintingRenderer extends EntityRenderer<FancyPainting> {
 
     @Override
     public @NotNull ResourceLocation getTextureLocation(FancyPainting entity) {
-        return new ResourceLocation(Handcrafted.MOD_ID, "textures/painting/" + BuiltInRegistries.PAINTING_VARIANT.getKey(entity.getVariant().value()).getPath() + ".png");
+        return new ResourceLocation(Handcrafted.MOD_ID, "textures/painting/" + Registry.PAINTING_VARIANT.getKey(entity.getVariant().value()).getPath() + ".png");
     }
 }

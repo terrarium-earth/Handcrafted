@@ -7,7 +7,8 @@ import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
+
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -74,11 +75,11 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
     @Override
     public void onHammer(Level level, BlockPos pos, BlockState state, Direction side, Player user, Vec3 hitPos) {
         Block block = state.getBlock();
-        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
-        Block replacement = BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
+        ResourceLocation id = Registry.BLOCK.getKey(block);
+        Block replacement = Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
         ItemStack item = ((ItemHoldingBlockEntity) level.getBlockEntity(pos)).getStack();
         if (replacement == Blocks.AIR) {
-            level.setBlock(pos, BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
+            level.setBlock(pos, Registry.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
         }
@@ -89,7 +90,7 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
 
     @Override
     public ItemStack getCloneItemStack(BlockGetter level, BlockPos pos, BlockState state) {
-        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
-        return BuiltInRegistries.ITEM.get(new ResourceLocation(id.getNamespace(), id.getPath().substring(0, id.getPath().length() - 2))).getDefaultInstance();
+        ResourceLocation id = Registry.BLOCK.getKey(state.getBlock());
+        return Registry.ITEM.get(new ResourceLocation(id.getNamespace(), id.getPath().substring(0, id.getPath().length() - 2))).getDefaultInstance();
     }
 }

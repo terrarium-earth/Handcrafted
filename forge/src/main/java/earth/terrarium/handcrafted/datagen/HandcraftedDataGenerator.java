@@ -17,10 +17,10 @@ public final class HandcraftedDataGenerator {
         DataGenerator generator = event.getGenerator();
 
         // Client
-        generator.addProvider(event.includeClient(), new ModLangProvider(generator.getPackOutput()));
+        generator.addProvider(event.includeClient(), new ModLangProvider(generator));
 
         // Server
-        generator.addProvider(event.includeServer(), new ModLootTableProvider(generator.getPackOutput()));
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(generator.getPackOutput()));
+        generator.addProvider(event.includeServer(), new ModLootTableProvider(generator));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(generator));
     }
 }

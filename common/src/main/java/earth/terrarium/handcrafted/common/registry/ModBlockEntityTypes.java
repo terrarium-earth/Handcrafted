@@ -21,13 +21,13 @@ import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock
 import earth.terrarium.handcrafted.common.block.table.sidetable.SideTableBlockEntity;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlockEntity;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlockEntity;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class ModBlockEntityTypes {
-    public static final ResourcefulRegistry<BlockEntityType<?>> BLOCK_ENTITY_TYPES = ResourcefulRegistries.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, Handcrafted.MOD_ID);
+    public static final ResourcefulRegistry<BlockEntityType<?>> BLOCK_ENTITY_TYPES = ResourcefulRegistries.create(Registry.BLOCK_ENTITY_TYPE, Handcrafted.MOD_ID);
 
     public static final RegistryEntry<BlockEntityType<StackableBookBlockEntity>> STACKABLE_BOOK = BLOCK_ENTITY_TYPES.register("stackable_book", () -> createBlockEntityType(StackableBookBlockEntity::new, ModBlocks.STACKABLE_BOOKS));
     public static final RegistryEntry<BlockEntityType<ChairBlockEntity>> CHAIR = BLOCK_ENTITY_TYPES.register("chair", () -> createBlockEntityType(ChairBlockEntity::new, ModBlocks.CHAIRS));

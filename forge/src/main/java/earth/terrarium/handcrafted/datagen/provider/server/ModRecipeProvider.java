@@ -4,12 +4,14 @@ import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModTags;
 import net.minecraft.MethodsReturnNonnullByDefault;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.*;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Objects;
@@ -18,12 +20,12 @@ import java.util.function.Function;
 
 @MethodsReturnNonnullByDefault
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(PackOutput output) {
-        super(output);
+    public ModRecipeProvider(DataGenerator pGenerator) {
+        super(pGenerator);
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
         createColouredSetRecipe(consumer, "cushion", 8, r -> r
                 .define('/', Items.FEATHER)
                 .pattern("###")
@@ -468,21 +470,21 @@ public class ModRecipeProvider extends RecipeProvider {
 
     public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
         String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count))
+        func.apply(ShapedRecipeBuilder.shaped(output, count))
                 .group(name)
                 .save(consumer);
     }
 
     public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
         String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
+        func.apply(ShapelessRecipeBuilder.shapeless(output, count))
                 .group(name)
                 .save(consumer);
     }
 
     public static void createSingleDyeShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
         String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
+        func.apply(ShapelessRecipeBuilder.shapeless(output, count))
                 .group(name)
                 .save(consumer, new ResourceLocation(Handcrafted.MOD_ID, name + "_single"));
     }
@@ -493,7 +495,7 @@ public class ModRecipeProvider extends RecipeProvider {
             Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
 
             assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
                     .define('#', wood)
                     .group(suffix)
                     .unlockedBy("has_" + suffix, has(wood)));
@@ -510,7 +512,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
             assert output != null;
             assert planks != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
                     .define('#', wood)
                     .define('/', planks)
                     .group(suffix)
@@ -526,7 +528,7 @@ public class ModRecipeProvider extends RecipeProvider {
             Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, color + "_" + suffix));
 
             assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
                     .define('#', wood)
                     .group(suffix)
                     .unlockedBy("has_" + suffix, has(wood)));
@@ -541,7 +543,7 @@ public class ModRecipeProvider extends RecipeProvider {
             Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
 
             assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(output, count)
                     .define('#', wood)
                     .group(suffix)
                     .unlockedBy("has_" + suffix, has(wood)));
@@ -551,7 +553,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+        ShapedRecipeBuilder.shaped(output, count)
                 .define('#', ModTags.BOARDS)
                 .define('/', input)
                 .group("trophy")
@@ -564,7 +566,7 @@ public class ModRecipeProvider extends RecipeProvider {
     }
 
     public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
+        ShapedRecipeBuilder.shaped(output, count)
                 .define('#', Items.STONE)
                 .define('/', input)
                 .group("trophy")

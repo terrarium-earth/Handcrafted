@@ -4,7 +4,7 @@ import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
-import net.minecraft.data.PackOutput;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -14,8 +14,8 @@ import org.codehaus.plexus.util.StringUtils;
 import java.util.Objects;
 
 public class ModLangProvider extends LanguageProvider {
-    public ModLangProvider(PackOutput output) {
-        super(output, Handcrafted.MOD_ID, "en_us");
+    public ModLangProvider(DataGenerator pGenerator) {
+        super(pGenerator, Handcrafted.MOD_ID, "en_us");
     }
 
     @Override

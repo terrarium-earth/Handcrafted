@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.client.block.fancybed;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
+import com.mojang.math.Vector3f;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
@@ -20,7 +20,7 @@ import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.BedBlock;
@@ -34,8 +34,8 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
     private static void render(DirectionalBlockSide doubleBed, ResourceLocation sheet, ResourceLocation cushion, ResourceLocation texture, FancyBedModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         try (var ignored = new CloseablePoseStack(poseStack)) {
             poseStack.translate(0.5, 1.5, 0.5);
-            poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
-            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.getOpposite().toYRot()));
+            poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
             model.getMain().getChild("sheets").visible = false;
             if (doubleBed == DirectionalBlockSide.SINGLE) {
                 model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/single/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
@@ -71,7 +71,7 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
         boolean visible = entity.getBlockState().getValue(BedBlock.OCCUPIED);
         model.getMain().getChild("sheets").getChild("with_player").visible = visible;
         model.getMain().getChild("sheets").getChild("without_player").visible = !visible;
-        render(doubleBed, BuiltInRegistries.ITEM.getKey(entity.getSheet().getItem()), BuiltInRegistries.ITEM.getKey(entity.getStack().getItem()), BuiltInRegistries.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
+        render(doubleBed, Registry.ITEM.getKey(entity.getSheet().getItem()), Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     public static class ItemRenderer extends BlockEntityWithoutLevelRenderer {
@@ -83,7 +83,7 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
             try (var ignored = new CloseablePoseStack(poseStack)) {
                 poseStack.scale(0.75f, 0.75f, 0.75f);
-                render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), BuiltInRegistries.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+                render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), Registry.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
             }
         }
     }

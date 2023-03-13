@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.entity;
 
 import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
+import earth.terrarium.handcrafted.mixin.PaintingInvoker;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
@@ -20,7 +21,7 @@ public class FancyPainting extends Painting {
 
     public FancyPainting(Level level, BlockPos blockPos, Direction direction, Holder<PaintingVariant> holder) {
         super(ModEntityTypes.FANCY_PAINTING.get(), level);
-        this.setVariant(holder);
+        ((PaintingInvoker)this).invokeSetVariant(holder);
         this.setDirection(direction);
         this.pos = blockPos;
     }

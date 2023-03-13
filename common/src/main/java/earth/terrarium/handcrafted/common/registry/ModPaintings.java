@@ -4,12 +4,12 @@ import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.handcrafted.Handcrafted;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 
 @SuppressWarnings("unused")
 public class ModPaintings {
-    public static final ResourcefulRegistry<PaintingVariant> PAINTING_VARIANTS = ResourcefulRegistries.create(BuiltInRegistries.PAINTING_VARIANT, Handcrafted.MOD_ID);
+    public static final ResourcefulRegistry<PaintingVariant> PAINTING_VARIANTS = ResourcefulRegistries.create(Registry.PAINTING_VARIANT, Handcrafted.MOD_ID);
     public static final ResourcefulRegistry<PaintingVariant> SMALL_PAINTING_VARIANTS = ResourcefulRegistries.create(PAINTING_VARIANTS);
     public static final ResourcefulRegistry<PaintingVariant> MEDIUM_PAINTING_VARIANTS = ResourcefulRegistries.create(PAINTING_VARIANTS);
     public static final ResourcefulRegistry<PaintingVariant> LARGE_PAINTING_VARIANTS = ResourcefulRegistries.create(PAINTING_VARIANTS);

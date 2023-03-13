@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.client.block.table.table;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
+import com.mojang.math.Vector3f;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.property.SheetState;
 import earth.terrarium.handcrafted.common.block.property.TableState;
@@ -18,7 +18,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -30,7 +30,7 @@ public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
     private static void render(ResourceLocation sheet, TableState tableState, SheetState sheetState, ResourceLocation texture, TableModel model, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         try (var ignored = new CloseablePoseStack(poseStack)) {
             poseStack.translate(0.5, 1.5, 0.5);
-            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
 
             ModelPart northeastLeg = model.getMain().getChild("table").getChild("northeast_leg");
             ModelPart northwestLeg = model.getMain().getChild("table").getChild("northwest_leg");
@@ -147,7 +147,7 @@ public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
     public void render(TableBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
         TableModel model = new TableModel(modelSet.bakeLayer(TableModel.LAYER_LOCATION));
-        render(BuiltInRegistries.ITEM.getKey(entity.getStack().getItem()), entity.getBlockState().getValue(TableBlock.TABLE_BLOCK_SHAPE), entity.getBlockState().getValue(TableBlock.TABLE_SHEET_SHAPE), BuiltInRegistries.BLOCK.getKey(entity.getBlockState().getBlock()), model, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), entity.getBlockState().getValue(TableBlock.TABLE_BLOCK_SHAPE), entity.getBlockState().getValue(TableBlock.TABLE_SHEET_SHAPE), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     public static class ItemRenderer extends BlockEntityWithoutLevelRenderer {
@@ -157,7 +157,7 @@ public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            render(new ResourceLocation("air"), TableState.SINGLE, SheetState.SINGLE, BuiltInRegistries.ITEM.getKey(stack.getItem()), new TableModel(Minecraft.getInstance().getEntityModels().bakeLayer(TableModel.LAYER_LOCATION)), poseStack, buffer, packedLight, packedOverlay);
+            render(new ResourceLocation("air"), TableState.SINGLE, SheetState.SINGLE, Registry.ITEM.getKey(stack.getItem()), new TableModel(Minecraft.getInstance().getEntityModels().bakeLayer(TableModel.LAYER_LOCATION)), poseStack, buffer, packedLight, packedOverlay);
         }
     }
 }

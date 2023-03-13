@@ -32,14 +32,14 @@ import earth.terrarium.handcrafted.common.block.trim.TrimBlock;
 import earth.terrarium.handcrafted.common.block.trophy.HangingTrophyBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.block.trophy.WallTrophyBlock;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 @SuppressWarnings("unused")
 public class ModBlocks {
-    public static final ResourcefulRegistry<Block> BLOCKS = ResourcefulRegistries.create(BuiltInRegistries.BLOCK, Handcrafted.MOD_ID);
+    public static final ResourcefulRegistry<Block> BLOCKS = ResourcefulRegistries.create(Registry.BLOCK, Handcrafted.MOD_ID);
 
     public static final ResourcefulRegistry<Block> STACKABLE_BOOKS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> CUSHIONS = ResourcefulRegistries.create(BLOCKS);

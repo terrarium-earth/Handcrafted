@@ -1,7 +1,7 @@
 package earth.terrarium.handcrafted.client.block.chair.woodenbench;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
+import com.mojang.math.Vector3f;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlockEntity;
@@ -17,7 +17,7 @@ import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -31,27 +31,27 @@ public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity
             poseStack.translate(0.5, 1.5, 0.5);
             poseStack.mulPose(switch (direction) {
                 case EAST -> switch (shape) {
-                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(90);
-                    case INNER_LEFT -> Axis.YP.rotationDegrees(180);
-                    case OUTER_RIGHT -> Axis.YP.rotationDegrees(0);
+                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(90);
+                    case INNER_LEFT -> Vector3f.YP.rotationDegrees(180);
+                    case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(0);
                 };
                 case SOUTH -> switch (shape) {
-                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(0);
-                    case INNER_LEFT -> Axis.YP.rotationDegrees(90);
-                    case OUTER_RIGHT -> Axis.YP.rotationDegrees(270);
+                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(0);
+                    case INNER_LEFT -> Vector3f.YP.rotationDegrees(90);
+                    case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(270);
                 };
                 case WEST -> switch (shape) {
-                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(270);
-                    case INNER_LEFT -> Axis.YP.rotationDegrees(0);
-                    case OUTER_RIGHT -> Axis.YP.rotationDegrees(180);
+                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(270);
+                    case INNER_LEFT -> Vector3f.YP.rotationDegrees(0);
+                    case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(180);
                 };
                 default -> switch (shape) {
-                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(180);
-                    case INNER_LEFT -> Axis.YP.rotationDegrees(270);
-                    case OUTER_RIGHT -> Axis.YP.rotationDegrees(90);
+                    case OUTER_LEFT, INNER_RIGHT, MIDDLE, LEFT, RIGHT, SINGLE -> Vector3f.YP.rotationDegrees(180);
+                    case INNER_LEFT -> Vector3f.YP.rotationDegrees(270);
+                    case OUTER_RIGHT -> Vector3f.YP.rotationDegrees(90);
                 };
             });
-            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            poseStack.mulPose(Vector3f.XP.rotationDegrees(180));
             model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
             if (!cushion.toString().equals("minecraft:air")) {
                 model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/bench/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
@@ -75,7 +75,7 @@ public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity
             case OUTER_LEFT, OUTER_RIGHT ->
                     new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
-        render(BuiltInRegistries.ITEM.getKey(entity.getStack().getItem()), BuiltInRegistries.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
+        render(Registry.ITEM.getKey(entity.getStack().getItem()), Registry.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }
 
     public static class ItemRenderer extends BlockEntityWithoutLevelRenderer {
@@ -88,7 +88,7 @@ public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity
             WoodenBenchModel model = new WoodenBenchModel(Minecraft.getInstance().getEntityModels().bakeLayer(WoodenBenchModel.LAYER_LOCATION_SINGLE));
             try (var ignored = new CloseablePoseStack(poseStack)) {
                 poseStack.scale(0.75f, 0.75f, 0.75f);
-                render(new ResourceLocation("air"), BuiltInRegistries.ITEM.getKey(stack.getItem()), model, Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+                render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), model, Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
             }
         }
     }

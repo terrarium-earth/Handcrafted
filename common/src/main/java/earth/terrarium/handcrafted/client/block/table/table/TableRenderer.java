@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.table.table;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.property.SheetState;
 import earth.terrarium.handcrafted.common.block.property.TableState;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
@@ -27,120 +28,119 @@ public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
     }
 
     private static void render(ResourceLocation sheet, TableState tableState, SheetState sheetState, ResourceLocation texture, TableModel model, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
 
-        ModelPart northeastLeg = model.getMain().getChild("table").getChild("northeast_leg");
-        ModelPart northwestLeg = model.getMain().getChild("table").getChild("northwest_leg");
-        ModelPart southeastLeg = model.getMain().getChild("table").getChild("southeast_leg");
-        ModelPart southwestLeg = model.getMain().getChild("table").getChild("southwest_leg");
+            ModelPart northeastLeg = model.getMain().getChild("table").getChild("northeast_leg");
+            ModelPart northwestLeg = model.getMain().getChild("table").getChild("northwest_leg");
+            ModelPart southeastLeg = model.getMain().getChild("table").getChild("southeast_leg");
+            ModelPart southwestLeg = model.getMain().getChild("table").getChild("southwest_leg");
 
-        ModelPart northOverlay = model.getMain().getChild("overlay").getChild("overlay_side_north");
-        ModelPart eastOverlay = model.getMain().getChild("overlay").getChild("overlay_side_east");
-        ModelPart southOverlay = model.getMain().getChild("overlay").getChild("overlay_side_south");
-        ModelPart westOverlay = model.getMain().getChild("overlay").getChild("overlay_side_west");
+            ModelPart northOverlay = model.getMain().getChild("overlay").getChild("overlay_side_north");
+            ModelPart eastOverlay = model.getMain().getChild("overlay").getChild("overlay_side_east");
+            ModelPart southOverlay = model.getMain().getChild("overlay").getChild("overlay_side_south");
+            ModelPart westOverlay = model.getMain().getChild("overlay").getChild("overlay_side_west");
 
-        switch (tableState) {
-            case CENTER -> {
-                northeastLeg.visible = false;
-                northwestLeg.visible = false;
-                southeastLeg.visible = false;
-                southwestLeg.visible = false;
+            switch (tableState) {
+                case CENTER -> {
+                    northeastLeg.visible = false;
+                    northwestLeg.visible = false;
+                    southeastLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case NORTH_EAST_CORNER -> {
+                    northeastLeg.visible = false;
+                    northwestLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case NORTH_WEST_CORNER -> {
+                    northeastLeg.visible = false;
+                    northwestLeg.visible = false;
+                    southeastLeg.visible = false;
+                }
+                case SOUTH_EAST_CORNER -> {
+                    northwestLeg.visible = false;
+                    southeastLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case SOUTH_WEST_CORNER -> {
+                    northeastLeg.visible = false;
+                    southeastLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case NORTH_SIDE -> {
+                    northeastLeg.visible = false;
+                    northwestLeg.visible = false;
+                }
+                case EAST_SIDE -> {
+                    northwestLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case SOUTH_SIDE -> {
+                    southeastLeg.visible = false;
+                    southwestLeg.visible = false;
+                }
+                case WEST_SIDE -> {
+                    northeastLeg.visible = false;
+                    southeastLeg.visible = false;
+                }
             }
-            case NORTH_EAST_CORNER -> {
-                northeastLeg.visible = false;
-                northwestLeg.visible = false;
-                southwestLeg.visible = false;
+
+            switch (sheetState) {
+                case CENTER -> {
+                    northOverlay.visible = false;
+                    eastOverlay.visible = false;
+                    southOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case NORTH_SIDE -> {
+                    northOverlay.visible = false;
+                    eastOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case EAST_SIDE -> {
+                    northOverlay.visible = false;
+                    eastOverlay.visible = false;
+                    southOverlay.visible = false;
+                }
+                case SOUTH_SIDE -> {
+                    eastOverlay.visible = false;
+                    southOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case WEST_SIDE -> {
+                    northOverlay.visible = false;
+                    southOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case NORTH_EAST_CORNER -> {
+                    northOverlay.visible = false;
+                    eastOverlay.visible = false;
+                }
+                case NORTH_WEST_CORNER -> {
+                    northOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case SOUTH_EAST_CORNER -> {
+                    southOverlay.visible = false;
+                    eastOverlay.visible = false;
+                }
+                case SOUTH_WEST_CORNER -> {
+                    southOverlay.visible = false;
+                    westOverlay.visible = false;
+                }
+                case NORTH_COVER -> northOverlay.visible = false;
+                case EAST_COVER -> eastOverlay.visible = false;
+                case SOUTH_COVER -> southOverlay.visible = false;
+                case WEST_COVER -> westOverlay.visible = false;
             }
-            case NORTH_WEST_CORNER -> {
-                northeastLeg.visible = false;
-                northwestLeg.visible = false;
-                southeastLeg.visible = false;
-            }
-            case SOUTH_EAST_CORNER -> {
-                northwestLeg.visible = false;
-                southeastLeg.visible = false;
-                southwestLeg.visible = false;
-            }
-            case SOUTH_WEST_CORNER -> {
-                northeastLeg.visible = false;
-                southeastLeg.visible = false;
-                southwestLeg.visible = false;
-            }
-            case NORTH_SIDE -> {
-                northeastLeg.visible = false;
-                northwestLeg.visible = false;
-            }
-            case EAST_SIDE -> {
-                northwestLeg.visible = false;
-                southwestLeg.visible = false;
-            }
-            case SOUTH_SIDE -> {
-                southeastLeg.visible = false;
-                southwestLeg.visible = false;
-            }
-            case WEST_SIDE -> {
-                northeastLeg.visible = false;
-                southeastLeg.visible = false;
+
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            if (!sheet.toString().equals("minecraft:air")) {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
             }
         }
-
-        switch (sheetState) {
-            case CENTER -> {
-                northOverlay.visible = false;
-                eastOverlay.visible = false;
-                southOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case NORTH_SIDE -> {
-                northOverlay.visible = false;
-                eastOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case EAST_SIDE -> {
-                northOverlay.visible = false;
-                eastOverlay.visible = false;
-                southOverlay.visible = false;
-            }
-            case SOUTH_SIDE -> {
-                eastOverlay.visible = false;
-                southOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case WEST_SIDE -> {
-                northOverlay.visible = false;
-                southOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case NORTH_EAST_CORNER -> {
-                northOverlay.visible = false;
-                eastOverlay.visible = false;
-            }
-            case NORTH_WEST_CORNER -> {
-                northOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case SOUTH_EAST_CORNER -> {
-                southOverlay.visible = false;
-                eastOverlay.visible = false;
-            }
-            case SOUTH_WEST_CORNER -> {
-                southOverlay.visible = false;
-                westOverlay.visible = false;
-            }
-            case NORTH_COVER -> northOverlay.visible = false;
-            case EAST_COVER -> eastOverlay.visible = false;
-            case SOUTH_COVER -> southOverlay.visible = false;
-            case WEST_COVER -> westOverlay.visible = false;
-        }
-
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        if (!sheet.toString().equals("minecraft:air")) {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        }
-
-        poseStack.popPose();
     }
 
     @Override

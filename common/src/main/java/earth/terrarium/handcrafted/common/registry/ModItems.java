@@ -328,7 +328,7 @@ public class ModItems {
 
     public static final RegistryEntry<Item> WITCH_TROPHY = STATUE_TROPHY_ENTITIES.register("witch_trophy", () -> new RenderedBlockItem(ModBlocks.WITCH_TROPHY.get(), new Item.Properties()));
     public static final RegistryEntry<Item> HAMMER = ITEMS.register("hammer", () -> new HammerItem(new Item.Properties().stacksTo(1)));
-    public static final RegistryEntry<Item> FANCY_PAINTING = ITEMS.register("fancy_painting", () -> new FancyPaintingItem(new Item.Properties()));
+    public static final RegistryEntry<Item> FANCY_PAINTING = ITEMS.register("fancy_painting", () -> new CustomPaintingItem(new Item.Properties(), ModPaintings.APPLE, ModTags.Paintings.PAINTINGS));
     public static final RegistryEntry<Item> OVEN = ITEMS.register("oven", () -> new BlockItem(ModBlocks.OVEN.get(), new Item.Properties()));
     public static final RegistryEntry<Item> KITCHEN_HOOD = ITEMS.register("kitchen_hood", () -> new BlockItem(ModBlocks.KITCHEN_HOOD.get(), new Item.Properties()));
     public static final RegistryEntry<Item> KITCHEN_HOOD_PIPE = ITEMS.register("kitchen_hood_pipe", () -> new KitchenHoodPipeItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties()));

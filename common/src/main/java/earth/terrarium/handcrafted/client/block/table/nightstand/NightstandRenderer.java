@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.table.nightstand;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlock;
 import earth.terrarium.handcrafted.common.block.table.nightstand.NightstandBlockEntity;
 import net.fabricmc.api.EnvType;
@@ -25,20 +26,19 @@ public class NightstandRenderer implements BlockEntityRenderer<NightstandBlockEn
     }
 
     private static void render(ResourceLocation sheet, ResourceLocation texture, NightstandModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
 
-        model.getMain().getChild("overlay").visible = false;
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/nightstand/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        model.getMain().getChild("overlay").visible = true;
-        model.getMain().getChild("table").visible = false;
-        if (!sheet.toString().equals("minecraft:air")) {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            model.getMain().getChild("overlay").visible = false;
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/nightstand/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            model.getMain().getChild("overlay").visible = true;
+            model.getMain().getChild("table").visible = false;
+            if (!sheet.toString().equals("minecraft:air")) {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/table/table_cloth/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
         }
-
-        poseStack.popPose();
     }
 
     @Override

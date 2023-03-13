@@ -42,9 +42,8 @@ dependencies {
 
 processResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    inputs.property "fabric_loader_version", rootProject.fabric_loader_version
     filesMatching("fabric.mod.json") {
-        expand "version": rootProject.version, "fabric_loader_version": rootProject.fabric_loader_version, "resourcefullib_version": rootProject.resourcefullib_version
+        expand "version": rootProject.version, "resourcefullib_version": rootProject.resourcefullib_version
     }
 }
 

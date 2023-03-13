@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.counter;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.counter.CounterBlockEntity;
@@ -26,20 +27,19 @@ public class CounterRenderer implements BlockEntityRenderer<CounterBlockEntity> 
     }
 
     private static void render(ResourceLocation overlay, ResourceLocation texture, CounterModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
 
-        model.getMain().getChild("top").visible = false;
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/counter/counter/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        model.getMain().getChild("top").visible = true;
-        model.getMain().getChild("base").visible = false;
-        if (!overlay.toString().equals("minecraft:air")) {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/counter/counter/overlay/" + overlay.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            model.getMain().getChild("top").visible = false;
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/counter/counter/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            model.getMain().getChild("top").visible = true;
+            model.getMain().getChild("base").visible = false;
+            if (!overlay.toString().equals("minecraft:air")) {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/counter/counter/overlay/" + overlay.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
         }
-
-        poseStack.popPose();
     }
 
     @Override

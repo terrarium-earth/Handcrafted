@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.chair.couch;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.CouchBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
@@ -27,32 +28,32 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
     }
 
     private static void render(ResourceLocation cushion, ResourceLocation texture, CouchModel model, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(switch (direction) {
-            case EAST -> switch (shape) {
-                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(270);
-                case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(180);
-            };
-            case SOUTH -> switch (shape) {
-                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(180);
-                case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(90);
-            };
-            case WEST -> switch (shape) {
-                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(90);
-                case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(0);
-            };
-            default -> switch (shape) {
-                case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(0);
-                case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(270);
-            };
-        });
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/couch/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        if (!cushion.toString().equals("minecraft:air")) {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/couch/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(switch (direction) {
+                case EAST -> switch (shape) {
+                    case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(270);
+                    case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(180);
+                };
+                case SOUTH -> switch (shape) {
+                    case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(180);
+                    case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(90);
+                };
+                case WEST -> switch (shape) {
+                    case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(90);
+                    case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(0);
+                };
+                default -> switch (shape) {
+                    case OUTER_LEFT, INNER_LEFT, MIDDLE, LEFT, RIGHT, SINGLE -> Axis.YP.rotationDegrees(0);
+                    case OUTER_RIGHT, INNER_RIGHT -> Axis.YP.rotationDegrees(270);
+                };
+            });
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/couch/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            if (!cushion.toString().equals("minecraft:air")) {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/couch/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
         }
-        poseStack.popPose();
     }
 
     @Override
@@ -64,8 +65,7 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
             case LEFT -> new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_LEFT));
             case MIDDLE -> new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_MIDDLE));
             case RIGHT -> new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_RIGHT));
-            case INNER_LEFT, INNER_RIGHT ->
-                    new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_CORNER));
+            case INNER_LEFT, INNER_RIGHT -> new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_CORNER));
             case OUTER_LEFT, OUTER_RIGHT ->
                     new CouchModel(modelSet.bakeLayer(CouchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
@@ -79,11 +79,10 @@ public class CouchRenderer implements BlockEntityRenderer<CouchBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            poseStack.pushPose();
-            poseStack.scale(0.9f, 0.9f, 0.9f);
-            render(new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), BuiltInRegistries.ITEM.getKey(stack.getItem()), new CouchModel(Minecraft.getInstance().getEntityModels().bakeLayer(CouchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
-            poseStack.popPose();
-
+            try (var ignored = new CloseablePoseStack(poseStack)) {
+                poseStack.scale(0.9f, 0.9f, 0.9f);
+                render(new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), BuiltInRegistries.ITEM.getKey(stack.getItem()), new CouchModel(Minecraft.getInstance().getEntityModels().bakeLayer(CouchModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            }
         }
     }
 }

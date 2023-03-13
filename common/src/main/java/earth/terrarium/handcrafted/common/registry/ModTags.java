@@ -4,6 +4,7 @@ import earth.terrarium.handcrafted.Handcrafted;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.decoration.PaintingVariant;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
@@ -15,4 +16,8 @@ public class ModTags {
     public static final TagKey<Item> COUNTER_SURFACE = TagKey.create(Registries.ITEM, new ResourceLocation(Handcrafted.MOD_ID, "counter_surface"));
 
     public static final TagKey<Block> TABLE_ATTACHMENTS = TagKey.create(Registries.BLOCK, new ResourceLocation(Handcrafted.MOD_ID, "table_attachments"));
+
+    public static class Paintings {
+        public static final TagKey<PaintingVariant> PAINTINGS = TagKey.create(Registries.PAINTING_VARIANT, new ResourceLocation(Handcrafted.MOD_ID, "paintings"));
+    }
 }

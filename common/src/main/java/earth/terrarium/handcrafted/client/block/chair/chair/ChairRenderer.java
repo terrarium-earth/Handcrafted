@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.client.block.chair.chair;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.property.CouchShape;
@@ -27,31 +28,31 @@ public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
 
     private static void render(ResourceLocation cushion, ResourceLocation texture, Direction direction, CouchShape shape, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         ChairModel model = new ChairModel(Minecraft.getInstance().getEntityModels().bakeLayer(ChairModel.LAYER_LOCATION));
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-        model.getMain().getChild("with_cushion").visible = false;
-        model.getMain().getChild("seat").visible = false;
-        VertexConsumer vertex = buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/" + texture.getPath() + ".png")));
-        model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-
-        model.getMain().getChild("base").visible = false;
-        model.getMain().getChild("seat").visible = true;
-        model.getMain().getChild("chair").visible = false;
-        poseStack.scale(0.999f, 1, 1);
-        model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        poseStack.scale(1.001f, 1, 1);
-
-
-        model.getMain().getChild("with_cushion").visible = true;
-        if (!cushion.toString().equals("minecraft:air")) {
-            model.getMain().getChild("base").visible = false;
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        } else {
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
             model.getMain().getChild("with_cushion").visible = false;
+            model.getMain().getChild("seat").visible = false;
+            VertexConsumer vertex = buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/" + texture.getPath() + ".png")));
+            model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+
+            model.getMain().getChild("base").visible = false;
+            model.getMain().getChild("seat").visible = true;
+            model.getMain().getChild("chair").visible = false;
+            poseStack.scale(0.999f, 1, 1);
+            model.renderToBuffer(poseStack, vertex, packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            poseStack.scale(1.001f, 1, 1);
+
+
+            model.getMain().getChild("with_cushion").visible = true;
+            if (!cushion.toString().equals("minecraft:air")) {
+                model.getMain().getChild("base").visible = false;
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/chair/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            } else {
+                model.getMain().getChild("with_cushion").visible = false;
+            }
         }
-        poseStack.popPose();
     }
 
     @Override
@@ -67,10 +68,10 @@ public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            poseStack.pushPose();
-            poseStack.scale(0.75f, 0.75f, 0.75f);
-            render(new ResourceLocation("air"), BuiltInRegistries.ITEM.getKey(stack.getItem()), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
-            poseStack.popPose();
+            try (var ignored = new CloseablePoseStack(poseStack)) {
+                poseStack.scale(0.75f, 0.75f, 0.75f);
+                render(new ResourceLocation("air"), BuiltInRegistries.ITEM.getKey(stack.getItem()), Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
+            }
         }
     }
 }

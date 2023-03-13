@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.stackablebook;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
@@ -25,28 +26,28 @@ public class StackableBookRenderer implements BlockEntityRenderer<StackableBookB
     }
 
     private static void render(int books, long seed, ResourceLocation texture, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-        EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            EntityModelSet modelSet = Minecraft.getInstance().getEntityModels();
 
-        RandomSource random = RandomSource.create(seed);
-        for (int i = 0; i < books; i++) {
+            RandomSource random = RandomSource.create(seed);
+            for (int i = 0; i < books; i++) {
 
-            StackableBookModel model = switch (i + 1) {
-                case 2 -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_2));
-                case 4 -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_3));
-                default -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_1));
-            };
+                StackableBookModel model = switch (i + 1) {
+                    case 2 -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_2));
+                    case 4 -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_3));
+                    default -> new StackableBookModel(modelSet.bakeLayer(StackableBookModel.LAYER_LOCATION_BOOK_1));
+                };
 
-            poseStack.translate(0, -4f / 16 * i, 0);
-            poseStack.mulPose(Axis.YP.rotationDegrees(random.nextInt()));
-            String colour = DyeColor.byId(random.nextInt(DyeColor.values().length)).toString();
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutoutNoCull(new ResourceLocation(texture.getNamespace(), "textures/block/stackable_book/" + colour + "_book" + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-            poseStack.translate(0, 4f / 16 * i, 0);
+                poseStack.translate(0, -4f / 16 * i, 0);
+                poseStack.mulPose(Axis.YP.rotationDegrees(random.nextInt()));
+                String colour = DyeColor.byId(random.nextInt(DyeColor.values().length)).toString();
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutoutNoCull(new ResourceLocation(texture.getNamespace(), "textures/block/stackable_book/" + colour + "_book" + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+                poseStack.translate(0, 4f / 16 * i, 0);
+            }
         }
-        poseStack.popPose();
     }
 
     @Override

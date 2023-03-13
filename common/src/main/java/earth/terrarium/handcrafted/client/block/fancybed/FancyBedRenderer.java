@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.fancybed;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
@@ -31,26 +32,26 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
     }
 
     private static void render(DirectionalBlockSide doubleBed, ResourceLocation sheet, ResourceLocation cushion, ResourceLocation texture, FancyBedModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-        model.getMain().getChild("sheets").visible = false;
-        if (doubleBed == DirectionalBlockSide.SINGLE) {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/single/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        } else {
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        }
-        model.getMain().getChild("sheets").visible = true;
-        if (!sheet.toString().equals("minecraft:air")) {
-            model.getMain().getChild("frame").visible = false;
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/sheet/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        }
-        if (!cushion.toString().equals("minecraft:air")) {
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.getOpposite().toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
             model.getMain().getChild("sheets").visible = false;
-            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            if (doubleBed == DirectionalBlockSide.SINGLE) {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/single/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            } else {
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/double/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
+            model.getMain().getChild("sheets").visible = true;
+            if (!sheet.toString().equals("minecraft:air")) {
+                model.getMain().getChild("frame").visible = false;
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/sheet/" + sheet.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
+            if (!cushion.toString().equals("minecraft:air")) {
+                model.getMain().getChild("sheets").visible = false;
+                model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/bed/cushion/" + cushion.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+            }
         }
-        poseStack.popPose();
     }
 
     @Override
@@ -80,10 +81,10 @@ public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity
 
         @Override
         public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-            poseStack.pushPose();
-            poseStack.scale(0.75f, 0.75f, 0.75f);
-            render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), BuiltInRegistries.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
-            poseStack.popPose();
+            try (var ignored = new CloseablePoseStack(poseStack)) {
+                poseStack.scale(0.75f, 0.75f, 0.75f);
+                render(DirectionalBlockSide.SINGLE, new ResourceLocation(Handcrafted.MOD_ID, "white_sheet"), new ResourceLocation(Handcrafted.MOD_ID, "white_cushion"), BuiltInRegistries.ITEM.getKey(stack.getItem()), new FancyBedModel(Minecraft.getInstance().getEntityModels().bakeLayer(FancyBedModel.LAYER_LOCATION_SINGLE)), Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
+            }
         }
     }
 }

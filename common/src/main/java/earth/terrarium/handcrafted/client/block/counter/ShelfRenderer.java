@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.client.block.counter;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.counter.ShelfBlock;
 import earth.terrarium.handcrafted.common.block.counter.ShelfBlockEntity;
@@ -39,36 +40,35 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
         Block block = BuiltInRegistries.BLOCK.get(BuiltInRegistries.ITEM.getKey(item));
         Direction dir = entity.getBlockState().getValue(ShelfBlock.FACING);
         ResourceLocation id;
-        poseStack.pushPose();
-        poseStack.mulPose(Axis.YN.rotationDegrees(dir.toYRot()));
-        poseStack.translate(0, 1.0, 0);
-        switch (dir) {
-            case NORTH -> poseStack.translate(-1, 0, 0.001);
-            case SOUTH -> poseStack.translate(0, 0, 1.001);
-            case EAST -> poseStack.translate(-1, 0, 1.001);
-            case WEST -> poseStack.translate(0, 0, 0.001);
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.mulPose(Axis.YN.rotationDegrees(dir.toYRot()));
+            poseStack.translate(0, 1.0, 0);
+            switch (dir) {
+                case NORTH -> poseStack.translate(-1, 0, 0.001);
+                case SOUTH -> poseStack.translate(0, 0, 1.001);
+                case EAST -> poseStack.translate(-1, 0, 1.001);
+                case WEST -> poseStack.translate(0, 0, 0.001);
+            }
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+
+            if (item instanceof BookItem || item instanceof EnchantedBookItem || item instanceof WritableBookItem || item instanceof WrittenBookItem) {
+                id = BOOKS;
+            } else if (block instanceof WebBlock) {
+                id = COBWEBS;
+            } else if (item instanceof PotionItem || item instanceof BottleItem) {
+                id = POTIONS;
+            } else if (block instanceof PotBlock || block instanceof CrockeryBlock) {
+                id = POTS;
+            } else {
+                poseStack.popPose();
+                return;
+            }
+
+            VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(id.getNamespace(), id.getPath().replace(".png", "_" + entity.getBlockState().getValue(ShelfBlock.SHELF_SHAPE).toString().toLowerCase() + ".png"))));
+            int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING)));
+
+            renderShelfOverlay(poseStack, vertexConsumer, dir, light, packedOverlay);
         }
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-
-        if (item instanceof BookItem || item instanceof EnchantedBookItem || item instanceof WritableBookItem || item instanceof WrittenBookItem) {
-            id = BOOKS;
-        } else if (block instanceof WebBlock) {
-            id = COBWEBS;
-        } else if (item instanceof PotionItem || item instanceof BottleItem) {
-            id = POTIONS;
-        } else if (block instanceof PotBlock || block instanceof CrockeryBlock) {
-            id = POTS;
-        } else {
-            poseStack.popPose();
-            return;
-        }
-
-        VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.entityCutout(new ResourceLocation(id.getNamespace(), id.getPath().replace(".png", "_" + entity.getBlockState().getValue(ShelfBlock.SHELF_SHAPE).toString().toLowerCase() + ".png"))));
-        int light = LevelRenderer.getLightColor(entity.getLevel(), entity.getBlockPos().relative(entity.getBlockState().getValue(ShelfBlock.FACING)));
-
-        renderShelfOverlay(poseStack, vertexConsumer, dir, light, packedOverlay);
-
-        poseStack.popPose();
     }
 
     private static void renderShelfOverlay(PoseStack poseStack, VertexConsumer consumer, Direction dir, int light, int overlay) {

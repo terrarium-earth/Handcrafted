@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.client.block.chair.diningbench;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlockEntity;
 import net.fabricmc.api.EnvType;
@@ -25,12 +26,12 @@ public class DiningBenchRenderer implements BlockEntityRenderer<DiningBenchBlock
     }
 
     private static void render(ResourceLocation texture, DiningBenchModel model, Direction direction, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
-        poseStack.pushPose();
-        poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
-        model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/dining_bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
-        poseStack.popPose();
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            poseStack.translate(0.5, 1.5, 0.5);
+            poseStack.mulPose(Axis.YN.rotationDegrees(direction.toYRot()));
+            poseStack.mulPose(Axis.XP.rotationDegrees(180));
+            model.renderToBuffer(poseStack, buffer.getBuffer(RenderType.entityCutout(new ResourceLocation(texture.getNamespace(), "textures/block/chair/dining_bench/" + texture.getPath() + ".png"))), packedLight, packedOverlay, 1.0f, 1.0f, 1.0f, 1.0f);
+        }
     }
 
     @Override

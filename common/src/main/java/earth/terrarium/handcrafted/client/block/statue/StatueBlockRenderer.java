@@ -1,6 +1,7 @@
 package earth.terrarium.handcrafted.client.block.statue;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlockEntity;
 import net.fabricmc.api.EnvType;
@@ -24,12 +25,12 @@ public class StatueBlockRenderer implements BlockEntityRenderer<StatueBlockEntit
     @Override
     public void render(StatueBlockEntity entity, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         BakedModel blockModel = blockRenderDispatcher.getBlockModel(entity.getBlockState());
-        poseStack.pushPose();
-        if (entity.getBlockState().getValue(StatueBlock.HALF) == DoubleBlockHalf.UPPER) {
-            poseStack.popPose();
-            return;
+        try (var ignored = new CloseablePoseStack(poseStack)) {
+            if (entity.getBlockState().getValue(StatueBlock.HALF) == DoubleBlockHalf.UPPER) {
+                poseStack.popPose();
+                return;
+            }
+            blockRenderDispatcher.getModelRenderer().renderModel(poseStack.last(), bufferSource.getBuffer(Sheets.cutoutBlockSheet()), entity.getBlockState(), blockModel, 1f, 1f, 1f, packedLight, packedOverlay);
         }
-        blockRenderDispatcher.getModelRenderer().renderModel(poseStack.last(), bufferSource.getBuffer(Sheets.cutoutBlockSheet()), entity.getBlockState(), blockModel, 1f, 1f, 1f, packedLight, packedOverlay);
-        poseStack.popPose();
     }
 }

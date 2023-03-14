@@ -1,6 +1,1 @@
-- added recipes for individually dying cushions and sheets
-- fixed stackable books uncraftable on fabric (#11)
-- fixed berry jars and stackable books always dropping 1 block (#14)
-- fixed painting registration to fix #12
-
-- added create cutting recipes for boards (creds: hazardjsimpson)
+- fixed rendering crash

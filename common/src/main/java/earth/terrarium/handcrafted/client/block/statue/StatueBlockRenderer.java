@@ -27,7 +27,6 @@ public class StatueBlockRenderer implements BlockEntityRenderer<StatueBlockEntit
         BakedModel blockModel = blockRenderDispatcher.getBlockModel(entity.getBlockState());
         try (var ignored = new CloseablePoseStack(poseStack)) {
             if (entity.getBlockState().getValue(StatueBlock.HALF) == DoubleBlockHalf.UPPER) {
-                poseStack.popPose();
                 return;
             }
             blockRenderDispatcher.getModelRenderer().renderModel(poseStack.last(), bufferSource.getBuffer(Sheets.cutoutBlockSheet()), entity.getBlockState(), blockModel, 1f, 1f, 1f, packedLight, packedOverlay);

@@ -60,7 +60,6 @@ public class ShelfRenderer implements BlockEntityRenderer<ShelfBlockEntity> {
             } else if (block instanceof PotBlock || block instanceof CrockeryBlock) {
                 id = POTS;
             } else {
-                poseStack.popPose();
                 return;
             }
 

@@ -12,12 +12,12 @@ import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
 @Environment(EnvType.CLIENT)
@@ -52,7 +52,7 @@ public class DiningBenchRenderer implements BlockEntityRenderer<DiningBenchBlock
         }
 
         @Override
-        public void renderByItem(ItemStack stack, ItemTransforms.TransformType transformType, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+        public void renderByItem(ItemStack stack, ItemDisplayContext itemDisplayContext, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
             DiningBenchModel model = new DiningBenchModel(Minecraft.getInstance().getEntityModels().bakeLayer(DiningBenchModel.LAYER_LOCATION_SINGLE));
             render(BuiltInRegistries.ITEM.getKey(stack.getItem()), model, Direction.SOUTH, poseStack, buffer, packedLight, packedOverlay);
         }

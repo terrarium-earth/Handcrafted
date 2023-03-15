@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.RenderType;
 
 public abstract class BaseModel extends Model {
     private final ModelPart main;
+
     public BaseModel(ModelPart root) {
         super(RenderType::entityCutout);
         main = root.getChild("main");

@@ -1,1 +1,2 @@
-- fixed rendering crash
+- updated to 1.19.4
+- dropped 1.19.3 support

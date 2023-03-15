@@ -100,12 +100,12 @@ subprojects {
                     required.project "fabric-api"
                     required.project "resourceful-lib"
                     optional.project "modmenu"
-                    optional.project "roughly-enough-items"
+                    optional.project "rei"
                 }
             } else {
                 dependencies {
                     required.project "resourceful-lib"
-                    optional.project "roughly-enough-items"
+                    optional.project "rei"
                 }
             }
         }

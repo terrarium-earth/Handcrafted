@@ -88,6 +88,7 @@ public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity
             WoodenBenchModel model = new WoodenBenchModel(Minecraft.getInstance().getEntityModels().bakeLayer(WoodenBenchModel.LAYER_LOCATION_SINGLE));
             try (var ignored = new CloseablePoseStack(poseStack)) {
                 poseStack.scale(0.75f, 0.75f, 0.75f);
+                poseStack.translate(0.35, 0, -0.05);
                 render(new ResourceLocation("air"), Registry.ITEM.getKey(stack.getItem()), model, Direction.SOUTH, CouchShape.SINGLE, poseStack, buffer, packedLight, packedOverlay);
             }
         }

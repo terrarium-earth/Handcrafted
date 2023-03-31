@@ -48,13 +48,15 @@ dependencies {
     modCompileOnly "mezz.jei:jei-$rootProject.minecraft_version-forge-api:$rootProject.jei_version"
     modLocalRuntime("mezz.jei:jei-$rootProject.minecraft_version-forge:$rootProject.jei_version") { transitive = false }
 
-    modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$minecraft_version:$rootProject.resourcefullib_version"
+    modApi "com.teamresourceful.resourcefullib:resourcefullib-forge-$rootProject.minecraft_version:$rootProject.resourcefullib_version"
 }
 
 processResources {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     filesMatching("META-INF/mods.toml") {
-        expand "version": rootProject.version, "resourcefullib_version": rootProject.resourcefullib_version
+        expand "version": rootProject.version,
+                "github_name": rootProject.github_name,
+                "resourcefullib_version": rootProject.resourcefullib_version
     }
 }
 
@@ -62,17 +64,17 @@ shadowJar {
     exclude "fabric.mod.json"
 
     configurations = [project.configurations.shadowCommon]
-    classifier "dev-shadow"
+    archiveClassifier.set "dev-shadow"
 }
 
 remapJar {
     input.set shadowJar.archiveFile
     dependsOn shadowJar
-    classifier null
+    archiveClassifier.set null
 }
 
 jar {
-    classifier "dev"
+    archiveClassifier.set "dev"
     archivesBaseName = "$mod_id-forge-$minecraft_version"
 }
 
@@ -86,47 +88,5 @@ sourcesJar {
 components.java {
     withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
         skip()
-    }
-}
-
-def ENV = System.getenv()
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact remapJar
-            artifact(sourcesJar) {
-                builtBy remapSourcesJar
-            }
-
-            artifactId = "$rootProject.mod_id-forge-$rootProject.minecraft_version"
-
-            pom {
-                name = 'Handcrafted'
-                description = 'Epic Furniture mod!'
-                url = 'https://github.com/terrarium-earth/Handcrafted'
-
-                scm {
-                    connection = 'git:https://github.com/terrarium-earth/Handcrafted.git'
-                    developerConnection = 'git:https://github.com/terrarium-earth/Handcrafted.git'
-                    url = 'https://github.com/terrarium-earth/Handcrafted'
-                }
-
-                licenses {
-                    license {
-                        name = 'Terrarium Licence'
-                    }
-                }
-            }
-        }
-    }
-    repositories {
-        maven {
-            url = "https://maven.resourcefulbees.com/repository/terrarium/"
-            credentials {
-                username ENV.MAVEN_USER
-                password ENV.MAVEN_PASS
-            }
-        }
     }
 }

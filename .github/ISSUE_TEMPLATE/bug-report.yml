@@ -69,3 +69,17 @@ body:
     attributes:
       label: Logs or additional context
       description: Please copy and paste any relevant log output into a paste website such as [Pastebin](https://pastebin.com) and then link them here. You may also give any additional information here too.
+      
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree that you have done your due diligence and done the following
+      options:
+        - label: I have searched the issue tracker and issue is not reported
+          required: true
+        - label: I have checked the FAQ (if one is present) and my issue is not listed
+          required: true
+        - label: I have verified that I do not have Optifine installed. We will close issues if we detect Optifine is in your pack. We cannot fix Optifine issues. Please do not report issues with Optifine present.
+          required: true

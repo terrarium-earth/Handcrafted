@@ -81,5 +81,7 @@ body:
           required: true
         - label: I have checked the FAQ (if one is present) and my issue is not listed
           required: true
+        - label: I have verified that I am using the latest version of the mod
+          required: true
         - label: I have verified that I do not have Optifine installed. We will close issues if we detect Optifine is in your pack. We cannot fix Optifine issues. Please do not report issues with Optifine present.
           required: true

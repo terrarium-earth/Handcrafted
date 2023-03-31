@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[45,)"
 license = "Terrarium Licence"
-issueTrackerURL = "https://github.com/terrarium-earth/Handcrafted/issues"
+issueTrackerURL = "https://github.com/terrarium-earth/${github_name}/issues"
 
 [[mods]]
 modId = "handcrafted"

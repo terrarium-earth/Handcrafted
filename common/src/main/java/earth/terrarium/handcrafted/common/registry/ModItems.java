@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.registry;
 
+import com.teamresourceful.resourcefullib.common.item.tabs.ResourcefulCreativeTab;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
@@ -8,14 +9,18 @@ import earth.terrarium.handcrafted.common.item.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import org.apache.logging.log4j.util.TriConsumer;
 
-import java.util.List;
+import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
 public class ModItems {
     public static final ResourcefulRegistry<Item> ITEMS = ResourcefulRegistries.create(BuiltInRegistries.ITEM, Handcrafted.MOD_ID);
+    public static final Supplier<CreativeModeTab> TAB = new ResourcefulCreativeTab(new ResourceLocation(Handcrafted.MOD_ID, "main"))
+            .setItemIcon(ModBlocks.MANGROVE_FANCY_BED)
+            .addRegistry(ITEMS)
+            .build();
 
     public static final ResourcefulRegistry<Item> CUSHIONS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> SHEETS = ResourcefulRegistries.create(ITEMS);
@@ -334,8 +339,4 @@ public class ModItems {
     public static final RegistryEntry<Item> KITCHEN_HOOD_PIPE = ITEMS.register("kitchen_hood_pipe", () -> new KitchenHoodPipeItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BERRY_JAM_JAR = ITEMS.register("berry_jam_jar", () -> new RenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties()));
     public static final RegistryEntry<Item> PHANTOM_TROPHY = ITEMS.register("phantom_trophy", () -> new BlockItem(ModBlocks.PHANTOM_TROPHY.get(), new Item.Properties()));
-
-    public static void onRegisterCreativeTabs(TriConsumer<ResourceLocation, RegistryEntry<Item>, List<Item>> consumer) {
-        consumer.accept(new ResourceLocation(Handcrafted.MOD_ID, "main"), ModItems.MANGROVE_FANCY_BED, BuiltInRegistries.ITEM.stream().filter(i -> BuiltInRegistries.ITEM.getKey(i).getNamespace().equals(Handcrafted.MOD_ID)).toList());
-    }
 }

@@ -90,14 +90,14 @@ public class SittingEntity extends Entity {
 
     @Override
     public Vec3 getDismountLocationForPassenger(LivingEntity passenger) {
-        return RespawnAnchorBlock.findStandUpPosition(passenger.getType(), this.level, this.blockPosition())
+        return RespawnAnchorBlock.findStandUpPosition(passenger.getType(), this.level(), this.blockPosition())
                 .orElse(super.getDismountLocationForPassenger(passenger));
     }
 
     @Override
     public void tick() {
         super.tick();
-        if (!level.isClientSide() && (!(this.level.getBlockState(this.blockPosition()).getBlock() instanceof SittableBlock) || remove)) {
+        if (!level().isClientSide() && (!(this.level().getBlockState(this.blockPosition()).getBlock() instanceof SittableBlock) || remove)) {
             removeSeat();
         }
     }
@@ -105,13 +105,13 @@ public class SittingEntity extends Entity {
     @Override
     protected void removePassenger(Entity passenger) {
         super.removePassenger(passenger);
-        if (!level.isClientSide() && this.getPassengers().isEmpty()) {
+        if (!level().isClientSide() && this.getPassengers().isEmpty()) {
             remove = true;
         }
     }
 
     public void removeSeat() {
-        SITTING_POSITIONS.get(this.level.dimension()).remove(this.blockPosition());
+        SITTING_POSITIONS.get(this.level().dimension()).remove(this.blockPosition());
         this.discard();
     }
 
@@ -176,8 +176,8 @@ public class SittingEntity extends Entity {
         public void onMove() {
             if (callback != null) {
                 callback.onMove();
-                if (level.getBlockState(blockPosition()).getBlock() instanceof SittableBlock seat) {
-                    shape = seat.getSeatSize(level.getBlockState(blockPosition()));
+                if (level().getBlockState(blockPosition()).getBlock() instanceof SittableBlock seat) {
+                    shape = seat.getSeatSize(level().getBlockState(blockPosition()));
                 }
             } else {
                 SittingEntity.this.shape = null;

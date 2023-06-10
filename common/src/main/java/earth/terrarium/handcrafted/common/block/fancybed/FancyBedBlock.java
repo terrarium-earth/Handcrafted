@@ -119,7 +119,7 @@ public class FancyBedBlock extends BedBlock {
     public static InteractionResult sheetUse(Level level, BlockPos pos, Player player, ItemStack defaultSheet) {
         if (level.getBlockEntity(pos) instanceof FancyBedBlockEntity entity) {
             ItemStack stack = player.getMainHandItem();
-            if ((entity.getSheet().isEmpty() || ItemStack.isSame(entity.getSheet(), defaultSheet)) && stack.is(ModTags.SHEETS)) {
+            if ((entity.getSheet().isEmpty() || ItemStack.isSameItem(entity.getSheet(), defaultSheet)) && stack.is(ModTags.SHEETS)) {
                 if (!level.isClientSide) {
                     ItemStack copy = stack.copy();
                     copy.setCount(1);
@@ -131,7 +131,7 @@ public class FancyBedBlock extends BedBlock {
                     return InteractionResult.SUCCESS;
                 }
             } else if (player.isCrouching()) {
-                if (!ItemStack.isSame(entity.getSheet(), defaultSheet)) {
+                if (!ItemStack.isSameItem(entity.getSheet(), defaultSheet)) {
                     if (!level.isClientSide) {
                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getSheet());
                         entity.setSheet(defaultSheet);

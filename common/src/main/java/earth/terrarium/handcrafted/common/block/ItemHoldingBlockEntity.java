@@ -69,7 +69,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
     public static InteractionResult placeItem(Level level, BlockPos pos, Player player, ItemStack defaultItem, Predicate<ItemStack> filter, SoundEvent sound) {
         if (level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity) {
             ItemStack stack = player.getMainHandItem();
-            if (!ItemStack.isSame(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSame(entity.getStack(), defaultItem)) && filter.test(stack)) {
+            if (!ItemStack.isSameItem(stack, defaultItem) && (entity.getStack().isEmpty() || ItemStack.isSameItem(entity.getStack(), defaultItem)) && filter.test(stack)) {
                 if (!level.isClientSide) {
                     ItemStack copy = stack.copy();
                     copy.setCount(1);
@@ -81,7 +81,7 @@ public abstract class ItemHoldingBlockEntity extends BlockEntity {
                     return InteractionResult.SUCCESS;
                 }
             } else if (player.isCrouching()) {
-                if (!ItemStack.isSame(entity.getStack(), defaultItem)) {
+                if (!ItemStack.isSameItem(entity.getStack(), defaultItem)) {
                     if (!level.isClientSide) {
                         ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
                         entity.setStack(defaultItem);

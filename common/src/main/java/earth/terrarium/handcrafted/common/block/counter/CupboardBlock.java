@@ -65,7 +65,7 @@ public class CupboardBlock extends BaseEntityBlock implements Hammerable {
         if (level.getBlockEntity(pos) instanceof StorageBlockEntity storage) {
             tag = storage.saveWithoutMetadata();
         }
-        if (replacement == Blocks.AIR) {
+        if (replacement.equals(Blocks.AIR)) {
             level.setBlock(pos, BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)), Block.UPDATE_ALL);

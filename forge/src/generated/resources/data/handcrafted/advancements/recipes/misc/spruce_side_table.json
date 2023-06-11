@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:spruce_side_table"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

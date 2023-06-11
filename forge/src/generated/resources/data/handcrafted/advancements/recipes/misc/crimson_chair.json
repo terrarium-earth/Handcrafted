@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:crimson_chair"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

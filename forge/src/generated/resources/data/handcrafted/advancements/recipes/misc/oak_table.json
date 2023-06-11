@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:oak_table"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

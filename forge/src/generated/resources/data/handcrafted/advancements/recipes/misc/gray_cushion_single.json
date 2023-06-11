@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:gray_cushion_single"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

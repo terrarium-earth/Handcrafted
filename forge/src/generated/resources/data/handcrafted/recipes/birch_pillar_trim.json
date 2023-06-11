@@ -15,5 +15,6 @@
   "result": {
     "count": 4,
     "item": "handcrafted:birch_pillar_trim"
-  }
+  },
+  "show_notification": true
 }

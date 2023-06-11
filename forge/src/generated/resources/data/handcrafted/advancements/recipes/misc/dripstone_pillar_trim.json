@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:dripstone_pillar_trim"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

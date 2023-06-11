@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:cyan_sheet_single"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:warped_drawer"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

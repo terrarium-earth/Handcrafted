@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:wood_cup"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

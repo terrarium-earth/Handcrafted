@@ -14,5 +14,6 @@
   ],
   "result": {
     "item": "handcrafted:kitchen_hood_pipe"
-  }
+  },
+  "show_notification": true
 }

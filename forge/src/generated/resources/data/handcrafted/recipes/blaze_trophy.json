@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:blaze_trophy"
-  }
+  },
+  "show_notification": true
 }

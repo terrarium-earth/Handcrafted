@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:wither_skeleton_trophy"
-  }
+  },
+  "show_notification": true
 }

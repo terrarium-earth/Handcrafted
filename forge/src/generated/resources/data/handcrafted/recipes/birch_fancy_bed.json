@@ -23,5 +23,6 @@
   ],
   "result": {
     "item": "handcrafted:birch_fancy_bed"
-  }
+  },
+  "show_notification": true
 }

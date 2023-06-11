@@ -23,5 +23,6 @@
   ],
   "result": {
     "item": "handcrafted:dark_oak_fancy_bed"
-  }
+  },
+  "show_notification": true
 }

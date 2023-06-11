@@ -15,5 +15,6 @@
   "result": {
     "count": 2,
     "item": "handcrafted:mangrove_chair"
-  }
+  },
+  "show_notification": true
 }

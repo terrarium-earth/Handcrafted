@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:birch_drawer"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

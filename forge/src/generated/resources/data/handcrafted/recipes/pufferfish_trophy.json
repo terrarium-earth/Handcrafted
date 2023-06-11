@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:pufferfish_trophy"
-  }
+  },
+  "show_notification": true
 }

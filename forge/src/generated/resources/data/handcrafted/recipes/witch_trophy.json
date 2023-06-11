@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:witch_trophy"
-  }
+  },
+  "show_notification": true
 }

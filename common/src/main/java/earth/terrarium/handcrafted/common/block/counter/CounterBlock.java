@@ -77,7 +77,7 @@ public class CounterBlock extends ShelfBlock implements Hammerable {
         ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
         Block replacement = BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", String.valueOf(Integer.parseInt(id.getPath().replaceAll("\\D+", "")) + 1))));
         ItemStack item = ((ItemHoldingBlockEntity) level.getBlockEntity(pos)).getStack();
-        if (replacement == Blocks.AIR) {
+        if (replacement.equals(Blocks.AIR)) {
             level.setBlock(pos, BuiltInRegistries.BLOCK.get(new ResourceLocation(id.getNamespace(), id.getPath().replaceAll("\\d+", "1"))).defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);
         } else {
             level.setBlock(pos, replacement.defaultBlockState().setValue(FACING, state.getValue(FACING)).setValue(COUNTER_SHAPE, state.getValue(COUNTER_SHAPE)), Block.UPDATE_ALL);

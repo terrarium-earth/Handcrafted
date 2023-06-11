@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:white_cushion"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

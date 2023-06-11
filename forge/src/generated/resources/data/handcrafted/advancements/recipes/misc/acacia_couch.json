@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:acacia_couch"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

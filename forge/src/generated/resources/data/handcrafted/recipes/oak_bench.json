@@ -15,5 +15,6 @@
   "result": {
     "count": 3,
     "item": "handcrafted:oak_bench"
-  }
+  },
+  "show_notification": true
 }

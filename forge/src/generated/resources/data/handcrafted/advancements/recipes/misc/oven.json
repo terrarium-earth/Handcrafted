@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:oven"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:bricks_pillar_trim"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

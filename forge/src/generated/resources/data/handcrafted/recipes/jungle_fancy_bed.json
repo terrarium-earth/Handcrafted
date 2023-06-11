@@ -23,5 +23,6 @@
   ],
   "result": {
     "item": "handcrafted:jungle_fancy_bed"
-  }
+  },
+  "show_notification": true
 }

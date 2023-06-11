@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:frozen_bench"
-  }
+  },
+  "show_notification": true
 }

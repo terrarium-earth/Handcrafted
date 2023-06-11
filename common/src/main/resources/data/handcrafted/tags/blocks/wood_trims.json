@@ -17,6 +17,10 @@
     "handcrafted:crimson_pillar_trim",
     "handcrafted:crimson_corner_trim",
     "handcrafted:warped_pillar_trim",
-    "handcrafted:warped_corner_trim"
+    "handcrafted:warped_corner_trim",
+    "handcrafted:cherry_pillar_trim",
+    "handcrafted:cherry_corner_trim",
+    "handcrafted:bamboo_pillar_trim",
+    "handcrafted:bamboo_corner_trim"
   ]
 }

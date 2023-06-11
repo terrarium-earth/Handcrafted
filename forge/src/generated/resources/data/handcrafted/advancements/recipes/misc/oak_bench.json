@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:oak_bench"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

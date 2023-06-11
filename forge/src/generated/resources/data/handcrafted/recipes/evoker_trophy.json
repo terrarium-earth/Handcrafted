@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:evoker_trophy"
-  }
+  },
+  "show_notification": true
 }

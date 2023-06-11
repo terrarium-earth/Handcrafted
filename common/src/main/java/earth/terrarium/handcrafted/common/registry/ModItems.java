@@ -96,6 +96,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_BOARD = BOARDS.register("spruce_board", () -> new BoardItem(new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_BOARD = BOARDS.register("crimson_board", () -> new BoardItem(new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_BOARD = BOARDS.register("warped_board", () -> new BoardItem(new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_BOARD = BOARDS.register("cherry_board", () -> new BoardItem(new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_BOARD = BOARDS.register("bamboo_board", () -> new BoardItem(new Item.Properties()));
 
     public static final RegistryEntry<Item> STACKABLE_BOOK = STACKABLE_BOOKS.register("stackable_book", () -> new BlockItem(ModBlocks.STACKABLE_BOOK.get(), new Item.Properties()));
 
@@ -108,6 +110,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_CHAIR = CHAIRS.register("spruce_chair", () -> new RenderedBlockItem(ModBlocks.SPRUCE_CHAIR.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_CHAIR = CHAIRS.register("crimson_chair", () -> new RenderedBlockItem(ModBlocks.CRIMSON_CHAIR.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_CHAIR = CHAIRS.register("warped_chair", () -> new RenderedBlockItem(ModBlocks.WARPED_CHAIR.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_CHAIR = CHAIRS.register("cherry_chair", () -> new RenderedBlockItem(ModBlocks.CHERRY_CHAIR.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_CHAIR = CHAIRS.register("bamboo_chair", () -> new RenderedBlockItem(ModBlocks.BAMBOO_CHAIR.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_TABLE = TABLES.register("acacia_table", () -> new RenderedBlockItem(ModBlocks.ACACIA_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_TABLE = TABLES.register("birch_table", () -> new RenderedBlockItem(ModBlocks.BIRCH_TABLE.get(), new Item.Properties()));
@@ -118,6 +122,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_TABLE = TABLES.register("spruce_table", () -> new RenderedBlockItem(ModBlocks.SPRUCE_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_TABLE = TABLES.register("crimson_table", () -> new RenderedBlockItem(ModBlocks.CRIMSON_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_TABLE = TABLES.register("warped_table", () -> new RenderedBlockItem(ModBlocks.WARPED_TABLE.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_TABLE = TABLES.register("cherry_table", () -> new RenderedBlockItem(ModBlocks.CHERRY_TABLE.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_TABLE = TABLES.register("bamboo_table", () -> new RenderedBlockItem(ModBlocks.BAMBOO_TABLE.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_BENCH = WOODEN_BENCHES.register("acacia_bench", () -> new RenderedBlockItem(ModBlocks.ACACIA_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_BENCH = WOODEN_BENCHES.register("birch_bench", () -> new RenderedBlockItem(ModBlocks.BIRCH_BENCH.get(), new Item.Properties()));
@@ -128,6 +134,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_BENCH = WOODEN_BENCHES.register("spruce_bench", () -> new RenderedBlockItem(ModBlocks.SPRUCE_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_BENCH = WOODEN_BENCHES.register("crimson_bench", () -> new RenderedBlockItem(ModBlocks.CRIMSON_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_BENCH = WOODEN_BENCHES.register("warped_bench", () -> new RenderedBlockItem(ModBlocks.WARPED_BENCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_BENCH = WOODEN_BENCHES.register("cherry_bench", () -> new RenderedBlockItem(ModBlocks.CHERRY_BENCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_BENCH = WOODEN_BENCHES.register("bamboo_bench", () -> new RenderedBlockItem(ModBlocks.BAMBOO_BENCH.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> BENCH = METAL_BENCHES.register("bench", () -> new RenderedBlockItem(ModBlocks.BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> FROZEN_BENCH = METAL_BENCHES.register("frozen_bench", () -> new RenderedBlockItem(ModBlocks.FROZEN_BENCH.get(), new Item.Properties()));
@@ -141,6 +149,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_COUCH = COUCHES.register("spruce_couch", () -> new RenderedBlockItem(ModBlocks.SPRUCE_COUCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_COUCH = COUCHES.register("crimson_couch", () -> new RenderedBlockItem(ModBlocks.CRIMSON_COUCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_COUCH = COUCHES.register("warped_couch", () -> new RenderedBlockItem(ModBlocks.WARPED_COUCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_COUCH = COUCHES.register("cherry_couch", () -> new RenderedBlockItem(ModBlocks.CHERRY_COUCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_COUCH = COUCHES.register("bamboo_couch", () -> new RenderedBlockItem(ModBlocks.BAMBOO_COUCH.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_FANCY_BED = FANCY_BEDS.register("acacia_fancy_bed", () -> new RenderedBlockItem(ModBlocks.ACACIA_FANCY_BED.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_FANCY_BED = FANCY_BEDS.register("birch_fancy_bed", () -> new RenderedBlockItem(ModBlocks.BIRCH_FANCY_BED.get(), new Item.Properties()));
@@ -151,6 +161,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_FANCY_BED = FANCY_BEDS.register("spruce_fancy_bed", () -> new RenderedBlockItem(ModBlocks.SPRUCE_FANCY_BED.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_FANCY_BED = FANCY_BEDS.register("crimson_fancy_bed", () -> new RenderedBlockItem(ModBlocks.CRIMSON_FANCY_BED.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_FANCY_BED = FANCY_BEDS.register("warped_fancy_bed", () -> new RenderedBlockItem(ModBlocks.WARPED_FANCY_BED.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_FANCY_BED = FANCY_BEDS.register("cherry_fancy_bed", () -> new RenderedBlockItem(ModBlocks.CHERRY_FANCY_BED.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_FANCY_BED = FANCY_BEDS.register("bamboo_fancy_bed", () -> new RenderedBlockItem(ModBlocks.BAMBOO_FANCY_BED.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_DINING_BENCH = DINING_BENCHES.register("acacia_dining_bench", () -> new RenderedBlockItem(ModBlocks.ACACIA_DINING_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_DINING_BENCH = DINING_BENCHES.register("birch_dining_bench", () -> new RenderedBlockItem(ModBlocks.BIRCH_DINING_BENCH.get(), new Item.Properties()));
@@ -161,6 +173,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_DINING_BENCH = DINING_BENCHES.register("spruce_dining_bench", () -> new RenderedBlockItem(ModBlocks.SPRUCE_DINING_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_DINING_BENCH = DINING_BENCHES.register("crimson_dining_bench", () -> new RenderedBlockItem(ModBlocks.CRIMSON_DINING_BENCH.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_DINING_BENCH = DINING_BENCHES.register("warped_dining_bench", () -> new RenderedBlockItem(ModBlocks.WARPED_DINING_BENCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_DINING_BENCH = DINING_BENCHES.register("cherry_dining_bench", () -> new RenderedBlockItem(ModBlocks.CHERRY_DINING_BENCH.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_DINING_BENCH = DINING_BENCHES.register("bamboo_dining_bench", () -> new RenderedBlockItem(ModBlocks.BAMBOO_DINING_BENCH.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_NIGHTSTAND = NIGHTSTANDS.register("acacia_nightstand", () -> new RenderedBlockItem(ModBlocks.ACACIA_NIGHTSTAND.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_NIGHTSTAND = NIGHTSTANDS.register("birch_nightstand", () -> new RenderedBlockItem(ModBlocks.BIRCH_NIGHTSTAND.get(), new Item.Properties()));
@@ -171,6 +185,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_NIGHTSTAND = NIGHTSTANDS.register("spruce_nightstand", () -> new RenderedBlockItem(ModBlocks.SPRUCE_NIGHTSTAND.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_NIGHTSTAND = NIGHTSTANDS.register("crimson_nightstand", () -> new RenderedBlockItem(ModBlocks.CRIMSON_NIGHTSTAND.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_NIGHTSTAND = NIGHTSTANDS.register("warped_nightstand", () -> new RenderedBlockItem(ModBlocks.WARPED_NIGHTSTAND.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_NIGHTSTAND = NIGHTSTANDS.register("cherry_nightstand", () -> new RenderedBlockItem(ModBlocks.CHERRY_NIGHTSTAND.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_NIGHTSTAND = NIGHTSTANDS.register("bamboo_nightstand", () -> new RenderedBlockItem(ModBlocks.BAMBOO_NIGHTSTAND.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_DESK = DESKS.register("acacia_desk", () -> new RenderedBlockItem(ModBlocks.ACACIA_DESK.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_DESK = DESKS.register("birch_desk", () -> new RenderedBlockItem(ModBlocks.BIRCH_DESK.get(), new Item.Properties()));
@@ -181,6 +197,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_DESK = DESKS.register("spruce_desk", () -> new RenderedBlockItem(ModBlocks.SPRUCE_DESK.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_DESK = DESKS.register("crimson_desk", () -> new RenderedBlockItem(ModBlocks.CRIMSON_DESK.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_DESK = DESKS.register("warped_desk", () -> new RenderedBlockItem(ModBlocks.WARPED_DESK.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_DESK = DESKS.register("cherry_desk", () -> new RenderedBlockItem(ModBlocks.CHERRY_DESK.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_DESK = DESKS.register("bamboo_desk", () -> new RenderedBlockItem(ModBlocks.BAMBOO_DESK.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_SIDE_TABLE = SIDE_TABLES.register("acacia_side_table", () -> new RenderedBlockItem(ModBlocks.ACACIA_SIDE_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_SIDE_TABLE = SIDE_TABLES.register("birch_side_table", () -> new RenderedBlockItem(ModBlocks.BIRCH_SIDE_TABLE.get(), new Item.Properties()));
@@ -191,6 +209,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_SIDE_TABLE = SIDE_TABLES.register("spruce_side_table", () -> new RenderedBlockItem(ModBlocks.SPRUCE_SIDE_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_SIDE_TABLE = SIDE_TABLES.register("crimson_side_table", () -> new RenderedBlockItem(ModBlocks.CRIMSON_SIDE_TABLE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_SIDE_TABLE = SIDE_TABLES.register("warped_side_table", () -> new RenderedBlockItem(ModBlocks.WARPED_SIDE_TABLE.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_SIDE_TABLE = SIDE_TABLES.register("cherry_side_table", () -> new RenderedBlockItem(ModBlocks.CHERRY_SIDE_TABLE.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_SIDE_TABLE = SIDE_TABLES.register("bamboo_side_table", () -> new RenderedBlockItem(ModBlocks.BAMBOO_SIDE_TABLE.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_COUNTER = COUNTERS.register("acacia_counter", () -> new CounterBlockItem(ModBlocks.ACACIA_COUNTER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_COUNTER = COUNTERS.register("birch_counter", () -> new CounterBlockItem(ModBlocks.BIRCH_COUNTER_1.get(), new Item.Properties()));
@@ -201,6 +221,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_COUNTER = COUNTERS.register("spruce_counter", () -> new CounterBlockItem(ModBlocks.SPRUCE_COUNTER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_COUNTER = COUNTERS.register("crimson_counter", () -> new CounterBlockItem(ModBlocks.CRIMSON_COUNTER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_COUNTER = COUNTERS.register("warped_counter", () -> new CounterBlockItem(ModBlocks.WARPED_COUNTER_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_COUNTER = COUNTERS.register("cherry_counter", () -> new CounterBlockItem(ModBlocks.CHERRY_COUNTER_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_COUNTER = COUNTERS.register("bamboo_counter", () -> new CounterBlockItem(ModBlocks.BAMBOO_COUNTER_1.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_DRAWER = DRAWERS.register("acacia_drawer", () -> new HammerableBlockItem(ModBlocks.ACACIA_DRAWER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_DRAWER = DRAWERS.register("birch_drawer", () -> new HammerableBlockItem(ModBlocks.BIRCH_DRAWER_1.get(), new Item.Properties()));
@@ -211,6 +233,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_DRAWER = DRAWERS.register("spruce_drawer", () -> new HammerableBlockItem(ModBlocks.SPRUCE_DRAWER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_DRAWER = DRAWERS.register("crimson_drawer", () -> new HammerableBlockItem(ModBlocks.CRIMSON_DRAWER_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_DRAWER = DRAWERS.register("warped_drawer", () -> new HammerableBlockItem(ModBlocks.WARPED_DRAWER_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_DRAWER = DRAWERS.register("cherry_drawer", () -> new HammerableBlockItem(ModBlocks.CHERRY_DRAWER_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_DRAWER = DRAWERS.register("bamboo_drawer", () -> new HammerableBlockItem(ModBlocks.BAMBOO_DRAWER_1.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_CUPBOARD = CUPBOARDS.register("acacia_cupboard", () -> new HammerableBlockItem(ModBlocks.ACACIA_CUPBOARD_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_CUPBOARD = CUPBOARDS.register("birch_cupboard", () -> new HammerableBlockItem(ModBlocks.BIRCH_CUPBOARD_1.get(), new Item.Properties()));
@@ -221,6 +245,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_CUPBOARD = CUPBOARDS.register("spruce_cupboard", () -> new HammerableBlockItem(ModBlocks.SPRUCE_CUPBOARD_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_CUPBOARD = CUPBOARDS.register("crimson_cupboard", () -> new HammerableBlockItem(ModBlocks.CRIMSON_CUPBOARD_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_CUPBOARD = CUPBOARDS.register("warped_cupboard", () -> new HammerableBlockItem(ModBlocks.WARPED_CUPBOARD_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_CUPBOARD = CUPBOARDS.register("cherry_cupboard", () -> new HammerableBlockItem(ModBlocks.CHERRY_CUPBOARD_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_CUPBOARD = CUPBOARDS.register("bamboo_cupboard", () -> new HammerableBlockItem(ModBlocks.BAMBOO_CUPBOARD_1.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_SHELF = SHELVES.register("acacia_shelf", () -> new ShelfBlockItem(ModBlocks.ACACIA_SHELF_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BIRCH_SHELF = SHELVES.register("birch_shelf", () -> new ShelfBlockItem(ModBlocks.BIRCH_SHELF_1.get(), new Item.Properties()));
@@ -231,6 +257,8 @@ public class ModItems {
     public static final RegistryEntry<Item> SPRUCE_SHELF = SHELVES.register("spruce_shelf", () -> new ShelfBlockItem(ModBlocks.SPRUCE_SHELF_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> CRIMSON_SHELF = SHELVES.register("crimson_shelf", () -> new ShelfBlockItem(ModBlocks.CRIMSON_SHELF_1.get(), new Item.Properties()));
     public static final RegistryEntry<Item> WARPED_SHELF = SHELVES.register("warped_shelf", () -> new ShelfBlockItem(ModBlocks.WARPED_SHELF_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_SHELF = SHELVES.register("cherry_shelf", () -> new ShelfBlockItem(ModBlocks.CHERRY_SHELF_1.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_SHELF = SHELVES.register("bamboo_shelf", () -> new ShelfBlockItem(ModBlocks.BAMBOO_SHELF_1.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> ACACIA_PILLAR_TRIM = TRIMS.register("acacia_pillar_trim", () -> new HammerableBlockItem(ModBlocks.ACACIA_PILLAR_TRIM.get(), new Item.Properties()));
     public static final RegistryEntry<Item> ACACIA_CORNER_TRIM = TRIMS.register("acacia_corner_trim", () -> new HammerableBlockItem(ModBlocks.ACACIA_CORNER_TRIM.get(), new Item.Properties()));
@@ -270,6 +298,10 @@ public class ModItems {
     public static final RegistryEntry<Item> QUARTZ_CORNER_TRIM = TRIMS.register("quartz_corner_trim", () -> new HammerableBlockItem(ModBlocks.QUARTZ_CORNER_TRIM.get(), new Item.Properties()));
     public static final RegistryEntry<Item> STONE_PILLAR_TRIM = TRIMS.register("stone_pillar_trim", () -> new HammerableBlockItem(ModBlocks.STONE_PILLAR_TRIM.get(), new Item.Properties()));
     public static final RegistryEntry<Item> STONE_CORNER_TRIM = TRIMS.register("stone_corner_trim", () -> new HammerableBlockItem(ModBlocks.STONE_CORNER_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_PILLAR_TRIM = TRIMS.register("cherry_pillar_trim", () -> new HammerableBlockItem(ModBlocks.CHERRY_PILLAR_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> CHERRY_CORNER_TRIM = TRIMS.register("cherry_corner_trim", () -> new HammerableBlockItem(ModBlocks.CHERRY_CORNER_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_PILLAR_TRIM = TRIMS.register("bamboo_pillar_trim", () -> new HammerableBlockItem(ModBlocks.BAMBOO_PILLAR_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> BAMBOO_CORNER_TRIM = TRIMS.register("bamboo_corner_trim", () -> new HammerableBlockItem(ModBlocks.BAMBOO_CORNER_TRIM.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> WHITE_CUP = CUPS.register("white_cup", () -> new BlockItem(ModBlocks.WHITE_CUP.get(), new Item.Properties()));
     public static final RegistryEntry<Item> YELLOW_CUP = CUPS.register("yellow_cup", () -> new BlockItem(ModBlocks.YELLOW_CUP.get(), new Item.Properties()));

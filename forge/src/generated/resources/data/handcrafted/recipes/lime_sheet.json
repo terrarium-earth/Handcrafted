@@ -15,5 +15,6 @@
   "result": {
     "count": 8,
     "item": "handcrafted:lime_sheet"
-  }
+  },
+  "show_notification": true
 }

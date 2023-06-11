@@ -21,5 +21,6 @@
   "result": {
     "count": 2,
     "item": "handcrafted:jungle_desk"
-  }
+  },
+  "show_notification": true
 }

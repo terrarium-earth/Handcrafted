@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:acacia_desk"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

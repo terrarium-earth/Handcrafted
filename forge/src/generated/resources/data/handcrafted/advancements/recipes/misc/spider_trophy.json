@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:spider_trophy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

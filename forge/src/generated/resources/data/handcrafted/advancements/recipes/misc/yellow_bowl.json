@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:yellow_bowl"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

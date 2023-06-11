@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:pillager_trophy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

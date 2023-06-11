@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:birch_chair"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

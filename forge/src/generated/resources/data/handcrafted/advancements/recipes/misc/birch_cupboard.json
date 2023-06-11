@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:birch_cupboard"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

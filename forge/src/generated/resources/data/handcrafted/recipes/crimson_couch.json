@@ -21,5 +21,6 @@
   "result": {
     "count": 3,
     "item": "handcrafted:crimson_couch"
-  }
+  },
+  "show_notification": true
 }

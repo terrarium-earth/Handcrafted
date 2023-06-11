@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:white_cup"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:stackable_book"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

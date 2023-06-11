@@ -15,5 +15,6 @@
   "result": {
     "count": 2,
     "item": "handcrafted:crimson_table"
-  }
+  },
+  "show_notification": true
 }

@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:wolf_trophy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

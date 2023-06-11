@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:oak_cupboard"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

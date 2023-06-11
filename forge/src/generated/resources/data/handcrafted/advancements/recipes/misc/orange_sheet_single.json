@@ -28,5 +28,6 @@
     "recipes": [
       "handcrafted:orange_sheet_single"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

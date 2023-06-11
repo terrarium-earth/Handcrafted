@@ -15,5 +15,6 @@
   "result": {
     "count": 8,
     "item": "handcrafted:brown_sheet"
-  }
+  },
+  "show_notification": true
 }

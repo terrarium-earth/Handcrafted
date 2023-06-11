@@ -17,5 +17,6 @@
   ],
   "result": {
     "item": "handcrafted:pillager_trophy"
-  }
+  },
+  "show_notification": true
 }

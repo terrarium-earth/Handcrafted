@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:white_plate"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

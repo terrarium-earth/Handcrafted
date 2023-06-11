@@ -18,6 +18,8 @@
     "minecraft:quartz_block",
     "minecraft:smooth_stone",
     "minecraft:spruce_planks",
-    "minecraft:warped_planks"
+    "minecraft:warped_planks",
+    "minecraft:cherry_planks",
+    "minecraft:bamboo_planks"
   ]
 }

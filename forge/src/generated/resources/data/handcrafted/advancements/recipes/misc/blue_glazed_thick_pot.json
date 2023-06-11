@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:blue_glazed_thick_pot"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

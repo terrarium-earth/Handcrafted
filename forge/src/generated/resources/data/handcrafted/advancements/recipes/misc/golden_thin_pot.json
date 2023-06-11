@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:golden_thin_pot"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

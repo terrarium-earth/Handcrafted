@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:spruce_corner_trim"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

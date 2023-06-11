@@ -30,5 +30,6 @@
     "recipes": [
       "handcrafted:witch_trophy"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

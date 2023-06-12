@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "pillar_trim",
+  "key": {
+    "#": {
+      "item": "handcrafted:cherry_board"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:cherry_pillar_trim"
+  },
+  "show_notification": true
+}

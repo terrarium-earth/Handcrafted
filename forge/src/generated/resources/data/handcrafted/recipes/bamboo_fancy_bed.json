@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "fancy_bed",
+  "key": {
+    "#": {
+      "item": "handcrafted:bamboo_board"
+    },
+    "$": {
+      "item": "handcrafted:white_sheet"
+    },
+    "/": {
+      "item": "minecraft:white_wool"
+    },
+    "@": {
+      "item": "handcrafted:white_cushion"
+    }
+  },
+  "pattern": [
+    "@$ ",
+    "///",
+    "###"
+  ],
+  "result": {
+    "item": "handcrafted:bamboo_fancy_bed"
+  },
+  "show_notification": true
+}

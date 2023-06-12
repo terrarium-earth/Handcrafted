@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "couch",
+  "key": {
+    "#": {
+      "item": "handcrafted:cherry_board"
+    },
+    "/": {
+      "item": "minecraft:white_wool"
+    },
+    "@": {
+      "item": "handcrafted:white_cushion"
+    }
+  },
+  "pattern": [
+    " @ ",
+    "#/#",
+    "###"
+  ],
+  "result": {
+    "count": 3,
+    "item": "handcrafted:cherry_couch"
+  },
+  "show_notification": true
+}

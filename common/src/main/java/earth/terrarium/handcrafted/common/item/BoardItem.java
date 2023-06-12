@@ -10,12 +10,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Map;
+import java.util.function.Supplier;
 
 public class BoardItem extends Item {
     public BoardItem(Properties properties) {
@@ -35,21 +36,17 @@ public class BoardItem extends Item {
     public static void handleStoneCutter(Level level, BlockPos pos, Entity entity) {
         if (entity instanceof ItemEntity item) {
             ItemStack stack = item.getItem();
-            if (!stack.is(ItemTags.PLANKS)) {
-                return;
-            }
-            ItemStack newStack = ItemStack.EMPTY;
+            if (!stack.is(ItemTags.PLANKS)) return;
 
-            // TODO: make this a recipe
-            if (stack.is(Items.ACACIA_PLANKS)) newStack = ModItems.ACACIA_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.BIRCH_PLANKS)) newStack = ModItems.BIRCH_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.DARK_OAK_PLANKS)) newStack = ModItems.DARK_OAK_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.JUNGLE_PLANKS)) newStack = ModItems.JUNGLE_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.MANGROVE_PLANKS)) newStack = ModItems.MANGROVE_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.OAK_PLANKS)) newStack = ModItems.OAK_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.SPRUCE_PLANKS)) newStack = ModItems.SPRUCE_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.CRIMSON_PLANKS)) newStack = ModItems.CRIMSON_BOARD.get().getDefaultInstance();
-            if (stack.is(Items.WARPED_PLANKS)) newStack = ModItems.WARPED_BOARD.get().getDefaultInstance();
+            Supplier<Item> supplier = ModItems.PLANKS_TO_BOARDS.entrySet()
+                .stream()
+                .filter(entry -> stack.is(entry.getKey().get()))
+                .findFirst()
+                .map(Map.Entry::getValue)
+                .orElse(null);
+
+            if (supplier == null) return;
+            ItemStack newStack = supplier.get().getDefaultInstance();
 
             // Give 4 boards per plank.
             newStack.setCount(stack.getCount() * 4);

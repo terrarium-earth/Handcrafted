@@ -11,16 +11,20 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
 public class ModItems {
     public static final ResourcefulRegistry<Item> ITEMS = ResourcefulRegistries.create(BuiltInRegistries.ITEM, Handcrafted.MOD_ID);
     public static final Supplier<CreativeModeTab> TAB = new ResourcefulCreativeTab(new ResourceLocation(Handcrafted.MOD_ID, "main"))
-            .setItemIcon(ModBlocks.MANGROVE_FANCY_BED)
-            .addRegistry(ITEMS)
-            .build();
+        .setItemIcon(ModBlocks.MANGROVE_FANCY_BED)
+        .addRegistry(ITEMS)
+        .build();
+    public static final Map<Supplier<Item>, RegistryEntry<Item>> PLANKS_TO_BOARDS = new HashMap<>();
 
     public static final ResourcefulRegistry<Item> CUSHIONS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> SHEETS = ResourcefulRegistries.create(ITEMS);
@@ -371,4 +375,19 @@ public class ModItems {
     public static final RegistryEntry<Item> KITCHEN_HOOD_PIPE = ITEMS.register("kitchen_hood_pipe", () -> new KitchenHoodPipeItem(ModBlocks.KITCHEN_HOOD_PIPE.get(), new Item.Properties()));
     public static final RegistryEntry<Item> BERRY_JAM_JAR = ITEMS.register("berry_jam_jar", () -> new RenderedBlockItem(ModBlocks.BERRY_JAM_JAR.get(), new Item.Properties()));
     public static final RegistryEntry<Item> PHANTOM_TROPHY = ITEMS.register("phantom_trophy", () -> new BlockItem(ModBlocks.PHANTOM_TROPHY.get(), new Item.Properties()));
+
+    // TODO: make this a recipe
+    static {
+        PLANKS_TO_BOARDS.put(() -> Items.ACACIA_PLANKS, ModItems.ACACIA_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.BIRCH_PLANKS, ModItems.BIRCH_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.DARK_OAK_PLANKS, ModItems.DARK_OAK_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.JUNGLE_PLANKS, ModItems.JUNGLE_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.MANGROVE_PLANKS, ModItems.MANGROVE_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.OAK_PLANKS, ModItems.OAK_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.SPRUCE_PLANKS, ModItems.SPRUCE_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.CRIMSON_PLANKS, ModItems.CRIMSON_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.WARPED_PLANKS, ModItems.WARPED_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.CHERRY_PLANKS, ModItems.CHERRY_BOARD);
+        PLANKS_TO_BOARDS.put(() -> Items.BAMBOO_PLANKS, ModItems.BAMBOO_BOARD);
+    }
 }

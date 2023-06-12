@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "cupboard",
+  "key": {
+    "#": {
+      "item": "handcrafted:cherry_board"
+    },
+    "/": {
+      "item": "minecraft:cherry_planks"
+    },
+    "@": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "###",
+    "/@/",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:cherry_cupboard"
+  },
+  "show_notification": true
+}

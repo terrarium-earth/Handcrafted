@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "desk",
+  "key": {
+    "#": {
+      "item": "handcrafted:bamboo_board"
+    },
+    "/": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "@": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "///",
+    "#@#",
+    "# #"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:bamboo_desk"
+  },
+  "show_notification": true
+}

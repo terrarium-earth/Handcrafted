@@ -1,1 +1,2 @@
-- Fix typo
+- Fix Cherry and Bamboo boards not being obtainable
+- Add Recipes for the chery and bamboo stuff

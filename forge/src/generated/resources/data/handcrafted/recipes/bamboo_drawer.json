@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "drawer",
+  "key": {
+    "#": {
+      "item": "handcrafted:bamboo_board"
+    },
+    "/": {
+      "item": "minecraft:chest"
+    }
+  },
+  "pattern": [
+    "###",
+    "#/#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:bamboo_drawer"
+  },
+  "show_notification": true
+}

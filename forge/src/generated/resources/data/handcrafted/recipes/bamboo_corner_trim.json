@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "corner_trim",
+  "key": {
+    "#": {
+      "item": "handcrafted:bamboo_board"
+    }
+  },
+  "pattern": [
+    "###",
+    "  #",
+    "  #"
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:bamboo_corner_trim"
+  },
+  "show_notification": true
+}

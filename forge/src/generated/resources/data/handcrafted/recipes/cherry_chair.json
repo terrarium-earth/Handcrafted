@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chair",
+  "key": {
+    "#": {
+      "item": "handcrafted:cherry_board"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 2,
+    "item": "handcrafted:cherry_chair"
+  },
+  "show_notification": true
+}

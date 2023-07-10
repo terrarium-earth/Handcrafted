@@ -27,12 +27,12 @@ import java.util.stream.Stream;
 @MethodsReturnNonnullByDefault
 public class SideTableBlock extends SimpleEntityBlock {
     public static final VoxelShape SHAPE = Stream.of(
-            Block.box(2, 12, 2, 14, 16, 14),
-            Block.box(4, 8, 4, 12, 12, 12),
-            Block.box(3, 0, 10, 6, 12, 13),
-            Block.box(10, 0, 3, 13, 12, 6),
-            Block.box(3, 0, 3, 6, 12, 6),
-            Block.box(10, 0, 10, 13, 12, 13)
+        Block.box(2, 12, 2, 14, 16, 14),
+        Block.box(4, 8, 4, 12, 12, 12),
+        Block.box(3, 0, 10, 6, 12, 13),
+        Block.box(10, 0, 3, 13, 12, 6),
+        Block.box(3, 0, 3, 6, 12, 6),
+        Block.box(10, 0, 10, 13, 12, 13)
     ).reduce(Shapes::or).get();
 
     public SideTableBlock(Properties properties) {

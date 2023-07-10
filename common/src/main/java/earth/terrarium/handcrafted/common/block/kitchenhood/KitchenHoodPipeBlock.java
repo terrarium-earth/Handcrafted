@@ -60,33 +60,33 @@ public class KitchenHoodPipeBlock extends SimpleBlock implements Hammerable {
 
     static {
         SHAPE = Stream.of(
-                Block.box(3, 0, 3, 13, 3, 13),
-                Block.box(3, 13, 3, 13, 16, 13),
-                Block.box(4, 3, 4, 12, 13, 12)
+            Block.box(3, 0, 3, 13, 3, 13),
+            Block.box(3, 13, 3, 13, 16, 13),
+            Block.box(4, 3, 4, 12, 13, 12)
         ).reduce(Shapes::or).get();
         NORTH_SHAPE = Stream.of(
-                Block.box(3, 0, 3, 13, 3, 13),
-                Block.box(3, 3, 13, 13, 13, 16),
-                Block.box(4, 3, 4, 12, 12, 12),
-                Block.box(4, 4, 12, 12, 12, 13)
+            Block.box(3, 0, 3, 13, 3, 13),
+            Block.box(3, 3, 13, 13, 13, 16),
+            Block.box(4, 3, 4, 12, 12, 12),
+            Block.box(4, 4, 12, 12, 12, 13)
         ).reduce(Shapes::or).get();
         EAST_SHAPE = Stream.of(
-                Block.box(3, 0, 3, 13, 3, 13),
-                Block.box(0, 3, 3, 3, 13, 13),
-                Block.box(4, 3, 4, 12, 12, 12),
-                Block.box(3, 4, 4, 4, 12, 12)
+            Block.box(3, 0, 3, 13, 3, 13),
+            Block.box(0, 3, 3, 3, 13, 13),
+            Block.box(4, 3, 4, 12, 12, 12),
+            Block.box(3, 4, 4, 4, 12, 12)
         ).reduce(Shapes::or).get();
         SOUTH_SHAPE = Stream.of(
-                Block.box(3, 0, 3, 13, 3, 13),
-                Block.box(3, 3, 0, 13, 13, 3),
-                Block.box(4, 3, 4, 12, 12, 12),
-                Block.box(4, 4, 3, 12, 12, 4)
+            Block.box(3, 0, 3, 13, 3, 13),
+            Block.box(3, 3, 0, 13, 13, 3),
+            Block.box(4, 3, 4, 12, 12, 12),
+            Block.box(4, 4, 3, 12, 12, 4)
         ).reduce(Shapes::or).get();
         WEST_SHAPE = Stream.of(
-                Block.box(3, 0, 3, 13, 3, 13),
-                Block.box(13, 3, 3, 16, 13, 13),
-                Block.box(4, 3, 4, 12, 12, 12),
-                Block.box(12, 4, 4, 13, 12, 12)
+            Block.box(3, 0, 3, 13, 3, 13),
+            Block.box(13, 3, 3, 16, 13, 13),
+            Block.box(4, 3, 4, 12, 12, 12),
+            Block.box(12, 4, 4, 13, 12, 12)
         ).reduce(Shapes::or).get();
     }
 }

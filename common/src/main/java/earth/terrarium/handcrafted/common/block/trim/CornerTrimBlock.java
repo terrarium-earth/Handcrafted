@@ -44,6 +44,7 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
     public static final VoxelShape[] TOP_SHAPES = makeShapes(TOP_AABB, OCTET_NNN, OCTET_PNN, OCTET_NNP, OCTET_PNP);
     public static final VoxelShape[] BOTTOM_SHAPES = makeShapes(BOTTOM_AABB, OCTET_NPN, OCTET_PPN, OCTET_NPP, OCTET_PPP);
     public static final int[] SHAPE_BY_STATE = new int[]{12, 5, 3, 10, 14, 13, 7, 11, 13, 7, 11, 14, 8, 4, 1, 2, 4, 1, 2, 8};
+
     public CornerTrimBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(SHAPE, TrimState.NORMAL).setValue(HALF, Half.BOTTOM).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
@@ -64,7 +65,7 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
         Direction direction = context.getClickedFace();
         BlockPos blockPos = context.getClickedPos();
         FluidState fluidState = context.getLevel().getFluidState(blockPos);
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double)blockPos.getY() > 0.5)) ? Half.BOTTOM : Half.TOP).setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getClickLocation().y - (double) blockPos.getY() > 0.5)) ? Half.BOTTOM : Half.TOP).setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
     }
 
     @Override

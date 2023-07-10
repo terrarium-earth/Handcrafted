@@ -17,8 +17,8 @@
   ],
   "contact": {
     "website": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
-    "repo": "https://github.com/terrarium-earth/${github_name}",
-    "issues": "https://github.com/terrarium-earth/${github_name}/issues"
+    "repo": "https://github.com/terrarium-earth/handcrafted",
+    "issues": "https://github.com/terrarium-earth/handcrafted/issues"
   },
   "license": "Terrarium Licence",
   "icon": "icon.png",
@@ -38,6 +38,6 @@
   "depends": {
     "fabric": "*",
     "minecraft": ">=1.20",
-    "resourcefullib": ">=${resourcefullib_version}"
+    "resourcefullib": ">=2.1.1"
   }
 }

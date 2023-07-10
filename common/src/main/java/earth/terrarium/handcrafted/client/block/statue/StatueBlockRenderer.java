@@ -4,8 +4,6 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
@@ -14,7 +12,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 
-@Environment(EnvType.CLIENT)
 public class StatueBlockRenderer implements BlockEntityRenderer<StatueBlockEntity> {
     private final BlockRenderDispatcher blockRenderDispatcher;
 

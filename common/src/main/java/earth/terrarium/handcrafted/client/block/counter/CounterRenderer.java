@@ -6,8 +6,6 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.counter.CounterBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -21,7 +19,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(EnvType.CLIENT)
 public class CounterRenderer implements BlockEntityRenderer<CounterBlockEntity> {
     public CounterRenderer(BlockEntityRendererProvider.Context ctx) {
     }

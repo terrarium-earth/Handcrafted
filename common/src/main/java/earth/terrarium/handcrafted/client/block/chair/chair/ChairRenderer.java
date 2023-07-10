@@ -7,8 +7,6 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.chair.ChairBlockEntity;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.property.CouchShape;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -21,7 +19,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(EnvType.CLIENT)
 public class ChairRenderer implements BlockEntityRenderer<ChairBlockEntity> {
     public ChairRenderer(BlockEntityRendererProvider.Context ctx) {
     }

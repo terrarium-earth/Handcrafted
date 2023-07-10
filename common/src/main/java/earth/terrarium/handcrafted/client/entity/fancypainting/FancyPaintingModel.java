@@ -25,10 +25,10 @@ public class FancyPaintingModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 42).addBox(-24.0F, -34.0F, -1.0F, 48.0F, 32.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-24.0F, -2.0F, -1.0F, 48.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-24.0F, -36.0F, -1.0F, 48.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(8, 0).addBox(-26.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(4, 0).addBox(24.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+            .texOffs(0, 38).addBox(-24.0F, -2.0F, -1.0F, 48.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 38).addBox(-24.0F, -36.0F, -1.0F, 48.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(8, 0).addBox(-26.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(4, 0).addBox(24.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
         main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(16, 0).addBox(-25.0F, -2.0F, -0.5F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(22.0F, -1.1152F, 1.0793F, 0.3927F, 0.0F, 0.0F));
 
@@ -40,10 +40,10 @@ public class FancyPaintingModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 42).addBox(-8.0F, -34.0F, -1.0F, 32.0F, 32.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -36.0F, -1.0F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(8, 0).addBox(-10.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(4, 0).addBox(24.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+            .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 38).addBox(-8.0F, -36.0F, -1.0F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(8, 0).addBox(-10.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(4, 0).addBox(24.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
         main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(16, 0).addBox(-17.0F, -2.0F, -0.5F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(22.0F, -1.1152F, 1.0793F, 0.3927F, 0.0F, 0.0F));
 
@@ -55,10 +55,10 @@ public class FancyPaintingModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 42).addBox(-8.0F, -18.0F, -1.0F, 16.0F, 16.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -20.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(8, 0).addBox(-10.0F, -20.0F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(4, 0).addBox(8.0F, -20.0F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+            .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 38).addBox(-8.0F, -20.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(8, 0).addBox(-10.0F, -20.0F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(4, 0).addBox(8.0F, -20.0F, -1.0F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
         main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(16, 0).addBox(-25.0F, -2.0F, -0.5F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(22.0F, -1.1152F, 1.0793F, 0.3927F, 0.0F, 0.0F));
 
@@ -70,10 +70,10 @@ public class FancyPaintingModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 42).addBox(-8.0F, -34.0F, -1.0F, 16.0F, 32.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-8.0F, -36.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(8, 0).addBox(-10.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(4, 0).addBox(8.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+            .texOffs(0, 38).addBox(-8.0F, -2.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 38).addBox(-8.0F, -36.0F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(8, 0).addBox(-10.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(4, 0).addBox(8.0F, -36.0F, -1.0F, 2.0F, 36.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 
         main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(16, 0).addBox(-25.0F, -2.0F, -0.5F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(22.0F, -1.1152F, 1.0793F, 0.3927F, 0.0F, 0.0F));
 
@@ -85,10 +85,10 @@ public class FancyPaintingModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 42).addBox(-16.0F, -9.6846F, -1.1776F, 32.0F, 16.0F, 1.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-16.0F, 6.3154F, -1.1776F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 38).addBox(-16.0F, -11.6846F, -1.1776F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(8, 0).addBox(-18.0F, -11.6846F, -1.1776F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F))
-                .texOffs(4, 0).addBox(16.0F, -11.6846F, -1.1776F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(8.0F, 15.6846F, 0.1776F));
+            .texOffs(0, 38).addBox(-16.0F, 6.3154F, -1.1776F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 38).addBox(-16.0F, -11.6846F, -1.1776F, 32.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(8, 0).addBox(-18.0F, -11.6846F, -1.1776F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F))
+            .texOffs(4, 0).addBox(16.0F, -11.6846F, -1.1776F, 2.0F, 20.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(8.0F, 15.6846F, 0.1776F));
 
         main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(16, 0).addBox(-17.0F, -2.0F, -0.5F, 6.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(14.0F, 7.2002F, 0.9017F, 0.3927F, 0.0F, 0.0F));
 

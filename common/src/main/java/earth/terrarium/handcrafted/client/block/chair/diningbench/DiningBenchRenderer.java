@@ -5,8 +5,6 @@ import com.mojang.math.Axis;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlock;
 import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -20,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(EnvType.CLIENT)
 public class DiningBenchRenderer implements BlockEntityRenderer<DiningBenchBlockEntity> {
     public DiningBenchRenderer(BlockEntityRendererProvider.Context ctx) {
     }

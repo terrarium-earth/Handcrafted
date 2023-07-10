@@ -91,7 +91,7 @@ public class SittingEntity extends Entity {
     @Override
     public Vec3 getDismountLocationForPassenger(LivingEntity passenger) {
         return RespawnAnchorBlock.findStandUpPosition(passenger.getType(), this.level(), this.blockPosition())
-                .orElse(super.getDismountLocationForPassenger(passenger));
+            .orElse(super.getDismountLocationForPassenger(passenger));
     }
 
     @Override

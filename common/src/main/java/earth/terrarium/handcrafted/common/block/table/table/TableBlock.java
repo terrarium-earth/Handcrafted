@@ -162,11 +162,11 @@ public class TableBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
 
     static {
         SINGLE_SHAPE = Stream.of(
-                Block.box(0, 12, 0, 16, 16, 16),
-                Block.box(12, 0, 12, 15, 12, 15),
-                Block.box(12, 0, 1, 15, 12, 4),
-                Block.box(1, 0, 1, 4, 12, 4),
-                Block.box(1, 0, 12, 4, 12, 15)
+            Block.box(0, 12, 0, 16, 16, 16),
+            Block.box(12, 0, 12, 15, 12, 15),
+            Block.box(12, 0, 1, 15, 12, 4),
+            Block.box(1, 0, 1, 4, 12, 4),
+            Block.box(1, 0, 12, 4, 12, 15)
         ).reduce(Shapes::or).get();
         CENTER_SHAPE = Block.box(0, 12, 0, 16, 16, 16);
         NORTH_EAST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(12, 0, 1, 15, 12, 4));
@@ -174,24 +174,24 @@ public class TableBlock extends BaseEntityBlock implements SimpleWaterloggedBloc
         SOUTH_EAST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(12, 0, 12, 15, 12, 15));
         SOUTH_WEST_CORNER_SHAPE = Shapes.or(Block.box(0, 12, 0, 16, 16, 16), Block.box(1, 0, 12, 4, 12, 15));
         NORTH_SIDE_SHAPE = Stream.of(
-                Block.box(0, 12, 0, 16, 16, 16),
-                Block.box(12, 0, 1, 15, 12, 4),
-                Block.box(1, 0, 1, 4, 12, 4)
+            Block.box(0, 12, 0, 16, 16, 16),
+            Block.box(12, 0, 1, 15, 12, 4),
+            Block.box(1, 0, 1, 4, 12, 4)
         ).reduce(Shapes::or).get();
         EAST_SIDE_SHAPE = Stream.of(
-                Block.box(0, 12, 0, 16, 16, 16),
-                Block.box(12, 0, 12, 15, 12, 15),
-                Block.box(12, 0, 1, 15, 12, 4)
+            Block.box(0, 12, 0, 16, 16, 16),
+            Block.box(12, 0, 12, 15, 12, 15),
+            Block.box(12, 0, 1, 15, 12, 4)
         ).reduce(Shapes::or).get();
         SOUTH_SIDE_SHAPE = Stream.of(
-                Block.box(0, 12, 0, 16, 16, 16),
-                Block.box(12, 0, 12, 15, 12, 15),
-                Block.box(1, 0, 12, 4, 12, 15)
+            Block.box(0, 12, 0, 16, 16, 16),
+            Block.box(12, 0, 12, 15, 12, 15),
+            Block.box(1, 0, 12, 4, 12, 15)
         ).reduce(Shapes::or).get();
         WEST_SIDE_SHAPE = Stream.of(
-                Block.box(0, 12, 0, 16, 16, 16),
-                Block.box(1, 0, 1, 4, 12, 4),
-                Block.box(1, 0, 12, 4, 12, 15)
+            Block.box(0, 12, 0, 16, 16, 16),
+            Block.box(1, 0, 1, 4, 12, 4),
+            Block.box(1, 0, 12, 4, 12, 15)
         ).reduce(Shapes::or).get();
     }
 }

@@ -1,7 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[46,)"
+loaderVersion = "[47,)"
 license = "Terrarium Licence"
-issueTrackerURL = "https://github.com/terrarium-earth/${github_name}/issues"
+issueTrackerURL = "https://github.com/terrarium-earth/handcrafted/issues"
 
 [[mods]]
 modId = "handcrafted"
@@ -16,7 +16,7 @@ description = "Epic Furniture mod!"
 [[dependencies.handcrafted]]
 modId = "forge"
 mandatory = true
-versionRange = "[46,)"
+versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -30,6 +30,6 @@ side = "BOTH"
 [[dependencies.handcrafted]]
 modId = "resourcefullib"
 mandatory = true
-versionRange = "[${resourcefullib_version},)"
+versionRange = "[2.1.1,)"
 ordering = "NONE"
 side = "BOTH"

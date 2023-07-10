@@ -6,8 +6,6 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlock;
 import earth.terrarium.handcrafted.common.block.trophy.StatueBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -22,7 +20,6 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 
-@Environment(EnvType.CLIENT)
 public class StatueEntityRenderer implements BlockEntityRenderer<StatueBlockEntity> {
     public StatueEntityRenderer(BlockEntityRendererProvider.Context ctx) {
     }

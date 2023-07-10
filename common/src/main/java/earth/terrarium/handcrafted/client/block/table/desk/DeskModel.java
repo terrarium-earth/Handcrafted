@@ -3,8 +3,6 @@ package earth.terrarium.handcrafted.client.block.table.desk;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.client.BaseModel;
 import earth.terrarium.handcrafted.client.HandcraftedClient;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -12,7 +10,6 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
 @SuppressWarnings("unused")
-@Environment(EnvType.CLIENT)
 public class DeskModel extends BaseModel {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Handcrafted.MOD_ID, "desk"), "main");
 
@@ -27,11 +24,11 @@ public class DeskModel extends BaseModel {
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
         PartDefinition table = main.addOrReplaceChild("table", CubeListBuilder.create().texOffs(0, 0).addBox(4.0F, -12.0F, 4.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 0).addBox(-8.0F, -16.0F, -8.0F, 16.0F, 4.0F, 16.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 32).addBox(-6.0F, -12.0F, -6.0F, 12.0F, 9.0F, 12.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 0).addBox(-7.0F, -12.0F, 4.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 0).addBox(-7.0F, -12.0F, -7.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 0).addBox(4.0F, -12.0F, -7.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+            .texOffs(0, 0).addBox(-8.0F, -16.0F, -8.0F, 16.0F, 4.0F, 16.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 32).addBox(-6.0F, -12.0F, -6.0F, 12.0F, 9.0F, 12.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 0).addBox(-7.0F, -12.0F, 4.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 0).addBox(-7.0F, -12.0F, -7.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F))
+            .texOffs(0, 0).addBox(4.0F, -12.0F, -7.0F, 3.0F, 12.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition overlay = main.addOrReplaceChild("overlay", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 

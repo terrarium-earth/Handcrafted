@@ -6,8 +6,6 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlock;
 import earth.terrarium.handcrafted.common.block.stackablebook.StackableBookBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -20,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
 
-@Environment(EnvType.CLIENT)
 public class StackableBookRenderer implements BlockEntityRenderer<StackableBookBlockEntity> {
     public StackableBookRenderer(BlockEntityRendererProvider.Context ctx) {
     }

@@ -6,8 +6,6 @@ import com.mojang.math.Axis;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.entity.FancyPainting;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -22,7 +20,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 import org.jetbrains.annotations.NotNull;
 
-@Environment(EnvType.CLIENT)
 public class FancyPaintingRenderer extends EntityRenderer<FancyPainting> {
 
     public static final ResourceLocation SMALL_FRAME_TEXTURE = new ResourceLocation(Handcrafted.MOD_ID, "textures/painting/small_painting_frame.png");

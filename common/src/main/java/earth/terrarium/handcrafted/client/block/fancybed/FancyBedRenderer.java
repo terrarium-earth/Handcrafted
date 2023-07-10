@@ -9,8 +9,6 @@ import earth.terrarium.handcrafted.common.block.chair.diningbench.DiningBenchBlo
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlock;
 import earth.terrarium.handcrafted.common.block.fancybed.FancyBedBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.DirectionalBlockSide;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -26,7 +24,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.BedBlock;
 import net.minecraft.world.level.block.state.properties.BedPart;
 
-@Environment(EnvType.CLIENT)
 public class FancyBedRenderer implements BlockEntityRenderer<FancyBedBlockEntity> {
     public FancyBedRenderer(BlockEntityRendererProvider.Context ctx) {
     }

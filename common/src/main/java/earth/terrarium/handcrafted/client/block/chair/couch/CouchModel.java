@@ -3,8 +3,6 @@ package earth.terrarium.handcrafted.client.block.chair.couch;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.client.BaseModel;
 import earth.terrarium.handcrafted.client.HandcraftedClient;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -12,7 +10,6 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
 @SuppressWarnings("unused")
-@Environment(EnvType.CLIENT)
 public class CouchModel extends BaseModel {
     public static final ModelLayerLocation LAYER_LOCATION_SINGLE = new ModelLayerLocation(new ResourceLocation(Handcrafted.MOD_ID, "couch_single"), "main");
     public static final ModelLayerLocation LAYER_LOCATION_CORNER = new ModelLayerLocation(new ResourceLocation(Handcrafted.MOD_ID, "couch_corner"), "main");
@@ -58,7 +55,7 @@ public class CouchModel extends BaseModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(16, 101).addBox(-8.0F, -5.0F, -6.0F, 16.0F, 5.0F, 14.0F, new CubeDeformation(0.0F))
-                .texOffs(16, 120).addBox(-8.0F, -5.0F, -8.0F, 14.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
+            .texOffs(16, 120).addBox(-8.0F, -5.0F, -8.0F, 14.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 24.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 
         PartDefinition cube_r1 = main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(76, 101).addBox(-4.0F, -15.0F, -1.999F, 4.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -1.0F, -6.0F, 0.0F, 0.0F, 0.2182F));
 

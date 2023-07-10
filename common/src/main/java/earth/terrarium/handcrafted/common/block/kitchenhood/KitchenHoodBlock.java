@@ -17,11 +17,12 @@ import java.util.stream.Stream;
 @MethodsReturnNonnullByDefault
 public class KitchenHoodBlock extends SimpleBlock {
     public static final VoxelShape SHAPE = Stream.of(
-            Block.box(3, 13, 3, 13, 16, 13),
-            Block.box(0, 0, 0, 16, 6, 16),
-            Block.box(3, 6, 3, 13, 9, 13),
-            Block.box(4, 5, 4, 12, 15, 12)
+        Block.box(3, 13, 3, 13, 16, 13),
+        Block.box(0, 0, 0, 16, 6, 16),
+        Block.box(3, 6, 3, 13, 9, 13),
+        Block.box(4, 5, 4, 12, 15, 12)
     ).reduce(Shapes::or).get();
+
     public KitchenHoodBlock(Properties properties) {
         super(properties);
     }

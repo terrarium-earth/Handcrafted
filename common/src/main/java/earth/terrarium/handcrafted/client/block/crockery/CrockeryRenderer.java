@@ -5,18 +5,14 @@ import com.mojang.math.Axis;
 import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryBlockEntity;
 import earth.terrarium.handcrafted.common.block.crockery.CrockeryComboBlock;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.item.ItemDisplayContext;
 
-@Environment(EnvType.CLIENT)
 public class CrockeryRenderer implements BlockEntityRenderer<CrockeryBlockEntity> {
     public CrockeryRenderer(BlockEntityRendererProvider.Context ctx) {
     }

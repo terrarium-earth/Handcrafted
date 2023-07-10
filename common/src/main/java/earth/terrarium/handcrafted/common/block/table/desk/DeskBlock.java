@@ -27,12 +27,12 @@ import java.util.stream.Stream;
 @MethodsReturnNonnullByDefault
 public class DeskBlock extends SimpleEntityBlock {
     public static final VoxelShape SHAPE = Stream.of(
-            Block.box(0, 12, 0, 16, 16, 16),
-            Block.box(2, 3, 2, 14, 12, 14),
-            Block.box(12, 0, 12, 15, 12, 15),
-            Block.box(12, 0, 1, 15, 12, 4),
-            Block.box(1, 0, 1, 4, 12, 4),
-            Block.box(1, 0, 12, 4, 12, 15)
+        Block.box(0, 12, 0, 16, 16, 16),
+        Block.box(2, 3, 2, 14, 12, 14),
+        Block.box(12, 0, 12, 15, 12, 15),
+        Block.box(12, 0, 1, 15, 12, 4),
+        Block.box(1, 0, 1, 4, 12, 4),
+        Block.box(1, 0, 12, 4, 12, 15)
     ).reduce(Shapes::or).get();
 
     public DeskBlock(Properties properties) {

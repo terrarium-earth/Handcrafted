@@ -33,11 +33,11 @@ public class ModLangProvider extends LanguageProvider {
 
         ModBlocks.BLOCKS.stream().forEach(entry -> {
             addBlock(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath()
-                    .replace("_1", "")
-                    .replace("_2", "")
-                    .replace("_3", "")
-                    .replace("_4", "")
-                    .replace("_", " ")
+                .replace("_1", "")
+                .replace("_2", "")
+                .replace("_3", "")
+                .replace("_4", "")
+                .replace("_", " ")
             ));
         });
 

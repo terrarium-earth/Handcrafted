@@ -43,7 +43,7 @@ public class StorageBlockEntity extends RandomizableContainerBlockEntity {
 
             protected boolean isOwnContainer(Player player) {
                 if (player.containerMenu instanceof ChestMenu) {
-                    Container container = ((ChestMenu)player.containerMenu).getContainer();
+                    Container container = ((ChestMenu) player.containerMenu).getContainer();
                     return container == StorageBlockEntity.this;
                 } else {
                     return false;
@@ -111,6 +111,7 @@ public class StorageBlockEntity extends RandomizableContainerBlockEntity {
         }
 
     }
+
     void playSound(SoundEvent sound) {
         BlockPos pos = this.getBlockPos();
         this.level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), sound, SoundSource.BLOCKS, 0.5F, this.level.random.nextFloat() * 0.1F + 0.9F);

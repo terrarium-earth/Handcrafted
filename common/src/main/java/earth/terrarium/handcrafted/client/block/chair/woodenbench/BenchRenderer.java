@@ -6,8 +6,6 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.block.chair.couch.ExpandableCouchBlock;
 import earth.terrarium.handcrafted.common.block.chair.woodenbench.WoodenBenchBlockEntity;
 import earth.terrarium.handcrafted.common.block.property.CouchShape;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
@@ -21,7 +19,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(EnvType.CLIENT)
 public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity> {
     public BenchRenderer(BlockEntityRendererProvider.Context ctx) {
     }
@@ -71,9 +68,9 @@ public class BenchRenderer implements BlockEntityRenderer<WoodenBenchBlockEntity
             case MIDDLE -> new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_MIDDLE));
             case RIGHT -> new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_RIGHT));
             case INNER_LEFT, INNER_RIGHT ->
-                    new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_CORNER));
+                new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_CORNER));
             case OUTER_LEFT, OUTER_RIGHT ->
-                    new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_INVERTED_CORNER));
+                new WoodenBenchModel(modelSet.bakeLayer(WoodenBenchModel.LAYER_LOCATION_INVERTED_CORNER));
         };
         render(BuiltInRegistries.ITEM.getKey(entity.getStack().getItem()), BuiltInRegistries.BLOCK.getKey(entity.getBlockState().getBlock()), model, entity.getBlockState().getValue(ExpandableCouchBlock.FACING), shape, poseStack, bufferSource, packedLight, packedOverlay);
     }

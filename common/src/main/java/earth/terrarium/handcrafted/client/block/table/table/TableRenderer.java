@@ -7,8 +7,6 @@ import earth.terrarium.handcrafted.common.block.property.SheetState;
 import earth.terrarium.handcrafted.common.block.property.TableState;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlock;
 import earth.terrarium.handcrafted.common.block.table.table.TableBlockEntity;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.model.geom.ModelPart;
@@ -22,7 +20,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
-@Environment(EnvType.CLIENT)
 public class TableRenderer implements BlockEntityRenderer<TableBlockEntity> {
     public TableRenderer(BlockEntityRendererProvider.Context ctx) {
     }

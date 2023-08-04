@@ -22,8 +22,8 @@
   "results": [
     {
       "item": "handcrafted:jungle_board",
-      "count": 3,
-      "chance": 0.25
+      "count": 4
     }
-  ]
+  ],
+  "processingTime": 10
 }

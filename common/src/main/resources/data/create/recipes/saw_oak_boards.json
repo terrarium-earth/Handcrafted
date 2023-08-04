@@ -22,8 +22,8 @@
   "results": [
     {
       "item": "handcrafted:oak_board",
-      "count": 4,
-      "chance": 0.1
+      "count": 4
     }
-  ]
+  ],
+  "processingTime": 10
 }

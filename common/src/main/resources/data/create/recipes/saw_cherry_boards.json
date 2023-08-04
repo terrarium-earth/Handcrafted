@@ -16,12 +16,12 @@
   "type": "create:cutting",
   "ingredients": [
     {
-      "item": "minecraft:spruce_planks"
+      "item": "minecraft:cherry_planks"
     }
   ],
   "results": [
     {
-      "item": "handcrafted:spruce_board",
+      "item": "handcrafted:cherry_board",
       "count": 4
     }
   ],

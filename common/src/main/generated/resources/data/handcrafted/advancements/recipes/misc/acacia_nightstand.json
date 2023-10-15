@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nightstand": {
+    "has_acacia_nightstand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:acacia_board"
+              "minecraft:acacia_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nightstand",
+      "has_acacia_nightstand",
       "has_the_recipe"
     ]
   ],

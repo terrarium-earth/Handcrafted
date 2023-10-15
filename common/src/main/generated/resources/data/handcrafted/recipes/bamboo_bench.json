@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:bamboo_board"
+      "item": "minecraft:bamboo_planks"
+    },
+    "-": {
+      "item": "minecraft:bamboo_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:bamboo_bench"
   },
   "show_notification": true

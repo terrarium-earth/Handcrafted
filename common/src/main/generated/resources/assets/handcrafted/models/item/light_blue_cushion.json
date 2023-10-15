@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "handcrafted:item/cushion/light_blue_cushion"
+  }
+}

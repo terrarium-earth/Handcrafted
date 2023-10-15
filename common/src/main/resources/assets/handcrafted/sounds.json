@@ -1,0 +1,20 @@
+{
+    "hammer_wood": {
+        "sounds": [
+            "handcrafted:hammer_wood_1",
+            "handcrafted:hammer_wood_2",
+            "handcrafted:hammer_wood_3",
+            "handcrafted:hammer_wood_4"
+        ],
+        "subtitle": "subtitles.handcrafted.block.hammer_wood"
+    },
+    "hammer_stone": {
+        "sounds": [
+            "handcrafted:hammer_stone_1",
+            "handcrafted:hammer_stone_2",
+            "handcrafted:hammer_stone_3",
+            "handcrafted:hammer_stone_4"
+        ],
+        "subtitle": "subtitles.handcrafted.block.hammer_stone"
+    }
+}

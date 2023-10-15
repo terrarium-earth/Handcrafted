@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/chair/chair",
+  "textures": {
+    "cushion": "handcrafted:block/chair/cushion/none_cushion",
+    "particle": "minecraft:block/dark_oak_planks",
+    "wood": "handcrafted:block/chair/dark_oak_chair"
+  }
+}

@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "chair",
   "key": {
     "#": {
-      "item": "handcrafted:mangrove_board"
+      "item": "minecraft:mangrove_planks"
+    },
+    "-": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "#  ",
-    "###",
-    "# #"
+    "- ",
+    "##",
+    "//"
   ],
   "result": {
     "count": 2,

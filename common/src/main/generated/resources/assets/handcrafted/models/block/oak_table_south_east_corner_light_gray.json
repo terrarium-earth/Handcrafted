@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/table/south_east_corner",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "sheet": "handcrafted:block/table/sheet/light_gray_sheet",
+    "wood": "handcrafted:block/table/table/oak_table"
+  }
+}

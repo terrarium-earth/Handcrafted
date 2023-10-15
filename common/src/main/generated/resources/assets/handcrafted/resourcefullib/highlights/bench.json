@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "facing=east,shape=inner_left": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_right": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left": {
+      "highlight": "handcrafted:metal_bench/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle": {
+      "highlight": "handcrafted:metal_bench/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_left": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_right": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right": {
+      "highlight": "handcrafted:metal_bench/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single": {
+      "highlight": "handcrafted:metal_bench/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,shape=inner_left": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_right": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left": {
+      "highlight": "handcrafted:metal_bench/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle": {
+      "highlight": "handcrafted:metal_bench/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_left": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_right": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right": {
+      "highlight": "handcrafted:metal_bench/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single": {
+      "highlight": "handcrafted:metal_bench/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,shape=inner_left": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_right": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left": {
+      "highlight": "handcrafted:metal_bench/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle": {
+      "highlight": "handcrafted:metal_bench/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_left": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_right": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right": {
+      "highlight": "handcrafted:metal_bench/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single": {
+      "highlight": "handcrafted:metal_bench/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_right": {
+      "highlight": "handcrafted:metal_bench/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left": {
+      "highlight": "handcrafted:metal_bench/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle": {
+      "highlight": "handcrafted:metal_bench/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_left": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_right": {
+      "highlight": "handcrafted:metal_bench/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right": {
+      "highlight": "handcrafted:metal_bench/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single": {
+      "highlight": "handcrafted:metal_bench/single",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

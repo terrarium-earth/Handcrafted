@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shelf": {
+    "has_oak_shelf": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:oak_board"
+              "minecraft:oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_shelf",
+      "has_oak_shelf",
       "has_the_recipe"
     ]
   ],

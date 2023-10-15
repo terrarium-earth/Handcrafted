@@ -1,22 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "desk",
   "key": {
     "#": {
-      "item": "handcrafted:acacia_board"
-    },
-    "/": {
       "item": "minecraft:acacia_planks"
     },
-    "@": {
+    "-": {
+      "item": "minecraft:acacia_slab"
+    },
+    "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "///",
-    "#@#",
-    "# #"
+    "---",
+    "#/#"
   ],
   "result": {
     "count": 2,

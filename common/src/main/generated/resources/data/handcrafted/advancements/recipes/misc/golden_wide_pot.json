@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gold_block": {
+    "has_golden_wide_pot": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_gold_block",
+      "has_golden_wide_pot",
       "has_the_recipe"
     ]
   ],

@@ -1,0 +1,7 @@
+{
+  "parent": "handcrafted:block/fancy_bed/cushion",
+  "textures": {
+    "cushion": "handcrafted:block/fancy_bed/cushion/purple_cushion",
+    "particle": "minecraft:block/warped_planks"
+  }
+}

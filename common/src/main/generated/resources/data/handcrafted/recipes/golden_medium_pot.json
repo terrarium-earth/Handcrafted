@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "golden_medium_pot",
   "ingredients": [
     {
-      "item": "handcrafted:terracotta_medium_pot"
+      "item": "minecraft:gold_block"
     },
     {
-      "item": "minecraft:gold_block"
+      "item": "handcrafted:terracotta_medium_pot"
     }
   ],
   "result": {

@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "side_table",
   "key": {
     "#": {
-      "item": "handcrafted:birch_board"
+      "item": "minecraft:birch_planks"
+    },
+    "-": {
+      "item": "minecraft:birch_slab"
     },
     "/": {
-      "item": "minecraft:birch_planks"
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "   ",
+    "---",
     "#/#",
     "# #"
   ],

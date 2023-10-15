@@ -9,25 +9,24 @@ val common: Configuration by configurations.creating {
 }
 
 dependencies {
-    val minecraftVersion: String by project
-    val fabricLoaderVersion: String by project
-    val fabricApiVersion: String by project
-
-    modImplementation(group = "net.fabricmc", name = "fabric-loader", version = fabricLoaderVersion)
-    modApi(group = "net.fabricmc.fabric-api", name = "fabric-api", version = "$fabricApiVersion+$minecraftVersion")
-
     common(project(":common", configuration = "namedElements")) {
         isTransitive = false
     }
     shadowCommon(project(path = ":common", configuration = "transformProductionFabric")) {
         isTransitive = false
     }
-}
 
-tasks.processResources {
-    inputs.property("version", version)
+    val minecraftVersion: String by project
+    val fabricLoaderVersion: String by project
+    val fabricApiVersion: String by project
+    val modMenuVersion: String by project
+    val reiVersion: String by project
 
-    filesMatching("fabric.mod.json") {
-        expand("version" to version)
-    }
+    "modLocalRuntime"(group = "me.shedaniel", name = "RoughlyEnoughItems-fabric", version = reiVersion)
+    "modCompileOnly"(group = "me.shedaniel", name = "RoughlyEnoughItems-default-plugin", version = reiVersion)
+
+    modImplementation(group = "net.fabricmc", name = "fabric-loader", version = fabricLoaderVersion)
+    modApi(group = "net.fabricmc.fabric-api", name = "fabric-api", version = "$fabricApiVersion+$minecraftVersion")
+
+    modApi(group = "com.terraformersmc", name = "modmenu", version = modMenuVersion)
 }

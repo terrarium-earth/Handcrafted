@@ -1,25 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "counter",
   "key": {
     "#": {
-      "item": "handcrafted:oak_board"
+      "item": "minecraft:oak_planks"
     },
     "/": {
-      "item": "minecraft:calcite"
+      "item": "minecraft:chest"
     },
     "@": {
-      "item": "minecraft:chest"
+      "item": "minecraft:calcite"
     }
   },
   "pattern": [
-    "///",
-    "#@#",
-    "###"
+    "@@@",
+    "#/#"
   ],
   "result": {
-    "count": 2,
+    "count": 3,
     "item": "handcrafted:oak_counter"
   },
   "show_notification": true

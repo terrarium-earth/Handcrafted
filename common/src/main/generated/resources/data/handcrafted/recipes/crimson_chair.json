@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "chair",
   "key": {
     "#": {
-      "item": "handcrafted:crimson_board"
+      "item": "minecraft:crimson_planks"
+    },
+    "-": {
+      "item": "minecraft:crimson_slab"
+    },
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "#  ",
-    "###",
-    "# #"
+    "- ",
+    "##",
+    "//"
   ],
   "result": {
     "count": 2,

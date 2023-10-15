@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/counter",
+  "textures": {
+    "particle": "minecraft:block/mangrove_planks",
+    "top": "handcrafted:block/counter/top/calcite",
+    "wood": "handcrafted:block/counter/mangrove_counter_1"
+  }
+}

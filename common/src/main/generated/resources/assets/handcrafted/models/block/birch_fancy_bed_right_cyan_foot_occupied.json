@@ -1,0 +1,9 @@
+{
+  "parent": "handcrafted:block/fancy_bed/bed_right_occupied",
+  "textures": {
+    "cushion": "handcrafted:block/bench/cushion/none_cushion",
+    "frame": "handcrafted:block/fancy_bed/double/birch_fancy_bed",
+    "particle": "minecraft:block/birch_planks",
+    "sheets": "handcrafted:block/fancy_bed/sheets/cyan_sheet"
+  }
+}

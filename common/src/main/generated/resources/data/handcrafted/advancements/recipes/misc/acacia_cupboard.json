@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cupboard": {
+    "has_acacia_cupboard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:acacia_board"
+              "minecraft:acacia_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cupboard",
+      "has_acacia_cupboard",
       "has_the_recipe"
     ]
   ],

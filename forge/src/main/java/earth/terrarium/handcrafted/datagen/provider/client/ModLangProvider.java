@@ -1,17 +1,14 @@
 package earth.terrarium.handcrafted.datagen.provider.client;
 
 import earth.terrarium.handcrafted.Handcrafted;
+import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.common.data.LanguageProvider;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.codehaus.plexus.util.StringUtils;
-
-import java.util.Objects;
 
 public class ModLangProvider extends LanguageProvider {
     public ModLangProvider(PackOutput output) {
@@ -20,37 +17,72 @@ public class ModLangProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        ModBlocks.BLOCKS.stream()
+            .forEach(entry -> addBlock(entry,
+                StringUtils.capitaliseAllWords(entry
+                    .getId()
+                    .getPath()
+                    .replace("_", " "))));
+
+        ModItems.ITEMS.stream()
+            .filter(i -> !(i.get() instanceof BlockItem))
+            .forEach(entry -> addItem(entry,
+                StringUtils.capitaliseAllWords(entry
+                    .getId()
+                    .getPath()
+                    .replace("_", " "))));
+
+        ModEntityTypes.ENTITY_TYPES.stream()
+            .forEach(entry -> addEntityType(entry,
+                StringUtils.capitaliseAllWords(entry
+                    .getId()
+                    .getPath()
+                    .replace("_", " "))));
+
+        ModItems.CUSHIONS.stream()
+            .forEach(entry -> add("item.handcrafted.%s".formatted(entry.getId().getPath()), StringUtils.capitaliseAllWords(entry
+                .getId()
+                .getPath()
+                .replace("_", " "))));
+
         add("itemGroup.handcrafted.main", "Handcrafted");
-        add("tooltip.handcrafted.board_help", "Obtained by throwing planks on a Stone Cutter");
-        add("tooltip.handcrafted.counter_help", "Place a wood or stone material to change the counter surface");
-        add("tooltip.handcrafted.cushion_help", "Place on furniture to change the color");
-        add("tooltip.handcrafted.hammer_help", "Changes the look of blocks");
-        add("tooltip.handcrafted.hammerable_help", "Hammer to change the look of this block");
-        add("tooltip.handcrafted.hold_shift", "Hold shift for more info");
-        add("tooltip.handcrafted.kitchen_hood_pipe_hammer", "Hammer to change the direction");
-        add("tooltip.handcrafted.sheet_help", "Place on furniture to change the color");
-        add("tooltip.handcrafted.shelf_help", "Holds: Potions, Books, Crockery, and Cobwebs");
 
-        ModBlocks.BLOCKS.stream().forEach(entry -> {
-            addBlock(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath()
-                .replace("_1", "")
-                .replace("_2", "")
-                .replace("_3", "")
-                .replace("_4", "")
-                .replace("_", " ")
-            ));
-        });
+        add(ConstantComponents.HAMMER.getString(), "Changes the look of blocks.");
+        add(ConstantComponents.HAMMER_USE_LOOK.getString(), "Right-click with a hammer to change the block's look.");
+        add(ConstantComponents.HAMMER_USE_SHAPE.getString(), "Right-click with a hammer to change the block's shape.");
+        add(ConstantComponents.HAMMER_USE_LOOK_SHIFT.getString(), "Shift-right-click with a hammer to change the block's look.");
+        add(ConstantComponents.COUNTER.getString(), "Right-click with wood or stone to change the counter surface.");
 
-        ModItems.ITEMS.stream().forEach(entry -> {
-            if (!(entry.get() instanceof BlockItem)) {
-                addItem(entry, StringUtils.capitaliseAllWords(Objects.requireNonNull(entry.getId()).getPath().replace("_", " ")));
-            }
-        });
+        add(ConstantComponents.PLACE_ON_FURNITURE.getString(), "Can be placed on furniture.");
+        add(ConstantComponents.CUSHION.getString(), "Right-click with a cushion to change the block's look.");
+        add(ConstantComponents.SHEET.getString(), "Right-click with a sheet to change the block's look.");
+        add(ConstantComponents.BED_PILLOW.getString(), "Right-click with a cushion to change the bed's pillow color.");
+        add(ConstantComponents.BED_SHEET.getString(), "Right-click with a sheet to change the bedsheets.");
 
-        ModEntityTypes.ENTITY_TYPES.stream().forEach(entity -> {
-            ResourceLocation id = ForgeRegistries.ENTITY_TYPES.getKey(entity.get());
-            assert id != null;
-            addEntityType(entity, StringUtils.capitaliseAllWords(id.getPath().replace("_", " ")));
-        });
+        add("subtitles.handcrafted.block.hammer_wood", "Wood is Hammered");
+        add("subtitles.handcrafted.block.hammer_stone", "Stone is Hammered");
+
+        add("tag.item.handcrafted.cushions", "Cushions");
+        add("tag.item.handcrafted.sheets", "Sheets");
+        add("tag.item.handcrafted.couches", "Couches");
+        add("tag.item.handcrafted.chairs", "Chairs");
+        add("tag.item.handcrafted.dining_benches", "Dining Benches");
+        add("tag.item.handcrafted.side_tables", "Side Tables");
+        add("tag.item.handcrafted.desks", "Desks");
+        add("tag.item.handcrafted.nightstands", "Nightstands");
+        add("tag.item.handcrafted.tables", "Tables");
+        add("tag.item.handcrafted.fancy_beds", "Fancy Beds");
+        add("tag.item.handcrafted.counters", "Counters");
+        add("tag.item.handcrafted.cupboards", "Cupboards");
+        add("tag.item.handcrafted.drawers", "Drawers");
+        add("tag.item.handcrafted.shelves", "Shelves");
+        add("tag.item.handcrafted.pots", "Pots");
+        add("tag.item.handcrafted.trims", "Trims");
+        add("tag.item.handcrafted.trophies", "Trophies");
+        add("tag.item.handcrafted.crockery", "Crockery");
+        add("tag.item.handcrafted.cups", "Cups");
+        add("tag.item.handcrafted.plates", "Plates");
+        add("tag.item.handcrafted.bowls", "Bowls");
+        add("tag.item.handcrafted.crockery_combos", "Crockery Combos");
     }
 }

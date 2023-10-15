@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "drawer",
   "key": {
     "#": {
-      "item": "handcrafted:dark_oak_board"
+      "item": "minecraft:dark_oak_planks"
+    },
+    "-": {
+      "item": "minecraft:dark_oak_slab"
     },
     "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "###",
     "#/#",
-    "###"
+    "---",
+    "---"
   ],
   "result": {
     "count": 2,

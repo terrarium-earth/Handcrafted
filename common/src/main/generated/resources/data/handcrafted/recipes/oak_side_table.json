@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "side_table",
   "key": {
     "#": {
-      "item": "handcrafted:oak_board"
+      "item": "minecraft:oak_planks"
+    },
+    "-": {
+      "item": "minecraft:oak_slab"
     },
     "/": {
-      "item": "minecraft:oak_planks"
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "   ",
+    "---",
     "#/#",
     "# #"
   ],

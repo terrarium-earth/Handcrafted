@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 90
+    },
+    "facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 90
+    },
+    "facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 90
+    },
+    "facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 90
+    },
+    "facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 90
+    },
+    "facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 90
+    },
+    "facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 90
+    },
+    "facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 90
+    },
+    "facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_left"
+    },
+    "facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_left"
+    },
+    "facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_middle"
+    },
+    "facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_middle"
+    },
+    "facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_right"
+    },
+    "facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_right"
+    },
+    "facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_single"
+    },
+    "facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_single"
+    },
+    "facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 180
+    },
+    "facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 180
+    },
+    "facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 180
+    },
+    "facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 180
+    },
+    "facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 180
+    },
+    "facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 180
+    },
+    "facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 180
+    },
+    "facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 180
+    },
+    "facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 270
+    },
+    "facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_left",
+      "y": 270
+    },
+    "facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 270
+    },
+    "facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_middle",
+      "y": 270
+    },
+    "facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 270
+    },
+    "facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_right",
+      "y": 270
+    },
+    "facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 270
+    },
+    "facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/oak_dining_bench_single",
+      "y": 270
+    }
+  }
+}

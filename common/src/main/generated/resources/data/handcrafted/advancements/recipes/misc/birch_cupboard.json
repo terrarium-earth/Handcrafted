@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cupboard": {
+    "has_birch_cupboard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:birch_board"
+              "minecraft:birch_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cupboard",
+      "has_birch_cupboard",
       "has_the_recipe"
     ]
   ],

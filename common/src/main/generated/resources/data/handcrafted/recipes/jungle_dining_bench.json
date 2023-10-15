@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "dining_bench",
   "key": {
     "#": {
-      "item": "handcrafted:jungle_board"
+      "item": "minecraft:jungle_planks"
+    },
+    "-": {
+      "item": "minecraft:jungle_slab"
     }
   },
   "pattern": [
-    "   ",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:jungle_dining_bench"
   },
   "show_notification": true

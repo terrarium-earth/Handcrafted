@@ -1,0 +1,3076 @@
+{
+  "variants": {
+    "facing=east,shape=inner_left,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=inner_right,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=inner_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=black": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=brown": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=cyan": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=green": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=light_blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=light_gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=lime": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=magenta": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=orange": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=pink": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=purple": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=red": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=white": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=left,color=yellow": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=black": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=brown": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=cyan": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=green": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=light_blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=light_gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=lime": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=magenta": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=orange": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=pink": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=purple": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=red": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=white": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle,color=yellow": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_left,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=east,shape=outer_right,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=outer_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=black": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=brown": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=cyan": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=green": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=light_blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=light_gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=lime": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=magenta": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=orange": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=pink": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=purple": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=red": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=white": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right,color=yellow": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=black": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=brown": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=cyan": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=green": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=light_blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=light_gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=lime": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=magenta": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=orange": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=pink": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=purple": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=red": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=white": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single,color=yellow": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,shape=inner_left,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=inner_right,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=inner_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=black": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=brown": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=cyan": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=green": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=light_blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=light_gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=lime": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=magenta": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=orange": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=pink": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=purple": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=red": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=white": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=left,color=yellow": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=black": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=brown": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=cyan": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=green": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=light_blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=light_gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=lime": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=magenta": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=orange": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=pink": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=purple": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=red": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=white": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle,color=yellow": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_left,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": -90
+      }
+    },
+    "facing=north,shape=outer_right,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=outer_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=black": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=brown": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=cyan": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=green": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=light_blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=light_gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=lime": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=magenta": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=orange": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=pink": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=purple": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=red": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=white": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right,color=yellow": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=black": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=brown": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=cyan": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=green": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=light_blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=light_gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=lime": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=magenta": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=orange": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=pink": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=purple": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=red": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=white": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single,color=yellow": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,shape=inner_left,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=inner_right,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=inner_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=black": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=brown": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=cyan": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=green": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=light_blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=light_gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=lime": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=magenta": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=orange": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=pink": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=purple": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=red": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=white": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=left,color=yellow": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=black": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=brown": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=cyan": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=green": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=light_blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=light_gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=lime": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=magenta": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=orange": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=pink": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=purple": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=red": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=white": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle,color=yellow": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_left,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=south,shape=outer_right,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=outer_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=black": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=brown": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=cyan": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=green": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=light_blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=light_gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=lime": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=magenta": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=orange": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=pink": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=purple": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=red": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=white": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right,color=yellow": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=black": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=brown": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=cyan": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=green": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=light_blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=light_gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=lime": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=magenta": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=orange": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=pink": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=purple": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=red": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=white": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single,color=yellow": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=inner_right,color=black": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=brown": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=green": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=lime": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=orange": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=pink": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=purple": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=red": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=white": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=inner_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=black": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=brown": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=cyan": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=green": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=light_blue": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=light_gray": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=lime": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=magenta": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=orange": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=pink": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=purple": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=red": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=white": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=left,color=yellow": {
+      "highlight": "handcrafted:couch/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=black": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=brown": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=cyan": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=green": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=light_blue": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=light_gray": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=lime": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=magenta": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=orange": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=pink": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=purple": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=red": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=white": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle,color=yellow": {
+      "highlight": "handcrafted:couch/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_left,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_left,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=outer_right,color=black": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=brown": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=cyan": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=green": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=light_blue": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=light_gray": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=lime": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=magenta": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=orange": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=pink": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=purple": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=red": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=white": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=outer_right,color=yellow": {
+      "highlight": "handcrafted:couch/corner_inverted",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=black": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=brown": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=cyan": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=green": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=light_blue": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=light_gray": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=lime": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=magenta": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=orange": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=pink": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=purple": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=red": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=white": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right,color=yellow": {
+      "highlight": "handcrafted:couch/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=black": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=brown": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=cyan": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=green": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=light_blue": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=light_gray": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=lime": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=magenta": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=orange": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=pink": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=purple": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=red": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=white": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single,color=yellow": {
+      "highlight": "handcrafted:couch/single",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

@@ -1,0 +1,4084 @@
+{
+  "variants": {
+    "color=black,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black"
+    },
+    "color=black,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black"
+    },
+    "color=black,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black"
+    },
+    "color=black,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black"
+    },
+    "color=black,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 90
+    },
+    "color=black,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 90
+    },
+    "color=black,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": -90
+    },
+    "color=black,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": -90
+    },
+    "color=black,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black"
+    },
+    "color=black,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black"
+    },
+    "color=black,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_black"
+    },
+    "color=black,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_black"
+    },
+    "color=black,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_black"
+    },
+    "color=black,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_black"
+    },
+    "color=black,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": -90
+    },
+    "color=black,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": -90
+    },
+    "color=black,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black"
+    },
+    "color=black,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black"
+    },
+    "color=black,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_black"
+    },
+    "color=black,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_black"
+    },
+    "color=black,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_black"
+    },
+    "color=black,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_black"
+    },
+    "color=black,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": 90
+    },
+    "color=black,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": 90
+    },
+    "color=black,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": 90
+    },
+    "color=black,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": 90
+    },
+    "color=black,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 180
+    },
+    "color=black,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 180
+    },
+    "color=black,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": 180
+    },
+    "color=black,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_black",
+      "y": 180
+    },
+    "color=black,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": 180
+    },
+    "color=black,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_black",
+      "y": 180
+    },
+    "color=black,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 270
+    },
+    "color=black,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_black",
+      "y": 270
+    },
+    "color=blue,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue"
+    },
+    "color=blue,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue"
+    },
+    "color=blue,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue"
+    },
+    "color=blue,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue"
+    },
+    "color=blue,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 90
+    },
+    "color=blue,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 90
+    },
+    "color=blue,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": -90
+    },
+    "color=blue,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": -90
+    },
+    "color=blue,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue"
+    },
+    "color=blue,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue"
+    },
+    "color=blue,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_blue"
+    },
+    "color=blue,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_blue"
+    },
+    "color=blue,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_blue"
+    },
+    "color=blue,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_blue"
+    },
+    "color=blue,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": -90
+    },
+    "color=blue,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": -90
+    },
+    "color=blue,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue"
+    },
+    "color=blue,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue"
+    },
+    "color=blue,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_blue"
+    },
+    "color=blue,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_blue"
+    },
+    "color=blue,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_blue"
+    },
+    "color=blue,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_blue"
+    },
+    "color=blue,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": 90
+    },
+    "color=blue,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 180
+    },
+    "color=blue,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 180
+    },
+    "color=blue,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_blue",
+      "y": 180
+    },
+    "color=blue,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 270
+    },
+    "color=blue,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_blue",
+      "y": 270
+    },
+    "color=brown,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown"
+    },
+    "color=brown,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown"
+    },
+    "color=brown,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown"
+    },
+    "color=brown,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown"
+    },
+    "color=brown,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 90
+    },
+    "color=brown,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 90
+    },
+    "color=brown,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": -90
+    },
+    "color=brown,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": -90
+    },
+    "color=brown,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown"
+    },
+    "color=brown,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown"
+    },
+    "color=brown,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_brown"
+    },
+    "color=brown,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_brown"
+    },
+    "color=brown,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_brown"
+    },
+    "color=brown,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_brown"
+    },
+    "color=brown,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": -90
+    },
+    "color=brown,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": -90
+    },
+    "color=brown,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown"
+    },
+    "color=brown,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown"
+    },
+    "color=brown,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_brown"
+    },
+    "color=brown,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_brown"
+    },
+    "color=brown,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_brown"
+    },
+    "color=brown,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_brown"
+    },
+    "color=brown,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": 90
+    },
+    "color=brown,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 180
+    },
+    "color=brown,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 180
+    },
+    "color=brown,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_brown",
+      "y": 180
+    },
+    "color=brown,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 270
+    },
+    "color=brown,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_brown",
+      "y": 270
+    },
+    "color=cyan,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan"
+    },
+    "color=cyan,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan"
+    },
+    "color=cyan,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan"
+    },
+    "color=cyan,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan"
+    },
+    "color=cyan,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": -90
+    },
+    "color=cyan,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": -90
+    },
+    "color=cyan,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan"
+    },
+    "color=cyan,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan"
+    },
+    "color=cyan,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_cyan"
+    },
+    "color=cyan,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_cyan"
+    },
+    "color=cyan,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan"
+    },
+    "color=cyan,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan"
+    },
+    "color=cyan,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": -90
+    },
+    "color=cyan,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": -90
+    },
+    "color=cyan,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan"
+    },
+    "color=cyan,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan"
+    },
+    "color=cyan,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_cyan"
+    },
+    "color=cyan,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_cyan"
+    },
+    "color=cyan,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_cyan"
+    },
+    "color=cyan,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_cyan"
+    },
+    "color=cyan,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": 90
+    },
+    "color=cyan,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_cyan",
+      "y": 180
+    },
+    "color=cyan,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 270
+    },
+    "color=cyan,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_cyan",
+      "y": 270
+    },
+    "color=gray,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray"
+    },
+    "color=gray,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray"
+    },
+    "color=gray,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray"
+    },
+    "color=gray,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray"
+    },
+    "color=gray,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 90
+    },
+    "color=gray,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 90
+    },
+    "color=gray,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": -90
+    },
+    "color=gray,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": -90
+    },
+    "color=gray,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray"
+    },
+    "color=gray,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray"
+    },
+    "color=gray,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_gray"
+    },
+    "color=gray,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_gray"
+    },
+    "color=gray,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_gray"
+    },
+    "color=gray,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_gray"
+    },
+    "color=gray,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": -90
+    },
+    "color=gray,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": -90
+    },
+    "color=gray,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray"
+    },
+    "color=gray,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray"
+    },
+    "color=gray,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_gray"
+    },
+    "color=gray,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_gray"
+    },
+    "color=gray,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_gray"
+    },
+    "color=gray,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_gray"
+    },
+    "color=gray,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": 90
+    },
+    "color=gray,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 180
+    },
+    "color=gray,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 180
+    },
+    "color=gray,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_gray",
+      "y": 180
+    },
+    "color=gray,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 270
+    },
+    "color=gray,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_gray",
+      "y": 270
+    },
+    "color=green,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green"
+    },
+    "color=green,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green"
+    },
+    "color=green,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green"
+    },
+    "color=green,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green"
+    },
+    "color=green,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 90
+    },
+    "color=green,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 90
+    },
+    "color=green,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": -90
+    },
+    "color=green,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": -90
+    },
+    "color=green,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green"
+    },
+    "color=green,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green"
+    },
+    "color=green,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_green"
+    },
+    "color=green,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_green"
+    },
+    "color=green,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_green"
+    },
+    "color=green,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_green"
+    },
+    "color=green,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": -90
+    },
+    "color=green,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": -90
+    },
+    "color=green,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green"
+    },
+    "color=green,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green"
+    },
+    "color=green,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_green"
+    },
+    "color=green,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_green"
+    },
+    "color=green,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_green"
+    },
+    "color=green,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_green"
+    },
+    "color=green,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": 90
+    },
+    "color=green,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": 90
+    },
+    "color=green,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": 90
+    },
+    "color=green,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": 90
+    },
+    "color=green,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 180
+    },
+    "color=green,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 180
+    },
+    "color=green,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": 180
+    },
+    "color=green,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_green",
+      "y": 180
+    },
+    "color=green,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": 180
+    },
+    "color=green,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_green",
+      "y": 180
+    },
+    "color=green,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 270
+    },
+    "color=green,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_green",
+      "y": 270
+    },
+    "color=light_blue,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue"
+    },
+    "color=light_blue,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue"
+    },
+    "color=light_blue,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue"
+    },
+    "color=light_blue,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue"
+    },
+    "color=light_blue,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": -90
+    },
+    "color=light_blue,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": -90
+    },
+    "color=light_blue,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue"
+    },
+    "color=light_blue,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue"
+    },
+    "color=light_blue,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue"
+    },
+    "color=light_blue,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue"
+    },
+    "color=light_blue,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": -90
+    },
+    "color=light_blue,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": -90
+    },
+    "color=light_blue,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue"
+    },
+    "color=light_blue,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue"
+    },
+    "color=light_blue,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue"
+    },
+    "color=light_blue,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": 90
+    },
+    "color=light_blue,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_blue",
+      "y": 180
+    },
+    "color=light_blue,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 270
+    },
+    "color=light_blue,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_blue",
+      "y": 270
+    },
+    "color=light_gray,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray"
+    },
+    "color=light_gray,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray"
+    },
+    "color=light_gray,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray"
+    },
+    "color=light_gray,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray"
+    },
+    "color=light_gray,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": -90
+    },
+    "color=light_gray,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": -90
+    },
+    "color=light_gray,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray"
+    },
+    "color=light_gray,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray"
+    },
+    "color=light_gray,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray"
+    },
+    "color=light_gray,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray"
+    },
+    "color=light_gray,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": -90
+    },
+    "color=light_gray,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": -90
+    },
+    "color=light_gray,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray"
+    },
+    "color=light_gray,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray"
+    },
+    "color=light_gray,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray"
+    },
+    "color=light_gray,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": 90
+    },
+    "color=light_gray,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_light_gray",
+      "y": 180
+    },
+    "color=light_gray,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 270
+    },
+    "color=light_gray,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_light_gray",
+      "y": 270
+    },
+    "color=lime,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime"
+    },
+    "color=lime,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime"
+    },
+    "color=lime,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime"
+    },
+    "color=lime,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime"
+    },
+    "color=lime,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 90
+    },
+    "color=lime,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 90
+    },
+    "color=lime,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": -90
+    },
+    "color=lime,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": -90
+    },
+    "color=lime,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime"
+    },
+    "color=lime,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime"
+    },
+    "color=lime,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_lime"
+    },
+    "color=lime,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_lime"
+    },
+    "color=lime,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_lime"
+    },
+    "color=lime,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_lime"
+    },
+    "color=lime,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": -90
+    },
+    "color=lime,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": -90
+    },
+    "color=lime,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime"
+    },
+    "color=lime,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime"
+    },
+    "color=lime,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_lime"
+    },
+    "color=lime,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_lime"
+    },
+    "color=lime,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_lime"
+    },
+    "color=lime,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_lime"
+    },
+    "color=lime,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": 90
+    },
+    "color=lime,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 180
+    },
+    "color=lime,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 180
+    },
+    "color=lime,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_lime",
+      "y": 180
+    },
+    "color=lime,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 270
+    },
+    "color=lime,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_lime",
+      "y": 270
+    },
+    "color=magenta,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta"
+    },
+    "color=magenta,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta"
+    },
+    "color=magenta,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta"
+    },
+    "color=magenta,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta"
+    },
+    "color=magenta,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": -90
+    },
+    "color=magenta,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": -90
+    },
+    "color=magenta,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta"
+    },
+    "color=magenta,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta"
+    },
+    "color=magenta,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_magenta"
+    },
+    "color=magenta,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_magenta"
+    },
+    "color=magenta,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta"
+    },
+    "color=magenta,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta"
+    },
+    "color=magenta,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": -90
+    },
+    "color=magenta,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": -90
+    },
+    "color=magenta,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta"
+    },
+    "color=magenta,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta"
+    },
+    "color=magenta,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_magenta"
+    },
+    "color=magenta,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_magenta"
+    },
+    "color=magenta,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_magenta"
+    },
+    "color=magenta,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_magenta"
+    },
+    "color=magenta,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": 90
+    },
+    "color=magenta,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_magenta",
+      "y": 180
+    },
+    "color=magenta,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 270
+    },
+    "color=magenta,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_magenta",
+      "y": 270
+    },
+    "color=none,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none"
+    },
+    "color=none,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none"
+    },
+    "color=none,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none"
+    },
+    "color=none,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none"
+    },
+    "color=none,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 90
+    },
+    "color=none,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 90
+    },
+    "color=none,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": -90
+    },
+    "color=none,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": -90
+    },
+    "color=none,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none"
+    },
+    "color=none,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none"
+    },
+    "color=none,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_none"
+    },
+    "color=none,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_none"
+    },
+    "color=none,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_none"
+    },
+    "color=none,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_none"
+    },
+    "color=none,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": -90
+    },
+    "color=none,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": -90
+    },
+    "color=none,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none"
+    },
+    "color=none,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none"
+    },
+    "color=none,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_none"
+    },
+    "color=none,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_none"
+    },
+    "color=none,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_none"
+    },
+    "color=none,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_none"
+    },
+    "color=none,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": 90
+    },
+    "color=none,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": 90
+    },
+    "color=none,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": 90
+    },
+    "color=none,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": 90
+    },
+    "color=none,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 180
+    },
+    "color=none,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 180
+    },
+    "color=none,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": 180
+    },
+    "color=none,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_none",
+      "y": 180
+    },
+    "color=none,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": 180
+    },
+    "color=none,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_none",
+      "y": 180
+    },
+    "color=none,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 270
+    },
+    "color=none,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_none",
+      "y": 270
+    },
+    "color=orange,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange"
+    },
+    "color=orange,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange"
+    },
+    "color=orange,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange"
+    },
+    "color=orange,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange"
+    },
+    "color=orange,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 90
+    },
+    "color=orange,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 90
+    },
+    "color=orange,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": -90
+    },
+    "color=orange,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": -90
+    },
+    "color=orange,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange"
+    },
+    "color=orange,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange"
+    },
+    "color=orange,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_orange"
+    },
+    "color=orange,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_orange"
+    },
+    "color=orange,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_orange"
+    },
+    "color=orange,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_orange"
+    },
+    "color=orange,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": -90
+    },
+    "color=orange,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": -90
+    },
+    "color=orange,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange"
+    },
+    "color=orange,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange"
+    },
+    "color=orange,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_orange"
+    },
+    "color=orange,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_orange"
+    },
+    "color=orange,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_orange"
+    },
+    "color=orange,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_orange"
+    },
+    "color=orange,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": 90
+    },
+    "color=orange,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 180
+    },
+    "color=orange,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 180
+    },
+    "color=orange,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_orange",
+      "y": 180
+    },
+    "color=orange,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 270
+    },
+    "color=orange,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_orange",
+      "y": 270
+    },
+    "color=pink,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink"
+    },
+    "color=pink,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink"
+    },
+    "color=pink,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink"
+    },
+    "color=pink,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink"
+    },
+    "color=pink,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 90
+    },
+    "color=pink,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 90
+    },
+    "color=pink,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": -90
+    },
+    "color=pink,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": -90
+    },
+    "color=pink,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink"
+    },
+    "color=pink,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink"
+    },
+    "color=pink,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_pink"
+    },
+    "color=pink,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_pink"
+    },
+    "color=pink,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_pink"
+    },
+    "color=pink,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_pink"
+    },
+    "color=pink,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": -90
+    },
+    "color=pink,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": -90
+    },
+    "color=pink,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink"
+    },
+    "color=pink,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink"
+    },
+    "color=pink,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_pink"
+    },
+    "color=pink,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_pink"
+    },
+    "color=pink,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_pink"
+    },
+    "color=pink,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_pink"
+    },
+    "color=pink,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": 90
+    },
+    "color=pink,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 180
+    },
+    "color=pink,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 180
+    },
+    "color=pink,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_pink",
+      "y": 180
+    },
+    "color=pink,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 270
+    },
+    "color=pink,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_pink",
+      "y": 270
+    },
+    "color=purple,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple"
+    },
+    "color=purple,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple"
+    },
+    "color=purple,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple"
+    },
+    "color=purple,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple"
+    },
+    "color=purple,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 90
+    },
+    "color=purple,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 90
+    },
+    "color=purple,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": -90
+    },
+    "color=purple,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": -90
+    },
+    "color=purple,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple"
+    },
+    "color=purple,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple"
+    },
+    "color=purple,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_purple"
+    },
+    "color=purple,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_purple"
+    },
+    "color=purple,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_purple"
+    },
+    "color=purple,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_purple"
+    },
+    "color=purple,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": -90
+    },
+    "color=purple,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": -90
+    },
+    "color=purple,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple"
+    },
+    "color=purple,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple"
+    },
+    "color=purple,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_purple"
+    },
+    "color=purple,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_purple"
+    },
+    "color=purple,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_purple"
+    },
+    "color=purple,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_purple"
+    },
+    "color=purple,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": 90
+    },
+    "color=purple,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 180
+    },
+    "color=purple,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 180
+    },
+    "color=purple,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_purple",
+      "y": 180
+    },
+    "color=purple,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 270
+    },
+    "color=purple,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_purple",
+      "y": 270
+    },
+    "color=red,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red"
+    },
+    "color=red,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red"
+    },
+    "color=red,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red"
+    },
+    "color=red,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red"
+    },
+    "color=red,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 90
+    },
+    "color=red,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 90
+    },
+    "color=red,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": -90
+    },
+    "color=red,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": -90
+    },
+    "color=red,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red"
+    },
+    "color=red,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red"
+    },
+    "color=red,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_red"
+    },
+    "color=red,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_red"
+    },
+    "color=red,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_red"
+    },
+    "color=red,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_red"
+    },
+    "color=red,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": -90
+    },
+    "color=red,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": -90
+    },
+    "color=red,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red"
+    },
+    "color=red,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red"
+    },
+    "color=red,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_red"
+    },
+    "color=red,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_red"
+    },
+    "color=red,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_red"
+    },
+    "color=red,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_red"
+    },
+    "color=red,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": 90
+    },
+    "color=red,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": 90
+    },
+    "color=red,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": 90
+    },
+    "color=red,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": 90
+    },
+    "color=red,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 180
+    },
+    "color=red,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 180
+    },
+    "color=red,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": 180
+    },
+    "color=red,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_red",
+      "y": 180
+    },
+    "color=red,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": 180
+    },
+    "color=red,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_red",
+      "y": 180
+    },
+    "color=red,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 270
+    },
+    "color=red,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_red",
+      "y": 270
+    },
+    "color=white,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white"
+    },
+    "color=white,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white"
+    },
+    "color=white,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white"
+    },
+    "color=white,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white"
+    },
+    "color=white,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 90
+    },
+    "color=white,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 90
+    },
+    "color=white,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": -90
+    },
+    "color=white,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": -90
+    },
+    "color=white,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white"
+    },
+    "color=white,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white"
+    },
+    "color=white,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_white"
+    },
+    "color=white,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_white"
+    },
+    "color=white,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_white"
+    },
+    "color=white,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_white"
+    },
+    "color=white,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": -90
+    },
+    "color=white,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": -90
+    },
+    "color=white,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white"
+    },
+    "color=white,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white"
+    },
+    "color=white,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_white"
+    },
+    "color=white,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_white"
+    },
+    "color=white,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_white"
+    },
+    "color=white,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_white"
+    },
+    "color=white,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": 90
+    },
+    "color=white,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": 90
+    },
+    "color=white,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": 90
+    },
+    "color=white,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": 90
+    },
+    "color=white,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 180
+    },
+    "color=white,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 180
+    },
+    "color=white,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": 180
+    },
+    "color=white,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_white",
+      "y": 180
+    },
+    "color=white,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": 180
+    },
+    "color=white,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_white",
+      "y": 180
+    },
+    "color=white,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 270
+    },
+    "color=white,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_white",
+      "y": 270
+    },
+    "color=yellow,facing=east,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow"
+    },
+    "color=yellow,facing=east,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow"
+    },
+    "color=yellow,facing=east,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow"
+    },
+    "color=yellow,facing=east,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow"
+    },
+    "color=yellow,facing=east,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=east,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=north,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": -90
+    },
+    "color=yellow,facing=north,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": -90
+    },
+    "color=yellow,facing=north,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow"
+    },
+    "color=yellow,facing=north,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow"
+    },
+    "color=yellow,facing=north,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_yellow"
+    },
+    "color=yellow,facing=north,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_yellow"
+    },
+    "color=yellow,facing=north,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow"
+    },
+    "color=yellow,facing=north,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow"
+    },
+    "color=yellow,facing=north,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": -90
+    },
+    "color=yellow,facing=north,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": -90
+    },
+    "color=yellow,facing=north,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow"
+    },
+    "color=yellow,facing=north,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow"
+    },
+    "color=yellow,facing=north,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_yellow"
+    },
+    "color=yellow,facing=north,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_yellow"
+    },
+    "color=yellow,facing=north,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_yellow"
+    },
+    "color=yellow,facing=north,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_yellow"
+    },
+    "color=yellow,facing=south,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=south,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=south,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=south,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": 90
+    },
+    "color=yellow,facing=south,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=south,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=west,shape=inner_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=west,shape=inner_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=west,shape=inner_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=inner_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_inner_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_left_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=middle,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=middle,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_middle_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=outer_left,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=west,shape=outer_left,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_left_yellow",
+      "y": 180
+    },
+    "color=yellow,facing=west,shape=outer_right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=outer_right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_outer_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=right,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=right,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_right_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 270
+    },
+    "color=yellow,facing=west,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/crimson_bench_single_yellow",
+      "y": 270
+    }
+  }
+}

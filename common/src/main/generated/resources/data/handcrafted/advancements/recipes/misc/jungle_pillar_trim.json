@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pillar_trim": {
+    "has_jungle_pillar_trim": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:jungle_board"
+              "minecraft:jungle_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pillar_trim",
+      "has_jungle_pillar_trim",
       "has_the_recipe"
     ]
   ],

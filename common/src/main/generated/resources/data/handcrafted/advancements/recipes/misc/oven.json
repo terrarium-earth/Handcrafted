@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_smoker": {
+    "has_oven": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:smoker"
+              "minecraft:brick"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_smoker",
+      "has_oven",
       "has_the_recipe"
     ]
   ],

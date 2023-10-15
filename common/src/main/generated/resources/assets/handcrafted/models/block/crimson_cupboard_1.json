@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/cupboard/crimson/cupboard_top",
+    "east": "handcrafted:block/cupboard/crimson/cupboard_side",
+    "north": "handcrafted:block/cupboard/crimson/cupboard_1",
+    "particle": "minecraft:block/crimson_planks",
+    "south": "handcrafted:block/cupboard/crimson/cupboard_back",
+    "up": "handcrafted:block/cupboard/crimson/cupboard_top",
+    "west": "handcrafted:block/cupboard/crimson/cupboard_side"
+  }
+}

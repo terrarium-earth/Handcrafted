@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "chair",
   "key": {
     "#": {
-      "item": "handcrafted:spruce_board"
+      "item": "minecraft:spruce_planks"
+    },
+    "-": {
+      "item": "minecraft:spruce_slab"
+    },
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "#  ",
-    "###",
-    "# #"
+    "- ",
+    "##",
+    "//"
   ],
   "result": {
     "count": 2,

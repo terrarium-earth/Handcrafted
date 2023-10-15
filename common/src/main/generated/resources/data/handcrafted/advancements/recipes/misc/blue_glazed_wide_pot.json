@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta": {
+    "has_blue_glazed_wide_pot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:terracotta"
+              "minecraft:blue_glazed_terracotta"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_terracotta",
+      "has_blue_glazed_wide_pot",
       "has_the_recipe"
     ]
   ],

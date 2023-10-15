@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=east": {
+      "highlight": "handcrafted:bear_trophy_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north": {
+      "highlight": "handcrafted:bear_trophy_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south": {
+      "highlight": "handcrafted:bear_trophy_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west": {
+      "highlight": "handcrafted:bear_trophy_shape",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

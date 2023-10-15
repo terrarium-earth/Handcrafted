@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:warped_board"
+      "item": "minecraft:warped_planks"
+    },
+    "-": {
+      "item": "minecraft:warped_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:warped_bench"
   },
   "show_notification": true

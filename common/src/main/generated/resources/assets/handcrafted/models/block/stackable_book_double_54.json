@@ -1,0 +1,9 @@
+{
+  "parent": "handcrafted:block/stackable_book/double",
+  "textures": {
+    "book1": "handcrafted:block/stackable_book/pink_book",
+    "book2": "handcrafted:block/stackable_book/gray_book",
+    "book3": "handcrafted:block/stackable_book/light_gray_book",
+    "book4": "handcrafted:block/stackable_book/cyan_book"
+  }
+}

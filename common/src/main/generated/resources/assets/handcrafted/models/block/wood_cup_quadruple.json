@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/crockery/cup/quadruple",
+  "textures": {
+    "texture": "handcrafted:block/crockery/wood_crockery"
+  }
+}

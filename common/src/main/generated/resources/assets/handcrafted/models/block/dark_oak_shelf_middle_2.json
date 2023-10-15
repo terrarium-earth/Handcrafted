@@ -1,0 +1,11 @@
+{
+  "parent": "handcrafted:block/shelf",
+  "textures": {
+    "back": "handcrafted:block/shelf/dark_oak/shelf_back",
+    "front": "handcrafted:block/shelf/dark_oak/shelf_middle",
+    "left": "handcrafted:block/shelf/dark_oak/shelf_side_left",
+    "overlay": "handcrafted:block/shelf/overlay/books_middle",
+    "right": "handcrafted:block/shelf/dark_oak/shelf_side_right",
+    "wood": "minecraft:block/dark_oak_planks"
+  }
+}

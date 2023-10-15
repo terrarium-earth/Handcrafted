@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:acacia_board"
+      "item": "minecraft:acacia_planks"
+    },
+    "-": {
+      "item": "minecraft:acacia_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:acacia_bench"
   },
   "show_notification": true

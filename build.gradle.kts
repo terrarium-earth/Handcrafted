@@ -22,7 +22,6 @@ subprojects {
     apply(plugin = "maven-publish")
     apply(plugin = "dev.architectury.loom")
     apply(plugin = "architectury-plugin")
-    apply(plugin = "com.github.johnrengelman.shadow")
 
     val minecraftVersion: String by project
     val modLoader = project.name
@@ -58,7 +57,7 @@ subprojects {
         })
 
         compileOnly(group = "com.teamresourceful", name = "yabn", version = "1.0.3")
-        "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion)
+        "include"("modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion))
     }
 
     java {
@@ -73,7 +72,15 @@ subprojects {
         archiveClassifier.set(null as String?)
     }
 
+    tasks.processResources {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        filesMatching(listOf("META-INF/mods.toml", "fabric.mod.json")) {
+            expand("version" to project.version)
+        }
+    }
+
     if (!isCommon) {
+        apply(plugin = "com.github.johnrengelman.shadow")
         configure<ArchitectPluginExtension> {
             platformSetupLoomIde()
         }
@@ -87,6 +94,9 @@ subprojects {
             "shadowJar"(ShadowJar::class) {
                 archiveClassifier.set("dev-shadow")
                 configurations = listOf(shadowCommon)
+
+                exclude(".cache/**") // Remove datagen cache from jar.
+                exclude("**/handcrafted/datagen/**") // Remove data gen code from jar.
             }
 
             "remapJar"(RemapJarTask::class) {
@@ -106,17 +116,17 @@ subprojects {
 
                 pom {
                     name.set("Handcrafted $modLoader")
-                    url.set("https://github.com/terrarium-earth/$modId")
+                    url.set("https://github.com/bonsaistudi0s/$modId")
 
                     scm {
-                        connection.set("git:https://github.com/terrarium-earth/$modId.git")
-                        developerConnection.set("git:https://github.com/terrarium-earth/$modId.git")
-                        url.set("https://github.com/terrarium-earth/$modId")
+                        connection.set("git:https://github.com/bonsaistudi0s/$modId.git")
+                        developerConnection.set("git:https://github.com/bonsaistudi0s/$modId.git")
+                        url.set("https://github.com/bonsaistudi0s/$modId")
                     }
 
                     licenses {
                         license {
-                            name.set("MIT")
+                            name.set("ARR")
                         }
                     }
                 }
@@ -124,7 +134,7 @@ subprojects {
         }
         repositories {
             maven {
-                setUrl("https://maven.resourcefulbees.com/repository/terrarium/")
+                setUrl("https://maven.resourcefulbees.com/repository/bonsaistudi0s/")
                 credentials {
                     username = System.getenv("MAVEN_USER")
                     password = System.getenv("MAVEN_PASS")

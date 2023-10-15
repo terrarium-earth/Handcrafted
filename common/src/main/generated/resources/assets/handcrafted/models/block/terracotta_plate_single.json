@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/crockery/plate/single",
+  "textures": {
+    "texture": "handcrafted:block/crockery/terracotta_crockery"
+  }
+}

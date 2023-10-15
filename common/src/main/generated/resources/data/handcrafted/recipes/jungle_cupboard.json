@@ -1,25 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "cupboard",
   "key": {
     "#": {
-      "item": "handcrafted:jungle_board"
-    },
-    "/": {
       "item": "minecraft:jungle_planks"
     },
-    "@": {
+    "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
     "###",
-    "/@/",
+    "#/#",
     "###"
   ],
   "result": {
-    "count": 2,
+    "count": 3,
     "item": "handcrafted:jungle_cupboard"
   },
   "show_notification": true

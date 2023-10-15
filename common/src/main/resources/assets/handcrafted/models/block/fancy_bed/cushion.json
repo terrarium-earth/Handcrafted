@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "#cushion"
+	},
+	"elements": [
+		{
+			"from": [3, 5.88388, 1.36612],
+			"to": [13, 9.88388, 7.36612],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 8.88388, 5.11612]},
+			"faces": {
+				"north": {"uv": [10.5, 8.25, 11.75, 8.75], "texture": "#0"},
+				"east": {"uv": [9.75, 8.25, 10.5, 8.75], "texture": "#0"},
+				"south": {"uv": [8.5, 8.25, 9.75, 8.75], "texture": "#0"},
+				"west": {"uv": [7.75, 8.25, 8.5, 8.75], "texture": "#0"},
+				"up": {"uv": [9.75, 8.25, 8.5, 7.5], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [11, 7.5, 9.75, 8.25], "rotation": 180, "texture": "#0"}
+			}
+		}
+	]
+}

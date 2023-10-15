@@ -1,0 +1,9 @@
+{
+  "parent": "handcrafted:block/stackable_book/quadruple",
+  "textures": {
+    "book1": "handcrafted:block/stackable_book/purple_book",
+    "book2": "handcrafted:block/stackable_book/blue_book",
+    "book3": "handcrafted:block/stackable_book/brown_book",
+    "book4": "handcrafted:block/stackable_book/green_book"
+  }
+}

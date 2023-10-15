@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "terracotta_crockery_combo",
   "ingredients": [
     {
       "item": "handcrafted:terracotta_cup"

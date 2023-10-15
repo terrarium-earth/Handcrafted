@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "yellow_crockery_combo",
   "ingredients": [
     {
-      "item": "handcrafted:yellow_cup"
+      "item": "minecraft:yellow_dye"
     },
     {
-      "item": "handcrafted:yellow_plate"
+      "item": "handcrafted:terracotta_crockery_combo"
     }
   ],
   "result": {

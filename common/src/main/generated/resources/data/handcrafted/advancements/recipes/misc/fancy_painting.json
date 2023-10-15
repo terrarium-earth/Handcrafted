@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_painting": {
+    "has_fancy_painting": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_painting",
+      "has_fancy_painting",
       "has_the_recipe"
     ]
   ],

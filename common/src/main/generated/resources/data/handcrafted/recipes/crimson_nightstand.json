@@ -1,22 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "nightstand",
   "key": {
     "#": {
-      "item": "handcrafted:crimson_board"
-    },
-    "/": {
       "item": "minecraft:crimson_planks"
     },
-    "@": {
+    "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "///",
-    "#@#",
-    "###"
+    "###",
+    "#/#"
   ],
   "result": {
     "count": 2,

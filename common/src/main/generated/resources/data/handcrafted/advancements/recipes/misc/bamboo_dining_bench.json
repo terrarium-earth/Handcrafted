@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dining_bench": {
+    "has_bamboo_dining_bench": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:bamboo_board"
+              "minecraft:bamboo_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_dining_bench",
+      "has_bamboo_dining_bench",
       "has_the_recipe"
     ]
   ],

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nightstand": {
+    "has_spruce_nightstand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:spruce_board"
+              "minecraft:spruce_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nightstand",
+      "has_spruce_nightstand",
       "has_the_recipe"
     ]
   ],

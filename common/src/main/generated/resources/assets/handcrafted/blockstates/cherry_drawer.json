@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "facing=east,shape=left,type=1": {
+      "model": "handcrafted:block/cherry_drawer_left_1",
+      "y": 90
+    },
+    "facing=east,shape=left,type=2": {
+      "model": "handcrafted:block/cherry_drawer_left_2",
+      "y": 90
+    },
+    "facing=east,shape=left,type=3": {
+      "model": "handcrafted:block/cherry_drawer_left_3",
+      "y": 90
+    },
+    "facing=east,shape=left,type=4": {
+      "model": "handcrafted:block/cherry_drawer_left_4",
+      "y": 90
+    },
+    "facing=east,shape=middle,type=1": {
+      "model": "handcrafted:block/cherry_drawer_middle_1",
+      "y": 90
+    },
+    "facing=east,shape=middle,type=2": {
+      "model": "handcrafted:block/cherry_drawer_middle_2",
+      "y": 90
+    },
+    "facing=east,shape=middle,type=3": {
+      "model": "handcrafted:block/cherry_drawer_middle_3",
+      "y": 90
+    },
+    "facing=east,shape=middle,type=4": {
+      "model": "handcrafted:block/cherry_drawer_middle_4",
+      "y": 90
+    },
+    "facing=east,shape=right,type=1": {
+      "model": "handcrafted:block/cherry_drawer_right_1",
+      "y": 90
+    },
+    "facing=east,shape=right,type=2": {
+      "model": "handcrafted:block/cherry_drawer_right_2",
+      "y": 90
+    },
+    "facing=east,shape=right,type=3": {
+      "model": "handcrafted:block/cherry_drawer_right_3",
+      "y": 90
+    },
+    "facing=east,shape=right,type=4": {
+      "model": "handcrafted:block/cherry_drawer_right_4",
+      "y": 90
+    },
+    "facing=east,shape=single,type=1": {
+      "model": "handcrafted:block/cherry_drawer_single_1",
+      "y": 90
+    },
+    "facing=east,shape=single,type=2": {
+      "model": "handcrafted:block/cherry_drawer_single_2",
+      "y": 90
+    },
+    "facing=east,shape=single,type=3": {
+      "model": "handcrafted:block/cherry_drawer_single_3",
+      "y": 90
+    },
+    "facing=east,shape=single,type=4": {
+      "model": "handcrafted:block/cherry_drawer_single_4",
+      "y": 90
+    },
+    "facing=north,shape=left,type=1": {
+      "model": "handcrafted:block/cherry_drawer_left_1"
+    },
+    "facing=north,shape=left,type=2": {
+      "model": "handcrafted:block/cherry_drawer_left_2"
+    },
+    "facing=north,shape=left,type=3": {
+      "model": "handcrafted:block/cherry_drawer_left_3"
+    },
+    "facing=north,shape=left,type=4": {
+      "model": "handcrafted:block/cherry_drawer_left_4"
+    },
+    "facing=north,shape=middle,type=1": {
+      "model": "handcrafted:block/cherry_drawer_middle_1"
+    },
+    "facing=north,shape=middle,type=2": {
+      "model": "handcrafted:block/cherry_drawer_middle_2"
+    },
+    "facing=north,shape=middle,type=3": {
+      "model": "handcrafted:block/cherry_drawer_middle_3"
+    },
+    "facing=north,shape=middle,type=4": {
+      "model": "handcrafted:block/cherry_drawer_middle_4"
+    },
+    "facing=north,shape=right,type=1": {
+      "model": "handcrafted:block/cherry_drawer_right_1"
+    },
+    "facing=north,shape=right,type=2": {
+      "model": "handcrafted:block/cherry_drawer_right_2"
+    },
+    "facing=north,shape=right,type=3": {
+      "model": "handcrafted:block/cherry_drawer_right_3"
+    },
+    "facing=north,shape=right,type=4": {
+      "model": "handcrafted:block/cherry_drawer_right_4"
+    },
+    "facing=north,shape=single,type=1": {
+      "model": "handcrafted:block/cherry_drawer_single_1"
+    },
+    "facing=north,shape=single,type=2": {
+      "model": "handcrafted:block/cherry_drawer_single_2"
+    },
+    "facing=north,shape=single,type=3": {
+      "model": "handcrafted:block/cherry_drawer_single_3"
+    },
+    "facing=north,shape=single,type=4": {
+      "model": "handcrafted:block/cherry_drawer_single_4"
+    },
+    "facing=south,shape=left,type=1": {
+      "model": "handcrafted:block/cherry_drawer_left_1",
+      "y": 180
+    },
+    "facing=south,shape=left,type=2": {
+      "model": "handcrafted:block/cherry_drawer_left_2",
+      "y": 180
+    },
+    "facing=south,shape=left,type=3": {
+      "model": "handcrafted:block/cherry_drawer_left_3",
+      "y": 180
+    },
+    "facing=south,shape=left,type=4": {
+      "model": "handcrafted:block/cherry_drawer_left_4",
+      "y": 180
+    },
+    "facing=south,shape=middle,type=1": {
+      "model": "handcrafted:block/cherry_drawer_middle_1",
+      "y": 180
+    },
+    "facing=south,shape=middle,type=2": {
+      "model": "handcrafted:block/cherry_drawer_middle_2",
+      "y": 180
+    },
+    "facing=south,shape=middle,type=3": {
+      "model": "handcrafted:block/cherry_drawer_middle_3",
+      "y": 180
+    },
+    "facing=south,shape=middle,type=4": {
+      "model": "handcrafted:block/cherry_drawer_middle_4",
+      "y": 180
+    },
+    "facing=south,shape=right,type=1": {
+      "model": "handcrafted:block/cherry_drawer_right_1",
+      "y": 180
+    },
+    "facing=south,shape=right,type=2": {
+      "model": "handcrafted:block/cherry_drawer_right_2",
+      "y": 180
+    },
+    "facing=south,shape=right,type=3": {
+      "model": "handcrafted:block/cherry_drawer_right_3",
+      "y": 180
+    },
+    "facing=south,shape=right,type=4": {
+      "model": "handcrafted:block/cherry_drawer_right_4",
+      "y": 180
+    },
+    "facing=south,shape=single,type=1": {
+      "model": "handcrafted:block/cherry_drawer_single_1",
+      "y": 180
+    },
+    "facing=south,shape=single,type=2": {
+      "model": "handcrafted:block/cherry_drawer_single_2",
+      "y": 180
+    },
+    "facing=south,shape=single,type=3": {
+      "model": "handcrafted:block/cherry_drawer_single_3",
+      "y": 180
+    },
+    "facing=south,shape=single,type=4": {
+      "model": "handcrafted:block/cherry_drawer_single_4",
+      "y": 180
+    },
+    "facing=west,shape=left,type=1": {
+      "model": "handcrafted:block/cherry_drawer_left_1",
+      "y": 270
+    },
+    "facing=west,shape=left,type=2": {
+      "model": "handcrafted:block/cherry_drawer_left_2",
+      "y": 270
+    },
+    "facing=west,shape=left,type=3": {
+      "model": "handcrafted:block/cherry_drawer_left_3",
+      "y": 270
+    },
+    "facing=west,shape=left,type=4": {
+      "model": "handcrafted:block/cherry_drawer_left_4",
+      "y": 270
+    },
+    "facing=west,shape=middle,type=1": {
+      "model": "handcrafted:block/cherry_drawer_middle_1",
+      "y": 270
+    },
+    "facing=west,shape=middle,type=2": {
+      "model": "handcrafted:block/cherry_drawer_middle_2",
+      "y": 270
+    },
+    "facing=west,shape=middle,type=3": {
+      "model": "handcrafted:block/cherry_drawer_middle_3",
+      "y": 270
+    },
+    "facing=west,shape=middle,type=4": {
+      "model": "handcrafted:block/cherry_drawer_middle_4",
+      "y": 270
+    },
+    "facing=west,shape=right,type=1": {
+      "model": "handcrafted:block/cherry_drawer_right_1",
+      "y": 270
+    },
+    "facing=west,shape=right,type=2": {
+      "model": "handcrafted:block/cherry_drawer_right_2",
+      "y": 270
+    },
+    "facing=west,shape=right,type=3": {
+      "model": "handcrafted:block/cherry_drawer_right_3",
+      "y": 270
+    },
+    "facing=west,shape=right,type=4": {
+      "model": "handcrafted:block/cherry_drawer_right_4",
+      "y": 270
+    },
+    "facing=west,shape=single,type=1": {
+      "model": "handcrafted:block/cherry_drawer_single_1",
+      "y": 270
+    },
+    "facing=west,shape=single,type=2": {
+      "model": "handcrafted:block/cherry_drawer_single_2",
+      "y": 270
+    },
+    "facing=west,shape=single,type=3": {
+      "model": "handcrafted:block/cherry_drawer_single_3",
+      "y": 270
+    },
+    "facing=west,shape=single,type=4": {
+      "model": "handcrafted:block/cherry_drawer_single_4",
+      "y": 270
+    }
+  }
+}

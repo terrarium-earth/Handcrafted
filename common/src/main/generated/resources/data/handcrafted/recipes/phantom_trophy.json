@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "phantom_trophy",
   "key": {
     "#": {
       "item": "minecraft:phantom_membrane"
     },
     "/": {
-      "tag": "handcrafted:boards"
+      "tag": "minecraft:planks"
     },
     "@": {
       "item": "minecraft:chain"
@@ -15,8 +14,7 @@
   },
   "pattern": [
     "@@@",
-    "/#/",
-    "   "
+    "/#/"
   ],
   "result": {
     "item": "handcrafted:phantom_trophy"

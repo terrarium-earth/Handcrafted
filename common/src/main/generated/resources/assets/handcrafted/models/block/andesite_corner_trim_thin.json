@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/trim/thin_corner_trim",
+  "textures": {
+    "texture": "handcrafted:block/trim/corner/andesite_corner_trim_thin"
+  }
+}

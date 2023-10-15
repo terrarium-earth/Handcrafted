@@ -1,20 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "stackable_book",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
       "item": "minecraft:book"
     }
-  },
-  "pattern": [
-    " # ",
-    " # ",
-    " # "
   ],
   "result": {
-    "count": 3,
+    "count": 4,
     "item": "handcrafted:stackable_book"
-  },
-  "show_notification": true
+  }
 }

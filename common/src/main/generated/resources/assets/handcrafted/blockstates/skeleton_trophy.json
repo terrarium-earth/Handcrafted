@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,half=lower,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 90
+    },
+    "facing=east,half=lower,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 90
+    },
+    "facing=east,half=upper,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 90
+    },
+    "facing=east,half=upper,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 90
+    },
+    "facing=north,half=lower,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy"
+    },
+    "facing=north,half=lower,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy"
+    },
+    "facing=north,half=upper,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy"
+    },
+    "facing=north,half=upper,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy"
+    },
+    "facing=south,half=lower,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 180
+    },
+    "facing=south,half=lower,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 180
+    },
+    "facing=south,half=upper,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 180
+    },
+    "facing=south,half=upper,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 180
+    },
+    "facing=west,half=lower,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 270
+    },
+    "facing=west,half=lower,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 270
+    },
+    "facing=west,half=upper,waterlogged=false": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 270
+    },
+    "facing=west,half=upper,waterlogged=true": {
+      "model": "handcrafted:block/trophy/skeleton_trophy",
+      "y": 270
+    }
+  }
+}

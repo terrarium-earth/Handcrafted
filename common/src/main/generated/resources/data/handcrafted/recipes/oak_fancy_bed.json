@@ -1,24 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "fancy_bed",
   "key": {
     "#": {
-      "item": "handcrafted:oak_board"
+      "item": "minecraft:oak_planks"
     },
     "$": {
-      "item": "handcrafted:white_sheet"
+      "tag": "minecraft:wool"
     },
     "/": {
-      "item": "minecraft:white_wool"
+      "tag": "handcrafted:cushions"
     },
     "@": {
-      "item": "handcrafted:white_cushion"
+      "tag": "handcrafted:sheets"
     }
   },
   "pattern": [
-    "@$ ",
-    "///",
+    " /@",
+    "#$$",
     "###"
   ],
   "result": {

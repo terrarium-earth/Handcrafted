@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:mangrove_board"
+      "item": "minecraft:mangrove_planks"
+    },
+    "-": {
+      "item": "minecraft:mangrove_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:mangrove_bench"
   },
   "show_notification": true

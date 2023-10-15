@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bench": {
+    "has_crimson_bench": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:crimson_board"
+              "minecraft:crimson_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bench",
+      "has_crimson_bench",
       "has_the_recipe"
     ]
   ],

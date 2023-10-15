@@ -1,0 +1,949 @@
+{
+  "variants": {
+    "counter=acacia_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_1",
+      "y": 90
+    },
+    "counter=acacia_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_2",
+      "y": 90
+    },
+    "counter=acacia_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_3",
+      "y": 90
+    },
+    "counter=acacia_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_1"
+    },
+    "counter=acacia_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_2"
+    },
+    "counter=acacia_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_3"
+    },
+    "counter=acacia_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_1",
+      "y": 180
+    },
+    "counter=acacia_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_2",
+      "y": 180
+    },
+    "counter=acacia_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_3",
+      "y": 180
+    },
+    "counter=acacia_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_1",
+      "y": 270
+    },
+    "counter=acacia_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_2",
+      "y": 270
+    },
+    "counter=acacia_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_acacia_planks_3",
+      "y": 270
+    },
+    "counter=andesite,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_andesite_1",
+      "y": 90
+    },
+    "counter=andesite,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_andesite_2",
+      "y": 90
+    },
+    "counter=andesite,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_andesite_3",
+      "y": 90
+    },
+    "counter=andesite,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_andesite_1"
+    },
+    "counter=andesite,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_andesite_2"
+    },
+    "counter=andesite,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_andesite_3"
+    },
+    "counter=andesite,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_andesite_1",
+      "y": 180
+    },
+    "counter=andesite,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_andesite_2",
+      "y": 180
+    },
+    "counter=andesite,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_andesite_3",
+      "y": 180
+    },
+    "counter=andesite,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_andesite_1",
+      "y": 270
+    },
+    "counter=andesite,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_andesite_2",
+      "y": 270
+    },
+    "counter=andesite,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_andesite_3",
+      "y": 270
+    },
+    "counter=bamboo_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_1",
+      "y": 90
+    },
+    "counter=bamboo_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_2",
+      "y": 90
+    },
+    "counter=bamboo_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_3",
+      "y": 90
+    },
+    "counter=bamboo_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_1"
+    },
+    "counter=bamboo_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_2"
+    },
+    "counter=bamboo_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_3"
+    },
+    "counter=bamboo_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_1",
+      "y": 180
+    },
+    "counter=bamboo_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_2",
+      "y": 180
+    },
+    "counter=bamboo_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_3",
+      "y": 180
+    },
+    "counter=bamboo_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_1",
+      "y": 270
+    },
+    "counter=bamboo_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_2",
+      "y": 270
+    },
+    "counter=bamboo_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_bamboo_planks_3",
+      "y": 270
+    },
+    "counter=birch_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_1",
+      "y": 90
+    },
+    "counter=birch_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_2",
+      "y": 90
+    },
+    "counter=birch_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_3",
+      "y": 90
+    },
+    "counter=birch_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_1"
+    },
+    "counter=birch_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_2"
+    },
+    "counter=birch_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_3"
+    },
+    "counter=birch_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_1",
+      "y": 180
+    },
+    "counter=birch_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_2",
+      "y": 180
+    },
+    "counter=birch_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_3",
+      "y": 180
+    },
+    "counter=birch_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_1",
+      "y": 270
+    },
+    "counter=birch_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_2",
+      "y": 270
+    },
+    "counter=birch_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_birch_planks_3",
+      "y": 270
+    },
+    "counter=blackstone,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_blackstone_1",
+      "y": 90
+    },
+    "counter=blackstone,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_blackstone_2",
+      "y": 90
+    },
+    "counter=blackstone,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_blackstone_3",
+      "y": 90
+    },
+    "counter=blackstone,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_blackstone_1"
+    },
+    "counter=blackstone,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_blackstone_2"
+    },
+    "counter=blackstone,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_blackstone_3"
+    },
+    "counter=blackstone,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_blackstone_1",
+      "y": 180
+    },
+    "counter=blackstone,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_blackstone_2",
+      "y": 180
+    },
+    "counter=blackstone,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_blackstone_3",
+      "y": 180
+    },
+    "counter=blackstone,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_blackstone_1",
+      "y": 270
+    },
+    "counter=blackstone,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_blackstone_2",
+      "y": 270
+    },
+    "counter=blackstone,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_blackstone_3",
+      "y": 270
+    },
+    "counter=bricks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_bricks_1",
+      "y": 90
+    },
+    "counter=bricks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_bricks_2",
+      "y": 90
+    },
+    "counter=bricks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_bricks_3",
+      "y": 90
+    },
+    "counter=bricks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_bricks_1"
+    },
+    "counter=bricks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_bricks_2"
+    },
+    "counter=bricks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_bricks_3"
+    },
+    "counter=bricks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_bricks_1",
+      "y": 180
+    },
+    "counter=bricks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_bricks_2",
+      "y": 180
+    },
+    "counter=bricks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_bricks_3",
+      "y": 180
+    },
+    "counter=bricks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_bricks_1",
+      "y": 270
+    },
+    "counter=bricks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_bricks_2",
+      "y": 270
+    },
+    "counter=bricks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_bricks_3",
+      "y": 270
+    },
+    "counter=calcite,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_calcite_1",
+      "y": 90
+    },
+    "counter=calcite,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_calcite_2",
+      "y": 90
+    },
+    "counter=calcite,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_calcite_3",
+      "y": 90
+    },
+    "counter=calcite,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_calcite_1"
+    },
+    "counter=calcite,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_calcite_2"
+    },
+    "counter=calcite,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_calcite_3"
+    },
+    "counter=calcite,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_calcite_1",
+      "y": 180
+    },
+    "counter=calcite,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_calcite_2",
+      "y": 180
+    },
+    "counter=calcite,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_calcite_3",
+      "y": 180
+    },
+    "counter=calcite,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_calcite_1",
+      "y": 270
+    },
+    "counter=calcite,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_calcite_2",
+      "y": 270
+    },
+    "counter=calcite,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_calcite_3",
+      "y": 270
+    },
+    "counter=cherry_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_1",
+      "y": 90
+    },
+    "counter=cherry_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_2",
+      "y": 90
+    },
+    "counter=cherry_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_3",
+      "y": 90
+    },
+    "counter=cherry_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_1"
+    },
+    "counter=cherry_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_2"
+    },
+    "counter=cherry_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_3"
+    },
+    "counter=cherry_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_1",
+      "y": 180
+    },
+    "counter=cherry_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_2",
+      "y": 180
+    },
+    "counter=cherry_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_3",
+      "y": 180
+    },
+    "counter=cherry_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_1",
+      "y": 270
+    },
+    "counter=cherry_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_2",
+      "y": 270
+    },
+    "counter=cherry_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_cherry_planks_3",
+      "y": 270
+    },
+    "counter=crimson_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_1",
+      "y": 90
+    },
+    "counter=crimson_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_2",
+      "y": 90
+    },
+    "counter=crimson_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_3",
+      "y": 90
+    },
+    "counter=crimson_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_1"
+    },
+    "counter=crimson_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_2"
+    },
+    "counter=crimson_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_3"
+    },
+    "counter=crimson_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_1",
+      "y": 180
+    },
+    "counter=crimson_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_2",
+      "y": 180
+    },
+    "counter=crimson_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_3",
+      "y": 180
+    },
+    "counter=crimson_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_1",
+      "y": 270
+    },
+    "counter=crimson_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_2",
+      "y": 270
+    },
+    "counter=crimson_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_crimson_planks_3",
+      "y": 270
+    },
+    "counter=dark_oak_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_1",
+      "y": 90
+    },
+    "counter=dark_oak_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_2",
+      "y": 90
+    },
+    "counter=dark_oak_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_3",
+      "y": 90
+    },
+    "counter=dark_oak_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_1"
+    },
+    "counter=dark_oak_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_2"
+    },
+    "counter=dark_oak_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_3"
+    },
+    "counter=dark_oak_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_1",
+      "y": 180
+    },
+    "counter=dark_oak_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_2",
+      "y": 180
+    },
+    "counter=dark_oak_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_3",
+      "y": 180
+    },
+    "counter=dark_oak_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_1",
+      "y": 270
+    },
+    "counter=dark_oak_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_2",
+      "y": 270
+    },
+    "counter=dark_oak_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_dark_oak_planks_3",
+      "y": 270
+    },
+    "counter=deepslate,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_deepslate_1",
+      "y": 90
+    },
+    "counter=deepslate,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_deepslate_2",
+      "y": 90
+    },
+    "counter=deepslate,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_deepslate_3",
+      "y": 90
+    },
+    "counter=deepslate,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_deepslate_1"
+    },
+    "counter=deepslate,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_deepslate_2"
+    },
+    "counter=deepslate,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_deepslate_3"
+    },
+    "counter=deepslate,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_deepslate_1",
+      "y": 180
+    },
+    "counter=deepslate,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_deepslate_2",
+      "y": 180
+    },
+    "counter=deepslate,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_deepslate_3",
+      "y": 180
+    },
+    "counter=deepslate,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_deepslate_1",
+      "y": 270
+    },
+    "counter=deepslate,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_deepslate_2",
+      "y": 270
+    },
+    "counter=deepslate,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_deepslate_3",
+      "y": 270
+    },
+    "counter=diorite,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_diorite_1",
+      "y": 90
+    },
+    "counter=diorite,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_diorite_2",
+      "y": 90
+    },
+    "counter=diorite,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_diorite_3",
+      "y": 90
+    },
+    "counter=diorite,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_diorite_1"
+    },
+    "counter=diorite,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_diorite_2"
+    },
+    "counter=diorite,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_diorite_3"
+    },
+    "counter=diorite,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_diorite_1",
+      "y": 180
+    },
+    "counter=diorite,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_diorite_2",
+      "y": 180
+    },
+    "counter=diorite,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_diorite_3",
+      "y": 180
+    },
+    "counter=diorite,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_diorite_1",
+      "y": 270
+    },
+    "counter=diorite,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_diorite_2",
+      "y": 270
+    },
+    "counter=diorite,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_diorite_3",
+      "y": 270
+    },
+    "counter=dripstone_block,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_1",
+      "y": 90
+    },
+    "counter=dripstone_block,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_2",
+      "y": 90
+    },
+    "counter=dripstone_block,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_3",
+      "y": 90
+    },
+    "counter=dripstone_block,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_1"
+    },
+    "counter=dripstone_block,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_2"
+    },
+    "counter=dripstone_block,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_3"
+    },
+    "counter=dripstone_block,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_1",
+      "y": 180
+    },
+    "counter=dripstone_block,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_2",
+      "y": 180
+    },
+    "counter=dripstone_block,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_3",
+      "y": 180
+    },
+    "counter=dripstone_block,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_1",
+      "y": 270
+    },
+    "counter=dripstone_block,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_2",
+      "y": 270
+    },
+    "counter=dripstone_block,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_dripstone_block_3",
+      "y": 270
+    },
+    "counter=granite,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_granite_1",
+      "y": 90
+    },
+    "counter=granite,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_granite_2",
+      "y": 90
+    },
+    "counter=granite,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_granite_3",
+      "y": 90
+    },
+    "counter=granite,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_granite_1"
+    },
+    "counter=granite,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_granite_2"
+    },
+    "counter=granite,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_granite_3"
+    },
+    "counter=granite,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_granite_1",
+      "y": 180
+    },
+    "counter=granite,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_granite_2",
+      "y": 180
+    },
+    "counter=granite,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_granite_3",
+      "y": 180
+    },
+    "counter=granite,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_granite_1",
+      "y": 270
+    },
+    "counter=granite,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_granite_2",
+      "y": 270
+    },
+    "counter=granite,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_granite_3",
+      "y": 270
+    },
+    "counter=jungle_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_1",
+      "y": 90
+    },
+    "counter=jungle_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_2",
+      "y": 90
+    },
+    "counter=jungle_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_3",
+      "y": 90
+    },
+    "counter=jungle_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_1"
+    },
+    "counter=jungle_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_2"
+    },
+    "counter=jungle_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_3"
+    },
+    "counter=jungle_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_1",
+      "y": 180
+    },
+    "counter=jungle_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_2",
+      "y": 180
+    },
+    "counter=jungle_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_3",
+      "y": 180
+    },
+    "counter=jungle_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_1",
+      "y": 270
+    },
+    "counter=jungle_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_2",
+      "y": 270
+    },
+    "counter=jungle_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_jungle_planks_3",
+      "y": 270
+    },
+    "counter=mangrove_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_1",
+      "y": 90
+    },
+    "counter=mangrove_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_2",
+      "y": 90
+    },
+    "counter=mangrove_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_3",
+      "y": 90
+    },
+    "counter=mangrove_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_1"
+    },
+    "counter=mangrove_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_2"
+    },
+    "counter=mangrove_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_3"
+    },
+    "counter=mangrove_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_1",
+      "y": 180
+    },
+    "counter=mangrove_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_2",
+      "y": 180
+    },
+    "counter=mangrove_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_3",
+      "y": 180
+    },
+    "counter=mangrove_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_1",
+      "y": 270
+    },
+    "counter=mangrove_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_2",
+      "y": 270
+    },
+    "counter=mangrove_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_mangrove_planks_3",
+      "y": 270
+    },
+    "counter=oak_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_1",
+      "y": 90
+    },
+    "counter=oak_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_2",
+      "y": 90
+    },
+    "counter=oak_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_3",
+      "y": 90
+    },
+    "counter=oak_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_1"
+    },
+    "counter=oak_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_2"
+    },
+    "counter=oak_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_3"
+    },
+    "counter=oak_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_1",
+      "y": 180
+    },
+    "counter=oak_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_2",
+      "y": 180
+    },
+    "counter=oak_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_3",
+      "y": 180
+    },
+    "counter=oak_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_1",
+      "y": 270
+    },
+    "counter=oak_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_2",
+      "y": 270
+    },
+    "counter=oak_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_oak_planks_3",
+      "y": 270
+    },
+    "counter=quartz_block,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_1",
+      "y": 90
+    },
+    "counter=quartz_block,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_2",
+      "y": 90
+    },
+    "counter=quartz_block,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_3",
+      "y": 90
+    },
+    "counter=quartz_block,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_1"
+    },
+    "counter=quartz_block,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_2"
+    },
+    "counter=quartz_block,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_3"
+    },
+    "counter=quartz_block,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_1",
+      "y": 180
+    },
+    "counter=quartz_block,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_2",
+      "y": 180
+    },
+    "counter=quartz_block,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_3",
+      "y": 180
+    },
+    "counter=quartz_block,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_1",
+      "y": 270
+    },
+    "counter=quartz_block,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_2",
+      "y": 270
+    },
+    "counter=quartz_block,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_quartz_block_3",
+      "y": 270
+    },
+    "counter=smooth_stone,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_1",
+      "y": 90
+    },
+    "counter=smooth_stone,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_2",
+      "y": 90
+    },
+    "counter=smooth_stone,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_3",
+      "y": 90
+    },
+    "counter=smooth_stone,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_1"
+    },
+    "counter=smooth_stone,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_2"
+    },
+    "counter=smooth_stone,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_3"
+    },
+    "counter=smooth_stone,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_1",
+      "y": 180
+    },
+    "counter=smooth_stone,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_2",
+      "y": 180
+    },
+    "counter=smooth_stone,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_3",
+      "y": 180
+    },
+    "counter=smooth_stone,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_1",
+      "y": 270
+    },
+    "counter=smooth_stone,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_2",
+      "y": 270
+    },
+    "counter=smooth_stone,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_smooth_stone_3",
+      "y": 270
+    },
+    "counter=spruce_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_1",
+      "y": 90
+    },
+    "counter=spruce_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_2",
+      "y": 90
+    },
+    "counter=spruce_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_3",
+      "y": 90
+    },
+    "counter=spruce_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_1"
+    },
+    "counter=spruce_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_2"
+    },
+    "counter=spruce_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_3"
+    },
+    "counter=spruce_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_1",
+      "y": 180
+    },
+    "counter=spruce_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_2",
+      "y": 180
+    },
+    "counter=spruce_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_3",
+      "y": 180
+    },
+    "counter=spruce_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_1",
+      "y": 270
+    },
+    "counter=spruce_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_2",
+      "y": 270
+    },
+    "counter=spruce_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_spruce_planks_3",
+      "y": 270
+    },
+    "counter=warped_planks,facing=east,type=1": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_1",
+      "y": 90
+    },
+    "counter=warped_planks,facing=east,type=2": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_2",
+      "y": 90
+    },
+    "counter=warped_planks,facing=east,type=3": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_3",
+      "y": 90
+    },
+    "counter=warped_planks,facing=north,type=1": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_1"
+    },
+    "counter=warped_planks,facing=north,type=2": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_2"
+    },
+    "counter=warped_planks,facing=north,type=3": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_3"
+    },
+    "counter=warped_planks,facing=south,type=1": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_1",
+      "y": 180
+    },
+    "counter=warped_planks,facing=south,type=2": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_2",
+      "y": 180
+    },
+    "counter=warped_planks,facing=south,type=3": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_3",
+      "y": 180
+    },
+    "counter=warped_planks,facing=west,type=1": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_1",
+      "y": 270
+    },
+    "counter=warped_planks,facing=west,type=2": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_2",
+      "y": 270
+    },
+    "counter=warped_planks,facing=west,type=3": {
+      "model": "handcrafted:block/acacia_counter_warped_planks_3",
+      "y": 270
+    }
+  }
+}

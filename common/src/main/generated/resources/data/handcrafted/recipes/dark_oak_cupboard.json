@@ -1,25 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "cupboard",
   "key": {
     "#": {
-      "item": "handcrafted:dark_oak_board"
-    },
-    "/": {
       "item": "minecraft:dark_oak_planks"
     },
-    "@": {
+    "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
     "###",
-    "/@/",
+    "#/#",
     "###"
   ],
   "result": {
-    "count": 2,
+    "count": 3,
     "item": "handcrafted:dark_oak_cupboard"
   },
   "show_notification": true

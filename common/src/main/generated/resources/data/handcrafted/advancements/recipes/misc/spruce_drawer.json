@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_drawer": {
+    "has_spruce_drawer": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:spruce_board"
+              "minecraft:spruce_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_drawer",
+      "has_spruce_drawer",
       "has_the_recipe"
     ]
   ],

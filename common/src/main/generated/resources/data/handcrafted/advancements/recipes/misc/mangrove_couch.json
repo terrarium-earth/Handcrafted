@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_couch": {
+    "has_mangrove_couch": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:mangrove_board"
+              "minecraft:mangrove_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_couch",
+      "has_mangrove_couch",
       "has_the_recipe"
     ]
   ],

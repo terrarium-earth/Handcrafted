@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "white_cup",
   "ingredients": [
     {
-      "item": "handcrafted:terracotta_cup"
+      "item": "minecraft:white_dye"
     },
     {
-      "item": "minecraft:white_dye"
+      "item": "handcrafted:terracotta_cup"
     }
   ],
   "result": {

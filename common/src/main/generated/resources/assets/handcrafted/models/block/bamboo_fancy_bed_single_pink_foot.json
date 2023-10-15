@@ -1,0 +1,9 @@
+{
+  "parent": "handcrafted:block/fancy_bed/bed_single",
+  "textures": {
+    "cushion": "handcrafted:block/bench/cushion/none_cushion",
+    "frame": "handcrafted:block/fancy_bed/single/bamboo_fancy_bed",
+    "particle": "minecraft:block/bamboo_planks",
+    "sheets": "handcrafted:block/fancy_bed/sheets/pink_sheet"
+  }
+}

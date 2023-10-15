@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cupboard": {
+    "has_crimson_cupboard": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:crimson_board"
+              "minecraft:crimson_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cupboard",
+      "has_crimson_cupboard",
       "has_the_recipe"
     ]
   ],

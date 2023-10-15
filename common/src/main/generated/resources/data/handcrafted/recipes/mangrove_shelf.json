@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "shelf",
   "key": {
     "#": {
-      "item": "handcrafted:mangrove_board"
+      "item": "minecraft:mangrove_planks"
+    },
+    "-": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "/": {
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "###",
-    "   ",
-    "###"
+    "---",
+    "#/#",
+    "---"
   ],
   "result": {
     "count": 2,

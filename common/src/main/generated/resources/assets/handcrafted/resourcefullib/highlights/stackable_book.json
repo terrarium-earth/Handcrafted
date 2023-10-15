@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "facing=east,books=1": {
+      "highlight": "handcrafted:stackable_book/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,books=2": {
+      "highlight": "handcrafted:stackable_book/double",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,books=3": {
+      "highlight": "handcrafted:stackable_book/triple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,books=4": {
+      "highlight": "handcrafted:stackable_book/quadruple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,books=1": {
+      "highlight": "handcrafted:stackable_book/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,books=2": {
+      "highlight": "handcrafted:stackable_book/double",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,books=3": {
+      "highlight": "handcrafted:stackable_book/triple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,books=4": {
+      "highlight": "handcrafted:stackable_book/quadruple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,books=1": {
+      "highlight": "handcrafted:stackable_book/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,books=2": {
+      "highlight": "handcrafted:stackable_book/double",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,books=3": {
+      "highlight": "handcrafted:stackable_book/triple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,books=4": {
+      "highlight": "handcrafted:stackable_book/quadruple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,books=1": {
+      "highlight": "handcrafted:stackable_book/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,books=2": {
+      "highlight": "handcrafted:stackable_book/double",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,books=3": {
+      "highlight": "handcrafted:stackable_book/triple",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,books=4": {
+      "highlight": "handcrafted:stackable_book/quadruple",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

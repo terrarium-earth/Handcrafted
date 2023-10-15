@@ -7,11 +7,11 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_trophy": {
+    "has_tropical_fish_trophy": {
       "conditions": {
         "items": [
           {
-            "tag": "handcrafted:boards"
+            "tag": "minecraft:planks"
           }
         ]
       },
@@ -20,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_trophy",
+      "has_tropical_fish_trophy",
       "has_the_recipe"
     ]
   ],

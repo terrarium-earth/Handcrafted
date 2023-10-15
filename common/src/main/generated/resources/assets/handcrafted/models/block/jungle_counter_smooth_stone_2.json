@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/counter",
+  "textures": {
+    "particle": "minecraft:block/jungle_planks",
+    "top": "handcrafted:block/counter/top/smooth_stone",
+    "wood": "handcrafted:block/counter/jungle_counter_2"
+  }
+}

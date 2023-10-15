@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "pillar_trim",
   "key": {
     "#": {
-      "item": "handcrafted:dark_oak_board"
+      "item": "minecraft:dark_oak_planks"
     }
   },
   "pattern": [
-    " # ",
-    " # ",
-    " # "
+    "#",
+    "#",
+    "#"
   ],
   "result": {
     "count": 4,

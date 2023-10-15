@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shelf": {
+    "has_crimson_shelf": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:crimson_board"
+              "minecraft:crimson_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_shelf",
+      "has_crimson_shelf",
       "has_the_recipe"
     ]
   ],

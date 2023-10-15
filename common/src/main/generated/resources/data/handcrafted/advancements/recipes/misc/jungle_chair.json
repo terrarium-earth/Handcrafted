@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chair": {
+    "has_jungle_chair": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:jungle_board"
+              "minecraft:jungle_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chair",
+      "has_jungle_chair",
       "has_the_recipe"
     ]
   ],

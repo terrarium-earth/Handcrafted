@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:dark_oak_board"
+      "item": "minecraft:dark_oak_planks"
+    },
+    "-": {
+      "item": "minecraft:dark_oak_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:dark_oak_bench"
   },
   "show_notification": true

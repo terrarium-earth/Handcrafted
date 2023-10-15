@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/crockery/bowl/single",
+  "textures": {
+    "texture": "handcrafted:block/crockery/bowl/white_crockery"
+  }
+}

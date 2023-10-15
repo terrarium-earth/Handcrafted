@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:spruce_board"
+      "item": "minecraft:spruce_planks"
+    },
+    "-": {
+      "item": "minecraft:spruce_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:spruce_bench"
   },
   "show_notification": true

@@ -1,16 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "terracotta_thin_pot",
   "key": {
     "#": {
       "item": "minecraft:terracotta"
     }
   },
   "pattern": [
-    "## ",
-    "## ",
-    "   "
+    "##",
+    "##"
   ],
   "result": {
     "count": 3,

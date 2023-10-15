@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "cushion",
   "key": {
     "#": {
       "item": "minecraft:orange_wool"
@@ -16,7 +15,7 @@
     "###"
   ],
   "result": {
-    "count": 8,
+    "count": 16,
     "item": "handcrafted:orange_cushion"
   },
   "show_notification": true

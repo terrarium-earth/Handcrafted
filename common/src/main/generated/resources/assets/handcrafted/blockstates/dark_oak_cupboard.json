@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,type=1": {
+      "model": "handcrafted:block/dark_oak_cupboard_1",
+      "y": 90
+    },
+    "facing=east,type=2": {
+      "model": "handcrafted:block/dark_oak_cupboard_2",
+      "y": 90
+    },
+    "facing=north,type=1": {
+      "model": "handcrafted:block/dark_oak_cupboard_1"
+    },
+    "facing=north,type=2": {
+      "model": "handcrafted:block/dark_oak_cupboard_2"
+    },
+    "facing=south,type=1": {
+      "model": "handcrafted:block/dark_oak_cupboard_1",
+      "y": 180
+    },
+    "facing=south,type=2": {
+      "model": "handcrafted:block/dark_oak_cupboard_2",
+      "y": 180
+    },
+    "facing=west,type=1": {
+      "model": "handcrafted:block/dark_oak_cupboard_1",
+      "y": 270
+    },
+    "facing=west,type=2": {
+      "model": "handcrafted:block/dark_oak_cupboard_2",
+      "y": 270
+    }
+  }
+}

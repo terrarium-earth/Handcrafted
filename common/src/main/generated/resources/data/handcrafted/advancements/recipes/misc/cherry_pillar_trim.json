@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pillar_trim": {
+    "has_cherry_pillar_trim": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:cherry_board"
+              "minecraft:cherry_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pillar_trim",
+      "has_cherry_pillar_trim",
       "has_the_recipe"
     ]
   ],

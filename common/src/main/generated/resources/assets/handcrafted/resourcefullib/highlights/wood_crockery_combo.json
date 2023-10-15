@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=east": {
+      "highlight": "handcrafted:crockery/combo",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north": {
+      "highlight": "handcrafted:crockery/combo",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south": {
+      "highlight": "handcrafted:crockery/combo",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west": {
+      "highlight": "handcrafted:crockery/combo",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

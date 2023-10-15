@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "earth.terrarium.handcrafted.mixins.common.fabric",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PoiTypesAccessor"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

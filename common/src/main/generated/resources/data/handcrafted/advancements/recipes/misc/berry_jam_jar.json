@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sweet_berries": {
+    "has_berry_jam_jar": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sweet_berries",
+      "has_berry_jam_jar",
       "has_the_recipe"
     ]
   ],

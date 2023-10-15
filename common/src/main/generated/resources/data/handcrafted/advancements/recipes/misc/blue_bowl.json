@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta": {
+    "has_blue_bowl": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:terracotta"
+              "minecraft:blue_dye"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_terracotta",
+      "has_blue_bowl",
       "has_the_recipe"
     ]
   ],

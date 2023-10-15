@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/pot/thin_pot",
+  "textures": {
+    "texture": "handcrafted:block/pot/blue_glazed_thin_pot"
+  }
+}

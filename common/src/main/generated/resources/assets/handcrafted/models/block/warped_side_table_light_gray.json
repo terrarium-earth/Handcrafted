@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/side_table",
+  "textures": {
+    "particle": "minecraft:block/warped_planks",
+    "sheet": "handcrafted:block/table/sheet/light_gray_sheet",
+    "wood": "handcrafted:block/table/side_table/warped_side_table"
+  }
+}

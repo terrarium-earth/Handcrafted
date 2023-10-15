@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/side_table",
+  "textures": {
+    "particle": "minecraft:block/bamboo_planks",
+    "sheet": "handcrafted:block/table/sheet/cyan_sheet",
+    "wood": "handcrafted:block/table/side_table/bamboo_side_table"
+  }
+}

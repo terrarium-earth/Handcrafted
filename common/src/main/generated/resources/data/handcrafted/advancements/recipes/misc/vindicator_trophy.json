@@ -7,7 +7,7 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_trophy": {
+    "has_vindicator_trophy": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_trophy",
+      "has_vindicator_trophy",
       "has_the_recipe"
     ]
   ],

@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "yellow_plate",
   "ingredients": [
     {
-      "item": "handcrafted:terracotta_plate"
+      "item": "minecraft:yellow_dye"
     },
     {
-      "item": "minecraft:yellow_dye"
+      "item": "handcrafted:terracotta_plate"
     }
   ],
   "result": {

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chair": {
+    "has_acacia_chair": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:acacia_board"
+              "minecraft:acacia_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chair",
+      "has_acacia_chair",
       "has_the_recipe"
     ]
   ],

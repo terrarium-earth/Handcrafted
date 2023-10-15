@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "side_table",
   "key": {
     "#": {
-      "item": "handcrafted:warped_board"
+      "item": "minecraft:warped_planks"
+    },
+    "-": {
+      "item": "minecraft:warped_slab"
     },
     "/": {
-      "item": "minecraft:warped_planks"
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "   ",
+    "---",
     "#/#",
     "# #"
   ],

@@ -1,6 +1,0 @@
-{
-	"parent": "handcrafted:block/pot/medium_pot",
-	"textures": {
-		"texture": "handcrafted:block/pot/terracotta_medium_pot"
-	}
-}

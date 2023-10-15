@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pillar_trim": {
+    "has_mangrove_pillar_trim": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:mangrove_board"
+              "minecraft:mangrove_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pillar_trim",
+      "has_mangrove_pillar_trim",
       "has_the_recipe"
     ]
   ],

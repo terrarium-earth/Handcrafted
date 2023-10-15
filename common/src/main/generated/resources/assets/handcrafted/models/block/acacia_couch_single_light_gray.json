@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/couch/single",
+  "textures": {
+    "cushion": "handcrafted:block/couch/cushion/light_gray_cushion",
+    "particle": "minecraft:block/acacia_planks",
+    "wood": "handcrafted:block/couch/acacia_couch"
+  }
+}

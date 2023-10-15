@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nightstand": {
+    "has_dark_oak_nightstand": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:dark_oak_board"
+              "minecraft:dark_oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_nightstand",
+      "has_dark_oak_nightstand",
       "has_the_recipe"
     ]
   ],

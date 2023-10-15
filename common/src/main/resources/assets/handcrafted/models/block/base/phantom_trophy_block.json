@@ -1,0 +1,10 @@
+{
+    "parent": "block/block",
+    "display": {
+        "gui": {
+			"rotation": [30, 225, 0],
+			"translation": [-0.75, 1, 0],
+			"scale": [0.44, 0.44, 0.44]
+		}
+    }
+}

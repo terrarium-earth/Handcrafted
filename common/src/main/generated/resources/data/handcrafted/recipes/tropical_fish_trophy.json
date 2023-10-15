@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "trophy",
   "key": {
     "#": {
-      "tag": "handcrafted:boards"
+      "tag": "minecraft:planks"
     },
     "/": {
       "item": "minecraft:tropical_fish"

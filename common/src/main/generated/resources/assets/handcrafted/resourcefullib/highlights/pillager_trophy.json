@@ -1,0 +1,72 @@
+{
+  "variants": {
+    "facing=east,half=lower": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,half=upper": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 90
+      },
+      "translation": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "facing=north,half=lower": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,half=upper": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 0
+      },
+      "translation": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "facing=south,half=lower": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,half=upper": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 180
+      },
+      "translation": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "facing=west,half=lower": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,half=upper": {
+      "highlight": "handcrafted:statue/pillager_trophy_shape",
+      "rotation": {
+        "y": 270
+      },
+      "translation": [
+        0,
+        -1,
+        0
+      ]
+    }
+  }
+}

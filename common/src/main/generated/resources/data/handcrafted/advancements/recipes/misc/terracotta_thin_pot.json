@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta": {
+    "has_terracotta_thin_pot": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_terracotta",
+      "has_terracotta_thin_pot",
       "has_the_recipe"
     ]
   ],

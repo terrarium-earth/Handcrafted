@@ -1,0 +1,7 @@
+{
+  "parent": "handcrafted:block/dining_bench/left",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "wood": "handcrafted:block/dining_bench/oak_dining_bench"
+  }
+}

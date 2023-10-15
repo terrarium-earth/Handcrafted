@@ -1,0 +1,184 @@
+{
+  "variants": {
+    "facing=east,pieces=1,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 90
+    },
+    "facing=east,pieces=1,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 90
+    },
+    "facing=east,pieces=2,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 90
+    },
+    "facing=east,pieces=2,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 90
+    },
+    "facing=east,pieces=3,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 90
+    },
+    "facing=east,pieces=3,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 90
+    },
+    "facing=east,pieces=4,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 90
+    },
+    "facing=east,pieces=4,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 90
+    },
+    "facing=east,pieces=5,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 90
+    },
+    "facing=east,pieces=5,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 90
+    },
+    "facing=east,pieces=6,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 90
+    },
+    "facing=east,pieces=6,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 90
+    },
+    "facing=north,pieces=1,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_single"
+    },
+    "facing=north,pieces=1,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_single"
+    },
+    "facing=north,pieces=2,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_double"
+    },
+    "facing=north,pieces=2,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_double"
+    },
+    "facing=north,pieces=3,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_triple"
+    },
+    "facing=north,pieces=3,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_triple"
+    },
+    "facing=north,pieces=4,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple"
+    },
+    "facing=north,pieces=4,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple"
+    },
+    "facing=north,pieces=5,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple"
+    },
+    "facing=north,pieces=5,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple"
+    },
+    "facing=north,pieces=6,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple"
+    },
+    "facing=north,pieces=6,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple"
+    },
+    "facing=south,pieces=1,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 180
+    },
+    "facing=south,pieces=1,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 180
+    },
+    "facing=south,pieces=2,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 180
+    },
+    "facing=south,pieces=2,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 180
+    },
+    "facing=south,pieces=3,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 180
+    },
+    "facing=south,pieces=3,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 180
+    },
+    "facing=south,pieces=4,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 180
+    },
+    "facing=south,pieces=4,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 180
+    },
+    "facing=south,pieces=5,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 180
+    },
+    "facing=south,pieces=5,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 180
+    },
+    "facing=south,pieces=6,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 180
+    },
+    "facing=south,pieces=6,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 180
+    },
+    "facing=west,pieces=1,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 270
+    },
+    "facing=west,pieces=1,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_single",
+      "y": 270
+    },
+    "facing=west,pieces=2,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 270
+    },
+    "facing=west,pieces=2,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_double",
+      "y": 270
+    },
+    "facing=west,pieces=3,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 270
+    },
+    "facing=west,pieces=3,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_triple",
+      "y": 270
+    },
+    "facing=west,pieces=4,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 270
+    },
+    "facing=west,pieces=4,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quadruple",
+      "y": 270
+    },
+    "facing=west,pieces=5,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 270
+    },
+    "facing=west,pieces=5,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_quintuple",
+      "y": 270
+    },
+    "facing=west,pieces=6,waterlogged=false": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 270
+    },
+    "facing=west,pieces=6,waterlogged=true": {
+      "model": "handcrafted:block/terracotta_bowl_sextuple",
+      "y": 270
+    }
+  }
+}

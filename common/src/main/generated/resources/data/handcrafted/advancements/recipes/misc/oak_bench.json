@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bench": {
+    "has_oak_bench": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:oak_board"
+              "minecraft:oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_bench",
+      "has_oak_bench",
       "has_the_recipe"
     ]
   ],

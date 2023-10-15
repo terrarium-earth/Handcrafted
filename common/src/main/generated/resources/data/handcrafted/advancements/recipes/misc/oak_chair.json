@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chair": {
+    "has_oak_chair": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:oak_board"
+              "minecraft:oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_chair",
+      "has_oak_chair",
       "has_the_recipe"
     ]
   ],

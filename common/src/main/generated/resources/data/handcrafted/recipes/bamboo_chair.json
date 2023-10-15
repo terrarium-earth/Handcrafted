@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "chair",
   "key": {
     "#": {
-      "item": "handcrafted:bamboo_board"
+      "item": "minecraft:bamboo_planks"
+    },
+    "-": {
+      "item": "minecraft:bamboo_slab"
+    },
+    "/": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "#  ",
-    "###",
-    "# #"
+    "- ",
+    "##",
+    "//"
   ],
   "result": {
     "count": 2,

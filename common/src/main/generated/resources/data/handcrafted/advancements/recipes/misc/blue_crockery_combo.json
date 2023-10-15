@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta=_plate": {
+    "has_blue_crockery_combo": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:terracotta_plate"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_terracotta_bowl": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "handcrafted:terracotta_bowl"
+              "minecraft:blue_dye"
             ]
           }
         ]
@@ -34,8 +22,7 @@
   },
   "requirements": [
     [
-      "has_terracotta=_plate",
-      "has_terracotta_bowl",
+      "has_blue_crockery_combo",
       "has_the_recipe"
     ]
   ],

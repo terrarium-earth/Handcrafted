@@ -1,28 +1,28 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_terracotta": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:terracotta"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "handcrafted:white_glazed_wide_pot"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_glazed_wide_pot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:white_glazed_terracotta"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_terracotta",
+      "has_white_glazed_wide_pot",
       "has_the_recipe"
     ]
   ],

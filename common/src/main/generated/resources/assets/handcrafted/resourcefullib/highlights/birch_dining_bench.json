@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "facing=east,shape=left": {
+      "highlight": "handcrafted:dining_bench/left",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=middle": {
+      "highlight": "handcrafted:dining_bench/middle",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=right": {
+      "highlight": "handcrafted:dining_bench/right",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,shape=single": {
+      "highlight": "handcrafted:dining_bench/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,shape=left": {
+      "highlight": "handcrafted:dining_bench/left",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=middle": {
+      "highlight": "handcrafted:dining_bench/middle",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=right": {
+      "highlight": "handcrafted:dining_bench/right",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,shape=single": {
+      "highlight": "handcrafted:dining_bench/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,shape=left": {
+      "highlight": "handcrafted:dining_bench/left",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=middle": {
+      "highlight": "handcrafted:dining_bench/middle",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=right": {
+      "highlight": "handcrafted:dining_bench/right",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,shape=single": {
+      "highlight": "handcrafted:dining_bench/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,shape=left": {
+      "highlight": "handcrafted:dining_bench/left",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=middle": {
+      "highlight": "handcrafted:dining_bench/middle",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=right": {
+      "highlight": "handcrafted:dining_bench/right",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,shape=single": {
+      "highlight": "handcrafted:dining_bench/single",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

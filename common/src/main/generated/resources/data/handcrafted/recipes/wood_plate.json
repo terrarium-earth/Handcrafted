@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "wood_plate",
   "key": {
     "#": {
-      "tag": "handcrafted:boards"
+      "tag": "minecraft:wooden_slabs"
     }
   },
   "pattern": [
-    "   ",
-    "###",
-    "   "
+    "###"
   ],
   "result": {
     "count": 3,

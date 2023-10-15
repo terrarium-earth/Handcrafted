@@ -1,0 +1,214 @@
+{
+  "variants": {
+    "facing=east,half=bottom,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=bottom,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=bottom,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=bottom,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=bottom,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=bottom,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 90
+    },
+    "facing=east,half=top,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 270
+    },
+    "facing=east,half=top,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 270
+    },
+    "facing=east,half=top,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 270
+    },
+    "facing=east,half=top,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 270
+    },
+    "facing=east,half=top,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 270
+    },
+    "facing=east,half=top,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 270
+    },
+    "facing=north,half=bottom,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180
+    },
+    "facing=north,half=bottom,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180
+    },
+    "facing=north,half=bottom,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180
+    },
+    "facing=north,half=bottom,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180
+    },
+    "facing=north,half=bottom,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180
+    },
+    "facing=north,half=bottom,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180
+    },
+    "facing=north,half=top,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 180
+    },
+    "facing=north,half=top,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 180
+    },
+    "facing=north,half=top,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 180
+    },
+    "facing=north,half=top,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 180
+    },
+    "facing=north,half=top,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 180
+    },
+    "facing=north,half=top,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=bottom,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 180
+    },
+    "facing=south,half=top,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 360
+    },
+    "facing=south,half=top,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 360
+    },
+    "facing=south,half=top,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 360
+    },
+    "facing=south,half=top,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 360
+    },
+    "facing=south,half=top,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 360
+    },
+    "facing=south,half=top,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 360
+    },
+    "facing=west,half=bottom,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=bottom,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=bottom,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=bottom,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=bottom,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=bottom,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "x": 180,
+      "y": 270
+    },
+    "facing=west,half=top,trim=normal,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 450
+    },
+    "facing=west,half=top,trim=normal,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_normal",
+      "y": 450
+    },
+    "facing=west,half=top,trim=thicc,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 450
+    },
+    "facing=west,half=top,trim=thicc,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thicc",
+      "y": 450
+    },
+    "facing=west,half=top,trim=thin,waterlogged=false": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 450
+    },
+    "facing=west,half=top,trim=thin,waterlogged=true": {
+      "model": "handcrafted:block/cherry_corner_trim_thin",
+      "y": 450
+    }
+  }
+}

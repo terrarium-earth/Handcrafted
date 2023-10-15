@@ -16,7 +16,7 @@
     "ThatGravyBoat"
   ],
   "contact": {
-    "website": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
+    "website": "https://modrinth.com/mod/handcrafted",
     "repo": "https://github.com/terrarium-earth/handcrafted",
     "issues": "https://github.com/terrarium-earth/handcrafted/issues"
   },
@@ -25,15 +25,15 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "earth.terrarium.handcrafted.fabric.HandcraftedFabric",
-      "earth.terrarium.handcrafted.Handcrafted::postInit"
+      "earth.terrarium.handcrafted.fabric.HandcraftedFabric::init"
     ],
     "client": [
-      "earth.terrarium.handcrafted.client.fabric.HandcraftedClientFabric"
+      "earth.terrarium.handcrafted.client.fabric.HandcraftedClientFabric::init"
     ]
   },
   "mixins": [
-    "handcrafted-common.mixins.json"
+    "handcrafted-common.mixins.json",
+    "handcrafted.mixins.json"
   ],
   "depends": {
     "fabric": "*",

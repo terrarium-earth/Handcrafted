@@ -1,0 +1,3844 @@
+{
+  "variants": {
+    "color=black,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head_occupied",
+      "y": 90
+    },
+    "color=black,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head_occupied",
+      "y": 90
+    },
+    "color=black,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot"
+    },
+    "color=black,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot"
+    },
+    "color=black,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot"
+    },
+    "color=black,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot"
+    },
+    "color=black,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head"
+    },
+    "color=black,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head"
+    },
+    "color=black,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head"
+    },
+    "color=black,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head"
+    },
+    "color=black,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head_occupied"
+    },
+    "color=black,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head_occupied"
+    },
+    "color=black,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head_occupied",
+      "y": 180
+    },
+    "color=black,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head_occupied",
+      "y": 180
+    },
+    "color=black,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_foot_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_foot_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_foot_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_foot_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_black_head_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_black_head_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_black_head_occupied",
+      "y": 270
+    },
+    "color=black,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_black_head_occupied",
+      "y": 270
+    },
+    "color=blue,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head_occupied",
+      "y": 90
+    },
+    "color=blue,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head_occupied",
+      "y": 90
+    },
+    "color=blue,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot"
+    },
+    "color=blue,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot"
+    },
+    "color=blue,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot"
+    },
+    "color=blue,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot"
+    },
+    "color=blue,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head"
+    },
+    "color=blue,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head"
+    },
+    "color=blue,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head"
+    },
+    "color=blue,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head"
+    },
+    "color=blue,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head_occupied"
+    },
+    "color=blue,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head_occupied"
+    },
+    "color=blue,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head_occupied",
+      "y": 180
+    },
+    "color=blue,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head_occupied",
+      "y": 180
+    },
+    "color=blue,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_foot_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_foot_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_foot_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_foot_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_blue_head_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_blue_head_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_blue_head_occupied",
+      "y": 270
+    },
+    "color=blue,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_blue_head_occupied",
+      "y": 270
+    },
+    "color=brown,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head_occupied",
+      "y": 90
+    },
+    "color=brown,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head_occupied",
+      "y": 90
+    },
+    "color=brown,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot"
+    },
+    "color=brown,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot"
+    },
+    "color=brown,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot"
+    },
+    "color=brown,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot"
+    },
+    "color=brown,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head"
+    },
+    "color=brown,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head"
+    },
+    "color=brown,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head"
+    },
+    "color=brown,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head"
+    },
+    "color=brown,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head_occupied"
+    },
+    "color=brown,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head_occupied"
+    },
+    "color=brown,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head_occupied",
+      "y": 180
+    },
+    "color=brown,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head_occupied",
+      "y": 180
+    },
+    "color=brown,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_foot_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_foot_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_foot_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_foot_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_brown_head_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_brown_head_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_brown_head_occupied",
+      "y": 270
+    },
+    "color=brown,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_brown_head_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head_occupied",
+      "y": 90
+    },
+    "color=cyan,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot"
+    },
+    "color=cyan,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot"
+    },
+    "color=cyan,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot"
+    },
+    "color=cyan,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot"
+    },
+    "color=cyan,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head"
+    },
+    "color=cyan,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head"
+    },
+    "color=cyan,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head"
+    },
+    "color=cyan,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head"
+    },
+    "color=cyan,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head_occupied"
+    },
+    "color=cyan,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head_occupied"
+    },
+    "color=cyan,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head_occupied",
+      "y": 180
+    },
+    "color=cyan,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_foot_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_foot_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_foot_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_foot_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_cyan_head_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_cyan_head_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_cyan_head_occupied",
+      "y": 270
+    },
+    "color=cyan,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_cyan_head_occupied",
+      "y": 270
+    },
+    "color=gray,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head_occupied",
+      "y": 90
+    },
+    "color=gray,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head_occupied",
+      "y": 90
+    },
+    "color=gray,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot"
+    },
+    "color=gray,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot"
+    },
+    "color=gray,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot"
+    },
+    "color=gray,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot"
+    },
+    "color=gray,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head"
+    },
+    "color=gray,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head"
+    },
+    "color=gray,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head"
+    },
+    "color=gray,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head"
+    },
+    "color=gray,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head_occupied"
+    },
+    "color=gray,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head_occupied"
+    },
+    "color=gray,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head_occupied",
+      "y": 180
+    },
+    "color=gray,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head_occupied",
+      "y": 180
+    },
+    "color=gray,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_foot_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_foot_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_foot_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_foot_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_gray_head_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_gray_head_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_gray_head_occupied",
+      "y": 270
+    },
+    "color=gray,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_gray_head_occupied",
+      "y": 270
+    },
+    "color=green,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head_occupied",
+      "y": 90
+    },
+    "color=green,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head_occupied",
+      "y": 90
+    },
+    "color=green,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot"
+    },
+    "color=green,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot"
+    },
+    "color=green,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot"
+    },
+    "color=green,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot"
+    },
+    "color=green,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head"
+    },
+    "color=green,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head"
+    },
+    "color=green,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head"
+    },
+    "color=green,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head"
+    },
+    "color=green,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head_occupied"
+    },
+    "color=green,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head_occupied"
+    },
+    "color=green,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head_occupied",
+      "y": 180
+    },
+    "color=green,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head_occupied",
+      "y": 180
+    },
+    "color=green,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_foot_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_foot_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_foot_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_foot_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_green_head_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_green_head_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_green_head_occupied",
+      "y": 270
+    },
+    "color=green,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_green_head_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head_occupied",
+      "y": 90
+    },
+    "color=light_blue,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot"
+    },
+    "color=light_blue,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot"
+    },
+    "color=light_blue,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot"
+    },
+    "color=light_blue,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot"
+    },
+    "color=light_blue,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head"
+    },
+    "color=light_blue,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head"
+    },
+    "color=light_blue,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head"
+    },
+    "color=light_blue,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head"
+    },
+    "color=light_blue,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head_occupied"
+    },
+    "color=light_blue,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head_occupied"
+    },
+    "color=light_blue,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head_occupied",
+      "y": 180
+    },
+    "color=light_blue,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_foot_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_foot_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_foot_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_foot_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_blue_head_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_blue_head_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_blue_head_occupied",
+      "y": 270
+    },
+    "color=light_blue,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_blue_head_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head_occupied",
+      "y": 90
+    },
+    "color=light_gray,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot"
+    },
+    "color=light_gray,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot"
+    },
+    "color=light_gray,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot"
+    },
+    "color=light_gray,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot"
+    },
+    "color=light_gray,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head"
+    },
+    "color=light_gray,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head"
+    },
+    "color=light_gray,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head"
+    },
+    "color=light_gray,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head"
+    },
+    "color=light_gray,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head_occupied"
+    },
+    "color=light_gray,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head_occupied"
+    },
+    "color=light_gray,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head_occupied",
+      "y": 180
+    },
+    "color=light_gray,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_foot_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_foot_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_foot_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_foot_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_light_gray_head_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_light_gray_head_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_light_gray_head_occupied",
+      "y": 270
+    },
+    "color=light_gray,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_light_gray_head_occupied",
+      "y": 270
+    },
+    "color=lime,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head_occupied",
+      "y": 90
+    },
+    "color=lime,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head_occupied",
+      "y": 90
+    },
+    "color=lime,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot"
+    },
+    "color=lime,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot"
+    },
+    "color=lime,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot"
+    },
+    "color=lime,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot"
+    },
+    "color=lime,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head"
+    },
+    "color=lime,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head"
+    },
+    "color=lime,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head"
+    },
+    "color=lime,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head"
+    },
+    "color=lime,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head_occupied"
+    },
+    "color=lime,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head_occupied"
+    },
+    "color=lime,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head_occupied",
+      "y": 180
+    },
+    "color=lime,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head_occupied",
+      "y": 180
+    },
+    "color=lime,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_foot_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_foot_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_foot_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_foot_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_lime_head_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_lime_head_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_lime_head_occupied",
+      "y": 270
+    },
+    "color=lime,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_lime_head_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head_occupied",
+      "y": 90
+    },
+    "color=magenta,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot"
+    },
+    "color=magenta,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot"
+    },
+    "color=magenta,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot"
+    },
+    "color=magenta,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot"
+    },
+    "color=magenta,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head"
+    },
+    "color=magenta,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head"
+    },
+    "color=magenta,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head"
+    },
+    "color=magenta,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head"
+    },
+    "color=magenta,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head_occupied"
+    },
+    "color=magenta,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head_occupied"
+    },
+    "color=magenta,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head_occupied",
+      "y": 180
+    },
+    "color=magenta,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_foot_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_foot_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_foot_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_foot_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_magenta_head_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_magenta_head_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_magenta_head_occupied",
+      "y": 270
+    },
+    "color=magenta,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_magenta_head_occupied",
+      "y": 270
+    },
+    "color=orange,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head_occupied",
+      "y": 90
+    },
+    "color=orange,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head_occupied",
+      "y": 90
+    },
+    "color=orange,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot"
+    },
+    "color=orange,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot"
+    },
+    "color=orange,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot"
+    },
+    "color=orange,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot"
+    },
+    "color=orange,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head"
+    },
+    "color=orange,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head"
+    },
+    "color=orange,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head"
+    },
+    "color=orange,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head"
+    },
+    "color=orange,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head_occupied"
+    },
+    "color=orange,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head_occupied"
+    },
+    "color=orange,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head_occupied",
+      "y": 180
+    },
+    "color=orange,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head_occupied",
+      "y": 180
+    },
+    "color=orange,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_foot_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_foot_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_foot_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_foot_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_orange_head_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_orange_head_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_orange_head_occupied",
+      "y": 270
+    },
+    "color=orange,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_orange_head_occupied",
+      "y": 270
+    },
+    "color=pink,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head_occupied",
+      "y": 90
+    },
+    "color=pink,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head_occupied",
+      "y": 90
+    },
+    "color=pink,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot"
+    },
+    "color=pink,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot"
+    },
+    "color=pink,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot"
+    },
+    "color=pink,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot"
+    },
+    "color=pink,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head"
+    },
+    "color=pink,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head"
+    },
+    "color=pink,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head"
+    },
+    "color=pink,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head"
+    },
+    "color=pink,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head_occupied"
+    },
+    "color=pink,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head_occupied"
+    },
+    "color=pink,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head_occupied",
+      "y": 180
+    },
+    "color=pink,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head_occupied",
+      "y": 180
+    },
+    "color=pink,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_foot_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_foot_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_foot_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_foot_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_pink_head_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_pink_head_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_pink_head_occupied",
+      "y": 270
+    },
+    "color=pink,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_pink_head_occupied",
+      "y": 270
+    },
+    "color=purple,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head_occupied",
+      "y": 90
+    },
+    "color=purple,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head_occupied",
+      "y": 90
+    },
+    "color=purple,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot"
+    },
+    "color=purple,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot"
+    },
+    "color=purple,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot"
+    },
+    "color=purple,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot"
+    },
+    "color=purple,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head"
+    },
+    "color=purple,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head"
+    },
+    "color=purple,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head"
+    },
+    "color=purple,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head"
+    },
+    "color=purple,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head_occupied"
+    },
+    "color=purple,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head_occupied"
+    },
+    "color=purple,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head_occupied",
+      "y": 180
+    },
+    "color=purple,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head_occupied",
+      "y": 180
+    },
+    "color=purple,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_foot_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_foot_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_foot_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_foot_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_purple_head_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_purple_head_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_purple_head_occupied",
+      "y": 270
+    },
+    "color=purple,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_purple_head_occupied",
+      "y": 270
+    },
+    "color=red,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head_occupied",
+      "y": 90
+    },
+    "color=red,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head_occupied",
+      "y": 90
+    },
+    "color=red,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot"
+    },
+    "color=red,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot"
+    },
+    "color=red,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot"
+    },
+    "color=red,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot"
+    },
+    "color=red,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head"
+    },
+    "color=red,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head"
+    },
+    "color=red,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head"
+    },
+    "color=red,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head"
+    },
+    "color=red,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head_occupied"
+    },
+    "color=red,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head_occupied"
+    },
+    "color=red,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head_occupied",
+      "y": 180
+    },
+    "color=red,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head_occupied",
+      "y": 180
+    },
+    "color=red,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_foot_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_foot_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_foot_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_foot_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_red_head_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_red_head_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_red_head_occupied",
+      "y": 270
+    },
+    "color=red,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_red_head_occupied",
+      "y": 270
+    },
+    "color=white,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head_occupied",
+      "y": 90
+    },
+    "color=white,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head_occupied",
+      "y": 90
+    },
+    "color=white,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot"
+    },
+    "color=white,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot"
+    },
+    "color=white,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot"
+    },
+    "color=white,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot"
+    },
+    "color=white,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head"
+    },
+    "color=white,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head"
+    },
+    "color=white,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head"
+    },
+    "color=white,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head"
+    },
+    "color=white,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head_occupied"
+    },
+    "color=white,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head_occupied"
+    },
+    "color=white,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head_occupied",
+      "y": 180
+    },
+    "color=white,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head_occupied",
+      "y": 180
+    },
+    "color=white,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_foot_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_foot_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_foot_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_foot_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_white_head_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_white_head_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_white_head_occupied",
+      "y": 270
+    },
+    "color=white,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_white_head_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=east,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=east,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head_occupied",
+      "y": 90
+    },
+    "color=yellow,facing=north,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot"
+    },
+    "color=yellow,facing=north,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot"
+    },
+    "color=yellow,facing=north,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot"
+    },
+    "color=yellow,facing=north,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot"
+    },
+    "color=yellow,facing=north,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head"
+    },
+    "color=yellow,facing=north,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head"
+    },
+    "color=yellow,facing=north,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head"
+    },
+    "color=yellow,facing=north,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head"
+    },
+    "color=yellow,facing=north,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head_occupied"
+    },
+    "color=yellow,facing=north,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head_occupied"
+    },
+    "color=yellow,facing=south,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=south,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head_occupied",
+      "y": 180
+    },
+    "color=yellow,facing=west,occupied=false,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=false,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=foot,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_foot_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=foot,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_foot_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=foot,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_foot_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=foot,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_foot_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=head,shape=left": {
+      "model": "handcrafted:block/crimson_fancy_bed_left_yellow_head_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=head,shape=middle": {
+      "model": "handcrafted:block/crimson_fancy_bed_middle_yellow_head_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=head,shape=right": {
+      "model": "handcrafted:block/crimson_fancy_bed_right_yellow_head_occupied",
+      "y": 270
+    },
+    "color=yellow,facing=west,occupied=true,part=head,shape=single": {
+      "model": "handcrafted:block/crimson_fancy_bed_single_yellow_head_occupied",
+      "y": 270
+    }
+  }
+}

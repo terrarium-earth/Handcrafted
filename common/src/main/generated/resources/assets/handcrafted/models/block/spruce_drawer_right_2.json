@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/drawer/spruce/drawer_bottom",
+    "east": "handcrafted:block/drawer/spruce/drawer_side_left",
+    "north": "handcrafted:block/drawer/spruce/front_2/drawer_right",
+    "particle": "minecraft:block/spruce_planks",
+    "south": "handcrafted:block/drawer/spruce/drawer_back",
+    "up": "handcrafted:block/drawer/spruce/drawer_top",
+    "west": "handcrafted:block/drawer/spruce/drawer_side_right"
+  }
+}

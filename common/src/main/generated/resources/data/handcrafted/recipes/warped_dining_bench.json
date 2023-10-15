@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "dining_bench",
   "key": {
     "#": {
-      "item": "handcrafted:warped_board"
+      "item": "minecraft:warped_planks"
+    },
+    "-": {
+      "item": "minecraft:warped_slab"
     }
   },
   "pattern": [
-    "   ",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:warped_dining_bench"
   },
   "show_notification": true

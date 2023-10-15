@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/trim/normal_pillar_trim",
+  "textures": {
+    "texture": "handcrafted:block/trim/pillar/dripstone_pillar_trim_normal"
+  }
+}

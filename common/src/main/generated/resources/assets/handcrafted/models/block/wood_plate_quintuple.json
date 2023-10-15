@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/crockery/plate/quintuple",
+  "textures": {
+    "texture": "handcrafted:block/crockery/wood_crockery"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_desk": {
+    "has_cherry_desk": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:cherry_board"
+              "minecraft:cherry_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_desk",
+      "has_cherry_desk",
       "has_the_recipe"
     ]
   ],

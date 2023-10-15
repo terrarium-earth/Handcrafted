@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/fancy_bed/bed_single_occupied",
+  "textures": {
+    "cushion": "handcrafted:block/bench/cushion/white_cushion",
+    "frame": "handcrafted:block/fancy_bed/single/cherry_fancy_bed",
+    "sheets": "handcrafted:block/fancy_bed/sheets/white_sheet"
+  }
+}

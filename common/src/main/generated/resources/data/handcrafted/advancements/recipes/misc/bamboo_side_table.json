@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_side_table": {
+    "has_bamboo_side_table": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:bamboo_board"
+              "minecraft:bamboo_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_side_table",
+      "has_bamboo_side_table",
       "has_the_recipe"
     ]
   ],

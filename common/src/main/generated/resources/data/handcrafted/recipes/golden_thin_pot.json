@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "golden_thin_pot",
   "ingredients": [
     {
-      "item": "handcrafted:terracotta_thin_pot"
+      "item": "minecraft:gold_block"
     },
     {
-      "item": "minecraft:gold_block"
+      "item": "handcrafted:terracotta_thin_pot"
     }
   ],
   "result": {

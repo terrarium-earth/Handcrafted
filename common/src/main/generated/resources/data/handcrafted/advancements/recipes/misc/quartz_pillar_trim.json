@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pillar_trim": {
+    "has_quartz_pillar_trim": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_pillar_trim",
+      "has_quartz_pillar_trim",
       "has_the_recipe"
     ]
   ],

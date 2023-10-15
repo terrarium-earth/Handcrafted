@@ -1,7 +1,0 @@
-{
-	"parent": "handcrafted:block/crockery/combo/combo",
-	"textures": {
-		"0": "handcrafted:block/crockery/yellow_crockery",
-		"particle": "handcrafted:block/crockery/yellow_crockery"
-	}
-}

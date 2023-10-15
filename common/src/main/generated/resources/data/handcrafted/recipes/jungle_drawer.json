@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "drawer",
   "key": {
     "#": {
-      "item": "handcrafted:jungle_board"
+      "item": "minecraft:jungle_planks"
+    },
+    "-": {
+      "item": "minecraft:jungle_slab"
     },
     "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "###",
     "#/#",
-    "###"
+    "---",
+    "---"
   ],
   "result": {
     "count": 2,

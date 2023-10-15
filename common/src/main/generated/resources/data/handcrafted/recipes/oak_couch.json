@@ -1,25 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "couch",
   "key": {
     "#": {
-      "item": "handcrafted:oak_board"
+      "item": "minecraft:oak_planks"
     },
     "/": {
-      "item": "minecraft:white_wool"
+      "tag": "handcrafted:cushions"
     },
     "@": {
-      "item": "handcrafted:white_cushion"
+      "tag": "minecraft:wool"
     }
   },
   "pattern": [
-    " @ ",
-    "#/#",
+    "@/@",
     "###"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:oak_couch"
   },
   "show_notification": true

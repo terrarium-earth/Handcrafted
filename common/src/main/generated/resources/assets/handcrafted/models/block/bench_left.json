@@ -1,0 +1,7 @@
+{
+  "parent": "handcrafted:block/metal_bench/left",
+  "textures": {
+    "particle": "handcrafted:block/bench/metal_particles",
+    "texture": "handcrafted:block/bench/bench"
+  }
+}

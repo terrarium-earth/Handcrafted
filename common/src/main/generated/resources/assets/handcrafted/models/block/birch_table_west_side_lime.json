@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/table/west_side",
+  "textures": {
+    "particle": "minecraft:block/birch_planks",
+    "sheet": "handcrafted:block/table/sheet/lime_sheet",
+    "wood": "handcrafted:block/table/table/birch_table"
+  }
+}

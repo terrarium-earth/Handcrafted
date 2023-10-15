@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/counter",
+  "textures": {
+    "particle": "minecraft:block/acacia_planks",
+    "top": "handcrafted:block/counter/top/bamboo_planks",
+    "wood": "handcrafted:block/counter/acacia_counter_2"
+  }
+}

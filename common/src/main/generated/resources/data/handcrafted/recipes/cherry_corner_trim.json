@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "corner_trim",
   "key": {
     "#": {
-      "item": "handcrafted:cherry_board"
+      "item": "minecraft:cherry_planks"
     }
   },
   "pattern": [
-    "###",
-    "  #",
-    "  #"
+    "#  ",
+    "#  ",
+    "###"
   ],
   "result": {
     "count": 4,

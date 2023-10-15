@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_corner_trim": {
+    "has_deepslate_corner_trim": {
       "conditions": {
         "items": [
           {
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_corner_trim",
+      "has_deepslate_corner_trim",
       "has_the_recipe"
     ]
   ],

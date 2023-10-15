@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "side_table",
   "key": {
     "#": {
-      "item": "handcrafted:bamboo_board"
+      "item": "minecraft:bamboo_planks"
+    },
+    "-": {
+      "item": "minecraft:bamboo_slab"
     },
     "/": {
-      "item": "minecraft:bamboo_planks"
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "   ",
+    "---",
     "#/#",
     "# #"
   ],

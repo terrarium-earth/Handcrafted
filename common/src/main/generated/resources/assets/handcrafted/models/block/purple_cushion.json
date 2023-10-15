@@ -1,0 +1,7 @@
+{
+  "parent": "handcrafted:block/cushion",
+  "textures": {
+    "particle": "minecraft:block/purple_wool",
+    "texture": "handcrafted:block/cushion/purple_cushion"
+  }
+}

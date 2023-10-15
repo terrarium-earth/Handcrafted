@@ -1,16 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "shelf",
   "key": {
     "#": {
-      "item": "handcrafted:oak_board"
+      "item": "minecraft:oak_planks"
+    },
+    "-": {
+      "item": "minecraft:oak_slab"
+    },
+    "/": {
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "###",
-    "   ",
-    "###"
+    "---",
+    "#/#",
+    "---"
   ],
   "result": {
     "count": 2,

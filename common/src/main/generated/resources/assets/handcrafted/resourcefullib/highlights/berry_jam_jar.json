@@ -1,0 +1,76 @@
+{
+  "variants": {
+    "facing=east,jars=1": {
+      "highlight": "handcrafted:jar/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,jars=2": {
+      "highlight": "handcrafted:jar/double",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,jars=3": {
+      "highlight": "handcrafted:jar/triple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,jars=1": {
+      "highlight": "handcrafted:jar/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,jars=2": {
+      "highlight": "handcrafted:jar/double",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,jars=3": {
+      "highlight": "handcrafted:jar/triple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,jars=1": {
+      "highlight": "handcrafted:jar/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,jars=2": {
+      "highlight": "handcrafted:jar/double",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,jars=3": {
+      "highlight": "handcrafted:jar/triple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,jars=1": {
+      "highlight": "handcrafted:jar/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,jars=2": {
+      "highlight": "handcrafted:jar/double",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,jars=3": {
+      "highlight": "handcrafted:jar/triple",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

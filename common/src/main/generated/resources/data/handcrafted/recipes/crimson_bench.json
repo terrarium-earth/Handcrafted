@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "bench",
   "key": {
     "#": {
-      "item": "handcrafted:crimson_board"
+      "item": "minecraft:crimson_planks"
+    },
+    "-": {
+      "item": "minecraft:crimson_slab"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:crimson_bench"
   },
   "show_notification": true

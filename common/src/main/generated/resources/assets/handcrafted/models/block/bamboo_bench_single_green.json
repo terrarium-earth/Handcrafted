@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/bench/single",
+  "textures": {
+    "cushion": "handcrafted:block/bench/cushion/green_cushion",
+    "particle": "minecraft:block/bamboo_planks",
+    "wood": "handcrafted:block/bench/bamboo_bench"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/side_table",
+  "textures": {
+    "particle": "minecraft:block/oak_planks",
+    "sheet": "handcrafted:block/table/sheet/none_sheet",
+    "wood": "handcrafted:block/table/side_table/oak_side_table"
+  }
+}

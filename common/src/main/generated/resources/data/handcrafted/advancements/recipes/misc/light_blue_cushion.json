@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cushion": {
+    "has_light_blue_cushion": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:light_blue_wool"
+              "minecraft:blue_wool"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cushion",
+      "has_light_blue_cushion",
       "has_the_recipe"
     ]
   ],

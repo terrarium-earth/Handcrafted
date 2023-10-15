@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_oven": {
+    "has_kitchen_hood": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:oven"
+              "minecraft:iron_bars"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_oven",
+      "has_kitchen_hood",
       "has_the_recipe"
     ]
   ],

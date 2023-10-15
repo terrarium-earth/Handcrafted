@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "drawer",
   "key": {
     "#": {
-      "item": "handcrafted:birch_board"
+      "item": "minecraft:birch_planks"
+    },
+    "-": {
+      "item": "minecraft:birch_slab"
     },
     "/": {
       "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "###",
     "#/#",
-    "###"
+    "---",
+    "---"
   ],
   "result": {
     "count": 2,

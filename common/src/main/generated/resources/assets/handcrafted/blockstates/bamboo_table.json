@@ -1,0 +1,1636 @@
+{
+  "variants": {
+    "color=black,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_black"
+    },
+    "color=black,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_black"
+    },
+    "color=black,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_black"
+    },
+    "color=black,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_black"
+    },
+    "color=black,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_black"
+    },
+    "color=black,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_black"
+    },
+    "color=black,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_black"
+    },
+    "color=black,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_black"
+    },
+    "color=black,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_black"
+    },
+    "color=black,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_black"
+    },
+    "color=black,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_black"
+    },
+    "color=black,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_black"
+    },
+    "color=black,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_black"
+    },
+    "color=black,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_black"
+    },
+    "color=black,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_black"
+    },
+    "color=black,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_black"
+    },
+    "color=black,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_black"
+    },
+    "color=black,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_black"
+    },
+    "color=black,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_black"
+    },
+    "color=black,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_black"
+    },
+    "color=black,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_black"
+    },
+    "color=black,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_black"
+    },
+    "color=black,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_black"
+    },
+    "color=black,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_black"
+    },
+    "color=black,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_black"
+    },
+    "color=black,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_black"
+    },
+    "color=black,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_black"
+    },
+    "color=black,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_black"
+    },
+    "color=black,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_black"
+    },
+    "color=black,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_black"
+    },
+    "color=black,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_black"
+    },
+    "color=black,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_black"
+    },
+    "color=blue,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_blue"
+    },
+    "color=blue,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_blue"
+    },
+    "color=blue,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_blue"
+    },
+    "color=blue,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_blue"
+    },
+    "color=blue,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_blue"
+    },
+    "color=blue,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_blue"
+    },
+    "color=blue,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_blue"
+    },
+    "color=blue,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_blue"
+    },
+    "color=blue,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_blue"
+    },
+    "color=blue,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_blue"
+    },
+    "color=blue,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_blue"
+    },
+    "color=blue,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_blue"
+    },
+    "color=blue,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_blue"
+    },
+    "color=blue,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_blue"
+    },
+    "color=blue,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_blue"
+    },
+    "color=blue,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_blue"
+    },
+    "color=blue,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_blue"
+    },
+    "color=blue,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_blue"
+    },
+    "color=blue,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_blue"
+    },
+    "color=blue,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_blue"
+    },
+    "color=blue,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_blue"
+    },
+    "color=blue,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_blue"
+    },
+    "color=blue,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_blue"
+    },
+    "color=blue,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_blue"
+    },
+    "color=blue,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_blue"
+    },
+    "color=blue,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_blue"
+    },
+    "color=blue,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_blue"
+    },
+    "color=blue,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_blue"
+    },
+    "color=blue,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_blue"
+    },
+    "color=blue,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_blue"
+    },
+    "color=blue,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_blue"
+    },
+    "color=blue,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_blue"
+    },
+    "color=brown,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_brown"
+    },
+    "color=brown,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_brown"
+    },
+    "color=brown,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_brown"
+    },
+    "color=brown,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_brown"
+    },
+    "color=brown,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_brown"
+    },
+    "color=brown,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_brown"
+    },
+    "color=brown,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_brown"
+    },
+    "color=brown,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_brown"
+    },
+    "color=brown,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_brown"
+    },
+    "color=brown,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_brown"
+    },
+    "color=brown,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_brown"
+    },
+    "color=brown,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_brown"
+    },
+    "color=brown,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_brown"
+    },
+    "color=brown,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_brown"
+    },
+    "color=brown,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_brown"
+    },
+    "color=brown,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_brown"
+    },
+    "color=brown,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_brown"
+    },
+    "color=brown,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_brown"
+    },
+    "color=brown,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_brown"
+    },
+    "color=brown,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_brown"
+    },
+    "color=brown,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_brown"
+    },
+    "color=brown,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_brown"
+    },
+    "color=brown,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_brown"
+    },
+    "color=brown,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_brown"
+    },
+    "color=brown,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_brown"
+    },
+    "color=brown,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_brown"
+    },
+    "color=brown,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_brown"
+    },
+    "color=brown,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_brown"
+    },
+    "color=brown,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_brown"
+    },
+    "color=brown,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_brown"
+    },
+    "color=brown,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_brown"
+    },
+    "color=brown,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_brown"
+    },
+    "color=cyan,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_cyan"
+    },
+    "color=cyan,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_cyan"
+    },
+    "color=cyan,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_cyan"
+    },
+    "color=cyan,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_cyan"
+    },
+    "color=cyan,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_cyan"
+    },
+    "color=cyan,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_cyan"
+    },
+    "color=cyan,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_cyan"
+    },
+    "color=cyan,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_cyan"
+    },
+    "color=cyan,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_cyan"
+    },
+    "color=cyan,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_cyan"
+    },
+    "color=cyan,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_cyan"
+    },
+    "color=cyan,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_cyan"
+    },
+    "color=cyan,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_cyan"
+    },
+    "color=cyan,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_cyan"
+    },
+    "color=cyan,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_cyan"
+    },
+    "color=cyan,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_cyan"
+    },
+    "color=cyan,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_cyan"
+    },
+    "color=cyan,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_cyan"
+    },
+    "color=cyan,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_cyan"
+    },
+    "color=cyan,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_cyan"
+    },
+    "color=cyan,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_cyan"
+    },
+    "color=cyan,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_cyan"
+    },
+    "color=cyan,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_cyan"
+    },
+    "color=cyan,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_cyan"
+    },
+    "color=cyan,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_cyan"
+    },
+    "color=cyan,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_cyan"
+    },
+    "color=cyan,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_cyan"
+    },
+    "color=cyan,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_cyan"
+    },
+    "color=cyan,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_cyan"
+    },
+    "color=cyan,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_cyan"
+    },
+    "color=cyan,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_cyan"
+    },
+    "color=cyan,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_cyan"
+    },
+    "color=gray,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_gray"
+    },
+    "color=gray,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_gray"
+    },
+    "color=gray,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_gray"
+    },
+    "color=gray,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_gray"
+    },
+    "color=gray,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_gray"
+    },
+    "color=gray,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_gray"
+    },
+    "color=gray,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_gray"
+    },
+    "color=gray,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_gray"
+    },
+    "color=gray,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_gray"
+    },
+    "color=gray,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_gray"
+    },
+    "color=gray,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_gray"
+    },
+    "color=gray,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_gray"
+    },
+    "color=gray,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_gray"
+    },
+    "color=gray,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_gray"
+    },
+    "color=gray,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_gray"
+    },
+    "color=gray,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_gray"
+    },
+    "color=gray,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_gray"
+    },
+    "color=gray,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_gray"
+    },
+    "color=gray,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_gray"
+    },
+    "color=gray,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_gray"
+    },
+    "color=gray,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_gray"
+    },
+    "color=gray,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_gray"
+    },
+    "color=gray,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_gray"
+    },
+    "color=gray,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_gray"
+    },
+    "color=gray,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_gray"
+    },
+    "color=gray,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_gray"
+    },
+    "color=gray,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_gray"
+    },
+    "color=gray,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_gray"
+    },
+    "color=gray,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_gray"
+    },
+    "color=gray,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_gray"
+    },
+    "color=gray,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_gray"
+    },
+    "color=gray,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_gray"
+    },
+    "color=green,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_green"
+    },
+    "color=green,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_green"
+    },
+    "color=green,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_green"
+    },
+    "color=green,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_green"
+    },
+    "color=green,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_green"
+    },
+    "color=green,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_green"
+    },
+    "color=green,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_green"
+    },
+    "color=green,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_green"
+    },
+    "color=green,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_green"
+    },
+    "color=green,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_green"
+    },
+    "color=green,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_green"
+    },
+    "color=green,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_green"
+    },
+    "color=green,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_green"
+    },
+    "color=green,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_green"
+    },
+    "color=green,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_green"
+    },
+    "color=green,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_green"
+    },
+    "color=green,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_green"
+    },
+    "color=green,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_green"
+    },
+    "color=green,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_green"
+    },
+    "color=green,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_green"
+    },
+    "color=green,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_green"
+    },
+    "color=green,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_green"
+    },
+    "color=green,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_green"
+    },
+    "color=green,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_green"
+    },
+    "color=green,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_green"
+    },
+    "color=green,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_green"
+    },
+    "color=green,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_green"
+    },
+    "color=green,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_green"
+    },
+    "color=green,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_green"
+    },
+    "color=green,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_green"
+    },
+    "color=green,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_green"
+    },
+    "color=green,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_green"
+    },
+    "color=light_blue,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_light_blue"
+    },
+    "color=light_blue,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_light_blue"
+    },
+    "color=light_blue,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_light_blue"
+    },
+    "color=light_blue,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_light_blue"
+    },
+    "color=light_blue,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_light_blue"
+    },
+    "color=light_blue,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_light_blue"
+    },
+    "color=light_blue,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_light_blue"
+    },
+    "color=light_blue,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_light_blue"
+    },
+    "color=light_blue,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_light_blue"
+    },
+    "color=light_blue,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_light_blue"
+    },
+    "color=light_blue,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_light_blue"
+    },
+    "color=light_blue,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_light_blue"
+    },
+    "color=light_blue,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_light_blue"
+    },
+    "color=light_blue,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_light_blue"
+    },
+    "color=light_blue,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_light_blue"
+    },
+    "color=light_blue,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_light_blue"
+    },
+    "color=light_blue,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_light_blue"
+    },
+    "color=light_blue,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_light_blue"
+    },
+    "color=light_blue,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_light_blue"
+    },
+    "color=light_blue,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_light_blue"
+    },
+    "color=light_blue,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_light_blue"
+    },
+    "color=light_blue,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_light_blue"
+    },
+    "color=light_blue,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_light_blue"
+    },
+    "color=light_blue,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_light_blue"
+    },
+    "color=light_blue,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_light_blue"
+    },
+    "color=light_blue,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_light_blue"
+    },
+    "color=light_blue,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_light_blue"
+    },
+    "color=light_blue,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_light_blue"
+    },
+    "color=light_blue,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_light_blue"
+    },
+    "color=light_blue,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_light_blue"
+    },
+    "color=light_blue,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_light_blue"
+    },
+    "color=light_blue,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_light_blue"
+    },
+    "color=light_gray,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_light_gray"
+    },
+    "color=light_gray,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_light_gray"
+    },
+    "color=light_gray,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_light_gray"
+    },
+    "color=light_gray,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_light_gray"
+    },
+    "color=light_gray,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_light_gray"
+    },
+    "color=light_gray,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_light_gray"
+    },
+    "color=light_gray,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_light_gray"
+    },
+    "color=light_gray,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_light_gray"
+    },
+    "color=light_gray,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_light_gray"
+    },
+    "color=light_gray,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_light_gray"
+    },
+    "color=light_gray,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_light_gray"
+    },
+    "color=light_gray,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_light_gray"
+    },
+    "color=light_gray,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_light_gray"
+    },
+    "color=light_gray,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_light_gray"
+    },
+    "color=light_gray,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_light_gray"
+    },
+    "color=light_gray,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_light_gray"
+    },
+    "color=light_gray,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_light_gray"
+    },
+    "color=light_gray,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_light_gray"
+    },
+    "color=light_gray,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_light_gray"
+    },
+    "color=light_gray,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_light_gray"
+    },
+    "color=light_gray,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_light_gray"
+    },
+    "color=light_gray,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_light_gray"
+    },
+    "color=light_gray,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_light_gray"
+    },
+    "color=light_gray,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_light_gray"
+    },
+    "color=light_gray,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_light_gray"
+    },
+    "color=light_gray,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_light_gray"
+    },
+    "color=light_gray,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_light_gray"
+    },
+    "color=light_gray,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_light_gray"
+    },
+    "color=light_gray,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_light_gray"
+    },
+    "color=light_gray,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_light_gray"
+    },
+    "color=light_gray,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_light_gray"
+    },
+    "color=light_gray,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_light_gray"
+    },
+    "color=lime,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_lime"
+    },
+    "color=lime,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_lime"
+    },
+    "color=lime,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_lime"
+    },
+    "color=lime,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_lime"
+    },
+    "color=lime,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_lime"
+    },
+    "color=lime,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_lime"
+    },
+    "color=lime,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_lime"
+    },
+    "color=lime,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_lime"
+    },
+    "color=lime,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_lime"
+    },
+    "color=lime,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_lime"
+    },
+    "color=lime,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_lime"
+    },
+    "color=lime,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_lime"
+    },
+    "color=lime,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_lime"
+    },
+    "color=lime,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_lime"
+    },
+    "color=lime,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_lime"
+    },
+    "color=lime,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_lime"
+    },
+    "color=lime,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_lime"
+    },
+    "color=lime,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_lime"
+    },
+    "color=lime,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_lime"
+    },
+    "color=lime,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_lime"
+    },
+    "color=lime,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_lime"
+    },
+    "color=lime,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_lime"
+    },
+    "color=lime,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_lime"
+    },
+    "color=lime,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_lime"
+    },
+    "color=lime,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_lime"
+    },
+    "color=lime,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_lime"
+    },
+    "color=lime,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_lime"
+    },
+    "color=lime,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_lime"
+    },
+    "color=lime,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_lime"
+    },
+    "color=lime,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_lime"
+    },
+    "color=lime,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_lime"
+    },
+    "color=lime,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_lime"
+    },
+    "color=magenta,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_magenta"
+    },
+    "color=magenta,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_magenta"
+    },
+    "color=magenta,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_magenta"
+    },
+    "color=magenta,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_magenta"
+    },
+    "color=magenta,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_magenta"
+    },
+    "color=magenta,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_magenta"
+    },
+    "color=magenta,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_magenta"
+    },
+    "color=magenta,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_magenta"
+    },
+    "color=magenta,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_magenta"
+    },
+    "color=magenta,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_magenta"
+    },
+    "color=magenta,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_magenta"
+    },
+    "color=magenta,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_magenta"
+    },
+    "color=magenta,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_magenta"
+    },
+    "color=magenta,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_magenta"
+    },
+    "color=magenta,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_magenta"
+    },
+    "color=magenta,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_magenta"
+    },
+    "color=magenta,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_magenta"
+    },
+    "color=magenta,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_magenta"
+    },
+    "color=magenta,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_magenta"
+    },
+    "color=magenta,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_magenta"
+    },
+    "color=magenta,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_magenta"
+    },
+    "color=magenta,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_magenta"
+    },
+    "color=magenta,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_magenta"
+    },
+    "color=magenta,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_magenta"
+    },
+    "color=magenta,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_magenta"
+    },
+    "color=magenta,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_magenta"
+    },
+    "color=magenta,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_magenta"
+    },
+    "color=magenta,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_magenta"
+    },
+    "color=magenta,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_magenta"
+    },
+    "color=magenta,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_magenta"
+    },
+    "color=magenta,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_magenta"
+    },
+    "color=magenta,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_magenta"
+    },
+    "color=none,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_none"
+    },
+    "color=none,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_none"
+    },
+    "color=none,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_none"
+    },
+    "color=none,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_none"
+    },
+    "color=none,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_none"
+    },
+    "color=none,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_none"
+    },
+    "color=none,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_none"
+    },
+    "color=none,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_none"
+    },
+    "color=none,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_none"
+    },
+    "color=none,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_none"
+    },
+    "color=none,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_none"
+    },
+    "color=none,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_none"
+    },
+    "color=none,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_none"
+    },
+    "color=none,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_none"
+    },
+    "color=none,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_none"
+    },
+    "color=none,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_none"
+    },
+    "color=none,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_none"
+    },
+    "color=none,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_none"
+    },
+    "color=none,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_none"
+    },
+    "color=none,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_none"
+    },
+    "color=none,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_none"
+    },
+    "color=none,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_none"
+    },
+    "color=none,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_none"
+    },
+    "color=none,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_none"
+    },
+    "color=none,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_none"
+    },
+    "color=none,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_none"
+    },
+    "color=none,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_none"
+    },
+    "color=none,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_none"
+    },
+    "color=none,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_none"
+    },
+    "color=none,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_none"
+    },
+    "color=none,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_none"
+    },
+    "color=none,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_none"
+    },
+    "color=orange,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_orange"
+    },
+    "color=orange,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_orange"
+    },
+    "color=orange,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_orange"
+    },
+    "color=orange,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_orange"
+    },
+    "color=orange,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_orange"
+    },
+    "color=orange,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_orange"
+    },
+    "color=orange,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_orange"
+    },
+    "color=orange,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_orange"
+    },
+    "color=orange,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_orange"
+    },
+    "color=orange,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_orange"
+    },
+    "color=orange,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_orange"
+    },
+    "color=orange,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_orange"
+    },
+    "color=orange,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_orange"
+    },
+    "color=orange,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_orange"
+    },
+    "color=orange,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_orange"
+    },
+    "color=orange,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_orange"
+    },
+    "color=orange,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_orange"
+    },
+    "color=orange,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_orange"
+    },
+    "color=orange,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_orange"
+    },
+    "color=orange,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_orange"
+    },
+    "color=orange,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_orange"
+    },
+    "color=orange,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_orange"
+    },
+    "color=orange,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_orange"
+    },
+    "color=orange,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_orange"
+    },
+    "color=orange,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_orange"
+    },
+    "color=orange,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_orange"
+    },
+    "color=orange,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_orange"
+    },
+    "color=orange,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_orange"
+    },
+    "color=orange,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_orange"
+    },
+    "color=orange,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_orange"
+    },
+    "color=orange,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_orange"
+    },
+    "color=orange,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_orange"
+    },
+    "color=pink,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_pink"
+    },
+    "color=pink,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_pink"
+    },
+    "color=pink,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_pink"
+    },
+    "color=pink,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_pink"
+    },
+    "color=pink,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_pink"
+    },
+    "color=pink,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_pink"
+    },
+    "color=pink,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_pink"
+    },
+    "color=pink,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_pink"
+    },
+    "color=pink,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_pink"
+    },
+    "color=pink,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_pink"
+    },
+    "color=pink,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_pink"
+    },
+    "color=pink,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_pink"
+    },
+    "color=pink,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_pink"
+    },
+    "color=pink,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_pink"
+    },
+    "color=pink,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_pink"
+    },
+    "color=pink,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_pink"
+    },
+    "color=pink,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_pink"
+    },
+    "color=pink,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_pink"
+    },
+    "color=pink,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_pink"
+    },
+    "color=pink,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_pink"
+    },
+    "color=pink,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_pink"
+    },
+    "color=pink,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_pink"
+    },
+    "color=pink,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_pink"
+    },
+    "color=pink,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_pink"
+    },
+    "color=pink,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_pink"
+    },
+    "color=pink,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_pink"
+    },
+    "color=pink,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_pink"
+    },
+    "color=pink,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_pink"
+    },
+    "color=pink,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_pink"
+    },
+    "color=pink,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_pink"
+    },
+    "color=pink,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_pink"
+    },
+    "color=pink,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_pink"
+    },
+    "color=purple,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_purple"
+    },
+    "color=purple,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_purple"
+    },
+    "color=purple,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_purple"
+    },
+    "color=purple,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_purple"
+    },
+    "color=purple,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_purple"
+    },
+    "color=purple,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_purple"
+    },
+    "color=purple,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_purple"
+    },
+    "color=purple,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_purple"
+    },
+    "color=purple,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_purple"
+    },
+    "color=purple,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_purple"
+    },
+    "color=purple,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_purple"
+    },
+    "color=purple,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_purple"
+    },
+    "color=purple,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_purple"
+    },
+    "color=purple,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_purple"
+    },
+    "color=purple,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_purple"
+    },
+    "color=purple,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_purple"
+    },
+    "color=purple,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_purple"
+    },
+    "color=purple,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_purple"
+    },
+    "color=purple,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_purple"
+    },
+    "color=purple,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_purple"
+    },
+    "color=purple,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_purple"
+    },
+    "color=purple,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_purple"
+    },
+    "color=purple,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_purple"
+    },
+    "color=purple,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_purple"
+    },
+    "color=purple,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_purple"
+    },
+    "color=purple,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_purple"
+    },
+    "color=purple,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_purple"
+    },
+    "color=purple,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_purple"
+    },
+    "color=purple,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_purple"
+    },
+    "color=purple,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_purple"
+    },
+    "color=purple,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_purple"
+    },
+    "color=purple,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_purple"
+    },
+    "color=red,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_red"
+    },
+    "color=red,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_red"
+    },
+    "color=red,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_red"
+    },
+    "color=red,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_red"
+    },
+    "color=red,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_red"
+    },
+    "color=red,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_red"
+    },
+    "color=red,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_red"
+    },
+    "color=red,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_red"
+    },
+    "color=red,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_red"
+    },
+    "color=red,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_red"
+    },
+    "color=red,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_red"
+    },
+    "color=red,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_red"
+    },
+    "color=red,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_red"
+    },
+    "color=red,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_red"
+    },
+    "color=red,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_red"
+    },
+    "color=red,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_red"
+    },
+    "color=red,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_red"
+    },
+    "color=red,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_red"
+    },
+    "color=red,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_red"
+    },
+    "color=red,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_red"
+    },
+    "color=red,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_red"
+    },
+    "color=red,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_red"
+    },
+    "color=red,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_red"
+    },
+    "color=red,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_red"
+    },
+    "color=red,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_red"
+    },
+    "color=red,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_red"
+    },
+    "color=red,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_red"
+    },
+    "color=red,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_red"
+    },
+    "color=red,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_red"
+    },
+    "color=red,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_red"
+    },
+    "color=red,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_red"
+    },
+    "color=red,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_red"
+    },
+    "color=white,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_white"
+    },
+    "color=white,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_white"
+    },
+    "color=white,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_white"
+    },
+    "color=white,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_white"
+    },
+    "color=white,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_white"
+    },
+    "color=white,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_white"
+    },
+    "color=white,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_white"
+    },
+    "color=white,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_white"
+    },
+    "color=white,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_white"
+    },
+    "color=white,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_white"
+    },
+    "color=white,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_white"
+    },
+    "color=white,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_white"
+    },
+    "color=white,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_white"
+    },
+    "color=white,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_white"
+    },
+    "color=white,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_white"
+    },
+    "color=white,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_white"
+    },
+    "color=white,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_white"
+    },
+    "color=white,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_white"
+    },
+    "color=white,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_white"
+    },
+    "color=white,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_white"
+    },
+    "color=white,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_white"
+    },
+    "color=white,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_white"
+    },
+    "color=white,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_white"
+    },
+    "color=white,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_white"
+    },
+    "color=white,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_white"
+    },
+    "color=white,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_white"
+    },
+    "color=white,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_white"
+    },
+    "color=white,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_white"
+    },
+    "color=white,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_white"
+    },
+    "color=white,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_white"
+    },
+    "color=white,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_white"
+    },
+    "color=white,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_white"
+    },
+    "color=yellow,shape=center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_center_yellow"
+    },
+    "color=yellow,shape=center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_center_yellow"
+    },
+    "color=yellow,shape=east_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_center_yellow"
+    },
+    "color=yellow,shape=east_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_center_yellow"
+    },
+    "color=yellow,shape=east_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_side_yellow"
+    },
+    "color=yellow,shape=east_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_side_yellow"
+    },
+    "color=yellow,shape=east_west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_yellow"
+    },
+    "color=yellow,shape=east_west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_east_west_center_yellow"
+    },
+    "color=yellow,shape=north_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_center_yellow"
+    },
+    "color=yellow,shape=north_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_center_yellow"
+    },
+    "color=yellow,shape=north_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_yellow"
+    },
+    "color=yellow,shape=north_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_east_corner_yellow"
+    },
+    "color=yellow,shape=north_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_side_yellow"
+    },
+    "color=yellow,shape=north_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_side_yellow"
+    },
+    "color=yellow,shape=north_south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_yellow"
+    },
+    "color=yellow,shape=north_south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_south_center_yellow"
+    },
+    "color=yellow,shape=north_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_yellow"
+    },
+    "color=yellow,shape=north_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_north_west_corner_yellow"
+    },
+    "color=yellow,shape=single,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_single_yellow"
+    },
+    "color=yellow,shape=single,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_single_yellow"
+    },
+    "color=yellow,shape=south_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_center_yellow"
+    },
+    "color=yellow,shape=south_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_center_yellow"
+    },
+    "color=yellow,shape=south_east_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_yellow"
+    },
+    "color=yellow,shape=south_east_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_east_corner_yellow"
+    },
+    "color=yellow,shape=south_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_side_yellow"
+    },
+    "color=yellow,shape=south_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_side_yellow"
+    },
+    "color=yellow,shape=south_west_corner,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_yellow"
+    },
+    "color=yellow,shape=south_west_corner,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_south_west_corner_yellow"
+    },
+    "color=yellow,shape=west_center,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_center_yellow"
+    },
+    "color=yellow,shape=west_center,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_center_yellow"
+    },
+    "color=yellow,shape=west_side,waterlogged=false": {
+      "model": "handcrafted:block/bamboo_table_west_side_yellow"
+    },
+    "color=yellow,shape=west_side,waterlogged=true": {
+      "model": "handcrafted:block/bamboo_table_west_side_yellow"
+    }
+  }
+}

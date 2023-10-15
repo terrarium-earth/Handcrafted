@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "dining_bench",
   "key": {
     "#": {
-      "item": "handcrafted:cherry_board"
+      "item": "minecraft:cherry_planks"
+    },
+    "-": {
+      "item": "minecraft:cherry_slab"
     }
   },
   "pattern": [
-    "   ",
-    "###",
+    "---",
     "# #"
   ],
   "result": {
-    "count": 3,
+    "count": 2,
     "item": "handcrafted:cherry_dining_bench"
   },
   "show_notification": true

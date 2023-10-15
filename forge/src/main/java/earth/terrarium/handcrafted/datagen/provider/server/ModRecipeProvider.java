@@ -1,577 +1,395 @@
 package earth.terrarium.handcrafted.datagen.provider.server;
 
-import earth.terrarium.handcrafted.Handcrafted;
+import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
+import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.handcrafted.common.registry.ModItems;
-import earth.terrarium.handcrafted.common.registry.ModTags;
-import net.minecraft.MethodsReturnNonnullByDefault;
+import earth.terrarium.handcrafted.common.tags.ModItemTags;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
-@MethodsReturnNonnullByDefault
+@SuppressWarnings({"deprecation", "SameParameterValue"})
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(PackOutput output) {
-        super(output);
+    private Consumer<FinishedRecipe> writer;
+
+    public ModRecipeProvider(PackOutput packOutput) {
+        super(packOutput);
     }
 
     @Override
-    protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        createColouredSetRecipe(consumer, "cushion", 8, r -> r
+    protected void buildRecipes(@NotNull Consumer<FinishedRecipe> writer) {
+        this.writer = writer;
+
+        coloredSet(ModItems.CUSHIONS, 16, r -> r
             .define('/', Items.FEATHER)
             .pattern("###")
             .pattern("///")
             .pattern("###"));
 
-        createColouredSetRecipe(consumer, "sheet", 8, r -> r
-            .pattern("   ")
-            .pattern("###")
-            .pattern("   "));
+        coloredSet(ModItems.SHEETS, 8, r -> r
+            .pattern("###"));
 
-        createSingleDyeShapeless(consumer, ModItems.BLACK_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BLACK_DYE));
-        createSingleDyeShapeless(consumer, ModItems.BLUE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BLUE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.BROWN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.BROWN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.CYAN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.CYAN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.GRAY_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.GRAY_DYE));
-        createSingleDyeShapeless(consumer, ModItems.GREEN_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.GREEN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIGHT_BLUE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIGHT_BLUE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIGHT_GRAY_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIGHT_GRAY_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIME_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.LIME_DYE));
-        createSingleDyeShapeless(consumer, ModItems.MAGENTA_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.MAGENTA_DYE));
-        createSingleDyeShapeless(consumer, ModItems.ORANGE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.ORANGE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.PINK_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.PINK_DYE));
-        createSingleDyeShapeless(consumer, ModItems.PURPLE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.PURPLE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.RED_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.RED_DYE));
-        createSingleDyeShapeless(consumer, ModItems.WHITE_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.WHITE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.YELLOW_CUSHION.get(), 1, r -> r.unlockedBy("has_cushion", has(ModTags.CUSHIONS)).requires(ModTags.CUSHIONS).requires(Items.YELLOW_DYE));
-
-        createSingleDyeShapeless(consumer, ModItems.BLACK_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BLACK_DYE));
-        createSingleDyeShapeless(consumer, ModItems.BLUE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BLUE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.BROWN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.BROWN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.CYAN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.CYAN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.GRAY_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.GRAY_DYE));
-        createSingleDyeShapeless(consumer, ModItems.GREEN_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.GREEN_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIGHT_BLUE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIGHT_BLUE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIGHT_GRAY_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIGHT_GRAY_DYE));
-        createSingleDyeShapeless(consumer, ModItems.LIME_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.LIME_DYE));
-        createSingleDyeShapeless(consumer, ModItems.MAGENTA_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.MAGENTA_DYE));
-        createSingleDyeShapeless(consumer, ModItems.ORANGE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.ORANGE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.PINK_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.PINK_DYE));
-        createSingleDyeShapeless(consumer, ModItems.PURPLE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.PURPLE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.RED_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.RED_DYE));
-        createSingleDyeShapeless(consumer, ModItems.WHITE_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.WHITE_DYE));
-        createSingleDyeShapeless(consumer, ModItems.YELLOW_SHEET.get(), 1, r -> r.unlockedBy("has_sheet", has(ModTags.SHEETS)).requires(ModTags.SHEETS).requires(Items.YELLOW_DYE));
-
-
-        createSimple(consumer, ModItems.HAMMER.get(), 1, r -> r
-            .unlockedBy("has_board", has(ModTags.BOARDS))
-            .define('#', ModTags.BOARDS)
-            .define('/', Items.IRON_INGOT)
-            .pattern(" / ")
-            .pattern(" #/")
-            .pattern("#  "));
-
-        createSimple(consumer, ModItems.STACKABLE_BOOK.get(), 3, r -> r
-            .unlockedBy("has_book", has(Items.BOOK))
-            .define('#', Items.BOOK)
-            .pattern(" # ")
-            .pattern(" # ")
-            .pattern(" # "));
-
-        createSimpleShapeless(consumer, ModItems.FANCY_PAINTING.get(), 1, r -> r
-            .unlockedBy("has_painting", has(Items.PAINTING))
-            .requires(Items.PAINTING)
-            .requires(Items.GOLD_INGOT));
-
-        createWoodSetRecipe(consumer, "chair", 2, r -> r
-            .pattern("#  ")
-            .pattern("###")
-            .pattern("# #"));
-
-        createWoodSetRecipe(consumer, "table", 2, r -> r
-            .pattern("###")
-            .pattern("# #")
-            .pattern("# #"));
-
-        createWoodSetRecipe(consumer, "bench", 3, r -> r
-            .pattern("###")
-            .pattern("###")
-            .pattern("# #"));
-
-        createSimple(consumer, ModItems.BENCH.get(), 1, r -> r
-            .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
-            .define('#', Items.IRON_INGOT)
+        shaped(ModItems.BENCH, 1, () -> Items.IRON_INGOT, r -> r
             .define('/', Items.IRON_BARS)
             .pattern("/#/")
             .pattern("/#/")
             .pattern("/ /"));
 
-        createSimple(consumer, ModItems.FROZEN_BENCH.get(), 1, r -> r
-            .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
-            .define('#', ModItems.BENCH.get())
-            .define('/', Items.SNOWBALL)
-            .pattern("///")
-            .pattern(" # ")
-            .pattern("   "));
+        shapeless(ModItems.FROZEN_BENCH, 1, ModItems.BENCH, r -> r
+            .requires(Items.SNOWBALL));
 
-        createWoodSetRecipe(consumer, "couch", 3, r -> r
-            .define('@', ModItems.WHITE_CUSHION.get())
-            .define('/', Items.WHITE_WOOL)
-            .pattern(" @ ")
-            .pattern("#/#")
-            .pattern("###"));
-
-        createWoodSetRecipe(consumer, "fancy_bed", 1, r -> r
-            .define('@', ModItems.WHITE_CUSHION.get())
-            .define('$', ModItems.WHITE_SHEET.get())
-            .define('/', Items.WHITE_WOOL)
-            .pattern("@$ ")
-            .pattern("///")
-            .pattern("###"));
-
-        createWoodSetRecipe(consumer, "dining_bench", 3, r -> r
-            .pattern("   ")
+        woodWithSlabSet(ModItems.WOODEN_BENCHES, 2, r -> r
             .pattern("###")
+            .pattern("---")
             .pattern("# #"));
 
-        createWoodSetRecipeWithPlanks(consumer, "nightstand", 2, r -> r
-            .define('@', Items.CHEST)
-            .pattern("///")
-            .pattern("#@#")
+        woodSet(ModItems.COUCHES, 2, r -> r
+            .define('/', ModItemTags.CUSHIONS)
+            .define('@', ItemTags.WOOL)
+            .pattern("@/@")
             .pattern("###"));
 
-        createWoodSetRecipeWithPlanks(consumer, "desk", 2, r -> r
-            .define('@', Items.CHEST)
-            .pattern("///")
-            .pattern("#@#")
+        woodWithSlabSet(ModItems.CHAIRS, 2, r -> r
+            .define('/', Items.STICK)
+            .pattern("- ")
+            .pattern("##")
+            .pattern("//"));
+
+        woodWithSlabSet(ModItems.DINING_BENCHES, 2, r -> r
+            .pattern("---")
             .pattern("# #"));
 
-        createWoodSetRecipeWithPlanks(consumer, "side_table", 2, r -> r
-            .pattern("   ")
+        woodWithSlabSet(ModItems.SIDE_TABLES, 2, r -> r
+            .define('/', Items.CHEST)
+            .pattern("---")
             .pattern("#/#")
             .pattern("# #"));
 
-        createWoodSetRecipe(consumer, "counter", 2, r -> r
-            .define('@', Items.CHEST)
-            .define('/', Items.CALCITE)
-            .pattern("///")
-            .pattern("#@#")
+        woodWithSlabSet(ModItems.DESKS, 2, r -> r
+            .define('/', Items.CHEST)
+            .pattern("---")
+            .pattern("#/#"));
+
+        woodSet(ModItems.NIGHTSTANDS, 2, r -> r
+            .define('/', Items.CHEST)
+            .pattern("###")
+            .pattern("#/#"));
+
+        woodSet(ModItems.TABLES, 2, r -> r
+            .define('/', Items.STICK)
+            .pattern("###")
+            .pattern("/ /"));
+
+        woodSet(ModItems.FANCY_BEDS, 1, r -> r
+            .define('/', ModItemTags.CUSHIONS)
+            .define('@', ModItemTags.SHEETS)
+            .define('$', ItemTags.WOOL)
+            .pattern(" /@")
+            .pattern("#$$")
             .pattern("###"));
 
-        createWoodSetRecipe(consumer, "drawer", 2, r -> r
+        woodSet(ModItems.COUNTERS, 3, r -> r
+            .define('/', Items.CHEST)
+            .define('@', Items.CALCITE)
+            .pattern("@@@")
+            .pattern("#/#"));
+
+        woodSet(ModItems.CUPBOARDS, 3, r -> r
             .define('/', Items.CHEST)
             .pattern("###")
             .pattern("#/#")
             .pattern("###"));
 
-        createWoodSetRecipeWithPlanks(consumer, "cupboard", 2, r -> r
-            .define('@', Items.CHEST)
-            .pattern("###")
-            .pattern("/@/")
+        woodWithSlabSet(ModItems.DRAWERS, 2, r -> r
+            .define('/', Items.CHEST)
+            .pattern("#/#")
+            .pattern("---")
+            .pattern("---"));
+
+        woodWithSlabSet(ModItems.SHELVES, 2, r -> r
+            .define('/', Items.CHEST)
+            .pattern("---")
+            .pattern("#/#")
+            .pattern("---"));
+
+        trim(ModItems.PILLAR_TRIMS, 4, r -> r
+            .pattern("#")
+            .pattern("#")
+            .pattern("#"));
+
+        trim(ModItems.CORNER_TRIMS, 4, r -> r
+            .pattern("#  ")
+            .pattern("#  ")
             .pattern("###"));
 
-        createWoodSetRecipe(consumer, "shelf", 2, r -> r
-            .pattern("###")
-            .pattern("   ")
+        shaped(ModItems.HAMMER, 1, () -> Items.IRON_INGOT, r -> r
+            .define('/', Items.STICK)
+            .pattern(" # ")
+            .pattern(" /#")
+            .pattern("/  "));
+
+        shapeless(ModItems.BERRY_JAM_JAR, 1, () -> Items.SWEET_BERRIES, r -> r
+            .requires(Items.GLASS_BOTTLE));
+
+        shapeless(ModItems.STACKABLE_BOOK, 4, () -> Items.BOOK, r -> r
+            .requires(Items.BOOK, 3));
+
+        shapeless(ModItems.FANCY_PAINTING, 1, () -> Items.PAINTING, r -> r
+            .requires(Items.GOLD_INGOT));
+
+        shaped(ModItems.PHANTOM_TROPHY, 1, () -> Items.PHANTOM_MEMBRANE, r -> r
+            .define('/', ItemTags.PLANKS)
+            .define('@', Items.CHAIN)
+            .pattern("@@@")
+            .pattern("/#/"));
+
+        wallTrophy(ModItems.BEAR_TROPHY, () -> Items.COD);
+        wallTrophy(ModItems.BLAZE_TROPHY, () -> Items.BLAZE_ROD);
+        wallTrophy(ModItems.FOX_TROPHY, () -> Items.SWEET_BERRIES);
+        wallTrophy(ModItems.GOAT_TROPHY, () -> Items.GOAT_HORN);
+        wallTrophy(ModItems.PUFFERFISH_TROPHY, () -> Items.PUFFERFISH);
+        wallTrophy(ModItems.SALMON_TROPHY, () -> Items.SALMON);
+        wallTrophy(ModItems.SILVERFISH_TROPHY, () -> Items.CHISELED_STONE_BRICKS);
+        wallTrophy(ModItems.SKELETON_HORSE_TROPHY, () -> Items.SADDLE);
+        wallTrophy(ModItems.SPIDER_TROPHY, () -> Items.SPIDER_EYE);
+        wallTrophy(ModItems.TROPICAL_FISH_TROPHY, () -> Items.TROPICAL_FISH);
+        wallTrophy(ModItems.WITHER_SKELETON_TROPHY, () -> Items.WITHER_SKELETON_SKULL);
+        wallTrophy(ModItems.WOLF_TROPHY, () -> Items.BONE);
+
+        statueTrophy(ModItems.CREEPER_TROPHY, () -> Items.CREEPER_HEAD);
+        statueTrophy(ModItems.SKELETON_TROPHY, () -> Items.SKELETON_SKULL);
+        statueTrophy(ModItems.EVOKER_TROPHY, () -> Items.TOTEM_OF_UNDYING);
+        statueTrophy(ModItems.PILLAGER_TROPHY, () -> Items.CROSSBOW);
+        statueTrophy(ModItems.VINDICATOR_TROPHY, () -> Items.IRON_AXE);
+        statueTrophy(ModItems.WITCH_TROPHY, () -> Items.GLASS_BOTTLE);
+
+        shaped(ModItems.TERRACOTTA_THIN_POT, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("##")
+            .pattern("##"));
+
+        shaped(ModItems.TERRACOTTA_MEDIUM_POT, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("##")
+            .pattern("##")
+            .pattern("##"));
+
+        shaped(ModItems.TERRACOTTA_WIDE_POT, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("# #")
+            .pattern("# #")
+            .pattern(" # "));
+
+        shaped(ModItems.TERRACOTTA_THICK_POT, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("# #")
+            .pattern("# #")
             .pattern("###"));
 
-        createSimple(consumer, ModItems.OVEN.get(), 1, r -> r
-            .unlockedBy("has_smoker", has(Items.SMOKER))
-            .define('#', Items.BRICK)
+        pot(ModItems.WHITE_GLAZED_THIN_POT, ModItems.WHITE_GLAZED_MEDIUM_POT,
+            ModItems.WHITE_GLAZED_WIDE_POT, ModItems.WHITE_GLAZED_THICK_POT,
+            () -> Items.WHITE_GLAZED_TERRACOTTA);
+
+        pot(ModItems.BLUE_GLAZED_THIN_POT, ModItems.BLUE_GLAZED_MEDIUM_POT,
+            ModItems.BLUE_GLAZED_WIDE_POT, ModItems.BLUE_GLAZED_THICK_POT,
+            () -> Items.BLUE_GLAZED_TERRACOTTA);
+
+        pot(ModItems.GOLDEN_THIN_POT, ModItems.GOLDEN_MEDIUM_POT,
+            ModItems.GOLDEN_WIDE_POT, ModItems.GOLDEN_THICK_POT,
+            () -> Items.GOLD_BLOCK);
+
+        shaped(ModItems.WOOD_CUP, 3, ItemTags.WOODEN_SLABS, r -> r
+            .pattern("# #")
+            .pattern(" # "));
+
+        shaped(ModItems.WOOD_BOWL, 3, ItemTags.WOODEN_SLABS, r -> r
+            .define('/', ItemTags.PLANKS)
+            .pattern("# #")
+            .pattern(" / "));
+
+        shaped(ModItems.WOOD_PLATE, 3, ItemTags.WOODEN_SLABS, r -> r
+            .pattern("###"));
+
+        shapeless(ModItems.WOOD_CROCKERY_COMBO, 1, ModItems.WOOD_CUP, r -> r
+            .requires(ModItems.WOOD_PLATE.get()));
+
+        shaped(ModItems.TERRACOTTA_CUP, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("#")
+            .pattern("#"));
+
+        shaped(ModItems.TERRACOTTA_BOWL, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("# #")
+            .pattern(" # "));
+
+        shaped(ModItems.TERRACOTTA_PLATE, 3, () -> Items.TERRACOTTA, r -> r
+            .pattern("###"));
+
+        shapeless(ModItems.TERRACOTTA_CROCKERY_COMBO, 1, ModItems.TERRACOTTA_CUP, r -> r
+            .requires(ModItems.TERRACOTTA_PLATE.get()));
+
+        crockery(ModItems.WHITE_CUP, ModItems.WHITE_BOWL,
+            ModItems.WHITE_PLATE, ModItems.WHITE_CROCKERY_COMBO,
+            () -> Items.WHITE_DYE);
+
+        crockery(ModItems.BLUE_CUP, ModItems.BLUE_BOWL,
+            ModItems.BLUE_PLATE, ModItems.BLUE_CROCKERY_COMBO,
+            () -> Items.BLUE_DYE);
+
+        crockery(ModItems.YELLOW_CUP, ModItems.YELLOW_BOWL,
+            ModItems.YELLOW_PLATE, ModItems.YELLOW_CROCKERY_COMBO,
+            () -> Items.YELLOW_DYE);
+
+        shaped(ModItems.OVEN, 1, () -> Items.BRICK, r -> r
             .define('/', Items.IRON_BARS)
             .define('@', Items.SMOKER)
             .pattern("#/#")
             .pattern("#@#")
             .pattern("###"));
 
-        createSimple(consumer, ModItems.KITCHEN_HOOD.get(), 1, r -> r
-            .unlockedBy("has_oven", has(ModItems.OVEN.get()))
-            .define('#', Items.IRON_BARS)
+        shaped(ModItems.KITCHEN_HOOD, 1, () -> Items.IRON_BARS, r -> r
             .define('/', ModItems.KITCHEN_HOOD_PIPE.get())
             .pattern(" / ")
             .pattern("###")
             .pattern("   "));
 
-        createSimple(consumer, ModItems.KITCHEN_HOOD_PIPE.get(), 1, r -> r
-            .unlockedBy("has_oven", has(ModItems.OVEN.get()))
-            .define('#', Items.IRON_BARS)
+        shaped(ModItems.KITCHEN_HOOD_PIPE, 1, () -> Items.IRON_BARS, r -> r
             .pattern("# #")
             .pattern("# #")
             .pattern("# #"));
+    }
 
-        createWoodSetRecipe(consumer, "pillar_trim", 4, r -> r
-            .pattern(" # ")
-            .pattern(" # ")
-            .pattern(" # "));
+    private void shaped(RegistryEntry<Item> result, int count, Supplier<Item> mainItem, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                .define('#', mainItem.get())
+                .unlockedBy("has_" + result.getId().getPath(), has(mainItem.get())))
+            .save(writer);
+    }
 
-        createWoodSetRecipe(consumer, "corner_trim", 4, r -> r
+    private void shaped(RegistryEntry<Item> result, int count, TagKey<Item> mainItem, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                .define('#', mainItem)
+                .unlockedBy("has_" + result.getId().getPath(), has(mainItem)))
+            .save(writer);
+    }
+
+    private void shapeless(RegistryEntry<Item> result, int count, Supplier<Item> mainItem, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> builder) {
+        builder.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), count)
+                .requires(mainItem.get())
+                .unlockedBy("has_" + result.getId().getPath(), has(mainItem.get())))
+            .save(writer);
+    }
+
+    private void woodSet(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        registry.stream().forEach(result -> {
+            Item wood = getPlanks(result);
+            builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                    .define('#', wood)
+                    .unlockedBy("has_" + result.getId().getPath(), has(wood)))
+                .save(writer);
+        });
+    }
+
+    private void woodWithSlabSet(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        registry.stream().forEach(result -> {
+            Item wood = getPlanks(result);
+            Item slab = getSlab(result);
+            builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                    .define('#', wood)
+                    .define('-', slab)
+                    .unlockedBy("has_" + result.getId().getPath(), has(wood)))
+                .save(writer);
+        });
+    }
+
+    private void coloredSet(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        registry.stream().forEach(result -> {
+            String[] split = result.getId().getPath().split("_");
+            Item wool = BuiltInRegistries.ITEM.getOptional(new ResourceLocation(split[split.length - 2] + "_wool")).orElseThrow();
+            builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                    .define('#', wool)
+                    .unlockedBy("has_" + result.getId().getPath(), has(wool)))
+                .save(writer);
+        });
+    }
+
+    private void trim(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
+        registry.stream().forEach(result -> {
+            Item material = ModItemTagProvider.TRIM_MATERIALS.stream().filter(i ->
+                Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(i)).getPath().split("_")[0]
+                    .equals(result.getId().getPath().split("_")[0])).findFirst().orElseThrow();
+            builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
+                    .define('#', material)
+                    .unlockedBy("has_" + result.getId().getPath(), has(material)))
+                .save(writer);
+        });
+    }
+
+
+    private void wallTrophy(RegistryEntry<Item> result, Supplier<Item> catalyst) {
+        shaped(result, 1, ItemTags.PLANKS, r -> r
+            .define('/', catalyst.get())
             .pattern("###")
-            .pattern("  #")
-            .pattern("  #"));
-
-        createTrim(consumer, "pillar_trim", 4, r -> r
-            .pattern(" # ")
-            .pattern(" # ")
-            .pattern(" # "));
-
-        createTrim(consumer, "corner_trim", 4, r -> r
-            .pattern("###")
-            .pattern("  #")
-            .pattern("  #"));
-
-        createSimpleShapeless(consumer, ModItems.BERRY_JAM_JAR.get(), 1, r -> r
-            .unlockedBy("has_sweet_berries", has(Items.SWEET_BERRIES))
-            .requires(Items.SWEET_BERRIES)
-            .requires(Items.GLASS_BOTTLE));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_CUP.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_CUP.get())
-            .requires(Items.WHITE_DYE));
-
-        createSimpleShapeless(consumer, ModItems.YELLOW_CUP.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_CUP.get())
-            .requires(Items.YELLOW_DYE));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_CUP.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_CUP.get())
-            .requires(Items.BLUE_DYE));
-
-        createSimple(consumer, ModItems.WOOD_CUP.get(), 3, r -> r
-            .unlockedBy("has_board", has(ModTags.BOARDS))
-            .define('#', ModTags.BOARDS)
-            .pattern("   ")
-            .pattern(" # ")
-            .pattern(" # "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_CUP.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("   ")
-            .pattern(" # ")
-            .pattern(" # "));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_PLATE.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_PLATE.get())
-            .requires(Items.WHITE_DYE));
-
-        createSimpleShapeless(consumer, ModItems.YELLOW_PLATE.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_PLATE.get())
-            .requires(Items.YELLOW_DYE));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_PLATE.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_PLATE.get())
-            .requires(Items.BLUE_DYE));
-
-        createSimple(consumer, ModItems.WOOD_PLATE.get(), 3, r -> r
-            .unlockedBy("has_board", has(ModTags.BOARDS))
-            .define('#', ModTags.BOARDS)
-            .pattern("   ")
-            .pattern("###")
-            .pattern("   "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_PLATE.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("   ")
-            .pattern("###")
-            .pattern("   "));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_BOWL.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_BOWL.get())
-            .requires(Items.WHITE_DYE));
-
-        createSimpleShapeless(consumer, ModItems.YELLOW_BOWL.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_BOWL.get())
-            .requires(Items.YELLOW_DYE));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_BOWL.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_BOWL.get())
-            .requires(Items.BLUE_DYE));
-
-        createSimple(consumer, ModItems.WOOD_BOWL.get(), 3, r -> r
-            .unlockedBy("has_board", has(ModTags.BOARDS))
-            .define('#', ModTags.BOARDS)
-            .pattern("# #")
-            .pattern(" # ")
-            .pattern("   "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_BOWL.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("# #")
-            .pattern(" # ")
-            .pattern("   "));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_CROCKERY_COMBO.get(), 1, r -> r
-            .unlockedBy("has_terracotta=_plate", has(ModItems.TERRACOTTA_PLATE.get()))
-            .unlockedBy("has_terracotta_bowl", has(ModItems.TERRACOTTA_BOWL.get()))
-            .requires(ModItems.WHITE_CUP.get())
-            .requires(ModItems.WHITE_PLATE.get()));
-
-        createSimpleShapeless(consumer, ModItems.YELLOW_CROCKERY_COMBO.get(), 1, r -> r
-            .unlockedBy("has_terracotta=_plate", has(ModItems.TERRACOTTA_PLATE.get()))
-            .unlockedBy("has_terracotta_bowl", has(ModItems.TERRACOTTA_BOWL.get()))
-            .requires(ModItems.YELLOW_CUP.get())
-            .requires(ModItems.YELLOW_PLATE.get()));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_CROCKERY_COMBO.get(), 1, r -> r
-            .unlockedBy("has_terracotta=_plate", has(ModItems.TERRACOTTA_PLATE.get()))
-            .unlockedBy("has_terracotta_bowl", has(ModItems.TERRACOTTA_BOWL.get()))
-            .requires(ModItems.BLUE_CUP.get())
-            .requires(ModItems.BLUE_PLATE.get()));
-
-        createSimpleShapeless(consumer, ModItems.WOOD_CROCKERY_COMBO.get(), 1, r -> r
-            .unlockedBy("has_terracotta=_plate", has(ModItems.TERRACOTTA_PLATE.get()))
-            .unlockedBy("has_terracotta_bowl", has(ModItems.TERRACOTTA_BOWL.get()))
-            .requires(ModItems.WOOD_CUP.get())
-            .requires(ModItems.WOOD_PLATE.get()));
-
-        createSimpleShapeless(consumer, ModItems.TERRACOTTA_CROCKERY_COMBO.get(), 1, r -> r
-            .unlockedBy("has_terracotta=_plate", has(ModItems.TERRACOTTA_PLATE.get()))
-            .unlockedBy("has_terracotta_bowl", has(ModItems.TERRACOTTA_BOWL.get()))
-            .requires(ModItems.TERRACOTTA_CUP.get())
-            .requires(ModItems.TERRACOTTA_PLATE.get()));
-
-        createSimple(consumer, ModItems.TERRACOTTA_THIN_POT.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("## ")
-            .pattern("## ")
-            .pattern("   "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_MEDIUM_POT.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("## ")
-            .pattern("## ")
-            .pattern("## "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_WIDE_POT.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("# #")
-            .pattern("# #")
-            .pattern(" # "));
-
-        createSimple(consumer, ModItems.TERRACOTTA_THICK_POT.get(), 3, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .define('#', Items.TERRACOTTA)
-            .pattern("# #")
-            .pattern("# #")
+            .pattern("#/#")
             .pattern("###"));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_GLAZED_THIN_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_THIN_POT.get())
-            .requires(Items.WHITE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_GLAZED_MEDIUM_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_MEDIUM_POT.get())
-            .requires(Items.WHITE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_GLAZED_WIDE_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_WIDE_POT.get())
-            .requires(Items.WHITE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.WHITE_GLAZED_THICK_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_THICK_POT.get())
-            .requires(Items.WHITE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_GLAZED_THIN_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_THIN_POT.get())
-            .requires(Items.BLUE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_GLAZED_MEDIUM_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_MEDIUM_POT.get())
-            .requires(Items.BLUE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_GLAZED_WIDE_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_WIDE_POT.get())
-            .requires(Items.BLUE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.BLUE_GLAZED_THICK_POT.get(), 1, r -> r
-            .unlockedBy("has_terracotta", has(Items.TERRACOTTA))
-            .requires(ModItems.TERRACOTTA_THICK_POT.get())
-            .requires(Items.BLUE_GLAZED_TERRACOTTA));
-
-        createSimpleShapeless(consumer, ModItems.GOLDEN_THIN_POT.get(), 1, r -> r
-            .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
-            .requires(ModItems.TERRACOTTA_THIN_POT.get())
-            .requires(Items.GOLD_BLOCK));
-
-        createSimpleShapeless(consumer, ModItems.GOLDEN_MEDIUM_POT.get(), 1, r -> r
-            .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
-            .requires(ModItems.TERRACOTTA_MEDIUM_POT.get())
-            .requires(Items.GOLD_BLOCK));
-
-        createSimpleShapeless(consumer, ModItems.GOLDEN_WIDE_POT.get(), 1, r -> r
-            .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
-            .requires(ModItems.TERRACOTTA_WIDE_POT.get())
-            .requires(Items.GOLD_BLOCK));
-
-        createSimpleShapeless(consumer, ModItems.GOLDEN_THICK_POT.get(), 1, r -> r
-            .unlockedBy("has_gold_block", has(Items.GOLD_BLOCK))
-            .requires(ModItems.TERRACOTTA_THICK_POT.get())
-            .requires(Items.GOLD_BLOCK));
-
-        createWallTrophy(consumer, ModItems.BEAR_TROPHY.get(), 1, Items.COD);
-        createWallTrophy(consumer, ModItems.BLAZE_TROPHY.get(), 1, Items.BLAZE_ROD);
-        createWallTrophy(consumer, ModItems.FOX_TROPHY.get(), 1, Items.SWEET_BERRIES);
-        createWallTrophy(consumer, ModItems.GOAT_TROPHY.get(), 1, Items.GOAT_HORN);
-        createWallTrophy(consumer, ModItems.PUFFERFISH_TROPHY.get(), 1, Items.PUFFERFISH);
-        createWallTrophy(consumer, ModItems.SALMON_TROPHY.get(), 1, Items.SALMON);
-        createWallTrophy(consumer, ModItems.SILVERFISH_TROPHY.get(), 1, Items.CHISELED_STONE_BRICKS);
-        createWallTrophy(consumer, ModItems.SKELETON_HORSE_TROPHY.get(), 1, Items.SADDLE);
-        createWallTrophy(consumer, ModItems.SPIDER_TROPHY.get(), 1, Items.SPIDER_EYE);
-        createWallTrophy(consumer, ModItems.TROPICAL_FISH_TROPHY.get(), 1, Items.TROPICAL_FISH);
-        createWallTrophy(consumer, ModItems.WITHER_SKELETON_TROPHY.get(), 1, Items.WITHER_SKELETON_SKULL);
-        createWallTrophy(consumer, ModItems.WOLF_TROPHY.get(), 1, Items.BONE);
-
-        createSimple(consumer, ModItems.PHANTOM_TROPHY.get(), 1, r -> r
-            .unlockedBy("has_phantom_membrane", has(Items.PHANTOM_MEMBRANE))
-            .define('#', Items.PHANTOM_MEMBRANE)
-            .define('/', ModTags.BOARDS)
-            .define('@', Items.CHAIN)
-            .pattern("@@@")
-            .pattern("/#/")
-            .pattern("   "));
-
-        createStatueTrophy(consumer, ModItems.CREEPER_TROPHY.get(), 1, Items.CREEPER_HEAD);
-        createStatueTrophy(consumer, ModItems.SKELETON_TROPHY.get(), 1, Items.SKELETON_SKULL);
-        createStatueTrophy(consumer, ModItems.EVOKER_TROPHY.get(), 1, Items.TOTEM_OF_UNDYING);
-        createStatueTrophy(consumer, ModItems.PILLAGER_TROPHY.get(), 1, Items.CROSSBOW);
-        createStatueTrophy(consumer, ModItems.VINDICATOR_TROPHY.get(), 1, Items.IRON_AXE);
-        createStatueTrophy(consumer, ModItems.WITCH_TROPHY.get(), 1, Items.GLASS_BOTTLE);
     }
 
-    public static void createSimple(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count))
-            .group(name)
-            .save(consumer);
-    }
-
-    public static void createSimpleShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
-            .group(name)
-            .save(consumer);
-    }
-
-    public static void createSingleDyeShapeless(Consumer<FinishedRecipe> consumer, Item output, int count, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> func) {
-        String name = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(output)).getPath();
-        func.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output, count))
-            .group(name)
-            .save(consumer, new ResourceLocation(Handcrafted.MOD_ID, name + "_single"));
-    }
-
-    public static void createWoodSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get(), ModItems.CHERRY_BOARD.get(), ModItems.BAMBOO_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', wood)
-                .group(suffix)
-                .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWoodSetRecipeWithPlanks(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{ModItems.ACACIA_BOARD.get(), ModItems.BIRCH_BOARD.get(), ModItems.DARK_OAK_BOARD.get(), ModItems.JUNGLE_BOARD.get(), ModItems.MANGROVE_BOARD.get(), ModItems.OAK_BOARD.get(), ModItems.SPRUCE_BOARD.get(), ModItems.CRIMSON_BOARD.get(), ModItems.WARPED_BOARD.get(), ModItems.CHERRY_BOARD.get(), ModItems.BAMBOO_BOARD.get()}) {
-            String woodName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_board", "");
-            Item planks = ForgeRegistries.ITEMS.getValue(new ResourceLocation(woodName + "_planks"));
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, woodName + "_" + suffix));
-
-            assert output != null;
-            assert planks != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', wood)
-                .define('/', planks)
-                .group(suffix)
-                .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createColouredSetRecipe(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.BLACK_WOOL, Items.BLUE_WOOL, Items.BROWN_WOOL, Items.CYAN_WOOL, Items.GRAY_WOOL, Items.GREEN_WOOL, Items.LIGHT_BLUE_WOOL, Items.LIGHT_GRAY_WOOL, Items.LIME_WOOL, Items.MAGENTA_WOOL, Items.ORANGE_WOOL, Items.PINK_WOOL, Items.PURPLE_WOOL, Items.RED_WOOL, Items.WHITE_WOOL, Items.YELLOW_WOOL}) {
-            String color = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_wool", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, color + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', wood)
-                .group(suffix)
-                .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createTrim(Consumer<FinishedRecipe> consumer, String suffix, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> func) {
-        for (Item wood : new Item[]{Items.ANDESITE, Items.BLACKSTONE, Items.BRICKS, Items.CALCITE, Items.DEEPSLATE, Items.DIORITE, Items.DRIPSTONE_BLOCK, Items.GRANITE, Items.QUARTZ_BLOCK, Items.STONE}) {
-            String trimName = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(wood)).getPath().replace("_block", "");
-            Item output = ForgeRegistries.ITEMS.getValue(new ResourceLocation(Handcrafted.MOD_ID, trimName + "_" + suffix));
-
-            assert output != null;
-            ShapedRecipeBuilder recipe = func.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-                .define('#', wood)
-                .group(suffix)
-                .unlockedBy("has_" + suffix, has(wood)));
-
-            recipe.save(consumer);
-        }
-    }
-
-    public static void createWallTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-            .define('#', ModTags.BOARDS)
-            .define('/', input)
-            .group("trophy")
-            .unlockedBy("has_trophy", has(ModTags.BOARDS))
-            .pattern("###")
-            .pattern("#/#")
-            .pattern("###")
-            .save(consumer);
-
-    }
-
-    public static void createStatueTrophy(Consumer<FinishedRecipe> consumer, Item output, int count, Item input) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output, count)
-            .define('#', Items.STONE)
-            .define('/', input)
-            .group("trophy")
-            .unlockedBy("has_trophy", has(Items.STONE))
+    private void statueTrophy(RegistryEntry<Item> result, Supplier<Item> catalyst) {
+        shaped(result, 1, () -> Items.STONE, r -> r
+            .define('/', catalyst.get())
             .pattern(" # ")
             .pattern("#/#")
-            .pattern("# #")
-            .save(consumer);
+            .pattern("# #"));
+    }
 
+    private void pot(
+        RegistryEntry<Item> thin, RegistryEntry<Item> medium,
+        RegistryEntry<Item> wide, RegistryEntry<Item> thick,
+        Supplier<Item> catalyst) {
+        pot(thin, catalyst, ModItems.TERRACOTTA_THIN_POT);
+        pot(medium, catalyst, ModItems.TERRACOTTA_MEDIUM_POT);
+        pot(wide, catalyst, ModItems.TERRACOTTA_WIDE_POT);
+        pot(thick, catalyst, ModItems.TERRACOTTA_THICK_POT);
+    }
+
+    private void pot(RegistryEntry<Item> result, Supplier<Item> catalyst, Supplier<Item> terracottaPot) {
+        shapeless(result, 1, catalyst, r -> r
+            .requires(terracottaPot.get()));
+    }
+
+    private void crockery(
+        RegistryEntry<Item> cup, RegistryEntry<Item> bowl,
+        RegistryEntry<Item> plate, RegistryEntry<Item> combo,
+        Supplier<Item> catalyst) {
+        crockery(cup, catalyst, ModItems.TERRACOTTA_CUP);
+        crockery(bowl, catalyst, ModItems.TERRACOTTA_BOWL);
+        crockery(plate, catalyst, ModItems.TERRACOTTA_PLATE);
+        crockery(combo, catalyst, ModItems.TERRACOTTA_CROCKERY_COMBO);
+    }
+
+    private void crockery(RegistryEntry<Item> result, Supplier<Item> catalyst, Supplier<Item> terracottaPot) {
+        shapeless(result, 1, catalyst, r -> r
+            .requires(terracottaPot.get()));
+    }
+
+    private Item getPlanks(RegistryEntry<Item> result) {
+        if (result.getId().getPath().contains("dark_oak")) {
+            return Items.DARK_OAK_PLANKS;
+        }
+        return BuiltInRegistries.ITEM.get(new ResourceLocation(result.getId().getPath().split("_")[0] + "_planks"));
+    }
+
+    private Item getSlab(RegistryEntry<Item> result) {
+        if (result.getId().getPath().contains("dark_oak")) {
+            return Items.DARK_OAK_SLAB;
+        }
+        return BuiltInRegistries.ITEM.get(new ResourceLocation(result.getId().getPath().split("_")[0] + "_slab"));
     }
 }

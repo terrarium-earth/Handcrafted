@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sheet": {
+    "has_light_gray_sheet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:light_gray_wool"
+              "minecraft:gray_wool"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_sheet",
+      "has_light_gray_sheet",
       "has_the_recipe"
     ]
   ],

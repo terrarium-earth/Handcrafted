@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fancy_bed": {
+    "has_dark_oak_fancy_bed": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:dark_oak_board"
+              "minecraft:dark_oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_fancy_bed",
+      "has_dark_oak_fancy_bed",
       "has_the_recipe"
     ]
   ],

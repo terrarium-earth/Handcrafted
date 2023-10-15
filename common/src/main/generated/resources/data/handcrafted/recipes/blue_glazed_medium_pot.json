@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "blue_glazed_medium_pot",
   "ingredients": [
     {
-      "item": "handcrafted:terracotta_medium_pot"
+      "item": "minecraft:blue_glazed_terracotta"
     },
     {
-      "item": "minecraft:blue_glazed_terracotta"
+      "item": "handcrafted:terracotta_medium_pot"
     }
   ],
   "result": {

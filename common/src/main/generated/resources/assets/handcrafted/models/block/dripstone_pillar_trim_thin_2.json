@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/trim/thin_pillar_trim",
+  "textures": {
+    "texture": "handcrafted:block/trim/pillar/dripstone_pillar_trim_2_thin"
+  }
+}

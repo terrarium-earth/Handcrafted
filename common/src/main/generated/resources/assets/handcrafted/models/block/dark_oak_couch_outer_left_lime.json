@@ -1,0 +1,8 @@
+{
+  "parent": "handcrafted:block/couch/corner_inverted",
+  "textures": {
+    "cushion": "handcrafted:block/couch/cushion/lime_cushion",
+    "particle": "minecraft:block/dark_oak_planks",
+    "wood": "handcrafted:block/couch/dark_oak_couch"
+  }
+}

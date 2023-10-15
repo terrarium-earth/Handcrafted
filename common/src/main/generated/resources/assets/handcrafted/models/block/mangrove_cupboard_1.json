@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/cupboard/mangrove/cupboard_top",
+    "east": "handcrafted:block/cupboard/mangrove/cupboard_side",
+    "north": "handcrafted:block/cupboard/mangrove/cupboard_1",
+    "particle": "minecraft:block/mangrove_planks",
+    "south": "handcrafted:block/cupboard/mangrove/cupboard_back",
+    "up": "handcrafted:block/cupboard/mangrove/cupboard_top",
+    "west": "handcrafted:block/cupboard/mangrove/cupboard_side"
+  }
+}

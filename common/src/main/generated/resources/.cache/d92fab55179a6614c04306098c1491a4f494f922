@@ -1,0 +1,26 @@
+// 1.20.1	2023-10-14T21:28:11.071584	Tags for minecraft:item mod id handcrafted
+3662d7ac15380cec631c2eb872b6cbbb69072d62 data/handcrafted/tags/items/bowls.json
+d23ee811738879d0b22d489c76f6947f6b0ccf40 data/handcrafted/tags/items/chairs.json
+388401c38f894060a6c94c6a00930899e4c2fc2b data/handcrafted/tags/items/couches.json
+8f1e2f5ba117be9e37605de76d76515e8bb05d86 data/handcrafted/tags/items/counter_materials.json
+31bb84aa9fd868dd27c281437482ba714e89da55 data/handcrafted/tags/items/counters.json
+c8e518c376a5ff56355494ea49b1fca4c14b4b89 data/handcrafted/tags/items/crockery.json
+692a62c5f7317f82879e2c8c17212784f680c9dd data/handcrafted/tags/items/crockery_combos.json
+da0d7fb9924ce9d315eda51635bd73cd345bb377 data/handcrafted/tags/items/cupboards.json
+eb835ce315879f96207c074432afa753e4303f51 data/handcrafted/tags/items/cups.json
+af44b2783734da6501f973a349e6906cce5e7ef1 data/handcrafted/tags/items/cushions.json
+f9c4ed3c99bf3d4ed95d7c0884cffda801fab55f data/handcrafted/tags/items/desks.json
+3fae0dc91a43a86093d62e0353b61c517270c45c data/handcrafted/tags/items/dining_benches.json
+10c4d3e9e61c598ded86062f86e233d03085a7ff data/handcrafted/tags/items/drawers.json
+2127b1afa21e28f6db5040da5e4e3e4f2f52e832 data/handcrafted/tags/items/fancy_beds.json
+975552d1bd38d4726fa99ac3ddeeab46e3fc4f68 data/handcrafted/tags/items/nightstands.json
+c5d6286b559abdac6e3776f43106c50a785d4363 data/handcrafted/tags/items/plates.json
+871c45e7a7651c328f65fd265592956e654eefb3 data/handcrafted/tags/items/pots.json
+2bc17395aa1109c68bad153b1195569d861fe5f4 data/handcrafted/tags/items/sheets.json
+d112ab59e44172869a67906c9fa183dc24bd4cfd data/handcrafted/tags/items/shelves.json
+3b8dcf097aa45f2b30e31a5dd1e2b269a5689890 data/handcrafted/tags/items/side_tables.json
+0a476d2c80837899a06ef0ec1d6f93c65a06b6e6 data/handcrafted/tags/items/tables.json
+56c005ea32855c18a76623e99f91b15ac8618b8a data/handcrafted/tags/items/trim_materials.json
+730e80be29f464e055f1b117c904a8901691594a data/handcrafted/tags/items/trims.json
+df918434c0a6a43e73962c398e63489375534dd4 data/handcrafted/tags/items/trophies.json
+ab0e36c3ebe380ea3defda5c2803d4177ca1e908 data/minecraft/tags/items/beds.json

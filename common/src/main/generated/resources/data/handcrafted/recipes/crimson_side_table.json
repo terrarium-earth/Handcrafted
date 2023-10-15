@@ -1,17 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "side_table",
   "key": {
     "#": {
-      "item": "handcrafted:crimson_board"
+      "item": "minecraft:crimson_planks"
+    },
+    "-": {
+      "item": "minecraft:crimson_slab"
     },
     "/": {
-      "item": "minecraft:crimson_planks"
+      "item": "minecraft:chest"
     }
   },
   "pattern": [
-    "   ",
+    "---",
     "#/#",
     "# #"
   ],

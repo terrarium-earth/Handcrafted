@@ -1,0 +1,412 @@
+{
+  "variants": {
+    "facing=east,color=black": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=brown": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=cyan": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=green": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=light_blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=light_gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=lime": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=magenta": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=none": {
+      "highlight": "handcrafted:chair/chair_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=orange": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=pink": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=purple": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=red": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=white": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,color=yellow": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,color=black": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=brown": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=cyan": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=green": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=light_blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=light_gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=lime": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=magenta": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=none": {
+      "highlight": "handcrafted:chair/chair_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=orange": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=pink": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=purple": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=red": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=white": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,color=yellow": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,color=black": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=brown": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=cyan": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=green": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=light_blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=light_gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=lime": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=magenta": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=none": {
+      "highlight": "handcrafted:chair/chair_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=orange": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=pink": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=purple": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=red": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=white": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,color=yellow": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,color=black": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=brown": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=cyan": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=green": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=light_blue": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=light_gray": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=lime": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=magenta": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=none": {
+      "highlight": "handcrafted:chair/chair_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=orange": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=pink": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=purple": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=red": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=white": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,color=yellow": {
+      "highlight": "handcrafted:chair/chair_cushion_shape",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

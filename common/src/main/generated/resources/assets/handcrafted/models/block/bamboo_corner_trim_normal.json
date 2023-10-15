@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/trim/normal_corner_trim",
+  "textures": {
+    "texture": "handcrafted:block/trim/corner/bamboo_corner_trim_normal"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "variants": {
+    "facing=east,pieces=1": {
+      "highlight": "handcrafted:crockery/bowl/single",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,pieces=2": {
+      "highlight": "handcrafted:crockery/bowl/double",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,pieces=3": {
+      "highlight": "handcrafted:crockery/bowl/triple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,pieces=4": {
+      "highlight": "handcrafted:crockery/bowl/quadruple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,pieces=5": {
+      "highlight": "handcrafted:crockery/bowl/quintuple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=east,pieces=6": {
+      "highlight": "handcrafted:crockery/bowl/sextuple",
+      "rotation": {
+        "y": 90
+      }
+    },
+    "facing=north,pieces=1": {
+      "highlight": "handcrafted:crockery/bowl/single",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,pieces=2": {
+      "highlight": "handcrafted:crockery/bowl/double",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,pieces=3": {
+      "highlight": "handcrafted:crockery/bowl/triple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,pieces=4": {
+      "highlight": "handcrafted:crockery/bowl/quadruple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,pieces=5": {
+      "highlight": "handcrafted:crockery/bowl/quintuple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=north,pieces=6": {
+      "highlight": "handcrafted:crockery/bowl/sextuple",
+      "rotation": {
+        "y": 0
+      }
+    },
+    "facing=south,pieces=1": {
+      "highlight": "handcrafted:crockery/bowl/single",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,pieces=2": {
+      "highlight": "handcrafted:crockery/bowl/double",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,pieces=3": {
+      "highlight": "handcrafted:crockery/bowl/triple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,pieces=4": {
+      "highlight": "handcrafted:crockery/bowl/quadruple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,pieces=5": {
+      "highlight": "handcrafted:crockery/bowl/quintuple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=south,pieces=6": {
+      "highlight": "handcrafted:crockery/bowl/sextuple",
+      "rotation": {
+        "y": 180
+      }
+    },
+    "facing=west,pieces=1": {
+      "highlight": "handcrafted:crockery/bowl/single",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,pieces=2": {
+      "highlight": "handcrafted:crockery/bowl/double",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,pieces=3": {
+      "highlight": "handcrafted:crockery/bowl/triple",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,pieces=4": {
+      "highlight": "handcrafted:crockery/bowl/quadruple",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,pieces=5": {
+      "highlight": "handcrafted:crockery/bowl/quintuple",
+      "rotation": {
+        "y": 270
+      }
+    },
+    "facing=west,pieces=6": {
+      "highlight": "handcrafted:crockery/bowl/sextuple",
+      "rotation": {
+        "y": 270
+      }
+    }
+  }
+}

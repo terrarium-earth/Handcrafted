@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "sheet",
   "key": {
     "#": {
       "item": "minecraft:pink_wool"
     }
   },
   "pattern": [
-    "   ",
-    "###",
-    "   "
+    "###"
   ],
   "result": {
     "count": 8,

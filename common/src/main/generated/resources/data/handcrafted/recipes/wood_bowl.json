@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "wood_bowl",
   "key": {
     "#": {
-      "tag": "handcrafted:boards"
+      "tag": "minecraft:wooden_slabs"
+    },
+    "/": {
+      "tag": "minecraft:planks"
     }
   },
   "pattern": [
     "# #",
-    " # ",
-    "   "
+    " / "
   ],
   "result": {
     "count": 3,

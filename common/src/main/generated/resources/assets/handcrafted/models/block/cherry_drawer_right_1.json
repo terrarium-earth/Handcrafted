@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/drawer/cherry/drawer_bottom",
+    "east": "handcrafted:block/drawer/cherry/drawer_side_left",
+    "north": "handcrafted:block/drawer/cherry/front_1/drawer_right",
+    "particle": "minecraft:block/cherry_planks",
+    "south": "handcrafted:block/drawer/cherry/drawer_back",
+    "up": "handcrafted:block/drawer/cherry/drawer_top",
+    "west": "handcrafted:block/drawer/cherry/drawer_side_right"
+  }
+}

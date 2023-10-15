@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "sheet",
   "key": {
     "#": {
-      "item": "minecraft:light_blue_wool"
+      "item": "minecraft:blue_wool"
     }
   },
   "pattern": [
-    "   ",
-    "###",
-    "   "
+    "###"
   ],
   "result": {
     "count": 8,

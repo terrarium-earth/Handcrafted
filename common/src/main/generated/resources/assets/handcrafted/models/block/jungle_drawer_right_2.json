@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/drawer/jungle/drawer_bottom",
+    "east": "handcrafted:block/drawer/jungle/drawer_side_left",
+    "north": "handcrafted:block/drawer/jungle/front_2/drawer_right",
+    "particle": "minecraft:block/jungle_planks",
+    "south": "handcrafted:block/drawer/jungle/drawer_back",
+    "up": "handcrafted:block/drawer/jungle/drawer_top",
+    "west": "handcrafted:block/drawer/jungle/drawer_side_right"
+  }
+}

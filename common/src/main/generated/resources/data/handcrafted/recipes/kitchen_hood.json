@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "kitchen_hood",
   "key": {
     "#": {
       "item": "minecraft:iron_bars"

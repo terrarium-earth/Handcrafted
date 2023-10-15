@@ -1,0 +1,9 @@
+{
+  "parent": "handcrafted:block/fancy_bed/bed_middle_occupied",
+  "textures": {
+    "cushion": "handcrafted:block/bench/cushion/none_cushion",
+    "frame": "handcrafted:block/fancy_bed/double/cherry_fancy_bed",
+    "particle": "minecraft:block/cherry_planks",
+    "sheets": "handcrafted:block/fancy_bed/sheets/black_sheet"
+  }
+}

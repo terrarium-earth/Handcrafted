@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_board": {
+    "has_hammer": {
       "conditions": {
         "items": [
           {
-            "tag": "handcrafted:boards"
+            "items": [
+              "minecraft:iron_ingot"
+            ]
           }
         ]
       },
@@ -20,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_board",
+      "has_hammer",
       "has_the_recipe"
     ]
   ],

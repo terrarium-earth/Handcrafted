@@ -1,0 +1,11 @@
+{
+  "parent": "handcrafted:block/shelf",
+  "textures": {
+    "back": "handcrafted:block/shelf/bamboo/shelf_back",
+    "front": "handcrafted:block/shelf/bamboo/shelf_single",
+    "left": "handcrafted:block/shelf/bamboo/shelf_side_left",
+    "overlay": "handcrafted:block/shelf/overlay/cobwebs_single",
+    "right": "handcrafted:block/shelf/bamboo/shelf_side_right",
+    "wood": "minecraft:block/bamboo_planks"
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "variants": {
+    "face=ceiling,facing=east,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=east,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 90
+    },
+    "face=ceiling,facing=north,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90
+    },
+    "face=ceiling,facing=north,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90
+    },
+    "face=ceiling,facing=south,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=south,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 180
+    },
+    "face=ceiling,facing=west,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=west,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 90,
+      "y": 270
+    },
+    "face=floor,facing=east,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=east,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 90
+    },
+    "face=floor,facing=north,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270
+    },
+    "face=floor,facing=north,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270
+    },
+    "face=floor,facing=south,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=south,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 180
+    },
+    "face=floor,facing=west,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=floor,facing=west,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "x": 270,
+      "y": 270
+    },
+    "face=wall,facing=east,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 90
+    },
+    "face=wall,facing=east,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 90
+    },
+    "face=wall,facing=north,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1"
+    },
+    "face=wall,facing=north,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1"
+    },
+    "face=wall,facing=north,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2"
+    },
+    "face=wall,facing=north,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2"
+    },
+    "face=wall,facing=north,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1"
+    },
+    "face=wall,facing=north,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1"
+    },
+    "face=wall,facing=north,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2"
+    },
+    "face=wall,facing=north,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2"
+    },
+    "face=wall,facing=north,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1"
+    },
+    "face=wall,facing=north,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1"
+    },
+    "face=wall,facing=north,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2"
+    },
+    "face=wall,facing=north,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2"
+    },
+    "face=wall,facing=south,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 180
+    },
+    "face=wall,facing=south,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 180
+    },
+    "face=wall,facing=west,trim=normal,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=normal,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=normal,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=normal,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_normal_2",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thicc,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thicc,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thicc,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thicc,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thicc_2",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thin,type=1,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thin,type=1,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_1",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thin,type=2,waterlogged=false": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 270
+    },
+    "face=wall,facing=west,trim=thin,type=2,waterlogged=true": {
+      "model": "handcrafted:block/quartz_pillar_trim_thin_2",
+      "y": 270
+    }
+  }
+}

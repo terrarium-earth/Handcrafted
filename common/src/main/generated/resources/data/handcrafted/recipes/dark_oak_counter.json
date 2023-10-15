@@ -1,25 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "counter",
   "key": {
     "#": {
-      "item": "handcrafted:dark_oak_board"
+      "item": "minecraft:dark_oak_planks"
     },
     "/": {
-      "item": "minecraft:calcite"
+      "item": "minecraft:chest"
     },
     "@": {
-      "item": "minecraft:chest"
+      "item": "minecraft:calcite"
     }
   },
   "pattern": [
-    "///",
-    "#@#",
-    "###"
+    "@@@",
+    "#/#"
   ],
   "result": {
-    "count": 2,
+    "count": 3,
     "item": "handcrafted:dark_oak_counter"
   },
   "show_notification": true

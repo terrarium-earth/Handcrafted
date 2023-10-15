@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_drawer": {
+    "has_dark_oak_drawer": {
       "conditions": {
         "items": [
           {
             "items": [
-              "handcrafted:dark_oak_board"
+              "minecraft:dark_oak_planks"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_drawer",
+      "has_dark_oak_drawer",
       "has_the_recipe"
     ]
   ],

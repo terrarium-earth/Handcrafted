@@ -6,10 +6,8 @@ import com.teamresourceful.resourcefullib.client.CloseablePoseStack;
 import earth.terrarium.handcrafted.common.blocks.crockery.CrockeryBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.crockery.CrockeryComboBlock;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.item.ItemDisplayContext;
 
 public class CrockeryRenderer implements BlockEntityRenderer<CrockeryBlockEntity> {
@@ -21,7 +19,7 @@ public class CrockeryRenderer implements BlockEntityRenderer<CrockeryBlockEntity
             poseStack.translate(0.5, 1.25f / 16, 0.5);
             poseStack.mulPose(Axis.YN.rotationDegrees(entity.getBlockState().getValue(CrockeryComboBlock.FACING).getOpposite().toYRot()));
             poseStack.mulPose(Axis.XP.rotationDegrees(270));
-            Minecraft.getInstance().getItemRenderer().renderStatic(entity.getStack(), ItemDisplayContext.GROUND, LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY, poseStack, bufferSource, Minecraft.getInstance().level, 0);
+            Minecraft.getInstance().getItemRenderer().renderStatic(entity.getStack(), ItemDisplayContext.GROUND, packedLight, packedOverlay, poseStack, bufferSource, Minecraft.getInstance().level, 0);
         }
     }
 }

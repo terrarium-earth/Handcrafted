@@ -33,12 +33,14 @@ public enum CounterProperty implements StringRepresentable {
     WARPED_PLANKS,
     ;
 
-    public String toString() {
-        return getSerializedName();
-    }
-
+    @Override
     public @NotNull String getSerializedName() {
         return name().toLowerCase();
+    }
+
+    @Override
+    public String toString() {
+        return getSerializedName();
     }
 
     public static CounterProperty fromBlock(Item block) {

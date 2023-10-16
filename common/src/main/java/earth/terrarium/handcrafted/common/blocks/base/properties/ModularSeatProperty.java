@@ -14,6 +14,12 @@ public enum ModularSeatProperty implements StringRepresentable {
     OUTER_RIGHT,
     ;
 
+    @Override
+    public @NotNull String getSerializedName() {
+        return name().toLowerCase();
+    }
+
+    @Override
     public String toString() {
         return getSerializedName();
     }
@@ -24,9 +30,5 @@ public enum ModularSeatProperty implements StringRepresentable {
             case OUTER_LEFT, OUTER_RIGHT -> "corner_inverted";
             default -> getSerializedName();
         };
-    }
-
-    public @NotNull String getSerializedName() {
-        return name().toLowerCase();
     }
 }

@@ -10,6 +10,7 @@ public class ConstantComponents {
     public static final Component HAMMER_USE_LOOK_SHIFT = Component.translatable("tooltip.handcrafted.hammer_use_look_shift").copy().withStyle(ChatFormatting.GRAY);
 
     public static final Component COUNTER = Component.translatable("tooltip.handcrafted.counter").copy().withStyle(ChatFormatting.GRAY);
+    public static final Component CROCKERY_COMBO = Component.translatable("tooltip.handcrafted.crockery_combo").copy().withStyle(ChatFormatting.GRAY);
 
     public static final Component PLACE_ON_FURNITURE = Component.translatable("tooltip.handcrafted.place_on_furniture").copy().withStyle(ChatFormatting.GRAY);
     public static final Component CUSHION = Component.translatable("tooltip.handcrafted.cushion").copy().withStyle(ChatFormatting.GRAY);

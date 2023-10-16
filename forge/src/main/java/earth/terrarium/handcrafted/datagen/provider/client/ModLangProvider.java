@@ -51,7 +51,9 @@ public class ModLangProvider extends LanguageProvider {
         add(ConstantComponents.HAMMER_USE_LOOK.getString(), "Right-click with a hammer to change the block's look.");
         add(ConstantComponents.HAMMER_USE_SHAPE.getString(), "Right-click with a hammer to change the block's shape.");
         add(ConstantComponents.HAMMER_USE_LOOK_SHIFT.getString(), "Shift-right-click with a hammer to change the block's look.");
+
         add(ConstantComponents.COUNTER.getString(), "Right-click with wood or stone to change the counter surface.");
+        add(ConstantComponents.CROCKERY_COMBO.getString(), "Right-click with any item to place it on the plate.");
 
         add(ConstantComponents.PLACE_ON_FURNITURE.getString(), "Can be placed on furniture.");
         add(ConstantComponents.CUSHION.getString(), "Right-click with a cushion to change the block's look.");

@@ -57,7 +57,7 @@ subprojects {
         })
 
         compileOnly(group = "com.teamresourceful", name = "yabn", version = "1.0.3")
-        "include"("modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion))
+        "modApi"(group = "com.teamresourceful.resourcefullib", name = "resourcefullib-$modLoader-$minecraftVersion", version = resourcefulLibVersion)
     }
 
     java {

@@ -22,11 +22,13 @@ public enum TableProperty implements StringRepresentable {
     WEST_SIDE,
     ;
 
-    public String toString() {
-        return getSerializedName();
-    }
-
+    @Override
     public @NotNull String getSerializedName() {
         return name().toLowerCase();
+    }
+
+    @Override
+    public String toString() {
+        return getSerializedName();
     }
 }

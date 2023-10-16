@@ -23,7 +23,7 @@ before updating.**
 - Add more trim types.
 - Add better tooltips to make it more clear what's hammerable, what can hold cushions, and what can hold sheets.
 - Shelf variants are now controlled via hammer.
-- Fancy beds should no longer break with block entity optimization mods. I haven't tested, but it'll probably work now.
+- Fixed fancy bed incompatibility with better beds
 - Optimized fancy beds. Fancy beds are no longer block entities which improves their performance substantially,
   far beyond even vanilla beds.
 - Add highlight support to furniture. This improves the visual outline box of the furniture.

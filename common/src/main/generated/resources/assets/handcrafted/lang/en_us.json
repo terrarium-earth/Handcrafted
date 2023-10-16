@@ -378,6 +378,7 @@
   "tooltip.handcrafted.bed_pillow": "Right-click with a cushion to change the bed's pillow color.",
   "tooltip.handcrafted.bed_sheet": "Right-click with a sheet to change the bedsheets.",
   "tooltip.handcrafted.counter": "Right-click with wood or stone to change the counter surface.",
+  "tooltip.handcrafted.crockery_combo": "Right-click with any item to place it on the plate.",
   "tooltip.handcrafted.cushion": "Right-click with a cushion to change the block's look.",
   "tooltip.handcrafted.hammer": "Changes the look of blocks.",
   "tooltip.handcrafted.hammer_use_look": "Right-click with a hammer to change the block's look.",

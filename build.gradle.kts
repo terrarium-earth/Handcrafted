@@ -116,17 +116,17 @@ subprojects {
 
                 pom {
                     name.set("Handcrafted $modLoader")
-                    url.set("https://github.com/bonsaistudi0s/$modId")
+                    url.set("https://github.com/terrarium-earth/$modId")
 
                     scm {
-                        connection.set("git:https://github.com/bonsaistudi0s/$modId.git")
-                        developerConnection.set("git:https://github.com/bonsaistudi0s/$modId.git")
-                        url.set("https://github.com/bonsaistudi0s/$modId")
+                        connection.set("git:https://github.com/terrarium-earth/$modId.git")
+                        developerConnection.set("git:https://github.com/terrarium-earth/$modId.git")
+                        url.set("https://github.com/terrarium-earth/$modId")
                     }
 
                     licenses {
                         license {
-                            name.set("ARR")
+                            name.set("MIT")
                         }
                     }
                 }
@@ -134,7 +134,7 @@ subprojects {
         }
         repositories {
             maven {
-                setUrl("https://maven.resourcefulbees.com/repository/bonsaistudi0s/")
+                setUrl("https://maven.resourcefulbees.com/repository/terrarium/")
                 credentials {
                     username = System.getenv("MAVEN_USER")
                     password = System.getenv("MAVEN_PASS")

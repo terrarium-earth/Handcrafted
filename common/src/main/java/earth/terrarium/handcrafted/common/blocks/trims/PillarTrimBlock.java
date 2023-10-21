@@ -16,6 +16,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
@@ -159,6 +160,11 @@ public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock impl
         tooltip.add(ConstantComponents.HAMMER_USE_SHAPE);
         tooltip.add(ConstantComponents.HAMMER_USE_LOOK_SHIFT);
     }
+
+    @Override
+    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+		return true;
+	}
 
     static {
         NORMAL_NORTH_SHAPE = Shapes.join(

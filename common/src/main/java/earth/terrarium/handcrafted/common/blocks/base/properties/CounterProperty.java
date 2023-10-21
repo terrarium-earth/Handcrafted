@@ -35,7 +35,7 @@ public enum CounterProperty implements StringRepresentable {
 
     @Override
     public @NotNull String getSerializedName() {
-        return name().toLowerCase();
+        return name().toLowerCase(Locale.ROOT);
     }
 
     @Override

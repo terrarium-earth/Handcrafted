@@ -126,7 +126,7 @@ subprojects {
 
                     licenses {
                         license {
-                            name.set("MIT")
+                            name.set("ARR")
                         }
                     }
                 }

@@ -19,11 +19,11 @@ public class FancyPainting extends Painting {
         super(type, level);
     }
 
-    public FancyPainting(Level level, BlockPos blockPos, Direction direction, Holder<PaintingVariant> holder) {
+    public FancyPainting(Level level, BlockPos pos, Direction direction, Holder<PaintingVariant> holder) {
         super(ModEntityTypes.FANCY_PAINTING.get(), level);
         this.setVariant(holder);
         this.setDirection(direction);
-        this.pos = blockPos;
+        this.pos = pos;
     }
 
     @Override

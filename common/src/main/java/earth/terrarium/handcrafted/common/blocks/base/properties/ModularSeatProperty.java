@@ -3,6 +3,8 @@ package earth.terrarium.handcrafted.common.blocks.base.properties;
 import net.minecraft.util.StringRepresentable;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Locale;
+
 public enum ModularSeatProperty implements StringRepresentable {
     SINGLE,
     LEFT,
@@ -16,7 +18,7 @@ public enum ModularSeatProperty implements StringRepresentable {
 
     @Override
     public @NotNull String getSerializedName() {
-        return name().toLowerCase();
+        return name().toLowerCase(Locale.ROOT);
     }
 
     @Override

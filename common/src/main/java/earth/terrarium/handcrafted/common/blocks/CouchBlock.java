@@ -51,6 +51,7 @@ public class CouchBlock extends ModularSeatBlock {
         if (!level.isClientSide() && state.getBlock() != newState.getBlock() && state.getValue(COLOR) != ColorProperty.WHITE) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), state.getValue(COLOR).toCushion());
         }
+        super.onRemove(state, level, pos, newState, moved);
     }
 
     @Override

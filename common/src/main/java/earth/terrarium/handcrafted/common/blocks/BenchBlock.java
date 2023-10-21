@@ -56,6 +56,7 @@ public class BenchBlock extends ModularSeatBlock {
         if (!level.isClientSide() && state.getBlock() != newState.getBlock()) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), state.getValue(COLOR).toCushion());
         }
+        super.onRemove(state, level, pos, newState, moved);
     }
 
     @Override

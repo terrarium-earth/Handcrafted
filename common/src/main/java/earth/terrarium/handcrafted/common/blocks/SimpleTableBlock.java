@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.tags.ModItemTags;
 import net.minecraft.core.BlockPos;
@@ -44,8 +45,15 @@ public class SimpleTableBlock extends HorizontalDirectionalBlock implements Simp
 
     @Override
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean moved) {
-        if (!level.isClientSide() && state.getBlock() != newState.getBlock()) {
+        if (state.getBlock() != newState.getBlock()) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), state.getValue(COLOR).toSheet());
+            if (level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
+                if (container.getContainerSize() > 0) {
+                    Containers.dropContents(level, pos, container);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+            }
+            super.onRemove(state, level, pos, newState, moved);
         }
     }
 

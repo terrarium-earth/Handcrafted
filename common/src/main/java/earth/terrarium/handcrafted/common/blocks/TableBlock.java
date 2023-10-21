@@ -75,6 +75,7 @@ public class TableBlock extends Block implements SimpleWaterloggedBlock {
         if (!level.isClientSide() && state.getBlock() != newState.getBlock()) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), state.getValue(COLOR).toSheet());
         }
+        super.onRemove(state, level, pos, newState, moved);
     }
 
     @Override

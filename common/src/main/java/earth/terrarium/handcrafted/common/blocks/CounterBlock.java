@@ -58,6 +58,15 @@ public class CounterBlock extends HorizontalDirectionalBlock implements Hammerab
         if (!level.isClientSide() && state.getBlock() != newState.getBlock() && !state.getValue(COUNTER).toBlock().is(Items.CALCITE)) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), state.getValue(COUNTER).toBlock());
         }
+        if (state.getBlock() != newState.getBlock()) {
+            if (level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
+                if (container.getContainerSize() > 0) {
+                    Containers.dropContents(level, pos, container);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+            }
+            super.onRemove(state, level, pos, newState, moved);
+        }
     }
 
     @Override

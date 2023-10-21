@@ -66,6 +66,7 @@ public class FancyBedBlock extends BedBlock {
                     state.getValue(COLOR).toSheet() :
                     state.getValue(COLOR).toCushion());
         }
+        super.onRemove(state, level, pos, newState, moved);
     }
 
     @Override

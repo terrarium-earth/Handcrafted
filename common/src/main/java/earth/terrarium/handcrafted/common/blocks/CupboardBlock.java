@@ -9,6 +9,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -79,5 +80,18 @@ public class CupboardBlock extends HorizontalDirectionalBlock implements Hammera
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(ConstantComponents.HAMMER_USE_LOOK);
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean moved) {
+        if (state.getBlock() != newState.getBlock()) {
+            if (level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
+                if (container.getContainerSize() > 0) {
+                    Containers.dropContents(level, pos, container);
+                    level.updateNeighbourForOutputSignal(pos, this);
+                }
+            }
+            super.onRemove(state, level, pos, newState, moved);
+        }
     }
 }

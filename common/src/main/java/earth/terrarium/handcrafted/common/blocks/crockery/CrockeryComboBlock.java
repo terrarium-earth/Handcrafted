@@ -44,6 +44,7 @@ public class CrockeryComboBlock extends SimpleBlock implements EntityBlock {
         if (!level.isClientSide() && level.getBlockEntity(pos) instanceof CrockeryBlockEntity crockery) {
             Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), crockery.getStack());
         }
+        super.onRemove(state, level, pos, newState, moved);
     }
 
     @Override

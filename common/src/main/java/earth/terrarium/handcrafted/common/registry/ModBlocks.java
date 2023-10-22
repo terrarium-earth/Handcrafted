@@ -24,7 +24,7 @@ public class ModBlocks {
 
     public static final ResourcefulRegistry<Block> CUSHIONS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> BENCHES = ResourcefulRegistries.create(BLOCKS);
-    public static final ResourcefulRegistry<Block> WOOD_BENCHES = ResourcefulRegistries.create(BENCHES);
+    public static final ResourcefulRegistry<Block> WOODEN_BENCHES = ResourcefulRegistries.create(BENCHES);
     public static final ResourcefulRegistry<Block> METAL_BENCHES = ResourcefulRegistries.create(BENCHES);
     public static final ResourcefulRegistry<Block> COUCHES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> CHAIRS = ResourcefulRegistries.create(BLOCKS);
@@ -75,17 +75,17 @@ public class ModBlocks {
     public static final RegistryEntry<Block> WHITE_CUSHION = CUSHIONS.register("white_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryEntry<Block> YELLOW_CUSHION = CUSHIONS.register("yellow_cushion", () -> new CushionBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
-    public static final RegistryEntry<Block> ACACIA_BENCH = WOOD_BENCHES.register("acacia_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> BAMBOO_BENCH = WOOD_BENCHES.register("bamboo_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> BIRCH_BENCH = WOOD_BENCHES.register("birch_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> CHERRY_BENCH = WOOD_BENCHES.register("cherry_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> CRIMSON_BENCH = WOOD_BENCHES.register("crimson_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> DARK_OAK_BENCH = WOOD_BENCHES.register("dark_oak_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> JUNGLE_BENCH = WOOD_BENCHES.register("jungle_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> MANGROVE_BENCH = WOOD_BENCHES.register("mangrove_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> OAK_BENCH = WOOD_BENCHES.register("oak_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> SPRUCE_BENCH = WOOD_BENCHES.register("spruce_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
-    public static final RegistryEntry<Block> WARPED_BENCH = WOOD_BENCHES.register("warped_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> ACACIA_BENCH = WOODEN_BENCHES.register("acacia_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> BAMBOO_BENCH = WOODEN_BENCHES.register("bamboo_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> BIRCH_BENCH = WOODEN_BENCHES.register("birch_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> CHERRY_BENCH = WOODEN_BENCHES.register("cherry_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> CRIMSON_BENCH = WOODEN_BENCHES.register("crimson_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> DARK_OAK_BENCH = WOODEN_BENCHES.register("dark_oak_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> JUNGLE_BENCH = WOODEN_BENCHES.register("jungle_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> MANGROVE_BENCH = WOODEN_BENCHES.register("mangrove_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> OAK_BENCH = WOODEN_BENCHES.register("oak_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> SPRUCE_BENCH = WOODEN_BENCHES.register("spruce_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS).noOcclusion()));
+    public static final RegistryEntry<Block> WARPED_BENCH = WOODEN_BENCHES.register("warped_bench", () -> new BenchBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS).noOcclusion()));
 
     public static final RegistryEntry<Block> BENCH = METAL_BENCHES.register("bench", () -> new MetalBenchBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> FROZEN_BENCH = METAL_BENCHES.register("frozen_bench", () -> new MetalBenchBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));

@@ -77,14 +77,15 @@ public class ModItemTagProvider extends TagsProvider<Item> {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        ModItems.CUSHIONS.stream().forEach(b -> tag(ModItemTags.CUSHIONS).add(TagEntry.element(b.getId())));
-        ModItems.SHEETS.stream().forEach(b -> tag(ModItemTags.SHEETS).add(TagEntry.element(b.getId())));
         COUNTER_MATERIALS.forEach(b -> tag(ModItemTags.COUNTER_MATERIALS).add(TagEntry.element(Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(b)))));
         TRIM_MATERIALS.forEach(b -> tag(ModItemTags.TRIM_MATERIALS).add(TagEntry.element(Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(b)))));
         ModBlocks.FANCY_BEDS.stream().forEach(b -> tag(ItemTags.BEDS).add(TagEntry.element(b.getId())));
 
         addSet(ModItems.CUSHIONS, "cushions");
-        addSet(ModItems.BENCHES, "sheets");
+        addSet(ModItems.SHEETS, "sheets");
+        addSet(ModItems.BENCHES, "benches");
+        addSet(ModItems.WOODEN_BENCHES, "wooden_benches");
+        addSet(ModItems.METAL_BENCHES, "metal_benches");
         addSet(ModItems.COUCHES, "couches");
         addSet(ModItems.CHAIRS, "chairs");
         addSet(ModItems.DINING_BENCHES, "dining_benches");
@@ -99,6 +100,8 @@ public class ModItemTagProvider extends TagsProvider<Item> {
         addSet(ModItems.SHELVES, "shelves");
         addSet(ModItems.POTS, "pots");
         addSet(ModItems.TRIMS, "trims");
+        addSet(ModItems.PILLAR_TRIMS, "pillar_trims");
+        addSet(ModItems.CORNER_TRIMS, "corner_trims");
         addSet(ModItems.TROPHIES, "trophies");
         addSet(ModItems.CROCKERY, "crockery");
         addSet(ModItems.CUPS, "cups");

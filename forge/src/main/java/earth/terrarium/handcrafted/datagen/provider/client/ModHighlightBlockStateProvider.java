@@ -47,7 +47,7 @@ public class ModHighlightBlockStateProvider implements DataProvider {
         ModBlocks.STATUE_TROPHIES.stream().map(RegistryEntry::get).forEach(this::createStatue);
 
         ModBlocks.CHAIRS.stream().map(RegistryEntry::get).forEach(this::createChair);
-        ModBlocks.WOOD_BENCHES.stream().map(RegistryEntry::get).forEach(this::createBench);
+        ModBlocks.WOODEN_BENCHES.stream().map(RegistryEntry::get).forEach(this::createBench);
         ModBlocks.METAL_BENCHES.stream().map(RegistryEntry::get).forEach(this::createMetalBench);
         ModBlocks.COUCHES.stream().map(RegistryEntry::get).forEach(this::createCouch);
         ModBlocks.DINING_BENCHES.stream().map(RegistryEntry::get).forEach(this::createDiningBench);

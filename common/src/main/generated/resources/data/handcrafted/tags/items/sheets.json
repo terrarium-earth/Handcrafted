@@ -15,19 +15,6 @@
     "handcrafted:purple_sheet",
     "handcrafted:red_sheet",
     "handcrafted:white_sheet",
-    "handcrafted:yellow_sheet",
-    "handcrafted:acacia_bench",
-    "handcrafted:bamboo_bench",
-    "handcrafted:birch_bench",
-    "handcrafted:cherry_bench",
-    "handcrafted:crimson_bench",
-    "handcrafted:dark_oak_bench",
-    "handcrafted:jungle_bench",
-    "handcrafted:mangrove_bench",
-    "handcrafted:oak_bench",
-    "handcrafted:spruce_bench",
-    "handcrafted:warped_bench",
-    "handcrafted:bench",
-    "handcrafted:frozen_bench"
+    "handcrafted:yellow_sheet"
   ]
 }

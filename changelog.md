@@ -1,7 +1,1 @@
-- Fix blockstate crash with some languages like Turkish by using `toLowerCase(Locale.ROOT)`
-- Fix pillar trims breaking without anchor block (#64)
-- Fix containers not dropping contents (#65)
-- Fix couch and metal bench shading (#63)
-- Fix counter lighting (#63)
-- Fix corner trim lighting
-- Fix Nightstand, Desk, Side table, and Table z-fighting (#63)
+- Fix benches being present in sheets tag

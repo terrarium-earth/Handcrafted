@@ -38,7 +38,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         ModBlocks.CUSHIONS.stream().map(RegistryEntry::get).forEach(this::cushion);
-        ModBlocks.WOOD_BENCHES.stream().map(RegistryEntry::get).forEach(this::bench);
+        ModBlocks.WOODEN_BENCHES.stream().map(RegistryEntry::get).forEach(this::bench);
         ModBlocks.METAL_BENCHES.stream().map(RegistryEntry::get).forEach(this::metalBench);
         ModBlocks.COUCHES.stream().map(RegistryEntry::get).forEach(this::couch);
         ModBlocks.CHAIRS.stream().map(RegistryEntry::get).forEach(this::chair);

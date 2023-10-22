@@ -32,8 +32,8 @@ public class ModBlockTagProvider extends TagsProvider<Block> {
         ModBlocks.FANCY_BEDS.stream().forEach(b -> tag(BlockTags.BEDS).add(TagEntry.element(b.getId())));
 
         addSet(ModBlocks.CUSHIONS, "cushions");
-        addSet(ModBlocks.BENCHES, "sheets");
-        addSet(ModBlocks.WOOD_BENCHES, "wood_benches");
+        addSet(ModBlocks.BENCHES, "benches");
+        addSet(ModBlocks.WOODEN_BENCHES, "wooden_benches");
         addSet(ModBlocks.METAL_BENCHES, "metal_benches");
         addSet(ModBlocks.COUCHES, "couches");
         addSet(ModBlocks.CHAIRS, "chairs");
@@ -79,7 +79,7 @@ public class ModBlockTagProvider extends TagsProvider<Block> {
                 BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(TagEntry.element(b.getId())));
 
-        addAxe(ModBlocks.WOOD_BENCHES);
+        addAxe(ModBlocks.WOODEN_BENCHES);
         addPickaxe(ModBlocks.METAL_BENCHES);
         addAxe(ModBlocks.COUCHES);
         addAxe(ModBlocks.CHAIRS);

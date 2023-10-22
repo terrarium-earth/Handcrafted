@@ -37,7 +37,6 @@
 		{
 			"from": [0, 8, 1],
 			"to": [14, 10, 15],
-			"shade": false,
 			"rotation": {"angle": 0, "axis": "y", "origin": [8, 3, 8]},
 			"faces": {
 				"north": {"uv": [12.5, 4.125, 10.75, 4.375], "texture": "#1"},

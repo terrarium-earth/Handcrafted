@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.blocks;
 
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.tags.ModItemTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -48,7 +49,7 @@ public class NightstandBlock extends SimpleTableBlock implements EntityBlock {
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (level.isClientSide()) return InteractionResult.PASS;
-        if (level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
+        if (hand == InteractionHand.MAIN_HAND && !player.getItemInHand(hand).is(ModItemTags.SHEETS) && level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
             player.openMenu(container);
         }
         return super.use(state, level, pos, player, hand, hit);

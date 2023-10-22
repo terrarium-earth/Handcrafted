@@ -4,3 +4,4 @@
 - Fix couch and metal bench shading (#63)
 - Fix counter lighting (#63)
 - Fix corner trim lighting
+- Fix Nightstand, Desk, Side table, and Table z-fighting (#63)

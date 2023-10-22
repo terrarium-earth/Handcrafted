@@ -3,3 +3,4 @@
 - Fix containers not dropping contents (#65)
 - Fix couch and metal bench shading (#63)
 - Fix counter lighting (#63)
+- Fix corner trim lighting

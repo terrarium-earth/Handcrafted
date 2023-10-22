@@ -1,0 +1,4 @@
+- Fix blockstate crash with some languages like Turkish by using `toLowerCase(Locale.ROOT)`
+- Fix pillar trims breaking without anchor block (#64)
+- Fix containers not dropping contents (#65)
+- Fix counter lighting (#63)

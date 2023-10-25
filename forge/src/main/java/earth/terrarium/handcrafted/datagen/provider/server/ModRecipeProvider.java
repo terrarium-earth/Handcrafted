@@ -311,8 +311,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private void coloredSet(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
         registry.stream().forEach(result -> {
-            String[] split = result.getId().getPath().split("_");
-            Item wool = BuiltInRegistries.ITEM.getOptional(new ResourceLocation(split[split.length - 2] + "_wool")).orElseThrow();
+            Item wool = getWool(result);
             builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
                     .define('#', wool)
                     .unlockedBy("has_" + result.getId().getPath(), has(wool)))
@@ -391,5 +390,15 @@ public class ModRecipeProvider extends RecipeProvider {
             return Items.DARK_OAK_SLAB;
         }
         return BuiltInRegistries.ITEM.get(new ResourceLocation(result.getId().getPath().split("_")[0] + "_slab"));
+    }
+
+    private Item getWool(RegistryEntry<Item> result) {
+        if (result.getId().getPath().contains("light_blue")) {
+            return Items.LIGHT_BLUE_WOOL;
+        }
+        if (result.getId().getPath().contains("light_gray")) {
+            return Items.LIGHT_GRAY_WOOL;
+        }
+        return BuiltInRegistries.ITEM.get(new ResourceLocation(result.getId().getPath().split("_")[0] + "_wool"));
     }
 }

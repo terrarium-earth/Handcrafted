@@ -1,1 +1,2 @@
 - Fix benches being present in sheets tag
+- Fix incorrect light blue and light gray sheet and cushion recipes (#66)

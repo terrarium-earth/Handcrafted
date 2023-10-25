@@ -3,11 +3,10 @@ package earth.terrarium.handcrafted.common.blocks;
 import earth.terrarium.handcrafted.common.blocks.base.SittableBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
-import earth.terrarium.handcrafted.common.tags.ModItemTags;
+import earth.terrarium.handcrafted.common.utils.InteractionUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -80,21 +79,8 @@ public class ChairBlock extends HorizontalDirectionalBlock implements SittableBl
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        ItemStack stack = player.getItemInHand(hand);
-        if (!level.isClientSide() && stack.is(ModItemTags.CUSHIONS) && state.getValue(COLOR) == OptionalColorProperty.NONE) {
-            BlockState newState = state.setValue(COLOR, OptionalColorProperty.fromCushion(stack.getItem()));
-            level.setBlockAndUpdate(pos, newState);
-            if (!player.getAbilities().instabuild) stack.shrink(1);
-            level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
-            return InteractionResult.SUCCESS;
-        } else if (!level.isClientSide() && stack.isEmpty() && player.isShiftKeyDown() && state.getValue(COLOR) != OptionalColorProperty.NONE) {
-            ItemStack cushion = state.getValue(COLOR).toCushion();
-            BlockState newState = state.setValue(COLOR, OptionalColorProperty.NONE);
-            level.setBlockAndUpdate(pos, newState);
-            Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), cushion);
-            level.playSound(null, pos, SoundEvents.WOOL_BREAK, player.getSoundSource(), 1, 1);
-            return InteractionResult.SUCCESS;
-        }
+        var result = InteractionUtils.interactOptionalCushion(state, level, pos, player, hand, COLOR);
+        if (result != InteractionResult.PASS) return result;
 
         if (this.sitOn(level, pos, player, state.getValue(FACING))) {
             return InteractionResult.CONSUME;

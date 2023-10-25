@@ -6,14 +6,11 @@ import earth.terrarium.handcrafted.common.blocks.base.properties.CounterProperty
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModSoundEvents;
-import earth.terrarium.handcrafted.common.tags.ModItemTags;
+import earth.terrarium.handcrafted.common.utils.InteractionUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -71,27 +68,13 @@ public class CounterBlock extends HorizontalDirectionalBlock implements Hammerab
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (level.isClientSide()) return InteractionResult.CONSUME_PARTIAL;
-
-        ItemStack stack = player.getItemInHand(hand);
-        if (stack.is(ModItems.HAMMER.get())) return InteractionResult.PASS;
-
-        if (stack.is(ModItemTags.COUNTER_MATERIALS) && state.getValue(COUNTER) == CounterProperty.CALCITE) {
-            BlockState newState = state.setValue(COUNTER, CounterProperty.fromBlock(stack.getItem()));
-            level.setBlockAndUpdate(pos, newState);
-            if (!player.getAbilities().instabuild) stack.shrink(1);
-            SoundEvent event = player.getMainHandItem().is(ItemTags.PLANKS) ? SoundEvents.WOOD_PLACE : SoundEvents.STONE_PLACE;
-            level.playSound(null, pos, event, player.getSoundSource(), 1, 1);
-        } else if (stack.isEmpty() && player.isShiftKeyDown() && state.getValue(COUNTER) != CounterProperty.CALCITE) {
-            ItemStack block = state.getValue(COUNTER).toBlock();
-            BlockState newState = state.setValue(COUNTER, CounterProperty.CALCITE);
-            level.setBlockAndUpdate(pos, newState);
-            Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), block);
-            SoundEvent event = block.is(ItemTags.PLANKS) ? SoundEvents.WOOD_BREAK : SoundEvents.STONE_BREAK;
-            level.playSound(null, pos, event, player.getSoundSource(), 1, 1);
-        } else if (level.getBlockEntity(pos) instanceof ContainerBlockEntity container) {
-            player.openMenu(container);
+        var result = InteractionUtils.interactCounter(state, level, pos, player, hand, COUNTER);
+        if (result != InteractionResult.PASS || !(level.getBlockEntity(pos) instanceof ContainerBlockEntity container)) {
+            return result;
+        } else if (player.getItemInHand(hand).is(ModItems.HAMMER.get())) {
+            return InteractionResult.PASS;
         }
+        player.openMenu(container);
         return InteractionResult.SUCCESS;
     }
 
@@ -120,5 +103,6 @@ public class CounterBlock extends HorizontalDirectionalBlock implements Hammerab
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(ConstantComponents.COUNTER);
+        tooltip.add(ConstantComponents.HAMMER_USE_LOOK);
     }
 }

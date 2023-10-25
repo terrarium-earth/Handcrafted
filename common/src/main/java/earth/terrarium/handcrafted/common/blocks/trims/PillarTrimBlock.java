@@ -163,8 +163,8 @@ public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock impl
 
     @Override
     public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-		return true;
-	}
+        return true;
+    }
 
     static {
         NORMAL_NORTH_SHAPE = Shapes.join(

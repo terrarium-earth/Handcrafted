@@ -3,11 +3,10 @@ package earth.terrarium.handcrafted.common.blocks;
 import earth.terrarium.handcrafted.common.blocks.base.properties.ColorProperty;
 import earth.terrarium.handcrafted.common.blocks.base.properties.DirectionalBlockProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
-import earth.terrarium.handcrafted.common.tags.ModItemTags;
+import earth.terrarium.handcrafted.common.utils.InteractionUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -123,42 +122,10 @@ public class FancyBedBlock extends BedBlock {
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (state.getValue(PART) == BedPart.HEAD) {
-            ItemStack stack = player.getItemInHand(hand);
-            if (!level.isClientSide() && stack.is(ModItemTags.CUSHIONS) && state.getValue(COLOR) == ColorProperty.WHITE) {
-                BlockState newState = state.setValue(COLOR, ColorProperty.fromCushion(stack.getItem()));
-                level.setBlockAndUpdate(pos, newState);
-                if (!player.getAbilities().instabuild) stack.shrink(1);
-                level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
-                return InteractionResult.SUCCESS;
-            } else if (!level.isClientSide() && stack.isEmpty() && player.isShiftKeyDown() && state.getValue(COLOR) != ColorProperty.WHITE) {
-                ItemStack cushion = state.getValue(COLOR).toCushion();
-                BlockState newState = state.setValue(COLOR, ColorProperty.WHITE);
-                level.setBlockAndUpdate(pos, newState);
-
-                Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), cushion);
-                level.playSound(null, pos, SoundEvents.WOOL_BREAK, player.getSoundSource(), 1, 1);
-                return InteractionResult.SUCCESS;
-            }
+            return InteractionUtils.interactCushion(state, level, pos, player, hand, COLOR);
         } else {
-            ItemStack stack = player.getItemInHand(hand);
-            if (!level.isClientSide() && stack.is(ModItemTags.SHEETS) && state.getValue(COLOR) == ColorProperty.WHITE) {
-                BlockState newState = state.setValue(COLOR, ColorProperty.fromSheet(stack.getItem()));
-                level.setBlockAndUpdate(pos, newState);
-                if (!player.getAbilities().instabuild) stack.shrink(1);
-                level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
-                return InteractionResult.SUCCESS;
-            } else if (!level.isClientSide() && stack.isEmpty() && player.isShiftKeyDown() && state.getValue(COLOR) != ColorProperty.WHITE) {
-                ItemStack sheet = state.getValue(COLOR).toSheet();
-                BlockState newState = state.setValue(COLOR, ColorProperty.WHITE);
-                level.setBlockAndUpdate(pos, newState);
-
-                Containers.dropItemStack(level, pos.getX(), pos.getY(), pos.getZ(), sheet);
-                level.playSound(null, pos, SoundEvents.WOOL_BREAK, player.getSoundSource(), 1, 1);
-                return InteractionResult.SUCCESS;
-            }
+            return InteractionUtils.interactSheet(state, level, pos, player, hand, COLOR);
         }
-
-        return super.use(state, level, pos, player, hand, hit);
     }
 
     public static DirectionalBlockProperty getShape(Block block, Direction direction, BlockGetter level, BlockPos pos) {

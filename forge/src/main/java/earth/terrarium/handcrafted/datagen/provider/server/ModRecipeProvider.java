@@ -41,6 +41,40 @@ public class ModRecipeProvider extends RecipeProvider {
         coloredSet(ModItems.SHEETS, 8, r -> r
             .pattern("###"));
 
+        colorReplace(ModItems.BLACK_CUSHION, ModItemTags.CUSHIONS, () -> Items.BLACK_DYE);
+        colorReplace(ModItems.BLUE_CUSHION, ModItemTags.CUSHIONS, () -> Items.BLUE_DYE);
+        colorReplace(ModItems.BROWN_CUSHION, ModItemTags.CUSHIONS, () -> Items.BROWN_DYE);
+        colorReplace(ModItems.CYAN_CUSHION, ModItemTags.CUSHIONS, () -> Items.CYAN_DYE);
+        colorReplace(ModItems.GRAY_CUSHION, ModItemTags.CUSHIONS, () -> Items.GRAY_DYE);
+        colorReplace(ModItems.GREEN_CUSHION, ModItemTags.CUSHIONS, () -> Items.GREEN_DYE);
+        colorReplace(ModItems.LIGHT_BLUE_CUSHION, ModItemTags.CUSHIONS, () -> Items.LIGHT_BLUE_DYE);
+        colorReplace(ModItems.LIGHT_GRAY_CUSHION, ModItemTags.CUSHIONS, () -> Items.LIGHT_GRAY_DYE);
+        colorReplace(ModItems.LIME_CUSHION, ModItemTags.CUSHIONS, () -> Items.LIME_DYE);
+        colorReplace(ModItems.MAGENTA_CUSHION, ModItemTags.CUSHIONS, () -> Items.MAGENTA_DYE);
+        colorReplace(ModItems.ORANGE_CUSHION, ModItemTags.CUSHIONS, () -> Items.ORANGE_DYE);
+        colorReplace(ModItems.PINK_CUSHION, ModItemTags.CUSHIONS, () -> Items.PINK_DYE);
+        colorReplace(ModItems.PURPLE_CUSHION, ModItemTags.CUSHIONS, () -> Items.PURPLE_DYE);
+        colorReplace(ModItems.RED_CUSHION, ModItemTags.CUSHIONS, () -> Items.RED_DYE);
+        colorReplace(ModItems.WHITE_CUSHION, ModItemTags.CUSHIONS, () -> Items.WHITE_DYE);
+        colorReplace(ModItems.YELLOW_CUSHION, ModItemTags.CUSHIONS, () -> Items.YELLOW_DYE);
+
+        colorReplace(ModItems.BLACK_SHEET, ModItemTags.SHEETS, () -> Items.BLACK_DYE);
+        colorReplace(ModItems.BLUE_SHEET, ModItemTags.SHEETS, () -> Items.BLUE_DYE);
+        colorReplace(ModItems.BROWN_SHEET, ModItemTags.SHEETS, () -> Items.BROWN_DYE);
+        colorReplace(ModItems.CYAN_SHEET, ModItemTags.SHEETS, () -> Items.CYAN_DYE);
+        colorReplace(ModItems.GRAY_SHEET, ModItemTags.SHEETS, () -> Items.GRAY_DYE);
+        colorReplace(ModItems.GREEN_SHEET, ModItemTags.SHEETS, () -> Items.GREEN_DYE);
+        colorReplace(ModItems.LIGHT_BLUE_SHEET, ModItemTags.SHEETS, () -> Items.LIGHT_BLUE_DYE);
+        colorReplace(ModItems.LIGHT_GRAY_SHEET, ModItemTags.SHEETS, () -> Items.LIGHT_GRAY_DYE);
+        colorReplace(ModItems.LIME_SHEET, ModItemTags.SHEETS, () -> Items.LIME_DYE);
+        colorReplace(ModItems.MAGENTA_SHEET, ModItemTags.SHEETS, () -> Items.MAGENTA_DYE);
+        colorReplace(ModItems.ORANGE_SHEET, ModItemTags.SHEETS, () -> Items.ORANGE_DYE);
+        colorReplace(ModItems.PINK_SHEET, ModItemTags.SHEETS, () -> Items.PINK_DYE);
+        colorReplace(ModItems.PURPLE_SHEET, ModItemTags.SHEETS, () -> Items.PURPLE_DYE);
+        colorReplace(ModItems.RED_SHEET, ModItemTags.SHEETS, () -> Items.RED_DYE);
+        colorReplace(ModItems.WHITE_SHEET, ModItemTags.SHEETS, () -> Items.WHITE_DYE);
+        colorReplace(ModItems.YELLOW_SHEET, ModItemTags.SHEETS, () -> Items.YELLOW_DYE);
+
         shaped(ModItems.BENCH, 1, () -> Items.IRON_INGOT, r -> r
             .define('/', Items.IRON_BARS)
             .pattern("/#/")
@@ -376,6 +410,14 @@ public class ModRecipeProvider extends RecipeProvider {
     private void crockery(RegistryEntry<Item> result, Supplier<Item> catalyst, Supplier<Item> terracottaPot) {
         shapeless(result, 1, catalyst, r -> r
             .requires(terracottaPot.get()));
+    }
+
+    private void colorReplace(RegistryEntry<Item> result, TagKey<Item> mainItem, Supplier<Item> otherItem) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), 1)
+            .requires(mainItem)
+            .requires(otherItem.get())
+            .unlockedBy("has_" + result.getId().getPath(), has(mainItem))
+            .save(writer , BuiltInRegistries.ITEM.getKey(result.get()).getPath() + "_from_" + BuiltInRegistries.ITEM.getKey(otherItem.get()).getPath());
     }
 
     private Item getPlanks(RegistryEntry<Item> result) {

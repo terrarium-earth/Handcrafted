@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:white_sheet_from_white_dye"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_sheet": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "handcrafted:sheets"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_white_sheet",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:white_sheet_from_white_dye"
+    ]
+  },
+  "sends_telemetry_event": false
+}

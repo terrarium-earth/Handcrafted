@@ -1,11 +1,2 @@
-- Add Sandstone trims (#35)
-- Add cushion and sheet dye conversion recipes
-- Fix benches being present in sheets tag
-- Fix incorrect light blue and light gray sheet and cushion recipes (#66)
-- When placing a cushion/sheet on furniture, you can now replace the existing cushion/sheet without having to take off
-  the old one first
-- Add hammer clarification tooltip to counters
-- Small optimization to fancy painting rendering
-- Fix dark oak palette to match vanilla
-- Add bamboo and spruce pillar trim variants
-- Fix corner trim having one side less thick (#68)
+- Fix fancy beds not working (#69)
+- Tables now connect to other tables, desks and nightstands

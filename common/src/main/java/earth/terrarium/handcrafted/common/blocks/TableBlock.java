@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.common.blocks;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.blocks.base.properties.TableProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.tags.ModBlockTags;
 import earth.terrarium.handcrafted.common.utils.InteractionUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -124,10 +125,10 @@ public class TableBlock extends Block implements SimpleWaterloggedBlock {
     }
 
     public TableProperty getShape(BlockGetter level, BlockPos pos) {
-        boolean northPresent = level.getBlockState(pos.relative(Direction.NORTH)).is(this);
-        boolean eastPresent = level.getBlockState(pos.relative(Direction.EAST)).is(this);
-        boolean southPresent = level.getBlockState(pos.relative(Direction.SOUTH)).is(this);
-        boolean westPresent = level.getBlockState(pos.relative(Direction.WEST)).is(this);
+        boolean northPresent = level.getBlockState(pos.relative(Direction.NORTH)).is(ModBlockTags.TABLE_CONNECTABLE);
+        boolean eastPresent = level.getBlockState(pos.relative(Direction.EAST)).is(ModBlockTags.TABLE_CONNECTABLE);
+        boolean southPresent = level.getBlockState(pos.relative(Direction.SOUTH)).is(ModBlockTags.TABLE_CONNECTABLE);
+        boolean westPresent = level.getBlockState(pos.relative(Direction.WEST)).is(ModBlockTags.TABLE_CONNECTABLE);
 
         if (northPresent && eastPresent && southPresent && westPresent) return TableProperty.CENTER;
 

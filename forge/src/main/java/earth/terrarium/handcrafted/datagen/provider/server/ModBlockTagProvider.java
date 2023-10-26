@@ -6,6 +6,7 @@ import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.blocks.trims.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.blocks.trims.PillarTrimBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
+import earth.terrarium.handcrafted.common.tags.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -30,6 +31,10 @@ public class ModBlockTagProvider extends TagsProvider<Block> {
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         addMineableTags();
         ModBlocks.FANCY_BEDS.stream().forEach(b -> tag(BlockTags.BEDS).add(TagEntry.element(b.getId())));
+
+        ModBlocks.TABLES.stream().forEach(b -> tag(ModBlockTags.TABLE_CONNECTABLE).add(TagEntry.element(b.getId())));
+        ModBlocks.DESKS.stream().forEach(b -> tag(ModBlockTags.TABLE_CONNECTABLE).add(TagEntry.element(b.getId())));
+        ModBlocks.NIGHTSTANDS.stream().forEach(b -> tag(ModBlockTags.TABLE_CONNECTABLE).add(TagEntry.element(b.getId())));
 
         addSet(ModBlocks.CUSHIONS, "cushions");
         addSet(ModBlocks.BENCHES, "benches");

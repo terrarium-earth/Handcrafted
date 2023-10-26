@@ -121,11 +121,14 @@ public class FancyBedBlock extends BedBlock {
 
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        InteractionResult result;
         if (state.getValue(PART) == BedPart.HEAD) {
-            return InteractionUtils.interactCushion(state, level, pos, player, hand, COLOR);
+            result = InteractionUtils.interactCushion(state, level, pos, player, hand, COLOR);
         } else {
-            return InteractionUtils.interactSheet(state, level, pos, player, hand, COLOR);
+            result = InteractionUtils.interactSheet(state, level, pos, player, hand, COLOR);
         }
+        if (result != InteractionResult.PASS) return result;
+        return super.use(state, level, pos, player, hand, hit);
     }
 
     public static DirectionalBlockProperty getShape(Block block, Direction direction, BlockGetter level, BlockPos pos) {

@@ -73,7 +73,10 @@ public class ModItemTagProvider extends TagsProvider<Item> {
         Items.DRIPSTONE_BLOCK,
         Items.GRANITE,
         Items.QUARTZ_BLOCK,
-        Items.STONE);
+        Items.STONE,
+        Items.SANDSTONE,
+        Items.RED_SANDSTONE
+    );
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {

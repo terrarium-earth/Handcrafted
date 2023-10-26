@@ -1,8 +1,8 @@
-// 1.20.1	2023-10-22T17:43:26.524251	Tags for minecraft:block mod id handcrafted
+// 1.20.1	2023-10-25T22:01:01.051913	Tags for minecraft:block mod id handcrafted
 148d9202ace672cfdf451a46397702b32fab9450 data/handcrafted/tags/blocks/benches.json
 3662d7ac15380cec631c2eb872b6cbbb69072d62 data/handcrafted/tags/blocks/bowls.json
 d23ee811738879d0b22d489c76f6947f6b0ccf40 data/handcrafted/tags/blocks/chairs.json
-44dfeeb39c981f143315ecbd9eca4c8614f5a02f data/handcrafted/tags/blocks/corner_trims.json
+3c2f732fd491d76935313785015f1caff38ec0f0 data/handcrafted/tags/blocks/corner_trims.json
 388401c38f894060a6c94c6a00930899e4c2fc2b data/handcrafted/tags/blocks/couches.json
 31bb84aa9fd868dd27c281437482ba714e89da55 data/handcrafted/tags/blocks/counters.json
 c8e518c376a5ff56355494ea49b1fca4c14b4b89 data/handcrafted/tags/blocks/crockery.json
@@ -17,17 +17,17 @@ ab0e36c3ebe380ea3defda5c2803d4177ca1e908 data/handcrafted/tags/blocks/fancy_beds
 2b0cb810d725683b4793a8d840f9064a70f7a950 data/handcrafted/tags/blocks/hanging_trophies.json
 953f720e6cb0d589574ecdb9107a7f24c8d69860 data/handcrafted/tags/blocks/metal_benches.json
 975552d1bd38d4726fa99ac3ddeeab46e3fc4f68 data/handcrafted/tags/blocks/nightstands.json
-a7e82433db51d51a79d00def129992bffb59e134 data/handcrafted/tags/blocks/pillar_trims.json
+b2261f9e3cf4a3ca112b59cd0651d4dc90dc00cc data/handcrafted/tags/blocks/pillar_trims.json
 c5d6286b559abdac6e3776f43106c50a785d4363 data/handcrafted/tags/blocks/plates.json
 871c45e7a7651c328f65fd265592956e654eefb3 data/handcrafted/tags/blocks/pots.json
 d112ab59e44172869a67906c9fa183dc24bd4cfd data/handcrafted/tags/blocks/shelves.json
 5bb83057870d2fef4532bbce6d9c4584970aba51 data/handcrafted/tags/blocks/side_tables.json
 8bced73764ed8c9b65a46093b5655aec3323ee39 data/handcrafted/tags/blocks/statue_trophies.json
 0a476d2c80837899a06ef0ec1d6f93c65a06b6e6 data/handcrafted/tags/blocks/tables.json
-730e80be29f464e055f1b117c904a8901691594a data/handcrafted/tags/blocks/trims.json
+2eb1cdbe5ae5c4c2dccbe453cb855815860eb4c6 data/handcrafted/tags/blocks/trims.json
 fc2ac2105e437d1f002cab5eca7c30cf01640e40 data/handcrafted/tags/blocks/trophies.json
 cf0bba5d107667c2ccfac6fd3252355663bcf4ed data/handcrafted/tags/blocks/wall_trophies.json
 d8eb078f9f793ef17806bb6e83b18f5649f6542e data/handcrafted/tags/blocks/wooden_benches.json
 ab0e36c3ebe380ea3defda5c2803d4177ca1e908 data/minecraft/tags/blocks/beds.json
 7e7bec217a8acfe8a1bb17bccbf0ea4e907dd926 data/minecraft/tags/blocks/mineable/axe.json
-908547dbe0a9088be4c9a56307a8e700971605ab data/minecraft/tags/blocks/mineable/pickaxe.json
+f5f63bf0575cea8bdab45671ec31db7f5fc76821 data/minecraft/tags/blocks/mineable/pickaxe.json

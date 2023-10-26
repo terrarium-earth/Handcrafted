@@ -1,6 +1,6 @@
 {
   "parent": "handcrafted:block/trim/normal_pillar_trim",
   "textures": {
-    "texture": "handcrafted:block/trim/pillar/spruce_pillar_trim_normal"
+    "texture": "handcrafted:block/trim/pillar/spruce_pillar_trim_2_normal"
   }
 }

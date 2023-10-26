@@ -163,67 +163,67 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
 
     static {
         NORMAL_TOP_NORTH = Stream.of(
-            Block.box(2, 6, 4, 14, 12, 10),
-            Block.box(4, 0, 4, 12, 12, 7),
-            Block.box(4, 8, 8, 12, 12, 16),
+            Block.box(4, 0, 4, 12, 6, 8),
+            Block.box(4, 8, 10, 12, 12, 16),
             Block.box(0, 0, 0, 16, 16, 4),
-            Block.box(0, 12, 4, 16, 16, 16)
+            Block.box(0, 12, 4, 16, 16, 16),
+            Block.box(2, 6, 4, 14, 12, 10)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_TOP_EAST = Stream.of(
-            Block.box(6, 6, 2, 12, 12, 14),
-            Block.box(9, 0, 4, 12, 12, 12),
-            Block.box(0, 8, 4, 8, 12, 12),
+            Block.box(8, 0, 4, 12, 6, 12),
+            Block.box(0, 8, 4, 6, 12, 12),
             Block.box(12, 0, 0, 16, 16, 16),
-            Block.box(0, 12, 0, 12, 16, 16)
+            Block.box(0, 12, 0, 12, 16, 16),
+            Block.box(6, 6, 2, 12, 12, 14)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_TOP_SOUTH = Stream.of(
-            Block.box(2, 6, 6, 14, 12, 12),
-            Block.box(4, 0, 9, 12, 12, 12),
-            Block.box(4, 8, 0, 12, 12, 8),
+            Block.box(4, 0, 8, 12, 6, 12),
+            Block.box(4, 8, 0, 12, 12, 6),
             Block.box(0, 0, 12, 16, 16, 16),
-            Block.box(0, 12, 0, 16, 16, 12)
+            Block.box(0, 12, 0, 16, 16, 12),
+            Block.box(2, 6, 6, 14, 12, 12)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_TOP_WEST = Stream.of(
-            Block.box(4, 6, 2, 10, 12, 14),
-            Block.box(4, 0, 4, 7, 12, 12),
-            Block.box(8, 8, 4, 16, 12, 12),
+            Block.box(4, 0, 4, 8, 6, 12),
+            Block.box(10, 8, 4, 16, 12, 12),
             Block.box(0, 0, 0, 4, 16, 16),
-            Block.box(4, 12, 0, 16, 16, 16)
+            Block.box(4, 12, 0, 16, 16, 16),
+            Block.box(4, 6, 2, 10, 12, 14)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_BOTTOM_NORTH = Stream.of(
-            Block.box(2, 4, 4, 14, 10, 10),
-            Block.box(4, 4, 4, 12, 16, 7),
-            Block.box(4, 4, 8, 12, 8, 16),
+            Block.box(4, 10, 4, 12, 16, 8),
+            Block.box(4, 4, 10, 12, 8, 16),
             Block.box(0, 0, 0, 16, 16, 4),
-            Block.box(0, 0, 4, 16, 4, 16)
+            Block.box(0, 0, 4, 16, 4, 16),
+            Block.box(2, 4, 4, 14, 10, 10)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_BOTTOM_EAST = Stream.of(
-            Block.box(6, 4, 2, 12, 10, 14),
-            Block.box(9, 4, 4, 12, 16, 12),
-            Block.box(0, 4, 4, 8, 8, 12),
+            Block.box(8, 10, 4, 12, 16, 12),
+            Block.box(0, 4, 4, 6, 8, 12),
             Block.box(12, 0, 0, 16, 16, 16),
-            Block.box(0, 0, 0, 12, 4, 16)
+            Block.box(0, 0, 0, 12, 4, 16),
+            Block.box(6, 4, 2, 12, 10, 14)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_BOTTOM_SOUTH = Stream.of(
-            Block.box(2, 4, 6, 14, 10, 12),
-            Block.box(4, 4, 9, 12, 16, 12),
-            Block.box(4, 4, 0, 12, 8, 8),
+            Block.box(4, 10, 8, 12, 16, 12),
+            Block.box(4, 4, 0, 12, 8, 6),
             Block.box(0, 0, 12, 16, 16, 16),
-            Block.box(0, 0, 0, 16, 4, 12)
+            Block.box(0, 0, 0, 16, 4, 12),
+            Block.box(2, 4, 6, 14, 10, 12)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         NORMAL_BOTTOM_WEST = Stream.of(
-            Block.box(4, 4, 2, 10, 10, 14),
-            Block.box(4, 4, 4, 7, 16, 12),
-            Block.box(8, 4, 4, 16, 8, 12),
+            Block.box(4, 10, 4, 8, 16, 12),
+            Block.box(10, 4, 4, 16, 8, 12),
             Block.box(0, 0, 0, 4, 16, 16),
-            Block.box(4, 0, 0, 16, 4, 16)
+            Block.box(4, 0, 0, 16, 4, 16),
+            Block.box(4, 4, 2, 10, 10, 14)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
         THICC_TOP_NORTH = Stream.of(

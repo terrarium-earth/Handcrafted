@@ -20,6 +20,8 @@
     "handcrafted:dripstone_corner_trim",
     "handcrafted:granite_corner_trim",
     "handcrafted:quartz_corner_trim",
-    "handcrafted:stone_corner_trim"
+    "handcrafted:stone_corner_trim",
+    "handcrafted:sandstone_corner_trim",
+    "handcrafted:red_sandstone_corner_trim"
   ]
 }

@@ -300,6 +300,10 @@ public class ModItems {
     public static final RegistryEntry<Item> QUARTZ_CORNER_TRIM = CORNER_TRIMS.register("quartz_corner_trim", () -> new BlockItem(ModBlocks.QUARTZ_CORNER_TRIM.get(), new Item.Properties()));
     public static final RegistryEntry<Item> STONE_PILLAR_TRIM = PILLAR_TRIMS.register("stone_pillar_trim", () -> new BlockItem(ModBlocks.STONE_PILLAR_TRIM.get(), new Item.Properties()));
     public static final RegistryEntry<Item> STONE_CORNER_TRIM = CORNER_TRIMS.register("stone_corner_trim", () -> new BlockItem(ModBlocks.STONE_CORNER_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> SANDSTONE_PILLAR_TRIM = PILLAR_TRIMS.register("sandstone_pillar_trim", () -> new BlockItem(ModBlocks.SANDSTONE_PILLAR_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> SANDSTONE_CORNER_TRIM = CORNER_TRIMS.register("sandstone_corner_trim", () -> new BlockItem(ModBlocks.SANDSTONE_CORNER_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> RED_SANDSTONE_PILLAR_TRIM = PILLAR_TRIMS.register("red_sandstone_pillar_trim", () -> new BlockItem(ModBlocks.RED_SANDSTONE_PILLAR_TRIM.get(), new Item.Properties()));
+    public static final RegistryEntry<Item> RED_SANDSTONE_CORNER_TRIM = CORNER_TRIMS.register("red_sandstone_corner_trim", () -> new BlockItem(ModBlocks.RED_SANDSTONE_CORNER_TRIM.get(), new Item.Properties()));
 
     public static final RegistryEntry<Item> TERRACOTTA_THIN_POT = POTS.register("terracotta_thin_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_THIN_POT.get(), new Item.Properties()));
     public static final RegistryEntry<Item> TERRACOTTA_MEDIUM_POT = POTS.register("terracotta_medium_pot", () -> new BlockItem(ModBlocks.TERRACOTTA_MEDIUM_POT.get(), new Item.Properties()));

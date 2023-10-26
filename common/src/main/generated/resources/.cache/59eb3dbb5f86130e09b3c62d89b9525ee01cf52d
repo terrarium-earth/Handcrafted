@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-09T05:03:24.48979	Loot Tables
+// 1.20.1	2023-10-25T22:01:01.05231	Loot Tables
 7157ae2c0301789bf203e3e3977b19532045fcb5 data/handcrafted/loot_tables/blocks/acacia_bench.json
 85930fd231a79fede542ea32416b227dfd007fbc data/handcrafted/loot_tables/blocks/acacia_chair.json
 064777c5162406e4c752a94aae29bde36b1c2e2b data/handcrafted/loot_tables/blocks/acacia_corner_trim.json
@@ -193,7 +193,11 @@ b8fb04ec51ce087cea25d1c694d98f4977e8a722 data/handcrafted/loot_tables/blocks/ora
 ce6bc39c252a34d64714622658508de3f4c9447e data/handcrafted/loot_tables/blocks/quartz_corner_trim.json
 a218c645a4d570ec7bcf278605d6e6a1bc864f22 data/handcrafted/loot_tables/blocks/quartz_pillar_trim.json
 f400cba97807526356eda2d5a4dab53fbc3f7425 data/handcrafted/loot_tables/blocks/red_cushion.json
+be6297955514c5a1e3761ed844afc7e12cda8922 data/handcrafted/loot_tables/blocks/red_sandstone_corner_trim.json
+39e221aa2858f712b2bfba906229bdba556f64b0 data/handcrafted/loot_tables/blocks/red_sandstone_pillar_trim.json
 2e86144e8121ffc158431a0e0157e3fba8fb6ab9 data/handcrafted/loot_tables/blocks/salmon_trophy.json
+d6ca6012c55cba98122e826aaf09a23ccccc1c69 data/handcrafted/loot_tables/blocks/sandstone_corner_trim.json
+b1fb4fc5984394cbde1bd542c98ca450171b4c82 data/handcrafted/loot_tables/blocks/sandstone_pillar_trim.json
 cbbb433f9463343600700b452b3096c18bc28a97 data/handcrafted/loot_tables/blocks/silverfish_trophy.json
 559fdb67ae8d5953e17bb415db412d0ab951822f data/handcrafted/loot_tables/blocks/skeleton_horse_trophy.json
 93c37ad408f53c819632cfd8759951a75d0b3373 data/handcrafted/loot_tables/blocks/skeleton_trophy.json

@@ -276,6 +276,10 @@ public class ModBlocks {
     public static final RegistryEntry<Block> QUARTZ_CORNER_TRIM = CORNER_TRIMS.register("quartz_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion(), false));
     public static final RegistryEntry<Block> STONE_PILLAR_TRIM = PILLAR_TRIMS.register("stone_pillar_trim", () -> new PillarTrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), false));
     public static final RegistryEntry<Block> STONE_CORNER_TRIM = CORNER_TRIMS.register("stone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), false));
+    public static final RegistryEntry<Block> SANDSTONE_PILLAR_TRIM = PILLAR_TRIMS.register("sandstone_pillar_trim", () -> new PillarTrimBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion(), false));
+    public static final RegistryEntry<Block> SANDSTONE_CORNER_TRIM = CORNER_TRIMS.register("sandstone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).noOcclusion(), false));
+    public static final RegistryEntry<Block> RED_SANDSTONE_PILLAR_TRIM = PILLAR_TRIMS.register("red_sandstone_pillar_trim", () -> new PillarTrimBlock(BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion(), false));
+    public static final RegistryEntry<Block> RED_SANDSTONE_CORNER_TRIM = CORNER_TRIMS.register("red_sandstone_corner_trim", () -> new CornerTrimBlock(BlockBehaviour.Properties.copy(Blocks.RED_SANDSTONE).noOcclusion(), false));
 
     public static final RegistryEntry<Block> TERRACOTTA_THIN_POT = POTS.register("terracotta_thin_pot", () -> new PotBlock(PotBlock.PotSize.THIN, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));
     public static final RegistryEntry<Block> TERRACOTTA_MEDIUM_POT = POTS.register("terracotta_medium_pot", () -> new PotBlock(PotBlock.PotSize.MEDIUM, BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).noOcclusion()));

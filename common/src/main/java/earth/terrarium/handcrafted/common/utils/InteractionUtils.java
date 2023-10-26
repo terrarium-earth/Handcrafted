@@ -23,7 +23,7 @@ public final class InteractionUtils {
         ItemStack stack = player.getItemInHand(hand);
         var colorState = state.getValue(colorProperty);
 
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.PASS;
         if (stack.is(ModItemTags.CUSHIONS) && colorState == OptionalColorProperty.NONE) {
             level.setBlockAndUpdate(pos, state.setValue(colorProperty, OptionalColorProperty.fromCushion(stack.getItem())));
             level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
@@ -55,7 +55,7 @@ public final class InteractionUtils {
         ItemStack stack = player.getItemInHand(hand);
         var colorState = state.getValue(colorProperty);
 
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.PASS;
         if (stack.is(ModItemTags.CUSHIONS) && colorState == ColorProperty.WHITE) {
             level.setBlockAndUpdate(pos, state.setValue(colorProperty, ColorProperty.fromCushion(stack.getItem())));
             level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
@@ -87,7 +87,7 @@ public final class InteractionUtils {
         ItemStack stack = player.getItemInHand(hand);
         var colorState = state.getValue(colorProperty);
 
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.PASS;
         if (stack.is(ModItemTags.SHEETS) && colorState == OptionalColorProperty.NONE) {
             level.setBlockAndUpdate(pos, state.setValue(colorProperty, OptionalColorProperty.fromSheet(stack.getItem())));
             level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
@@ -119,7 +119,7 @@ public final class InteractionUtils {
         ItemStack stack = player.getItemInHand(hand);
         var colorState = state.getValue(colorProperty);
 
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.PASS;
         if (stack.is(ModItemTags.SHEETS) && colorState == ColorProperty.WHITE) {
             level.setBlockAndUpdate(pos, state.setValue(colorProperty, ColorProperty.fromSheet(stack.getItem())));
             level.playSound(null, pos, SoundEvents.WOOL_PLACE, player.getSoundSource(), 1, 1);
@@ -151,7 +151,7 @@ public final class InteractionUtils {
         ItemStack stack = player.getItemInHand(hand);
         var counterState = state.getValue(counterProperty);
 
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
+        if (level.isClientSide()) return InteractionResult.PASS;
         if (stack.is(ModItemTags.COUNTER_MATERIALS) && counterState == CounterProperty.CALCITE) {
             level.setBlockAndUpdate(pos, state.setValue(counterProperty, CounterProperty.fromBlock(stack.getItem())));
             SoundEvent event = player.getMainHandItem().is(ItemTags.PLANKS) ? SoundEvents.WOOD_PLACE : SoundEvents.STONE_PLACE;

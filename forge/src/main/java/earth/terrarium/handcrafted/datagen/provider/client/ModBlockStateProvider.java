@@ -12,7 +12,6 @@ import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.AttachFace;
@@ -28,11 +27,8 @@ import java.util.Random;
 public class ModBlockStateProvider extends BlockStateProvider {
     public static final ResourceLocation CUSHION = new ResourceLocation(Handcrafted.MOD_ID, "block/cushion");
 
-    private final ExistingFileHelper existingFileHelper;
-
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, Handcrafted.MOD_ID, existingFileHelper);
-        this.existingFileHelper = existingFileHelper;
     }
 
     @Override
@@ -367,7 +363,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ResourceLocation parent = new ResourceLocation(Handcrafted.MOD_ID, "block/trim/" + shape.getSerializedName() + "_pillar_trim");
 
                 ResourceLocation texture = new ResourceLocation(Handcrafted.MOD_ID, "block/trim/pillar/" + name(block) + "_2_" + shape.getSerializedName());
-                if (type == 1 || !existingFileHelper.exists(texture, PackType.CLIENT_RESOURCES, ".png", "textures")) {
+                if (type == 1) {
                     texture = new ResourceLocation(Handcrafted.MOD_ID, "block/trim/pillar/" + name(block) + "_" + shape.getSerializedName());
                 }
 

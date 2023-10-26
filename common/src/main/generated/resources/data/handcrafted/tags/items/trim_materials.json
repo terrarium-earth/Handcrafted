@@ -20,6 +20,8 @@
     "minecraft:dripstone_block",
     "minecraft:granite",
     "minecraft:quartz_block",
-    "minecraft:stone"
+    "minecraft:stone",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone"
   ]
 }

@@ -20,6 +20,8 @@
     "handcrafted:dripstone_pillar_trim",
     "handcrafted:granite_pillar_trim",
     "handcrafted:quartz_pillar_trim",
-    "handcrafted:stone_pillar_trim"
+    "handcrafted:stone_pillar_trim",
+    "handcrafted:sandstone_pillar_trim",
+    "handcrafted:red_sandstone_pillar_trim"
   ]
 }

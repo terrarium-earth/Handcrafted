@@ -1,0 +1,6 @@
+{
+  "parent": "handcrafted:block/trim/thicc_pillar_trim",
+  "textures": {
+    "texture": "handcrafted:block/trim/pillar/sandstone_pillar_trim_2_thicc"
+  }
+}

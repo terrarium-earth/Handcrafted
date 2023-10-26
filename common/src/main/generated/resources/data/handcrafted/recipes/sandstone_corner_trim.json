@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#  ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "handcrafted:sandstone_corner_trim"
+  },
+  "show_notification": true
+}

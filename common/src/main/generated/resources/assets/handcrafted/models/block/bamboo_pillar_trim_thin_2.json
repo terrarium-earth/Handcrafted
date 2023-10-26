@@ -1,6 +1,6 @@
 {
   "parent": "handcrafted:block/trim/thin_pillar_trim",
   "textures": {
-    "texture": "handcrafted:block/trim/pillar/bamboo_pillar_trim_thin"
+    "texture": "handcrafted:block/trim/pillar/bamboo_pillar_trim_2_thin"
   }
 }

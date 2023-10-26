@@ -41,6 +41,10 @@
     "handcrafted:quartz_pillar_trim",
     "handcrafted:quartz_corner_trim",
     "handcrafted:stone_pillar_trim",
-    "handcrafted:stone_corner_trim"
+    "handcrafted:stone_corner_trim",
+    "handcrafted:sandstone_pillar_trim",
+    "handcrafted:sandstone_corner_trim",
+    "handcrafted:red_sandstone_pillar_trim",
+    "handcrafted:red_sandstone_corner_trim"
   ]
 }

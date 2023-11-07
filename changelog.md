@@ -1,2 +1,0 @@
-- Fix fancy beds not working (#69)
-- Tables now connect to other tables, desks and nightstands

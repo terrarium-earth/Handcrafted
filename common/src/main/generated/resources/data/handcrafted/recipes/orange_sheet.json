@@ -1,17 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
+      "item": "minecraft:orange_wool"
+    },
+    {
+      "item": "minecraft:orange_wool"
+    },
+    {
       "item": "minecraft:orange_wool"
     }
-  },
-  "pattern": [
-    "###"
   ],
   "result": {
     "count": 8,
     "item": "handcrafted:orange_sheet"
-  },
-  "show_notification": true
+  }
 }

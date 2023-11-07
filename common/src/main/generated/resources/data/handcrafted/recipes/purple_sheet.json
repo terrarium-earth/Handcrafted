@@ -1,17 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
+      "item": "minecraft:purple_wool"
+    },
+    {
+      "item": "minecraft:purple_wool"
+    },
+    {
       "item": "minecraft:purple_wool"
     }
-  },
-  "pattern": [
-    "###"
   ],
   "result": {
     "count": 8,
     "item": "handcrafted:purple_sheet"
-  },
-  "show_notification": true
+  }
 }

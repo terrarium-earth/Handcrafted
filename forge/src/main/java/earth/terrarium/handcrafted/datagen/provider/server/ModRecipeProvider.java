@@ -38,8 +38,7 @@ public class ModRecipeProvider extends RecipeProvider {
             .pattern("///")
             .pattern("###"));
 
-        coloredSet(ModItems.SHEETS, 8, r -> r
-            .pattern("###"));
+        sheets(ModItems.SHEETS, 8);
 
         colorReplace(ModItems.BLACK_CUSHION, ModItemTags.CUSHIONS, () -> Items.BLACK_DYE);
         colorReplace(ModItems.BLUE_CUSHION, ModItemTags.CUSHIONS, () -> Items.BLUE_DYE);
@@ -349,6 +348,18 @@ public class ModRecipeProvider extends RecipeProvider {
             builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
                     .define('#', wool)
                     .unlockedBy("has_" + result.getId().getPath(), has(wool)))
+                .save(writer);
+        });
+    }
+
+    private void sheets(ResourcefulRegistry<Item> registry, int count) {
+        registry.stream().forEach(result -> {
+            Item wool = getWool(result);
+            ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), count)
+                .requires(wool)
+                .requires(wool)
+                .requires(wool)
+                .unlockedBy("has_" + result.getId().getPath(), has(wool))
                 .save(writer);
         });
     }

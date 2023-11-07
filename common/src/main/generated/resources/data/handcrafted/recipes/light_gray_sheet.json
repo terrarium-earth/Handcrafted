@@ -1,17 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
+      "item": "minecraft:light_gray_wool"
+    },
+    {
+      "item": "minecraft:light_gray_wool"
+    },
+    {
       "item": "minecraft:light_gray_wool"
     }
-  },
-  "pattern": [
-    "###"
   ],
   "result": {
     "count": 8,
     "item": "handcrafted:light_gray_sheet"
-  },
-  "show_notification": true
+  }
 }

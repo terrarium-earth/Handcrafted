@@ -1,17 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
+      "item": "minecraft:brown_wool"
+    },
+    {
+      "item": "minecraft:brown_wool"
+    },
+    {
       "item": "minecraft:brown_wool"
     }
-  },
-  "pattern": [
-    "###"
   ],
   "result": {
     "count": 8,
     "item": "handcrafted:brown_sheet"
-  },
-  "show_notification": true
+  }
 }

@@ -23,7 +23,7 @@
         {
             "title": "Handcrafted",
             "description": "**Changelog:**\\n${changelog}",
-            "color": 1846356,
+            "color": 4666140,
             "fields": [
                 {
                     "name": "Minecraft Version",

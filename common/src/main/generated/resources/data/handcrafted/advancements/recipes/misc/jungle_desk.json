@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_jungle_desk",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_jungle_desk"
     ]
   ],
   "rewards": {

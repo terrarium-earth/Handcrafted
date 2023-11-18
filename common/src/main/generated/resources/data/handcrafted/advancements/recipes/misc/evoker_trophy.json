@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_evoker_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_evoker_trophy"
     ]
   ],
   "rewards": {

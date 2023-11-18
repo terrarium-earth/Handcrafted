@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_phantom_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_phantom_trophy"
     ]
   ],
   "rewards": {

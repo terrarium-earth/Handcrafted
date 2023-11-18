@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_berry_jam_jar",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_berry_jam_jar"
     ]
   ],
   "rewards": {

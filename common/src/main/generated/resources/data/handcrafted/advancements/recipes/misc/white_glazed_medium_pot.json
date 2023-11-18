@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_white_glazed_medium_pot",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_white_glazed_medium_pot"
     ]
   ],
   "rewards": {

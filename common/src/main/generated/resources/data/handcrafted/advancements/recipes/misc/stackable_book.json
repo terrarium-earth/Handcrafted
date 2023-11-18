@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_stackable_book",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_stackable_book"
     ]
   ],
   "rewards": {

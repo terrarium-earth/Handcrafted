@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_black_sheet",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_black_sheet"
     ]
   ],
   "rewards": {

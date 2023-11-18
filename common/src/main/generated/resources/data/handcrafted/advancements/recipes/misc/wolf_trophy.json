@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_wolf_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_wolf_trophy"
     ]
   ],
   "rewards": {

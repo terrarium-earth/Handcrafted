@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_bear_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_bear_trophy"
     ]
   ],
   "rewards": {

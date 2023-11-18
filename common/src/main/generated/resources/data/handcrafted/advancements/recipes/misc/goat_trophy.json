@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_goat_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_goat_trophy"
     ]
   ],
   "rewards": {

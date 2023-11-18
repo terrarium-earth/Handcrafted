@@ -37,9 +37,8 @@ subprojects {
     }
 
     repositories {
-        maven(url = "https://maven.architectury.dev/")
-        maven(url = "https://maven.minecraftforge.net/")
         maven(url = "https://maven.resourcefulbees.com/repository/maven-public/")
+        maven(url = "https://maven.neoforged.net/releases/")
     }
 
     dependencies {
@@ -53,7 +52,7 @@ subprojects {
 
             officialMojangMappings()
 
-            parchment(create(group = "org.parchmentmc.data", name = "parchment-$minecraftVersion", version = parchmentVersion))
+            parchment(create(group = "org.parchmentmc.data", name = "parchment-1.20.1", version = parchmentVersion))
         })
 
         compileOnly(group = "com.teamresourceful", name = "yabn", version = "1.0.3")

@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_black_cushion",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_black_cushion"
     ]
   ],
   "rewards": {

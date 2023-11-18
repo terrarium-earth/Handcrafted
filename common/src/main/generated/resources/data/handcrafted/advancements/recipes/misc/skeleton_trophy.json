@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_skeleton_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_skeleton_trophy"
     ]
   ],
   "rewards": {

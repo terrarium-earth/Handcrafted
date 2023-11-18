@@ -14,6 +14,7 @@ import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
@@ -22,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.entity.EntityInLevelCallback;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import org.joml.Vector3f;
 
 @MethodsReturnNonnullByDefault
 public class SittingEntity extends Entity {
@@ -123,12 +125,16 @@ public class SittingEntity extends Entity {
         return shape.move(this.blockPosition());
     }
 
-    @Override
-    public double getPassengersRidingOffset() {
+    protected Vector3f getPassengerAttachmentPoint(Entity entity, EntityDimensions dimensions, float f) {
         if (shape == null) {
-            return super.getPassengersRidingOffset();
+            return super.getPassengerAttachmentPoint(entity, dimensions, f);
         }
-        return shape.getYsize() * 0.75;
+        return new Vector3f(0, (float) (shape.getYsize() * 0.75) + 0.2f, 0);
+    }
+
+    @Override
+    protected float ridingOffset(Entity entity) {
+        return(float) (shape.getYsize() * 0.75);
     }
 
     protected void clampRotation(Entity entityToUpdate) {

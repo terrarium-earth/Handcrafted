@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_calcite_pillar_trim",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_calcite_pillar_trim"
     ]
   ],
   "rewards": {

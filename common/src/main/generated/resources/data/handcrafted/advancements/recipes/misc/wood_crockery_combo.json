@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_wood_crockery_combo",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_wood_crockery_combo"
     ]
   ],
   "rewards": {

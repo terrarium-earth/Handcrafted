@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_salmon_trophy",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_salmon_trophy"
     ]
   ],
   "rewards": {

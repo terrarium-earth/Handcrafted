@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_fancy_painting",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_fancy_painting"
     ]
   ],
   "rewards": {

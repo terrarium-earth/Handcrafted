@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_terracotta_thick_pot",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_terracotta_thick_pot"
     ]
   ],
   "rewards": {

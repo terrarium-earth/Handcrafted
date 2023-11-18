@@ -20,8 +20,8 @@
   },
   "requirements": [
     [
-      "has_red_sheet",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_red_sheet"
     ]
   ],
   "rewards": {

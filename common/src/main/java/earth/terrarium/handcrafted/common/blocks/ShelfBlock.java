@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.properties.DirectionalBlockProperty;
@@ -37,6 +38,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class ShelfBlock extends HorizontalDirectionalBlock implements Hammerable, EntityBlock {
+    public static final MapCodec<ShelfBlock> CODEC = simpleCodec(ShelfBlock::new);
     public static final IntegerProperty TYPE = IntegerProperty.create("type", 1, 5);
     public static final EnumProperty<DirectionalBlockProperty> SHAPE = EnumProperty.create("shape", DirectionalBlockProperty.class);
 
@@ -47,6 +49,11 @@ public class ShelfBlock extends HorizontalDirectionalBlock implements Hammerable
             .setValue(TYPE, 1)
             .setValue(SHAPE, DirectionalBlockProperty.SINGLE)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

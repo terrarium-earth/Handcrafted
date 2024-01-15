@@ -13,14 +13,13 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.neoforged.neoforge.registries.ForgeRegistries;
 
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-@SuppressWarnings({"deprecation", "SameParameterValue"})
+@SuppressWarnings("SameParameterValue")
 public class ModRecipeProvider extends RecipeProvider {
     private RecipeOutput output;
 
@@ -367,7 +366,7 @@ public class ModRecipeProvider extends RecipeProvider {
     private void trim(ResourcefulRegistry<Item> registry, int count, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder) {
         registry.stream().forEach(result -> {
             Item material = ModItemTagProvider.TRIM_MATERIALS.stream().filter(i ->
-                Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(i)).getPath().split("_")[0]
+                Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(i)).getPath().split("_")[0]
                     .equals(result.getId().getPath().split("_")[0])).findFirst().orElseThrow();
             builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
                     .define('#', material)

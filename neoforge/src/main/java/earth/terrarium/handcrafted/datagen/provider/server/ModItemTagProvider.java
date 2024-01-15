@@ -6,6 +6,7 @@ import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagsProvider;
@@ -16,7 +17,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -80,8 +80,8 @@ public class ModItemTagProvider extends TagsProvider<Item> {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        COUNTER_MATERIALS.forEach(b -> tag(ModItemTags.COUNTER_MATERIALS).add(TagEntry.element(Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(b)))));
-        TRIM_MATERIALS.forEach(b -> tag(ModItemTags.TRIM_MATERIALS).add(TagEntry.element(Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(b)))));
+        COUNTER_MATERIALS.forEach(b -> tag(ModItemTags.COUNTER_MATERIALS).add(TagEntry.element(Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(b)))));
+        TRIM_MATERIALS.forEach(b -> tag(ModItemTags.TRIM_MATERIALS).add(TagEntry.element(Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(b)))));
         ModBlocks.FANCY_BEDS.stream().forEach(b -> tag(ItemTags.BEDS).add(TagEntry.element(b.getId())));
 
         addSet(ModItems.CUSHIONS, "cushions");

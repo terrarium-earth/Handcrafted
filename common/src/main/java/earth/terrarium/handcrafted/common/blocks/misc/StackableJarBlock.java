@@ -1,11 +1,13 @@
 package earth.terrarium.handcrafted.common.blocks.misc;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -18,6 +20,8 @@ import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
 public class StackableJarBlock extends SimpleBlock {
+    public static final MapCodec<StackableJarBlock> CODEC = simpleCodec(StackableJarBlock::new);
+
     public static final IntegerProperty JARS = IntegerProperty.create("jars", 1, 3);
     public static final VoxelShape SHAPE_1 = Block.box(0, 0, 0, 9, 9, 9);
     public static final VoxelShape SHAPE_2 = Block.box(0, 0, 0, 9, 9, 9);
@@ -29,6 +33,11 @@ public class StackableJarBlock extends SimpleBlock {
             .setValue(FACING, Direction.NORTH)
             .setValue(JARS, 1)
             .setValue(WATERLOGGED, false));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     public boolean canBeReplaced(BlockState state, BlockPlaceContext useContext) {

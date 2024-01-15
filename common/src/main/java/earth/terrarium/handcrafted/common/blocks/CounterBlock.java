@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.properties.CounterProperty;
@@ -38,6 +39,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class CounterBlock extends HorizontalDirectionalBlock implements Hammerable, EntityBlock {
+    public static final MapCodec<CounterBlock> CODEC = simpleCodec(CounterBlock::new);
     public static final IntegerProperty TYPE = IntegerProperty.create("type", 1, 3);
     public static final EnumProperty<CounterProperty> COUNTER = EnumProperty.create("counter", CounterProperty.class);
 
@@ -48,6 +50,11 @@ public class CounterBlock extends HorizontalDirectionalBlock implements Hammerab
             .setValue(TYPE, 1)
             .setValue(COUNTER, CounterProperty.CALCITE)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

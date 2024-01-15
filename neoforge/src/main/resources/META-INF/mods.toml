@@ -18,21 +18,21 @@ config = "handcrafted-common.mixins.json"
 
 [[dependencies.handcrafted]]
 modId = "neoforge"
-mandatory = true
-versionRange = "[20.2,)"
+type="required"
+versionRange = "[20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.handcrafted]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.2,)"
+type="required"
+versionRange = "[1.20.4,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.handcrafted]]
 modId = "resourcefullib"
-mandatory = true
-versionRange = "[2.2.0,)"
+type="required"
+versionRange = "[2.4.3,)"
 ordering = "NONE"
 side = "BOTH"

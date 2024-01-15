@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
@@ -34,6 +35,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class CupboardBlock extends HorizontalDirectionalBlock implements Hammerable, EntityBlock {
+    public static final MapCodec<CupboardBlock> CODEC = simpleCodec(CupboardBlock::new);
     public static final IntegerProperty TYPE = IntegerProperty.create("type", 1, 2);
 
     public CupboardBlock(Properties properties) {
@@ -42,6 +44,11 @@ public class CupboardBlock extends HorizontalDirectionalBlock implements Hammera
             .setValue(FACING, Direction.NORTH)
             .setValue(TYPE, 1)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

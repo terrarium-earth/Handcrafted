@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SittableBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
@@ -39,6 +40,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class ChairBlock extends HorizontalDirectionalBlock implements SittableBlock, SimpleWaterloggedBlock {
+    public static final MapCodec<ChairBlock> CODEC = simpleCodec(ChairBlock::new);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final EnumProperty<OptionalColorProperty> COLOR = EnumProperty.create("color", OptionalColorProperty.class);
 
@@ -52,6 +54,11 @@ public class ChairBlock extends HorizontalDirectionalBlock implements SittableBl
             .setValue(WATERLOGGED, false)
             .setValue(COLOR, OptionalColorProperty.NONE)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

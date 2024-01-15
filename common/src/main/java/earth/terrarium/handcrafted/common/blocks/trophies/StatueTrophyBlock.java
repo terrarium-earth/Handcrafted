@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks.trophies;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -11,10 +12,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LevelEvent;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -26,6 +24,7 @@ import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
 public class StatueTrophyBlock extends SimpleBlock {
+    public static final MapCodec<StatueTrophyBlock> CODEC = simpleCodec(StatueTrophyBlock::new);
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
 
     public StatueTrophyBlock(Properties properties) {
@@ -34,6 +33,11 @@ public class StatueTrophyBlock extends SimpleBlock {
             .setValue(HALF, DoubleBlockHalf.LOWER)
             .setValue(FACING, Direction.NORTH)
             .setValue(WATERLOGGED, false));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override
@@ -47,12 +51,12 @@ public class StatueTrophyBlock extends SimpleBlock {
     }
 
     @Override
-    public void playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+    public BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
         if (!level.isClientSide() && player.isCreative()) {
             preventCreativeDropFromBottomPart(level, pos, state, player);
         }
 
-        super.playerWillDestroy(level, pos, state, player);
+        return super.playerWillDestroy(level, pos, state, player);
     }
 
     @Override

@@ -1,10 +1,12 @@
 package earth.terrarium.handcrafted.common.blocks.misc;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -16,6 +18,8 @@ import java.util.stream.Stream;
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
 public class KitchenHoodBlock extends SimpleBlock {
+    public static final MapCodec<KitchenHoodBlock> CODEC = simpleCodec(KitchenHoodBlock::new);
+
     public static final VoxelShape SHAPE = Stream.of(
         Block.box(3, 13, 3, 13, 16, 13),
         Block.box(0, 0, 0, 16, 6, 16),
@@ -25,6 +29,11 @@ public class KitchenHoodBlock extends SimpleBlock {
 
     public KitchenHoodBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

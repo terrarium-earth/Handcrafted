@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.ModularSeatBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.ColorProperty;
 import earth.terrarium.handcrafted.common.blocks.base.properties.ModularSeatProperty;
@@ -16,6 +17,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -30,6 +32,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class CouchBlock extends ModularSeatBlock {
+    public static final MapCodec<CouchBlock> CODEC = simpleCodec(CouchBlock::new);
     public static final EnumProperty<ColorProperty> COLOR = EnumProperty.create("color", ColorProperty.class);
 
     public static final AABB SEAT = new AABB(0, 0, 0, 1, 0.125f, 1);
@@ -43,6 +46,11 @@ public class CouchBlock extends ModularSeatBlock {
             .setValue(FACING, net.minecraft.core.Direction.NORTH)
             .setValue(WATERLOGGED, false)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

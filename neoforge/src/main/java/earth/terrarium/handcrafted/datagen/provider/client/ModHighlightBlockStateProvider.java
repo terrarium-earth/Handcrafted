@@ -15,6 +15,7 @@ import earth.terrarium.handcrafted.common.blocks.misc.StackableJarBlock;
 import earth.terrarium.handcrafted.common.blocks.trophies.StatueTrophyBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
@@ -23,7 +24,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
-import net.neoforged.neoforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 import java.nio.file.Path;
@@ -334,7 +334,7 @@ public class ModHighlightBlockStateProvider implements DataProvider {
     }
 
     private ResourceLocation key(Block block) {
-        return ForgeRegistries.BLOCKS.getKey(block);
+        return BuiltInRegistries.BLOCK.getKey(block);
     }
 
     private String name(Block block) {

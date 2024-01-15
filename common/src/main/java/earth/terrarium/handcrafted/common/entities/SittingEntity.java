@@ -134,7 +134,7 @@ public class SittingEntity extends Entity {
 
     @Override
     protected float ridingOffset(Entity entity) {
-        return(float) (shape.getYsize() * 0.75);
+        return (float) (shape.getYsize() * 0.75);
     }
 
     protected void clampRotation(Entity entityToUpdate) {

@@ -4,13 +4,13 @@ package earth.terrarium.handcrafted.datagen.provider.client;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import earth.terrarium.handcrafted.Handcrafted;
 import earth.terrarium.handcrafted.common.registry.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.ForgeRegistries;
 
 import java.util.Objects;
 
@@ -29,7 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     }
 
     public void basicItem(Item item, String folder) {
-        ResourceLocation itemLocation = Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item));
+        ResourceLocation itemLocation = Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(item));
 
         getBuilder(item.toString())
             .parent(new ModelFile.UncheckedModelFile("item/generated"))

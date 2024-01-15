@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.utils.InteractionUtils;
@@ -29,6 +30,7 @@ import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("deprecation")
 public class SimpleTableBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock {
+    public static final MapCodec<SimpleTableBlock> CODEC = simpleCodec(SimpleTableBlock::new);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final EnumProperty<OptionalColorProperty> COLOR = EnumProperty.create("color", OptionalColorProperty.class);
 
@@ -39,6 +41,11 @@ public class SimpleTableBlock extends HorizontalDirectionalBlock implements Simp
             .setValue(WATERLOGGED, false)
             .setValue(COLOR, OptionalColorProperty.NONE)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

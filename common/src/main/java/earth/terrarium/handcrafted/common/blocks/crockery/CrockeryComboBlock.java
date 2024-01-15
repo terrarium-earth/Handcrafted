@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks.crockery;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import net.minecraft.core.BlockPos;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -28,10 +30,16 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class CrockeryComboBlock extends SimpleBlock implements EntityBlock {
+    public static final MapCodec<CrockeryComboBlock> CODEC = simpleCodec(CrockeryComboBlock::new);
     public static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 3, 16);
 
     public CrockeryComboBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

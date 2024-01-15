@@ -1,11 +1,13 @@
 package earth.terrarium.handcrafted.common.blocks.crockery;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -18,6 +20,7 @@ import org.jetbrains.annotations.Nullable;
 
 @SuppressWarnings("deprecation")
 public class CrockeryBlock extends SimpleBlock {
+    public static final MapCodec<CrockeryBlock> CODEC = simpleCodec(CrockeryBlock::new);
     public static final IntegerProperty PIECES = IntegerProperty.create("pieces", 1, 6);
 
     public static final VoxelShape SHAPE_1 = Block.box(3, 0, 3, 13, 1, 13);
@@ -30,6 +33,11 @@ public class CrockeryBlock extends SimpleBlock {
     public CrockeryBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(PIECES, 1).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

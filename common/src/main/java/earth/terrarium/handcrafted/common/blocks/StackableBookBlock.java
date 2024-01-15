@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -22,6 +23,8 @@ import java.util.stream.Stream;
 
 @SuppressWarnings("deprecation")
 public class StackableBookBlock extends HorizontalDirectionalBlock {
+    public static final MapCodec<StackableBookBlock> CODEC = simpleCodec(StackableBookBlock::new);
+
     public static final IntegerProperty BOOKS = IntegerProperty.create("books", 1, 4);
     public static final IntegerProperty SEED = IntegerProperty.create("seed", 1, 256);
 
@@ -51,6 +54,11 @@ public class StackableBookBlock extends HorizontalDirectionalBlock {
             .setValue(FACING, Direction.NORTH)
             .setValue(BOOKS, 1)
             .setValue(SEED, 1));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

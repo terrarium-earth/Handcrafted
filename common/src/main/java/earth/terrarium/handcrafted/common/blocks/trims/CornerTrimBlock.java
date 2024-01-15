@@ -1,5 +1,8 @@
 package earth.terrarium.handcrafted.common.blocks.trims;
 
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.TrimProperty;
@@ -18,6 +21,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -39,6 +43,13 @@ import java.util.stream.Stream;
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
 public class CornerTrimBlock extends SimpleBlock implements Hammerable {
+    public static final MapCodec<CornerTrimBlock> CODEC = RecordCodecBuilder.mapCodec(
+        instance -> instance.group(
+            Codec.BOOL.fieldOf("wood").forGetter(CornerTrimBlock::isWood),
+            propertiesCodec()
+        ).apply(instance, CornerTrimBlock::new)
+    );
+
     public static final EnumProperty<TrimProperty> SHAPE = EnumProperty.create("trim", TrimProperty.class);
     public static final EnumProperty<Half> HALF = BlockStateProperties.HALF;
 
@@ -69,7 +80,7 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
 
     private final boolean wood;
 
-    public CornerTrimBlock(Properties properties, boolean wood) {
+    public CornerTrimBlock(boolean wood, Properties properties) {
         super(properties);
         this.wood = wood;
         this.registerDefaultState(this.defaultBlockState()
@@ -353,5 +364,10 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
             Block.box(6, 4, 6, 16, 6, 10),
             Block.box(4, 4, 4, 10, 10, 12)
         ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 }

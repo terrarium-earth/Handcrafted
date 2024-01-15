@@ -1,5 +1,8 @@
 package earth.terrarium.handcrafted.common.blocks.trims;
 
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.properties.TrimProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
@@ -38,6 +41,13 @@ import java.util.List;
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
 public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock implements Hammerable, SimpleWaterloggedBlock {
+    public static final MapCodec<PillarTrimBlock> CODEC = RecordCodecBuilder.mapCodec(
+        instance -> instance.group(
+            Codec.BOOL.fieldOf("wood").forGetter(PillarTrimBlock::isWood),
+            propertiesCodec()
+        ).apply(instance, PillarTrimBlock::new)
+    );
+
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public static final IntegerProperty TYPE = IntegerProperty.create("type", 1, 2);
     public static final EnumProperty<TrimProperty> SHAPE = EnumProperty.create("trim", TrimProperty.class);
@@ -67,7 +77,7 @@ public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock impl
 
     private final boolean wood;
 
-    public PillarTrimBlock(Properties properties, boolean wood) {
+    public PillarTrimBlock(boolean wood, Properties properties) {
         super(properties);
         this.wood = wood;
         this.registerDefaultState(this.defaultBlockState()
@@ -159,6 +169,11 @@ public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock impl
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
         tooltip.add(ConstantComponents.HAMMER_USE_SHAPE);
         tooltip.add(ConstantComponents.HAMMER_USE_LOOK_SHIFT);
+    }
+
+    @Override
+    protected MapCodec<? extends FaceAttachedHorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

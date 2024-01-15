@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SittableBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.DirectionalBlockProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
@@ -37,6 +38,7 @@ import java.util.List;
 
 @SuppressWarnings("deprecation")
 public class DiningBenchBlock extends HorizontalDirectionalBlock implements SittableBlock, SimpleWaterloggedBlock {
+    public static final MapCodec<DiningBenchBlock> CODEC = simpleCodec(DiningBenchBlock::new);
     public static final EnumProperty<DirectionalBlockProperty> SHAPE = EnumProperty.create("shape", DirectionalBlockProperty.class);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
@@ -51,6 +53,11 @@ public class DiningBenchBlock extends HorizontalDirectionalBlock implements Sitt
             .setValue(FACING, net.minecraft.core.Direction.NORTH)
             .setValue(WATERLOGGED, false)
         );
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     @Override

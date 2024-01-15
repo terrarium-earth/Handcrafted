@@ -10,6 +10,7 @@ import earth.terrarium.handcrafted.common.blocks.trims.CornerTrimBlock;
 import earth.terrarium.handcrafted.common.blocks.trims.PillarTrimBlock;
 import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
@@ -20,7 +21,6 @@ import net.minecraft.world.level.block.state.properties.Half;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.ForgeRegistries;
 
 import java.util.Random;
 
@@ -559,7 +559,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private ResourceLocation key(Block block) {
-        return ForgeRegistries.BLOCKS.getKey(block);
+        return BuiltInRegistries.BLOCK.getKey(block);
     }
 
     private String name(Block block) {

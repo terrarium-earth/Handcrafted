@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.blocks.misc;
 
+import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import earth.terrarium.handcrafted.common.registry.ModSoundEvents;
@@ -11,6 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -24,6 +26,8 @@ import java.util.stream.Stream;
 @SuppressWarnings("deprecation")
 @MethodsReturnNonnullByDefault
 public class KitchenHoodPipeBlock extends SimpleBlock implements Hammerable {
+    public static final MapCodec<KitchenHoodPipeBlock> CODEC = simpleCodec(KitchenHoodPipeBlock::new);
+
     public static final BooleanProperty CORNER = BooleanProperty.create("corner");
     public static final VoxelShape SHAPE;
     public static final VoxelShape NORTH_SHAPE;
@@ -35,6 +39,11 @@ public class KitchenHoodPipeBlock extends SimpleBlock implements Hammerable {
         super(properties);
         this.registerDefaultState(this.defaultBlockState().setValue(CORNER, false).setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return CODEC;
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {

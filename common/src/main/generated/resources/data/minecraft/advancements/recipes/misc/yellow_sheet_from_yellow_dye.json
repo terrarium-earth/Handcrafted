@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:yellow_sheet_from_yellow_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

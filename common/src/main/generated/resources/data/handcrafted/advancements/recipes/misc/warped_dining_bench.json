@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:warped_dining_bench"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

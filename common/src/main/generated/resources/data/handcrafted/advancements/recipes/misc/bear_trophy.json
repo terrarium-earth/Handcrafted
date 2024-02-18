@@ -28,6 +28,5 @@
     "recipes": [
       "handcrafted:bear_trophy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

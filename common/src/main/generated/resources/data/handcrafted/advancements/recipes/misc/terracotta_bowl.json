@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:terracotta_bowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

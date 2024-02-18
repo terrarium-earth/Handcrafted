@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:birch_desk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

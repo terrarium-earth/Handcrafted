@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:jungle_drawer"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

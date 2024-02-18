@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:jungle_fancy_bed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

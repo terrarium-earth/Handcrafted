@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:fancy_painting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

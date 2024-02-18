@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:stone_corner_trim"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:cherry_shelf"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

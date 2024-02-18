@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:wood_crockery_combo"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

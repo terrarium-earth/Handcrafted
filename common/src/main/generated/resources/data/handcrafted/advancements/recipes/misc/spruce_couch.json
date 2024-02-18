@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:spruce_couch"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

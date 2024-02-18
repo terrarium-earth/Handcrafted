@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:crimson_drawer"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

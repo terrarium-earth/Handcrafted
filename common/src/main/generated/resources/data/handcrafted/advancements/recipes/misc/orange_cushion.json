@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:orange_cushion"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

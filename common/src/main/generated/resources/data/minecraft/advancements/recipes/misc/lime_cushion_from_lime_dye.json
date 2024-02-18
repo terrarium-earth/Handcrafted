@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:lime_cushion_from_lime_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

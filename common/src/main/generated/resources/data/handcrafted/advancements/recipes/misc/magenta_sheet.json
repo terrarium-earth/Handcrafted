@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:magenta_sheet"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

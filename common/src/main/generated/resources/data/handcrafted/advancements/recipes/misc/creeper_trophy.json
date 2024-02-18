@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:creeper_trophy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

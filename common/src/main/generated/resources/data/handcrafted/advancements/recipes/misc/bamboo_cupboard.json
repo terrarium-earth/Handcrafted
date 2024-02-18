@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:bamboo_cupboard"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

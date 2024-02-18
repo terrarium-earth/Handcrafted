@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:deepslate_pillar_trim"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

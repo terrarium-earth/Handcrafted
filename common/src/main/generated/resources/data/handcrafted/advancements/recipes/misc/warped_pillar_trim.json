@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:warped_pillar_trim"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

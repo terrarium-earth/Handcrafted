@@ -1,0 +1,1 @@
+- Fixed dining bench tooltip.

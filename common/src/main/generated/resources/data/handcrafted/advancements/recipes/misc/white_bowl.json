@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:white_bowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

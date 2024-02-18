@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:blue_sheet"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

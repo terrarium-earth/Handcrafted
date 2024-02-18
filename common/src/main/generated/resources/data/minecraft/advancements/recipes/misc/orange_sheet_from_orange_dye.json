@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:orange_sheet_from_orange_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

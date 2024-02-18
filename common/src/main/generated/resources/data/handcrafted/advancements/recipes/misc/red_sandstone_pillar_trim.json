@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:red_sandstone_pillar_trim"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:white_crockery_combo"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:birch_nightstand"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

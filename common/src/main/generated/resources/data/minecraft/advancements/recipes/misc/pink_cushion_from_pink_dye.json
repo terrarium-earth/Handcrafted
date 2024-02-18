@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:pink_cushion_from_pink_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

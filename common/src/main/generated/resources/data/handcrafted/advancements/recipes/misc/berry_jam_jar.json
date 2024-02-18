@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:berry_jam_jar"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

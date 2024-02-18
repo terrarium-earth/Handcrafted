@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:red_sheet_from_red_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

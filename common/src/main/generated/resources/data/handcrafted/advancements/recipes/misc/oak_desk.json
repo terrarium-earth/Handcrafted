@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:oak_desk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

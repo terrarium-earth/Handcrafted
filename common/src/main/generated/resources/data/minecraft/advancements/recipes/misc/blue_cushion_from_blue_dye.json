@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:blue_cushion_from_blue_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

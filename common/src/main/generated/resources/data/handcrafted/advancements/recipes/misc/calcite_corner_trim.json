@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:calcite_corner_trim"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

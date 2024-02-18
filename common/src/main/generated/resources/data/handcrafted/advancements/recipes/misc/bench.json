@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:bench"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

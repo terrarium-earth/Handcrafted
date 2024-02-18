@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:skeleton_trophy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

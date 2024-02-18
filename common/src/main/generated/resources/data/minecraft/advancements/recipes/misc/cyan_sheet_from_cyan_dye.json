@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:cyan_sheet_from_cyan_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

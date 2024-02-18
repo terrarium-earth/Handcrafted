@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:bamboo_desk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

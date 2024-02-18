@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:vindicator_trophy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

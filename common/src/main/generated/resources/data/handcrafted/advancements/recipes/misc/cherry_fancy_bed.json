@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:cherry_fancy_bed"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:cyan_cushion"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:cherry_counter"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

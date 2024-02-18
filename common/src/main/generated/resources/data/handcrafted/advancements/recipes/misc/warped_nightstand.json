@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:warped_nightstand"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

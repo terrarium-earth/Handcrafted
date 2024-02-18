@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:mangrove_desk"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

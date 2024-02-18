@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:oak_chair"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

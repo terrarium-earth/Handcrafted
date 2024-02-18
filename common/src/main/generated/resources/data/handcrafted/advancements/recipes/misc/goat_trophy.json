@@ -28,6 +28,5 @@
     "recipes": [
       "handcrafted:goat_trophy"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

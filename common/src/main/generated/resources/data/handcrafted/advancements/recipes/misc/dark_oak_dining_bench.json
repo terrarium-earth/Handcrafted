@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:dark_oak_dining_bench"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

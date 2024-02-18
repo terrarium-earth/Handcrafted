@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:pink_sheet"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

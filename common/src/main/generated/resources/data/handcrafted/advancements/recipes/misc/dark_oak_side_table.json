@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:dark_oak_side_table"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

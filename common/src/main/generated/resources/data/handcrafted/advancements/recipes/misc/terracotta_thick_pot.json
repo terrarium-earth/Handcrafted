@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:terracotta_thick_pot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

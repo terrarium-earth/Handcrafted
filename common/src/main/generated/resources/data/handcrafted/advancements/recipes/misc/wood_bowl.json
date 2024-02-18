@@ -28,6 +28,5 @@
     "recipes": [
       "handcrafted:wood_bowl"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

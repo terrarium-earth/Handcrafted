@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:golden_wide_pot"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

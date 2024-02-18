@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:magenta_sheet_from_magenta_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

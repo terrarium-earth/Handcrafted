@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:kitchen_hood_pipe"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

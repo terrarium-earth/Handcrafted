@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:blue_cup"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

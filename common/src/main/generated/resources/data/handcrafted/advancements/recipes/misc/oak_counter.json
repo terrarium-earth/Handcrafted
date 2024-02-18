@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:oak_counter"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

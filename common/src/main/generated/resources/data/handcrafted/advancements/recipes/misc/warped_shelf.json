@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:warped_shelf"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

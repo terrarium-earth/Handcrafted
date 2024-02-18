@@ -30,6 +30,5 @@
     "recipes": [
       "handcrafted:bamboo_couch"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

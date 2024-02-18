@@ -28,6 +28,5 @@
     "recipes": [
       "minecraft:gray_cushion_from_gray_dye"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -1,5 +1,6 @@
 package earth.terrarium.handcrafted.common.items;
 
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -19,6 +20,6 @@ public class TooltipItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
-        tooltipComponents.add(tooltip);
+        TooltipUtils.addDescriptionComponent(tooltipComponents, tooltip);
     }
 }

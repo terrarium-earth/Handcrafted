@@ -389,5 +389,6 @@
   "tooltip.handcrafted.hammer_use_look_shift": "Shift-right-click with a hammer to change the block's look.",
   "tooltip.handcrafted.hammer_use_shape": "Right-click with a hammer to change the block's shape.",
   "tooltip.handcrafted.place_on_furniture": "Can be placed on furniture.",
-  "tooltip.handcrafted.sheet": "Right-click with a sheet to change the block's look."
+  "tooltip.handcrafted.sheet": "Right-click with a sheet to change the block's look.",
+  "tooltip.handcrafted.shift_description": "Hold SHIFT for more information"
 }

@@ -1,1 +1,3 @@
 - Fixed dining bench tooltip.
+- Tooltips will now dynamically adjust their size to fit the screen.
+- Tooltips now require shift to be held to display.

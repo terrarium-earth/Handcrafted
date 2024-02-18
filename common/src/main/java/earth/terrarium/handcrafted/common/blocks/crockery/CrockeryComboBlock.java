@@ -3,6 +3,7 @@ package earth.terrarium.handcrafted.common.blocks.crockery;
 import com.mojang.serialization.MapCodec;
 import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -67,7 +68,7 @@ public class CrockeryComboBlock extends SimpleBlock implements EntityBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.CROCKERY_COMBO);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.CROCKERY_COMBO);
     }
 
     @Override

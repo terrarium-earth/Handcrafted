@@ -8,6 +8,7 @@ import earth.terrarium.handcrafted.common.blocks.base.SimpleBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.TrimProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.registry.ModSoundEvents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -169,7 +170,7 @@ public class CornerTrimBlock extends SimpleBlock implements Hammerable {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.HAMMER_USE_SHAPE);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.HAMMER_USE_SHAPE);
     }
 
     static {

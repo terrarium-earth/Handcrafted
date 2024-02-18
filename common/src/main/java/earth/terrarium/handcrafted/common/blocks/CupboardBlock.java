@@ -6,6 +6,7 @@ import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.registry.ModSoundEvents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -86,7 +87,7 @@ public class CupboardBlock extends HorizontalDirectionalBlock implements Hammera
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.HAMMER_USE_LOOK);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.HAMMER_USE_LOOK);
     }
 
     @Override

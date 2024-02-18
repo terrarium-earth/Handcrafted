@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.items;
 
 import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
@@ -31,6 +32,6 @@ public class HammerItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, TooltipFlag isAdvanced) {
-        tooltipComponents.add(ConstantComponents.HAMMER);
+        TooltipUtils.addDescriptionComponent(tooltipComponents, ConstantComponents.HAMMER);
     }
 }

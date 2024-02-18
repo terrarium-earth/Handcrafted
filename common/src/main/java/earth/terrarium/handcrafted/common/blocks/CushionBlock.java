@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.blocks;
 
 import earth.terrarium.handcrafted.common.blocks.base.SittableBlock;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -52,6 +53,6 @@ public class CushionBlock extends Block implements SittableBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.PLACE_ON_FURNITURE);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.PLACE_ON_FURNITURE);
     }
 }

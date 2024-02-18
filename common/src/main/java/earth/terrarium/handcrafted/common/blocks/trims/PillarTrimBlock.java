@@ -7,6 +7,7 @@ import earth.terrarium.handcrafted.common.blocks.base.Hammerable;
 import earth.terrarium.handcrafted.common.blocks.base.properties.TrimProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.registry.ModSoundEvents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -167,8 +168,7 @@ public class PillarTrimBlock extends FaceAttachedHorizontalDirectionalBlock impl
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.HAMMER_USE_SHAPE);
-        tooltip.add(ConstantComponents.HAMMER_USE_LOOK_SHIFT);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.HAMMER_USE_SHAPE, ConstantComponents.HAMMER_USE_LOOK_SHIFT);
     }
 
     @Override

@@ -26,7 +26,7 @@ import net.minecraft.world.phys.Vec3;
 import org.joml.Vector3f;
 
 @MethodsReturnNonnullByDefault
-public class SittingEntity extends Entity {
+public class Seat extends Entity {
 
     public static final Multimap<ResourceKey<Level>, BlockPos> SITTING_POSITIONS = ArrayListMultimap.create();
 
@@ -34,23 +34,23 @@ public class SittingEntity extends Entity {
     private boolean remove;
     private boolean canRotate;
 
-    public SittingEntity(EntityType<? extends Entity> entityType, Level level) {
+    public Seat(EntityType<? extends Entity> entityType, Level level) {
         super(entityType, level);
         this.setLevelCallback(EntityInLevelCallback.NULL);
     }
 
-    public SittingEntity(Level level, AABB shape) {
+    public Seat(Level level, AABB shape) {
         super(ModEntityTypes.SEAT.get(), level);
         this.shape = copyAABB(shape);
     }
 
-    public static SittingEntity of(Level level, BlockPos pos, Direction dir) {
+    public static Seat of(Level level, BlockPos pos, Direction dir) {
         BlockState state = level.getBlockState(pos);
         AABB shape = new AABB(pos);
         if (state.getBlock() instanceof SittableBlock seat) {
             shape = seat.getSeatSize(state);
         }
-        SittingEntity entity = new SittingEntity(level, shape);
+        Seat entity = new Seat(level, shape);
         if (dir != null) {
             entity.setYRot(dir.toYRot());
         } else {
@@ -155,7 +155,7 @@ public class SittingEntity extends Entity {
 
     @Override
     public void setLevelCallback(EntityInLevelCallback levelCallback) {
-        super.setLevelCallback(new WrapedLevelCallBack(levelCallback));
+        super.setLevelCallback(new WrappedLevelCallBack(levelCallback));
 
     }
 
@@ -171,10 +171,10 @@ public class SittingEntity extends Entity {
     protected void addAdditionalSaveData(CompoundTag compound) {
     }
 
-    private class WrapedLevelCallBack implements EntityInLevelCallback {
+    private class WrappedLevelCallBack implements EntityInLevelCallback {
         private final EntityInLevelCallback callback;
 
-        public WrapedLevelCallBack(EntityInLevelCallback callback) {
+        public WrappedLevelCallBack(EntityInLevelCallback callback) {
             this.callback = callback;
         }
 
@@ -186,7 +186,7 @@ public class SittingEntity extends Entity {
                     shape = seat.getSeatSize(level().getBlockState(blockPosition()));
                 }
             } else {
-                SittingEntity.this.shape = null;
+                Seat.this.shape = null;
             }
         }
 

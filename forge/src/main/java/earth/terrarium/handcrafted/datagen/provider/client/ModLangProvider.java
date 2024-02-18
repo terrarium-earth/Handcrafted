@@ -6,6 +6,7 @@ import earth.terrarium.handcrafted.common.registry.ModBlocks;
 import earth.terrarium.handcrafted.common.registry.ModEntityTypes;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraftforge.common.data.LanguageProvider;
 import org.codehaus.plexus.util.StringUtils;
@@ -47,19 +48,20 @@ public class ModLangProvider extends LanguageProvider {
 
         add("itemGroup.handcrafted.main", "Handcrafted");
 
-        add(ConstantComponents.HAMMER.getString(), "Changes the look of blocks.");
-        add(ConstantComponents.HAMMER_USE_LOOK.getString(), "Right-click with a hammer to change the block's look.");
-        add(ConstantComponents.HAMMER_USE_SHAPE.getString(), "Right-click with a hammer to change the block's shape.");
-        add(ConstantComponents.HAMMER_USE_LOOK_SHIFT.getString(), "Shift-right-click with a hammer to change the block's look.");
+        add(ConstantComponents.SHIFT_DESCRIPTION, "Hold SHIFT for more information");
+        add(ConstantComponents.HAMMER, "Changes the look of blocks.");
+        add(ConstantComponents.HAMMER_USE_LOOK, "Right-click with a hammer to change the block's look.");
+        add(ConstantComponents.HAMMER_USE_SHAPE, "Right-click with a hammer to change the block's shape.");
+        add(ConstantComponents.HAMMER_USE_LOOK_SHIFT, "Shift-right-click with a hammer to change the block's look.");
 
-        add(ConstantComponents.COUNTER.getString(), "Right-click with wood or stone to change the counter surface.");
-        add(ConstantComponents.CROCKERY_COMBO.getString(), "Right-click with any item to place it on the plate.");
+        add(ConstantComponents.COUNTER, "Right-click with wood or stone to change the counter surface.");
+        add(ConstantComponents.CROCKERY_COMBO, "Right-click with any item to place it on the plate.");
 
-        add(ConstantComponents.PLACE_ON_FURNITURE.getString(), "Can be placed on furniture.");
-        add(ConstantComponents.CUSHION.getString(), "Right-click with a cushion to change the block's look.");
-        add(ConstantComponents.SHEET.getString(), "Right-click with a sheet to change the block's look.");
-        add(ConstantComponents.BED_PILLOW.getString(), "Right-click with a cushion to change the bed's pillow color.");
-        add(ConstantComponents.BED_SHEET.getString(), "Right-click with a sheet to change the bedsheets.");
+        add(ConstantComponents.PLACE_ON_FURNITURE, "Can be placed on furniture.");
+        add(ConstantComponents.CUSHION, "Right-click with a cushion to change the block's look.");
+        add(ConstantComponents.SHEET, "Right-click with a sheet to change the block's look.");
+        add(ConstantComponents.BED_PILLOW, "Right-click with a cushion to change the bed's pillow color.");
+        add(ConstantComponents.BED_SHEET, "Right-click with a sheet to change the bedsheets.");
 
         add("subtitles.handcrafted.block.hammer_wood", "Wood is Hammered");
         add("subtitles.handcrafted.block.hammer_stone", "Stone is Hammered");
@@ -143,5 +145,9 @@ public class ModLangProvider extends LanguageProvider {
         add("painting.handcrafted.beach_sunrise_left.title", "Beach Sunrise Left");
         add("painting.handcrafted.nian_cat.author", "Kekie6");
         add("painting.handcrafted.nian_cat.title", "Nian Cat");
+    }
+
+    public void add(Component component, String name) {
+        add(component.getString(), name);
     }
 }

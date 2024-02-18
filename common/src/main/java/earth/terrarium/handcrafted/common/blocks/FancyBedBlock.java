@@ -4,6 +4,7 @@ import earth.terrarium.handcrafted.common.blocks.base.properties.ColorProperty;
 import earth.terrarium.handcrafted.common.blocks.base.properties.DirectionalBlockProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.utils.InteractionUtils;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -158,7 +159,6 @@ public class FancyBedBlock extends BedBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.BED_PILLOW);
-        tooltip.add(ConstantComponents.BED_SHEET);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.BED_PILLOW, ConstantComponents.BED_SHEET);
     }
 }

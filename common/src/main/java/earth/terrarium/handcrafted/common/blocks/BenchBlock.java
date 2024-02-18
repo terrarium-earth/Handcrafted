@@ -5,6 +5,7 @@ import earth.terrarium.handcrafted.common.blocks.base.properties.ModularSeatProp
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.utils.InteractionUtils;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -78,6 +79,6 @@ public class BenchBlock extends ModularSeatBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.CUSHION);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.CUSHION);
     }
 }

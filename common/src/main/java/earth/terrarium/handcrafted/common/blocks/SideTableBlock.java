@@ -2,6 +2,7 @@ package earth.terrarium.handcrafted.common.blocks;
 
 import earth.terrarium.handcrafted.common.blockentities.ContainerBlockEntity;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -47,6 +48,6 @@ public class SideTableBlock extends SimpleTableBlock implements EntityBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.SHEET);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.SHEET);
     }
 }

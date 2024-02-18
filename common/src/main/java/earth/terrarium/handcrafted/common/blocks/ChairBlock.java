@@ -4,6 +4,7 @@ import earth.terrarium.handcrafted.common.blocks.base.SittableBlock;
 import earth.terrarium.handcrafted.common.blocks.base.properties.OptionalColorProperty;
 import earth.terrarium.handcrafted.common.constants.ConstantComponents;
 import earth.terrarium.handcrafted.common.utils.InteractionUtils;
+import earth.terrarium.handcrafted.common.utils.TooltipUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -111,7 +112,7 @@ public class ChairBlock extends HorizontalDirectionalBlock implements SittableBl
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(ConstantComponents.CUSHION);
+        TooltipUtils.addDescriptionComponent(tooltip, ConstantComponents.CUSHION);
     }
 
     @Override

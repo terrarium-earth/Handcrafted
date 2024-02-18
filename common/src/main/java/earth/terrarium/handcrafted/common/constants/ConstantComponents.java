@@ -4,6 +4,8 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 
 public class ConstantComponents {
+    public static final Component SHIFT_DESCRIPTION = Component.translatable("tooltip.handcrafted.shift_description").withStyle(ChatFormatting.GRAY);
+
     public static final Component HAMMER = Component.translatable("tooltip.handcrafted.hammer").copy().withStyle(ChatFormatting.GRAY);
     public static final Component HAMMER_USE_LOOK = Component.translatable("tooltip.handcrafted.hammer_use_look").copy().withStyle(ChatFormatting.GRAY);
     public static final Component HAMMER_USE_SHAPE = Component.translatable("tooltip.handcrafted.hammer_use_shape").copy().withStyle(ChatFormatting.GRAY);

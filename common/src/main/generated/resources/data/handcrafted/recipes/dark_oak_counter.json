@@ -6,7 +6,7 @@
       "item": "minecraft:dark_oak_planks"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     },
     "@": {
       "item": "minecraft:calcite"

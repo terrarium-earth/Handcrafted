@@ -6,7 +6,7 @@
       "item": "minecraft:spruce_planks"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

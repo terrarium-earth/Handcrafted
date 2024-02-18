@@ -6,7 +6,7 @@
       "item": "minecraft:bamboo_planks"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

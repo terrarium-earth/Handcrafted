@@ -9,7 +9,7 @@
       "item": "minecraft:spruce_slab"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

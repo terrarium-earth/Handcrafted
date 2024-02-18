@@ -9,7 +9,7 @@
       "item": "minecraft:dark_oak_slab"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

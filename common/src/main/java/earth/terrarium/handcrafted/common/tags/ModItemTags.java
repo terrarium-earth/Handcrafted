@@ -11,6 +11,7 @@ public final class ModItemTags {
     public static final TagKey<Item> SHEETS = tag("sheets");
     public static final TagKey<Item> COUNTER_MATERIALS = tag("counter_materials");
     public static final TagKey<Item> TRIM_MATERIALS = tag("trim_materials");
+    public static final TagKey<Item> CHESTS = tag("chests");
 
     private static TagKey<Item> tag(String name) {
         return TagKey.create(Registries.ITEM, new ResourceLocation(Handcrafted.MOD_ID, name));

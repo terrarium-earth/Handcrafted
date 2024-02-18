@@ -32,7 +32,7 @@ public final class HandcraftedDataGenerator {
         generator.addProvider(event.includeClient(), new ModHighlightBlockStateProvider(packOutput));
 
         generator.addProvider(event.includeServer(), new ModLootTableProvider(packOutput));
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput));
 
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper));

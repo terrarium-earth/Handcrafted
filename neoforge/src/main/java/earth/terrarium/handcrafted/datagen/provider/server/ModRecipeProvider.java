@@ -4,7 +4,6 @@ import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.handcrafted.common.registry.ModItems;
 import earth.terrarium.handcrafted.common.tags.ModItemTags;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -15,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 import java.util.Objects;
-import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -23,8 +21,8 @@ import java.util.function.Supplier;
 public class ModRecipeProvider extends RecipeProvider {
     private RecipeOutput output;
 
-    public ModRecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(packOutput, lookupProvider);
+    public ModRecipeProvider(PackOutput packOutput) {
+        super(packOutput);
     }
 
     @Override
@@ -104,18 +102,18 @@ public class ModRecipeProvider extends RecipeProvider {
             .pattern("# #"));
 
         woodWithSlabSet(ModItems.SIDE_TABLES, 2, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("---")
             .pattern("#/#")
             .pattern("# #"));
 
         woodWithSlabSet(ModItems.DESKS, 2, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("---")
             .pattern("#/#"));
 
         woodSet(ModItems.NIGHTSTANDS, 2, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("###")
             .pattern("#/#"));
 
@@ -133,25 +131,25 @@ public class ModRecipeProvider extends RecipeProvider {
             .pattern("###"));
 
         woodSet(ModItems.COUNTERS, 3, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .define('@', Items.CALCITE)
             .pattern("@@@")
             .pattern("#/#"));
 
         woodSet(ModItems.CUPBOARDS, 3, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("###")
             .pattern("#/#")
             .pattern("###"));
 
         woodWithSlabSet(ModItems.DRAWERS, 2, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("#/#")
             .pattern("---")
             .pattern("---"));
 
         woodWithSlabSet(ModItems.SHELVES, 2, r -> r
-            .define('/', Items.CHEST)
+            .define('/', ModItemTags.CHESTS)
             .pattern("---")
             .pattern("#/#")
             .pattern("---"));

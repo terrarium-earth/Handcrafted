@@ -9,7 +9,7 @@
       "item": "minecraft:crimson_slab"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

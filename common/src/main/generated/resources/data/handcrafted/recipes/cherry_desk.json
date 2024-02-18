@@ -9,7 +9,7 @@
       "item": "minecraft:cherry_slab"
     },
     "/": {
-      "item": "minecraft:chest"
+      "tag": "handcrafted:chests"
     }
   },
   "pattern": [

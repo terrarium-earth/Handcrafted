@@ -1,3 +1,5 @@
-- Fixed 1.21.1 crash when placing blocks with containers
-- Fixed desk displaying the wrong tooltip (#112)
-- Added colored items to dye tags
+- Fixed oven crash (sshcrack)
+- Fix table UV (Khazoda)
+- Fix chair dismounting (jshipley)
+- Improve furniture interactions (jshipley)
+- Add turkish localization (RuyaSavascisi)

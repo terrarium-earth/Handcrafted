@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
@@ -45,5 +46,32 @@ public class CrockeryComboBlock extends SimpleEntityBlock {
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         return ItemHoldingBlockEntity.placeItem(level, pos, player, ItemStack.EMPTY, f -> true, SoundEvents.ITEM_FRAME_ADD_ITEM);
+    }
+
+    @Override
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        this.handleHoldingItemRemoval(state, level, pos, newState);
+        super.onRemove(state, level, pos, newState, isMoving);
+    }
+
+    private void handleHoldingItemRemoval(BlockState state, Level level, BlockPos pos, BlockState newState) {
+        if (state.is(newState.getBlock())) {
+            return;
+        }
+
+        if (!(level.getBlockEntity(pos) instanceof ItemHoldingBlockEntity entity)) {
+            return;
+        }
+
+        if (entity.getStack().isEmpty()) {
+            entity.clear();
+            return;
+        }
+
+        ItemEntity itemEntity = new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, entity.getStack());
+        itemEntity.setDeltaMovement(itemEntity.getDeltaMovement().scale(0.5));
+        level.addFreshEntity(itemEntity);
+        level.updateNeighbourForOutputSignal(pos, this);
+        entity.clear();
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2024-08-11T00:28:41.648676	Tags for minecraft:block mod id handcrafted
+// 1.21.1	2026-10-11T15:04:07.5279991	Tags for minecraft:block mod id handcrafted
 405166136525f6bddc8620260bb0e639e9e7ac1c data/c/tags/block/dyed/black.json
 7ce3cdb9816bcc547ebb098775d35dd6422bb75e data/c/tags/block/dyed/blue.json
 7bbbe3959ea94e64798348375e384a81979390e1 data/c/tags/block/dyed/brown.json
@@ -39,12 +39,13 @@ c5d6286b559abdac6e3776f43106c50a785d4363 data/handcrafted/tags/block/plates.json
 d112ab59e44172869a67906c9fa183dc24bd4cfd data/handcrafted/tags/block/shelves.json
 5bb83057870d2fef4532bbce6d9c4584970aba51 data/handcrafted/tags/block/side_tables.json
 8bced73764ed8c9b65a46093b5655aec3323ee39 data/handcrafted/tags/block/statue_trophies.json
-eafa756ab5bf0b59268eac965cf0780ce2c1716d data/handcrafted/tags/block/table_connectable.json
 0a476d2c80837899a06ef0ec1d6f93c65a06b6e6 data/handcrafted/tags/block/tables.json
+eafa756ab5bf0b59268eac965cf0780ce2c1716d data/handcrafted/tags/block/table_connectable.json
 2eb1cdbe5ae5c4c2dccbe453cb855815860eb4c6 data/handcrafted/tags/block/trims.json
 fc2ac2105e437d1f002cab5eca7c30cf01640e40 data/handcrafted/tags/block/trophies.json
 cf0bba5d107667c2ccfac6fd3252355663bcf4ed data/handcrafted/tags/block/wall_trophies.json
 d8eb078f9f793ef17806bb6e83b18f5649f6542e data/handcrafted/tags/block/wooden_benches.json
 ab0e36c3ebe380ea3defda5c2803d4177ca1e908 data/minecraft/tags/block/beds.json
+3390d1839cff1235aa06cf1b3b4823416d66cf53 data/minecraft/tags/block/guarded_by_piglins.json
 7e7bec217a8acfe8a1bb17bccbf0ea4e907dd926 data/minecraft/tags/block/mineable/axe.json
 f5f63bf0575cea8bdab45671ec31db7f5fc76821 data/minecraft/tags/block/mineable/pickaxe.json

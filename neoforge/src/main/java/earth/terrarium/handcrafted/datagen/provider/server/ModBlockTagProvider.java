@@ -83,6 +83,11 @@ public class ModBlockTagProvider extends TagsProvider<Block> {
         tag(Tags.Blocks.DYED_RED).add(TagEntry.element(ModBlocks.RED_CUSHION.getId()));
         tag(Tags.Blocks.DYED_WHITE).add(TagEntry.element(ModBlocks.WHITE_CUSHION.getId()));
         tag(Tags.Blocks.DYED_YELLOW).add(TagEntry.element(ModBlocks.YELLOW_CUSHION.getId()));
+
+        tag(BlockTags.GUARDED_BY_PIGLINS).add(TagEntry.element(ModBlocks.GOLDEN_MEDIUM_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_THICK_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_THIN_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_WIDE_POT.getId()));
     }
 
     private void addMineableTags() {

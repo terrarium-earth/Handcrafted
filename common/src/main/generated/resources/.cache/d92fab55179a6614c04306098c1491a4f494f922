@@ -1,4 +1,4 @@
-// 1.21.1	2024-08-11T00:28:41.654963	Tags for minecraft:item mod id handcrafted
+// 1.21.1	2026-10-11T15:06:28.5861003	Tags for minecraft:item mod id handcrafted
 adfcb59c69179e0407575adf4cc7eea1b49c56c6 data/c/tags/item/dyed/black.json
 f1f2096085191eb17a63d1449f2d252ceebba23a data/c/tags/item/dyed/blue.json
 358cace5142b4823e2647df699279bc555b0bd3a data/c/tags/item/dyed/brown.json
@@ -20,8 +20,8 @@ a97bead8616b0d90c86bcea85ca66620edab07ba data/c/tags/item/dyed/yellow.json
 d23ee811738879d0b22d489c76f6947f6b0ccf40 data/handcrafted/tags/item/chairs.json
 3c2f732fd491d76935313785015f1caff38ec0f0 data/handcrafted/tags/item/corner_trims.json
 388401c38f894060a6c94c6a00930899e4c2fc2b data/handcrafted/tags/item/couches.json
-8f1e2f5ba117be9e37605de76d76515e8bb05d86 data/handcrafted/tags/item/counter_materials.json
 31bb84aa9fd868dd27c281437482ba714e89da55 data/handcrafted/tags/item/counters.json
+8f1e2f5ba117be9e37605de76d76515e8bb05d86 data/handcrafted/tags/item/counter_materials.json
 c8e518c376a5ff56355494ea49b1fca4c14b4b89 data/handcrafted/tags/item/crockery.json
 692a62c5f7317f82879e2c8c17212784f680c9dd data/handcrafted/tags/item/crockery_combos.json
 da0d7fb9924ce9d315eda51635bd73cd345bb377 data/handcrafted/tags/item/cupboards.json
@@ -40,8 +40,9 @@ c5d6286b559abdac6e3776f43106c50a785d4363 data/handcrafted/tags/item/plates.json
 d112ab59e44172869a67906c9fa183dc24bd4cfd data/handcrafted/tags/item/shelves.json
 3b8dcf097aa45f2b30e31a5dd1e2b269a5689890 data/handcrafted/tags/item/side_tables.json
 0a476d2c80837899a06ef0ec1d6f93c65a06b6e6 data/handcrafted/tags/item/tables.json
-408a5532264615089c4903b190b340520128fb8d data/handcrafted/tags/item/trim_materials.json
 2eb1cdbe5ae5c4c2dccbe453cb855815860eb4c6 data/handcrafted/tags/item/trims.json
+408a5532264615089c4903b190b340520128fb8d data/handcrafted/tags/item/trim_materials.json
 fc2ac2105e437d1f002cab5eca7c30cf01640e40 data/handcrafted/tags/item/trophies.json
 d8eb078f9f793ef17806bb6e83b18f5649f6542e data/handcrafted/tags/item/wooden_benches.json
 ab0e36c3ebe380ea3defda5c2803d4177ca1e908 data/minecraft/tags/item/beds.json
+3390d1839cff1235aa06cf1b3b4823416d66cf53 data/minecraft/tags/item/piglin_loved.json

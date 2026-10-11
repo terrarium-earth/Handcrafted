@@ -11,6 +11,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagEntry;
 import net.minecraft.tags.TagKey;
@@ -129,6 +130,11 @@ public class ModItemTagProvider extends TagsProvider<Item> {
         tag(Tags.Items.DYED_RED).add(TagEntry.element(ModItems.RED_CUSHION.getId())).add(TagEntry.element(ModItems.RED_SHEET.getId()));
         tag(Tags.Items.DYED_WHITE).add(TagEntry.element(ModItems.WHITE_CUSHION.getId())).add(TagEntry.element(ModItems.WHITE_SHEET.getId()));
         tag(Tags.Items.DYED_YELLOW).add(TagEntry.element(ModItems.YELLOW_CUSHION.getId())).add(TagEntry.element(ModItems.YELLOW_SHEET.getId()));
+
+        tag(ItemTags.PIGLIN_LOVED).add(TagEntry.element(ModBlocks.GOLDEN_MEDIUM_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_THICK_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_THIN_POT.getId()))
+            .add(TagEntry.element(ModBlocks.GOLDEN_WIDE_POT.getId()));
     }
 
     private void addSet(ResourcefulRegistry<Item> registry, String name) {

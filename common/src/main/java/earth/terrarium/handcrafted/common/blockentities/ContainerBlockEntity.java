@@ -7,6 +7,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -69,11 +70,13 @@ public class ContainerBlockEntity extends RandomizableContainerBlockEntity {
 
     @Override
     public void startOpen(Player player) {
-        player.playSound(SoundEvents.CHEST_OPEN, 1.0f, 1.0f);
+        level.playSound(null, getBlockPos().getX(), getBlockPos().getY(), getBlockPos().getZ(),
+            SoundEvents.CHEST_OPEN, SoundSource.BLOCKS, 0.5f, level.random.nextFloat() * 0.1f + 0.9f);
     }
 
     @Override
     public void stopOpen(Player player) {
-        player.playSound(SoundEvents.CHEST_CLOSE, 1.0f, 1.0f);
+        level.playSound(null, getBlockPos().getX(), getBlockPos().getY(), getBlockPos().getZ(),
+            SoundEvents.CHEST_CLOSE, SoundSource.BLOCKS, 0.5f, level.random.nextFloat() * 0.1f + 0.9f);
     }
 }
